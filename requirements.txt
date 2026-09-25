@@ -1,0 +1,78 @@
+# Environment for the recipe-matching experiments.
+#
+# Four environments were used and they are NOT installable together: the
+# training/evaluation stack and the generation stack pin different CUDA
+# builds of torch, and the baseline and late-interaction stacks pin other
+# transformers versions. The job scripts activate them as conda environments
+# named mathnet (1), baselines-tf4 (2), vllm (3) and pylate (4). Install the
+# first for everything in the paper except pair generation, the third-party
+# baselines and the late-interaction arms.
+#
+# ---------------------------------------------------------------------
+# 1. TRAINING + EVALUATION           Python 3.11.15
+#    (train_invarembed.py, eval_*.py, all statistics and probe scripts)
+#
+#    torch is a CUDA 12.8 build; install it first from the PyTorch index:
+#      pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+#    then:
+#      pip install -r requirements.txt
+# ---------------------------------------------------------------------
+torch==2.11.0                 # installed as 2.11.0+cu128, see note above
+transformers==5.14.1
+sentence-transformers==5.6.1  # CachedMultipleNegativesRankingLoss, NO_DUPLICATES sampler
+datasets==5.0.1
+accelerate==1.14.0
+peft==0.20.0                  # rank-16 LoRA for the 4B replication
+safetensors==0.8.0
+huggingface-hub==1.25.1
+
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.0           # the n-gram style probe
+pandas==3.0.5
+sympy==1.14.0                 # CAS verification of the verified arm's pairs
+joblib==1.5.3
+
+pytrec-eval==0.5              # nDCG@10 on SABER-Math
+duckdb==1.5.5
+pebble==5.2.1                 # process-pool timeouts around SymPy calls
+bm25s==0.3.11                 # the BM25 lexical baseline (eval_bm25.py)
+dukpy==0.6.0
+PyMuPDF==1.28.0               # text extraction from the benchmark PDFs
+
+# ---------------------------------------------------------------------
+# 2. THIRD-PARTY BASELINES (optional)   Python 3.11.15
+#    The 7-8B specialist baselines (RaDeR, ReasonIR, MathLeap) load under
+#    transformers 4.x and fail on the 5.x pin above, so they were evaluated
+#    in a separate environment. Needed only to reproduce the baseline rows.
+#
+#      python3.11 -m venv .venv-baselines && . .venv-baselines/bin/activate
+#      pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+#      pip install transformers==4.51.3 sentence-transformers==5.6.1 \
+#                  huggingface-hub==0.36.2 accelerate==1.14.0 \
+#                  numpy==2.4.6 scipy==1.17.1 safetensors==0.8.0
+#
+# ---------------------------------------------------------------------
+# 3. PAIR GENERATION (optional)      Python 3.12.13
+#    Only needed to re-run generate_llm_pairs.py / generate_meld_pairs.py /
+#    defense_regen_eval.py, which serve Qwen3-32B-AWQ through vLLM.
+#    Create a SEPARATE environment:
+#
+#      python3.12 -m venv .venv-gen && . .venv-gen/bin/activate
+#      pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu129
+#      pip install vllm==0.26.0 transformers==5.14.1 huggingface-hub==1.25.1
+#
+#    Generation jobs set VLLM_USE_FLASHINFER_SAMPLER=0.
+# ---------------------------------------------------------------------
+#
+# ---------------------------------------------------------------------
+# 4. LATE INTERACTION (optional)     Python 3.11.16
+#    Only needed for the ColBERTv2 arms (colbert_train.py, colbert_eval.py,
+#    colbert_arms.slurm), which run through PyLate.
+#
+#      python3.11 -m venv .venv-pylate && . .venv-pylate/bin/activate
+#      pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+#      pip install pylate==1.6.0 sentence-transformers==5.3.0 transformers==5.3.0 \
+#                  fast-plaid==1.4.6.2110 datasets==5.0.1 duckdb==1.5.5 \
+#                  pyarrow==25.0.1 pandas==3.0.5 numpy==2.4.6
+#
