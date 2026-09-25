@@ -1,0 +1,169 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=information_theory round=6 call=146
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=17000 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Information Granularity and Codebook Resolution",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The granularity of an information source is quantified by the precision of partitions induced by its sigma-algebra relative to a reference sigma-algebra, and is bounded below by the entropy of the source relative to a common refinement."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "A codebook's resolution is determined by the smallest Hamming distance between codewords that allows reliable resolution of input symbols, and the minimal such distance is constrained by the size of the input alphabet and the desired error bounds."
+      }
+    },
+    {
+      "topic": "Information Channel Symmetry and Code Symmetry",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "A memoryless channel with symmetric transition probabilities achieves its maximum capacity under uniform input distribution, where the marginal output entropy is minimized."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "An optimal code over a symmetric channel can be constructed using codewords with balanced symbol frequencies, ensuring uniform error susceptibility across all inputs."
+      }
+    },
+    {
+      "topic": "Codebook Compactness and Entropy Compactness",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The compactness of an information source's support under a product topology is characterized by the convergence of its entropy density along typical sequences."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "A codebook is compact under the product topology on the space of sequences if the Hamming distances between codewords decay exponentially with length."
+      }
+    },
+    {
+      "topic": "Information Distance and Code Distance",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The information distance between two random variables is the minimum number of bits required to describe one variable to the other via a shared reference."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The relative distance between two codewords is the number of symbols that must be changed to transform one into the other under a bijective encoding."
+      }
+    },
+    {
+      "topic": "Channel Discrimination and Code Separation",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "Two memoryless channels can be distinguished with a finite number of trials if their Kullback-Leibler divergences produce linearly separable decision boundaries."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "A code achieves discrimination between two channel configurations if its parity-check matrix reveals distinct syndromes under different noise distributions."
+      }
+    },
+    {
+      "topic": "Codebook Closure and Source Closure",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "A source's induced probability space is closed under finite unions if its entropy function satisfies submodularity."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "A codebook is closed under finite linear combinations over the channel input alphabet if the dual space of its parity matrix is well-defined."
+      }
+    },
+    {
+      "topic": "Source Complexity and Code Complexity",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The computational complexity of a source is proportional to the Kolmogorov complexity of its typical sequences under a universal Turing machine."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The encoding complexity of a code is determined by the number of operations required to construct its syndrome matrix for the class of inputs."
+      }
+    },
+    {
+      "topic": "Information Asymmetry and Code Asymmetry",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "An asymmetric information channel introduces bias in mutual information transfer through non-invariant prior marginals, reducing the achievable rate."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "An asymmetric code suffers from decoding imbalance when the number of symbol transitions between codewords is not symmetric across the alphabet."
+      }
+    },
+    {
+      "topic": "Information Conservation and Code Conservation",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "In a deterministic channel, the mutual information between input and output is conserved if the channel mapping is invertible."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "A uniquely decodable code conserves information if the mapping between messages and codewords is bijective and preserves channel responses."
+      }
+    },
+    {
+      "topic": "Source Growth and Code Growth",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The exponential growth rate of typical source sequences corresponds to the entropy rate of the process as the sequence length tends to infinity."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The number of distinct codewords in a prefix code grows exponentially with length, with the base of the exponent determined by the channel capacity."
+      }
+    },
+    {
+      "topic": "Information Orbits and Code Orbits",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "An information source generates a dynamic system whose orbits are characterized by the recurrence of typical sequences under the action of the shift operator."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "A cyclic code partitions the space of sequences into orbits under the action of cyclic shifts, preserving Hamming distances between codewords."
+      }
+    },
+    {
+      "topic": "Information Ambiguity and Code Ambiguity",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The level of ambiguity in a communication system is bounded by the confusion rate, the probability of undetected overlap in output distributions for distinct inputs."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The ambiguity of a code is measured by the number of codewords that share the same channel response under a noisy configuration."
+      }
+    },
+    {
+      "topic": "Information Covering and Code Covering",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "An information covering set is a collection of types whose union spans the space of output sequences with bounded Kullback-Leibler divergence."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "A code is covering if every sequence in the output space is within a bounded Hamming distance of at least one codeword."
+      }
+    },
+    {
+      "topic": "Information Momentum and Code Momentum",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The momentum of an information process quantifies the rate of change in entropy under perturbation of the transition matrix."
+      },
+        "framing": "coding theory",
+        "statement": "The momentum of a code refers to how rapidly its error-correcting performance degrades with respect to changes in the noise distribution."
+      }
+    },
+    {
+      "topic": "Information Projection and Code Projection",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The projection of one distribution onto another minimizes the relative entropy subject to a constraint on mean values under a certain transformation."
+      },
+        "framing": "coding theory",
+        "statement": "A code projection maps a high-dimensional 

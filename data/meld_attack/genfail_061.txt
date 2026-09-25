@@ -1,0 +1,155 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=discrete_math round=7 call=61
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=13357 (dump keeps first 6144 + last 6144; 1069 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Tree recursion and function iteration",
+      "entry_1": { "framing": "discrete math", "statement": "The number of full binary trees with n internal nodes satisfies a recurrence related to Catalan numbers." },
+      "entry_2": { "framing": "complex analysis", "statement": "The Catalan generating function satisfies a functional equation arising from self-similar recursive structures in complex iteration." }
+    },
+    {
+      "topic": "Exponential families and compositional inverses",
+      "entry_1": { "framing": "discrete math", "statement": "A class of structures forms an exponential family if its exponential generating function satisfies a multiplicative identity." },
+      "entry_2": { "framing": "complex analysis", "statement": "An exponential generating function corresponding to a combinatorial class has a compositional inverse that describes the decomposition of the class into connected components." }
+    },
+    {
+      "topic": "Singularities and asymptotic densities",
+      "entry_1": { "framing": "discrete math", "statement": "The dominant singularity of the generating function for a combinatorial class determines the exponential rate of the corresponding sequence." },
+      "entry_2": { "framing": "complex analysis", "statement": "The leading asymptotic behavior of a coefficient sequence is often governed by the modulus and index of the closest singularity to the origin." }
+    },
+    {
+      "topic": "Labelings and meromorphic behavior",
+      "entry_1": { "framing": "discrete math", "statement": "A labeled structure allows its automorphism group to be trivial, simplifying exponential generating function expressions." },
+      "entry_2": { "framing": "complex analysis", "statement": "A generating function for a class of labeled objects has meromorphic behavior due to the contributions of connected components and expansions." }
+    },
+    {
+      "topic": "Tree generation and logarithmic asymptotics",
+      "entry_1": { "framing": "discrete math", "statement": "The number of rooted labeled trees on n nodes grows asymptotically like n^{n−2}." },
+      "entry_2": { "framing": "complex analysis", "statement": "The generating function for rooted trees has a logarithmic singularity at the radius of convergence." }
+    },
+    {
+      "topic": "Self-avoiding walks and generating function divergence",
+      "entry_1": { "framing": "discrete math", "statement": "Self-avoiding walks on a lattice grow exponentially, but their generating function is divergent." },
+      "entry_2": { "framing": "complex analysis", "statement": "The radius of convergence of the generating function for self-avoiding walks is zero, indicating superexponential growth." }
+    },
+    {
+      "topic": "Noncrossing partitions and functional equations",
+      "entry_1": { "framing": "discrete math", "statement": "Noncrossing partitions on n elements form a Catalan-type structure." },
+      "entry_2": { "framing": "complex analysis", "statement": "The generating function for noncrossing partitions satisfies a functional equation with a quadratic term." }
+    },
+    {
+      "topic": "Implicit functions in combinatorics and complex solutions",
+      "entry_1": { "framing": "discrete math", "statement": "A recursive combinatorial class may be defined implicitly and expanded using inverse relations." },
+      "entry_2": { "framing": "complex analysis", "statement": "Implicitly defined generating functions often satisfy the conditions of the implicit function theorem in the complex plane." }
+    },
+    {
+      "topic": "Eulerian generating functions",
+      "entry_1": { "framing": "discrete math", "statement": "The exponential generating function for Eulerian numbers encodes the number of permutations with a given number of ascents." },
+      "entry_2": { "framing": "complex analysis", "statement": "The exponential generating function for Eulerian numbers is a rational function involving a Lambert-type series in z e^z." }
+    },
+    {
+      "topic": "Matrix tree theorem and eigenvalues",
+      "entry_1": { "framing": "discrete math", "statement": "The number of spanning trees of a graph is equal to the product of the nonzero eigenvalues of the Laplacian matrix." },
+      "entry_2": { "framing": "complex analysis", "statement": "The generating function for spanning trees can be expressed using a holomorphic determinant of a Green's function matrix near the origin." }
+    },
+    {
+      "topic": "Connected and unconnected structures",
+      "entry_1": { "framing": "discrete math", "statement": "The total number of graphs is the exponential of the generating function for connected graphs." },
+      "entry_2": { "framing": "complex analysis", "statement": "Connected components of a generating function appear multiplicatively in the full generating function via a logarithmic transformation." }
+    },
+    {
+      "topic": "Partition of functions by fixed points",
+      "entry_1": { "framing": "discrete math", "statement": "A function from a set to itself can be partitioned into fixed point components and their pre-images." },
+      "entry_2": { "framing": "complex analysis", "statement": "The exponential generating function for functions is expressible using exponential generating functions for fixed point counts and functional dependencies." }
+    },
+    {
+      "topic": "Linear recurrences and rational generating functions",
+      "entry_1": { "framing": "discrete math", "statement": "A sequence satisfying a linear recurrence with constant coefficients has a rational generating function." },
+      "entry_2": { "framing": "complex analysis", "statement": "A rational generating function corresponds to a recurrence relation that governs the asymptotic density via poles and residues." }
+    },
+    {
+      "topic": "Walks and analytic continuation",
+      "entry_1": { "framing": "discrete math", "statement": "The number of closed walks on a graph corresponds to the powers of its adjacency matrix." },
+      "entry_2": { "framing": "complex analysis", "statement": "The generating function for walks on a graph can be analytically
+
+... [1069 chars elided by dump_gen_failure] ...
+
+l generating function for involutions is obtained from the exponential of a square." },
+      "entry_2": { "framing": "complex analysis", "statement": "The exponential generating function for involutions is a meromorphic solution of a quadratic functional equation." }
+    },
+    {
+      "topic": "Recursive grammar and functional iteration",
+      "entry_1": { "framing": "discrete math", "statement": "A grammar generating a language may be recursive and expressed as a system of equations." },
+      "entry_2": { "framing": "complex analysis", "statement": "The generating function of a recursive grammar is defined through a functional equation and solved via iterative methods in the complex domain." }
+    },
+    {
+      "topic": "Chromatic generating function",
+      "entry_1": { "framing": "discrete math", "statement": "The chromatic polynomial of a graph counts the number of colorings with no two adjacent vertices sharing the same color." },
+      "entry_2": { "framing": "complex analysis", "statement": "The chromatic polynomial of a graph is an analytic function whose roots are called chromatic zeros and determine phase transition properties." }
+    },
+    {
+      "topic": "Automorphism groups of trees",
+      "entry_1": { "framing": "discrete math", "statement": "The size of the automorphism group of a tree depends on its symmetry structure." },
+      "entry_2": { "framing": "complex analysis", "statement": "The exponential generating function for trees can be expressed with a factor accounting for the exponential of the generating function of automorphism actions." }
+    },
+    {
+      "topic": "Lattice animals and polyomino counts",
+      "entry_1": { "framing": "discrete math", "statement": "The number of connected subsets of a square lattice with n squares is the number of polyominoes of order n." },
+      "entry_2": { "framing": "complex analysis", "statement": "The generating function for polyominoes is D-finite but diverges exponentially, governed by a critical radius from singularity analysis." }
+    },
+    {
+      "topic": "Cycle indices and symmetric groups",
+      "entry_1": { "framing": "discrete math", "statement": "Cycle indices encode the conjugacy classes of symmetric groups and can be used to enumerate orbits under group action." },
+      "entry_2": { "framing": "complex analysis", "statement": "The cycle index generating function for a group is an exponential generating function satisfying a modular or symmetric functional equation." }
+    },
+    {
+      "topic": "Plane trees and continued fractions",
+      "entry_1": { "framing": "discrete math", "statement": "The generating function for plane trees satisfies a system of equations expressible as a continued fraction." },
+      "entry_2": { "framing": "complex analysis", "statement": "Continued fraction expansions of generating functions for tree structures are meromorphic functions with an infinite number of poles." }
+    },
+    {
+      "topic": "Binary inclusion-exclusion identities",
+      "framing": "discrete math",
+      "statement": "Inclusion-exclusion for sets of size two gives identities that count differences of set sizes and intersections."
+    },
+    "entry_2": {
+      "framing": "complex analysis",
+      "statement": "Binary inclusion-exclusion principles correspond to identities in generating functions which reflect the analytic structure of derivatives and products."
+    },
+    {
+      "topic": "Asymptotic bounds from recurrence order",
+      "entry_1": { "framing": "discrete math", "statement": "A sequence defined by a linear recurrence of order d satisfies a bound growing at most like d^n." },
+      "entry_2": { "framing": "complex analysis", "statement": "The modulus of the largest root of the recurrence’s characteristic equation determines the exponential bound via the dominant singularity." }
+    },
+    {
+      "topic": "Euler characteristics and hypergraphs",
+      "entry_1": { "framing": "discrete math", "statement": "The Euler characteristic for a hypergraph can be expressed via a summation over its rank levels." },
+      "entry_2": { "framing": "complex analysis", "statement": "Hypergraphs with nontrivial Euler characteristics have generating functions that admit logarithmic or rational singular expansions." }
+    },
+    {
+      "topic": "Pólya enumeration via zeta functions",
+      "entry_1": { "framing": "discrete math", "statement": "Pólya enumeration encodes the number of colorings of a structure accounting for automorphism group symmetries." },
+      "entry_2": { "framing": "complex analysis", "statement": "The exponential generating function for colorings under group action can be expressed using a zeta function with functional equations over the complex domain." }
+    },
+    {
+      "topic": "Graph complements and generating function relations",
+      "entry_1": { "framing": "discrete math", "statement": "The generating function of a graph class and its complement class are related by simple algebraic identities." },
+      "entry_2": { "framing": "complex analysis", "statement": "The generating function for a graph class and its complement are mutually expressible via rational or logarithmic transforms." }
+    },
+    {
+      "topic": "Exponential bounds from modularity",
+      "entry_1": { "framing": "discrete math", "statement": "A sequence with exponential growth rate can be expressed as the product of its modulus and a multiplicative error term." },
+      "entry_2": { "framing": "complex analysis", "statement": "The exponential growth rate of a sequence is determined by the modulus of a pole in the generating function, via the Wiener–Ikehara theorem." }
+    },
+    {
+      "topic": "Dependence on graph density",
+      "entry_1": { "framing": "discrete math", "statement": "The number of subgraphs of a fixed density in a complete graph is expressible using binomial coefficients and degree distributions." },
+      "entry_2": { "framing": "complex analysis", "statement": "Subgraph density generating functions exhibit modular behavior determined by the analytic continuation of logarithmic expressions in the plane." }
+    }
+  ]
+}
+```

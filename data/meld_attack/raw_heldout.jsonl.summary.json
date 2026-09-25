@@ -1,0 +1,21 @@
+{
+  "group": "heldout",
+  "backend": "vllm",
+  "model": "Qwen/Qwen3-32B-AWQ",
+  "n_domain_pairs": 27,
+  "rounds": 8,
+  "pairs_per_call": 30,
+  "seed": 0,
+  "n_pairs_generated": 4150,
+  "n_accepted_by_screen": 1805,
+  "n_dedup_dropped": 35,
+  "n_generation_calls": 162,
+  "n_generation_json_failures": 22,
+  "gen_json_success_rate": 0.8642,
+  "min_pairs_per_successful_call": 19,
+  "mean_pairs_per_successful_call": 29.64,
+  "n_judge_json_failures": 0,
+  "pct_could_be_less_similar": 93.66,
+  "unique_topics": 4007,
+  "runtime_s": 1498.1
+}

@@ -1,0 +1,158 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=quadratic_forms round=6 call=155
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=18504 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "genera coincidence",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "Let $ f $ and $ g $ be definite integral quadratic forms of the same dimension with equal discriminant scale and equal Hasse-Witt invariants over all $ p $-adic fields and over $ \mathbb{R} $, then $ f $ and $ g $ belong to the same genus."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "Suppose $ L $ and $ M $ are definite, even, integral lattices of the same rank with equal covolume and equal local densities at all primes and at the real place, then $ L $ and $ M $ lie in the same genus."
+      }
+    },
+    {
+      "topic": "transpose equivalence",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "If the Gram matrix of a quadratic form $ f $ is equal to the transpose of the Gram matrix of another form $ g $, then $ f $ and $ g $ are equivalent under permutation of variables."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "If the bilinear form associated with lattice $ L $ coincides with the transpose of the bilinear form of lattice $ M $, then $ L $ and $ M $ are isometric after change of basis."
+      }
+    },
+    {
+      "topic": "fractional isometric space",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "The space of integral quadratic forms over $ \mathbb{Q} $ admitting an isometry to a fixed form $ f $ is a homogeneous space for the orthogonal group of $ f $."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "The set of all lattices isometric to a fixed integral lattice $ L $ forms a homogeneous space under the action of the integral orthogonal group of $ L $."
+      }
+    },
+    {
+      "topic": "reflexively orthogonal sum",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "Let $ f, g $ be non-degenerate quadratic forms over $ \mathbb{Q} $. If their duals are orthogonal with respect to the tensor product of bilinear forms, then their orthogonal sum is self-reflexive."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "Suppose $ L, M $ are lattices whose duals are orthogonal with respect to the tensor product pairing; then $ L \oplus M $ is a reflexive lattice."
+      }
+    },
+    {
+      "topic": "isotropic embedding dual",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "Let $ f $ be a non-degenerate quadratic form with a nontrivial isotropic vector $ v $; the dual form $ f^* $ admits an isotropic embedding if and only if $ f $ has an isotropic subspace of codimension 1."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "Let $ L $ be an integral lattice containing a non-zero vector of norm 0; the dual lattice $ L^\vee $ admits an isotropic embedding of rank one less than $ L $ if and only if $ L $ has a maximal isotropic sublattice."
+      }
+    },
+    {
+      "topic": "adjoint rank-preserving",
+      "statement": "Let $ f $ and $ g $ be quadratic forms over $ \mathbb{Q} $; the condition that $ g $ is isometric to the adjoint of $ f $ implies that $ f $ and $ g $ have equal rank."
+    },
+    "entry_2": {
+      "framing": "integral lattices",
+      "statement": "Suppose $ L $ and $ M $ are lattices such that $ M $ is isometric to the dual of $ L $; then $ L $ and $ M $ must have the same rank."
+    }
+    },
+    {
+      "topic": "minimal co-metric form",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "Among all integral quadratic forms in the genus of $ f $, those with minimal minimal norm correspond to the minimal co-metric representatives of the dual forms."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "Among all lattices in the genus of $ L $, the minimal ones have duals with minimal minimal norm, corresponding to the minimal co-metric representatives."
+      }
+    },
+    {
+      "topic": "symmetric generator set",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "A quadratic form $ f $ admits a symmetric generating set for its coefficient matrix if and only if it is isometric to its dual form under the adjoint isomorphism."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "A lattice $ L $ admits a symmetric basis under the dual bilinear form if and only if its dual lattice $ L^\vee $ is isometric to $ L $."
+      }
+    },
+    {
+      "topic": "splitting isomorphism",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "Let $ f $ be a definite integral form; then $ f $ is isometric to a split form if and only if $ f \otimes \mathbb{Q} $ is Witt equivalent to the trivial form."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "Let $ L $ be a definite lattice over $ \mathbb{Z} $; then $ L $ is isometric to a split lattice if and only if $ L \otimes \mathbb{Q} $ has zero Witt class."
+      }
+    },
+    {
+      "topic": "metric surjection",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "Let $ f $ and $ g $ be definite integral quadratic forms with $ f $ surjecting onto $ g $ via isometry. Then the discriminant of $ g $ divides the discriminant of $ f $."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "Let $ L $ and $ M $ be definite integral lattices where $ L $ isometrically surjects onto $ M $. Then the covolume of $ M $ divides the covolume of $ L $."
+      }
+    },
+    {
+      "topic": "cyclically uniform norm",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "A quadratic form $ f $ is cyclically uniform if its values on all cyclic subspaces of dimension at least 2 have the same discriminant modulo square classes."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "An integral lattice $ L $ is cyclically uniform if the lattices generated by any cyclic subset of $ L $ of rank at least 2 have proportional covolumes."
+      }
+    },
+    {
+      "topic": "Hermitian dual overlap",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "Let $ f $ be a quadratic form over a number field. The dual form $ f^* $ is Hermitian over a quadratic extension if and only if $ f $ is isometric to a Hermitian form restricted from that extension."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "Let $ L $ be an integral lattice over $ \mathbb{Z} $. The dual lattice $ L^\vee $ is a Hermitian lattice over the ring of integers of a quadratic extension if and only if $ L $ is a Hermitian lattice pulled back from that extension."
+      }
+    },
+    {
+      "topic": "systole equivalence",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "If two definite integral quadratic forms $ f $ and $ g $ have isomorphic systolic norms and the same minimal norm, then they belong to the same isometry class under rational equivalence."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "If two definite integral lattices $ L $ and $ M $ have the same minimal norm and isometric systole sublattices, then they lie in the same isometry class under rational equivalence."
+      }
+    },
+    {
+      "topic": "modular image congruence",
+      "entry_1": {
+        "framing": "quadratic forms",
+        "statement": "Let $ f $ be a quadratic form over $ \mathbb{Q} $. The modular image of $ f $ under a prime $ p $ is defined by the image of its values modulo $ p $, and is congruent to the modular image of $ g $ if and only if $ f $ and $ g $ are isometric modulo $ p $."
+      },
+      "entry_2": {
+        "framing": "integral lattices",
+        "statement": "Let $ L $ be an integral lattice. The modular reduction of $ L $ mod $ p $ defines a lattice over $ \mathbb{F}_p $, and two lattices $ L $ and $ M $ have congruent reductions mod $ p $ if an

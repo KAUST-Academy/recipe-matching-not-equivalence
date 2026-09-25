@@ -1,0 +1,159 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=foundations round=5 call=39
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=12017 (dump keeps first 6144 + last 6144; 0 elided)
+------------------------------------------------------------------------
+```json
+{"pairs": [
+  {
+    "topic": "function_image_as_colimit_of_points",
+    "entry_1": {"framing": "set theory", "statement": "The image of a function is the union of the images of all singleton subsets of its domain."},
+    "entry_2": {"framing": "category theory", "statement": "The image of a morphism is the colimit of the diagram indexed by the points of its domain object."}
+  },
+  {
+    "topic": "characteristic_function_as_section",
+    "entry_1": {"framing": "set theory", "statement": "A subset is characterized by its characteristic function, which is 1 on the subset and 0 elsewhere."},
+    "entry_2": {"framing": "category theory", "statement": "A subobject is classified by a morphism from the object to the subobject classifier which is a section of the true morphism."}
+  },
+  {
+    "topic": "function_pullback_square_property",
+    "entry_1": {"framing": "set theory", "statement": "Given a function $ f: A \to C $ and a subset $ B \subseteq C $, the pullback of $ f $ along the inclusion $ B \subseteq C $ is the subset $ f^{-1}(B) $ in $ A $."},
+    "entry_2": {"framing": "category theory", "statement": "Given a morphism $ f: A \to C $ and a subobject $ B \subseteq C $, the pullback of $ f $ along the monic representing $ B $ yields the subobject corresponding to $ f^{-1}(B) $."}
+  },
+  {
+    "topic": "function_image_with_relation",
+    "entry_1": {"framing": "set theory", "statement": "The image of a function $ f: A \to B $ along a relation $ R \subseteq A \times C $ is the image of the composition $ f \circ R $ seen as a multi-valued map."}
+    "entry_2": {"framing": "category theory", "statement": "The image of a morphism $ f: A \to B $ composed with a relation (a span) $ R $ is the image of the resulting composite span as a cospan."}
+  },
+  {
+    "topic": "function_image_pullback_along_surjection",
+    "entry_1": {"framing": "set theory", "statement": "If $ f: A \to B $ is a function and $ g: C \to B $ is surjective, then the pullback of $ f $ along $ g $ is a set whose image under the projection to $ A $ is the same as the image of $ f $. }),
+    "entry_2": {"framing": "category theory", "statement": "If $ f: A \to B $ is any morphism and $ g: C \to B $ is an epimorphism, then the pullback of $ f $ along $ g $ is a morphism whose image (in the factorization sense) corresponds to the image of $ f $.}
+  },
+  {
+    "topic": "function_composition_as_vertical_composite",
+    "entry_1": {"framing": "set theory", "statement": "Given functions $ f: A \to B $ and $ g: B \to C $, their composition $ g \circ f: A \to C $ assigns to each element in $ A $ the value of $ g(f(x)) $."),
+    "entry_2": {"framing": "category theory", "statement": "Given morphisms $ f: A \to B $ and $ g: B \to C $, their composition $ g \circ f: A \to C $ is the vertical composite in the hom category."}
+  },
+  {
+    "topic": "function_image_property_with_surjection",
+    "entry_1": {"framing": "set theory", "statement": "If $ f: A \to B $ is a function and $ g: B \to C $ is surjective, then $ g(f(A)) = g(B) $. },
+    "entry_2": {"framing": "category theory", "statement": "If $ f: A \to B $ is a morphism and $ g: B \to C $ is an epimorphism, then the image of $ g \circ f $ is isomorphic to the codomain of $ g $. }
+  },
+  {
+    "topic": "function_pullback_commutative_square",
+    "entry_1": {"framing": "set theory", "statement": "Given a function $ f: A \to C $ and a function $ g: B \to C $, the pullback set is the set of pairs $ (a, b) $ such that $ f(a) = g(b) $.},
+    "entry_2": {"framing": "category theory", "statement": "Given a morphism $ f: A \to C $ and a morphism $ g: B \to C $, the pullback object satisfies the property $ f \circ p = g \circ q $ in the pullback square."}
+  },
+  {
+    "topic": "function_image_in_union_property",
+    "entry_1": {"framing": "set theory", "statement": "The image of a function over the union of two sets is the union of their individual images."},
+    "entry_2": {"framing": "category theory", "statement": "The image of a morphism over the coproduct of two objects is the coproduct of the images of the restricted morphisms."}
+  },
+  {
+    "topic": "function_image_intersection_property_weak",
+    "entry_1": {"framing": "set theory", "statement": "If $ f $ maps subsets $ A $ and $ B $, the image of the intersection may be a proper subset of the intersection of the images." },
+    "entry_2": {"framing": "category theory", "statement": "The image of the product of subobjects may fail to be the product of the images unless the morphism is monic."}
+  },
+  {
+    "topic": "pullback_object_shape",
+    "entry_1": {"framing": "set theory", "statement": "The pullback of two functions into a common set is the set of pairs where the function outputs agree." },
+    "entry_2": {"framing": "category theory", "statement": "The pullback of two morphisms into a common object is the object of pairs where the morphisms become equalized."}
+  },
+  {
+    "topic": "function_coimage_pullback",
+    "entry_1": {"framing": "set theory", "statement": "The coimage of a function $ f $ is the partition of the domain into the preimages of the elements of the image." },
+    "entry_2": {"framing": "category theory", "statement": "The coimage of a morphism $ f $ is the quotient of the domain by the equivalence relation induced by $ f $."}
+  },
+  {
+    "topic": "function_image_as_coinserter",
+    "entry_1": {"framing": "set theory", "statement": "The image of a function is the smallest set containing all the images of the domain elements under it." },
+    "entry_2": {"framing": "category theory", "statement": "The image of a morphism is the coinserter of the pair of morphisms obtained from the domain’s diagonal."}
+  },
+  {
+    "topic": "function_pullback_as_equalizer",
+    "entry_1": {"framing": "set theory", "statement": "The pullback of a function along an injective function corresponds to the inverse image set." },
+    "entry_2": {"framing": "category theory", "statement": "The pullback of a morphism along a monomorphism is computed as the equalizer of the composite pair."}
+  },
+  {
+    "topic": "function_pullback_and_product",
+    "entry_1": {"framing": "set theory", "statement": "The pullback of two functions into a common codomain is a subset of the product of their domains." },
+    "entry_2": {"framing": "category theory", "statement": "The pullback of two morphisms into a common codomain is a subobject of the product of the domains."}
+  },
+  {
+    "topic": "function_image_as_coequalizer_of_diagonals",
+    "entry_1": {"framing": "set theory", "statement": "The image of a function is the set obtained by identifying pairs of elements in the domain that map to the same value." },
+    "entry_2": {"framing": "category theory", "statement": "The image of a morphism is the coequalizer of the domain’s diagonal pair."}
+  },
+  {
+    "topic": "function_image_commutation_with_intersection",
+    "entry_1": {"framing": "set theory", "statement": "If $ f $ is injective, the image of the intersection of two sets is the intersection of their images." },
+    "entry_2": {"framing": "category theory", "statement": "If $ f $ is monic, the image of the product of two subobjects is the product of the images."}
+  },
+  {
+    "topic": "function_image_property_with_injection",
+    "entry_1": {"framing": "set theory", "statement": "If $ f $ is an injective function and $ A \subseteq B $, then $ f(A \cap B) = f(A) \cap f(B) $." },
+    "entry_2": {"framing": "category theory", "statement": "If $ f $ is a monomorphism and $ A \subseteq B $, then $ f(A \cap B) \cong f(A) \cap f(B) $."}
+  },
+  {
+    "topic": "function_coimage_as_quotient_set",
+    "entry_1": {"framing": "set theory", "statement": "The coimage of a function is the set of equivalence classes under the equivalence relation defined by the function." },
+    "entry_2": {"framing": "category theory", "statement": "The coimage of a morphism is the quotient of the domain by the kernel pair."}
+  },
+  {
+    "topic": "function_pullback_of_mono",
+    "entry_1": {"framing": "set theory", "statement": "The pullback of a monomorphism is an injective function." },
+    "entry_2": {"framing": "category theory", "statement": "The pullback of a monomorphism along an arbitrary morphism is again a monomorphism."}
+  },
+  {
+    "topic": "function_composition_factorization",
+    "entry_1": {"framing": "set theory", "statement": "The image of a composition of functions is the image of the outer function restricted to the image of the inner." },
+    "entry_2": {"framing": "category theory", "statement": "The image of a composite morphism is the image of the second factor composed with the image of the first."}
+  },
+  {
+    "topic": "function_image_pushout_property",
+    "entry_1": {"framing": "set theory", "statement": "If $ f $ maps two sets and we take their union, the pushout corresponds to the image of the disjoint union under $ f $." },
+    "entry_2": {"framing": "category theory", "statement": "The pushout of two morphisms to a common domain is the image of the coproduct of the domains along the morphism to the codomain."}
+  },
+  {
+    "topic": "function_image_union_property",
+    "entry_1": {"framing": "set theory", "statement": "The image of a union of sets under a function is the union of the images." },
+    "entry_2": {"framing": "category theory", "statement": "The image of a coproduct of subobjects under a morphism is the coproduct of the images."}
+  },
+  {
+    "topic": "function_commutation_with_quotient",
+    "entry_1": {"framing": "set theory", "statement": "A function commuting with a quotient function induces a function between the quotient image and the target space." },
+    "entry_2": {"framing": "category theory", "statement": "A morphism commuting with a coequalizer induces a morphism from the coimage to the codomain."}
+  },
+  {
+    "topic": "function_image_pullback_pullback",
+    "entry_1": {"framing": "set theory", "statement": "The image of a function defined by pullbacks is the set of pairs whose images agree under two maps." },
+    "entry_2": {"framing": "category theory", "statement": "The image of a morphism in a pullback diagram is the subobject of the domain where the two maps agree."}
+  },
+  {
+    "topic": "function_inverse_image_colimit_property",
+    "entry_1": {"framing": "set theory", "statement": "The inverse image of a union under a function is the union of the inverse images." },
+    "entry_2": {"framing": "category theory", "statement": "The inverse image of a colimit under a morphism is the colimit of the inverse images."}
+  },
+  {
+    "topic": "function_image_colimit_property",
+    "entry_1": {"framing": "set theory", "statement": "The image of the union of a collection of sets is the union of the images." },
+    "entry_2": {"framing": "category theory", "statement": "The image of the colimit of a diagram of subobjects is the colimit of the images."}
+  },
+  {
+    "topic": "function_intersection_property_with_morphism",
+    "entry_1": {"framing": "set theory", "statement": "If two sets have disjoint images under a function, then their intersection maps to the empty set." },
+    "entry_2": {"framing": "category theory", "statement": "If two subobjects have images that are disjoint via a morphism, their intersection is zero."}
+  },
+  {
+    "topic": "function_pullback_diagram_property",
+    "entry_1": {"framing": "set theory", "statement": "Given a function and two pullbacks, the resulting pullback of the pullbacks is again a pullback." },
+    "entry_2": {"framing": "category theory", "statement": "Given a morphism and two pullback squares, the composite square is again a pullback."}
+  },
+  {
+    "topic": "function_image_coproduct_commutation",
+    "entry_1": {"framing": "set theory", "statement": "The image of a function defined on a disjoint union is the union of the images of the parts." },
+    "entry_2": {"framing": "category theory", "statement": "The image of a morphism out of a coproduct is the coproduct of the images of the component morphisms."}
+  }
+]}
+```

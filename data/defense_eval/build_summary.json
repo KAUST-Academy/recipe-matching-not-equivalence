@@ -1,0 +1,15 @@
+{
+  "shared_slice": 1525,
+  "eval_dirs": [
+    "exact",
+    "mixed",
+    "orig",
+    "paraphrase",
+    "style"
+  ],
+  "mixed_assignment_counts": {
+    "exact": 467,
+    "paraphrase": 513,
+    "style": 545
+  }
+}

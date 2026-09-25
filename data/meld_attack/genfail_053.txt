@@ -1,0 +1,284 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=representation_theory round=6 call=53
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=15075 (dump keeps first 6144 + last 6144; 2787 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Harmonic synthesis via irreducibles",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "Any function in the space of a unitary representation can be synthesized as an integral over matrix coefficients of irreducible representations."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "Any square-integrable function can be reconstructed as an integral of its Fourier components in terms of group characters and matrix elements."
+      }
+    },
+    {
+      "topic": "Integral operators as intertwining",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "An integral operator intertwining two representations is determined by its kernel transforming in the dual of the first and corresponding to the second."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A convolution-like operator mapping one Fourier space to another must respect the frequency transformation laws dictated by the dual group."
+      }
+    },
+    {
+      "topic": "Injective representations and sampling",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "An injective representation preserves distinctness of vectors under the group action, making its orbit map an embedding."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A faithful Fourier transform assigns distinct spectral coefficients to distinct input functions under the group action."
+      }
+    },
+    {
+      "topic": "Multiplicative characters and additive transforms",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "A multiplicative character of an abelian group gives rise to a diagonal representation of its dual in the Fourier basis."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A multiplicative character of a compact abelian group appears as an exponential frequency in its Fourier series."
+      }
+    },
+    {
+      "topic": "Automorphic relations and duality",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "If two representations are automorphic, their matrix coefficients satisfy dual integrability conditions."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "If two Fourier transforms satisfy an automorphic correspondence, their integrability is mirrored over the group and dual space."
+      }
+    },
+    {
+      "topic": "Principal series and harmonic expansions",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "A principal series representation provides a model in which harmonic functions decompose according to parabolic induction."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A Fourier expansion over a non-abelian group may be realized via its projection onto a parabolically extended frequency space."
+      }
+    },
+    {
+      "topic": "Eigenspaces as Fourier bands",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "The projection onto an irreducible subspace of a unitary representation is an eigenoperator of convolution with group-invariant functions."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "Band-limited convolution with radial functions leaves Fourier modes corresponding to a fixed harmonic subspace invariant."
+      }
+    },
+    {
+      "topic": "Orthogonal systems and invariant functionals",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "An orthonormal system of matrix elements corresponds to a basis of functionals invariant under the adjoint action."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "An orthonormal set of Fourier components corresponds to invariants of the dual group’s inverse action."
+      }
+    },
+    {
+      "topic": "Invariant mean and central functions",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "The existence of an invariant mean on the space of a representation implies the central decomposition of its space."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "The mean-value property of a central function under the group action ensures the convergence of its central Fourier modes."
+      }
+    },
+    {
+      "topic": "Exponential decay and tempered representations",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "Tempered representations are those whose matrix coefficients exhibit rapid decay as a function of the group parameter."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "The decay condition on the Fourier transform of a signal ensures that it is compatible with tempered distributions."
+      }
+    },
+    {
+      "topic": "Non-conjugate intertwiners and mode shift",
+      "entry_1": {
+        "framing": "representation theory",
+        "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "Non-conjugate intertwining operators induce frequency shifts that are not compatible with group automorphism."
+      }
+    },
+    {
+      "topic": "Schur projections and filter banks",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "A Schur projection onto a specific isotypic component maps the space of the representation to a module of invariant operators."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A bandpass filter bank that integrates out all but a single frequency harmonic is a Schur projection in the Fourier sense."
+      }
+    },
+    {
+      "topic": "Irreducible actions and modularity",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "An irreducible module over a Lie group admits a modular invariant under which the action is balanced at e
+
+... [2787 chars elided by dump_gen_failure] ...
+
+."
+      }
+    },
+    {
+      "topic": "Operator traces and character integrals",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "The trace of an operator over a representation can be evaluated by integrating its matrix elements against the character over the group."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "The trace of an operator in the Fourier transform domain is determined by integrating its frequency modes over the dual group with the inverse transform."
+      }
+    },
+    {
+      "topic": "Compact supports and finite spectra",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "A function with compact group support yields a finite spectral decomposition in terms of irreducible representations."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A compactly supported function on a non-abelian group has Fourier transform supported on a finite subset of the dual space."
+      }
+    },
+    {
+      "topic": "Translation invariance and harmonic invariance",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "A translation-invariant operator is diagonal in a basis of irreducible representations."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A translation-invariant operator on the group reduces to a pointwise operator in the Fourier basis."
+      }
+    },
+    {
+      "topic": "Norm preservation and orthogonality",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "The decomposition of a normed space under the group action preserves orthogonality between irreducible subspaces."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A norm-preserving operator on a Hilbert space respects the orthogonality between distinct harmonic modes in the Fourier expansion."
+      }
+    },
+    {
+      "topic": "Stabilizer subgroups and frequency localization",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "The stabilizer subgroup of a vector under a representation action determines the frequency localization in its matrix coefficient."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "The stabilizer of a frequency mode in the Fourier transform domain corresponds to its pointwise invariance under group convolution."
+      }
+    },
+    {
+      "topic": "Bounded operators and frequency band limitations",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "A bounded linear operator on a representation decomposes with uniform bounds across each irreducible summand."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A bounded linear operator on the Hilbert space decomposes with bounded coefficients across each frequency band in its Fourier components."
+      }
+    },
+    {
+      "topic": "Lifting operators to dual spaces",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "A representation of a subgroup can be lifted to a projective representation of the full group with kernel determined by the character of the centralizer."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A function over a dual subgroup can be lifted to a twisted transform of the dual space with kernel defined by convolution over the centralizer set."
+      }
+    },
+    {
+      "topic": "Intertwiners and orthogonality relations",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "Intertwiners between irreducible representations vanish when the representations are not equivalent."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "Orthogonal Fourier components have vanishing cross-correlation under the inner product structure."
+      }
+    },
+    {
+      "topic": "Positive definite functions and invariant pairs",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "A positive definite function corresponds to a matrix coefficient of a unitary representation with an invariant inner product."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "A positive definite function over a group corresponds to the inverse Fourier transform of a non-negative measure on the dual space."
+      }
+    },
+    {
+      "topic": "Haar measure and Fourier normalization",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "The Haar measure on the group normalizes the integral of a character function over the group."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "The normalization of the Fourier transform uses the Haar integral to maintain unitarity and symmetry between the group and its dual."
+      }
+    },
+    {
+      "topic": "Induced operators and extension maps",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "An operator on an induced representation extends uniquely from an operator on the base representation if intertwining conditions are satisfied."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "An operator mapping a restricted Fourier transform extends to a convolution operator over the entire group if it respects boundary conditions."
+      }
+    },
+    {
+      "topic": "Admissible functions and reconstruction",
+      "entry_1": {
+        "framing": "representation theory",
+        "statement": "An admissible vector in a unitary representation ensures the perfect reconstruction of the group element via convolution with its matrix coefficients."
+      },
+      "entry_2": {
+        "framing": "Fourier analysis",
+        "statement": "An admissible function in the Fourier transform domain guarantees that the original signal can be reconstructed from its wavelet coefficients."
+      }
+    }
+  ]
+}
+```

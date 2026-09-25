@@ -1,0 +1,293 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=algebraic_combinatorics round=10 call=90
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=14569 (dump keeps first 6144 + last 6144; 2281 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Schur functions from shifted tableaux",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "The Schur function $ s_\lambda $ can be expressed as a sum over shifted semistandard Young tableaux with content corresponding to the partition $ \lambda $."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "A shifted semistandard Young tableau of shape $ \lambda $ contributes a term to the Schur function $ s_\lambda $ determined by its content."
+      }
+    },
+    {
+      "topic": "Rectangular Schur from column completions",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "The Schur function for a rectangular shape can be computed by summing over all possible column completions that preserve content compatibility."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Every column completion of a Young tableau for a rectangle yields a unique filling that contributes to the Schur function of that rectangle."
+      }
+    },
+    {
+      "topic": "Schensted's theorem via content tracking",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "The Schensted theorem links the longest increasing subsequence of a word to the shape of the tableau constructed under row insertion, affecting Schur content."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "The shape of the tableau produced by Schensted insertion reflects content-related properties of the word, with content stabilized at the longest increasing subsequence."
+      }
+    },
+    {
+      "topic": "Irreducible representation content",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "The irreducible representation of the symmetric group indexed by $ \lambda $ is encoded in the Schur function $ s_\lambda $, characterized by its stable content over symmetric functions."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "An irreducible representation is determined by the content and shape of tableaux counted under the RSK correspondence."
+      }
+    },
+    {
+      "topic": "Character content from symmetric function traces",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Character values of the symmetric group appear as traces of operators on the symmetric function ring indexed by Schur function content."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Character content is determined by the distribution of standard Young tableau shapes under representation labelling."
+      }
+    },
+    {
+      "topic": "Symmetric function row content dominance",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Schur function content corresponds to row dominance ordering of the symmetric function ring over the monomial basis."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Row dominance can be visualized in tableaux content via increasing row filling and column constraints."
+      }
+    },
+    {
+      "topic": "Loop Schur and cyclic tableau shapes",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Loop Schur functions incorporate cyclic content weights that are dual to cyclic tableau shapes under modular insertion rules."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Cyclic tableaux align with loop Schur content through rotational shape constraints reflecting modular content."
+      }
+    },
+    {
+      "topic": "Content via quantum symmetrization",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Symmetrization of a monomial with quantum parameters leads to a Schur function expression with content distributed over quantum tensor weights."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Quantum tensor symmetrization aligns with content-based weight filling over tableaux shape preserving quantum dimensions."
+      }
+    },
+    {
+      "topic": "Schur from column sum identities",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "The Schur function $ s_\lambda $ can be expressed as a product over column sums of its underlying monomial content via a symmetrizing operator."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Column sums in a tableau correspond to generating functions for Schur functions derived from symmetrized content placement."
+      }
+    },
+    {
+      "topic": "Dual monomial content",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Monomial symmetric functions appear in the expansion of Schur functions and encode dual content enumerations over Young diagrams."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Dual content is derived from monomial coefficients over tableaux with repeated content entries in different rows."
+      }
+    },
+    {
+      "topic": "Schur from domino tiling content",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Domino tiling counts of a skew shape correspond to Schur function evaluations with content from domino tile assignments."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Schur functions can be expressed as generating functions for domino tiling content indexed over Young diagrams."
+      }
+    },
+    {
+      "topic": "Schur function vertex constraint",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "The Schur function evaluated at vertex weights equals the generating function for edge-colored paths with constraint-compatible content."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Edge-colored paths with vertex constraints correspond to content-rich tableau constructions labeled by Schur weights."
+      }
+    },
+    {
+      "topic": "Young la
+
+... [2281 chars elided by dump_gen_failure] ...
+
+ Schur product equivalence."
+      }
+    },
+    {
+      "topic": "Shape content positivity",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Positivity of Schur functions over content weightings reflects tableau content positivity under Schur content bilinear forms."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Tableau content positivity is preserved under Schur function positivity in the content-weighted monomial basis."
+      }
+    },
+    {
+      "topic": "Content vacillations",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Vacillating content sequences encode Schur content and generate symmetric function eigenvalues over tableau vacuum states."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Vacillating insertion sequences stabilize tableau vacua under Schur content weightings."
+      }
+    },
+    {
+      "topic": "Schur content saturation",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Saturation of Schur content under maximal content configurations stabilizes symmetric function ring expansions over tensor products."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Tableaux content saturate under maximal row and column weightings indexed by Schur function component saturations."
+      }
+    },
+    {
+      "topic": "Stable content for skew Schur",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "The stable limit of skew Schur functions corresponds to symmetric function content derived from tableau skew completion."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Skew tableau completions stabilize content as row insertions complete the outer shape."
+      }
+    },
+    {
+      "topic": "Content from recording tableaux",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Schur content is recoverable from the recording tableau generated by RSK algorithm bijections on content-labeled words."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "The content of the recording tableau reflects the original word used in the RSK algorithm to build the Schur function."
+      }
+    },
+    {
+      "topic": "Column content dominance",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Column content in symmetric functions reflects dominance over column weightings of Schur functions indexed by shape."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Column weights in a tableau establish dominance relations over tableaux shape under column-based content constraints."
+      }
+    },
+    {
+      "topic": "Band content distribution",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Schur function content is distributed across bands that are indexed by row offsets over Young diagram columns."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Tableau content can be distributed across bands where each band corresponds to a diagonal offset in the Young diagram."
+      }
+    },
+    {
+      "topic": "Schur function from shifted content",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "A shifted Schur function arises from symmetric functions that incorporate offset content distributions over decreasing skew shapes."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "A shifted tableau shape with offset content aligns with the shifted Schur function derived from decreasing skew tableau completions."
+      }
+    },
+    {
+      "topic": "Dual shape content",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "The dual shape content of a Schur function corresponds to symmetric function stabilizations under transposed Young diagram labelling."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Transposed tableau content generates a dual shape with content labeling equivalent to the original content under transpose."
+      }
+    },
+    {
+      "topic": "Schur function and content evaluation",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Evaluation of a Schur function at a set of content variables reproduces tableau counts with specified content vectors."
+      },
+        "framing": "tableaux",
+        "statement": "Assigning tableau content values to a set of variables generates evaluations matching Schur function variables indexed by shape."
+      }
+    },
+    {
+      "topic": "Compressed content in Schur functions",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Compressed Schur functions arise from content compression operators applied to Young diagram row expansions."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Row content compression in tableaux produces compressed Schur functions over column-stabilized tableau shapes."
+      }
+    },
+    {
+      "topic": "Cohomological content",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "Cohomological content in Schur functions corresponds to intersection indices over Schubert varieties indexed by Young diagrams."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Cohomological tableau content derives from Schubert shape statistics indexed by tableau fillings over flag varieties."
+      }
+    },
+    {
+      "topic": "Schur function content collapse",
+      "entry_1": {
+        "framing": "symmetric functions",
+        "statement": "A content collapse operator maps symmetric function content to reduced content Schur functions indexed by compressed partitions."
+      },
+      "entry_2": {
+        "framing": "tableaux",
+        "statement": "Tableau content collapse preserves shape under row-symmetric reductions to compressed Young diagrams."
+      }
+    }
+  ]
+}
+```

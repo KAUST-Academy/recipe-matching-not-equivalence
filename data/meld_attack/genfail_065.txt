@@ -1,0 +1,183 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=information_theory round=3 call=65
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=14572 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Joint Entropy and Codebook Covariance",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The joint entropy of two discrete random variables is the infimum over all source codes that achieve the sum of their individual entropies when coded separately."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The covariance of codeword pairs in a jointly designed codebook equals the expected logarithmic size of the decoding regions under product priors."
+      }
+    },
+    {
+      "topic": "Entropy and Code Length Constraints",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "For a finite-alphabet source, the expected codeword length under a uniquely decodable code is bounded below by the entropy rate."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The mean normalized length of a code for a stationary source cannot fall below the entropy of the source distribution."
+      }
+    },
+    {
+      "topic": "Mutual Information and Codebook Complexity",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The mutual information between a source and its representation is the reduction in representation entropy induced by structured encoding."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The number of codewords required to represent a source with limited distortion is logarithmically related to the mutual information between the source and code symbols."
+      }
+    },
+    {
+      "topic": "Differential Entropy and Continuous Codebook Density",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The differential entropy of a continuous random variable provides a lower bound on the logarithm of the volume of the typical set."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The density of codeword placement in a real-valued codebook is directly proportional to the negative differential entropy of the source."
+      }
+    },
+    {
+      "topic": "Conditional Mutual Information and Side Code Indexing",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "Conditional mutual information quantifies the information a random variable provides about another when a third variable is observed."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "A side code index allows compression of a variable when its dependence is restricted through a third codeword structure."
+      }
+    },
+    {
+      "topic": "Source Uncertainty and Codebook Coverage",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The entropy of a source quantifies the average uncertainty of its realizations under the probability model."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "The volume of the space that a codebook can cover is bounded above by the exponential of the source entropy."
+      }
+    },
+    {
+      "topic": "Channel Confusion and Codebook Aliasing",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "Channel confusion is the probability that a channel maps a given input to a correct output when the inputs are selected by an adversary."
+      },
+      "entry_2": {
+        "framing": "coding theory",
+        "statement": "Aliasing in a codebook manifests as overlaps between distorted images of codewords under a noisy channel transition map."
+      }
+    },
+    {
+      "topic": "Channel Input Distribution and Code Training",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "Optimal channel input distribution maximizes mutual information with the channel output when the channel is memoryless."
+      },
+        "framing": "coding theory",
+        "statement": "Code design should match the training distribution to the distortion model induced by the underlying channel characteristics."
+      }
+    },
+    {
+      "topic": "Information Stability and Code Construction",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "A stationary source satisfies information stability if the limit of the normalized entropy of its block behaviors is well-defined."
+      },
+        "framing": "coding theory",
+        "statement": "A well-structured code satisfies stability when the limit of codeword logarithmic volumes converges uniformly over time."
+      }
+    },
+    {
+      "topic": "Entropy Bounds and Code Minimum Density",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The entropy of a source constrains the minimum expected number of bits needed for uniquely decodable encoding over all messages."
+      },
+        "framing": "coding theory",
+        "statement": "The minimum density of a discrete code satisfies a logarithmic upper bound imposed by the source entropy."
+      }
+    },
+    {
+      "topic": "Information Rate and Code Density",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The information rate of a stationary process is the asymptotic entropy per symbol."
+      },
+        "framing": "coding theory",
+        "statement": "The code density rate measures the exponential growth of codeword quantity as a function of length."
+      }
+    },
+    {
+      "topic": "Mutual Information and Codebook Overlap",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "Mutual information measures how knowledge of one random variable reduces the uncertainty in the other."
+      },
+        "framing": "coding theory",
+        "statement": "The overlap between pairs of codebooks reflects the information exchange between the source and coding layer."
+      }
+    },
+    {
+      "topic": "Relative Entropy and Code Selection",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "Relative entropy measures the inefficiency of a code designed for a distribution when applied to another."
+      },
+        "framing": "coding theory",
+        "statement": "The deviation of a codebook from an optimal statistical model corresponds to the excess distortion under mismatched priors."
+      }
+    },
+    {
+      "topic": "Channel Input Constraints and Codebook Design",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "Channel input constraints limit the set of permissible input probability distributions and hence the achievable mutual information."
+      },
+        "framing": "coding theory",
+        "statement": "Codewords must be selected under power, amplitude, or resource constraints to be compatible with the physical channel."
+      }
+    },
+    {
+      "topic": "Channel Memory and Code Correlation",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "A memoryful channel introduces correlation between outputs depending on the history of previous inputs."
+      },
+        "framing": "coding theory",
+        "statement": "Code correlations must be introduced to preserve meaningful decoding over time-varying channel states."
+      }
+    },
+    {
+      "topic": "Information Inequality and Code Optimal Density",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The information inequality asserts that relative entropy is non-negative, and is zero if and only if the distributions are identical."
+      },
+        "framing": "coding theory",
+        "statement": "The codebook achieves optimal density if and only if it is matched to the underlying source and channel models."
+      }
+    },
+    {
+      "topic": "Information Rate and Code Gain",
+      "entry_1": {
+        "framing": "information theory",
+        "statement": "The information rate of a source can be increased by transforming the source through a memoryless stochastic channel."
+      },
+        "framing": "coding theory",
+        "statement": "Code gain is maximized by designing code structures that adapt to the nonu

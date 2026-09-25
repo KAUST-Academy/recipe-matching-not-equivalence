@@ -1,0 +1,134 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=cryptography round=6 call=154
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=21197 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "torsion-based authentication",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ be an elliptic curve over $ \mathbb{F}_q $ and $ G $ a point of prime order $ r $. If $ A $ is a point in the torsion subgroup $ E[r] $, then the mapping $ f(A) = [k]A $ for a fixed scalar $ k $ induces a deterministic image that can be used to uniquely identify $ A $."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Given a cyclic group $ G $ of prime order $ r $ and a base $ g $, let $ a $ be a member of $ G $. The function $ f(a) = a^k $, where $ k $ is a fixed known exponent, allows for unambiguous representation of $ a $, suitable for authentication protocols based on torsion structure."
+      }
+    },
+    {
+      "topic": "composite group distinguishability",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ be an elliptic curve over $ \mathbb{F}_p $ and $ G $ a subgroup of $ E(\mathbb{F}_p) $ of composite order $ m = pr $. An adversary cannot efficiently determine from a single point $ P \in G $ whether its order is $ p $ or $ r $ unless $ m $ is factored."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ G $ be a group of unknown composite order $ m = pr $. Given an element $ g \in G $, it is computationally infeasible to determine whether the order of $ g $ is $ p $ or $ r $, unless the factorization of $ m $ is known."
+      }
+    },
+    {
+      "topic": "cofactor equivalence for key space alignment",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ be an elliptic curve of order $ n $, where $ n = h \cdot r $ for an integer $ h > 1 $ and prime $ r $. The mapping $ \phi(P) = [h]P $ reduces the curve group into a group of prime order $ r $, aligning the scalar space with the subgroup."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ G $ be a group of composite order $ n $, with a known prime subgroup $ H $ of order $ r $. Multiplication of group elements by a known integer $ h $, such that $ n = h \cdot r $, embeds all elements into $ H $, ensuring consistency in the cryptographic key space."
+      }
+    },
+    {
+      "topic": "subgroup exclusion from random sampling",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ be an elliptic curve over $ \mathbb{F}_q $ and $ H $ a small-order subgroup of $ E $. The probability that a randomly sampled point $ P \in E(\mathbb{F}_q) $ belongs to $ H $ is negligible if $ |E(\mathbb{F}_q)| \gg |H| $."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ G $ be a large cyclic group containing a small subgroup $ H $. The probability that a randomly generated element $ g \in G $ belongs to $ H $ is negligible unless the size of $ H $ is comparable to that of $ G $."
+      }
+    },
+    {
+      "topic": "non-malleability in scalar multiplication",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Given a point $ P \in E $ of order $ r $ and scalars $ k, l \in \mathbb{Z}_r $, the operation $ [k + l]P $ does not yield the same result as any deterministic combination of $ [k]P $ and $ [l]P $, unless both scalars are known."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ g $ be a generator of a group $ G $ of prime order $ r $, and $ k, l \in \mathbb{Z}_r $. The element $ g^{k+l} $ cannot be computed from $ g^k $ and $ g^l $ without knowledge of $ k $ or $ l $."
+      }
+    },
+    {
+      "topic": "homomorphic identity translation",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ be an elliptic curve over $ \mathbb{F}_q $ and $ \phi: E \to E' $ an isogeny. For $ P, Q \in E $, if $ \phi(P) = \phi(Q) $, then $ P $ and $ Q $ differ by a point in the kernel of $ \phi $, allowing homomorphic preservation of group identity."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ \psi $ be a key transformation function mapping an identity in one algebraic structure to another. If two elements $ x, y $ map to the same image under $ \psi $, then $ x $ and $ y $ differ by a subgroup of the kernel of $ \psi $, preserving identity equivalence."
+      }
+    },
+    {
+      "topic": "secure encoding through isogeny space",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Given two elliptic curves $ E_1 $ and $ E_2 $ connected by a non-exceptional isogeny $ \phi $, the set of isogenies from $ E_1 $ to $ E_2 $ forms a finite set whose structure can be used for uniquely encoding arbitrary data in a trapdoor manner."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Given two mathematical encodings $ A $ and $ B $ connected by a one-way injective transformation $ \psi $, the set of such transformations forms a finite space suitable for encoding data under known transformations in a secure format."
+      }
+    },
+    {
+      "topic": "isogeny commutator obstruction",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ be an elliptic curve over $ \mathbb{F}_p $ and $ \phi, \psi $ two isogenies of degree $ l $ on $ E $. If $ \phi \circ \psi \neq \psi \circ \phi $, then their non-commutativity defines a structural invariant resistant to adversary prediction."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ \phi, \psi $ be two transformations in a key space over a finite field. If $ \phi(\psi(x)) \neq \psi(\phi(x)) $ for all $ x $, then the transformation space possesses a non-commutative invariant that can be used as a cryptographic hardness source."
+      }
+    },
+    {
+      "topic": "elementary field conservation",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ be an elliptic curve over $ \mathbb{F}_p $ with a point $ P $. The coordinates of $ P $ lie entirely within $ \mathbb{F}_p $, and scalar operations preserve the base field.
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ G $ be a group over a field $ \mathbb{F}_p $ with element $ a $. All transformations applied to $ a $ must remain in the field $ \mathbb{F}_p $ to ensure cryptographic consistency and identity integrity."
+      }
+    },
+    {
+      "topic": "rank-consistent subgroup abstraction",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ be an elliptic curve over $ \mathbb{F}_q $ and $ H \leq E(\mathbb{F}_q) $ a subgroup. The rank of the group $ H $ matches the rank of $ E $ if the torsion and free part of $ H $ align structurally with $ E $."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ G $ be a large composite-order group containing a cyclic subgroup $ H $. If the rank structure of $ H $ matches that of $ G $, then $ H $ is an appropriate algebraic image for cryptographic abstraction."
+      }
+    },
+    {
+      "topic": "mapped discrete identity preservation",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ and $ E' $ be elliptic curves over $ \mathbb{F}_q $ and $ \phi: E \to E' $ an isogeny. The point $ P $ and $ Q $ have the same isogeny image under $ \phi $ if and only if $ P - Q \in \ker(\phi) $, preserving identity modulo the kernel."
+      },
+      "entry_2": {
+        "framing": "public-key cryptography",
+        "statement": "Let $ \psi $ be a transformation between two identity representations. If $ \psi(a) = \psi(b) $, then $ a $ and $ b $ differ by an equivalence in the kernel of $ \psi $, ensuring cryptographic identity modulo the equivalence."
+      }
+    },
+    {
+      "topic": "finite distance modular pairing",
+      "entry_1": {
+        "framing": "elliptic curves",
+        "statement": "Let $ E $ 

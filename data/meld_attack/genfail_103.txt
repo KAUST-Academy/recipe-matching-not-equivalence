@@ -1,0 +1,158 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=mechanics round=4 call=103
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=17661 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Maupertuis' Principle",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "Among all curves with fixed energy and endpoints, the one that minimizes the action functional $ \int L \, dt $ is extremal when restricted to the energy shell."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "For a fixed energy surface $ H(q,p) = E $, the trajectories that extremize the Maupertuis functional $ \int p \cdot dq $ are the solutions of the Hamiltonian equations restricted to that shell."
+      }
+    },
+    {
+      "topic": "Convex action functionals",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "If the Lagrangian $ L(q, \dot{q}) $ is convex in $ \dot{q} $, then the associated action functional $ S[q] = \int L \, dt $ attains a unique minimum over curves connecting two fixed points."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "If the Hamiltonian is derived from a convex Lagrangian, the corresponding phase space trajectories evolve along integral curves of the Hamiltonian vector field whose projections on configuration space yield unique minimizers for the boundary value problem."
+      }
+    },
+    {
+      "topic": "Velocity-dependent potentials",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "A variationally induced equation of motion arises when the Lagrangian includes a linear term in velocities coupled to a time-dependent external field."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "When a Hamiltonian depends linearly on the conjugate momenta in a manner reflecting a non-conservative velocity-dependent force, the resulting equations of motion generalize the canonical structure."
+      }
+    },
+    {
+      "topic": "Jacobi energy transformation",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "By fixing energy via $ \frac{d}{dt} = \sqrt{2m(E - U)} $, the Euler-Lagrange equation is reformulated as a time-reparametrized geodesic equation in a Riemannian metric induced by kinetic minus potential energy."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "The Hamiltonian system can be reduced to a Riemannian Hamiltonian structure on the energy shell by expressing the flow in terms of a reparameterized time derived from the kinetic and potential energies."
+      }
+    },
+    {
+      "topic": "Phase space reparameterizations",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "When the Lagrangian is reparameterized to absorb the kinetic energy density, the corresponding action functional becomes a parameter-invariant expression of length in a metric geometry."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "The canonical equations preserve their structure under time reparameterizations that correspond to redefining the Hamiltonian as the product of a density function and the original energy function."
+      }
+    },
+    {
+      "topic": "Geometric Lagrangians",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "If the Lagrangian density is homogeneous of degree two in velocities and defines a Finsler metric, then the Euler-Lagrange equations correspond to the geodesic equations of the metric."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "A Hamiltonian system on a Finsler manifold whose energy function is the square of the metric function yields canonical equations that encode the geodesic structure of the Finsler geometry."
+      }
+    },
+    {
+      "topic": "Symplectic dualizing structure",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "The dual space to the velocities in the variational problem yields a natural construction for the momenta space through the assignment $ p_i = \frac{\partial L}{\partial \dot{q}^i} $."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "The dual pairing in the cotangent bundle allows for an isomorphism between velocities and momenta, defining the Legendre map and enabling the Hamiltonian description."
+      }
+    },
+    {
+      "topic": "Extended phase space",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "If the variational principle includes an explicit time derivative of the Lagrangian, the corresponding Euler-Lagrange equations admit an extended dynamical system in time as a parameter."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "The canonical equations can be extended to an augmented space with time as an additional variable, by defining a conserved energy observable."
+      }
+    },
+    {
+      "topic": "Local symmetry identities",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "For a variational principle invariant under local transformations depending on arbitrary differentiable functions, the Euler-Lagrange equations satisfy identities encoding the invariance."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "A Hamiltonian system with locally generated symmetries of the Poisson structure leads to identities among the canonical equations, reflecting the local invariance structure."
+      }
+    },
+    {
+      "topic": "Momentum-independent Hamiltonians",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "A variational problem with a Lagrangian that is independent of velocities leads to a singular Euler-Lagrange system of equations."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "A Hamiltonian which does not depend on momenta generates a degenerate symplectic form, resulting in a singular Poisson bracket structure."
+      }
+    },
+    {
+      "topic": "Affine Lagrangians",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "When the Lagrangian is affine in velocities, the corresponding action functional has a stationary point only when the variational field satisfies the constraints derived from the affine structure."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "Affine structures in the momenta of the Hamiltonian equations lead to constraints in the equations of motion requiring the introduction of Lagrange multipliers."
+      }
+    },
+    {
+      "topic": "Kinematic actions",
+      "framing": {
+        "entry_1": {
+          "calculus of variations",
+          "statement": "When the action is defined as the length in a space with no metric, the extremals are the curves that extremize the sum of a connection 1-form under arbitrary parametrization."
+        }
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "A Hamiltonian system constructed from the 1-form defining the connection naturally generates a dynamical vector field orthogonal to the distribution defined by the 1-form."
+      }
+    },
+    {
+      "topic": "Hamiltonian minimizers",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "A minimizing trajectory for a convex and coercive action functional is absolutely continuous and satisfies the corresponding Euler-Lagrange equation in a weak sense."
+      },
+      "entry_2": {
+        "framing": "Hamiltonian mechanics",
+        "statement": "A Hamiltonian trajectory corresponding to a convex energy function is absolutely continuous if the conjugate momenta are weakly differentiable."
+      }
+    },
+    {
+      "topic": "Locally integrable Hamiltonians",
+      "entry_1": {
+        "framing": "calculus of variations",
+        "statement": "If the action functional is smooth and the associated Euler-Lagrange equation has locally integrable solutions, the system is locally variational in

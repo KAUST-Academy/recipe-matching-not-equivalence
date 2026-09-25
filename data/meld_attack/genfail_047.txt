@@ -1,0 +1,286 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=probability round=6 call=47
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=14926 (dump keeps first 6144 + last 6144; 2638 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "recurrence_in_markov_chain",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A state in a discrete-time Markov chain is recurrent if the probability of eventually returning to it from itself is one."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A point in the state space is recurrent in a Markov kernel if the measure of the set of paths returning to it has full measure under the kernel’s infinite product extension."
+      }
+    },
+    {
+      "topic": "ergodic_transformations",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "An ergodic Markov chain has all its states communicating and no nontrivial invariant sets under its transition dynamics."
+      },
+     entry_2": {
+        "framing": "measure theory",
+        "statement": "An ergodic transformation of a measure space preserves the measure and has no nontrivial measurable invariant subsets."
+      }
+    },
+    {
+      "topic": "transformation_of_measurable_functions",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A random variable defined as a measurable function remains a random variable under a measurable transformation of the sample space."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The composition of a measurable function with a measurable transformation yields another measurable function."
+      }
+    },
+    {
+      "topic": "subsigma_algebra_density",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "Conditional expectation with respect to a sub-σ-algebra is the best measurable approximation of a random variable within that sub-σ-algebra."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The conditional integral with respect to a sub-σ-algebra minimizes the L² distance to a given integrable function among integrable functions measurable with respect to the sub-σ-algebra."
+      }
+    },
+    {
+      "topic": "finite_disintegration",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A joint distribution of two random variables can be disintegrated into a family of conditional distributions indexed by the values of one variable."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A product measure on a product space can be decomposed into a family of conditional measures indexed by points in one factor space."
+      }
+    },
+    {
+      "topic": "projection_onto_sigma_algebra",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The conditional expectation of a random variable with respect to a sub-σ-algebra is its orthogonal projection onto the space of square-integrable functions measurable with respect to that σ-algebra."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The conditional integral of an L² function with respect to a sub-σ-algebra is its projection onto the closed subspace of L² functions measurable with respect to the sub-σ-algebra."
+      }
+    },
+    {
+      "topic": "characterization_of_measurable_functions",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A random variable is measurable if and only if the preimage of any Borel set in the real line is an event."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A function from a measurable space to the real line is measurable if and only if the preimage of any Borel set is measurable."
+      }
+    },
+    {
+      "topic": "additive_decomposition_of_measures",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The expectation of a sum of random variables is the sum of their expectations."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The integral of the sum of measurable functions is the sum of their integrals."
+      }
+    },
+    {
+      "topic": "limit_behavior_of_measure",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "If a sequence of random variables converges to zero in probability, then any subsequence has a further subsequence converging to zero almost surely."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "If a sequence of measurable functions converges to zero in measure, then any subsequence has a further subsequence converging to zero almost everywhere."
+      }
+    },
+    {
+      "topic": "monotone_convergence_nonincreasing",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "If a sequence of nonnegative random variables decreases to a limit in probability, then their expectations decrease to the expectation of the limit."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "If a sequence of nonnegative measurable functions decreases to a limit almost everywhere, then their integrals decrease to the integral of the limit."
+      }
+    },
+    {
+      "topic": "law_of_total_variance",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The variance of a random variable is equal to the expected variance given a σ-algebra plus the variance of the conditional expectation given the σ-algebra."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The integral of the square of a function is equal to the integral of the conditional expectation of the square plus the variance of the conditional expectation."
+      }
+    },
+    {
+      "topic": "monotone_class_theorem",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "If a class of real-valued functions contains all indicator functions of a π-system and is closed under bounded monotone limits, then it contains the σ-algebra generated by the π-system."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "If a class of functions is closed under monotone limits and contains all simple functions over
+
+... [2638 chars elided by dump_gen_failure] ...
+
+": "bounded_measure_approximation",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "Any bounded probability measure on the real line can be approximated in the weak topology by discrete distributions."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "Any finite measure on the Borel σ-algebra of the real line can be approximated in the weak* topology by linear combinations of Dirac deltas."
+      }
+    },
+    {
+      "topic": "law_of_combinatorial_probability",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The number of distinct permutations of n elements grows factorially, and the probability of each is 1/n! under uniform randomness."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The uniform probability measure on the symmetric group S_n assigns mass 1/n! to each point under the counting measure."
+      }
+    },
+    {
+      "topic": "infinitely_divisible_distribution",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A probability distribution is infinitely divisible if it can be expressed as the convolution of n identical distributions for any positive integer n."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A measure on the real line is infinitely divisible if for any positive integer n, it can be expressed as the convolution of n identical measures."
+      }
+    },
+    {
+      "topic": "symmetric_probability_distribution",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A symmetric distribution satisfies P(X ≤ x) = P(X ≥ -x) for all x."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A symmetric measure on the real line satisfies μ((−∞, x]) = μ([−x, ∞)) for all x."
+      }
+    },
+    {
+      "topic": "probability_mass_of_interval",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The probability that a real-valued random variable lies in an open interval is the limit as the interval endpoints are approached from within."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The measure of an open interval is the limit of the measures of compact subsets approaching it."
+      }
+    },
+    {
+      "topic": "closed_graph_property",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "If a sequence of random variables converges almost surely to a limit, then the graph of the mapping is closed under almost sure convergence."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "If a sequence of measurable functions converges almost everywhere, then the graph of the limit function is the limit of the graphs of the sequence."
+      }
+    },
+    {
+      "topic": "extension_of_partial_measures",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A probability defined on a ring of subsets of the sample space can be extended to the σ-algebra generated by the ring."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A countably additive set function defined on a ring can be extended to a measure on the σ-algebra it generates."
+      }
+    },
+    {
+      "topic": "characterization_of_discrete_measures",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A random variable is discrete if and only if its distribution is a finite or countable sum of point masses."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A measure is discrete if and only if it is supported on a countable set and assigns positive measure only to that set."
+      }
+    },
+    {
+      "topic": "essential_range_property",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The essential range of a real-valued random variable is the smallest closed set whose complement has probability zero."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The essential range of a measurable function is the support of the pushforward measure."
+      }
+    },
+    {
+      "topic": "dominated_measure_convergence",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "If random variables X_n converge to X almost surely and are dominated by an integrable random variable Y, then their expectations converge."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "If measurable functions f_n converge almost everywhere to f and are dominated by an integrable function g, then their integrals converge to the integral of f."
+      }
+    },
+    {
+      "topic": "embedding_into_extension_space",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "Any stochastic process indexed by a countable set can be embedded in a larger probability space with a càdlàg modification."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "Any sequence of measurable functions on a σ-finite space can be extended to a càdlàg process under an appropriately constructed measure space extension."
+      }
+    },
+    {
+      "topic": "abstract_radon_space",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A topological space is called a Radon space if all probability measures on it are regular."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A topological space is called Radon if every finite Borel measure on it is regular."
+      }
+    },
+    {
+      "topic": "probability_null_intersection",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "If a sequence of events has each event occurring with probability one, then their intersection also occurs with probability one."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "If a sequence of measurable sets each has measure one, then their intersection also has measure one."
+      }
+    }
+  ]
+}
+```

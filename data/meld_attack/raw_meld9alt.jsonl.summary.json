@@ -1,0 +1,21 @@
+{
+  "group": "meld9alt",
+  "backend": "vllm",
+  "model": "Qwen/Qwen3-32B-AWQ",
+  "n_domain_pairs": 9,
+  "rounds": 24,
+  "pairs_per_call": 30,
+  "seed": 0,
+  "n_pairs_generated": 5862,
+  "n_accepted_by_screen": 2626,
+  "n_dedup_dropped": 7,
+  "n_generation_calls": 216,
+  "n_generation_json_failures": 18,
+  "gen_json_success_rate": 0.9167,
+  "min_pairs_per_successful_call": 8,
+  "mean_pairs_per_successful_call": 29.61,
+  "n_judge_json_failures": 0,
+  "pct_could_be_less_similar": 89.73,
+  "unique_topics": 5539,
+  "runtime_s": 2537.1
+}

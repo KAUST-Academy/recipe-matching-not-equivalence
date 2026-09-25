@@ -1,0 +1,148 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=spectral_operator_theory round=2 call=54
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=19228 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Essential Spectrum",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "The essential spectrum of a self-adjoint operator $ A $ on a Hilbert space $ \mathcal{H} $ consists of all $ \lambda \in \mathbb{R} $ such that $ A - \lambda I $ is not Fredholm."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "A point $ \lambda $ belongs to the essential spectrum of the Sturm-Liouville problem if the associated operator cannot be made invertible by compact perturbation and has infinite-dimensional null space or range."
+      }
+    },
+    {
+      "topic": "Limit-Point Criterion",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "For a symmetric operator defined on a domain in $ L^2(\mathbb{R}) $, if the deficiency indices are both one, then the operator is self-adjoint if and only if its singular points lie in the limit point case."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "If both endpoints of a singular Sturm-Liouville equation are in the limit point case, the differential operator generates a self-adjoint extension."
+      }
+    },
+    {
+      "topic": "Green’s Matrix Formula",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "For a self-adjoint operator $ A $ with eigenvalues $ \lambda_n $ and normalized eigenfunctions $ \phi_n $, the resolvent $ (A - \lambda I)^{-1} $ is given by $ \sum_n \frac{1}{\lambda_n - \lambda} \phi_n \otimes \phi_n $."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "The Green’s function for a Sturm-Liouville equation can be expressed as $ G(x, y, \lambda) = \sum_n \frac{\phi_n(x)\phi_n(y)}{\lambda_n - \lambda} $ for $ \lambda \notin \sigma $, where $ \phi_n $ and $ \lambda_n $ are eigenfunctions and eigenvalues."
+      }
+    },
+    {
+      "topic": "Kernel Integral Operators",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "If $ K(x, y) $ is a symmetric continuous kernel, the integral operator $ K $ defined by $ (Kf)(x) = \int K(x, y)f(y) dy $ is self-adjoint and compact, with discrete eigenvalues accumulating at zero."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "The solution operator for a homogeneous Sturm-Liouville equation under a symmetric kernel can be compact and self-adjoint, and admits a countable set of eigenvalues converging to zero."
+      }
+    },
+    {
+      "topic": "Spectral Measure for Operators",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "For any self-adjoint operator $ A $ on $ \mathcal{H} $, there exists a projection-valued measure $ E $ such that $ A = \int \lambda dE(\lambda) $, and $ E $ is the minimal projection-valued measure satisfying the spectral decomposition."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "The generalized eigenfunction expansion of a Sturm-Liouville operator yields a scalar-valued measure $ \mu $ such that $ \langle f, Af \rangle = \int \lambda d\mu(\lambda) $ for each $ f \in D(A) $."
+      }
+    },
+    {
+      "topic": "Multiparameter Problems",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "Given mutually commuting self-adjoint operators $ A_1, \ldots, A_k $, their common spectral resolution corresponds to the existence of a joint spectral measure defined on $ \mathbb{R}^k $."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "Coupled Sturm-Liouville systems with separable boundary conditions lead to spectral measures defined over the product space $ \mathbb{R}^k $, where $ k $ is the number of independent parameters."
+      }
+    },
+    {
+      "topic": "Uniqueness of Spectral Resolution",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "The spectral measure $ E $ associated with a self-adjoint operator $ A $ is uniquely determined by the operator functional calculus and the action of polynomials on its spectrum."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "A Sturm-Liouville problem with fixed self-adjoint boundary conditions uniquely determines the spectral function of the associated differential operator."
+      }
+    },
+    {
+      "topic": "Generalized Eigenfunctions",
+      "entry_1": {
+        "fracing": "spectral theory of operators",
+        "statement": "For a self-adjoint operator $ A $ with continuous spectrum, the spectral resolution can be extended by allowing generalized eigenfunctions in the sense of rigged Hilbert spaces."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "Solutions to Sturm-Liouville problems with continuous spectral parameters can be interpreted as generalized eigenfunctions under the requirement of boundary condition fulfillment."
+      }
+    },
+    {
+      "topic": "Dilatation Analytic Continuation",
+      "framing": "spectral theory of operators",
+      "statement": {
+        "statement": "If an operator-valued function $ A(\theta) $ is analytic in $ \theta $ and self-adjoint for $ \theta $ real, its spectrum admits analytic continuation to a strip in the complex plane via Stone’s formula and dilatation techniques."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "The eigenvalues of a Sturm-Liouville problem with complex boundary parameter can be continued analytically from the real axis into a suitable domain in the complex plane."
+      }
+    },
+    {
+      "topic": "Absolutely Continuous Spectrum",
+      "framing": "spectral theory of operators",
+      "statement": "The absolutely continuous spectrum of a self-adjoint operator is the support of the absolutely continuous part of the spectral measure of $ A $."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "In a Sturm-Liouville setting, the absolutely continuous part of the spectrum corresponds to eigenparameters for which the solutions are square integrable at both endpoints."
+      }
+    },
+    {
+      "topic": "Boundary Condition Dependence",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "The domain of a self-adjoint extension of a symmetric operator may depend continuously on boundary parameters if the defining conditions are analytic functions of the parameters."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "The eigenvalues of a Sturm-Liouville problem with Robin boundary conditions are continuous and real-valued as functions of the boundary parameters."
+      }
+    },
+    {
+      "topic": "Strong Resolvent Limit",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "Suppose $ A_n \to A $ in the strong resolvent sense. Then the spectral measures of $ A_n $ converge to that of $ A $ in the weak operator topology for continuous functions with compact support."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "If the potential $ q_n(x) $ in a Sturm-Liouville equation converges to $ q(x) $ pointwise, the eigenvalue counting functions converge uniformly under suitable regularity conditions."
+      }
+    },
+    {
+      "topic": "Dirichlet-to-Neumann Map",
+      "entry_1": {
+        "framing": "spectral theory of operators",
+        "statement": "For a self-adjoint elliptic operator $ L $ on a bounded domain $ \Omega $, the Dirichlet-to-Neumann operator $ M $ is self-adjoint and compact, with spectrum discrete and accumulating at infinity."
+      },
+      "entry_2": {
+        "framing": "Sturm-Liouville problems",
+        "statement": "The generalized Robin-to-Dirichlet map associated with a Sturm-Liouville problem on a finite interval is an operator whose spectrum reflec

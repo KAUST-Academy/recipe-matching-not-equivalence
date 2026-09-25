@@ -1,0 +1,161 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=galois_theory round=2 call=31
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=14556 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "solvable_closure",
+      "entry_1": {
+        "framing": "field theory",
+        "statement": "A field extension $ K \subseteq L $ is a solvable closure if it is a minimal normal extension containing all solvable subextensions of $ K \subseteq L $."
+      },
+      "entry_2": {
+        "framing": "Galois correspondence",
+        "statement": "The Galois extension $ K \subseteq L $ is a solvable closure if it corresponds to the minimal normal subgroup of the Galois group containing all subnormal solvable subgroups."
+      }
+    },
+    {
+      "topic": "Galois_group_transitive",
+      "framing": "field theory",
+      "statement": "The Galois group $ \mathrm{Gal}(L/K) $ acts transitively on the roots of an irreducible polynomial $ f \in K[x] $ if and only if $ f $ splits in $ L $ and all its roots are $ K $-conjugate."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The fixed field of a subgroup of $ \mathrm{Gal}(L/K) $ is the splitting field of an irreducible polynomial if and only if the action of the Galois group on the roots is transitive."
+      }
+    },
+    {
+      "topic": "radical_extension",
+      "framing": "field theory",
+      "statement": "An extension $ K \subseteq L $ is radical if it can be obtained by successively adjoining roots of elements of the base field $ K $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The extension $ K \subseteq L $ corresponds to a tower of subgroups whose successive quotients are cyclic, implying that the Galois group is solvable via radical automorphisms."
+      }
+    },
+    {
+      "topic": "solvable_extension",
+      "framing": "field theory",
+      "statement": "An algebraic extension $ K \subseteq L $ is solvable if there exists a tower of field extensions $ K = F_0 \subset F_1 \subset \dots \subset F_n = L $ such that each $ F_i / F_{i-1} $ is a radical extension."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The extension $ K \subseteq L $ corresponds to a tower of subgroups of $ \mathrm{Gal}(L/K) $ such that each successive quotient is a cyclic group."
+      }
+    },
+    {
+      "topic": "transcendence_degree",
+      "framing": "field theory",
+      "statement": "The transcendence degree of an extension $ K \subseteq L $ is the size of a maximal algebraically independent set of elements of $ L $ over $ K $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The transcendence degree corresponds to the number of parameters that can be independently varied while fixing the automorphism group action over $ K $."
+      }
+    },
+    {
+      "topic": "monogenic_extension",
+      "framing": "field theory",
+      "statement": "An algebraic extension $ K \subseteq L $ is monogenic if it is a simple extension, i.e., there exists an $ \alpha \in L $ such that $ L = K(\alpha) $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The extension $ K \subseteq L $ corresponds to a subgroup of the Galois group for which a single element generates the fixed field."
+      }
+    },
+    {
+      "topic": "splitting_field",
+      "framing": "field theory",
+      "statement": "A field $ L $ is the splitting field of a polynomial $ f \in K[x] $ if $ f $ splits in $ L $ and $ L $ is generated over $ K $ by its roots."
+      },
+      "framing": "Galois correspondence",
+      "statement": "A field $ L $ corresponds to a subgroup of $ \mathrm{Gal}(L/K) $ which is the stabilizer of the set of roots of a polynomial $ f \in K[x] $."
+      }
+    },
+    {
+      "topic": "field_isomorphism",
+      "framing": "field theory",
+      "statement": "Two fields $ K $ and $ L $ are isomorphic over a common subfield $ F $ if there exists a field isomorphism $ \sigma: K \to L $ that fixes $ F $ elementwise."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The existence of a field isomorphism corresponds to a bijection between the fixed field and the group of automorphisms that commute with the action of a common subgroup."
+      }
+    },
+    {
+      "topic": "algebraic_closure",
+      "framing": "field theory",
+      "statement": "A field $ \overline{K} $ is an algebraic closure of $ K $ if it is an algebraic extension and every nonconstant polynomial over $ K $ splits in $ \overline{K} $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "An algebraic closure corresponds to the maximal Galois extension over $ K $ in which the Galois group is trivial and every polynomial admits a root."
+      }
+    },
+    {
+      "topic": "normal_basis",
+      "framing": "field theory",
+      "statement": "An extension $ K \subseteq L $ has a normal basis if there exists an element $ \alpha \in L $ such that the set $ \{\sigma(\alpha) \mid \sigma \in \mathrm{Gal}(L/K)\} $ forms a basis of $ L $ as a vector space over $ K $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "There is an element $ \alpha \in L $ whose Galois orbit forms a basis for $ L $ over $ K $, indicating that the field is a permutation of a group orbit under the action of the Galois group."
+      }
+    },
+    {
+      "topic": "Galois_group_transitive_action",
+      "framing": "field theory",
+      "statement": "For an irreducible polynomial $ f \in K[x] $, the Galois group acts transitively on the set of its roots in a splitting field $ L $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The set of roots of an irreducible polynomial corresponds to a transitive permutation representation of the Galois group."
+      }
+    },
+    {
+      "topic": "composite_extension",
+      "framing": "field theory",
+      "statement": "If $ K \subseteq L $ and $ K \subseteq M $ are field extensions, their compositum $ LM $ is the smallest field containing both $ L $ and $ M $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The compositum corresponds to the fixed field of the intersection of the corresponding subgroups under the Galois correspondence."
+      }
+    },
+    {
+      "topic": "automorphism_extension",
+      "framing": "field theory",
+      "statement": "An automorphism $ \sigma \in \mathrm{Aut}(K) $ can be extended to an automorphism of $ L $ if $ L $ is an algebraic extension of $ K $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "An automorphism on a subfield of a Galois extension corresponds to a lift of a group element in the Galois group to a larger subgroup."
+      }
+    },
+    {
+      "topic": "fixed_field_of_conjugate",
+      "framing": "field theory",
+      "statement": "For an automorphism $ \sigma \in \mathrm{Gal}(L/K) $, the fixed field of $ \sigma(H)\sigma^{-1} $, where $ H \subseteq \mathrm{Gal}(L/K) $, is the image under $ \sigma $ of the fixed field of $ H $."
+      },
+      "framing": "Galois correspondence",
+      "statement": "Under the Galois correspondence, conjugate subgroups correspond to fields related by an automorphism of the extension field."
+      }
+    },
+    {
+      "topic": "cyclic_extension",
+      "framing": "field theory",
+      "statement": "A Galois extension $ K \subseteq L $ is cyclic if its Galois group is a cyclic group."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The corresponding subgroup of the Galois group is cyclic, and the fixed field is the only intermediate field between $ K $ and $ L $."
+      }
+    },
+    {
+      "topic": "abelian_extension",
+      "framing": "field theory",
+      "statement": "An extension $ K \subseteq L $ is abelian if its Galois group is an abelian group."
+      },
+      "framing": "Galois correspondence",
+      "statement": "The corresponding group is an abelian subgroup of the Galois group, implying that all intermediate fields lie in the lattice of characteristic subgroups."
+      }
+    },
+    {
+      "topic": "cyclic_extension_by_root",
+      "framing": "field theory",
+      "statement": "Let $ L = K(\alpha) $, where $ \alpha^n \in K $. If $ L/K $ is a Galois extension, then $ \mathrm{Gal}(L/K) $ is cyclic of order dividing $ n $."
+      },
+      "framing": "Galois correspondence",
+     

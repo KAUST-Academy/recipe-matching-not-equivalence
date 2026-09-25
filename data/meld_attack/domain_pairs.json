@@ -1,0 +1,222 @@
+{
+  "meld9": [
+    {
+      "domain": "algebra",
+      "field_1": "vector spaces",
+      "field_2": "module theory",
+      "connection": "A vector space over a field is exactly a module over that field; bases, dimension and linear maps become generating sets, free ranks and module homomorphisms."
+    },
+    {
+      "domain": "probability",
+      "field_1": "probability",
+      "field_2": "measure theory",
+      "connection": "A probability space is a measure space of total mass one; random variables, expectation and independence become measurable functions, integrals and product measures."
+    },
+    {
+      "domain": "foundations",
+      "field_1": "set theory",
+      "field_2": "category theory",
+      "connection": "Constructions on sets and functions have universal-property descriptions; unions, products and images become colimits, limits and factorizations of arrows."
+    },
+    {
+      "domain": "algebraic_geometry",
+      "field_1": "geometry",
+      "field_2": "commutative algebra",
+      "connection": "Geometric objects correspond to rings of functions; points, subvarieties and dimension become maximal ideals, prime ideals and Krull dimension."
+    },
+    {
+      "domain": "algebraic_topology",
+      "field_1": "topology",
+      "field_2": "algebra",
+      "connection": "Spaces and continuous maps are studied through the groups they induce; loops, coverings and connectivity become generators, subgroups and quotients."
+    },
+    {
+      "domain": "spectral_graph_theory",
+      "field_1": "graph theory",
+      "field_2": "linear algebra",
+      "connection": "A graph is encoded by its adjacency or Laplacian matrix; walks, connectivity and bipartiteness become matrix powers, eigenvalue multiplicities and spectral symmetry."
+    },
+    {
+      "domain": "discrete_math",
+      "field_1": "discrete math",
+      "field_2": "complex analysis",
+      "connection": "Counting sequences are the coefficients of generating functions; recurrences, convolutions and asymptotics become functional equations, products and singularity analysis."
+    },
+    {
+      "domain": "representation_theory",
+      "field_1": "representation theory",
+      "field_2": "Fourier analysis",
+      "connection": "Decomposing a representation is harmonic analysis on the group; irreducibles, characters and multiplicities become frequencies, transforms and Plancherel coefficients."
+    },
+    {
+      "domain": "algebraic_combinatorics",
+      "field_1": "symmetric functions",
+      "field_2": "tableaux",
+      "connection": "Symmetric function identities are counted by fillings of Young diagrams; Schur expansions, products and specializations become tableaux enumerations, insertion algorithms and shape statistics."
+    }
+  ],
+  "heldout": [
+    {
+      "domain": "differential_equations",
+      "field_1": "ordinary differential equations",
+      "field_2": "dynamical systems",
+      "connection": "An equation and the flow it generates are one object seen analytically and geometrically; solutions, equilibria and stability become orbits, fixed points and attractors."
+    },
+    {
+      "domain": "riemannian_geometry",
+      "field_1": "Riemannian geometry",
+      "field_2": "tensor calculus",
+      "connection": "Invariant statements about curvature, geodesics and connections have index expressions; each intrinsic object is a tensor field with a transformation rule."
+    },
+    {
+      "domain": "lie_theory",
+      "field_1": "Lie theory",
+      "field_2": "matrix groups",
+      "connection": "Abstract Lie groups and their algebras are realized as closed subgroups of GL_n and spaces of matrices, tied together by the matrix exponential."
+    },
+    {
+      "domain": "galois_theory",
+      "field_1": "field theory",
+      "field_2": "Galois correspondence",
+      "connection": "Extensions, degrees and solvability translate into automorphism groups, subgroup lattices and normality."
+    },
+    {
+      "domain": "p_adic_number_theory",
+      "field_1": "number theory",
+      "field_2": "p-adic analysis",
+      "connection": "Congruence and divisibility statements over the integers are analytic statements about valuations, convergence and completeness in Q_p."
+    },
+    {
+      "domain": "analytic_number_theory",
+      "field_1": "arithmetic functions",
+      "field_2": "Dirichlet series",
+      "connection": "Multiplicative functions and their convolutions correspond to Euler products and identities between Dirichlet series."
+    },
+    {
+      "domain": "nonstandard_analysis",
+      "field_1": "real analysis",
+      "field_2": "nonstandard analysis",
+      "connection": "Epsilon-delta statements about limits, continuity and compactness have equivalent formulations with infinitesimals, hyperreals and standard parts."
+    },
+    {
+      "domain": "quantum_formalism",
+      "field_1": "Hilbert space theory",
+      "field_2": "quantum mechanics formalism",
+      "connection": "Self-adjoint operators, spectral decompositions and unit vectors are observables, measurement outcomes and states in Dirac notation."
+    },
+    {
+      "domain": "convex_optimization",
+      "field_1": "convex analysis",
+      "field_2": "Lagrangian duality",
+      "connection": "Convex sets, subgradients and separating hyperplanes correspond to dual problems, multipliers and complementary slackness."
+    },
+    {
+      "domain": "matroids",
+      "field_1": "matroid theory",
+      "field_2": "greedy algorithms",
+      "connection": "The independence axioms are exactly when the greedy procedure is optimal; rank, circuits and bases become loop invariants, failure cases and terminal solutions."
+    },
+    {
+      "domain": "information_theory",
+      "field_1": "information theory",
+      "field_2": "coding theory",
+      "connection": "Entropy, mutual information and capacity correspond to achievable rates, minimum distance and decoding error."
+    },
+    {
+      "domain": "statistical_mechanics",
+      "field_1": "Markov chains",
+      "field_2": "statistical mechanics",
+      "connection": "Transition kernels, stationary distributions and mixing correspond to Gibbs measures, equilibrium ensembles and relaxation."
+    },
+    {
+      "domain": "stochastic_analysis",
+      "field_1": "stochastic processes",
+      "field_2": "partial differential equations",
+      "connection": "Expectations of functionals of diffusions solve parabolic equations; generators, martingales and hitting times become differential operators, harmonicity and boundary data."
+    },
+    {
+      "domain": "numerical_analysis",
+      "field_1": "numerical analysis",
+      "field_2": "approximation theory",
+      "connection": "Error bounds for quadrature, interpolation and iteration are statements about best approximation, moduli of continuity and degree."
+    },
+    {
+      "domain": "computability",
+      "field_1": "computability theory",
+      "field_2": "formal logic",
+      "connection": "Decidability, reductions and halting correspond to definability, provability and incompleteness in formal systems."
+    },
+    {
+      "domain": "model_theory",
+      "field_1": "model theory",
+      "field_2": "universal algebra",
+      "connection": "Elementary classes, embeddings and compactness correspond to varieties, homomorphisms and equational theories."
+    },
+    {
+      "domain": "type_theory",
+      "field_1": "lambda calculus",
+      "field_2": "type theory",
+      "connection": "Terms, reduction and normalization correspond to proofs, cut elimination and propositions under Curry-Howard."
+    },
+    {
+      "domain": "automata",
+      "field_1": "automata theory",
+      "field_2": "semigroup theory",
+      "connection": "Recognizable languages, minimization and pumping correspond to finite monoids, syntactic congruences and homomorphic images."
+    },
+    {
+      "domain": "cryptography",
+      "field_1": "elliptic curves",
+      "field_2": "public-key cryptography",
+      "connection": "Group laws, torsion and discrete logarithms on curves correspond to key exchange, hardness assumptions and signature schemes."
+    },
+    {
+      "domain": "quadratic_forms",
+      "field_1": "quadratic forms",
+      "field_2": "integral lattices",
+      "connection": "Equivalence, discriminants and representation numbers of forms correspond to isometry, covolume and shortest vectors of lattices."
+    },
+    {
+      "domain": "knots",
+      "field_1": "knot theory",
+      "field_2": "braid theory",
+      "connection": "Knot invariants, diagrammatic moves and closures correspond to braid words, Markov moves and group relations."
+    },
+    {
+      "domain": "mechanics",
+      "field_1": "calculus of variations",
+      "field_2": "Hamiltonian mechanics",
+      "connection": "Stationary actions, Euler-Lagrange equations and constraints correspond to canonical flows, conjugate momenta and conserved quantities."
+    },
+    {
+      "domain": "order",
+      "field_1": "order theory",
+      "field_2": "lattice theory",
+      "connection": "Partial orders, chains and completeness correspond to meets, joins, distributivity and closure operators."
+    },
+    {
+      "domain": "constructive_logic",
+      "field_1": "proof theory",
+      "field_2": "intuitionistic logic",
+      "connection": "Classical derivability, double negation and excluded middle correspond to constructive provability, translations and realizability."
+    },
+    {
+      "domain": "ergodic_theory",
+      "field_1": "ergodic theory",
+      "field_2": "symbolic dynamics",
+      "connection": "Invariant measures, mixing and recurrence correspond to shift spaces, subshifts of finite type and word combinatorics."
+    },
+    {
+      "domain": "equilibria",
+      "field_1": "game theory",
+      "field_2": "fixed point theory",
+      "connection": "Existence of equilibria, best-response correspondences and minimax values correspond to fixed points, convexity hypotheses and continuity."
+    },
+    {
+      "domain": "spectral_operator_theory",
+      "field_1": "spectral theory of operators",
+      "field_2": "Sturm-Liouville problems",
+      "connection": "Eigenvalue asymptotics, self-adjointness and completeness of eigenfunctions correspond to boundary-value problems, oscillation and orthogonal expansions."
+    }
+  ]
+}

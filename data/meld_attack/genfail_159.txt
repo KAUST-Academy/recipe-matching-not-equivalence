@@ -1,0 +1,274 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=spectral_graph_theory round=18 call=159
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=16206 (dump keeps first 6144 + last 6144; 3918 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "spectrum and edge complementation",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The spectrum of the adjacency matrix of a graph and its edge-complement graph are related through a linear transformation involving the number of vertices."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The eigenvalues of the adjacency matrix and its shifted version representing the complement matrix differ by a fixed scalar multiple of the number of vertices minus twice the eigenvalue."
+      }
+    },
+    {
+      "topic": "walk parity through Schur complement",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "When computing the number of walks between nodes after removing a vertex, the Schur complement of the adjacency matrix preserves the even-odd parity of walk counts between connected pairs."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The Schur complement of a symmetric matrix can be used to compute the parity of signed contributions of a variable to remaining matrix entries, preserving signature properties from the original matrix."
+      }
+    },
+    {
+      "topic": "vertex sign from eigenvector partition",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "In a bipartite graph, the eigenvector corresponding to the second-largest eigenvalue partitions vertex signs between the two sets."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The eigenvector corresponding to the largest eigenvalue after a symmetric perturbation encodes the sign partition of the graph it represents."
+      }
+    },
+    {
+      "topic": "graph coherence in eigenspaces",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "A highly coherent subgraph within a larger graph corresponds to a subset of eigenvectors with strong overlap in their nodal domains."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "If a subspace of eigenvectors aligns closely with a subset of the coordinate vectors, it implies that the original matrix was designed with a coherent block structure."
+      }
+    },
+    {
+      "topic": "nodal domain duality in cycles",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "In a unicyclic graph, the nodal domains of eigenvectors corresponding to the second eigenvalue are dual in sign to the number of nodes along the cycle."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "A symmetric cyclic tridiagonal matrix exhibits a dual nodal domain pattern in its second eigenvector depending on the number of nonzero off-diagonal entries."
+      }
+    },
+    {
+      "topic": "eigenvalue lifting from subgraphs",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Adding a bridge between two connected components of a graph leads to a lifting of certain eigenvalues based on the spectral gaps of the two connected subgraphs."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "Joining two symmetric matrices via a small-rank modification results in eigenvalue increases in the overlap region governed by the original gaps."
+      }
+    },
+    {
+      "topic": "cycle eigenvector wrapping",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "In a cycle graph, the eigenvector corresponding to eigenvalue one wraps around the cycle with phase differences determined by its vertex index."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "A circulant matrix with a cyclic tridiagonal structure exhibits eigenvectors whose entries are complex sinusoids of increasing phase."
+      }
+    },
+    {
+      "topic": "edge insertion eigenvector distortion",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The eigenvectors of a graph change in a direction orthogonal to the inserted edge as it connects two nodes."
+      },
+        "framing": "linear algebra",
+        "statement": "Adding a rank-two symmetric modification to a matrix alters its eigenvectors in the subspace spanned by the two affected canonical basis vectors."
+      }
+    },
+    {
+      "topic": "eigenvalue sensitivity under thresholding",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "If a graph’s adjacency matrix is thresholded below a certain edge-weight value, its spectrum is pushed toward zero, losing high-frequency information."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "Hard thresholding a symmetric matrix to zero for low entries reduces the norm of its eigenvalues and may split the spectral structure."
+      }
+    },
+    {
+      "topic": "path trace equivalence",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "A graph can be uniquely determined by the sequence of traces of increasing powers of its adjacency matrix up to the diameter."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "Two matrices are similar if and only if their traces of powers are identical up to the matrix dimension."
+      }
+    },
+    {
+      "topic": "eigenvalue contraction through node excision",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Removing a vertex and its incident edges causes a contraction in the graph spectrum proportional to its degree."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The removal of a row and column from a symmetric matrix produces a Schur-complemented matrix whose eigenvalues are compressed relative to the original."
+      }
+    },
+    {
+      "topic": "symmetric subspace subsampling",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Sampling a bipartite subgraph that preserves the symmetry of the underlying eigenspaces results in a truncated spectral mirror of the original."
+ 
+
+... [3918 chars elided by dump_gen_failure] ...
+
+   }
+    },
+    {
+      "topic": "minimum eigenvalues in sparse graphs",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The smallest non-zero Laplacian eigenvalue in a sparse graph corresponds to the most localized spectral signal that can propagate from a single edge."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The smallest non-zero eigenvalue of a diagonally dominant matrix with few off-diagonal nonzeros reflects the extent of localized eigenvectors."
+      }
+    },
+    {
+      "topic": "eigenvalue autocorrelation in trees",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The eigenvalues of a tree's adjacency matrix show decreasing autocorrelation with increasing branch depth due to the lack of cycles."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The off-diagonal decay of a tridiagonal symmetric matrix with tree-like structure results in rapidly decreasing eigenvalue correlation as the matrix grows."
+      }
+    },
+    {
+      "topic": "structural cycle rank",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The rank of a Laplacian matrix in a graph is equal to the number of vertices minus the number of connected components plus the number of independent cycles."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The rank of a symmetric matrix with tree structure and additional independent cycles is increased by the number of added cycles from the base rank of a spanning tree."
+      }
+    },
+    {
+      "topic": "eigen-edge criticality",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "An edge whose removal causes a large drop in the second smallest eigenvalue of the Laplacian is a spectral bottleneck for the graph."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "An entry in a symmetric matrix whose removal results in a large drop in the second smallest eigenvalue signals a central pivot in the matrix structure."
+      }
+    },
+    {
+      "topic": "eigenvalue correspondence in duals",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The eigenvalues of the dual of a planar graph include the mirror image of the original graph’s Laplacian eigenvalues about zero."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The dual matrix of a planar Laplacian exhibits eigenvalues symmetric to the original about zero due to geometric duality."
+      }
+    },
+    {
+      "topic": "eigenvalue suppression in diametric span",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The eigenvalue distribution in a graph is suppressed in directions corresponding to its longest shortest path, indicating directionality constraints."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "For a symmetric matrix with a long dependency path in its off-diagonal, the subspace perpendicular to the path direction experiences spectral suppression."
+      }
+    },
+    {
+      "topic": "eigenvalue additive contractivity",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The sum of eigenvalues of a Laplacian does not change under vertex removal, but their sum of absolute values decreases."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "Deleting a row and column from a symmetric matrix does not change the trace, but may reduce the absolute trace of the absolute value matrix."
+      }
+    },
+    {
+      "topic": "eigenflow in unbalanced trees",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Unbalanced trees show preferential eigenvector flow from the root toward less-dense branches."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "In tridiagonal matrices with uneven weight distributions, the dominant eigenvectors favor high-degree (large off-diagonal) side."
+      }
+    },
+    {
+      "topic": "twin subgraph embedding",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "If two subgraphs of a graph are isomorphic, they will embed identically into the spectral space of the Laplacian."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "Two structurally identical blocks in a symmetric matrix will produce identical spectral projections when projected onto the matrix's eigenspace."
+      }
+    },
+    {
+      "topic": "eigenvalue induced rigidity",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Adding an eigenvalue close to zero with a large eigenvector component at a vertex makes the graph structurally rigid at that node."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "A large eigenvector component at a vertex in the kernel of the Laplacian indicates structural rigidity concentrated at that index."
+      }
+    },
+    {
+      "topic": "rank-1 synchronization signal",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "A synchronization signal spreads fastest across the spectral mode corresponding to the largest eigenvalue of the graph."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The fastest synchronization of a symmetric rank-1 vector occurs along the direction of the eigenvector corresponding to the largest eigenvalue."
+      }
+    },
+    {
+      "topic": "multiplicity-driven modularity",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "High eigenvalue multiplicity in a graph’s Laplacian suggests multiple symmetric substructures with shared connectivity patterns."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "Multiple eigenvectors sharing the same eigenvalue in a symmetric matrix imply that the matrix is reducible into symmetric submatrices with equivalent behavior."
+      }
+    }
+  ]
+}
+```

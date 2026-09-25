@@ -1,0 +1,285 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=probability round=5 call=38
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=15153 (dump keeps first 6144 + last 6144; 2865 elided)
+------------------------------------------------------------------------
+{
+  "pairs": [
+    {
+      "topic": "exponential_convergence",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A Markov chain converges to its stationary distribution exponentially fast if the total variation distance decreases at a geometric rate."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The sequence of pushforward measures of a Markov chain converges to an invariant measure with a geometric rate of convergence in total variation norm."
+      }
+    },
+    {
+      "topic": "random_projection",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "Random projection reduces dimension while approximately preserving Euclidean distances, using concentration of measure on high-dimensional spheres."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "Under a random orthogonal transformation followed by projection to a lower subspace, the image measure concentrates around the average in high dimensions."
+      }
+    },
+    {
+      "topic": "mixing_time",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The mixing time of a Markov chain is the smallest time at which the total variation distance to the stationary distribution is bounded above by a fixed constant."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The mixing time is the minimal n such that the nth iterate of the transition kernel approximates the stationary measure uniformly to within an error bound."
+      }
+    },
+    {
+      "topic": "abstract_radon_nikodym",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "If a signed probability measure Q is absolutely continuous with respect to a reference probability measure P, then there is a measurable function f with Q(A) = ∫ₐ f dP."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "If σ-finite measure ν << μ, then ν has a Radon–Nikodym derivative f ∈ L¹(μ) such that ν(A) = ∫ₐ f dμ for every measurable set A."
+      }
+    },
+    {
+      "topic": "isometry_of_probability_spaces",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "Two probability spaces are isomorphic if there is a bijection between them that preserves the probability measure and structure of the σ-algebras."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "Two measure spaces of total mass one are isometric if there is a measurable isomorphism that preserves measure and induces isomorphism of σ-algebras."
+      }
+    },
+    {
+      "topic": "metric_coupling",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A coupling of two random variables X and Y is a pair (X', Y') with the same marginal distributions, used to study their convergence in probability."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A coupling is a measure on the product space with fixed marginals, used to compare two probability measures in terms of transport or distance."
+      }
+    },
+    {
+      "topic": "local_limit_theorem",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The local limit theorem describes the approximate probability mass function of scaled sums of lattice random variables near a point."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The local limit theorem shows convergence of the measure of scaled sums under lattice conditions to a Gaussian density convolved with discrete mass."
+      }
+    },
+    {
+      "topic": "law_of_small_numbers",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A Poisson distribution approximates the sum of many independent rare events if the expected number of such events is small and finite."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "Under a suitable limiting regime, the probability measure of the sum of independent Bernoullis converges to a Poisson measure with rate λ."
+      }
+    },
+    {
+      "topic": "weak_convergence_of_measures",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A sequence of probability measures converges weakly if it converges on all bounded continuous functions."
+      },
+    {
+      "topic": "finite_sample_approximation",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The empirical measure based on a sample approximates the underlying distribution with a rate that depends on the sample size and model complexity."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The sequence of empirical measures converges to the reference measure in law, with convergence quantified in terms of sample size and model entropy."
+      }
+    },
+    {
+      "topic": "radon_nikodym_derivative_of_density",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "If a random variable X has density f, and Y = g(X) for invertible g, then the density of Y is f(g⁻¹(y))|g'(g⁻¹(y))|."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "Under a measurable bijection g, the pushforward of measure f(x)dx is f(g⁻¹(y))|g'(g⁻¹(y))|dy."
+      }
+    },
+    {
+      "topic": "uniformly_integrable_function_sequence",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A sequence of random variables {Xₙ} is uniformly integrable if E[|Xₙ|] is bounded and limₜ→∞ E[|Xₙ|1{|Xₙ|>t}] = 0 uniformly in n."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A sequence of L¹-measurable functions {fₙ} is uniformly integrable if ∫ |fₙ| dμ is uniformly bounded and limₜ→∞ ∫ |fₙ|1{|fₙ|>t} dμ = 0."
+      }
+    },
+    {
+      "topic": "almost_discrete_measure",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A probability measure is almost discrete if its mass is concentrated on a countable set up to an arbitrarily small epsilon."
+      },
+   
+
+... [2865 chars elided by dump_gen_failure] ...
+
+f every bounded sequence has a weakly convergent subsequence."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A sequence of measures is weakly precompact if every subsequence has a weakly convergent subsequence under Prokhorov’s condition."
+      }
+    },
+    {
+      "topic": "infinite_product_probability",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "An infinite product of independent coin-flips defines a probability space that supports sequences with arbitrary combinations of outcomes."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The product measure on {0,1}^N is constructed as the countably infinite product of two-point measure spaces."
+      }
+    },
+    {
+      "topic": "concentration_of_measure_for_sphere",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A random unit vector on the sphere is highly concentrated near the equator for high dimensions."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The uniform measure on the high-dimensional sphere has most of its mass concentrated on a thin band around any fixed equator."
+      }
+    },
+    {
+      "topic": "projection_onto_subspace",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "Projection of a random vector onto a lower-dimensional subspace preserves some distributional properties under orthogonality."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The pushforward of a measure under an orthogonal linear projection has a density in the image subspace under non-degeneracy conditions."
+      }
+    },
+    {
+      "topic": "variation_distance_convergence",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A sequence of random variables converges in total variation if the difference in probabilities of all events vanishes as n increases."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "Two sequences of probability measures converge in total variation norm if |μₙ(A) − νₙ(A)| → 0 uniformly over all measurable A."
+      }
+    },
+    {
+      "topic": "markov_chain_convergence_rate",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The mixing time of a Markov chain measures the time required to converge to the stationary distribution in total variation distance."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The total variation distance between the nth iterate of a transition kernel and the invariant measure decreases exponentially with n."
+      }
+    },
+    {
+      "topic": "renormalization_in_probability",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "Scaling and centering large sums of i.i.d. variables allows their distribution to converge to a stable limit like a Gaussian."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "Applying a suitable linear transformation to the pushforward of the convolution powers of a measure yields a convergent sequence under weak topology."
+      }
+    },
+    {
+      "topic": "measure_preserving_transformation",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A measurable function is measure-preserving if the probability of any event before and after the transformation remains the same."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A transformation T is measure-preserving if μ(T⁻¹(A)) = μ(A) for all measurable A under a σ-finite measure μ."
+      }
+    },
+    {
+      "topic": "binomial_entropy_approximation",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The entropy of a binomial distribution approximates that of a Gaussian distribution under the de Moivre–Laplace theorem."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The entropy of the measure corresponding to the binomial distribution converges to that of the Gaussian under suitable scaling."
+      }
+    },
+    {
+      "topic": "countable_product_measure",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "The infinite product of probability measures corresponds to the independent repetition of random experiments infinitely."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "The product measure on the infinite Cartesian product space is the completion of the product of σ-algebras generated by finite coordinates."
+      }
+    },
+    {
+      "topic": "symmetric_renewal_process",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A symmetric renewal process has interarrival times with symmetric distribution around the mean and zero expected drift."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A stochastic process with increments distributed symmetrically with respect to the trivial measure exhibits zero drift under symmetric transformation."
+      }
+    },
+    {
+      "topic": "shift_invariant_measure",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A stochastic process is shift-invariant if its statistical properties remain unchanged under time translation."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A measure on a sequence space is shift-invariant if the pushforward under the shift map is equal to the original measure."
+      }
+    },
+    {
+      "topic": "hyperuniformity",
+      "entry_1": {
+        "framing": "probability",
+        "statement": "A point process is hyperuniform if the variance of the number of points in a growing ball grows slower than the volume of the ball."
+      },
+      "entry_2": {
+        "framing": "measure theory",
+        "statement": "A random measure is hyperuniform if its Fourier transform does not vanish at the origin and its covariance decays faster than the spatial measure."
+      }
+    }
+  ]
+}

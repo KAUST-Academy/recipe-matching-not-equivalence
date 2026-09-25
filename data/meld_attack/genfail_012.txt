@@ -1,0 +1,191 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=statistical_mechanics round=1 call=12
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=greedy
+# completion_chars=13941 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "stationary_distribution",
+      "entry_1": {
+        "framing": "Markov chains",
+        "statement": "A Markov chain has a stationary distribution $ \pi $ if $ \pi P = \pi $, where $ P $ is the transition matrix."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "An equilibrium ensemble is characterized by a probability distribution $ \mu $ that satisfies $ \mu H = \mu $, where $ H $ is the transfer operator."
+      }
+    },
+    {
+      "topic": "transition_kernel",
+      "entry_1": {
+        "framing": "Markov chains",
+        "statement": "The transition kernel $ K(x, A) $ of a Markov chain assigns the probability of moving from state $ x $ to a measurable set $ A $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The transition operator $ T(x, A) $ in a statistical system assigns the likelihood of transitioning from configuration $ x $ to a set $ A $ under the dynamics."
+      }
+    },
+    {
+      "topic": "irreducibility",
+      "entry_1": {
+        "framing": "Markov chains",
+        "statement": "A Markov chain is irreducible if every state is accessible from every other state in finite steps."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "A system is ergodic if every macrostate can be reached from any other macrostate under the system's dynamics."
+      }
+    },
+    {
+      "topic": "aperiodicity",
+      "entry_1": {
+        "framing": "Markov chains",
+        "statement": "A Markov chain is aperiodic if the return time to any state is not restricted to multiples of some integer greater than one."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "A system is aperiodic if the recurrence time to any configuration is not constrained to a fixed period."
+      }
+    },
+    {
+      "topic": "mixing_time",
+      "entry_1": {
+        "framing": "Markov chains",
+        "statement": "The mixing time $ t_{\text{mix}}(\epsilon) $ is the smallest time $ t $ such that the total variation distance between the chain's distribution and the stationary distribution is less than $ \epsilon $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The relaxation time $ \tau_{\text{rel}}(\epsilon) $ is the smallest time $ t $ such that the system's distribution is within $ \epsilon $ of the equilibrium distribution in total variation."
+      }
+    },
+    {
+      "topic": "reversibility",
+      "framing": "Markov chains",
+      "statement": "A Markov chain is reversible with respect to $ \pi $ if $ \pi(x) P(x, y) = \pi(y) P(y, x) $ for all $ x, y $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "A system is detailed balanced with respect to $ \mu $ if $ \mu(x) T(x, y) = \mu(y) T(y, x) $ for all configurations $ x, y $."
+      }
+    },
+    {
+      "topic": "ergodicity",
+      "framing": "Markov chains",
+      "statement": "A Markov chain is ergodic if it is irreducible, aperiodic, and has a unique stationary distribution."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "A system is ergodic if it is accessible, aperiodic, and converges to a unique equilibrium distribution."
+      }
+    },
+    {
+      "topic": "transition_matrix",
+      "framing": "Markov chains",
+      "statement": "The transition matrix $ P $ of a finite Markov chain is a stochastic matrix with entries $ P_{ij} = \mathbb{P}(X_{n+1} = j \mid X_n = i) $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The transfer matrix $ M $ of a finite system encodes the probability $ M_{ij} = \mathbb{P}(C_{n+1} = j \mid C_n = i) $ of transitioning between configurations."
+      }
+    },
+    {
+      "topic": "stationary_probability",
+      "framing": "Markov chains",
+      "statement": "The stationary probability $ \pi_i $ of state $ i $ satisfies $ \pi_i = \sum_j \pi_j P_{ji} $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The equilibrium probability $ \mu_i $ of configuration $ i $ satisfies $ \mu_i = \sum_j \mu_j T_{ji} $."
+      }
+    },
+    {
+      "topic": "transition_operator",
+      "framing": "Markov chains",
+      "statement": "The transition operator $ P $ acts on functions $ f $ by $ (Pf)(x) = \mathbb{E}[f(X_{n+1}) \mid X_n = x] $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The transfer operator $ T $ acts on functions $ f $ by $ (Tf)(x) = \mathbb{E}[f(C_{n+1}) \mid C_n = x] $."
+      }
+    },
+    {
+      "topic": "generator",
+      "framing": "Markov chains",
+      "statement": "The infinitesimal generator $ Q $ of a continuous-time Markov chain satisfies $ Q_{ij} = \lim_{t \to 0} \frac{P_{ij}(t) - \delta_{ij}}{t} $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The infinitesimal generator $ L $ of a continuous-time system satisfies $ L_{ij} = \lim_{t \to 0} \frac{T_{ij}(t) - \delta_{ij}}{t} $."
+      }
+    },
+    {
+      "topic": "detailed_balance",
+      "framing": "Markov chains",
+      "statement": "Detailed balance holds if $ \pi_i P_{ij} = \pi_j P_{ji} $ for all $ i, j $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "Detailed balance holds if $ \mu_i T_{ij} = \mu_j T_{ji} $ for all $ i, j $."
+      }
+    },
+    {
+      "topic": "spectral_gap",
+      "framing": "Markov chains",
+      "statement": "The spectral gap $ \gamma $ of a Markov chain is the difference between the largest and second-largest eigenvalues of the transition matrix."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The spectral gap $ \Delta $ of a system is the difference between the largest and second-largest eigenvalues of the transfer matrix."
+      }
+    },
+    {
+      "topic": "mixing_property",
+      "framing": "Markov chains",
+      "statement": "A Markov chain is said to mix if its distribution converges to the stationary distribution as time increases."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "A system is said to relax if its distribution converges to the equilibrium distribution as time increases."
+      }
+    },
+    {
+      "topic": "stationary_measure",
+      "framing": "Markov chains",
+      "statement": "A stationary measure $ \pi $ satisfies $ \pi P = \pi $, where $ P $ is the transition kernel."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "An equilibrium measure $ \mu $ satisfies $ \mu T = \mu $, where $ T $ is the transfer kernel."
+      }
+    },
+    {
+      "topic": "transition_probability",
+      "framing": "Markov chains",
+      "statement": "The transition probability $ P_{ij} $ is the probability of moving from state $ i $ to state $ j $ in one step."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The transition probability $ T_{ij} $ is the probability of moving from configuration $ i $ to configuration $ j $ in one step."
+      }
+    },
+    {
+      "topic": "stationary_distribution_convergence",
+      "framing": "Markov chains",
+      "statement": "For an irreducible and aperiodic Markov chain, the distribution $ P^n(x, \cdot) $ converges to the stationary distribution $ \pi $ as $ n \to \infty $."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "For an accessible and aperiodic system, the distribution $ T^n(x, \cdot) $ converges to the equilibrium distribution $ \mu $ as $ n \to \infty $."
+      }
+    },
+    {
+      "topic": "mixing_time_bound",
+      "framing": "Markov chains",
+      "statement": "The mixing time $ t_{\text{mix}} $ is bounded by $ t_{\text{mix}} \leq \frac{1}{\gamma} \log \frac{1}{\epsilon} $, where $ \gamma $ is the spectral gap."
+      },
+      "entry_2": {
+        "framing": "statistical mechanics",
+        "statement": "The relaxation 

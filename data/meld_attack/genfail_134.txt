@@ -1,0 +1,173 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=equilibria round=5 call=134
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=14695 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Refinements of Equilibrium",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A trembling-hand equilibrium exists in a finite game if each player's strategy is a limit of completely mixed strategies that are best responses to perturbations of the other players' strategies."
+      },
+      "entry_2": {
+        "framing": "fixed point theory",
+        "statement": "A continuous map from a product of simplices to itself has a fixed point under a regularization scheme that converges to a diagonal perturbation of the domain."
+      }
+    },
+    {
+      "topic": "Rationalizability",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A strategy profile is rationalizable if it survives the iterated elimination of strictly dominated strategies in a complete information game."
+      },
+      "entry_2": {
+        "framing": "fixed point theory",
+        "statement": "A tuple of selections from upper hemicontinuous correspondences has a common fixed point under an iterative process that eliminates non-maximal elements."
+      }
+    },
+    {
+      "topic": "Infinite Games with Compact Action Spaces",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A game with compact, convex strategy sets and continuous payoff functions admits at least one mixed strategy equilibrium under quasiconcave utility assumptions."
+      },
+      "entry_2": {
+        "framing": "fixed point theory",
+        "statement": "Every convex, compact subset of a Hausdorff topological vector space and continuous mapping satisfying the KKM condition admits a fixed point."
+      }
+    },
+    {
+      "topic": "Stable Outcome Correspondences",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "If the outcome correspondence of a game is upper hemicontinuous and convex-valued, the game has a stable set of mixed strategy equilibria."
+      },
+      "entry_2": {
+        "framing": "fixed point theory",
+        "statement": "A continuous correspondence with convex, compact values defined on a simplex has a stable selection under small perturbations of the domain."
+      }
+    },
+    {
+      "topic": "Stochastic Stability",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "In a noisy, myopic adjustment process over a finite game, the long-run distribution concentrates on the stochastically stable states."
+      },
+      "entry_2": {
+        "framing": "fixed point theory",
+        "statement": "A Markov chain over a finite set with transition probabilities depending on a perturbation parameter has a limiting invariant measure concentrating on stable fixed points."
+      }
+    },
+    {
+      "topic": "Implementation Theory",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A social choice function is Nash implementable if for every preference profile, there exists a unique Nash equilibrium outcome matching it."
+      },
+      "entry_2": {
+        "framing": "fixed point theory",
+        "statement": "A function defined on a product space admits a single-valued fixed point under a variational adjustment mapping."
+      }
+    },
+    {
+      "topic": "Cournot Equilibrium",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A symmetric Cournot competition has an equilibrium when firms choose quantities simultaneously and best respond to the aggregate of others’ choices."
+      },
+      "entry_2": {
+        "framing": "fixed point theory",
+        "statement": "A convex mapping over a compact set defined implicitly by a market-clearing condition has at least one fixed point in the interior of the domain."
+      }
+    },
+    {
+      "topic": "Evolutionarily Stable Sets",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A set of strategies is evolutionarily stable if it is stable against any small perturbation from its interior."
+      },
+        "statement": "A convex set in a simplex is invariant under a nonlinear differential inclusion and admits no inward drift."
+      }
+    },
+    {
+      "topic": "Perturbed Equilibrium",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A perturbed Nash equilibrium exists in a game where each player's payoff is modified by a small additive, separable noise term."
+      },
+        "statement": "A continuous function on a simplex that approximates another function admits an equilibrium-type fixed point for all sufficiently small noise."
+      }
+    },
+    {
+      "topic": "Trembling-Hand Perfect Equilibrium",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "In finite normal-form games, a strategy profile is trembling-hand perfect if it is a limit of equilibria of perturbed games where players choose each strategy with positive probability."
+      },
+        "statement": "A mapping defined on a convex domain is perfect if its fixed point survives under a sequence of perturbations converging to zero."
+      }
+    },
+    {
+      "topic": "Refinements via Consistent Beliefs",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A self-consistent equilibrium exists when every player's strategy is a best response to the consistent beliefs about others’ actions derived from the equilibrium itself."
+      },
+        "statement": "A correspondence defined implicitly by an operator on a compact convex set admits a fixed point under the condition of self-consistency of the mapping."
+      }
+    },
+    {
+      "topic": "Auction Stability",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "In a sealed-bid auction with independent private values, a symmetric monotonic equilibrium exists when players follow a non-decreasing bid function."
+      },
+        "statement": "A non-decreasing operator defined on a Banach lattice admits a fixed point under certain integrability and monotonicity conditions."
+      }
+    },
+    {
+      "topic": "Strategic Complementarities",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "In a game with increasing best responses, a symmetric equilibrium exists if the payoff function is supermodular in players' strategies."
+      },
+        "statement": "If the correspondence defined on a lattice is increasing and subgradient monotone, then it admits a greatest fixed point."
+      }
+    },
+    {
+      "topic": "Ascending Price Auctions",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "An ascending price auction has a stable bidding process when each bidder increases their bid as long as they remain the leader in the process."
+      },
+        "statement": "A dynamic process with monotonic updates and bounded increments converges to a fixed point under certain no-cycle conditions."
+      }
+    },
+    {
+      "topic": "Median Voter Theorem",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "In a single-peaked electoral game, a unique equilibrium in pure strategies exists at the median of the voters' ideal points."
+      },
+        "statement": "A continuous, single-peaked function on a convex compact domain admits a fixed point that coincides with the median under a symmetric distribution."
+      }
+    },
+    {
+      "topic": "Stability of Voting Equilibrium",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "In a repeated voting game with single-peaked preferences, the electorate converges to the majority outcome under a myopic voting rule."
+      },
+        "statement": "A non-expansive mapping over a finite lattice admits a fixed point that is asymptotically invariant under repeated application."
+      }
+    },
+    {
+      "topic": "Hybrid Action Spaces",
+      "entry_1": {
+        "framing": "game theory",
+        "statement": "A game with both discrete and continuous action spaces admits an equilibrium if the continuous action set is compact and the payoff functions are jointly quasiconcave."
+      },
+        "statement": "A mapping defined over a mixture of finite and compact spaces and continuous in the second 

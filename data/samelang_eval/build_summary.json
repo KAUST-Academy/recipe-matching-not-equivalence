@@ -1,0 +1,52 @@
+{
+  "generated": "2026-09-03",
+  "built_by": "scripts/build_samelang_eval.py",
+  "n_clusters_monolingual": 242,
+  "n_queries": 498,
+  "n_qrel_rows": 552,
+  "n_corpus_docs": 27817,
+  "clusters_exact_text": 143,
+  "clusters_non_exact": 99,
+  "clusters_non_exact_clean_of_training": 61,
+  "clusters_non_exact_leaked": 38,
+  "queries_primary_slice_non_exact_clean": 125,
+  "queries_primary_slice_english": 115,
+  "queries_non_exact_leaked": 82,
+  "queries_exact_text": 291,
+  "queries_per_language": {
+    "en": 433,
+    "it": 32,
+    "es": 17,
+    "pt": 6,
+    "fr": 6,
+    "de": 2,
+    "ro": 2
+  },
+  "primary_slice_per_language": {
+    "en": 115,
+    "es": 6,
+    "pt": 4
+  },
+  "primary_slice_methods": {
+    "V2_rare_math": 88,
+    "V1_text": 33,
+    "V4_answer_math": 4
+  },
+  "leaked_clusters_by_training_file": {
+    "CAS file": 38,
+    "D2": 38,
+    "D4": 38,
+    "ctrl-LLM (D1)": 38,
+    "D3": 33,
+    "regenerated clean LLM": 11
+  },
+  "queries_overlapping_retrieve_anchors": 278,
+  "training_files_checked": {
+    "ctrl-LLM (D1)": "data/llm_pairs/pairs.jsonl",
+    "CAS file": "data/cas_pairs/pairs.jsonl",
+    "D2": "data/llm_pairs_paraphrase/pairs.jsonl",
+    "D3": "data/llm_pairs_style/pairs.jsonl",
+    "D4": "data/llm_pairs_unrelated/pairs.jsonl",
+    "regenerated clean LLM": "data/llm_pairs_cleanfull/pairs.jsonl"
+  }
+}

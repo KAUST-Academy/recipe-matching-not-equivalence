@@ -1,0 +1,130 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=spectral_graph_theory round=10 call=87
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=13444 (dump keeps first 6144 + last 6144; 1156 elided)
+------------------------------------------------------------------------
+```json
+{"pairs": [
+    {
+        "topic": "Bipartite spectral symmetry",
+        "entry_1": {"framing": "graph theory", "statement": "A connected graph is bipartite if and only if its adjacency matrix has a symmetric spectrum about the origin."},
+        "entry_2": {"framing": "linear algebra", "statement": "A connected graph is bipartite if and only if the corresponding adjacency matrix has eigenvalues that come in pairs of equal magnitude and opposite sign."}
+    },
+    {
+        "topic": "Cycle-free spectra",
+        "entry_1": {"framing": "graph theory", "statement": "A connected graph with no cycles is a tree if and only if its Laplacian matrix has an eigenvalue 0 with multiplicity 1 and no eigenvalues less than 1 except 0."},
+        "entry_2": {"framing": "linear algebra", "statement": "A connected graph is a tree if and only if its Laplacian matrix has a rank of $ n - 1 $ and all eigenvalues are non-negative with only one zero eigenvalue."}
+    },
+    {
+        "topic": "Eigenvector vertex identification",
+        "entry_1": {"framing": "graph theory", "statement": "A vertex of maximal degree in a regular graph is unique if and only if the corresponding entry in the principal eigenvector of the adjacency matrix is strictly greater than others."},
+        "entry_2": {"framing": "linear algebra", "statement": "In the adjacency matrix of a regular graph, if the dominant eigenvector has a strictly maximal entry corresponding to a single vertex, that vertex has maximum degree."}
+    },
+    {
+        "topic": "Highly connected central vertex",
+        "entry_1": {"framing": "graph theory", "statement": "A vertex is a central hub in a sparse graph if the number of shortest paths passing through it exceeds the average and its corresponding entry in the eigenvector centrality is maximal."},
+        "entry_2": {"framing": "linear algebra", "statement": "In a sparse graph, the vertex with the largest eigenvector centrality associated with the largest eigenvalue of the adjacency matrix corresponds to a highly connected hub."}
+    },
+    {
+        "topic": "Path convergence rates",
+        "entry_1": {"framing": "graph theory", "statement": "In a connected undirected graph, the number of distinct walks of length $ k $ converges to a steady-state distribution proportional to the degree distribution if the graph is regular or converges faster for higher algebraic connectivity."},
+        "entry_2": {"framing": "linear algebra", "statement": "For a connected undirected graph, repeated powers of the normalized adjacency matrix converge to a steady-state matrix more rapidly when the second-largest eigenvalue is smaller."}
+    },
+    {
+        "topic": "Eigenscale decomposition",
+        "entry_1": {"framing": "graph theory", "statement": "A graph can be decomposed into components of differing cohesiveness, with each subset corresponding to a distinct group in the hierarchical eigenspace representation."},
+        "entry_2": {"framing": "linear algebra", "statement": "The graph Laplacian can be block diagonalized with each block corresponding to a coherently structured submatrix, giving spectral evidence of communities in the graph."}
+    },
+    {
+        "topic": "Degenerate eigenvalues",
+        "entry_1": {"framing": "graph theory", "statement": "A graph whose adjacency matrix has degenerate eigenvalues typically reflects structural regularity or symmetry within the graph, such as in strongly regular or circulant graphs."},
+        "entry_2": {"framing": "linear algebra", "statement": "An adjacency matrix with multiple distinct eigenvectors for the same eigenvalue often implies the presence of symmetries or isometries in the corresponding graph."}
+    },
+    {
+        "topic": "Strongly regular graph representation",
+        "entry_1": {"framing": "graph theory", "statement": "A strongly regular graph has exactly three distinct eigenvalues, and the multiplicities of those eigenvalues are determined by the parameters $ (n,k,\lambda,\mu) $."},
+        "entry_2": {"framing": "linear algebra", "statement": "An adjacency matrix corresponding to a strongly regular graph has exactly three eigenvalues, with the second and third ones determined by the equation $ A^2 = kI + \lambda A + \mu(J - I - A) $."}
+    },
+    {
+        "topic": "Graph contraction spectral effect",
+        "entry_1": {"framing": "graph theory", "statement": "Contracting an edge in a graph merges two vertices into one and changes the eigenvalues of the Laplacian matrix in a way that depends on the structure of the removed edge and its neighborhood."},
+        "entry_2": {"framing": "linear algebra", "statement": "Contracting an edge in the matrix representation of a graph results in a Schur complement that modifies the Laplacian's spectrum based on the subgraph structure."}
+    },
+    {
+        "topic": "Matrix elimination and connectivity",
+        "entry_1": {"framing": "graph theory", "statement": "Deleting a vertex from a graph and computing the corresponding reduced adjacency matrix results in a lower spectral radius if the removed vertex was highly connected."},
+        "entry_2": {"framing": "linear algebra", "statement": "Eliminating a row and column from an adjacency matrix to reflect vertex deletion decreases the largest eigenvalue if the corresponding vertex had high degree."}
+    },
+    {
+        "topic": "Modularity from eigenvectors",
+        "entry_1": {"framing": "graph theory", "statement": "Modularity maximization in partitioning a graph can be approximated by the second eigenvector of the modularity matrix, identifying the dominant community structure."},
+        "entry_2": {"framing": "linear algebra", "statement": "The dominant eigenvector of the modularity matrix can be used to approximately find partitions in graphs that maximize the modularity score."}
+    },
+    {
+        "topic": "Eigenvector centrality for sparse graphs",
+        "entry_1": {"framing": "graph theory", "statement": "In sparse graphs with few hubs, eigenvector centrality assigns high values to the most connected vertices, whereas in dense graphs, the distribution is more uniform."}
+
+
+... [1156 chars elided by dump_gen_failure] ...
+
+ge augmentation and spectrum",
+        "entry_1": {"framing": "graph theory", "statement": "Adding edges between non-connected vertices in a graph increases the spectral radius of the adjacency matrix and typically raises the algebraic connectivity of the graph."},
+        "entry_2": {"framing": "linear algebra", "statement": "Adding new edges increases the adjacency matrix’s largest eigenvalue and may increase the second-smallest Laplacian eigenvalue, reflecting enhanced connectivity."}
+    },
+    {
+        "topic": "Null space and components",
+        "entry_1": {"framing": "graph theory", "statement": "The null space of the Laplacian matrix of a graph corresponds to one vector per connected component, and so its dimension equals the number of components in the graph."},
+        "entry_2": {"framing": "linear algebra", "statement": "The dimension of the null space of a graph Laplacian matrix equals the number of connected components in the graph."}
+    },
+    {
+        "topic": "Rank deficiency from cycles",
+        "entry_1": {"framing": "graph theory", "statement": "The rank of the Laplacian matrix of a connected graph is $ n - 1 $, and its rank is reduced further in graphs with multiple connected components or additional cycles."},
+        "entry_2": {"framing": "linear algebra", "statement": "If a graph has multiple connected components or additional independent cycles, the rank of the corresponding Laplacian matrix decreases, showing structural rank loss."}
+    },
+    {
+        "topic": "Spectral graph duality",
+        "entry_1": {"framing": "graph theory", "statement": "The spectra of a graph and its complement are related through eigenvalue transformations involving the number of vertices and degree shifts."},
+        "entry_2": {"framing": "linear algebra", "statement": "The eigenvalues of a graph and its complement satisfy a relation where $ \lambda_i + \mu_i = n - 2 $ for nontrivial eigenvalues $ \lambda_i $ of the graph and $ \mu_i $ of its complement."}
+    },
+    {
+        "topic": "Spectral node removal",
+        "entry_1": {"framing": "graph theory", "statement": "Removing a vertex from a graph and reanalyzing the spectral properties often shifts the largest eigenvalues in a predictable way depending on the vertex’s degree and eigenvector centrality."},
+        "entry_2": {"framing": "linear algebra", "statement": "Deleting a row and column in the adjacency matrix results in spectral changes that can be estimated using perturbation theory, particularly in relation to the vertex's importance."}
+    },
+    {
+        "topic": "Spectral graph enumeration",
+        "entry_1": {"framing": "graph theory", "statement": "The number of spanning trees in a graph can be calculated using the product of the non-zero eigenvalues of the Laplacian matrix and the number of vertices."}
+        "entry_2": {"framing": "linear algebra", "statement": "The number of spanning trees is given by the product of the non-zero eigenvalues of the Laplacian matrix divided by the number of vertices."}
+    },
+    {
+        "topic": "Spectral partitioning criterion",
+        "entry_1": {"framing": "graph theory", "statement": "A good partition of a graph into two communities is achieved by minimizing the cut size relative to the volume of the partitions, as captured by the Fiedler vector of the graph."},
+        "entry_2": {"framing": "linear algebra", "statement": "Partitioning a graph to balance the cut and minimize interface density corresponds to using the eigenvector corresponding to the smallest non-zero Laplacian eigenvalue."}
+    },
+    {
+        "topic": "Spectral energy",
+        "entry_1": {"framing": "graph theory", "statement": "The spectral energy of a graph, defined as the sum of the absolute values of all adjacency matrix eigenvalues, quantifies the overall dynamics of walks in the graph."},
+        "entry_2": {"framing": "linear algebra", "statement": "The sum of the absolute values of the eigenvalues of the adjacency matrix is a measure of the overall interaction energy in the system."}
+    },
+    {
+        "topic": "Hermitian graph structure",
+        "entry_1": {"framing": "graph theory", "statement": "Directed graphs with symmetric edge weights have associated Hermitian matrices that reflect the graph’s orientation through a complex or real spectral decomposition."},
+        "entry_2": {"framing": "linear algebra", "statement": "A real symmetric or complex Hermitian adjacency matrix encodes a graph with reciprocal or symmetric edge interactions, enabling real or complex eigenvalue analysis."}
+    },
+    {
+        "topic": "Spectral contraction equivalence",
+        "entry_1": {"framing": "graph theory", "statement": "Contracting isomorphic subgraphs in a graph leads to spectral invariance if the contracted subgraphs induce the same eigenvalues in the overall Laplacian structure."},
+        "entry_2": {"framing": "linear algebra", "statement": "If a matrix admits block structure with symmetric eigenvalues in its blocks, then Schur complementation preserves the overall spectral structure upon contraction."}
+    },
+    {
+        "topic": "Multiplicity and reducibility",
+        "entry_1": {"framing": "graph theory", "statement": "If a graph’s Laplacian matrix has an eigenvalue of multiplicity greater than one, then the graph may be reducible into components sharing that eigenvalue signature."},
+        "entry_2": {"framing": "linear algebra", "statement": "An eigenvalue with multiplicity greater than one in a Laplacian matrix implies the matrix is reducible and corresponds to multiple graph components with overlapping spectral features."}
+    },
+    {
+        "topic": "Random walk equivalence",
+        "entry_1": {"framing": "graph theory", "statement": "Two connected graphs are random-walk equivalent if the long-term behavior of their random walks yields the same stationary distribution and mixing time profile."}
+        "entry_2": {"framing": "linear algebra", "statement": "Two connected graphs are random-walk equivalent if their adjacency matrices have the same normalized eigenvector and similar spectral decay."}
+    }
+]}
+```

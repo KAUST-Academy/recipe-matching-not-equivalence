@@ -1,0 +1,208 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=matroids round=1 call=10
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=greedy
+# completion_chars=12726 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "independence",
+      "entry_1": {
+        "framing": "matroid theory",
+        "statement": "A subset $ I $ of a matroid $ M $ is independent if it satisfies the hereditary property and the augmentation property."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A set of items is admissible if it can be extended to a maximal solution by iteratively adding the next best element without violating constraints."
+      }
+    },
+    {
+      "topic": "basis",
+      "entry_1": {
+        "framing": "matroid theory",
+        "statement": "A basis of a matroid is a maximal independent set, and all bases have the same cardinality."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A solution is maximal if no further item can be added without violating the constraints, and all such maximal solutions have the same size."
+      }
+    },
+    {
+      "topic": "circuit",
+      "framing": "matroid theory",
+      "statement": "A circuit is a minimal dependent set in a matroid, and any dependent set contains at least one circuit."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A conflict is a minimal set of items that cannot all be selected together, and any infeasible selection contains at least one such conflict."
+      }
+    },
+    {
+      "topic": "rank",
+      "framing": "matroid theory",
+      "statement": "The rank of a subset $ S $ in a matroid is the size of the largest independent subset of $ S $."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "The capacity of a set of items is the maximum number of them that can be selected without violating the constraints."
+      }
+    },
+    {
+      "topic": "closure",
+      "framing": "matroid theory",
+      "statement": "The closure of a set $ S $ is the set of all elements $ e $ such that $ S \cup \{e\} $ is not independent."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "The saturation of a set of items is the set of all items that cannot be added without violating the constraints."
+      }
+    },
+    {
+      "topic": "exchange",
+      "framing": "matroid theory",
+      "statement": "If $ I_1 $ and $ I_2 $ are independent sets with $ |I_1| < |I_2| $, then there exists $ e \in I_2 \setminus I_1 $ such that $ I_1 \cup \{e\} $ is independent."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "If one solution has fewer items than another, there exists an item in the larger solution that can be added to the smaller one without violating the constraints."
+      }
+    },
+    {
+      "topic": "dual",
+      "framing": "matroid theory",
+      "statement": "The dual of a matroid $ M $ is a matroid $ M^* $ whose independent sets are the complements of the independent sets of $ M $ with respect to the rank."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "The reverse problem is defined such that the optimal solution to it corresponds to the complement of the optimal solution to the original problem."
+      }
+    },
+    {
+      "topic": "spanning",
+      "framing": "matroid theory",
+      "statement": "A set $ S $ is spanning if its closure is the entire ground set."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A set of items is complete if no further items can be added without violating the constraints."
+      }
+    },
+    {
+      "topic": "loop",
+      "framing": "matroid theory",
+      "statement": "An element $ e $ is a loop if it is not contained in any independent set."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "An item is invalid if it cannot be selected in any solution."
+      }
+    },
+    {
+      "topic": "parallel",
+      "framing": "matroid theory",
+      "statement": "Two elements $ e $ and $ f $ are parallel if they are not loops and $ \{e, f\} $ is a circuit."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "Two items are conflicting if they cannot both be selected in any solution."
+      }
+    },
+    {
+      "topic": "minor",
+      "framing": "matroid theory",
+      "statement": "A minor of a matroid is obtained by a sequence of deletions and contractions of elements."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A subproblem is derived by iteratively removing or fixing items according to constraints."
+      }
+    },
+    {
+      "topic": "representable",
+      "framing": "matroid theory",
+      "statement": "A matroid is representable over a field $ F $ if its independent sets correspond to linearly independent sets in a vector space over $ F $."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A problem is linearizable if its constraints can be modeled by linear independence in a vector space over a field."
+      }
+    },
+    {
+      "topic": "uniform",
+      "framing": "matroid theory",
+      "statement": "A uniform matroid $ U_{r,n} $ has all $ r $-element subsets of an $ n $-element set as its bases."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A problem is uniform if any $ r $-element subset of items is a valid solution."
+      }
+    },
+    {
+      "topic": "graphic",
+      "framing": "matroid theory",
+      "statement": "A graphic matroid is defined by the edge set of a graph, with independent sets being the forests."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A problem is graphical if its constraints correspond to selecting a forest in a graph."
+      }
+    },
+    {
+      "topic": "cographic",
+      "framing": "matroid theory",
+      "statement": "A cographic matroid is the dual of a graphic matroid, defined by the edge set of a graph and its cut sets."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A problem is co-graphical if its constraints correspond to selecting a set of edges that form a cut in a graph."
+      }
+    },
+    {
+      "topic": "transversal",
+      "framing": "matroid theory",
+      "statement": "A transversal matroid is defined by a family of sets, with independent sets being partial transversals."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A problem is transversal if its constraints correspond to selecting one item from each of a family of sets."
+      }
+    },
+    {
+      "topic": "partition",
+      "framing": "matroid theory",
+      "statement": "A partition matroid is defined by a partition of the ground set and a bound on the number of elements selected from each part."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A problem is partitioned if its constraints limit the number of items selected from each group in a partition."
+      }
+    },
+    {
+      "topic": "matroid union",
+      "framing": "matroid theory",
+      "statement": "The union of two matroids is a matroid whose independent sets are the union of independent sets from each matroid."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A problem is combined if its constraints are the union of constraints from two separate problems."
+      }
+    },
+    {
+      "topic": "matroid intersection",
+      "framing": "matroid theory",
+      "statement": "The intersection of two matroids is the set of subsets that are independent in both matroids."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "statement": "A problem is intersected if its constraints are the intersection of constraints from two separate problems."
+      }
+    },
+    {
+      "topic": "greedy algorithm",
+      "framing": "matroid theory",
+      "statement": "The greedy algorithm for a matroid always produces a maximum-weight independent set."
+      },
+      "entry_2": {
+        "framing": "greedy algorithms",
+        "stateme

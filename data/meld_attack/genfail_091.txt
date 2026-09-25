@@ -1,0 +1,161 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9altm domain=algebra round=11 call=91
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=11610 (dump keeps first 6144 + last 6144; 0 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Endomorphism Ring of Free Module",
+      "entry_1": {"framing": "vector spaces", "statement": "The endomorphism ring of a finite-dimensional vector space over a field is isomorphic to the ring of square matrices over the field."},
+      "entry_2": {"framing": "module theory", "statement": "The endomorphism ring of a finitely generated free module over a ring is isomorphic to the ring of square matrices over that ring."}
+    },
+    {
+      "topic": "Rank of a Free Submodule",
+      "entry_1": {"framing": "vector spaces", "statement": "Every subspace of a finite-dimensional vector space is also finite-dimensional, and its dimension is less than or equal to that of the ambient space."},
+      "entry_2": {"framing": "module theory", "statement": "Every finitely generated free submodule of a finitely generated free module over a commutative ring has rank less than or equal to the rank of the module."}
+    },
+    {
+      "topic": "Projectivity Criterion",
+      "entry_1": {"framing": "vector spaces", "statement": "Every subspace of a vector space is projective as a module over the field."},
+      "entry_2": {"framing": "module theory", "statement": "Every direct summand of a free module over a ring is a projective module."}
+    },
+    {
+      "topic": "Categorical Duality",
+      "entry_1": {"framing": "vector spaces", "statement": "The category of finite-dimensional vector spaces is self-dual, with dualization being an equivalence of categories."},
+      "entry_2": {"framing": "module theory", "statement": "The category of finitely generated free modules over a ring is self-dual when the ring is equipped with an anti-isomorphism."}
+    },
+    {
+      "topic": "Extension of Linear Maps",
+      "entry_1": {"framing": "vector spaces", "statement": "Every linear map defined on a subspace of a vector space extends to a linear map on the entire space."},
+      "entry_2": {"framing": "module theory", "statement": "Every module homomorphism defined on a direct summand of a free module extends to a module homomorphism on the entire module."}
+    },
+    {
+      "topic": "Annihilator of Hom Set",
+      "entry_1": {"framing": "vector spaces", "statement": "The annihilator of the hom space between two vector spaces over the same field is trivial."}
+      "entry_2": {"framing": "module theory", "statement": "The annihilator of the Hom module between two finitely generated free modules over a ring is a nil ideal if the ring is reduced."}
+    },
+    {
+      "topic": "Factorization of Endomorphisms",
+      "entry_1": {"framing": "vector spaces", "statement": "Any endomorphism of a finite-dimensional vector space factors through a subspace and a quotient space of the same dimension as the subspace."},
+      "entry_2": {"framing": "module theory", "statement": "Any endomorphism of a finitely generated free module factors through a free direct summand and a quotient by that summand."}
+    },
+    {
+      "topic": "Complement of Submodule",
+      "entry_1": {"framing": "vector spaces", "statement": "Every subspace of a vector space has a complementary subspace."}
+      "entry_2": {"framing": "module theory", "statement": "Every direct summand of a free module has a complement which is also a direct summand."}
+    },
+    {
+      "topic": "Quotient Module Kernel",
+      "entry_1": {"framing": "vector spaces", "statement": "The kernel of the quotient map from a vector space to a quotient space is the subspace being quotiented out."}
+      "entry_2": {"framing": "module theory", "statement": "The kernel of the projection map from a free module to a quotient module is the ideal being quotiented out."}
+    },
+    {
+      "topic": "Dual of Inclusion",
+      "entry_1": {"framing": "vector spaces", "statement": "The dual map to the inclusion of a subspace is the restriction map of the dual space."}
+      "entry_2": {"framing": "module theory", "statement": "The dual map to the inclusion of a direct summand is the restriction map to the dual module."}
+    },
+    {
+      "topic": "Torsion-Free over PID",
+      "entry_1": {"framing": "vector spaces", "statement": "Every nonzero vector in a vector space is not torsion under scalar multiplication."}
+      "entry_2": {"framing": "module theory", "statement": "Every finitely generated torsion-free module over a PID is a free module."}
+    },
+    {
+      "topic": "Tensor and Dual Commute",
+      "entry_1": {"framing": "vector spaces", "statement": "The natural isomorphism between a tensor space and the dual of a direct sum commutes with dual maps."}
+      "entry_2": {"framing": "module theory", "statement": "The natural module isomorphism between the tensor product and dual of free modules commutes with homomorphisms."}
+    },
+    {
+      "topic": "Kernel of Composition",
+      "entry_1": {"framing": "vector spaces", "statement": "The kernel of the composition of two linear maps contains the kernel of the first map."}
+      "entry_2": {"framing": "module theory", "statement": "The kernel of the composition of two module homomorphisms contains the kernel of the first homomorphism."}
+    },
+    {
+      "topic": "Image of Composition",
+      "entry_1": {"framing": "vector spaces", "statement": "The image of the composition of two linear maps is a subspace of the image of the second map."}
+      "entry_2": {"framing": "module theory", "statement": "The image of the composition of two module homomorphisms is a module included in the image of the second."}
+    },
+    {
+      "topic": "Nilpotent Kernel",
+      "entry_1": {"framing": "vector spaces", "statement": "If a linear map is nilpotent, then its kernel strictly increases with each power until it stabilizes at the space itself."},
+      "entry_2": {"framing": "module theory", "statement": "If an endomorphism of a free module is nilpotent, its kernel strictly increases with each power until it stabilizes at the module."}
+    },
+    {
+      "topic": "Coimage Isomorphism",
+      "entry_1": {"framing": "vector spaces", "statement": "For a linear map between vector spaces, the coimage and image are isomorphic."}
+      "entry_2": {"framing": "module theory", "statement": "For a module homomorphism between free modules, the coimage and image are isomorphic as modules."}
+    },
+    {
+      "topic": "Free Subquotient",
+      "entry_1": {"framing": "vector spaces", "statement": "Every finite-dimensional subspace is a subquotient of the space by a complementary subspace."}
+      "entry_2": {"framing": "module theory", "statement": "Every finitely generated free submodule of a free module is a subquotient via a complement."}
+    },
+    {
+      "topic": "Adjoint Map Cokernel",
+      "entry_1": {"framing": "vector spaces", "statement": "The cokernel of a linear map between finite-dimensional vector spaces is the dual of its kernel."}
+      "entry_2": {"framing": "module theory", "statement": "The cokernel of a module homomorphism between finitely generated free modules is the dual of its kernel."}
+    },
+    {
+      "topic": "Rank of Dual Map",
+      "entry_1": {"framing": "vector spaces", "statement": "The rank of the dual of a linear map is equal to the rank of the original map."}
+      "entry_2": {"framing": "module theory", "statement": "The rank of the dual of a module homomorphism is equal to the rank of the original homomorphism."}
+    },
+    {
+      "topic": "Split Monomorphism",
+      "entry_1": {"framing": "vector spaces", "statement": "An injective linear map between vector spaces splits if its domain is a subspace with a complement."}
+      "entry_2": {"framing": "module theory", "statement": "An injective module homomorphism between free modules splits if its image has a complementary direct summand."}
+    },
+    {
+      "topic": "Split Epimorphism",
+      "entry_1": {"framing": "vector spaces", "statement": "A surjective linear map between vector spaces splits if its codomain is a quotient of a space with a complement to its kernel."}
+      "entry_2": {"framing": "module theory", "statement": "A surjective module homomorphism between free modules splits if its kernel has a complement."}
+    },
+    {
+      "topic": "Tensor Product via Dual",
+      "entry_1": {"framing": "vector spaces", "statement": "The tensor product of two vector spaces is isomorphic to the space of bilinear maps from their duals."}
+      "entry_2": {"framing": "module theory", "statement": "The tensor product of two free modules is isomorphic to the module of bilinear homomorphisms from their duals."}
+    },
+    {
+      "topic": "Dual of Projective Module",
+      "entry_1": {"framing": "vector spaces", "statement": "The dual of a finite-dimensional vector space is again a vector space of the same dimension."}
+      "entry_2": {"framing": "module theory", "statement": "The dual of a finitely generated projective module over a ring is again a projective module."}
+    },
+    {
+      "topic": "Canonical Isomorphism of Duals",
+      "entry_1": {"framing": "vector spaces", "statement": "The double dual of a finite-dimensional vector space is canonically isomorphic to the original space."}
+      "entry_2": {"framing": "module theory", "statement": "The double dual of a finitely generated free module is canonically isomorphic to the original module."}
+    },
+    {
+      "topic": "Hom Space Rank",
+      "entry_1": {"framing": "vector spaces", "statement": "The dimension of the space of linear maps between two finite-dimensional vector spaces is the product of their dimensions."}
+      "entry_2": {"framing": "module theory", "statement": "The rank of the Hom module between two finitely generated free modules is the product of their ranks."}
+    },
+    {
+      "topic": "Dual and Tensor Preservation",
+      "entry_1": {"framing": "vector spaces", "statement": "The dual of a tensor product of vector spaces is isomorphic to the tensor product of the duals."}
+      "entry_2": {"framing": "module theory", "statement": "The dual of a tensor product of free modules is isomorphic to the tensor product of their duals."}
+    },
+    {
+      "topic": "Dual Exactness",
+      "entry_1": {"framing": "vector spaces", "statement": "The dual operation turns short exact sequences of finite-dimensional vector spaces into short exact sequences of dual spaces."}
+      "entry_2": {"framing": "module theory", "statement": "The dual operation turns short exact sequences of finitely generated free modules into exact sequences of dual modules."}
+    },
+    {
+      "topic": "Isomorphism by Trace",
+      "entry_1": {"framing": "vector spaces", "statement": "Two endomorphisms of a finite-dimensional vector space are similar if their trace and characteristic polynomial are the same."}
+      "entry_2": {"framing": "module theory", "statement": "Two endomorphisms of a finitely generated free module are similar if their trace and characteristic polynomial are the same."}
+    },
+    {
+      "topic": "Product and Dual of Duals",
+      "entry_1": {"framing": "vector spaces", "statement": "The dual of a product of vector spaces is the product of their duals."}
+      "entry_2": {"framing": "module theory", "statement": "The dual of a product of free modules is the product of their dual modules."}
+    },
+    {
+      "topic": "Basis of Dual",
+      "entry_1": {"framing": "vector spaces", "statement": "The dual space of a finite-dimensional vector space has a basis dual to that of the original space."}
+      "entry_2": {"framing": "module theory", "statement": "The dual of a finitely generated free module has a basis dual to that of the original module."}
+    }
+  ]
+}
+```

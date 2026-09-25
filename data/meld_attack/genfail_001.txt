@@ -1,0 +1,161 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9altm domain=algebra round=1 call=1
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=greedy
+# completion_chars=9923 (dump keeps first 6144 + last 6144; 0 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Definition of structure",
+      "entry_1": { "framing": "vector spaces", "statement": "A vector space over a field $ F $ is a set equipped with addition and scalar multiplication by elements of $ F $." },
+      "entry_2": { "framing": "module theory", "statement": "An $ F $-module over a field $ F $ is a set equipped with addition and scalar multiplication by elements of $ F $." }
+    },
+    {
+      "topic": "Linear independence",
+      "entry_1": { "framing": "vector spaces", "statement": "A set of vectors is linearly independent if no nontrivial linear combination of them equals zero." },
+      "entry_2": { "framing": "module theory", "statement": "A set of module elements is linearly independent if no nontrivial linear combination of them equals zero." }
+    },
+    {
+      "topic": "Spanning set",
+      "entry_1": { "framing": "vector spaces", "statement": "A set of vectors spans the space if every vector can be written as a linear combination of them." },
+      "entry_2": { "framing": "module theory", "statement": "A set of module elements generates the module if every element can be written as a linear combination of them." }
+    },
+    {
+      "topic": "Basis",
+      "entry_1": { "framing": "vector spaces", "statement": "A basis is a linearly independent spanning set." },
+      "entry_2": { "framing": "module theory", "statement": "A basis is a linearly independent generating set." }
+    },
+    {
+      "topic": "Dimension",
+      "entry_1": { "framing": "vector spaces", "statement": "The dimension of a vector space is the number of elements in any basis." },
+      "entry_2": { "framing": "module theory", "statement": "The free rank of a free module is the number of elements in any basis." }
+    },
+    {
+      "topic": "Linear map",
+      "entry_1": { "framing": "vector spaces", "statement": "A linear map is a function preserving addition and scalar multiplication." },
+      "entry_2": { "framing": "module theory", "statement": "A module homomorphism is a function preserving addition and scalar multiplication." }
+    },
+    {
+      "topic": "Kernel",
+      "entry_1": { "framing": "vector spaces", "statement": "The kernel of a linear map is the set of vectors mapped to zero." },
+      "entry_2": { "framing": "module theory", "statement": "The kernel of a module homomorphism is the set of elements mapped to zero." }
+    },
+    {
+      "topic": "Image",
+      "entry_1": { "framing": "vector spaces", "statement": "The image of a linear map is the set of all outputs." },
+      "entry_2": { "framing": "module theory", "statement": "The image of a module homomorphism is the set of all outputs." }
+    },
+    {
+      "topic": "Isomorphism",
+      "entry_1": { "framing": "vector spaces", "statement": "Two vector spaces are isomorphic if there is a bijective linear map between them." },
+      "entry_2": { "framing": "module theory", "statement": "Two modules are isomorphic if there is a bijective module homomorphism between them." }
+    },
+    {
+      "topic": "Direct sum",
+      "entry_1": { "framing": "vector spaces", "statement": "The direct sum of two subspaces is the set of all pairs of vectors from each subspace." },
+      "entry_2": { "framing": "module theory", "statement": "The direct sum of two submodules is the set of all pairs of elements from each submodule." }
+    },
+    {
+      "topic": "Quotient space",
+      "entry_1": { "framing": "vector spaces", "statement": "The quotient space $ V/W $ is the set of cosets of a subspace $ W $." },
+      "entry_2": { "framing": "module theory", "statement": "The quotient module $ M/N $ is the set of cosets of a submodule $ N $." }
+    },
+    {
+      "topic": "Dual space",
+      "entry_1": { "framing": "vector spaces", "statement": "The dual space is the space of all linear functionals." },
+      "entry_2": { "framing": "module theory", "statement": "The dual module is the module of all module homomorphisms to the base ring." }
+    },
+    {
+      "topic": "Rank-nullity theorem",
+      "entry_1": { "framing": "vector spaces", "statement": "The dimension of the domain equals the dimension of the image plus the dimension of the kernel." },
+      "entry_2": { "framing": "module theory", "statement": "The free rank of the domain equals the free rank of the image plus the free rank of the kernel." }
+    },
+    {
+      "topic": "Change of basis",
+      "entry_1": { "framing": "vector spaces", "statement": "Changing the basis of a vector space changes the matrix representation of a linear map." },
+      "entry_2": { "framing": "module theory", "statement": "Changing the basis of a free module changes the matrix representation of a module homomorphism." }
+    },
+    {
+      "topic": "Matrix representation",
+      "entry_1": { "framing": "vector spaces", "statement": "A linear map between finite-dimensional vector spaces can be represented by a matrix." },
+      "entry_2": { "framing": "module theory", "statement": "A module homomorphism between finitely generated free modules can be represented by a matrix." }
+    },
+    {
+      "topic": "Invertible map",
+      "entry_1": { "framing": "vector spaces", "statement": "A linear map is invertible if it is bijective." },
+      "entry_2": { "framing": "module theory", "statement": "A module homomorphism is invertible if it is bijective." }
+    },
+    {
+      "topic": "Nilpotent map",
+      "entry_1": { "framing": "vector spaces", "statement": "A linear map is nilpotent if some power of it is the zero map." },
+      "entry_2": { "framing": "module theory", "statement": "A module homomorphism is nilpotent if some power of it is the zero map." }
+    },
+    {
+      "topic": "Idempotent map",
+      "entry_1": { "framing": "vector spaces", "statement": "A linear map is idempotent if it equals its square." },
+      "entry_2": { "framing": "module theory", "statement": "A module homomorphism is idempotent if it equals its square." }
+    },
+    {
+      "topic": "Annihilator",
+      "entry_1": { "framing": "vector spaces", "statement": "The annihilator of a set of vectors is the set of functionals that vanish on them." },
+      "entry_2": { "framing": "module theory", "statement": "The annihilator of a set of module elements is the set of scalars that annihilate them." }
+    },
+    {
+      "topic": "Tensor product",
+      "entry_1": { "framing": "vector spaces", "statement": "The tensor product of two vector spaces is a new vector space representing bilinear maps." },
+      "entry_2": { "framing": "module theory", "statement": "The tensor product of two modules is a new module representing bilinear maps." }
+    },
+    {
+      "topic": "Dual basis",
+      "entry_1": { "framing": "vector spaces", "statement": "Given a basis, the dual basis is a set of functionals that pick out coordinates." },
+      "entry_2": { "framing": "module theory", "statement": "Given a basis, the dual basis is a set of homomorphisms that pick out coordinates." }
+    },
+    {
+      "topic": "Trace",
+      "framing": "vector spaces", "statement": "The trace of a linear map is the sum of its diagonal entries in any basis." },
+      "entry_2": { "framing": "module theory", "statement": "The trace of a module homomorphism is the sum of its diagonal entries in any basis." }
+    },
+    {
+      "topic": "Determinant",
+      "framing": "vector spaces", "statement": "The determinant of a linear map is the product of its eigenvalues." },
+      "entry_2": { "framing": "module theory", "statement": "The determinant of a module homomorphism is the product of its eigenvalues." }
+    },
+    {
+      "topic": "Eigenvalue",
+      "framing": "vector spaces", "statement": "An eigenvalue is a scalar such that $ T(v) = \lambda v $ for some nonzero $ v $." },
+      "entry_2": { "framing": "module theory", "statement": "An eigenvalue is a scalar such that $ f(m) = \lambda m $ for some nonzero $ m $." }
+    },
+    {
+      "topic": "Characteristic polynomial",
+      "framing": "vector spaces", "statement": "The characteristic polynomial of a linear map is $ \det(T - \lambda I) $." },
+      "entry_2": { "framing": "module theory", "statement": "The characteristic polynomial of a module homomorphism is $ \det(f - \lambda I) $." }
+    },
+    {
+      "topic": "Jordan form",
+      "framing": "vector spaces", "statement": "Every linear map on a finite-dimensional vector space has a Jordan canonical form." },
+      "entry_2": { "framing": "module theory", "statement": "Every module homomorphism on a finitely generated free module has a Jordan canonical form." }
+    },
+    {
+      "topic": "Invariant subspace",
+      "framing": "vector spaces", "statement": "A subspace is invariant under a linear map if the map sends it to itself." },
+      "entry_2": { "framing": "module theory", "statement": "A submodule is invariant under a module homomorphism if the map sends it to itself." }
+    },
+    {
+      "topic": "Cyclic vector",
+      "framing": "vector spaces", "statement": "A vector is cyclic if the span of its images under all powers of a linear map is the whole space." },
+      "entry_2": { "framing": "module theory", "statement": "An element is cyclic if the span of its images under all powers of a module homomorphism is the whole module." }
+    },
+    {
+      "topic": "Cayley-Hamilton",
+      "framing": "vector spaces", "statement": "A linear map satisfies its own characteristic polynomial." },
+      "entry_2": { "framing": "module theory", "statement": "A module homomorphism satisfies its own characteristic polynomial." }
+    },
+    {
+      "topic": "Nilpotent Jordan block",
+      "framing": "vector spaces", "statement": "A nilpotent Jordan block is a matrix with ones on the superdiagonal and zeros elsewhere." },
+      "entry_2": { "framing": "module theory", "statement": "A nilpotent Jordan block is a matrix with ones on the superdiagonal and zeros elsewhere." }
+    }
+  ]
+}
+```

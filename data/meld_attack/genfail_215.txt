@@ -1,0 +1,141 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=representation_theory round=24 call=215
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=15034 (dump keeps first 6144 + last 6144; 2746 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Orbit Coefficients and Frequency Orbits",
+      "entry_1": {"framing": "representation theory", "statement": "The matrix coefficients associated with a group orbit decompose into irreducible representations according to the stabilizer subgroup of the orbit point."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "Functions on a homogeneous space decompose into frequencies corresponding to the dual of the stabilizer subgroup of the orbit point."}
+    },
+    {
+      "topic": "Harmonic Sampling and Intertwiner Sampling",
+      "entry_1": {"framing": "representation theory", "statement": "An intertwiner between two representations can be sampled efficiently by its action on a cyclic vector space of the representation."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A band-limited Fourier signal can be sampled efficiently at points where it forms a cyclic generating set under group action."}
+    },
+    {
+      "topic": "Frequency Sparsity and Decomposition Sparsity",
+      "entry_1": {"framing": "representation theory", "statement": "A representation is sparse in the sense that its decomposition into irreducibles contains only a few non-zero multiplicities if its character is sparse."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A signal is sparse if its Fourier transform has a sparse frequency representation with only a few non-zero coefficients."}
+    },
+    {
+      "topic": "Functional Equivalence and Representation Equivalence",
+      "entry_1": {"framing": "representation theory", "statement": "Two representations are equivalent if their matrix coefficients generate the same algebra under convolution and scalar multiplication."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "Two signals have the same Fourier content if their corresponding transforms generate the same algebra under convolution and scaling."}
+    },
+    {
+      "topic": "Multiplicity-Aware Filters and Band-Aware Operators",
+      "entry_1": {"framing": "representation theory", "statement": "An equivariant operator can be uniquely determined by its action on each isotypic component of the representation space."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A modulation-invariant operator is uniquely determined by its effect on each frequency band of the Fourier spectrum."}
+    },
+    {
+      "topic": "Tensor Orbits and Tensor Bands",
+      "entry_1": {"framing": "representation theory", "statement": "The orbits of the tensor product of two representations are parameterized by the irreducible components of their combined decomposition."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "The frequency content of the tensor of two signals is the union of their cross-frequency bands."}
+    },
+    {
+      "topic": "Strong Invariance and Coarse Invariance",
+      "entry_1": {"framing": "representation theory", "statement": "A representation admits a unit vector invariant under a maximal torus if and only if it contains the trivial component in its restricted character space."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A function has a flat mode on the maximal torus if and only if its frequency decomposition includes the constant (zero) mode."}
+    },
+    {
+      "topic": "Irreducible Projection and Spectral Trimming",
+      "entry_1": {"framing": "representation theory", "statement": "Projecting a representation onto its irreducible components can be achieved via the action of the Casimir operator in a semisimple Lie algebra setting."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "Trimming a signal to retain only specific frequency bands can be achieved using a Fourier multiplier corresponding to the Casimir effect."}
+    },
+    {
+      "topic": "Principal Series and Frequency Series Expansion",
+      "entry_1": {"framing": "representation theory", "statement": "The matrix coefficients of a principal series representation give rise to a complete basis of harmonic functions on the group manifold."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A principal Fourier series represents a function as a linear combination of modulated exponentials forming a complete harmonic basis."}
+    },
+    {
+      "topic": "Isotypic Filtering and Bandpass Filtering",
+      "entry_1": {"framing": "representation theory", "statement": "An isotypic component can be isolated from a representation using an idempotent projector defined by the character of the component."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A band of frequencies can be isolated from a signal using a Fourier filter that acts as a scalar operator on that band."}
+    },
+    {
+      "topic": "Parabolic Representations and Frequency Propagation",
+      "entry_1": {"framing": "representation theory", "statement": "A parabolic subrepresentation projects to a lower-dimension manifold of the full representation, preserving spectral coherence across subspaces."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A parabolic band of a signal propagates through a transformed space by retaining its frequency coherence across subspaces."}
+    },
+    {
+      "topic": "Multiplicatively Invariant Subspaces and Harmonically Invariant Subspaces",
+      "entry_1": {"framing": "representation theory", "statement": "A multiplicatively invariant subspace arises when the group action commutes with pointwise multiplication in a function space representation."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A harmonically invariant subspace arises when the Fourier transform of the space is invariant under pointwise multiplication of functions."}
+    },
+    {
+      "topic": "Continuity of Intertwiners and Smoothness of Transforms",
+      "entry_1": {"framing": "representation theory", "statement": "Intertwiners between smooth representations are themselves smooth operators in the Fréchet topology of the representation space."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "Smooth 
+
+... [2746 chars elided by dump_gen_failure] ...
+
+ection of intertwiners is complete if their linear combinations span the dual space of the representation algebra."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A set of Fourier modes is complete if their span is dense in the function space under the convolution algebra."}
+    },
+    {
+      "topic": "Harmonic Mean and Invariant Mean",
+      "entry_1": {"framing": "representation theory", "statement": "An invariant mean on the group algebra corresponds to a harmonic function averaged across the irreducible decomposition of the group."}
+      "entry_2": {"framing": "Fourier analysis", "statement": "The mean of a function over a group is the average of its Fourier coefficients projected orthogonally to the trivial component."}
+    },
+    {
+      "topic": "Smooth Covariant and Modulated Generator",
+      "entry_1": {"framing": "representation theory", "statement": "A smooth covariant representation can be generated from a cyclic vector by successive action of the Lie algebra on its components."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A smooth modulated signal can be generated by applying phase shifts and amplitude modulations to a base function with minimal frequency variation."}
+    },
+    {
+      "topic": "Semisimple Filtering and Frequency Filtering",
+      "entry_1": {"framing": "representation theory", "statement": "The block structure of a semisimple representation corresponds to the eigen-decomposition of an intertwining operator under direct sum reduction."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A semisimple filter splits a signal into orthogonal bands of frequencies, each corresponding to an eigenvalue of a Fourier multiplier operator."}
+    },
+    {
+      "topic": "Harmonic Nullspace and Invariant Nullspace",
+      "entry_1": {"framing": "representation theory", "statement": "The nullspace of an intertwining operator corresponds to the invariant subspace where the operator acts as zero under decomposition."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "The nullspace of a convolution operator includes all signals whose Fourier transform vanishes on the support of its kernel function."}
+    },
+    {
+      "topic": "Modular Symmetry and Frequency Reciprocity",
+      "entry_1": {"framing": "representation theory", "statement": "A modular dual representation swaps the role of the group and its dual, preserving intertwining and duality under convolutional symmetry."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A modular Fourier transform maps multiplication by a character to a corresponding conjugation by an automorphism in the group algebra."}
+    },
+    {
+      "topic": "Combinatorial Weight and Frequency Signature",
+      "entry_1": {"framing": "representation theory", "statement": "The multiplicity of a weight in a representation corresponds to a combinatorial count over a dual root system and Weyl reflection pattern."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "The distribution of frequencies in a signal is encoded by the combinatorial structure of the Weyl group and its action on frequency bands."}
+    },
+    {
+      "topic": "Harmonic Extension and Boundary Embedding",
+      "entry_1": {"framing": "representation theory", "statement": "A harmonic function on the boundary of a symmetric space can be extended to a representation of the group if it transforms under a specific weight system."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A boundary-modulated signal can be embedded into a full space if its frequency components transform compatibly with the boundary action of the group."}
+    },
+    {
+      "topic": "Compact Induction and Truncated Spectral Prolongation",
+      "entry_1": {"framing": "representation theory", "statement": "Induction from a compact subgroup produces a representation that extends continuously to the larger group under finite decomposition properties."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A signal restricted to a compact subgroup can be spectrally prolonged into a larger group via frequency truncation and matching."}
+    },
+    {
+      "topic": "Moment-Based Invariant and Frequency-Symmetric Invariant",
+      "entry_1": {"framing": "representation theory", "statement": "A function invariant under the group action has a moment vector annihilated by all weight-differing components of the coadjoint orbit."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A signal with harmonic invariance exhibits symmetric frequency moments under the group transform and Fourier symmetry conditions."}
+    },
+    {
+      "topic": "Harmonic Support and Moment Support",
+      "entry_1": {"frraming": "representation theory", "statement": "The support of a representation is the set of weights for which the corresponding highest weight vectors are non-zero in the decomposition."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "The Fourier support of a signal is the set of frequencies for which the corresponding modes are non-trivial in the frequency spectrum."}
+    },
+    {
+      "topic": "Pseudodifferential Harmonics and Frequency Localization",
+      "entry_1": {"framing": "representation theory", "statement": "A pseudodifferential operator acts on a representation by localizing its harmonic components to specified isotypic ranges."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A pseudodifferential operator localizes a signal's frequency content by applying a weight function that selects specific Fourier bands."}
+    },
+    {
+      "topic": "Cocycle Modulation and Frequency Phase Variation",
+      "entry_1": {"framing": "representation theory", "statement": "A projective representation can be constructed using a group cocycle that modulates the intertwining structure with phase factors."},
+      "entry_2": {"framing": "Fourier analysis", "statement": "A twisted Fourier transform encodes phase variation via a cocycle acting as a multiplicative phase factor on the frequency domain."}
+    }
+  ]
+}
+```

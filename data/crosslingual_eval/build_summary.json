@@ -1,0 +1,42 @@
+{
+  "generated": "2026-07-29",
+  "source_pairs": 754,
+  "unique_pair_members": 1377,
+  "n_clusters_total": 661,
+  "n_clusters_monolingual_skipped": 291,
+  "n_clusters_multilingual": 370,
+  "n_queries": 393,
+  "n_qrel_rows": 457,
+  "n_corpus_docs": 27817,
+  "queries_per_language": {
+    "nl": 71,
+    "zh": 63,
+    "sl": 54,
+    "ro": 52,
+    "de": 51,
+    "fr": 49,
+    "es": 21,
+    "hu": 16,
+    "mn": 6,
+    "pt": 3,
+    "mk": 3,
+    "it": 2,
+    "af": 1,
+    "ru": 1
+  },
+  "queries_with_multiple_golds": 60,
+  "queries_overlapping_retrieve_anchors": 220,
+  "queries_min_confidence_medium": 25,
+  "doc_lang_distribution": {
+    "en": 368,
+    "fr": 11,
+    "es": 6,
+    "zh": 2,
+    "de": 2,
+    "pt": 2,
+    "it": 1,
+    "sl": 1
+  },
+  "n_eval_member_ids": 779,
+  "eval_member_ids_in_retrieve_exclusion": 254
+}

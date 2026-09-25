@@ -1,0 +1,282 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=discrete_math round=12 call=106
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=15747 (dump keeps first 6144 + last 6144; 3459 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Fubini numbers via exponential generating functions",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The Fubini numbers count the number of ordered set partitions of an n-element set and satisfy the recurrence F(n+1) = ∑ₖ=0^n binomial(n,k) F(k)."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for the Fubini numbers is F(z) = 1/(2 - e^z) and satisfies the identity F(z) = ∑ₙ≥0 F(n) zⁿ/n! where F(n+1) = ∫₀^∞ e^{-x} (x^n / (2 - e^x)) dx."
+      }
+    },
+    {
+      "topic": "Boolean functions and analytic generating functions",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of Boolean functions on n variables is 2^{2^n}, and they can be enumerated using inclusion-exclusion over the subsets of 2^n variables."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for Boolean functions satisfies the identity F(z) = ∑ₙ≥0 2^{2^n} zⁿ/n! and has a singularity of type e^{e^z} at the origin."
+      }
+    },
+    {
+      "topic": "Subgraphs with fixed number of edges",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of subgraphs of the complete graph on n vertices with exactly m edges is binomial(n(n−1)/2, m)."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for the number of subgraphs with m edges is ∑ₘ binomial(n(n−1)/2, m) z^m = (1 + z)^{n(n−1)/2}."
+      }
+    },
+    {
+      "topic": "Chromatic polynomial and analytic extension",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The chromatic polynomial P(G, k) of a graph G counts the number of proper k-colorings and satisfies P(G, k) = P(G − e, k) − P(G / e, k) for any edge e."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The chromatic function can be extended to an analytic function for complex k and is rational with possible poles at non-negative integers."
+      }
+    },
+    {
+      "topic": "Automorphism groups in combinatorics",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The automorphism group of a labeled graph on n vertices has size at most n! and equals it only if the graph is complete or empty."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for labeled graphs with trivial automorphism group has a radius of convergence related to log(2)."
+      }
+    },
+    {
+      "topic": "Euler totient and additive generating functions",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The Euler totient function φ(n) counts the numbers relatively prime to n and satisfies ∑ₖ | n φ(k) = n ∑ₖ | n 1/k."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The ordinary generating function for φ(n) is ∑ₙ φ(n) q^n = q / (1 − q)² − ∑ₖ≥2 qᵏ / (1 − qᵏ)²."
+      }
+    },
+    {
+      "topic": "Stirling numbers and differential operators",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The Stirling numbers of the second kind S(n, k) count the number of partitions of an n-element set into k nonempty subsets."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for S(n, k) satisfies ∑ₙ≥k S(n, k) zⁿ/n! = (e^z − 1)^k / k! and is obtained by repeated application of derivative operators."
+      }
+    },
+    {
+      "topic": "Plane trees via analytic inversion",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of plane rooted trees with n labeled nodes is (n − 1)! / n and follows from the Catalan recurrence."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function T(z) for plane trees satisfies T(z) = z e^{T(z)} and is inverted using the Lagrange inversion formula."
+      }
+    },
+    {
+      "topic": "Harmonic moments in graphs",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The harmonic number H_n = ∑ᵢ=1^n 1/i counts the expected number of iterations of a certain algorithm on a set of size n."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for H_n is ∑ₙ≥1 H_n zⁿ = −log(1 − z)/(1 − z) and has a pole at z = 1 of multiplicity two."
+      }
+    },
+    {
+      "topic": "Non-isomorphic forests",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of non-isomorphic forests with n vertices is less than the number of labeled forests with n vertices."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for the number of non-isomorphic forests satisfies a rational functional equation derived from the tree generating function via symmetry."
+      }
+    },
+    {
+      "topic": "Graphical enumeration using exponential sums",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of labeled graphs on n vertices is 2^{n(n−1)/2}, and the number of connected graphs is obtained by Möbius inversion over the number of components."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for connected graphs satisfies log(C(z)) = ∑ₙ≥1 2^{n(n−1)/2} zⁿ/n! − ∑ₙ≥2 D(n) zⁿ/n! where D(n) is the number of disconnected graphs."
+      }
+    },
+    {
+      "topic": "Lattice walks and analytic functions",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of lattice walks of length n returning to the origin satisfies a convolution identity and can be expressed using binomial coefficients."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The ordinary generating function for such
+
+... [3459 chars elided by dump_gen_failure] ...
+
+
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential rate is determined by the logarithmic growth of the generating function’s coefficients near its radius of convergence."
+      }
+    },
+    {
+      "topic": "Graph recurrence from products",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of connected graphs of size n can be computed using a recurrence over smaller graphs and their components."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The connected generating function arises from the logarithm of a product of exponential generating functions over components."
+      }
+    },
+    {
+      "topic": "Trees on edges via recursion",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of labeled trees with n edges is (n + 1)^{n − 1}, and the recurrence is given by T(n) = (n + 1) ∑ᵢ=1^n (n + 1)T(n − i)."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function T(z) for these trees satisfies T(z) = z e^{T(z)} and is solved via the Lagrange inversion formula."
+      }
+    },
+    {
+      "topic": "Isomorphic non-labeled graphs",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of non-labeled graphs on n vertices is less than the number of labeled graphs and grows polynomially in n!."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for unlabeled graphs is obtained by dividing the labeled generating function by a rational function over its automorphism group."
+      }
+    },
+    {
+      "topic": "Trees with fixed degrees",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of labeled trees on n nodes with a given degree sequence d_1, ..., d_n is n^{n−2} ∏ (d_i − 1)! / (d_i!).""
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for trees with degree constraints is ∑ w(d) z^{n} / n! where w(d) = n^{n−2} ∏ (d_i − 1)! / d_i! and satisfies a rational form."
+      }
+    },
+    {
+      "topic": "Connected component counts via log",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of graphs with exactly k components is determined by summing over partitions into k labeled graphs and their connectedness."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for such graphs is log(1 / (1 − C(z)))^k / k! where C(z) is the generating function for connected graphs."
+      }
+    },
+    {
+      "topic": "Graph automorphism sequence",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The sequence of graph automorphism group sizes for labeled graphs on n vertices is non-decreasing with n."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for average automorphism group size has a meromorphic extension with a pole at z = 1/n."
+      }
+    },
+    {
+      "topic": "Planar graphs and exponential bounds",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of labeled planar graphs on n vertices is at most 2^{n log n} and is exponential in n."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for planar graphs converges in a disk of radius greater than zero and has a singular expansion at the critical point."
+      }
+    },
+    {
+      "topic": "Graph exponentials and analyticity",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of graphs on n vertices is 2^{n(n−1)/2} and grows faster than exponentially in n."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for all graphs is divergent but admits an analytic continuation in a cut plane domain."
+      }
+    },
+    {
+      "topic": "Tree rotation and singularity",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of rotation-equivalent binary trees on n internal nodes is the nth Catalan number."
+      },
+        "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for rotation classes of binary trees has a square-root singularity at z = 1/4."
+      }
+    },
+    {
+      "topic": "Graph recursion from matrix powers",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of paths of length k from node i to node j in a graph is the (i,j) entry of the k-th power of the adjacency matrix."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for such paths is ∑ₖ≥0 A^k z^k = (I − zA)^{−1} and has poles at the reciprocal of the adjacency eigenvalues."
+      }
+    },
+    {
+      "topic": "Graph series from component counts",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The total number of graphs on n vertices can be split into a sum over the number of components, each contributing a sum of products of connected graphs."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The exponential generating function for such graphs is obtained by log composition and exponential composition of the connected generating function."
+      }
+    },
+    {
+      "topic": "Graph minors and analytic transformations",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of K_n-minor-free graphs on m vertices grows subexponentially and obeys the minor theorem."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for K_n-minor-free graphs has radius of convergence strictly greater than that for all graphs and converges faster."
+      }
+    }
+  ]
+}
+```

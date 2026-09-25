@@ -1,0 +1,207 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=heldout domain=model_theory round=1 call=16
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=greedy
+# completion_chars=13737 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "elementary class",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "An elementary class is a class of structures isomorphic to models of a first-order theory."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "A variety is a class of algebras defined by a set of identities."
+      }
+    },
+    {
+      "topic": "compactness",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "If every finite subset of a set of first-order sentences has a model, then the entire set has a model."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "If every finite subset of a set of identities is satisfied in some algebra, then the entire set is satisfied in some algebra."
+      }
+    },
+    {
+      "topic": "embedding",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "An embedding between two structures is an injective homomorphism that preserves and reflects all first-order formulas."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "An embedding between two algebras is an injective homomorphism that preserves all operations and identities."
+      }
+    },
+    {
+      "topic": "elementary equivalence",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "Two structures are elementarily equivalent if they satisfy the same first-order sentences."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "Two algebras are equationally equivalent if they satisfy the same identities."
+      }
+    },
+    {
+      "topic": "elementary substructure",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "A structure $ \mathcal{A} $ is an elementary substructure of $ \mathcal{B} $ if it is a substructure and satisfies the same first-order formulas with parameters from $ \mathcal{A} $."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "An algebra $ A $ is a subvariety of $ B $ if it is a subalgebra and satisfies the same identities as $ B $."
+      }
+    },
+    {
+      "topic": "elementary diagram",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "The elementary diagram of a structure $ \mathcal{A} $ is the set of all atomic and negated atomic sentences true in $ \mathcal{A} $ with constants for each element."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "The equational diagram of an algebra $ A $ is the set of all identities satisfied by $ A $ with constants for each element."
+      }
+    },
+    {
+      "topic": "elementary extension",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "A structure $ \mathcal{B} $ is an elementary extension of $ \mathcal{A} $ if $ \mathcal{A} $ is a substructure of $ \mathcal{B} $ and they are elementarily equivalent."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "An algebra $ B $ is an identity extension of $ A $ if $ A $ is a subalgebra of $ B $ and they are equationally equivalent."
+      }
+    },
+    {
+      "topic": "elementary amalgamation",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "Given two elementary extensions of a common structure, there exists a structure into which both can be elementarily embedded."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "Given two identity extensions of a common algebra, there exists an algebra into which both can be embedded as subalgebras satisfying the same identities."
+      }
+    },
+    {
+      "topic": "elementary chain",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "An elementary chain is a sequence of structures where each is an elementary substructure of the next."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "An identity chain is a sequence of algebras where each is a subvariety of the next."
+      }
+    },
+    {
+      "topic": "elementary closure",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "The elementary closure of a set of sentences is the set of all sentences entailed by it in all models."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "The identity closure of a set of identities is the set of all identities entailed by it in all algebras."
+      }
+    },
+    {
+      "topic": "elementary completeness",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "A theory is elementarily complete if any two of its models are elementarily equivalent."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "A set of identities is equationally complete if any two of its algebras are equationally equivalent."
+      }
+    },
+    {
+      "topic": "elementary generation",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "A structure is elementarily generated by a subset if every element is definable from it using first-order formulas."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "An algebra is identity-generated by a subset if every element is expressible from it using identities."
+      }
+    },
+    {
+      "topic": "elementary type",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "The elementary type of an element is the set of all first-order formulas it satisfies."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "The identity type of an element is the set of all identities it satisfies."
+      }
+    },
+    {
+      "topic": "elementary automorphism",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "An automorphism is elementary if it preserves and reflects all first-order formulas."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "An automorphism is identity-preserving if it preserves all identities."
+      }
+    },
+    {
+      "topic": "elementary isomorphism",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "Two structures are elementarily isomorphic if there is a back-and-forth system of elementary embeddings between them."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "Two algebras are identity-isomorphic if there is a back-and-forth system of identity-preserving embeddings between them."
+      }
+    },
+    {
+      "topic": "elementary saturation",
+      "framing": "model theory",
+      "statement": "A structure is elementarily saturated if it realizes all types over small parameter sets."
+      },
+      "entry_2": {
+      "framing": "universal algebra",
+      "statement": "An algebra is identity-saturated if it realizes all identities over small generating sets."
+      }
+    },
+    {
+      "topic": "elementary amalgamation property",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "A class of structures has the elementary amalgamation property if any two elementary extensions of a common structure can be amalgamated."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "A class of algebras has the identity amalgamation property if any two identity extensions of a common algebra can be amalgamated."
+      }
+    },
+    {
+      "topic": "elementary joint embedding",
+      "entry_1": {
+        "framing": "model theory",
+        "statement": "A class of structures has the elementary joint embedding property if any two structures in the class can be elementarily embedded into a common structure."
+      },
+      "entry_2": {
+        "framing": "universal algebra",
+        "statement": "A class of algebras has the identity joint embedding property if any two algebras in the class can be embedded into a common algebra satisfying the same identities."
+      }
+    },
+    {
+      "topic": "elementary

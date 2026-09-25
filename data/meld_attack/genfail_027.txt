@@ -1,0 +1,161 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=algebraic_combinatorics round=3 call=27
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=12559 (dump keeps first 6144 + last 6144; 271 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Schur positivity via standard Young tableaux",
+      "entry_1": { "framing": "symmetric functions", "statement": "The symmetric function $ s_\lambda $ is Schur positive, being the Schur basis itself." },
+      "entry_2": { "framing": "tableaux", "statement": "The number of standard Young tableaux of shape $ \lambda $ is equal to the sum of their counts in $ s_\lambda $." }
+    },
+    {
+      "topic": "Specialization of Schur to semistandard tableaux",
+      "entry_1": { "framing": "symmetric functions", "statement": "Specializing $ x_i = q^i $ in the Schur function gives the generating function for semistandard Young tableaux weighted by content." },
+      "entry_2": { "framing": "tableaux", "statement": "The generating function for semistandard Young tableaux with weight $ q^{\text{content}} $ is a specialization of the Schur function." }
+    },
+    {
+      "topic": "Schur expansion of ribbon functions",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur expansion of a ribbon symmetric function counts semistandard tableaux with a single descent." },
+      "entry_2": { "framing": "tableaux", "statement": "The number of semistandard tableaux of a ribbon shape with a single descent equals the Schur coefficients of the ribbon function." }
+    },
+    {
+      "topic": "Schur function and Yamanouchi sequences",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur function can be realized as a generating function for Yamanouchi words labeled with content." },
+      "entry_2": { "framing": "tableaux", "statement": "Yamanouchi sequences correspond to standard Young tableaux under reading word construction." }
+    },
+    {
+      "topic": "Schur generating function and content alphabet",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur function $ s_\lambda(x_1,\dots,x_n) $ counts fillings of a Young diagram $ \lambda $ with entries from $ x_i $ and weight by content." },
+      "entry_2": { "framing": "tableaux", "statement": "The generating function for semistandard tableaux of shape $ \lambda $ with entries in $ \{1, \dots, n\} $ is the Schur function." }
+    },
+    {
+      "topic": "Schur duality via tensor representations",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur functions form the characters of irreducible representations of $ GL_n $, corresponding to symmetric tensor decompositions." },
+      "entry_2": { "framing": "tableaux", "statement": "The dimensions of irreducible representations of $ GL_n $ count standard Young tableaux arising from highest weight vectors." }
+    },
+    {
+      "topic": "Schur function specialization and Kostka numbers",
+      "entry_1": { "framing": "symmetric functions", "statement": "Specializing the variables in a Schur function to one variable yields the Kostka number $ K_{\lambda,\mu} $." },
+      "entry_2": { "framing": "tableaux", "statement": "The number of semistandard Young tableaux of shape $ \lambda $ and content $ \mu $ is the Kostka number $ K_{\lambda,\mu} $." }
+    },
+    {
+      "topic": "Schur function normalization under empty diagram",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur function $ s_\emptyset $ is the constant function 1." },
+      "entry_2": { "framing": "tableaux", "statement": "There is exactly one semistandard Young tableau of empty shape: the empty tableau." }
+    },
+    {
+      "topic": "Schur multiplication and Littlewood–Richardson rule",
+      "entry_1": { "framing": "symmetric functions", "statement": "The product $ s_\lambda s_\mu $ expands into a sum of Schur functions with coefficients given by Littlewood–Richardson rule." },
+      "entry_2": { "framing": "tableaux", "statement": "The number of ways to combine semistandard Young tableaux of shape $ \lambda $ and $ \mu $ to form a skew tableau is the Littlewood–Richardson coefficient." }
+    },
+    {
+      "topic": "Schur function as a determinant",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur function $ s_\lambda $ can be written as the determinant of a matrix of complete homogeneous symmetric functions." },
+      "entry_2": { "framing": "tableaux", "statement": "The number of semistandard Young tableaux of shape $ \lambda $ is expressible via a determinant counting fillings row by row." }
+    },
+    {
+      "topic": "Schur function and Pieri rule product",
+      "entry_1": { "framing": "symmetric functions", "statement": "Multiplying a Schur function by a complete symmetric function expands as a sum over all Schur functions whose shape increases by a horizontal strip." },
+      "entry_2": { "framing": "tableaux", "statement": "Adding a row of boxes to a tableau corresponds to a horizontal strip and counts expansions under multiplication by complete functions." }
+    },
+    {
+      "topic": "Schur function as generating function for SSYT with bounded entries",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur function $ s_\lambda(x_1,\dots,x_n) $ is the generating function for semistandard Young tableaux with maximum entry $ n $." },
+      "entry_2": { "framing": "tableaux", "statement": "The generating function for semistandard Young tableaux with maximum entry $ n $ is the Schur function." }
+    },
+    {
+      "topic": "Schur functions and longest increasing subsequences",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur function for a shape $ \lambda $ can be linked to the number of permutations with increasing subsequences of certain lengths." },
+      "entry_2": { "framing": "tableaux", "statement": "The number of permutations with a given shape via RSK corresponds to the number of standard Young tableaux." }
+    },
+    {
+      "topic": "Schur function and symmetric group character values",
+      "entry_1": { "framing": "symmetric functions", "statement": "The irreducible character values of the symmetric group are obtained by evaluating Schur functions at roots of unity." },
+      "entry_2": { "framing": "tableaux", "statement": "The num
+
+... [271 chars elided by dump_gen_failure] ...
+
+der on partitions corresponds to coefficient positivity in the difference $ s_\mu - s_\lambda $." },
+      "entry_2": { "framing": "tableaux", "statement": "A skew shape gives a positive count of tableaux if and only if the partition is larger in dominance order." }
+    },
+    {
+      "topic": "Schur function and content statistics",
+      "entry_1": { "framing": "symmetric functions", "statement": "The Schur function $ s_\lambda $ is a generating function over words with content $ \mu $ and weight in content alphabet." },
+      "entry_2": { "framing": "tableaux", "statement": "The number of semistandard Young tableaux with fixed content $ \mu $ equals the number of words counted by weight alphabet." }
+    },
+    {
+      "topic": "Schur function and row insertion",
+      "entry_1": { "framing": "symmetric functions", "statement": "Row insertion of a word gives a bijective correspondence with Schur functions and their generating functions." },
+      "entry_2": { "framing": "tableaux", "statement": "The insertion tableaux from row insertion are counted by Schur functions with weights from content." }
+    },
+    {
+      "topic": "Schur function and column insertion",
+      "entry_1": { "framing": "symmetric functions", "statement": "Column insertion of words preserves the generating function property of the Schur function." },
+      "entry_2": { "framing": "tableaux", "statement": "The column insertion algorithm produces semistandard Young tableaux and corresponds to Schur function counts." }
+    },
+    {
+      "topic": "Schur function and reverse row insertion",
+      "entry_1": { "framing": "symmetric functions", "statement": "Reverse row insertion breaks a Schur function into a generating function of words." },
+      "entry_2": { "framing": "tableaux", "statement": "Reverse row insertion reconstructs a word from a tableau and weight, reversing Schur function counting." }
+    },
+    {
+      "topic": "Schur function and jeu de taquin",
+      "entry_1": { "framing": "symmetric functions", "statement": "Schur functions remain invariant under operations corresponding to jeu de taquin equivalences." },
+      "entry_2": { "framing": "tableaux", "statement": "Jeu de taquin slides preserve the counts of standard Young tableaux and hence the value of Schur functions." }
+    },
+    {
+      "topic": "Schur function and crystal structures",
+      "framing": "symmetric functions", "statement": "The Schur function arises as the generating function of highest weight vectors in a crystal graph." },
+      "entry_2": { "framing": "tableaux", "statement": "The highest weight crystal paths correspond to standard Young tableaux and Schur functions." }
+    },
+    {
+      "topic": "Schur function and dual graphs",
+      "framing": "symmetric functions", "statement": "Dual graphs encoding relations among Schur functions can be modeled via dual Young diagrams." },
+      "entry_2": { "framing": "tableaux", "statement": "The dual graph of a Young diagram is reflected in the set of tableaux with transposed shapes." }
+    },
+    {
+      "topic": "Schur function and symmetric difference",
+      "framing": "symmetric functions", "statement": "The difference between two Schur functions can be symmetric and positive under dominance." },
+      "entry_2": { "framing": "tableaux", "statement": "The difference in counts of semistandard Young tableaux can reflect symmetric patterns under shape differences." }
+    },
+    {
+      "topic": "Schur function and Bessel process",
+      "framing": "symmetric functions", "statement": "The Schur functions emerge in the asymptotic distribution of eigenvalues of a random Hermitian matrix model." },
+      "entry_2": { "framing": "tableaux", "statement": "Long random walks on tableaux shapes correspond to the Bessel process described via Schur functions." }
+    },
+    {
+      "topic": "Schur function and symmetric random walks",
+      "framing": "symmetric functions", "statement": "The generating function for symmetric random walks with transitions indexed by partitions is the Schur function." },
+      "entry_2": { "framing": "tableaux", "statement": "Symmetric random walks on Young tableaux shapes count the same transitions as indexed Schur functions." }
+    },
+    {
+      "topic": "Schur function and combinatorial Hopf algebra",
+      "framing": "symmetric functions", "statement": "The Schur functions form a natural basis for the symmetric function Hopf algebra." },
+      "entry_2": { "framing": "tableaux", "statement": "Semistandard Young tableaux provide the combinatorics for the Hopf algebra structure on symmetric functions." }
+    },
+    {
+      "topic": "Schur function and transition matrices",
+      "framing": "symmetric functions", "statement": "The transition matrix between monomial and Schur basis is invertible with nonnegative integer entries." },
+      "entry_2": { "framing": "tableaux", "statement": "The transition matrix between monomial-like statistics and tableaux weights is nonnegative integer-valued." }
+    },
+    {
+      "topic": "Schur function and reciprocity theorems",
+      "framing": "symmetric functions", "statement": "Schur functions satisfy reciprocity properties under reversal of variables." },
+      "entry_2": { "framing": "tableaux", "statement": "The number of tableaux is symmetric under reversing row fillings and transposing shape." }
+    },
+    {
+      "topic": "Schur function and double tableaux",
+      "framing": "symmetric functions", "statement": "The double Schur function counts fillings with two alphabets, generalizing symmetric function definitions." },
+      "entry_2": { "framing": "tableaux", "statement": "Double tableaux, involving two alphabets, count according to double Schur functions." }
+    },
+    {
+      "topic": "Schur function and random matrix ensembles",
+      "framing": "symmetric functions", "statement": "Schur functions appear in the correlation functions of Gaussian random matrix ensembles." },
+      "entry_2": { "framing": "tableaux", "statement": "Tableaux counts in deterministic limits correspond to eigenvalue correlations described by Schur functions." }
+    }
+  ]
+}
+```

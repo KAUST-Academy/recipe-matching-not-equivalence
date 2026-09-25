@@ -1,0 +1,7371 @@
+{
+ "n_clusters": 242,
+ "clusters": [
+  {
+   "cluster_id": "cl_00ad",
+   "members": [
+    {
+     "id": "00ad",
+     "lang": "en"
+    },
+    {
+     "id": "00ak",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00ad",
+     "id_b": "00ak",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_00ae",
+   "members": [
+    {
+     "id": "00ae",
+     "lang": "en"
+    },
+    {
+     "id": "00aj",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00ae",
+     "id_b": "00aj",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_00ao",
+   "members": [
+    {
+     "id": "00ao",
+     "lang": "en"
+    },
+    {
+     "id": "00ax",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00ao",
+     "id_b": "00ax",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_00as",
+   "members": [
+    {
+     "id": "00as",
+     "lang": "en"
+    },
+    {
+     "id": "00ay",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00as",
+     "id_b": "00ay",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_00at",
+   "members": [
+    {
+     "id": "00at",
+     "lang": "en"
+    },
+    {
+     "id": "00az",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00at",
+     "id_b": "00az",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_00kn",
+   "members": [
+    {
+     "id": "00kn",
+     "lang": "en"
+    },
+    {
+     "id": "00l2",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00kn",
+     "id_b": "00l2",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_00lw",
+   "members": [
+    {
+     "id": "00lw",
+     "lang": "en"
+    },
+    {
+     "id": "00lx",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00lw",
+     "id_b": "00lx",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_00mx",
+   "members": [
+    {
+     "id": "00mx",
+     "lang": "en"
+    },
+    {
+     "id": "00my",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00mx",
+     "id_b": "00my",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_00n5",
+   "members": [
+    {
+     "id": "00n5",
+     "lang": "en"
+    },
+    {
+     "id": "00n6",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00n5",
+     "id_b": "00n6",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_00oy",
+   "members": [
+    {
+     "id": "00oy",
+     "lang": "en"
+    },
+    {
+     "id": "03b0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00oy",
+     "id_b": "03b0",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_00p9",
+   "members": [
+    {
+     "id": "00p9",
+     "lang": "en"
+    },
+    {
+     "id": "0b98",
+     "lang": "en"
+    },
+    {
+     "id": "0cl5",
+     "lang": "en"
+    },
+    {
+     "id": "0d1i",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00p9",
+     "id_b": "0b98",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "00p9",
+     "id_b": "0d1i",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0b98",
+     "id_b": "0cl5",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_00pc",
+   "members": [
+    {
+     "id": "00pc",
+     "lang": "en"
+    },
+    {
+     "id": "03b8",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00pc",
+     "id_b": "03b8",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_00pg",
+   "members": [
+    {
+     "id": "00pg",
+     "lang": "en"
+    },
+    {
+     "id": "0d1l",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00pg",
+     "id_b": "0d1l",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_00re",
+   "members": [
+    {
+     "id": "00re",
+     "lang": "en"
+    },
+    {
+     "id": "0680",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "00re",
+     "id_b": "0680",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0127",
+   "members": [
+    {
+     "id": "0127",
+     "lang": "en"
+    },
+    {
+     "id": "06nh",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0127",
+     "id_b": "06nh",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01dr",
+   "members": [
+    {
+     "id": "01dr",
+     "lang": "en"
+    },
+    {
+     "id": "0jnk",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01dr",
+     "id_b": "0jnk",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01fz",
+   "members": [
+    {
+     "id": "01fz",
+     "lang": "en"
+    },
+    {
+     "id": "01h8",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01fz",
+     "id_b": "01h8",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01he",
+   "members": [
+    {
+     "id": "01he",
+     "lang": "en"
+    },
+    {
+     "id": "0dew",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01he",
+     "id_b": "0dew",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01kq",
+   "members": [
+    {
+     "id": "01kq",
+     "lang": "en"
+    },
+    {
+     "id": "04gs",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01kq",
+     "id_b": "04gs",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01ly",
+   "members": [
+    {
+     "id": "01ly",
+     "lang": "en"
+    },
+    {
+     "id": "01m8",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01ly",
+     "id_b": "01m8",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01me",
+   "members": [
+    {
+     "id": "01me",
+     "lang": "en"
+    },
+    {
+     "id": "01mg",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01me",
+     "id_b": "01mg",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01mn",
+   "members": [
+    {
+     "id": "01mn",
+     "lang": "en"
+    },
+    {
+     "id": "01mo",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01mn",
+     "id_b": "01mo",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01nf",
+   "members": [
+    {
+     "id": "01nf",
+     "lang": "en"
+    },
+    {
+     "id": "01ni",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01nf",
+     "id_b": "01ni",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01of",
+   "members": [
+    {
+     "id": "01of",
+     "lang": "en"
+    },
+    {
+     "id": "01oh",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01of",
+     "id_b": "01oh",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01ok",
+   "members": [
+    {
+     "id": "01ok",
+     "lang": "en"
+    },
+    {
+     "id": "01om",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01ok",
+     "id_b": "01om",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01oo",
+   "members": [
+    {
+     "id": "01oo",
+     "lang": "en"
+    },
+    {
+     "id": "01oq",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01oo",
+     "id_b": "01oq",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01op",
+   "members": [
+    {
+     "id": "01op",
+     "lang": "en"
+    },
+    {
+     "id": "01or",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01op",
+     "id_b": "01or",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01oz",
+   "members": [
+    {
+     "id": "01oz",
+     "lang": "en"
+    },
+    {
+     "id": "01p0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01oz",
+     "id_b": "01p0",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01p6",
+   "members": [
+    {
+     "id": "01p6",
+     "lang": "en"
+    },
+    {
+     "id": "01pc",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01p6",
+     "id_b": "01pc",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01p8",
+   "members": [
+    {
+     "id": "01p8",
+     "lang": "en"
+    },
+    {
+     "id": "01p9",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01p8",
+     "id_b": "01p9",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01pa",
+   "members": [
+    {
+     "id": "01pa",
+     "lang": "en"
+    },
+    {
+     "id": "01pe",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01pa",
+     "id_b": "01pe",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01ph",
+   "members": [
+    {
+     "id": "01ph",
+     "lang": "en"
+    },
+    {
+     "id": "01pl",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01ph",
+     "id_b": "01pl",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01po",
+   "members": [
+    {
+     "id": "01po",
+     "lang": "en"
+    },
+    {
+     "id": "01pq",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01po",
+     "id_b": "01pq",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01pr",
+   "members": [
+    {
+     "id": "01pr",
+     "lang": "en"
+    },
+    {
+     "id": "01pv",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01pr",
+     "id_b": "01pv",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01ps",
+   "members": [
+    {
+     "id": "01ps",
+     "lang": "en"
+    },
+    {
+     "id": "01pw",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01ps",
+     "id_b": "01pw",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_01qv",
+   "members": [
+    {
+     "id": "01qv",
+     "lang": "en"
+    },
+    {
+     "id": "0dzl",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01qv",
+     "id_b": "0dzl",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01tw",
+   "members": [
+    {
+     "id": "01tw",
+     "lang": "en"
+    },
+    {
+     "id": "0cs2",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01tw",
+     "id_b": "0cs2",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_01x3",
+   "members": [
+    {
+     "id": "01x3",
+     "lang": "en"
+    },
+    {
+     "id": "0765",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "01x3",
+     "id_b": "0765",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_022s",
+   "members": [
+    {
+     "id": "022s",
+     "lang": "es"
+    },
+    {
+     "id": "02cz",
+     "lang": "es"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "022s",
+     "id_b": "02cz",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "es",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_023q",
+   "members": [
+    {
+     "id": "023q",
+     "lang": "pt"
+    },
+    {
+     "id": "02c1",
+     "lang": "pt"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "023q",
+     "id_b": "02c1",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "pt",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_025c",
+   "members": [
+    {
+     "id": "025c",
+     "lang": "es"
+    },
+    {
+     "id": "02mv",
+     "lang": "es"
+    },
+    {
+     "id": "02mw",
+     "lang": "es"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "025c",
+     "id_b": "02mv",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "025c",
+     "id_b": "02mw",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "es",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_02a7",
+   "members": [
+    {
+     "id": "02a7",
+     "lang": "es"
+    },
+    {
+     "id": "02jc",
+     "lang": "es"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "02a7",
+     "id_b": "02jc",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "es",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_02bs",
+   "members": [
+    {
+     "id": "02bs",
+     "lang": "pt"
+    },
+    {
+     "id": "02ic",
+     "lang": "pt"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "02bs",
+     "id_b": "02ic",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "pt",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_02c9",
+   "members": [
+    {
+     "id": "02c9",
+     "lang": "pt"
+    },
+    {
+     "id": "02jh",
+     "lang": "pt"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "02c9",
+     "id_b": "02jh",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "pt",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_02ee",
+   "members": [
+    {
+     "id": "02ee",
+     "lang": "en"
+    },
+    {
+     "id": "06z2",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "02ee",
+     "id_b": "06z2",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_02gq",
+   "members": [
+    {
+     "id": "02gq",
+     "lang": "en"
+    },
+    {
+     "id": "0k2i",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "02gq",
+     "id_b": "0k2i",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_02gt",
+   "members": [
+    {
+     "id": "02gt",
+     "lang": "en"
+    },
+    {
+     "id": "0e0s",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "02gt",
+     "id_b": "0e0s",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_02h0",
+   "members": [
+    {
+     "id": "02h0",
+     "lang": "en"
+    },
+    {
+     "id": "02h9",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "02h0",
+     "id_b": "02h9",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_02qb",
+   "members": [
+    {
+     "id": "02qb",
+     "lang": "es"
+    },
+    {
+     "id": "02qc",
+     "lang": "es"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "02qb",
+     "id_b": "02qc",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "es",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0358",
+   "members": [
+    {
+     "id": "0358",
+     "lang": "en"
+    },
+    {
+     "id": "06k2",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0358",
+     "id_b": "06k2",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_039c",
+   "members": [
+    {
+     "id": "039c",
+     "lang": "en"
+    },
+    {
+     "id": "06be",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "039c",
+     "id_b": "06be",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03ah",
+   "members": [
+    {
+     "id": "03ah",
+     "lang": "en"
+    },
+    {
+     "id": "08w3",
+     "lang": "en"
+    },
+    {
+     "id": "0ikg",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03ah",
+     "id_b": "08w3",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "03ah",
+     "id_b": "0ikg",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "08w3",
+     "id_b": "0ikg",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03eh",
+   "members": [
+    {
+     "id": "03eh",
+     "lang": "en"
+    },
+    {
+     "id": "03eq",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03eh",
+     "id_b": "03eq",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03ej",
+   "members": [
+    {
+     "id": "03ej",
+     "lang": "en"
+    },
+    {
+     "id": "03ew",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03ej",
+     "id_b": "03ew",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03f1",
+   "members": [
+    {
+     "id": "03f1",
+     "lang": "en"
+    },
+    {
+     "id": "03f2",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03f1",
+     "id_b": "03f2",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03f4",
+   "members": [
+    {
+     "id": "03f4",
+     "lang": "en"
+    },
+    {
+     "id": "03f5",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03f4",
+     "id_b": "03f5",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03f6",
+   "members": [
+    {
+     "id": "03f6",
+     "lang": "en"
+    },
+    {
+     "id": "03f7",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03f6",
+     "id_b": "03f7",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03fe",
+   "members": [
+    {
+     "id": "03fe",
+     "lang": "en"
+    },
+    {
+     "id": "03ff",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03fe",
+     "id_b": "03ff",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03fq",
+   "members": [
+    {
+     "id": "03fq",
+     "lang": "en"
+    },
+    {
+     "id": "03fr",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03fq",
+     "id_b": "03fr",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03fu",
+   "members": [
+    {
+     "id": "03fu",
+     "lang": "en"
+    },
+    {
+     "id": "03fv",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03fu",
+     "id_b": "03fv",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03fz",
+   "members": [
+    {
+     "id": "03fz",
+     "lang": "en"
+    },
+    {
+     "id": "03g0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03fz",
+     "id_b": "03g0",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03g5",
+   "members": [
+    {
+     "id": "03g5",
+     "lang": "en"
+    },
+    {
+     "id": "03g6",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03g5",
+     "id_b": "03g6",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03m9",
+   "members": [
+    {
+     "id": "03m9",
+     "lang": "en"
+    },
+    {
+     "id": "03ma",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03m9",
+     "id_b": "03ma",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03mc",
+   "members": [
+    {
+     "id": "03mc",
+     "lang": "en"
+    },
+    {
+     "id": "03md",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03mc",
+     "id_b": "03md",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03mz",
+   "members": [
+    {
+     "id": "03mz",
+     "lang": "en"
+    },
+    {
+     "id": "03n0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03mz",
+     "id_b": "03n0",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03o7",
+   "members": [
+    {
+     "id": "03o7",
+     "lang": "en"
+    },
+    {
+     "id": "045m",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03o7",
+     "id_b": "045m",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03oi",
+   "members": [
+    {
+     "id": "03oi",
+     "lang": "en"
+    },
+    {
+     "id": "04q2",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03oi",
+     "id_b": "04q2",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03pl",
+   "members": [
+    {
+     "id": "03pl",
+     "lang": "en"
+    },
+    {
+     "id": "0i84",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03pl",
+     "id_b": "0i84",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03rx",
+   "members": [
+    {
+     "id": "03rx",
+     "lang": "en"
+    },
+    {
+     "id": "0f42",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03rx",
+     "id_b": "0f42",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03sn",
+   "members": [
+    {
+     "id": "03sn",
+     "lang": "en"
+    },
+    {
+     "id": "08t5",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03sn",
+     "id_b": "08t5",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_03u9",
+   "members": [
+    {
+     "id": "03u9",
+     "lang": "en"
+    },
+    {
+     "id": "0inh",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03u9",
+     "id_b": "0inh",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_03za",
+   "members": [
+    {
+     "id": "03za",
+     "lang": "en"
+    },
+    {
+     "id": "03zd",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "03za",
+     "id_b": "03zd",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_045e",
+   "members": [
+    {
+     "id": "045e",
+     "lang": "en"
+    },
+    {
+     "id": "045f",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "045e",
+     "id_b": "045f",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_047n",
+   "members": [
+    {
+     "id": "047n",
+     "lang": "en"
+    },
+    {
+     "id": "0b0r",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "047n",
+     "id_b": "0b0r",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_048l",
+   "members": [
+    {
+     "id": "048l",
+     "lang": "en"
+    },
+    {
+     "id": "048n",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "048l",
+     "id_b": "048n",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_048w",
+   "members": [
+    {
+     "id": "048w",
+     "lang": "en"
+    },
+    {
+     "id": "048x",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "048w",
+     "id_b": "048x",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_048z",
+   "members": [
+    {
+     "id": "048z",
+     "lang": "en"
+    },
+    {
+     "id": "0492",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "048z",
+     "id_b": "0492",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0498",
+   "members": [
+    {
+     "id": "0498",
+     "lang": "en"
+    },
+    {
+     "id": "0499",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0498",
+     "id_b": "0499",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_049a",
+   "members": [
+    {
+     "id": "049a",
+     "lang": "en"
+    },
+    {
+     "id": "049b",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "049a",
+     "id_b": "049b",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_049c",
+   "members": [
+    {
+     "id": "049c",
+     "lang": "en"
+    },
+    {
+     "id": "049d",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "049c",
+     "id_b": "049d",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_049k",
+   "members": [
+    {
+     "id": "049k",
+     "lang": "en"
+    },
+    {
+     "id": "049l",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "049k",
+     "id_b": "049l",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_049n",
+   "members": [
+    {
+     "id": "049n",
+     "lang": "en"
+    },
+    {
+     "id": "049p",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "049n",
+     "id_b": "049p",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_049q",
+   "members": [
+    {
+     "id": "049q",
+     "lang": "en"
+    },
+    {
+     "id": "049u",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "049q",
+     "id_b": "049u",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_049x",
+   "members": [
+    {
+     "id": "049x",
+     "lang": "en"
+    },
+    {
+     "id": "049y",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "049x",
+     "id_b": "049y",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04a4",
+   "members": [
+    {
+     "id": "04a4",
+     "lang": "en"
+    },
+    {
+     "id": "04a6",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04a4",
+     "id_b": "04a6",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04a8",
+   "members": [
+    {
+     "id": "04a8",
+     "lang": "en"
+    },
+    {
+     "id": "04aa",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04a8",
+     "id_b": "04aa",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04ae",
+   "members": [
+    {
+     "id": "04ae",
+     "lang": "en"
+    },
+    {
+     "id": "04af",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04ae",
+     "id_b": "04af",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04ar",
+   "members": [
+    {
+     "id": "04ar",
+     "lang": "en"
+    },
+    {
+     "id": "04as",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04ar",
+     "id_b": "04as",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04at",
+   "members": [
+    {
+     "id": "04at",
+     "lang": "en"
+    },
+    {
+     "id": "04au",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04at",
+     "id_b": "04au",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04ax",
+   "members": [
+    {
+     "id": "04ax",
+     "lang": "en"
+    },
+    {
+     "id": "04ay",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04ax",
+     "id_b": "04ay",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04hr",
+   "members": [
+    {
+     "id": "04hr",
+     "lang": "en"
+    },
+    {
+     "id": "04ht",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04hr",
+     "id_b": "04ht",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04i2",
+   "members": [
+    {
+     "id": "04i2",
+     "lang": "en"
+    },
+    {
+     "id": "04i5",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04i2",
+     "id_b": "04i5",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04i6",
+   "members": [
+    {
+     "id": "04i6",
+     "lang": "en"
+    },
+    {
+     "id": "04i7",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04i6",
+     "id_b": "04i7",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04ie",
+   "members": [
+    {
+     "id": "04ie",
+     "lang": "en"
+    },
+    {
+     "id": "07px",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04ie",
+     "id_b": "07px",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04ij",
+   "members": [
+    {
+     "id": "04ij",
+     "lang": "en"
+    },
+    {
+     "id": "04il",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04ij",
+     "id_b": "04il",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04in",
+   "members": [
+    {
+     "id": "04in",
+     "lang": "en"
+    },
+    {
+     "id": "04io",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04in",
+     "id_b": "04io",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04is",
+   "members": [
+    {
+     "id": "04is",
+     "lang": "en"
+    },
+    {
+     "id": "04iu",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04is",
+     "id_b": "04iu",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04ix",
+   "members": [
+    {
+     "id": "04ix",
+     "lang": "en"
+    },
+    {
+     "id": "04iy",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04ix",
+     "id_b": "04iy",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04iz",
+   "members": [
+    {
+     "id": "04iz",
+     "lang": "en"
+    },
+    {
+     "id": "04j2",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04iz",
+     "id_b": "04j2",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04j4",
+   "members": [
+    {
+     "id": "04j4",
+     "lang": "en"
+    },
+    {
+     "id": "04j6",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04j4",
+     "id_b": "04j6",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04j9",
+   "members": [
+    {
+     "id": "04j9",
+     "lang": "en"
+    },
+    {
+     "id": "04ja",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04j9",
+     "id_b": "04ja",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04r5",
+   "members": [
+    {
+     "id": "04r5",
+     "lang": "en"
+    },
+    {
+     "id": "04r6",
+     "lang": "en"
+    },
+    {
+     "id": "04s0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04r5",
+     "id_b": "04s0",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "04r6",
+     "id_b": "04s0",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04sr",
+   "members": [
+    {
+     "id": "04sr",
+     "lang": "en"
+    },
+    {
+     "id": "0c3f",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04sr",
+     "id_b": "0c3f",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04su",
+   "members": [
+    {
+     "id": "04su",
+     "lang": "en"
+    },
+    {
+     "id": "04y0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04su",
+     "id_b": "04y0",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04wj",
+   "members": [
+    {
+     "id": "04wj",
+     "lang": "en"
+    },
+    {
+     "id": "04xc",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04wj",
+     "id_b": "04xc",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_04zm",
+   "members": [
+    {
+     "id": "04zm",
+     "lang": "en"
+    },
+    {
+     "id": "09hn",
+     "lang": "en"
+    },
+    {
+     "id": "0i37",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04zm",
+     "id_b": "09hn",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "04zm",
+     "id_b": "0i37",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_04zv",
+   "members": [
+    {
+     "id": "04zv",
+     "lang": "en"
+    },
+    {
+     "id": "0jf9",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "04zv",
+     "id_b": "0jf9",
+     "method": "V4_answer_math",
+     "confidence": "medium",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0530",
+   "members": [
+    {
+     "id": "0530",
+     "lang": "en"
+    },
+    {
+     "id": "0565",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0530",
+     "id_b": "0565",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_05c6",
+   "members": [
+    {
+     "id": "05c6",
+     "lang": "en"
+    },
+    {
+     "id": "0a8o",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "05c6",
+     "id_b": "0a8o",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_05kc",
+   "members": [
+    {
+     "id": "05kc",
+     "lang": "fr"
+    },
+    {
+     "id": "05q4",
+     "lang": "fr"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "05kc",
+     "id_b": "05q4",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "fr",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_05mj",
+   "members": [
+    {
+     "id": "05mj",
+     "lang": "fr"
+    },
+    {
+     "id": "05oe",
+     "lang": "fr"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "05mj",
+     "id_b": "05oe",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "fr",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_066o",
+   "members": [
+    {
+     "id": "066o",
+     "lang": "en"
+    },
+    {
+     "id": "0fmy",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "066o",
+     "id_b": "0fmy",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_069m",
+   "members": [
+    {
+     "id": "069m",
+     "lang": "en"
+    },
+    {
+     "id": "08pl",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "069m",
+     "id_b": "08pl",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_06ey",
+   "members": [
+    {
+     "id": "06ey",
+     "lang": "en"
+    },
+    {
+     "id": "0764",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06ey",
+     "id_b": "0764",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_06hk",
+   "members": [
+    {
+     "id": "06hk",
+     "lang": "en"
+    },
+    {
+     "id": "06hl",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06hk",
+     "id_b": "06hl",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_06hu",
+   "members": [
+    {
+     "id": "06hu",
+     "lang": "en"
+    },
+    {
+     "id": "06hx",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06hu",
+     "id_b": "06hx",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_06hw",
+   "members": [
+    {
+     "id": "06hw",
+     "lang": "en"
+    },
+    {
+     "id": "06i0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06hw",
+     "id_b": "06i0",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_06le",
+   "members": [
+    {
+     "id": "06le",
+     "lang": "en"
+    },
+    {
+     "id": "0h6x",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06le",
+     "id_b": "0h6x",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_06mj",
+   "members": [
+    {
+     "id": "06mj",
+     "lang": "en"
+    },
+    {
+     "id": "06nn",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06mj",
+     "id_b": "06nn",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_06ny",
+   "members": [
+    {
+     "id": "06ny",
+     "lang": "en"
+    },
+    {
+     "id": "06x5",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06ny",
+     "id_b": "06x5",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_06xc",
+   "members": [
+    {
+     "id": "06xc",
+     "lang": "en"
+    },
+    {
+     "id": "0diy",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06xc",
+     "id_b": "0diy",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_06xy",
+   "members": [
+    {
+     "id": "06xy",
+     "lang": "en"
+    },
+    {
+     "id": "0gjq",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "06xy",
+     "id_b": "0gjq",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_071u",
+   "members": [
+    {
+     "id": "071u",
+     "lang": "en"
+    },
+    {
+     "id": "0ieg",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "071u",
+     "id_b": "0ieg",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0755",
+   "members": [
+    {
+     "id": "0755",
+     "lang": "en"
+    },
+    {
+     "id": "0759",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0755",
+     "id_b": "0759",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0788",
+   "members": [
+    {
+     "id": "0788",
+     "lang": "en"
+    },
+    {
+     "id": "078a",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0788",
+     "id_b": "078a",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_07m7",
+   "members": [
+    {
+     "id": "07m7",
+     "lang": "en"
+    },
+    {
+     "id": "0arp",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "07m7",
+     "id_b": "0arp",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_07ys",
+   "members": [
+    {
+     "id": "07ys",
+     "lang": "it"
+    },
+    {
+     "id": "082c",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "07ys",
+     "id_b": "082c",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_07yt",
+   "members": [
+    {
+     "id": "07yt",
+     "lang": "fr"
+    },
+    {
+     "id": "082d",
+     "lang": "fr"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "07yt",
+     "id_b": "082d",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "fr",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_07zl",
+   "members": [
+    {
+     "id": "07zl",
+     "lang": "it"
+    },
+    {
+     "id": "07zm",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "07zl",
+     "id_b": "07zm",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0803",
+   "members": [
+    {
+     "id": "0803",
+     "lang": "it"
+    },
+    {
+     "id": "0804",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0803",
+     "id_b": "0804",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_080b",
+   "members": [
+    {
+     "id": "080b",
+     "lang": "it"
+    },
+    {
+     "id": "080c",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "080b",
+     "id_b": "080c",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0813",
+   "members": [
+    {
+     "id": "0813",
+     "lang": "it"
+    },
+    {
+     "id": "0816",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0813",
+     "id_b": "0816",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0838",
+   "members": [
+    {
+     "id": "0838",
+     "lang": "it"
+    },
+    {
+     "id": "0839",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0838",
+     "id_b": "0839",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0843",
+   "members": [
+    {
+     "id": "0843",
+     "lang": "it"
+    },
+    {
+     "id": "0844",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0843",
+     "id_b": "0844",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_084h",
+   "members": [
+    {
+     "id": "084h",
+     "lang": "it"
+    },
+    {
+     "id": "084i",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "084h",
+     "id_b": "084i",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0869",
+   "members": [
+    {
+     "id": "0869",
+     "lang": "it"
+    },
+    {
+     "id": "086c",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0869",
+     "id_b": "086c",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_086f",
+   "members": [
+    {
+     "id": "086f",
+     "lang": "it"
+    },
+    {
+     "id": "086g",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "086f",
+     "id_b": "086g",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_086i",
+   "members": [
+    {
+     "id": "086i",
+     "lang": "it"
+    },
+    {
+     "id": "086j",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "086i",
+     "id_b": "086j",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_087h",
+   "members": [
+    {
+     "id": "087h",
+     "lang": "it"
+    },
+    {
+     "id": "087i",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "087h",
+     "id_b": "087i",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_088e",
+   "members": [
+    {
+     "id": "088e",
+     "lang": "it"
+    },
+    {
+     "id": "088f",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "088e",
+     "id_b": "088f",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0890",
+   "members": [
+    {
+     "id": "0890",
+     "lang": "it"
+    },
+    {
+     "id": "0891",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0890",
+     "id_b": "0891",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_08f9",
+   "members": [
+    {
+     "id": "08f9",
+     "lang": "it"
+    },
+    {
+     "id": "08fa",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08f9",
+     "id_b": "08fa",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D3"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_08fu",
+   "members": [
+    {
+     "id": "08fu",
+     "lang": "it"
+    },
+    {
+     "id": "08fv",
+     "lang": "it"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08fu",
+     "id_b": "08fv",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "it",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_08mj",
+   "members": [
+    {
+     "id": "08mj",
+     "lang": "en"
+    },
+    {
+     "id": "0dbr",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08mj",
+     "id_b": "0dbr",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_08qj",
+   "members": [
+    {
+     "id": "08qj",
+     "lang": "en"
+    },
+    {
+     "id": "08qr",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08qj",
+     "id_b": "08qr",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_08rp",
+   "members": [
+    {
+     "id": "08rp",
+     "lang": "en"
+    },
+    {
+     "id": "08rr",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08rp",
+     "id_b": "08rr",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_08ru",
+   "members": [
+    {
+     "id": "08ru",
+     "lang": "en"
+    },
+    {
+     "id": "08rv",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08ru",
+     "id_b": "08rv",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_08s2",
+   "members": [
+    {
+     "id": "08s2",
+     "lang": "en"
+    },
+    {
+     "id": "08s3",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08s2",
+     "id_b": "08s3",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_08ww",
+   "members": [
+    {
+     "id": "08ww",
+     "lang": "en"
+    },
+    {
+     "id": "08wy",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08ww",
+     "id_b": "08wy",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_08x2",
+   "members": [
+    {
+     "id": "08x2",
+     "lang": "en"
+    },
+    {
+     "id": "08x3",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08x2",
+     "id_b": "08x3",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_08x9",
+   "members": [
+    {
+     "id": "08x9",
+     "lang": "en"
+    },
+    {
+     "id": "08xa",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "08x9",
+     "id_b": "08xa",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_094b",
+   "members": [
+    {
+     "id": "094b",
+     "lang": "en"
+    },
+    {
+     "id": "094c",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "094b",
+     "id_b": "094c",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_094g",
+   "members": [
+    {
+     "id": "094g",
+     "lang": "en"
+    },
+    {
+     "id": "094h",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "094g",
+     "id_b": "094h",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_094j",
+   "members": [
+    {
+     "id": "094j",
+     "lang": "en"
+    },
+    {
+     "id": "094k",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "094j",
+     "id_b": "094k",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_094l",
+   "members": [
+    {
+     "id": "094l",
+     "lang": "en"
+    },
+    {
+     "id": "094m",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "094l",
+     "id_b": "094m",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_094n",
+   "members": [
+    {
+     "id": "094n",
+     "lang": "en"
+    },
+    {
+     "id": "094o",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "094n",
+     "id_b": "094o",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0995",
+   "members": [
+    {
+     "id": "0995",
+     "lang": "en"
+    },
+    {
+     "id": "09b6",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0995",
+     "id_b": "09b6",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09a2",
+   "members": [
+    {
+     "id": "09a2",
+     "lang": "en"
+    },
+    {
+     "id": "09a3",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09a2",
+     "id_b": "09a3",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09a5",
+   "members": [
+    {
+     "id": "09a5",
+     "lang": "en"
+    },
+    {
+     "id": "09a6",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09a5",
+     "id_b": "09a6",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09ad",
+   "members": [
+    {
+     "id": "09ad",
+     "lang": "en"
+    },
+    {
+     "id": "09ae",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09ad",
+     "id_b": "09ae",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09ag",
+   "members": [
+    {
+     "id": "09ag",
+     "lang": "en"
+    },
+    {
+     "id": "09ah",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09ag",
+     "id_b": "09ah",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_09aj",
+   "members": [
+    {
+     "id": "09aj",
+     "lang": "en"
+    },
+    {
+     "id": "09ak",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09aj",
+     "id_b": "09ak",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09ar",
+   "members": [
+    {
+     "id": "09ar",
+     "lang": "en"
+    },
+    {
+     "id": "09as",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09ar",
+     "id_b": "09as",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09dx",
+   "members": [
+    {
+     "id": "09dx",
+     "lang": "en"
+    },
+    {
+     "id": "0h5p",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09dx",
+     "id_b": "0h5p",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09mm",
+   "members": [
+    {
+     "id": "09mm",
+     "lang": "en"
+    },
+    {
+     "id": "09op",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09mm",
+     "id_b": "09op",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09on",
+   "members": [
+    {
+     "id": "09on",
+     "lang": "en"
+    },
+    {
+     "id": "09p1",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09on",
+     "id_b": "09p1",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_09rl",
+   "members": [
+    {
+     "id": "09rl",
+     "lang": "de"
+    },
+    {
+     "id": "0g1a",
+     "lang": "de"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "09rl",
+     "id_b": "0g1a",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "de",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0a8s",
+   "members": [
+    {
+     "id": "0a8s",
+     "lang": "en"
+    },
+    {
+     "id": "0gwv",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0a8s",
+     "id_b": "0gwv",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0agb",
+   "members": [
+    {
+     "id": "0agb",
+     "lang": "en"
+    },
+    {
+     "id": "0b7d",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0agb",
+     "id_b": "0b7d",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0ahq",
+   "members": [
+    {
+     "id": "0ahq",
+     "lang": "en"
+    },
+    {
+     "id": "0bfw",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0ahq",
+     "id_b": "0bfw",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0aqg",
+   "members": [
+    {
+     "id": "0aqg",
+     "lang": "en"
+    },
+    {
+     "id": "0e1e",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0aqg",
+     "id_b": "0e1e",
+     "method": "V4_answer_math",
+     "confidence": "medium",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0auu",
+   "members": [
+    {
+     "id": "0auu",
+     "lang": "en"
+    },
+    {
+     "id": "0cd7",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0auu",
+     "id_b": "0cd7",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0b1f",
+   "members": [
+    {
+     "id": "0b1f",
+     "lang": "en"
+    },
+    {
+     "id": "0ds6",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0b1f",
+     "id_b": "0ds6",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0b3w",
+   "members": [
+    {
+     "id": "0b3w",
+     "lang": "en"
+    },
+    {
+     "id": "0ebb",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0b3w",
+     "id_b": "0ebb",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0b72",
+   "members": [
+    {
+     "id": "0b72",
+     "lang": "en"
+    },
+    {
+     "id": "0hjn",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0b72",
+     "id_b": "0hjn",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0bav",
+   "members": [
+    {
+     "id": "0bav",
+     "lang": "en"
+    },
+    {
+     "id": "0cz0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0bav",
+     "id_b": "0cz0",
+     "method": "V4_answer_math",
+     "confidence": "medium",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0bo0",
+   "members": [
+    {
+     "id": "0bo0",
+     "lang": "en"
+    },
+    {
+     "id": "0cj1",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0bo0",
+     "id_b": "0cj1",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0bou",
+   "members": [
+    {
+     "id": "0bou",
+     "lang": "en"
+    },
+    {
+     "id": "0cm3",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0bou",
+     "id_b": "0cm3",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0bpp",
+   "members": [
+    {
+     "id": "0bpp",
+     "lang": "ro"
+    },
+    {
+     "id": "0bpq",
+     "lang": "ro"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0bpp",
+     "id_b": "0bpq",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "ro",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0bv8",
+   "members": [
+    {
+     "id": "0bv8",
+     "lang": "en"
+    },
+    {
+     "id": "0c8z",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0bv8",
+     "id_b": "0c8z",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0c0n",
+   "members": [
+    {
+     "id": "0c0n",
+     "lang": "en"
+    },
+    {
+     "id": "0da5",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0c0n",
+     "id_b": "0da5",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0c5b",
+   "members": [
+    {
+     "id": "0c5b",
+     "lang": "en"
+    },
+    {
+     "id": "0kxm",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0c5b",
+     "id_b": "0kxm",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0c8v",
+   "members": [
+    {
+     "id": "0c8v",
+     "lang": "en"
+    },
+    {
+     "id": "0jr8",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0c8v",
+     "id_b": "0jr8",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0d4v",
+   "members": [
+    {
+     "id": "0d4v",
+     "lang": "en"
+    },
+    {
+     "id": "0d4x",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0d4v",
+     "id_b": "0d4x",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0d57",
+   "members": [
+    {
+     "id": "0d57",
+     "lang": "en"
+    },
+    {
+     "id": "0igw",
+     "lang": "en"
+    },
+    {
+     "id": "0ih2",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0d57",
+     "id_b": "0igw",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0d57",
+     "id_b": "0ih2",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0d6a",
+   "members": [
+    {
+     "id": "0d6a",
+     "lang": "en"
+    },
+    {
+     "id": "0h0k",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0d6a",
+     "id_b": "0h0k",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0d6b",
+   "members": [
+    {
+     "id": "0d6b",
+     "lang": "en"
+    },
+    {
+     "id": "0jv9",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0d6b",
+     "id_b": "0jv9",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0d8t",
+   "members": [
+    {
+     "id": "0d8t",
+     "lang": "en"
+    },
+    {
+     "id": "0dqj",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0d8t",
+     "id_b": "0dqj",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0dbt",
+   "members": [
+    {
+     "id": "0dbt",
+     "lang": "en"
+    },
+    {
+     "id": "0dop",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0dbt",
+     "id_b": "0dop",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0dki",
+   "members": [
+    {
+     "id": "0dki",
+     "lang": "en"
+    },
+    {
+     "id": "0hii",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0dki",
+     "id_b": "0hii",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0dra",
+   "members": [
+    {
+     "id": "0dra",
+     "lang": "en"
+    },
+    {
+     "id": "0hc1",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0dra",
+     "id_b": "0hc1",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0dts",
+   "members": [
+    {
+     "id": "0dts",
+     "lang": "en"
+    },
+    {
+     "id": "0iuw",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0dts",
+     "id_b": "0iuw",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0eno",
+   "members": [
+    {
+     "id": "0eno",
+     "lang": "en"
+    },
+    {
+     "id": "0hwi",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0eno",
+     "id_b": "0hwi",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0ezt",
+   "members": [
+    {
+     "id": "0ezt",
+     "lang": "en"
+    },
+    {
+     "id": "0hig",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0ezt",
+     "id_b": "0hig",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0fb7",
+   "members": [
+    {
+     "id": "0fb7",
+     "lang": "es"
+    },
+    {
+     "id": "0foy",
+     "lang": "es"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0fb7",
+     "id_b": "0foy",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "es",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0fcd",
+   "members": [
+    {
+     "id": "0fcd",
+     "lang": "es"
+    },
+    {
+     "id": "0fmd",
+     "lang": "es"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0fcd",
+     "id_b": "0fmd",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "es",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0fct",
+   "members": [
+    {
+     "id": "0fct",
+     "lang": "es"
+    },
+    {
+     "id": "0fl9",
+     "lang": "es"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0fct",
+     "id_b": "0fl9",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "es",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0fnz",
+   "members": [
+    {
+     "id": "0fnz",
+     "lang": "es"
+    },
+    {
+     "id": "0fo4",
+     "lang": "es"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0fnz",
+     "id_b": "0fo4",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "es",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0h77",
+   "members": [
+    {
+     "id": "0h77",
+     "lang": "en"
+    },
+    {
+     "id": "0h79",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0h77",
+     "id_b": "0h79",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0hot",
+   "members": [
+    {
+     "id": "0hot",
+     "lang": "en"
+    },
+    {
+     "id": "0j9j",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0hot",
+     "id_b": "0j9j",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0hyi",
+   "members": [
+    {
+     "id": "0hyi",
+     "lang": "en"
+    },
+    {
+     "id": "0hyj",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0hyi",
+     "id_b": "0hyj",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0i1d",
+   "members": [
+    {
+     "id": "0i1d",
+     "lang": "en"
+    },
+    {
+     "id": "0jzl",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0i1d",
+     "id_b": "0jzl",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0i2m",
+   "members": [
+    {
+     "id": "0i2m",
+     "lang": "en"
+    },
+    {
+     "id": "0i2s",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0i2m",
+     "id_b": "0i2s",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0ilj",
+   "members": [
+    {
+     "id": "0ilj",
+     "lang": "en"
+    },
+    {
+     "id": "0ill",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0ilj",
+     "id_b": "0ill",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0iov",
+   "members": [
+    {
+     "id": "0iov",
+     "lang": "en"
+    },
+    {
+     "id": "0is8",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0iov",
+     "id_b": "0is8",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0is3",
+   "members": [
+    {
+     "id": "0is3",
+     "lang": "en"
+    },
+    {
+     "id": "0isi",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0is3",
+     "id_b": "0isi",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0is7",
+   "members": [
+    {
+     "id": "0is7",
+     "lang": "en"
+    },
+    {
+     "id": "0isk",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0is7",
+     "id_b": "0isk",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0iw2",
+   "members": [
+    {
+     "id": "0iw2",
+     "lang": "en"
+    },
+    {
+     "id": "0ixw",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0iw2",
+     "id_b": "0ixw",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0ix8",
+   "members": [
+    {
+     "id": "0ix8",
+     "lang": "en"
+    },
+    {
+     "id": "0iy5",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0ix8",
+     "id_b": "0iy5",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0j18",
+   "members": [
+    {
+     "id": "0j18",
+     "lang": "en"
+    },
+    {
+     "id": "0j1y",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0j18",
+     "id_b": "0j1y",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0j1z",
+   "members": [
+    {
+     "id": "0j1z",
+     "lang": "en"
+    },
+    {
+     "id": "0j26",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0j1z",
+     "id_b": "0j26",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0j27",
+   "members": [
+    {
+     "id": "0j27",
+     "lang": "en"
+    },
+    {
+     "id": "0j34",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0j27",
+     "id_b": "0j34",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0j2p",
+   "members": [
+    {
+     "id": "0j2p",
+     "lang": "en"
+    },
+    {
+     "id": "0j2z",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0j2p",
+     "id_b": "0j2z",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0j9d",
+   "members": [
+    {
+     "id": "0j9d",
+     "lang": "en"
+    },
+    {
+     "id": "0jn5",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0j9d",
+     "id_b": "0jn5",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0jgo",
+   "members": [
+    {
+     "id": "0jgo",
+     "lang": "en"
+    },
+    {
+     "id": "0jgy",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0jgo",
+     "id_b": "0jgy",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0ju7",
+   "members": [
+    {
+     "id": "0ju7",
+     "lang": "en"
+    },
+    {
+     "id": "0k3e",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0ju7",
+     "id_b": "0k3e",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0k3c",
+   "members": [
+    {
+     "id": "0k3c",
+     "lang": "en"
+    },
+    {
+     "id": "0k3g",
+     "lang": "en"
+    },
+    {
+     "id": "0k89",
+     "lang": "en"
+    },
+    {
+     "id": "0k8a",
+     "lang": "en"
+    },
+    {
+     "id": "0kl0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0k3c",
+     "id_b": "0k8a",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0k3g",
+     "id_b": "0k89",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0k3g",
+     "id_b": "0k8a",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0k3g",
+     "id_b": "0kl0",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0k89",
+     "id_b": "0kl0",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0k8a",
+     "id_b": "0kl0",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0kdt",
+   "members": [
+    {
+     "id": "0kdt",
+     "lang": "en"
+    },
+    {
+     "id": "0kr4",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kdt",
+     "id_b": "0kr4",
+     "method": "V2_rare_math",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0kgz",
+   "members": [
+    {
+     "id": "0kgz",
+     "lang": "en"
+    },
+    {
+     "id": "0kh0",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kgz",
+     "id_b": "0kh0",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0kh5",
+   "members": [
+    {
+     "id": "0kh5",
+     "lang": "en"
+    },
+    {
+     "id": "0kh6",
+     "lang": "en"
+    },
+    {
+     "id": "0kmc",
+     "lang": "en"
+    },
+    {
+     "id": "0kme",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kh5",
+     "id_b": "0kh6",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0kh5",
+     "id_b": "0kmc",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0kh5",
+     "id_b": "0kme",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0kh6",
+     "id_b": "0kmc",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0kh6",
+     "id_b": "0kme",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0khb",
+   "members": [
+    {
+     "id": "0khb",
+     "lang": "en"
+    },
+    {
+     "id": "0khd",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0khb",
+     "id_b": "0khd",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0kie",
+   "members": [
+    {
+     "id": "0kie",
+     "lang": "en"
+    },
+    {
+     "id": "0kig",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kie",
+     "id_b": "0kig",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0kjb",
+   "members": [
+    {
+     "id": "0kjb",
+     "lang": "en"
+    },
+    {
+     "id": "0kjc",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kjb",
+     "id_b": "0kjc",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0kjj",
+   "members": [
+    {
+     "id": "0kjj",
+     "lang": "en"
+    },
+    {
+     "id": "0kjl",
+     "lang": "en"
+    },
+    {
+     "id": "0kjv",
+     "lang": "en"
+    },
+    {
+     "id": "0kjy",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kjj",
+     "id_b": "0kjv",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0kjj",
+     "id_b": "0kjy",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0kjl",
+     "id_b": "0kjv",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    },
+    {
+     "id_a": "0kjl",
+     "id_b": "0kjy",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0kl1",
+   "members": [
+    {
+     "id": "0kl1",
+     "lang": "en"
+    },
+    {
+     "id": "0klg",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kl1",
+     "id_b": "0klg",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0klv",
+   "members": [
+    {
+     "id": "0klv",
+     "lang": "en"
+    },
+    {
+     "id": "0klx",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0klv",
+     "id_b": "0klx",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0knm",
+   "members": [
+    {
+     "id": "0knm",
+     "lang": "en"
+    },
+    {
+     "id": "0knq",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0knm",
+     "id_b": "0knq",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0knn",
+   "members": [
+    {
+     "id": "0knn",
+     "lang": "en"
+    },
+    {
+     "id": "0knr",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0knn",
+     "id_b": "0knr",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0kop",
+   "members": [
+    {
+     "id": "0kop",
+     "lang": "en"
+    },
+    {
+     "id": "0koq",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kop",
+     "id_b": "0koq",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0kwa",
+   "members": [
+    {
+     "id": "0kwa",
+     "lang": "en"
+    },
+    {
+     "id": "0kxp",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kwa",
+     "id_b": "0kxp",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0kyz",
+   "members": [
+    {
+     "id": "0kyz",
+     "lang": "en"
+    },
+    {
+     "id": "0kzy",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kyz",
+     "id_b": "0kzy",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0kzi",
+   "members": [
+    {
+     "id": "0kzi",
+     "lang": "en"
+    },
+    {
+     "id": "0l48",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kzi",
+     "id_b": "0l48",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0kzt",
+   "members": [
+    {
+     "id": "0kzt",
+     "lang": "en"
+    },
+    {
+     "id": "0l0z",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0kzt",
+     "id_b": "0l0z",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0l1o",
+   "members": [
+    {
+     "id": "0l1o",
+     "lang": "en"
+    },
+    {
+     "id": "0l2d",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l1o",
+     "id_b": "0l2d",
+     "method": "V1_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": false,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0l35",
+   "members": [
+    {
+     "id": "0l35",
+     "lang": "en"
+    },
+    {
+     "id": "0l3h",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l35",
+     "id_b": "0l3h",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0l4n",
+   "members": [
+    {
+     "id": "0l4n",
+     "lang": "en"
+    },
+    {
+     "id": "0l8d",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l4n",
+     "id_b": "0l8d",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0l4u",
+   "members": [
+    {
+     "id": "0l4u",
+     "lang": "en"
+    },
+    {
+     "id": "0l7s",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l4u",
+     "id_b": "0l7s",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0l6f",
+   "members": [
+    {
+     "id": "0l6f",
+     "lang": "en"
+    },
+    {
+     "id": "0l7o",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l6f",
+     "id_b": "0l7o",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0l79",
+   "members": [
+    {
+     "id": "0l79",
+     "lang": "en"
+    },
+    {
+     "id": "0l8a",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l79",
+     "id_b": "0l8a",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0l7l",
+   "members": [
+    {
+     "id": "0l7l",
+     "lang": "en"
+    },
+    {
+     "id": "0l8g",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l7l",
+     "id_b": "0l8g",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4"
+   ],
+   "clean_of_training": false
+  },
+  {
+   "cluster_id": "cl_0l7r",
+   "members": [
+    {
+     "id": "0l7r",
+     "lang": "en"
+    },
+    {
+     "id": "0l8e",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l7r",
+     "id_b": "0l8e",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [],
+   "clean_of_training": true
+  },
+  {
+   "cluster_id": "cl_0l7z",
+   "members": [
+    {
+     "id": "0l7z",
+     "lang": "en"
+    },
+    {
+     "id": "0l8f",
+     "lang": "en"
+    }
+   ],
+   "pairs": [
+    {
+     "id_a": "0l7z",
+     "id_b": "0l8f",
+     "method": "exact_text",
+     "confidence": "high",
+     "cross_language": false
+    }
+   ],
+   "l_doc": null,
+   "lang": "en",
+   "exact_text_cluster": true,
+   "trained_in": [
+    "CAS file",
+    "D2",
+    "D3",
+    "D4",
+    "ctrl-LLM (D1)",
+    "regenerated clean LLM"
+   ],
+   "clean_of_training": false
+  }
+ ]
+}

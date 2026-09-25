@@ -1,0 +1,156 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9 domain=discrete_math round=15 call=133
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=17771 (dump truncated to 8192)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "Reciprocity in Enumeration",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of ways to color a finite poset with $ k $ colors is given by an integer polynomial which evaluates to the number of proper colorings when $ k $ is replaced by a negative integer."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The analytic continuation of a generating function for the chromatic polynomial as a function of the variable $ z $ exhibits symmetry about the real axis, assigning combinatorial meaning to its evaluation at negative integers."
+      }
+    },
+    {
+      "topic": "Binary String Transitions",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of binary strings of length $ n $ with no $ k $ consecutive zeros increases when the transition probabilities in a Markovian step model are reweighted by their first differences."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The growth rate of the solution to a rational linear differential equation with coefficients determined by the weights of restricted transition operators can be analyzed via the position of its nearest singularity in the complex plane."
+      }
+    },
+    {
+      "topic": "Cycle Growth in Tree Structures",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of ways to arrange $ n $ distinguishable objects in a rooted tree with specific child-height constraints follows a recurrence relation with a characteristic polynomial whose roots grow with $ n $."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The asymptotic growth of coefficients of a generating function defined by a functional equation resembling a tree recurrence is dominated by the singularities introduced through logarithmic exponentiation in the Borel plane."
+      }
+    },
+    {
+      "topic": "Balanced Graph Expansions",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of labeled bipartite graphs with equal-sized partitions and fixed maximum edge degree satisfies a recurrence defined by combinations of subsets and degree constraints."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The Taylor coefficients of an exponential generating function of a class of meromorphic functions with branch points derived from the symmetric group satisfy a convolution law stemming from product representations."
+      }
+    },
+    {
+      "topic": "Modular Repeated Structures",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of compositions of $ n $ into parts satisfying congruence conditions modulo $ m $ is equal to a periodic extension of a base recurrence."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The asymptotic expansion of a Dirichlet generating function with arithmetic multiplicative weights admits a modular functional equation whose residues correspond to composition identities."
+      }
+    },
+    {
+      "topic": "Unordered Factorizations",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of ways to write $ n $ as an unordered product of integers greater than 1 is given by a recurrence involving divisors and multiplicative inclusion-exclusion."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The logarithmic derivative of a multiplicative zeta-like function admits an Euler product whose singular expansions encode the growth of unordered factorizations via Dirichlet convolution."
+      }
+    },
+    {
+      "topic": "Staircase Configurations",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of non-decreasing integer sequences of length $ k $ that sum to $ n $ corresponds to the volume of a discrete convex body bounded by face constraints."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The asymptotics of a mixed Cauchy integral over a co-dimension one manifold encode the volume-like properties of integer solutions to a fixed sum condition, defined via residue transformation."
+      }
+    },
+    {
+      "topic": "Redundant Set Covers",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of minimal set covers of a universe with redundant set inclusions grows sub-exponentially with the size of the universe and satisfies a recurrence involving inclusion overlap."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "A rational function with dominant singularities at multiple branch points encodes sub-exponential cover growth, with the leading term determined via saddle-point contour integration."
+      }
+    },
+    {
+      "topic": "Hypergraph Matchings",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of edge-disjoint hyperedges in a 3-uniform hypergraph on $ n $ vertices obeying bounded-degree constraints follows a recurrence incorporating weighted inclusion-exclusion over potential overlaps."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The modular properties of the generating function for independent edge sets in a 3-uniform model reveal singular expansions where the leading asymptotics are governed by multiple pole contributions."
+      }
+    },
+    {
+      "topic": "Word Factorizations",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of ways to factor a word over a finite alphabet into subwords without overlaps is determined by a recurrence on prefix decomposition trees."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for word factorizations admits a representation as a Hadamard product of two analytic functions, whose singularities encode word decomposition limits."
+      }
+    },
+    {
+      "topic": "Edge-labeled Forests",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of edge-labeled forests of $ m $ rooted trees over $ n $ vertices is equal to a product of factorials weighted by outdegrees and component sizes."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "An exponential generating function whose coefficients encode the number of edge-labeled rooted component configurations admits a multivariate Lagrange inversion formula via a rational meromorphic transformation."
+      }
+    },
+    {
+      "topic": "Eulerian Tree Variants",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of rooted trees whose nodes have degrees alternating between even and odd grows factorially with depth when restricted to Eulerian properties."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for such degree-constrained rooted trees has a Puiseux expansion with fractional exponents at the origin, encoded by a series with logarithmic corrections from its singular development."
+      }
+    },
+    {
+      "topic": "Nonplanar Face Counts",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of maximal nonplanar graphs embedded in a surface with $ f $ faces is bounded by the Euler characteristic and boundary edge constraints."
+      },
+      "entry_2": {
+        "framing": "complex analysis",
+        "statement": "The generating function for nonplanar graphs with a fixed number of faces can be decomposed by genus contributions and evaluated via modular transformations on the moduli space of Riemann surfaces."
+      }
+    },
+    {
+      "topic": "Hyperbolic Walk Transience",
+      "entry_1": {
+        "framing": "discrete math",
+        "statement": "The number of self-avoiding walks on a hyperbolic tiling is exponential in the walk length due to the exponential growth of the til

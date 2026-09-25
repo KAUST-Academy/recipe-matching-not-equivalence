@@ -1,0 +1,163 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=spectral_graph_theory round=20 call=177
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=12345 (dump keeps first 6144 + last 6144; 57 elided)
+------------------------------------------------------------------------
+{
+  "pairs": [
+    {
+      "topic": "Node-degree eigenrelation",
+      "entry_1": {"framing": "graph theory", "statement": "In a regular graph, the degree of every node is equal to the largest eigenvalue of the adjacency matrix."},
+      "entry_2": {"framing": "linear algebra", "statement": "In a regular graph's adjacency matrix, the largest eigenvalue equals the common row sum (i.e., the regular degree of the graph)."}
+    },
+    {
+      "topic": "Bipartite eigensymmetry",
+      "entry_1": {"framing": "graph theory", "statement": "If a graph is bipartite, its adjacency matrix has a symmetric spectrum about zero."},
+      "entry_2": {"framing": "linear algebra", "statement": "If a matrix is bipartite (with zero diagonal and block structure of zero blocks), its eigenvalues are symmetric about zero."}
+    },
+    {
+      "topic": "Laplacian rank and components",
+      "entry_1": {"framing": "graph theory", "statement": "The rank of the Laplacian matrix of a graph is $n - c$, where $n$ is the number of nodes and $c$ is the number of connected components."},
+      "entry_2": {"framing": "linear algebra", "statement": "For a Laplacian matrix of size $n \times n$ with $c$ connected components, its rank is $n - c$."}
+    },
+    {
+      "topic": "Laplacian trace",
+      "entry_1": {"framing": "graph theory", "statement": "The trace of the Laplacian matrix is equal to the sum of the degrees of the nodes in the graph."},
+      "entry_2": {"framing": "linear algebra", "statement": "For a Laplacian matrix, the trace equals the sum of the degrees of the nodes represented in the graph."}
+    },
+    {
+      "topic": "Random walk uniformity",
+      "entry_1": {"framing": "graph theory", "statement": "In a regular connected graph, the stationary distribution of a random walk is uniform across all nodes."},
+      "entry_2": {"framing": "linear algebra", "statement": "If a transition matrix for a random walk has uniform stationary distribution, the graph must be regular and connected."}
+    },
+    {
+      "topic": "Eigenspace correlation",
+      "entry_1": {"framing": "graph theory", "statement": "Eigenvectors of the adjacency matrix correlate with structural symmetries of the graph."},
+      "entry_2": {"framing": "linear algebra", "statement": "The eigenvectors of a symmetric matrix often reflect inherent symmetric structures of the matrix entries."}
+    },
+    {
+      "topic": "Empty graph matrix",
+      "entry_1": {"framing": "graph theory", "statement": "The adjacency matrix of an empty graph is all zeros and has only one distinct eigenvalue, zero."},
+      "entry_2": {"framing": "linear algebra", "statement": "If a square matrix has all zero entries, it has one distinct eigenvalue, zero, with multiplicity equal to its size."}
+    },
+    {
+      "topic": "Walk correlation",
+      "entry_1": {"framing": "graph theory", "statement": "The number of $k$-length walks between any two nodes is determined by the $k$-th power of the adjacency matrix."},
+      "entry_2": {"framing": "linear algebra", "statement": "The $(i, j)$ entry of the $k$-th power of a matrix $A$ gives the number of length-$k$ walks from node $i$ to node $j$."}
+    },
+    {
+      "topic": "Isolated node effect",
+      "entry_1": {"framing": "graph theory", "statement": "An isolated node introduces a zero eigenvalue with multiplicity one to the Laplacian matrix of a graph."},
+      "entry_2": {"framing": "linear algebra", "statement": "A graph's Laplacian matrix gains an additional zero eigenvalue when the graph contains an isolated node."}
+    },
+    {
+      "topic": "Adjacency invertibility",
+      "entry_1": {"framing": "graph theory", "statement": "The adjacency matrix of an empty graph is not invertible as all entries are zero."},
+      "entry_2": {"framing": "linear algebra", "statement": "A matrix with all zero entries has a determinant of zero and is not invertible."}
+    },
+    {
+      "topic": "Spanning tree rank",
+      "entry_1": {"framing": "graph theory", "statement": "A graph with a spanning tree has a connected component and its Laplacian rank is at least $n - 1$."},
+      "entry_2": {"framing": "linear algebra", "statement": "For a matrix derived from a connected network, the rank of the Laplacian matrix is at least $n - 1$."}
+    },
+    {
+      "topic": "Cut edge eigenvalues",
+      "entry_1": {"framing": "graph theory", "statement": "If a graph has a cut edge, removing that edge increases the number of connected components and alters the spectrum of the Laplacian."},
+      "entry_2": {"framing": "linear algebra", "statement": "Deleting an edge corresponding to a bridge in a graph changes the eigenvalues of its Laplacian matrix."}
+    },
+    {
+      "topic": "Graph uniformity and eigenvalues",
+      "entry_1": {"framing": "graph theory", "statement": "A regular graph has its largest eigenvalue equal to the degree of every node."},
+      "entry_2": {"framing": "linear algebra", "statement": "For a regular graph, the top eigenvalue of its adjacency matrix equals the common row sum of the matrix."}
+    },
+    {
+      "topic": "Eigenvector behavior in isolated node",
+      "entry_1": {"framing": "graph theory", "statement": "An isolated node in a graph leads to a one-hot eigenvector corresponding to zero in the Laplacian spectrum."},
+      "entry_2": {"framing": "linear algebra", "statement": "The zero eigenvalue of a Laplacian matrix can be associated with an eigenvector that highlights an isolated node."}
+    },
+    {
+      "topic": "Row normalization consistency",
+      "entry_1": {"framing": "graph theory", "statement": "A normalized Laplacian matrix reduces differences due to node degrees by scaling all rows appropriately."},
+      "entry_2": {"framing": "linear algebra", "statement": "Row normalization adjusts a matrix by dividing each row by its norm, enabling fair comparison between rows of different sizes."}
+    },
+    {
+      "topic": "Complete graph spectrum",
+      "entry_1": {"framing": "graph theory", "statement": "A complete graph has one distinct non-zero Laplacian eigenvalue and others zero, with multiplicity equal to the number of nodes minus one."},
+
+
+... [57 chars elided by dump_gen_failure] ...
+
+": "For a matrix representing a complete network, the eigenvalues are one distinct non-zero value and the rest are zero."}
+    },
+    {
+      "topic": "Cycle graph spectral signature",
+      "entry_1": {"framing": "graph theory", "statement": "A cycle graph has eigenvalues evenly distributed around the complex unit circle if normalized and interpreted as complex eigenvalues."},
+      "entry_2": {"framing": "linear algebra", "statement": "For a normalized matrix modeling a cycle, eigenvalues lie on the unit circle at regular angular intervals."}
+    },
+    {
+      "topic": "Star graph spectrum",
+      "entry_1": {"framing": "graph theory", "statement": "In a star graph, the eigenvalues of the adjacency matrix include one large eigenvalue and the rest are close to zero."}
+      "entry_2": {"framing": "linear algebra", "statement": "The adjacency matrix of a star graph has a dominant eigenvalue and a set of negligible eigenvalues, forming a rank-deficient structure."}
+    },
+    {
+      "topic": "Cycle bipartiteness",
+      "entry_1": {"framing": "graph theory", "statement": "Even-length cycles are bipartite graphs with a symmetric spectrum, while odd-length cycles are not bipartite and have non-symmetric spectra."},
+      "entry_2": {"framing": "linear algebra", "statement": "The adjacency matrix of a cycle graph with an even length has symmetric eigenvalues around zero; odd-length graphs do not."}
+    },
+    {
+      "topic": "Tree graph spectrum",
+      "entry_1": {"framing": "graph theory", "statement": "A tree graph has all eigenvalues of its Laplacian real and non-negative, with one zero corresponding to the connected components."},
+      "entry_2": {"framing": "linear algebra", "statement": "The Laplacian of a tree has real, non-negative eigenvalues and zero is present with multiplicity equal to the number of components."}
+    },
+    {
+      "topic": "Matrix symmetry in regular graphs",
+      "entry_1": {"framing": "graph theory", "statement": "A regular graph has a symmetric adjacency matrix with all nodes having the same row sum, leading to symmetric eigenvectors."},
+      "entry_2": {"framing": "linear algebra", "statement": "A symmetric matrix with identical row sums has a set of orthogonal eigenvectors corresponding to real eigenvalues."}
+    },
+    {
+      "topic": "Graph hierarchy and spectrum",
+      "entry_1": {"framing": "graph theory", "statement": "Hierarchical graphs tend to have sparse eigenvalue spectra, with a few dominant eigenvalues and many near zero."},
+      "entry_2": {"framing": "linear algebra", "statement": "Sparse matrices with a hierarchical structure typically have sparse eigenvalue distributions and high rank deficiency."}
+    },
+    {
+      "topic": "Tree Laplacian rank",
+      "entry_1": {"framing": "graph theory", "statement": "A tree with $n$ nodes has a Laplacian matrix of rank $n - 1$, as it is connected and has no cycles."},
+      "entry_2": {"framing": "linear algebra", "statement": "A matrix with $n$ rows and $n - 1$ linearly independent rows has rank $n - 1$, such as the Laplacian of a tree."}
+    },
+    {
+      "topic": "Cycle number in graph",
+      "entry_1": {"framing": "graph theory", "statement": "The number of simple cycles in a graph can be approximated from the behavior of eigenvalues of the non-backtracking matrix."},
+      "entry_2": {"framing": "linear algebra", "statement": "The number of cycles in a network can be inferred from the magnitudes of eigenvalues of a specific matrix representation of the network."}
+    },
+    {
+      "topic": "Cycle uniformity in spectra",
+      "entry_1": {"framing": "graph theory", "statement": "Graphs with multiple disjoint cycles exhibit eigenvalues that are determined by the structure of each individual cycle."}
+      "entry_2": {"framing": "linear algebra", "statement": "In a block-diagonal matrix with disjoint cycles encoded as individual blocks, the spectrum is the union of the spectra of the blocks."}
+    },
+    {
+      "topic": "Spanning tree uniqueness",
+      "entry_1": {"framing": "graph theory", "statement": "The number of spanning trees in a graph equals the product of the non-zero Laplacian eigenvalues divided by the number of nodes."},
+      "entry_2": {"framing": "linear algebra", "statement": "The number of spanning trees of a matrix-derived graph is equal to the product of its non-zero Laplacian eigenvalues divided by $n$."}
+    },
+    {
+      "topic": "Walk synchronization",
+      "entry_1": {"framing": "graph theory", "statement": "If the eigenvalues of a graph’s adjacency matrix all equal 1, the number of $k$-length walks is the same for any two nodes."},
+      "entry_2": {"framing": "linear algebra", "statement": "A matrix with eigenvalues all equal to one maintains a constant power across all node combinations when raised to a power $k$."}
+    },
+    {
+      "topic": "Symmetry in eigenvector components",
+      "entry_1": {"framing": "graph theory", "statement": "If a graph has a symmetric structure, its eigenvectors often reflect this symmetry across symmetric nodes."},
+      "entry_2": {"framing": "linear algebra", "statement": "A symmetric matrix with mirrored entries will often have eigenvectors that also exhibit symmetry in their component values."}
+    },
+    {
+      "topic": "Eigenvector reproducibility",
+      "entry_1": {"framing": "graph theory", "statement": "For connected graphs with symmetric structures, the same eigenvectors can appear across different eigenvalues depending on structural frequencies."},
+      "entry_2": {"framing": "linear algebra", "statement": "In symmetric matrices with certain patterns, the eigenvectors may repeat or reappear at different eigenvalue magnitudes."}
+    },
+    {
+      "topic": "Node-weighted eigenvalues",
+      "entry_1": {"framing": "graph theory", "statement": "A weighted graph with identical node weights shifts the eigenvalues of its weighted Laplacian in a linear fashion."}
+      "entry_2": {"framing": "linear algebra", "statement": "A matrix with scaled diagonal entries (node weights) can be expressed as a sum of a diagonal matrix and the original matrix."}
+    }
+  ]
+}

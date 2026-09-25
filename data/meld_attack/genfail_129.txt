@@ -1,0 +1,136 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9altm domain=foundations round=15 call=129
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=9814 (dump keeps first 6144 + last 6144; 0 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "function_category_image_comparison",
+      "entry_1": { "framing": "set theory", "statement": "The image of the composition of two functions f and g is the same as the image of f restricted to the image of g." },
+      "entry_2": { "framing": "category theory", "statement": "The image of the composite morphism f ∘ g in a category with images is isomorphic to the image of g followed by the image factorization of f." }
+    },
+    {
+      "topic": "function_colimit_composition",
+      "entry_1": { "framing": "set theory", "statement": "The union of two indexed collections of sets {X_i} and {Y_i} can be realized as the colimit of the diagram whose objects are the X_i ∪ Y_i." },
+      "entry_2": { "framing": "category theory", "statement": "The colimit of the indexed diagrams X_i and Y_i, with structure maps agreeing on a common index category, is the colimit of the component-wise union diagram." }
+    },
+    {
+      "topic": "function_set_partition_pullback",
+      "entry_1": { "framing": "set theory", "statement": "A function f: X → Y induces a set partition of X by equivalence classes of fibers over elements of Y." },
+      "entry_2": { "framing": "category theory", "statement": "A morphism f: X → Y in a category with pullbacks defines a congruence on X given by the kernel pair of f." }
+    },
+    {
+      "topic": "function_retraction_colimit",
+      "entry_1": { "framing": "set theory", "statement": "If f: X → Y and r: Y → X satisfy f ∘ r = id_Y, then Y is a retract of X and can be viewed as a subset union with a retraction." },
+      "entry_2": { "framing": "category theory", "statement": "If f: X → Y and r: Y → X satisfy f ∘ r = id_Y, then Y is a retract of X and the inclusion followed by retraction forms a coequalizer diagram." }
+    },
+    {
+      "topic": "function_coproduct_coinjection",
+      "entry_1": { "framing": "set theory", "statement": "A set constructed as the union of disjoint copies of two sets embeds naturally into the disjoint union." },
+      "entry_2": { "framing": "category theory", "statement": "Every object in a category with coproducts admits a coinjection into the coproduct of two copies of itself, determined by the coproduct structure." }
+    },
+    {
+      "topic": "function_category_final_category",
+      "entry_1": { "framing": "set theory", "statement": "The singleton set is final in the category of sets with all functions." },
+      "entry_2": { "framing": "category theory", "statement": "The terminal object 1 in Set is the unique object such that every object admits a unique morphism to it." }
+    },
+    {
+      "topic": "function_slice_category_pointed",
+      "entry_1": { "framing": "set theory", "statement": "For any function f: X → Y, the set {x ∈ X | f(x) = y} is the fiber of f over y." },
+      "entry_2": { "framing": "category theory", "statement": "For any morphism f: X → Y, the category (f ↓ Y) has objects morphisms X → Y and maps defined by pullback triangles." }
+    },
+    {
+      "topic": "function_ordinal_as_limit",
+      "entry_1": { "framing": "set theory", "statement": "An ordinal number is a transitive set well-ordered by ∈." },
+      "entry_2": { "framing": "category theory", "statement": "An ordinal number can be seen as the limit of a diagram indexing the natural numbers with inclusions." }
+    },
+    {
+      "topic": "function_power_cardinality",
+      "entry_1": { "framing": "set theory", "statement": "For a finite set X with n elements, the power set of X has 2^n elements." },
+      "entry_2": { "framing": "category theory", "statement": "The exponential object 2^X in Set is the object representing the hom-functor [X, 2], and has cardinality 2^{|X|}." }
+    },
+    {
+      "topic": "function_category_terminal_unique",
+      "entry_1": { "framing": "set theory", "statement": "The set with exactly one element is unique up to isomorphism." },
+      "entry_2": { "framing": "category theory", "statement": "The terminal object in Set is unique up to isomorphism." }
+    },
+    {
+      "topic": "function_category_arrow_natural",
+      "entry_1": { "framing": "set theory", "statement": "For any function f: X → Y and any pair of functions g, h: A → X, if f ∘ g = f ∘ h, then g = h if f is injective." },
+      "entry_2": { "framing": "category theory", "statement": "For any morphism f: X → Y, if f is monic, then it satisfies f ∘ g = f ∘ h ⇒ g = h." }
+    },
+    {
+      "topic": "function_category_limit_interchange",
+      "entry_1": { "framing": "set theory", "statement": "The intersection of a family of sets can be considered as a limit of the diagram consisting of those sets." },
+      "entry_2": { "framing": "category theory", "statement": "The limit of a diagram in Set can be computed as the set of natural transformations from the constant terminal diagram." }
+    },
+    {
+      "topic": "function_binary_coproduct_interchange",
+      "entry_1": { "framing": "set theory", "statement": "The disjoint union of two sets A and B contains both A and B as subsets." },
+      "entry_2": { "framing": "category theory", "statement": "The coproduct of two objects A and B comes equipped with two coinjections." }
+    },
+    {
+      "topic": "function_categorical_extension",
+      "entry_1": { "framing": "set theory", "statement": "A function defined on a subset of a domain can be extended to the whole domain if it satisfies certain extension conditions." },
+      "entry_2": { "framing": "category theory", "statement": "A morphism from a subobject of X can be extended to X if the ambient category admits enough epis or pushouts." }
+    },
+    {
+      "topic": "function_category_ordinal_representation",
+      "entry_1": { "framing": "set theory", "statement": "An ordinal is the isomorphism class of a well-ordered set." },
+      "entry_2": { "framing": "category theory", "statement": "An ordinal can be represented as the colimit of a finite chain of inclusions of sets." }
+    },
+    {
+      "topic": "function_category_equality_check",
+      "entry_1": { "framing": "set theory", "statement": "Two functions are equal if and only if they have the same domain and their values agree at every point." },
+      "entry_2": { "framing": "category theory", "statement": "Two morphisms are equal if and only if they behave the same with respect to all other morphisms in the category." }
+    },
+    {
+      "topic": "function_category_universal_epi",
+      "entry_1": { "framing": "set theory", "statement": "For a set X and a function f: X → Y, there exists a surjective function g: X → Z with a unique factorization." },
+      "entry_2": { "framing": "category theory", "statement": "For a morphism f: X → Y, there exists a coequalizer which is the universal such epimorphism factoring f." }
+    },
+    {
+      "topic": "function_category_embedding_construction",
+      "entry_1": { "framing": "set theory", "statement": "A subset A of a set X naturally embeds into X via the identity map on A." },
+      "entry_2": { "framing": "category theory", "statement": "The inclusion of a subobject A → X is a monomorphism in the category, and preserves the monic property under pullbacks." }
+    },
+    {
+      "topic": "function_category_pushout_category",
+      "entry_1": { "framing": "set theory", "statement": "Given sets A, B, and a subset S of A with maps from S to B, the pushout is the union of B with the image of S in B." },
+      "entry_2": { "framing": "category theory", "statement": "In a category with pushouts, the pushout square is universal with respect to the diagrams whose domains are given by spans." }
+    },
+    {
+      "topic": "function_category_order_enrichment",
+      "framing": "set theory", "statement": "A relation on a set can be extended to a function by assigning ordered values.",
+      "entry_2": { "framing": "category theory", "statement": "A category is enriched over posets if its hom-objects come equipped with a partial order that is compatible with composition." }
+    },
+    {
+      "topic": "function_category_coincidence_pullback",
+      "framing": "set theory", "statement": "Two functions f, g: X → Y coincide on the intersection of their fibers." },
+      "entry_2": { "framing": "category theory", "statement": "Two morphisms f, g: X → Y agree on a pullback over the terminal object if they are equal." }
+    },
+    {
+      "topic": "function_category_diagram_limit",
+      "framing": "set theory", "statement": "The intersection of the images of a family of functions into a common codomain is the image of the product." },
+      "entry_2": { "framing": "category theory", "statement": "The limit of a diagram of morphisms into a fixed object is the set of cones over that diagram." }
+    },
+    {
+      "topic": "function_category_universal_embedding",
+      "framing": "set theory", "statement": "Any set can be embedded in a larger set by adding an element." },
+      "entry_2": { "framing": "category theory", "statement": "In a category with a terminal object, any object admits a morphism to that object." }
+    },
+    {
+      "topic": "function_category_pullback_extension",
+      "framing": "set theory", "statement": "A function defined on a subset of the domain can be extended to the domain as long as the values agree." },
+      "entry_2": { "framing": "category theory", "statement": "A morphism defined on a subobject can be extended to the object if it satisfies pullback universality." }
+    },
+    {
+      "topic": "function_category_enriched_function_space",
+      "framing": "set theory", "statement": "The space of functions from one finite set to another is finite." },
+      "entry_2": { "framing": "category theory", "statement": "The internal hom in Set is the exponential object, which is finitely generated if the domain and codomain are finite." }
+    }
+  ]
+}
+```

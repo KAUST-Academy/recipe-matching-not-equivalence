@@ -1,0 +1,279 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=spectral_graph_theory round=23 call=204
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=15173 (dump keeps first 6144 + last 6144; 2885 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "eigenvector concentration in regular neighborhoods",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "If a graph has a vertex neighborhood with high regularity, its corresponding eigenvector tends to assign similar weights to all vertices in that region."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "If the rows of a matrix block corresponding to a group of indices are highly uniform, the corresponding eigenvector tends to be constant or nearly constant on those indices."
+      }
+    },
+    {
+      "topic": "eigenvalue correlation in star-based structures",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The eigenvalues of the Laplacian matrix of a star graph show a strong correlation between the core node and the leaves, as represented in the spectral domain."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "In a matrix with one dominant row/column connected to many others, the eigenvalues reflect a strong dependence between the main component and its neighbors."
+      }
+    },
+    {
+      "topic": "uniform spectral signatures for isomorphic parts",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Isomorphic subgraphs within the same graph share the same spectral signatures when analyzed in the eigenbasis of the Laplacian."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "If two block matrices are identical and symmetric within a larger symmetric matrix, they produce identical spectral responses in the eigendecomposition."
+      }
+    },
+    {
+      "topic": "walk projections into subspectral domains",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The number of walks of a certain length can be projected into the subspace spanned by eigenvectors associated with specific eigenvalues."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The number of times a matrix power contributes to a given subspace can be captured via the corresponding eigenprojection."
+      }
+    },
+    {
+      "topic": "eigen-dimensions from tree expansions",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "A tree-structured graph has a spectral dimension constrained by its lack of cycles and spectral projections reflect a single-dimensional tree component."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "A sparse banded matrix with no diagonal shortcuts will have a one-dimensional spectral component in the matrix exponentiation."
+      }
+    },
+    {
+      "topic": "core-periphery indexing via eigenvectors",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The core-periphery structure of a graph can be identified by looking at the extremal components of an eigenvector associated with small eigenvalues."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "In a sparse matrix with a dominant diagonal block and sparse off-diagonal coupling, core components manifest in eigenvectors with large central coordinates."
+      }
+    },
+    {
+      "topic": "rank correspondence from symmetric subgraphs",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Graphs with symmetric subgraphs exhibit reduced matrix rank due to the repetition of adjacency patterns."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "If a symmetric matrix contains repeating subblocks, the overall matrix rank is reduced in proportion to the redundancy of the subblocks."
+      }
+    },
+    {
+      "topic": "eigenvalue consistency across similar walks",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "If two graphs have the same number of walks of any given length from a node, their local eigenspectra will align accordingly."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "If two matrices agree in all their matrix powers at a specific index, then their eigenspaces will include this structural consistency."
+      }
+    },
+    {
+      "topic": "cycle spectral footprints in dense neighborhoods",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Cyclic structures in dense subgraphs generate distinctive eigenvalues in the Laplacian that reflect the number and size of such cycles."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "A dense symmetric submatrix with embedded rank-deficient patterns will have eigenvalues corresponding to the cycles induced by their structural repetition."
+      }
+    },
+    {
+      "topic": "subspace alignment in graph layers",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "A multi-layer graph structure induces overlapping eigensubspaces that preserve the spectral fingerprints of individual layers."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "When a matrix is decomposed into layers or blocks, the overall eigenspace aligns with the union of the subspaces from each layer."
+      }
+    },
+    {
+      "topic": "dominant eigenvector localization",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The largest eigenvector of a graph tends to concentrate its weights on structurally central nodes or dense regions."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The dominant eigenvector of a matrix often assigns large values to indices that correspond to central or high-degree elements of the matrix."
+      }
+    },
+    {
+      "topic": "eigen-decomposition from weighted coupling",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The spectral properties of a graph with weighted inter-community edges depend on the strength and pattern of the couplings."
+      },
+      "entry_2": {
+        "framing": "linear 
+
+... [2885 chars elided by dump_gen_failure] ...
+
+": {
+        "framing": "linear algebra",
+        "statement": "Deleting an entry from a symmetric matrix may cause a shift in its eigensubspaces, especially if it breaks dependencies or symmetry."
+      }
+    },
+    {
+      "topic": "multiplicity indication from matrix automorphism",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "An automorphic graph with symmetric node structures has eigenvalues with high multiplicity due to repeated eigenvector patterns."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "If a matrix has block permutations that preserve structure, its eigenvalues will show high multiplicity due to equivalent eigenvector support."
+      }
+    },
+    {
+      "topic": "balanced eigenvectors in modular graphs",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "In a balanced modular graph, eigenvectors reflect symmetry by assigning uniform values within each module."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "A symmetric matrix with structurally identical blocks will produce eigenvectors that are uniform within each block."
+      }
+    },
+    {
+      "topic": "eigencontraction in disconnected nodes",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "An isolated node contributes a zero eigenvalue in the graph Laplacian, reflecting disconnectedness in the eigenspectrum."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "An isolated row in a symmetric matrix with zeros everywhere except the diagonal contributes a distinct eigenvalue to the spectrum."
+      }
+    },
+    {
+      "topic": "walk sensitivity to eigenvector index",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The walk counts from one node are sensitive to the eigenvector index at that node and the eigenvalues of the adjacency matrix."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The power series expansion of a symmetric matrix is sensitive to the components of its eigenvectors and the scaling of its eigenvalues."
+      }
+    },
+    {
+      "topic": "eigenflatness from repeated node patterns",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "A graph with nodes having identical neighborhood structures contributes repeated eigenvalues and flat eigenvector components."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "A matrix with identical rows/columns in a subset of indices will show eigenflatness or repeated eigenvalues in those indices."
+      }
+    },
+    {
+      "topic": "spectral projection of subgraph weights",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The weight of a subgraph is projected onto the spectral space through its eigenvector coefficients and eigenvalue magnitude."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "The contribution of a matrix subblock is represented in the eigenspace via its projected weight onto the overall eigenbasis."
+      }
+    },
+    {
+      "topic": "eigen-sum in multiplicative graph components",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "The eigenvalues of a graph constructed multiplicatively from two subgraphs correspond to the eigenvalues of the components."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "If a matrix is constructed as a Kronecker product of two smaller matrices, its eigenvalues are products of the eigenvalues of the factors."
+      }
+    },
+    {
+      "topic": "eigen-stability under node duplication",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Duplicating a node with its connections results in a graph where the eigenvalues are preserved with additional repeated eigenfeatures."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "Doubling a row/column in a symmetric matrix and duplicating its connections generates spectral eigenvalues with multiplicity."
+      }
+    },
+    {
+      "topic": "block-symmetry and eigen-degeneracy",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Graphs with symmetrical blocks in the adjacency matrix exhibit eigen-degenerate eigenspaces due to equivalent substructures."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "If a matrix has repeated or symmetric block patterns, it induces eigen-degenerate eigenvectors in corresponding subspaces."
+      }
+    },
+    {
+      "topic": "eigen-transmission in directed projections",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "A directed bipartite graph transmits eigenvalues and eigenvectors from the symmetric part of its structure into its Laplacian decomposition."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "A symmetric component in a non-symmetric matrix reveals a subset of its eigenvalues and eigenvectors."
+      }
+    },
+    {
+      "topic": "eigendrop from edge smoothing",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Averaging edge weights across a graph can lead to a spectral eigendrop due to structural smoothing and redundancy."
+      },
+      "entry_2": {
+        "framing": "linear algebra",
+        "statement": "Applying a damping or averaging transformation to a symmetric matrix can cause eigenvalues to collapse or drop."
+      }
+    },
+    {
+      "topic": "spectral amplification from power operations",
+      "entry_1": {
+        "framing": "graph theory",
+        "statement": "Repeated multiplication of a graph walk matrix amplifies specific eigencomponents depending on their eigenvalues."
+      },
+        "framing": "linear algebra",
+        "statement": "Matrix powers act on a symmetric matrix to amplify eigencomponents based on their eigenvalues, effectively emphasizing their contributions."
+      }
+    }
+  ]
+}
+```

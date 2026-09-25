@@ -1,0 +1,172 @@
+# UNPARSEABLE GENERATION COMPLETION
+# group=meld9alt domain=algebraic_geometry round=3 call=22
+# backend=vllm model=Qwen/Qwen3-32B-AWQ max_tokens=12288 temperature-round=1.0
+# completion_chars=6774 (dump keeps first 6144 + last 6144; 0 elided)
+------------------------------------------------------------------------
+```json
+{
+  "pairs": [
+    {
+      "topic": "hyperplane_section",
+      "entry_1": {
+        "framing": "geometry",
+        "statement": "The intersection of an irreducible hypersurface in projective space with a hyperplane is a codimension 1 subvariety."
+      },
+      "entry_2": {
+        "framing": "commutative algebra",
+        "statement": "The quotient of the homogeneous coordinate ring by a principal ideal and another principal ideal has Krull dimension one less."
+      }
+    },
+    {
+      "topic": "completion_at_point",
+      "framing": "geometry",
+      "statement": "The completion of the local ring of a variety at a closed point captures the local analytic structure around that point."
+    },
+    {
+      "topic": "artin_ring",
+      "framing": "geometry",
+      "statement": "An Artinian ring corresponds to a finite collection of points, all with finite multiplicity."
+    },
+    {
+      "topic": "smooth_intersection",
+      "framing": "geometry",
+      "statement": "If two smooth subvarieties of a smooth variety intersect transversally, then their intersection is smooth."
+    },
+    {
+      "topic": "regular_in_codimension_one",
+      "framing": "geometry",
+      "statement": "A variety is normal if all its local rings in codimension one are regular."
+    },
+    {
+      "topic": "height_in_factorial_domain",
+      "framing": "geometry",
+      "statement": "In a smooth irreducible variety, every Weil divisor is Cartier."
+    },
+    {
+      "topic": "vanishing_sequence",
+      "framing": "geometry",
+      "statement": "The vanishing of a function at a point to some order corresponds to its membership in a certain power of the maximal ideal at that point."
+    },
+    {
+      "topic": "complete_intersection",
+      "framing": "geometry",
+      "statement": "A complete intersection in projective space is defined as the intersection of hypersurfaces equal in number to its codimension."
+    },
+    {
+      "topic": "dualizing_module",
+      "framing": "geometry",
+      "statement": "For a smooth variety, the dualizing module is the sheaf of differential forms of top degree."
+    },
+    {
+      "topic": "projective_normality",
+      "framing": "geometry",
+      "statement": "If a projective variety is embedded by a very ample line bundle, and the coordinate ring is integrally closed, then it is projectively normal."
+    },
+    {
+      "topic": "flat_morphism",
+      "framing": "geometry",
+      "statement": "A flat morphism between irreducible varieties has fibers that are equidimensional and vary algebraically."
+    },
+    {
+      "topic": "quasicoherent_sheaf",
+      "framing": "geometry",
+      "statement": "A quasicoherent sheaf on an affine variety corresponds to a module over its coordinate ring."
+    },
+    {
+      "topic": "support_in_regular_local",
+      "framing": "geometry",
+      "statement": "Over a regular local ring, the support of a finitely generated module is a closed subset containing the maximal ideal if the module is nonzero."
+    },
+    {
+      "topic": "extension_of_function",
+      "framing": "geometry",
+      "statement": "If a function is regular on the complement of a subvariety of codimension at least 2 in a normal variety, it extends to a regular function on the whole variety."
+    },
+    {
+      "topic": "associated_primes",
+      "framing": "geometry",
+      "statement": "The associated primes of a module over a coordinate ring correspond to subvarieties where a function can vanish."
+    },
+    {
+      "topic": "syzygy_module",
+      "framing": "geometry",
+      "statement": "Syzygies of a module encode the relations among generators of a module over a coordinate ring."
+    },
+    {
+      "topic": "formal_power_series_local_ring",
+      "framing": "geometry",
+      "statement": "The completion of the local ring at a closed point is isomorphic to a power series ring over the residue field."
+    },
+    {
+      "topic": "function_splitting_sequence",
+      "framing": "geometry",
+      "statement": "If a short exact sequence of sheaves splits on an affine open, the corresponding sequence of modules is split as well."
+    },
+    {
+      "topic": "rank_of_sheaf",
+      "framing": "geometry",
+      "statement": "On a dense open subset of a variety, a coherent sheaf is locally free of constant rank."
+    },
+    {
+      "topic": "order_of_function_at_point",
+      "framing": "geometry",
+      "statement": "The order of a function at a point is the highest integer $n$ such that the function lies in the $n$th power of the maximal ideal."
+    },
+    {
+      "topic": "cohomology_of_affine",
+      "framing": "geometry",
+      "statement": "The higher cohomology of a quasicoherent sheaf on an affine variety vanishes."
+    },
+    {
+      "topic": "ideal_generator_multiplicity",
+      "framing": "geometry",
+      "statement": "The minimal number of generators of the maximal ideal at a point equals the embedding dimension of the local ring."
+    },
+    {
+      "topic": "tangent_cone",
+      "framing": "geometry",
+      "statement": "The tangent cone of a subscheme is the spectrum of the associated graded ring of the local ring at the point."
+    },
+    {
+      "topic": "smooth_morphism,
+      "framing": "geometry",
+      "statement": "A morphism is smooth if the induced maps on local rings are flat and the cotangent complex is concentrated in degree zero."
+    },
+    {
+      "topic": "finite_morphism,
+      "framing": "geometry",
+      "statement": "A finite morphism induces a finite extension of the function fields."
+    },
+    {
+      "topic": "nonreduced_structure,
+      "framing": "geometry",
+      "statement": "A nonreduced scheme has a nilradical that reflects multiplicities of points or subvarieties."
+    },
+    {
+      "topic": "Veronese_embedding,
+      "framing": "geometry",
+      "statement": "The Veronese embedding maps a projective space into a higher-dimensional one by taking monomials of fixed degree."
+    },
+    {
+      "topic": "Hilbert_Samuel_function,
+      "framing": "geometry",
+      "statement": "The Hilbert-Samuel function of a local ring counts the length of the ring modulo powers of the maximal ideal."
+    },
+    {
+      "topic": "Weil_divisor,
+      "framing": "geometry",
+      "statement": "On a normal variety, a Weil divisor is a formal linear combination of irreducible subvarieties of codimension one."
+    },
+    {
+      "topic": "birational_map,
+      "framing": "geometry",
+      "statement": "A birational map induces an isomorphism between dense open subsets of the varieties."
+    },
+    {
+      "topic": "embedded_prime,
+      "framing": "geometry",
+      "statement": "An embedded prime ideal in a module corresponds to a subvariety of higher dimension over which the function vanishes."
+    }
+  ]
+}
+```

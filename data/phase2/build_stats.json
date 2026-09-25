@@ -1,0 +1,55 @@
+{
+  "seed": 42,
+  "exclusion_union_size": 9223,
+  "params": {
+    "cas_file": "/ibex/user/habiam0b/MathNet_Follow_Up/data/cas_pairs/pairs.jsonl",
+    "out": "/ibex/user/habiam0b/MathNet_Follow_Up/data/phase2/mixed_pairs.jsonl",
+    "seed": 42,
+    "max_cas_negatives": 2,
+    "midneg_rows": 5000,
+    "replay_cap": 12000,
+    "min_solution_chars": 200
+  },
+  "cas": {
+    "rows": 13747,
+    "dropped_excluded": 614,
+    "dropped_missing_or_empty": 0,
+    "minimal_negatives_dropped_by_cap": 3063
+  },
+  "cas_midneg": {
+    "rows": 5000,
+    "eligible_rows": 13747
+  },
+  "replay": {
+    "rows": 12000,
+    "eligible": 16009,
+    "allocation_by_domain": {
+      "Discrete Mathematics": 2565,
+      "Geometry": 4424,
+      "Algebra": 2898,
+      "Number Theory": 1860,
+      "Precalculus": 41,
+      "Statistics": 136,
+      "Calculus": 62,
+      "Math Word Problems": 14
+    }
+  },
+  "cross_transform": {
+    "rows": 4576,
+    "skipped_identical": 0
+  },
+  "channel_counts": {
+    "cas_midneg": 5000,
+    "cross_transform": 4576,
+    "replay": 12000,
+    "cas": 8747
+  },
+  "total_rows": 30323,
+  "negatives_per_row_histogram": {
+    "0": 18179,
+    "1": 3716,
+    "2": 5995,
+    "3": 2433
+  },
+  "output": "/ibex/user/habiam0b/MathNet_Follow_Up/data/phase2/mixed_pairs.jsonl"
+}
