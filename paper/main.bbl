@@ -1,0 +1,345 @@
+\begin{thebibliography}{37}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Su et~al.(2025)Su, Yen, Xia, Shi, Muennighoff, Wang, Liu, Shi, Siegel,
+  Tang, Sun, Yoon, Ar{\i}k, Chen, and Yu]{su2025bright}
+Hongjin Su, Howard Yen, Mengzhou Xia, Weijia Shi, Niklas Muennighoff, Han-yu
+  Wang, Haisu Liu, Quan Shi, Zachary~S. Siegel, Michael Tang, Ruoxi Sun,
+  Jinsung Yoon, Sercan~{\"O}. Ar{\i}k, Danqi Chen, and Tao Yu.
+\newblock {BRIGHT}: A realistic and challenging benchmark for
+  reasoning-intensive retrieval.
+\newblock In \emph{International Conference on Learning Representations}, pages
+  48941--48991, 2025.
+\newblock URL \url{https://openreview.net/forum?id=ykuc5q381b}.
+
+\bibitem[Alshammari et~al.(2026)Alshammari, Wen, Zainal, Hamilton, Safaei,
+  Albarakati, Freeman, and Torralba]{alshammari2026mathnet}
+Shaden Alshammari, Kevin Wen, Abrar Zainal, Mark Hamilton, Navid Safaei, Sultan
+  Albarakati, William~T. Freeman, and Antonio Torralba.
+\newblock {MathNet}: A global multimodal benchmark for mathematical reasoning
+  and retrieval.
+\newblock In \emph{International Conference on Learning Representations}, pages
+  12477--12507, 2026.
+\newblock URL \url{https://openreview.net/forum?id=zPvdG1Va5Q}.
+\newblock arXiv:2604.18584v2.
+
+\bibitem[Georgiev et~al.(2026)Georgiev, Drencheva, Ibragimova, Petrov,
+  Dimitrov, and Vechev]{georgiev2026saber}
+Nikolay Georgiev, Maria Drencheva, Kseniia Ibragimova, Ivo Petrov, Dimitar~I.
+  Dimitrov, and Martin Vechev.
+\newblock {SABER-Math}: An automated reranking benchmark for mathematical
+  information retrieval.
+\newblock In \emph{Proceedings of the 2026 Conference on Empirical Methods in
+  Natural Language Processing}. Association for Computational Linguistics,
+  2026.
+\newblock To appear. arXiv:2606.29894v2.
+
+\bibitem[Ye et~al.(2026)Ye, Rao, Carlin, Chintalapati, Bhargava, Jaiswal, Zhou,
+  Darlington, Lu, Alper, Ilin, and Kvinge]{ye2026meld}
+Jiaying Ye, Samarth Rao, Leo Carlin, Kedar Chintalapati, Saharsh Bhargava,
+  Rachit Jaiswal, Michael Zhou, Jared Darlington, Jiahe Lu, Jarod Alper, Vasily
+  Ilin, and Henry Kvinge.
+\newblock Does my embedding reflect that {$A = B$}? {E}valuating mathematical
+  equivalence in embedding models.
+\newblock \emph{arXiv preprint arXiv:2606.23959}, 2026.
+
+\bibitem[Zhang et~al.(2025)Zhang, Li, Long, Zhang, Lin, Yang, Xie, Yang, Liu,
+  Lin, Huang, and Zhou]{qwen3embedding}
+Yanzhao Zhang, Mingxin Li, Dingkun Long, Xin Zhang, Huan Lin, Baosong Yang,
+  Pengjun Xie, An~Yang, Dayiheng Liu, Junyang Lin, Fei Huang, and Jingren Zhou.
+\newblock {Qwen3 Embedding}: Advancing text embedding and reranking through
+  foundation models.
+\newblock \emph{arXiv preprint arXiv:2506.05176}, 2025.
+
+\bibitem[Dekoninck et~al.(2024)Dekoninck, M{\"u}ller, and
+  Vechev]{dekoninck2024constat}
+Jasper Dekoninck, Mark~Niklas M{\"u}ller, and Martin Vechev.
+\newblock {ConStat}: Performance-based contamination detection in large
+  language models.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~37, pages 92420--92464. Curran Associates, Inc., 2024.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper_files/paper/2024/hash/a7f89793b9e6f8c6568dbbb6ff727b9b-Abstract-Conference.html}.
+
+\bibitem[Yao et~al.(2024)Yao, Zhuang, Sun, Xu, Kumar, and
+  Shang]{yao2024crosslingual}
+Feng Yao, Yufan Zhuang, Zihao Sun, Sunan Xu, Animesh Kumar, and Jingbo Shang.
+\newblock Data contamination can cross language barriers.
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
+  Natural Language Processing}, pages 17864--17875. Association for
+  Computational Linguistics, 2024.
+\newblock URL \url{https://aclanthology.org/2024.emnlp-main.990/}.
+
+\bibitem[Wei et~al.(2026)Wei, Song, Zhang, and Zhao]{wei2026rirsurvey}
+Yiyang Wei, Tingyu Song, Siyue Zhang, and Yilun Zhao.
+\newblock A survey of reasoning-intensive retrieval: Progress and challenges.
+\newblock In \emph{Proceedings of the 64th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 42101--42122.
+  Association for Computational Linguistics, 2026.
+\newblock URL \url{https://aclanthology.org/2026.acl-long.1949/}.
+
+\bibitem[Shao et~al.(2025)Shao, Qiao, Kishore, Muennighoff, Lin, Rus, Low, Min,
+  Yih, Koh, and Zettlemoyer]{shao2025reasonir}
+Rulin Shao, Rui Qiao, Varsha Kishore, Niklas Muennighoff, Xi~Victoria Lin,
+  Daniela Rus, Bryan Kian~Hsiang Low, Sewon Min, Wen-tau Yih, Pang~Wei Koh, and
+  Luke Zettlemoyer.
+\newblock {ReasonIR}: Training retrievers for reasoning tasks.
+\newblock In \emph{Second Conference on Language Modeling}, 2025.
+\newblock URL \url{https://openreview.net/forum?id=kkBCNLMbGj}.
+
+\bibitem[Das et~al.(2025)Das, O{'}Nuallain, and Rahimi]{das2025rader}
+Debrup Das, Sam O{'}Nuallain, and Razieh Rahimi.
+\newblock {RaDeR}: Reasoning-aware dense retrieval models.
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing}, pages 19970--19997. Association for
+  Computational Linguistics, 2025.
+\newblock URL \url{https://aclanthology.org/2025.emnlp-main.1011/}.
+
+\bibitem[Weller et~al.(2025)Weller, Ricci, Yang, Yates, Lawrie, and
+  Van~Durme]{weller2025rank1}
+Orion Weller, Kathryn Ricci, Eugene Yang, Andrew Yates, Dawn Lawrie, and
+  Benjamin Van~Durme.
+\newblock {Rank1}: Test-time compute for reranking in information retrieval.
+\newblock In \emph{Second Conference on Language Modeling}, 2025.
+\newblock URL \url{https://openreview.net/forum?id=Pg0PAvbhGv}.
+
+\bibitem[Yang et~al.(2023)Yang, Chiang, Zheng, Gonzalez, and
+  Stoica]{yang2023rephrased}
+Shuo Yang, Wei-Lin Chiang, Lianmin Zheng, Joseph~E. Gonzalez, and Ion Stoica.
+\newblock Rethinking benchmark and contamination for language models with
+  rephrased samples.
+\newblock \emph{arXiv preprint arXiv:2311.04850}, 2023.
+
+\bibitem[Li and Flanigan(2024)]{li2024taskcontamination}
+Changmao Li and Jeffrey Flanigan.
+\newblock Task contamination: Language models may not be few-shot anymore.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~38, pages 18471--18480, 2024.
+\newblock URL \url{https://doi.org/10.1609/aaai.v38i16.29808}.
+
+\bibitem[Gururangan et~al.(2018)Gururangan, Swayamdipta, Levy, Schwartz,
+  Bowman, and Smith]{gururangan2018artifacts}
+Suchin Gururangan, Swabha Swayamdipta, Omer Levy, Roy Schwartz, Samuel~R.
+  Bowman, and Noah~A. Smith.
+\newblock Annotation artifacts in natural language inference data.
+\newblock In \emph{Proceedings of the 2018 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies, Volume 2 (Short Papers)}, pages 107--112. Association for
+  Computational Linguistics, 2018.
+\newblock URL \url{https://aclanthology.org/N18-2017/}.
+
+\bibitem[Poliak et~al.(2018)Poliak, Naradowsky, Haldar, Rudinger, and
+  Van~Durme]{poliak2018hypothesis}
+Adam Poliak, Jason Naradowsky, Aparajita Haldar, Rachel Rudinger, and Benjamin
+  Van~Durme.
+\newblock Hypothesis only baselines in natural language inference.
+\newblock In \emph{Proceedings of the Seventh Joint Conference on Lexical and
+  Computational Semantics}, pages 180--191. Association for Computational
+  Linguistics, 2018.
+\newblock URL \url{https://aclanthology.org/S18-2023/}.
+
+\bibitem[McCoy et~al.(2019)McCoy, Pavlick, and Linzen]{mccoy2019hans}
+R.~Thomas McCoy, Ellie Pavlick, and Tal Linzen.
+\newblock Right for the wrong reasons: Diagnosing syntactic heuristics in
+  natural language inference.
+\newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
+  for Computational Linguistics}, pages 3428--3448. Association for
+  Computational Linguistics, 2019.
+\newblock URL \url{https://aclanthology.org/P19-1334/}.
+
+\bibitem[Geirhos et~al.(2020)Geirhos, Jacobsen, Michaelis, Zemel, Brendel,
+  Bethge, and Wichmann]{geirhos2020shortcut}
+Robert Geirhos, J{\"o}rn-Henrik Jacobsen, Claudio Michaelis, Richard Zemel,
+  Wieland Brendel, Matthias Bethge, and Felix~A. Wichmann.
+\newblock Shortcut learning in deep neural networks.
+\newblock \emph{Nature Machine Intelligence}, 2\penalty0 (11):\penalty0
+  665--673, 2020.
+\newblock URL \url{https://doi.org/10.1038/s42256-020-00257-z}.
+
+\bibitem[Mitchell et~al.(2023)Mitchell, Lee, Khazatsky, Manning, and
+  Finn]{mitchell2023detectgpt}
+Eric Mitchell, Yoonho Lee, Alexander Khazatsky, Christopher~D. Manning, and
+  Chelsea Finn.
+\newblock {DetectGPT}: Zero-shot machine-generated text detection using
+  probability curvature.
+\newblock In \emph{Proceedings of the 40th International Conference on Machine
+  Learning}, volume 202 of \emph{Proceedings of Machine Learning Research},
+  pages 24950--24962. PMLR, 2023.
+\newblock URL \url{https://proceedings.mlr.press/v202/mitchell23a.html}.
+
+\bibitem[Zellers et~al.(2019)Zellers, Holtzman, Bisk, Farhadi, and
+  Choi]{zellers2019hellaswag}
+Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi.
+\newblock {HellaSwag}: Can a machine really finish your sentence?
+\newblock In \emph{Proceedings of the 57th Annual Meeting of the Association
+  for Computational Linguistics}, pages 4791--4800. Association for
+  Computational Linguistics, 2019.
+\newblock URL \url{https://aclanthology.org/P19-1472/}.
+
+\bibitem[Le~Bras et~al.(2020)Le~Bras, Swayamdipta, Bhagavatula, Zellers,
+  Peters, Sabharwal, and Choi]{lebras2020aflite}
+Ronan Le~Bras, Swabha Swayamdipta, Chandra Bhagavatula, Rowan Zellers,
+  Matthew~E. Peters, Ashish Sabharwal, and Yejin Choi.
+\newblock Adversarial filters of dataset biases.
+\newblock In \emph{Proceedings of the 37th International Conference on Machine
+  Learning}, volume 119 of \emph{Proceedings of Machine Learning Research},
+  pages 1078--1088. PMLR, 2020.
+\newblock URL \url{https://proceedings.mlr.press/v119/bras20a.html}.
+
+\bibitem[Panickssery et~al.(2024)Panickssery, Bowman, and
+  Feng]{panickssery2024selfpref}
+Arjun Panickssery, Samuel~R. Bowman, and Shi Feng.
+\newblock {LLM} evaluators recognize and favor their own generations.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~37, pages 68772--68802. Curran Associates, Inc., 2024.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper_files/paper/2024/hash/7f1f0218e45f5414c79c0679633e47bc-Abstract-Conference.html}.
+
+\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li,
+  Li, Xing, Zhang, Gonzalez, and Stoica]{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao
+  Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric~P. Xing, Hao Zhang, Joseph~E.
+  Gonzalez, and Ion Stoica.
+\newblock Judging {LLM-as-a-Judge} with {MT-Bench} and {Chatbot Arena}.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~36, pages 46595--46623. Curran Associates, Inc., 2023.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html}.
+
+\bibitem[Raji et~al.(2021)Raji, Bender, Paullada, Denton, and
+  Hanna]{raji2021everything}
+Inioluwa~Deborah Raji, Emily~M. Bender, Amandalynne Paullada, Emily Denton, and
+  Alex Hanna.
+\newblock {AI} and the everything in the whole wide world benchmark.
+\newblock In \emph{Proceedings of the Neural Information Processing Systems
+  Track on Datasets and Benchmarks}, volume~1, 2021.
+\newblock URL
+  \url{https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/084b6fbb10729ed4da8c3d3f5a3ae7c9-Abstract-round2.html}.
+
+\bibitem[Bowman and Dahl(2021)]{bowman2021fixbench}
+Samuel~R. Bowman and George~E. Dahl.
+\newblock What will it take to fix benchmarking in natural language
+  understanding?
+\newblock In \emph{Proceedings of the 2021 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}, pages 4843--4855. Association for Computational Linguistics,
+  2021.
+\newblock URL \url{https://aclanthology.org/2021.naacl-main.385/}.
+
+\bibitem[Thakur et~al.(2021)Thakur, Reimers, R{\"u}ckl{\'e}, Srivastava, and
+  Gurevych]{thakur2021beir}
+Nandan Thakur, Nils Reimers, Andreas R{\"u}ckl{\'e}, Abhishek Srivastava, and
+  Iryna Gurevych.
+\newblock {BEIR}: A heterogeneous benchmark for zero-shot evaluation of
+  information retrieval models.
+\newblock In \emph{Proceedings of the Neural Information Processing Systems
+  Track on Datasets and Benchmarks}, volume~1, 2021.
+\newblock URL
+  \url{https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/65b9eea6e1cc6bb9f0cd2a47751a186f-Abstract-round2.html}.
+
+\bibitem[Muennighoff et~al.(2023)Muennighoff, Tazi, Magne, and
+  Reimers]{muennighoff2023mteb}
+Niklas Muennighoff, Nouamane Tazi, Lo{\"i}c Magne, and Nils Reimers.
+\newblock {MTEB}: Massive text embedding benchmark.
+\newblock In \emph{Proceedings of the 17th Conference of the European Chapter
+  of the Association for Computational Linguistics}, pages 2014--2037.
+  Association for Computational Linguistics, 2023.
+\newblock URL \url{https://aclanthology.org/2023.eacl-main.148/}.
+
+\bibitem[Wortsman et~al.(2022)Wortsman, Ilharco, Kim, Li, Kornblith, Roelofs,
+  Lopes, Hajishirzi, Farhadi, Namkoong, and Schmidt]{wortsman2022wiseft}
+Mitchell Wortsman, Gabriel Ilharco, Jong~Wook Kim, Mike Li, Simon Kornblith,
+  Rebecca Roelofs, Raphael~Gontijo Lopes, Hannaneh Hajishirzi, Ali Farhadi,
+  Hongseok Namkoong, and Ludwig Schmidt.
+\newblock Robust fine-tuning of zero-shot models.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 7959--7971, 2022.
+\newblock URL
+  \url{https://openaccess.thecvf.com/content/CVPR2022/html/Wortsman_Robust_Fine-Tuning_of_Zero-Shot_Models_CVPR_2022_paper.html}.
+
+\bibitem[Chaudhry et~al.(2019)Chaudhry, Rohrbach, Elhoseiny, Ajanthan, Dokania,
+  Torr, and Ranzato]{chaudhry2019tiny}
+Arslan Chaudhry, Marcus Rohrbach, Mohamed Elhoseiny, Thalaiyasingam Ajanthan,
+  Puneet~K. Dokania, Philip H.~S. Torr, and Marc'Aurelio Ranzato.
+\newblock On tiny episodic memories in continual learning.
+\newblock \emph{arXiv preprint arXiv:1902.10486}, 2019.
+
+\bibitem[Reimers and Gurevych(2019)]{reimers2019sentencebert}
+Nils Reimers and Iryna Gurevych.
+\newblock Sentence-{BERT}: Sentence embeddings using {S}iamese {BERT}-networks.
+\newblock In \emph{Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing (EMNLP-IJCNLP)}, pages 3982--3992. Association
+  for Computational Linguistics, 2019.
+\newblock URL \url{https://aclanthology.org/D19-1410/}.
+
+\bibitem[Wang et~al.(2024)Wang, Yang, Huang, Yang, Majumder, and
+  Wei]{wang2024e5}
+Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder, and Furu
+  Wei.
+\newblock Multilingual {E5} text embeddings: A technical report.
+\newblock \emph{arXiv preprint arXiv:2402.05672}, 2024.
+
+\bibitem[Taghavi et~al.(2025)Taghavi, Modarressi, Ma, and
+  Sch{\"u}tze]{taghavi2025impliret}
+Zeinab~Sadat Taghavi, Ali Modarressi, Yunpu Ma, and Hinrich Sch{\"u}tze.
+\newblock {ImpliRet}: Benchmarking the implicit fact retrieval challenge.
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing}, pages 33168--33190. Association for
+  Computational Linguistics, 2025.
+\newblock URL \url{https://aclanthology.org/2025.emnlp-main.1685/}.
+
+\bibitem[Ju and Dong(2025)]{ju2025mirb}
+Haocheng Ju and Bin Dong.
+\newblock {MIRB}: Mathematical information retrieval benchmark.
+\newblock \emph{arXiv preprint arXiv:2505.15585}, 2025.
+
+\bibitem[Gao et~al.(2021)Gao, Zhang, Han, and Callan]{gao2021gradcache}
+Luyu Gao, Yunyi Zhang, Jiawei Han, and Jamie Callan.
+\newblock Scaling deep contrastive learning batch size under memory limited
+  setup.
+\newblock In \emph{Proceedings of the 6th Workshop on Representation Learning
+  for NLP (RepL4NLP-2021)}, pages 316--321. Association for Computational
+  Linguistics, 2021.
+\newblock URL \url{https://aclanthology.org/2021.repl4nlp-1.31/}.
+
+\bibitem[Santhanam et~al.(2022)Santhanam, Khattab, Saad-Falcon, Potts, and
+  Zaharia]{santhanam2022colbertv2}
+Keshav Santhanam, Omar Khattab, Jon Saad-Falcon, Christopher Potts, and Matei
+  Zaharia.
+\newblock {ColBERTv2}: Effective and efficient retrieval via lightweight late
+  interaction.
+\newblock In \emph{Proceedings of the 2022 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}, pages 3715--3734. Association for Computational Linguistics,
+  2022.
+\newblock URL \url{https://aclanthology.org/2022.naacl-main.272/}.
+
+\bibitem[Chaffin and Sourty(2025)]{chaffin2025pylate}
+Antoine Chaffin and Rapha{\"e}l Sourty.
+\newblock {PyLate}: Flexible training and retrieval for late interaction
+  models.
+\newblock \emph{arXiv preprint arXiv:2508.03555}, 2025.
+
+\bibitem[Zanibbi et~al.(2020)Zanibbi, Oard, Agarwal, and
+  Mansouri]{zanibbi2020arqmath}
+Richard Zanibbi, Douglas~W. Oard, Anurag Agarwal, and Behrooz Mansouri.
+\newblock Finding old answers to new math questions: The {ARQMath} lab at
+  {CLEF} 2020.
+\newblock In \emph{Advances in Information Retrieval: 42nd European Conference
+  on IR Research, ECIR 2020, Part II}, volume 12036 of \emph{Lecture Notes in
+  Computer Science}, pages 564--571. Springer, 2020.
+\newblock URL \url{https://doi.org/10.1007/978-3-030-45442-5_73}.
+
+\bibitem[Robertson and Zaragoza(2009)]{robertson2009bm25}
+Stephen Robertson and Hugo Zaragoza.
+\newblock The probabilistic relevance framework: {BM25} and beyond.
+\newblock \emph{Foundations and Trends in Information Retrieval}, 3\penalty0
+  (4):\penalty0 333--389, 2009.
+\newblock URL \url{https://doi.org/10.1561/1500000019}.
+
+\end{thebibliography}

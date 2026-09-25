@@ -1,0 +1,39 @@
+\section{Recipe-Matching Games the Benchmark}
+\label{sec:gaming}
+\begin{table}[t]
+\centering
+\caption{The main experiment. Columns: the untrained base, the two matched-budget arms and the recipe-free \emph{reference} (D4 restatements with the verified arm's negatives, no benchmark prompt anywhere), each over eight seeds (mean $\pm$ std), then the recipe arm's lead over the verified arm and over the reference with $95\%$ nested-bootstrap intervals (Section~\ref{sec:setup}). Rows: the benchmark's own tiers first, then real duplicates that no LLM wrote (cross-language reprints, scored \emph{strictly}: the query's own corpus entry is masked and only a reprint in another language counts as a hit; and the $125$-query same-language slice of Appendix~\ref{app:setup}), then the difference-in-differences (DiD), the benchmark lead minus the real-duplicate lead. Bold marks the largest value in a row; on the duplicate rows it is the untrained base. Seed-$42$ breakdown: Table~\ref{tab:controlled-full}.}
+\label{tab:controlled}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{0.90}
+\begin{tabular}{lcccccc}
+\toprule
+Evaluation & Base & Verified & Reference & Recipe & Recipe $-$ verified & Recipe $-$ reference \\
+\midrule
+\multicolumn{7}{l}{\emph{Benchmark tiers}} \\
+Easy (R@1)   & 8.32 & 17.05 $\pm$ 0.79 & 46.91 $\pm$ 1.25 & \textbf{62.38 $\pm$ 0.85} & 45.33 $[44.25, 46.41]$ & 15.47 $[14.11, 16.73]$ \\
+Medium (R@1) & 1.78 & 3.14 $\pm$ 0.46  & 4.22 $\pm$ 0.25  & \textbf{8.84 $\pm$ 0.36}  & 5.70 $[5.18, 6.24]$    & 4.62 $[4.13, 5.15]$ \\
+Hard (R@1)   & 0.00 & 0.16 $\pm$ 0.06  & \textbf{10.30 $\pm$ 1.15} & 9.42 $\pm$ 0.61  & 9.26 $[8.71, 9.85]$    & $-0.88$ $[-1.85, 0.10]$ \\
+Hard (R@5)   & 4.08 & 8.35 $\pm$ 1.13  & \textbf{60.05 $\pm$ 1.22} & 57.20 $\pm$ 0.82 & 48.84 $[47.95, 49.74]$ & $-2.86$ $[-4.01, -1.67]$ \\
+\multicolumn{7}{l}{\emph{Real duplicates, no LLM involved}} \\
+Cross-language (strict R@1) & \textbf{84.73} & 56.52 $\pm$ 4.05 & 78.02 $\pm$ 0.91 & 66.26 $\pm$ 2.31 & 9.74 $[3.96, 15.71]$ & $-11.77$ $[-17.33, -6.09]$ \\
+Same-language (R@1) & \textbf{62.40} & 51.30 $\pm$ 2.44 & 39.20 $\pm$ 1.28 & 46.30 $\pm$ 1.89 & $-5.00$ $[-13.42, 3.35]$ & 7.10 $[-2.34, 17.04]$ \\
+\multicolumn{7}{l}{\emph{Benchmark lead minus real-duplicate lead}} \\
+DiD, easy $-$ cross-language & & & & & 35.59 $[29.51, 41.47]$ & 27.24 $[21.40, 32.93]$ \\
+DiD, easy $-$ same-language & & & & & 50.33 $[41.85, 58.75]$ & 8.37 $[-1.14, 18.16]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{The recipe arm leads the verified arm on every tier; we read the lead as a decomposition.}The reference column of Table~\ref{tab:controlled} does the splitting: the recipe arm minus the reference is the part of each gap that is specific to the benchmark's own prompt, and the reference minus the verified arm is the part any LLM rewrites would buy. Two tiers need care. On the medium tier the recipe arm's lead over the verified arm is no larger on the benchmark than on real duplicates, so against that arm the tier shows no inflation (Section~\ref{sec:ood}). On the hard tier the verified arm scores near zero, so a comparison against it says nothing; the recipe arm is read against the reference instead (Section~\ref{sec:mechanism}).
+
+\paragraph{A better training file, or a file built like the test?}
+Perhaps the recipe arm's training file is simply the better file, and a better file would score higher on any test. Two facts rule that out. First, a better file would help on real duplicates, the same problem printed twice by human authors, and it does not: on cross-language duplicates both arms score below the untrained base ($84.73$), and the recipe arm's lead over the verified arm shrinks from $45.33$ points on the easy tier to $9.74$ there. Second, who wins depends on who built the test (Table~\ref{tab:crosseval}, Appendix~\ref{app:results}). The verified arm wins on pairs that computer algebra built; the two arms trained on LLM rewrites win on pairs that an LLM built, whichever LLM and whichever prompt; and the untrained base wins on duplicates no generator wrote. A file that wins only on tests built the way it was built is not a better file; it is a matched one.
+
+\paragraph{Two recipe-free references recover half to two thirds of the easy-tier gap; the remainder does not reach cross-language duplicates.}
+The reference of Table~\ref{tab:controlled} is D4's LLM restatements, written under a prompt unrelated to the benchmark, paired with the verified arm's own negatives, so against the verified arm the only change is who wrote the positives, a computer algebra system or an LLM (Section~\ref{sec:mechanism}). That change alone recovers $29.85$ of the $45.33$ easy-tier points, matches the recipe arm on the hard tier and beats it at R@5. A second unrelated prompt with the same negatives recovers $22.15$, so against references built on verified negatives the part of the gap that needs the benchmark's own prompt is $15.47$ to $23.18$ points (Appendix~\ref{app:mechanism}). To check that the recovery is not simply a matter of the positives being paraphrased, we paraphrased them by machine translation out and back, with no LLM, and kept the same negatives: that recovers $1.76$ points. Up to the depth back-translation reaches, what recovers the gap is that an LLM wrote the text, not that the text was rewritten.
+
+With the recipe arm's own near-misses attached to D4's restatements in place of the verified negatives (Section~\ref{sec:mechanism}), the recipe arm still leads on the easy tier, by $17.79$ points at the reference's negative count and by $24.59$ at its own volume; in the second comparison the two training sets differ only in which prompt wrote the positives (and by $2.7\%$ of rows), so $24.59$ is what the benchmark's own prompt buys with everything else held equal; the recipe-specific share is therefore $15.47$ to $24.59$ points across comparisons, larger at LLM negatives because counterexamples themselves lift the easy tier (Appendix~\ref{app:mechanism}). Both D4 cells beat the recipe arm on cross-language duplicates (Appendix~\ref{app:mechanism}). The recipe adds $15.47$ easy-tier and $4.62$ medium-tier points over the reference, and none of it reaches cross-language duplicates, where the recipe arm trails the reference by $11.77$ and the base by about $18$. As a benchmark-minus-real-data difference, the recipe arm's lead shrinks by $27.24$ points against the reference ($35.63$ against the second reference) and by $35.59$ against the verified arm; on same-language reprints the recipe arm and the reference are within noise (Table~\ref{tab:controlled}).
+
+\paragraph{The gaming transfers across generators, backbones, and scale.}The effect is not tied to one LLM: Gemini-3-flash wrote the benchmark's pairs and Qwen3-32B-AWQ the recipe arm's, so what transfers is what the recipe writes, not one generator's fingerprint. Nor to one base model: on multilingual-e5-large~\citep{wang2024e5} the recipe arm leads by $+19.12$ easy-tier points but by only $+2.29$ on cross-language duplicates (seed $42$; BGE and late-interaction ColBERTv2: Appendix~\ref{app:results}). It holds at a larger size: with a $4$B model (same seed) the recipe arm doubles the verified arm's easy-tier score ($77.77$ against $39.51$), but on cross-language duplicates the order \emph{flips}, the recipe arm at $70.99$ against the verified arm's $83.72$, under an untrained base of $91.60$. Verified supervision largely keeps retention at that scale, and $39.51$ from verified pairs alone shows the tier is learnable.

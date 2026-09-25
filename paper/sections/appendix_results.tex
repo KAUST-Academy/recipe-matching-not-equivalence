@@ -1,0 +1,316 @@
+
+\section{Full result tables, the mixing grid, and the two external attacks in detail}
+\label{app:results}
+
+\begin{table}[htbp]
+\centering
+\caption{Real retrieval kept after training, beside benchmark score: each model's strict R@1 / R@5 / R@10 on cross-language duplicates against its hard-tier R@1. The two arms and the reference are means $\pm$ sample std over eight seeds, the factorial's other cells over three; the rest are single runs. Read the columns against each other. The recipe arm keeps a ${\sim}10$-point edge over the verified arm on duplicates, positive in every seed and not equivalent at the pre-specified $11.33$-point margin, but both sit well below the untrained base, and the ${\sim}60\times$ hard-tier separation between them on the benchmark is nowhere in sight. Three training sets keep retention at the base ($85.50$, $84.91$ and $84.57$ against $84.73$): D4 with an unrelated prompt's near-misses at either volume, which also buy $16.96$ and $20.93$ hard R@1, and back-translated positives with verified negatives. Near-copy CAS positives under the recipe arm's near-misses fall to $12.47$ and under an unrelated prompt's to $13.48$, the two lowest rows; back-translated positives trained alone keep the most, $94.57$, then D4's and D5's restatements alone ($93.81$, $93.72$). The last seven rows are the cells that complete the grid of Table~\ref{tab:design}.}
+\label{tab:ood}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+Model & Hard-tier R@1 & Cross-language duplicates, strict R@1 / R@5 / R@10 \\
+\midrule
+Qwen3-Embedding-0.6B (base, untrained) & 0.00 & 84.73 / 95.17 / 96.95 \\
+BM25 (lexical baseline) & 0.01 & 10.69 / 15.78 / 19.59 \\
+V2 (ours, Appendix~\ref{sec:forgetting}) & 0.01 & 74.30 / 89.31 / 93.13 \\
+Recipe arm & 9.42 $\pm$ 0.61 & 66.26 $\pm$ 2.31 / 83.68 $\pm$ 1.61 / 86.93 $\pm$ 1.10 \\
+Verified arm & 0.16 $\pm$ 0.06 & 56.52 $\pm$ 4.05 / 76.21 $\pm$ 3.63 / 82.92 $\pm$ 3.14 \\
+Reference (D4 $+$ CAS negatives) & 10.30 $\pm$ 1.15 & 78.02 $\pm$ 0.91 / 83.94 $\pm$ 1.51 / 85.62 $\pm$ 1.19 \\
+D4 $+$ recipe-prompt near-misses, matched & 20.71 $\pm$ 0.82 & 83.89 $\pm$ 3.82 / 93.98 $\pm$ 1.91 / 95.42 $\pm$ 1.17 \\
+D4 $+$ recipe-prompt near-misses, full & \textbf{26.97} $\pm$ 0.97 & 78.88 $\pm$ 2.33 / 89.31 $\pm$ 3.13 / 91.69 $\pm$ 2.50 \\
+D4 $+$ unrelated-prompt near-misses, matched & 16.96 $\pm$ 2.08 & 85.50 $\pm$ 1.67 / 94.40 $\pm$ 0.26 / 95.67 $\pm$ 0.26 \\
+D4 $+$ unrelated-prompt near-misses, full & 20.93 $\pm$ 0.44 & 84.91 $\pm$ 1.49 / 93.30 $\pm$ 0.39 / 95.25 $\pm$ 0.29 \\
+CAS positives $+$ recipe-prompt near-misses & 0.11 $\pm$ 0.03 & 12.47 $\pm$ 0.68 / 18.24 $\pm$ 0.59 / 21.88 $\pm$ 0.77 \\
+Back-translated positives $+$ CAS negatives & 1.09 $\pm$ 0.04 & 84.57 $\pm$ 1.20 / 92.62 $\pm$ 0.88 / 93.98 $\pm$ 0.53 \\
+Three-hop back-translated positives $+$ CAS negatives & 4.47 $\pm$ 0.15 & 67.01 $\pm$ 1.73 / 86.34 $\pm$ 0.77 / 89.23 $\pm$ 1.06 \\
+D5 (second recipe-free prompt, no negatives) & 0.01 $\pm$ 0.00 & 93.72 $\pm$ 0.39 / 97.37 $\pm$ 0.15 / 97.63 $\pm$ 0.14 \\
+D5 $+$ CAS negatives (second reference) & 3.97 $\pm$ 1.05 & 78.71 $\pm$ 0.59 / 86.77 $\pm$ 0.92 / 88.30 $\pm$ 1.17 \\
+Recipe arm, separate calls & 9.79 $\pm$ 0.66 & 52.08 $\pm$ 1.49 / 69.63 $\pm$ 2.89 / 76.00 $\pm$ 3.46 \\
+Recipe arm, both judges ($5{,}398$ rows) & 7.58 $\pm$ 0.39 & 74.81 $\pm$ 2.65 / 87.62 $\pm$ 2.36 / 89.65 $\pm$ 0.64 \\
+CAS positives $+$ unrelated-prompt near-misses & 0.23 $\pm$ 0.03 & 13.48 $\pm$ 0.92 / 19.51 $\pm$ 0.53 / 22.81 $\pm$ 0.73 \\
+Back-translated positives, no negatives & 0.05 $\pm$ 0.01 & \textbf{94.57} $\pm$ 0.64 / 97.79 $\pm$ 0.14 / 98.05 $\pm$ 0.15 \\
+Back-translated positives $+$ unrelated-prompt near-misses & 1.88 $\pm$ 0.12 & 35.20 $\pm$ 1.15 / 45.38 $\pm$ 1.70 / 49.19 $\pm$ 1.49 \\
+Back-translated positives $+$ recipe-prompt near-misses & 4.18 $\pm$ 0.51 & 38.67 $\pm$ 1.42 / 49.96 $\pm$ 0.64 / 53.10 $\pm$ 1.06 \\
+D1 positives, no negatives & 0.00 $\pm$ 0.00 & 83.21 $\pm$ 1.17 / 94.23 $\pm$ 0.82 / 96.18 $\pm$ 0.51 \\
+D1 positives $+$ CAS negatives & 2.09 $\pm$ 0.22 & 70.82 $\pm$ 0.53 / 80.07 $\pm$ 0.53 / 82.44 $\pm$ 0.68 \\
+D1 positives $+$ unrelated-prompt near-misses & 3.45 $\pm$ 0.03 & 47.41 $\pm$ 1.55 / 69.55 $\pm$ 2.45 / 77.35 $\pm$ 1.11 \\
+Uncapped verified arm ($13{,}747$ rows) & 0.16 & 47.58 / 70.99 / 79.13 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\caption{The matched-budget experiment at seed $42$, with the full recall curves: R@1 / R@5 / R@10 on each tier over the full $117{,}088$-document corpus and $15{,}000$ queries per tier. Both arms train on $6{,}145$ rows with identical hyperparameters and differ only in the training file; the reference and the two cells that pair D4's restatements with the recipe arm's own near-misses (Table~\ref{tab:factorial}) are added at the same seed. Eight-seed means and intervals are in Table~\ref{tab:controlled}; over seeds the paired gap is $45.33 \pm 0.93$ easy, $5.70 \pm 0.44$ medium and $9.26 \pm 0.60$ hard R@1, and $48.84 \pm 0.70$ hard R@5. Two things the R@1 columns hide: on the easy tier the recipe arm's lead over the verified arm nearly vanishes by R@5 and R@10, so its edge is mostly about rank $1$; and the two cells with the highest hard-tier R@1 fall far below every other model on the medium tier at R@5 and R@10. The recipe arm's numbers are the recipe-matching exhibit, not capability.}
+\label{tab:controlled-full}
+\small
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+Model & Easy R@1 / R@5 / R@10 & Medium R@1 / R@5 / R@10 & Hard R@1 / R@5 / R@10 \\
+\midrule
+Qwen3-Embedding-0.6B (base, untrained) & 8.32 / 78.61 / 87.78 & 1.78 / 60.91 / 75.49 & 0.00 / 4.08 / 17.60 \\
+Verified arm & 17.31 / 85.10 / 92.27 & 2.47 / 41.91 / 57.74 & 0.13 / 9.59 / 26.49 \\
+Recipe arm & \textbf{61.88} / 89.94 / 93.63 & \textbf{9.06} / 55.18 / 66.79 & 9.37 / 57.06 / 70.13 \\
+Reference (D4 $+$ CAS negatives) & 46.51 / 88.06 / 93.75 & 4.34 / 42.20 / 60.62 & 10.81 / 60.27 / 75.58 \\
+D4 $+$ recipe-prompt near-misses, matched & 45.85 / 82.89 / 89.03 & 2.76 / 27.85 / 40.01 & 20.31 / 64.69 / 73.99 \\
+D4 $+$ recipe-prompt near-misses, full & 38.58 / 70.74 / 77.01 & 2.67 / 20.83 / 28.73 & \textbf{26.47} / 63.82 / 71.40 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Public models on MathNet-Retrieve (R@1 / R@5 / R@10 per tier, sorted by easy R@1), the comparison behind the statement that no public model exceeds $0.01$ hard-tier R@1: RaDeR~\citep{das2025rader}, MathLeap~\citep{ye2026meld}, Qwen3-Embedding~\citep{qwen3embedding} and ReasonIR~\citep{shao2025reasonir}. It is a comparison set, not everything we ran: Qwen3-Embedding-8B was also evaluated on all three tiers ($10.05$ / $2.23$ / $0.00$) and all-mpnet-base-v2, the harness calibration model, on the easy tier only. Bold marks the best value in each column among the public models (hard-tier R@1 ties at $0.01$). Baselines use their own encoding conventions; the Qwen3-Embedding-4B row is the unprompted $2{,}048$-token run (its prompted $1{,}024$-token run scores $11.95$ easy R@1, and neither reproduces the $14.76$ the benchmark publishes; Appendix~\ref{app:setup}). Our own models sit below the rule and are excluded from the ranking because their training material is of the benchmark's own kind: the recipe arm trains on the benchmark's recipe, and the verified-supervision models' rename and reformulation positives, though symbolically verified, are in the same paraphrase genre the easy tier tests; ``---'' marks the one configuration we did not run.}
+\label{tab:leaderboard-full}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccc}
+\toprule
+Model & Easy R@1 / R@5 / R@10 & Medium R@1 / R@5 / R@10 & Hard R@1 / R@5 / R@10 \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Public models}} \\
+RaDeR-gte-Qwen2-7B & \textbf{18.94} / 95.57 / 99.05 & 1.12 / 63.88 / 83.24 & 0.01 / 8.63 / 34.63 \\
+RaDeR-Qwen2.5-7B & 17.41 / \textbf{96.91} / \textbf{99.51} & 0.92 / 60.05 / 80.14 & 0.01 / 9.53 / 37.86 \\
+MathLeap-Octen-8B & 15.87 / 84.17 / 94.40 & \textbf{3.51} / \textbf{75.90} / \textbf{91.97} & 0.01 / \textbf{17.53} / \textbf{62.57} \\
+MathLeap-Qwen-8B & 13.79 / 81.32 / 93.16 & 3.37 / 75.56 / 91.15 & 0.01 / 17.01 / 60.86 \\
+Qwen3-Embedding-4B & 11.15 / 85.65 / 93.34 & 1.93 / 70.19 / 85.15 & 0.01 / 6.04 / 28.58 \\
+ReasonIR-8B & 10.61 / 78.25 / 86.55 & 2.41 / 52.01 / 66.82 & 0.00 / 2.02 / 8.50 \\
+Qwen3-Embedding-0.6B (the untrained base) & 8.32 / 78.61 / 87.78 & 1.78 / 60.91 / 75.49 & 0.00 / 4.08 / 17.60 \\
+BM25 (lexical baseline, no embedding) & 3.07 / 55.53 / 64.71 & 1.58 / 33.39 / 43.39 & 0.01 / 1.61 / 5.35 \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Our models ($0.6$B unless noted), excluded from the ranking}} \\
+Recipe arm & 61.88 / 89.94 / 93.63 & 9.06 / 55.18 / 66.79 & 9.37 / 57.06 / 70.13 \\
+Verified arm, $4$B (LoRA) & 39.51 / 96.61 / 98.91 & --- / --- / --- & 0.23 / 29.57 / 60.95 \\
+V2 (mixed data $+$ instruction) & 21.70 / 94.48 / 97.81 & 2.71 / 67.25 / 82.06 & 0.01 / 7.02 / 32.03 \\
+V1 (mixed data) & 20.83 / 91.96 / 96.71 & 3.67 / 63.57 / 78.80 & 0.03 / 7.67 / 30.01 \\
+Soup $\alpha{=}0.7$ (WiSE-FT) & 16.41 / 90.44 / 96.04 & 2.33 / 52.23 / 69.83 & 0.01 / 7.54 / 28.14 \\
+Uncapped verified arm & 15.92 / 78.18 / 87.21 & 3.86 / 40.80 / 55.92 & 0.16 / 6.59 / 19.47 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{The two remedies of Appendix~\ref{sec:forgetting}: mixing in weight space against mixing in data space (R@1 / R@5 / R@10 per tier; strict R@1 on cross-language duplicates). The soups blend the uncapped verified arm's weights with the untrained base's, $\alpha$ being the share of the trained arm, so $\alpha{=}0.3$ sits nearest the base and $\alpha{=}0.7$ nearest the arm; V1 and V2 instead train on verified pairs mixed with problem-to-solution replay, V2 under an instruction prompt. The soups recover retention as $\alpha$ falls but lose the hard-tier R@1 the arm had bought at every blend; V2 keeps most of both score and retention. The two control rows show how much the instruction alone does: applied to the untrained base it gives the best retention in the table, and V2 without it loses about six points. Base, uncapped-arm and soup rows are deterministic single evaluations; V1 and V2 show the seed-$42$ run, with three-seed means in Appendix~\ref{sec:forgetting}. The soups of V1 test whether the two remedies compose (Appendix~\ref{sec:forgetting}).}
+\label{tab:mixing}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{3.2cm}ccc>{\centering\arraybackslash}p{1.7cm}@{}}
+\toprule
+Model & Easy R@1 / R@5 / R@10 & Medium R@1 / R@5 / R@10 & Hard R@1 / R@5 / R@10 & Cross-language dup.\ R@1 \\
+\midrule
+Base 0.6B (untrained) & 8.32 / 78.61 / 87.78 & 1.78 / 60.91 / 75.49 & 0.00 / 4.08 / 17.60 & \textbf{84.73} \\
+Uncapped verified arm & 15.92 / 78.18 / 87.21 & \textbf{3.86} / 40.80 / 55.92 & \textbf{0.16} / 6.59 / 19.47 & 47.58 \\
+Soup $\alpha{=}0.3$ (weights: $0.3$ arm, $0.7$ base) & 13.55 / 93.57 / 97.93 & 1.59 / 59.93 / 76.35 & 0.01 / 4.80 / 23.13 & 80.15 \\
+Soup $\alpha{=}0.5$ & 15.77 / 93.42 / 97.68 & 1.77 / 57.30 / 74.17 & 0.01 / 6.28 / 27.51 & 73.54 \\
+Soup $\alpha{=}0.7$ & 16.41 / 90.44 / 96.04 & 2.33 / 52.23 / 69.83 & 0.01 / 7.54 / 28.14 & 62.34 \\
+V1 (verified pairs $+$ replay) & 20.83 / 91.96 / 96.71 & 3.67 / 63.57 / 78.80 & 0.03 / \textbf{7.67} / 30.01 & 59.80 \\
+V2 (the same mix $+$ instruction) & \textbf{21.70} / 94.48 / 97.81 & 2.71 / \textbf{67.25} / \textbf{82.06} & 0.01 / 7.02 / \textbf{32.03} & 74.30 \\
+\midrule
+\multicolumn{5}{l}{\emph{Soups of V1 (weight mixing on top of replay; V1's seed-$42$ weights with the base's)}} \\
+V1 soup $\alpha{=}0.3$ & 11.18 / 88.02 / 94.86 & 2.06 / 64.43 / 79.37 & 0.00 / 5.07 / 23.42 & 86.77 \\
+V1 soup $\alpha{=}0.5$ & 13.70 / 91.73 / 96.82 & 2.19 / 66.12 / 80.79 & 0.01 / 5.75 / 26.81 & 83.97 \\
+V1 soup $\alpha{=}0.7$ & 16.63 / 93.37 / 97.45 & 2.49 / 66.27 / 81.09 & 0.01 / 6.35 / 29.65 & 78.37 \\
+\midrule
+\multicolumn{5}{l}{\emph{Instruction controls (seed $42$; the instruction is V2's, applied at evaluation time)}} \\
+Base $+$ V2's instruction, no training & 13.21 / 80.33 / 89.22 & 2.35 / 61.31 / 77.61 & 0.00 / 6.95 / 26.41 & \textbf{90.59} \\
+V2 evaluated without its instruction & 16.51 / \textbf{94.71} / \textbf{98.01} & 1.79 / 65.33 / 80.25 & 0.00 / 5.43 / 26.28 & 68.70 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Three benchmarks we had no hand in building, single runs, every cell measured: MELD R@1, BRIGHT nDCG@10 on its two math theorem splits (TT $=$ theoremqa-theorems, AoPS $=$ the AoPS split), and ImpliRet~\citep{taghavi2025impliret} nDCG@10, macro-averaged over its six subsets (category $\times$ style) of $1{,}500$ queries each. On MELD, whose pairs are LLM-written, the recipe arm doubles the base's score while the verified arm stays flat; on BRIGHT both arms fall below the base, the verified arm to almost nothing, the recipe arm less; on ImpliRet's $9{,}000$ queries the recipe arm is the worst model we measure while the two mixed-data models hold the base's level. Our pre-registered prediction that the two arms would score within noise of each other is therefore partially refuted, on MELD and BRIGHT, in the recipe arm's favour, on BRIGHT by intervals that exclude zero. The untrained $4$B model is shown for scale.}
+\label{tab:external}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{3.9cm}>{\centering\arraybackslash}p{1.6cm}>{\centering\arraybackslash}p{2.4cm}>{\centering\arraybackslash}p{2.6cm}>{\centering\arraybackslash}p{2.4cm}@{}}
+\toprule
+Model & MELD R@1 & BRIGHT-TT nDCG@10 & BRIGHT-AoPS nDCG@10 & ImpliRet nDCG@10 \\
+\midrule
+Qwen3-Embedding-0.6B (base, untrained) & 10.19 & 21.24 & 7.44 & 16.03 \\
+Verified arm & 9.44 & 1.83 & 0.00 & 13.14 \\
+Recipe arm & 18.89 & 10.19 & 0.75 & 9.23 \\
+V1 (verified pairs $+$ replay) & 9.63 & 16.90 & 1.59 & 16.04 \\
+V2 (the same mix $+$ instruction) & 10.19 & 15.26 & 2.55 & \textbf{16.20} \\
+Qwen3-Embedding-4B (untrained) & 18.89 & \textbf{31.94} & 8.69 & 14.99 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{The easy-tier gap replicates on two further backbones and at $4$B.}
+Does the gap depend on our base model? We repeated the two-arm experiment on two other embedding models and at a larger size, one seed each. On multilingual-e5-large (seed $42$) the recipe arm leads by $+19.12$ easy-tier R@1; on the hard tier the inflation shows up at depth (R@5 $12.62$ against $2.46$) while R@1 stays near zero, and on real duplicates the lead is $+2.29$. On BGE-large-en-v1.5 (seed $42$, same rows and hyperparameters) easy R@1 is $24.25$ for the recipe arm against $8.34$ for the verified arm, a $+15.91$ lead; the medium tier is tied ($1.08$ against $1.09$), both arms sit at the hard-tier floor ($0.07$ against $0.00$), and strict real-duplicate R@1 is $22.14$ against $15.78$, a $+6.36$ lead, less than half the benchmark one. Both BGE duplicate numbers are low in absolute terms because the backbone was pretrained on English only and the probe is cross-lingual (the untrained base scores $5.85$ there). On the English same-language probe, where that handicap is absent, the BGE base scores $57.60$ primary-slice R@1 and the two arms $58.40$ (verified) and $57.60$ (recipe), within noise of it and of each other (recipe minus verified $-0.80$ $[-9.45, 7.94]$ under a cluster bootstrap; $53.91$, $54.78$ and $53.91$ on the $115$ English queries), so on its own language the backbone keeps its retention under both arms and the recipe arm holds no lead there, as on Qwen. At $4$B (rank-$16$ LoRA, same rows) the recipe arm scores $77.77$ easy R@1 against the verified arm's $39.51$, over an untrained base of $11.95$; hard R@1 is $6.03$ against $0.23$ over $0.00$; and on real duplicates the order flips, $70.99$ for the recipe arm against $83.72$ for the verified arm.
+
+\paragraph{A late-interaction retriever shows the same pattern.}
+Late-interaction models score a query against a document by token-level MaxSim rather than by one vector per text, so the recipe's surface regularities could in principle be matched, or ignored, differently. We repeated the two-arm experiment on ColBERTv2~\citep{santhanam2022colbertv2}, a BERT-base, English-only backbone, fine-tuned through PyLate~\citep{chaffin2025pylate} on the recipe arm's file and on the verified arm's file under the same $6{,}145$-row cap, contamination gates and $5\%$ by-source dev split as the dense arms (learning rate $10^{-5}$, batch $32$, three epochs, $1{,}449$ and $933$ steps, query length $256$ and document length $512$ tokens; \texttt{scripts/colbert\_train.py}). Two things differ from the dense recipe: the loss is PyLate's contrastive loss over MaxSim scores, in-batch negatives plus the row's own, the late-interaction counterpart of the dense trainer's; and there is no checkpoint selection, the final model being kept. Scoring re-ranks a PLAID index's top-$1{,}000$ candidates by exact MaxSim under the dense harness's rules otherwise (\texttt{scripts/colbert\_eval.py}; Table~\ref{tab:colbert}). The benchmark gap reappears at rank~$1$: the recipe arm scores $39.05$ easy R@1 against the verified arm's $6.57$ over an untrained $3.97$, a $+32.48$ lead, and $4.28$ against $2.17$ on the medium tier; at R@5 and R@10 the medium tier is level or reversed ($30.02$ against $30.19$, $40.09$ against $41.43$), and the hard tier moves only at depth ($2.35$ / $5.64$ against $1.24$ / $3.53$ at R@5 / R@10, R@1 at $0.08$ against $0.01$). Retention runs the other way. The cross-language probe cannot serve here, the English-only backbone finding $1.78$ strict R@1 of it untrained ($1.78$ and $6.36$ after training), so we read retention on the same-language reprint probe of Appendix~\ref{app:setup}: on its primary slice the verified arm keeps the untrained model's $46.40$ ($0.00$ $[-5.56, 5.56]$ under the cluster bootstrap) while the recipe arm falls to $35.20$, $-11.20$ against either ($[-20.16, -2.42]$ against the verified arm, $[-21.60, -0.80]$ against the base); on the $115$ English queries the three score $41.74$, $41.74$ and $30.43$ ($-11.30$ $[-21.05, -1.77]$); on all $498$ queries $74.30$, $73.90$ and $66.06$ ($-7.83$ $[-11.65, -4.23]$), the recipe arm losing even on exact-text reprints ($91.75$ against $99.31$). So on a late-interaction model the recipe arm's $32$-point benchmark lead comes with a retention loss of $8$ to $11$ points that the verified arm does not incur, the inversion of Section~\ref{sec:gaming} in a sharper form than the dense $0.6$B arms show, where on cross-language duplicates both arms lose retention and the recipe arm loses less. One seed and one run per cell; the intervals resample duplicate clusters only (\texttt{results/colbert\_summary.json}).
+
+\begin{table}[t]
+\centering
+\caption{The two-arm experiment on a late-interaction retriever (fact source: \texttt{results/colbert/}, \texttt{results/colbert\_summary.json}). ColBERTv2 fine-tuned through PyLate on the recipe arm's and the verified arm's training files, the same $6{,}145$ rows, gates and dev split as the dense arms; seed $42$, one run each. Benchmark columns are R@1 / R@5 / R@10 over the full $117{,}088$-document corpus with the query's own entry masked, from a PLAID index's top-$1{,}000$ candidates re-scored by exact MaxSim, a gold outside the candidates counting as a miss. The retention columns are same-language R@1 on the reprint probe's primary slice ($125$ queries) and on all $498$ of its queries (Table~\ref{tab:samelang}); the cross-language probe is unusable for this English-only backbone (untrained $1.78$ strict R@1, the arms $1.78$ and $6.36$).}
+\label{tab:colbert}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Model & Easy & Medium & Hard & Same-lang.\ primary & Same-lang.\ all \\
+\midrule
+ColBERTv2 (untrained) & 3.97 / 52.79 / 60.86 & 1.51 / 32.80 / 42.37 & 0.01 / 1.33 / 3.43 & 46.40 & 74.30 \\
+Verified arm & 6.57 / 59.83 / 69.66 & 2.17 / 30.19 / 41.43 & 0.01 / 1.24 / 3.53 & 46.40 & 73.90 \\
+Recipe arm & \textbf{39.05} / \textbf{75.69} / \textbf{81.44} & \textbf{4.28} / 30.02 / 40.09 & \textbf{0.08} / \textbf{2.35} / \textbf{5.64} & 35.20 & 66.06 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\paragraph{What the two candidate fixes for forgetting are.}
+Appendix~\ref{sec:forgetting} compares two fixes. The first works on the weights: WiSE-FT weight-space ensembles~\citep{wortsman2022wiseft}, the soups of Table~\ref{tab:mixing}, average the uncapped verified arm's trained weights with the untrained base's, $\theta_\alpha = \alpha\,\theta_{\text{ft}} + (1-\alpha)\,\theta_{\text{base}}$, with $\alpha \in \{0.3, 0.5, 0.7\}$ the share of the trained weights. The second works on the data: a mixture of $30{,}323$ rows from four sources, $8{,}747$ CAS pair rows with negatives capped at two per row (dropping $3{,}063$ minimal-edit negatives), $12{,}000$ problem$\to$solution rows as replay, $4{,}576$ cross-transform positives and $5{,}000$ same-topic mid-difficulty negatives. Trained on that mixture with the default query prompt the model is V1; trained on the identical data with the task instruction \emph{``Given a math problem, retrieve problems that are mathematically equivalent to it.''} attached to queries, it is V2.
+
+\paragraph{Data-space mixing recovers recall depth.}The uncapped verified arm had lost recall depth, the gold dropping out of the top few results even when it was not first; the mixture brings it back. Medium-tier R@5 climbs to $63.57$ (V1) and $67.25$ (V2), past the untrained base's $60.91$. Across three training seeds ($42$--$44$), V2 scores $22.19 \pm 0.79$ easy R@1 ($21.70/21.78/23.10$) while keeping $74.22 \pm 2.42$ on cross-language duplicates, and V1 scores $20.64 \pm 0.28$ easy R@1.
+
+
+\paragraph{Two seed-$42$ readings do not replicate at three seeds.}Two of V1's numbers in Table~\ref{tab:mixing}, which shows the seed-$42$ run, do not hold up over three seeds. Its medium-tier R@1 of $3.67$ was a lucky draw (three-seed mean $2.67 \pm 0.87$), and its cross-language retention of $59.80$ an unlucky one ($66.8 \pm 6.1$), so neither seed-$42$ figure should be read as V1's level.
+
+\paragraph{V2's instruction alone scores $90.59$ on the untrained base.}Take the \emph{untrained} base, do no training, and prepend V2's instruction to each query at evaluation time: it scores $90.59$ on cross-language duplicates, above every mixed, souped or controlled fine-tune in the grid, and among our MathNet-trained models surpassed only by D4 ($93.81$). For V2 itself the instruction is worth ${+}5.19$ easy R@1 and ${+}5.60$ retention points at evaluation time: without it V2 falls from $21.70$ to $16.51$ on the easy tier and from $74.30$ to $68.70$ on retention.
+
+\paragraph{One loss stands.}The uncapped verified arm was the only non-recipe model to score anything on the hard tier at rank~$1$, $0.16$, meaning it could occasionally rank the true equivalent above the near-misses. Neither remedy keeps that: every soup and both mixed-data models fall to $0.01$--$0.03$.
+
+\paragraph{Registration labels, and the script headers that carry them.}
+Section~\ref{sec:ood} reports the pre-registered predictions in prose; this paragraph gives each one a label and names the script header that states it, so the exact wording can be found. SABER-Math (\texttt{scripts/saber\_attack.slurm}): P-S1, the document attack gains $+0.02$ nDCG@10 and doubles the construction-signal correlation (failed); P-S2, the attacked arm falls below the base and below V2 on real duplicates (held); P-S3, the two arms differ on SABER by less than the attack's own gain over the base (failed); P-S4 groups the summary-channel predictions, L1--L3 in \texttt{saber\_label\_attack.slurm} and their seed replication S1--S2 in \texttt{saber\_label\_seeds.slurm} (held). MELD (\texttt{attack\_second\_benchmark.slurm}): P-M1, the attacked arm beats the base (passed); P-M2, it falls below the base on real duplicates (refuted; it rose above it); P-M3a and P-M3b, it beats the MathNet recipe arm on MELD and inherits no MathNet hard-tier score (passed); P-M4, an arm trained on disjoint topics captures most of the gain (so the effect is genre-level). The ladder (\texttt{dose\_response.slurm}) and the factorial's reading map (\texttt{factorial\_cells.slurm}) are stated in Appendix~\ref{app:mechanism}, the same-language readout (\texttt{samelang\_eval.slurm}) in Appendix~\ref{app:setup}, and the regeneration defence (P-D1--P-D3, \texttt{defense\_regen\_eval.py}) below.
+
+\paragraph{The SABER-Math attack: construction, and a one-sided gate.}
+The attack set uses SABER's own core-idea prompt and its own relevance rule, summary word overlap (Jaccard) above the authors' threshold $\tau = 0.211$, generated by Qwen3-32B-AWQ over $4{,}917$ source problems (SABER's pipeline uses GPT-OSS-120B). Every row was checked against every SABER query and candidate document for overlap in word $5$-grams, dropping anything above $0.35$ containment, and trained with the controlled experiment's hyperparameters at a $1{,}024$-token cap. That check has a flaw: containment divides by the length of the training \emph{source}, so it asks only how much of the source appears in a SABER text, not the reverse. In that direction no trained source exceeds $0.3421$; in the reverse direction, how much of the SABER text appears in the source, containment reaches $0.5333$, $11$ sources exceed $0.35$, and three of them restate an evaluation query. A check run in both directions would have caught them. They cannot move an nDCG over $1{,}000$ queries, but ``disjoint'' claims more than was verified.
+
+\paragraph{Three fidelity limits travel with the SABER attack.}Our copy of SABER's pipeline is not exact in three ways. SABER decides relevance in more than one stage, and we reproduced only the summary-overlap stage, not its MathWorld-BMA matching nor its Swiss-tournament grading. The threshold $\tau = 0.211$ is the value the authors tuned on \emph{their} corpus; we used it unchanged on ours, where it may not be the right cutoff. And the summaries were written by Qwen3-32B-AWQ where SABER's were written by GPT-OSS-120B, so the attack is cross-vendor, as the MathNet and MELD attacks are, and any part of SABER's rule that lives in its generator's phrasing rather than in the prompt is not copied.
+
+\paragraph{P-S1's verdict is robust to how the two sides are encoded.}The document attack's failure does not depend on how queries and documents were prompted. Promptless on both sides, the attack changes nDCG@10 by $-0.0129$ $[-0.0212, -0.0042]$ and raises the construction-signal correlation $1.14\times$; with the query prompt applied, the two pairings give $-0.0098$ and $-0.0127$ at $1.18\times$. Every version is far from both registered thresholds, a $+0.02$ gain and a $2\times$ ratio. The attacked model has the highest construction-signal correlation of any model we measured and still scores below the base: matching the rule a little better bought no score.
+
+\paragraph{The controlled arms on SABER, and a context-length check.}On SABER the recipe arm scores $0.507$ and the verified arm $0.451$, both below the untrained base's $0.5747$. One inconsistency in how they were run: those two rows were encoded at the model's $32{,}768$-token default, while the base and attacked rows were cut at $1{,}024$ tokens. Re-encoding the two arms at the $1{,}024$-token cap used elsewhere gives $0.5069$ and $0.4498$, essentially unchanged, so P-S3's verdict does not depend on context length.
+
+\paragraph{The summary-channel re-attack, and what the main run trained on.}The generation pipeline produced two kinds of rows and wrote them into one pair file: $11{,}461$ rows built on SABER's document template, and $4{,}733$ rows whose positive is the LLM-written core-idea summary itself, a far shorter text (mean $93$ characters against $1{,}506$ for a document row). The main $6{,}145$-row run shuffled that file before truncating, so it trained on $4{,}359$ document rows and $1{,}786$ summary rows, $29\%$ summaries. That mixture scored $-0.0129$ against the base, between the two pure channels and below the base: the summary rows buy a gain when trained on alone, and diluting them to $29\%$ of the file erased it.
+
+\paragraph{Both pure channels replicate over three seeds.}
+The two pure arms, one trained on summary rows only and one on document rows only, each carry three training seeds ($42$--$44$). The summary arm's construction-signal correlation is $0.2968$ against the base's $0.2609$, a $1.14\times$ rise, the same rise the promptless document attack showed (\texttt{results/saber\_label\_4733\_noprompt.json}). Seed by seed, the summary arm scores $0.6101 / 0.6099 / 0.6069$ and the document arm $0.5515 / 0.5591 / 0.5645$ against the base's $0.5747$: the summary arm clears the base in every seed ($+0.0343 \pm 0.0018$), the document arm falls below it in every seed ($-0.0163 \pm 0.0065$), and the difference between the channels is $+0.0506 \pm 0.0081$. On cross-language duplicates at seed $42$ the document arm keeps only $10.69$ strict R@1 and the summary arm $58.78$, against $34.86$ for the mixed run and $84.73$ for the base. The document surface therefore carries most of the retention loss, and the pure document arm is the deepest forgetting of any model we trained.
+
+\paragraph{Four asymmetries qualify the channel comparison: two favour the summary arm that wins it, two run against it.}
+(i)~\emph{Content, not just rows, and it favours the summary arm.} The document channel is full of repeats: its $11{,}461$ rows come from only $4{,}119$ distinct sources and $3{,}374$ distinct positives, so its $4{,}733$-row draw holds $3{,}118$ sources and $2{,}368$ distinct positives, against the summary arm's $4{,}733$ and $4{,}706$. The winning arm trained on twice as many distinct positives. (ii)~\emph{Steps are not matched, in the summary arm's favour.} The summary arm ran $105$ optimiser steps and the document arm $57$, because \texttt{NoDuplicatesBatchSampler}, which never places two examples of one row in the same batch, yields fewer batches from data with many duplicated positives. Both ran three full passes, so the comparison is matched in \emph{rows} and unmatched in \emph{steps}. One internal control bounds what the steps buy: the document channel at $108$ steps \emph{with} checkpoint selection still scores $0.5618$, so $51$ extra document steps are worth at most $+0.0103$ against a channel difference of $+0.0506$. That is an upper bound, since the $108$-step run also carried the $29\%$ summary admixture; the clean control, a summary arm retrained at the document arm's $57$ steps on $2{,}368$ rows (one per source; $2{,}360$ to $2{,}365$ distinct positives by seed), three seeds, gains $+0.0255 \pm 0.0041$ nDCG@10 over the base ($0.5976$, $0.6050$, $0.5981$), every seed above the registered $+0.02$ bar, against $+0.0343 \pm 0.0018$ unmatched and $-0.0163 \pm 0.0065$ for the document arm at that budget; its cross-language retention, $58.02$ to $61.07$ strict R@1, matches the unmatched arm's $58.78$ (\texttt{scripts/saber\_matched.slurm}, \texttt{results/saber\_matched.json}). (iii)~\emph{Compute runs the other way.} The document arm consumed $2{,}189$\,s of GPU time against the summary arm's $1{,}188$\,s. (iv)~\emph{Data damage runs the other way too.} $52$ of the $4{,}733$ summary rows ($1.10\%$) carry control characters from the \verb|\frac| escape defect, against $10$ of $11{,}461$ document rows, so the arm that gains is the one trained on the more corrupted file. With the first two now controlled, Section~\ref{sec:ood} calls the summary-channel result a small gain, on an artefact SABER never scores, that survives a matched budget.
+
+\paragraph{BRIGHT, and how small it is; ImpliRet, and how large.}The two BRIGHT math splits are tiny: $76$ queries against $23{,}839$ documents for theoremqa-theorems and $111$ against $188{,}002$ for AoPS, too few for seed intervals, so each single run carries a paired query bootstrap instead ($10{,}000$ resamples of the query set, the same draw applied to both models; \texttt{scripts/bright\_bootstrap.py}). On theoremqa-theorems the recipe arm leads the verified arm by $8.36$ $[3.42, 13.99]$ nDCG@10 points ($15$ queries in its favour, $2$ against) and on AoPS by $0.75$ $[0.16, 1.52]$ ($5$ against $0$); both arms trail the base by intervals that exclude zero, $-11.05$ $[-17.25, -5.26]$ (recipe) and $-19.41$ $[-25.66, -13.56]$ (verified) on theoremqa-theorems, $-6.69$ $[-9.92, -3.76]$ and $-7.44$ $[-10.65, -4.57]$ on AoPS. The re-scoring that produced the per-query values reproduces every committed aggregate to five decimals. ImpliRet's $9{,}000$ queries make it the large-$n$ witness the BRIGHT splits cannot be. On it both controlled arms fall below the untrained base, the recipe arm worst at $9.23$ against the base's $16.03$, while the mixed models (V1 $16.04$, V2 $16.20$) hold the base's level. All are single seed-$42$ runs on a harness that is consistent across our own models but does not reproduce the ImpliRet authors' published table (Appendix~\ref{app:setup}).
+
+\begin{table}[t]
+\centering
+\caption{The eleven natural-language tasks of MIRB~\citep{ju2025mirb}, a human-curated mathematical retrieval benchmark, scored with its protocol (nDCG@10 $\times 100$ over the top $1{,}000$, each query's excluded ids dropped, documents as title plus text; the model's own query prompt, as for every external benchmark here). Untrained base against the two seed-$42$ arms; the last two columns are paired query bootstraps ($5{,}000$ resamples, $95\%$ intervals), bold where the interval excludes zero. The MSE duplicate-question task ranks $1{,}350{,}505$ documents per query; the three formal-library premise tasks are outside the paper's domain.}
+\label{tab:mirb}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lrccccc@{}}
+\toprule
+Task & $n$ & Base & Verified arm & Recipe arm & Recipe $-$ verified & Recipe $-$ base \\
+\midrule
+MSE duplicate questions & 25116 & 48.94 & 32.64 & 28.05 & \textbf{$-4.59$ $[-5.07, -4.11]$} & \textbf{$-20.90$ $[-21.41, -20.38]$} \\
+MathOverflow duplicate questions & 225 & 72.67 & 52.37 & 48.22 & $-4.15$ $[-9.81, 1.45]$ & \textbf{$-24.45$ $[-30.37, -18.72]$} \\
+MSE question to answer (ARQMath-3 Task 1) & 78 & 40.04 & 29.40 & 41.66 & \textbf{$+12.26$ $[7.72, 16.91]$} & $+1.62$ $[-2.91, 6.41]$ \\
+ProofWiki question to answer & 1099 & 75.41 & 59.35 & 56.63 & $-2.72$ $[-5.43, 0.02]$ & \textbf{$-18.78$ $[-21.26, -16.30]$} \\
+Stacks question to answer & 776 & 44.58 & 34.59 & 29.19 & \textbf{$-5.40$ $[-8.07, -2.84]$} & \textbf{$-15.39$ $[-18.00, -12.79]$} \\
+ProofWiki premises & 1086 & 20.12 & 15.89 & 11.29 & \textbf{$-4.60$ $[-5.87, -3.39]$} & \textbf{$-8.83$ $[-10.17, -7.53]$} \\
+Stacks premises & 775 & 35.66 & 33.99 & 20.83 & \textbf{$-13.15$ $[-15.19, -11.22]$} & \textbf{$-14.82$ $[-16.92, -12.83]$} \\
+Real-analysis premises & 161 & 32.40 & 26.03 & 21.47 & \textbf{$-4.56$ $[-8.55, -0.77]$} & \textbf{$-10.93$ $[-14.77, -7.28]$} \\
+Number-theory premises & 38 & 34.28 & 29.62 & 34.05 & $+4.43$ $[-6.65, 15.16]$ & $-0.23$ $[-13.01, 12.09]$ \\
+MSE formulas & 76 & 63.35 & 56.88 & 55.24 & $-1.63$ $[-6.76, 3.62]$ & \textbf{$-8.11$ $[-12.23, -3.97]$} \\
+Wikipedia formulas & 39 & 76.33 & 69.82 & 73.65 & $+3.83$ $[-1.54, 9.16]$ & $-2.68$ $[-7.38, 1.86]$ \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\paragraph{Human-curated math retrieval: MIRB.}On eleven MIRB tasks (Table~\ref{tab:mirb}) the untrained base leads both arms on ten, and the recipe arm trails the verified arm on five by intervals that exclude zero (the two Stacks tasks, ProofWiki premises, real analysis and the MSE duplicate questions) while leading it on one, the MSE question-to-answer task built from ARQMath~\citep{zanibbi2020arqmath}, where it holds the base's level. Both arms therefore lose on established human-curated sets, the recipe arm more, the same ordering as on the duplicate probes: the easy-tier lead does not reach benchmarks that people built. (\texttt{scripts/eval\_mirb.py}, \texttt{results/mirb/}.)
+
+
+\paragraph{The MELD attack: what we reconstructed, and at what fidelity.}Part of MELD's construction is public: its record schema, its nine framing pairs and its thirty-items-per-call generation count, and its appendix prints the prompts behind its training pipeline. The prompt that produced its evaluation set is not. MELD's statements were generated by Claude Opus 4.7, reviewed by hand for dissimilarity and then checked by GPT-5.5 for validity, equivalence and residual similarity; we regenerate with Qwen3-32B-AWQ, so this attack is cross-vendor like the MathNet one. Lacking the prompt itself, we rebuilt the procedure from MELD's description into that schema. That is a weaker copy than the SABER attack, which used the repository prompt byte for byte, or the MathNet attack, which used the published Appendix-F prompt. Because the reconstruction is approximate and still moved the score, the result is best read as an upper bound on how much keeping the prompt secret protected the benchmark.
+
+\paragraph{Two arms: MELD's own domain pairs against held-out ones.}Both MELD-attack arms are capped at $3{,}150$ trainer rows and trained with the controlled experiment's hyperparameters; each row carries three negatives, same-framing statements from our own generated pool rather than minimal-edit near-misses, since MELD does not describe how its distractors were built. \textsc{meld9} uses the same nine framing pairs as MELD's own evaluation set; the build checks that they reproduce MELD's released set exactly and aborts otherwise. \textsc{heldout} uses $27$ other pairs ($26$ of which yield rows), chosen so that no field name matches any MELD subfield. Two partial overlaps remain as substrings, ``Riemannian geometry'' against ``geometry'' and ``universal algebra'' against ``algebra''; we report them rather than silently allow them.
+
+\paragraph{The disjointness figure: $39$ pairs removed for eval proximity, not $62\%$.}MELD's data is written from scratch, with no source corpus to exclude problems from, so the only way to keep training data away from its evaluation set is to check each generated pair against it. That check is separate from quality filtering, and the two counts should not be combined. For the meld9 arm, $4{,}163$ pairs were generated and $2{,}588$ discarded, but $2{,}549$ of those fell to MELD's own validity and equivalence screen, a recipe step that makes the data better, not more disjoint. The gates against the $1{,}081$ released evaluation texts removed $20$ pairs for $n$-gram containment and $19$ at cosine $\ge 0.9$ (all-mpnet-base-v2). For the heldout arm the screen rejected $2{,}345$ of $4{,}150$ and the gates removed none. The number of pairs removed for closeness to the evaluation set is therefore $39$, not the $62\%$ that lumping both filters together would suggest.
+
+\paragraph{Removing those pairs can only weaken the attack, and residual exposure is bounded.}The $39$ removed pairs were the ones most similar to evaluation items, so removing them can only weaken the attack. After the gate, the closest any training pair comes to any evaluation text is a cosine of $0.899$, with no exact match. To bound what remains, we count evaluation pairs \emph{both} of whose items have a training pair within cosine $0.70$: $19$ of the $270$. Even if every one of those were memorised, they could explain at most $7.04$ of the $26.48$ R@1 points gained at seed $42$ (the same value as the $+7.04$ domain increment below, by coincidence). One bookkeeping note: the released certificate records its \texttt{max\_cosine\_vs\_eval} distribution before the drop test, which is why the maximum it lists is above the threshold the gate enforces.
+
+\paragraph{Scoring protocol, and why our MELD numbers compare only against each other.}Every model is scored the same way, in one prompt condition, on MELD's own pairs-only protocol: $270$ pairs give $540$ queries, each ranked against the other $539$ items, and intervals resample the $270$ pairs as clusters with $B = 10{,}000$. Re-running our earlier models reproduces their scores bit for bit (base $10.19$, recipe arm $18.89$, verified arm $9.44$), which shows the harness is stable but is not a check against MELD's own numbers: MELD publishes no row for Qwen3-Embedding-$0.6$B, and for the two models we can compare we score higher than they do (Qwen3-Embedding-4B $18.89$ against their $13.7$, MathLeap-Octen-8B $34.44$ against their $28.9$; Appendix~\ref{app:setup}). Our MELD numbers are therefore comparable with one another and not with MELD's published table.
+
+\paragraph{What topic-disjoint does and does not guarantee.}``Topic-disjoint'' means only that the field names do not match. The gate compares each framing's name, after normalization, against a $23$-term list ($18$ MELD subfield names plus five alternate names MELD gives the same areas), so it cannot know that ergodic theory sits inside MELD's measure-theory dialect pair or that Markov chains are probability. The mathematics still overlaps, which blurs the topic comparison in both directions. How much matching MELD's own domains buys is also narrower than one number suggests: the meld9 arm's $+7.04$ $[2.96, 10.93]$ lead over the heldout arm appears at R@1 alone; at R@5 ($+1.48$ $[-2.96, 5.93]$) and on the fraction of queries ranked above every same-framing distractor ($-0.37$ $[-3.89, 3.15]$) the two arms match. Knowing MELD's genre therefore buys nearly all of the attack, and knowing its exact domains adds only a rank-$1$ edge.
+
+\paragraph{The prompt control's design, and its $80/20$ verdict.}
+P-M3a compares MELD's attacked arm with the MathNet recipe arm, which changes task, source data, budget and negative design at once. To split the MELD gain into the format and the exact wording, a third arm holds everything fixed, the nine domain pairs, the schema, the generator, the judge, the gates, the $3{,}150$-row budget and $3.0$ negatives per row, and changes only the prompt's framing: a graduate reading-course translation exercise instead of a research mathematician building an evaluation set. That prompt also drops the instruction to make the two statements lexically distinct, the clause of MELD's procedure most closely tied to what its benchmark measures. The third arm scores $32.41$ against meld9's seed-$42$ $36.67$, a paired difference of $4.26$ $[0.93, 7.78]$ that excludes zero, while still clearing the base by $+22.22$ $[17.59, 26.85]$: $84\%$ of the attack survives rewriting the prompt and $16\%$ is the wording. Against the topic-disjoint arm its paired difference does not exclude zero ($+2.78$ $[-0.56, 6.11]$). What MELD is exposed to is therefore mainly the cross-dialect equivalence format, with a real but minority contribution from the wording. The third arm's cross-language duplicate score is unchanged at $90.84$ and its MathNet hard R@1 is $0.04$, so neither the P-M2 refutation nor P-M3b depends on which prompt generated the data. Regenerated under meld9's own procedure (a greedy first round and the pair-target stop, which halted after $16$ rounds at $4{,}086$ raw pairs; $3{,}508$ gated rows from $1{,}754$ sources, of which the cap trains $3{,}150$), the control scores $31.48$: $+21.30$ $[16.48, 26.11]$ over the base, $-5.19$ $[-8.89, -1.48]$ against meld9 and $-0.93$ $[-4.26, 2.59]$ against the unmatched control, so the generation factor moved nothing and the split with it matched is $80/20$; its cross-language score is $92.11$ and its hard R@1 $0.05$ (\texttt{scripts/meld\_altprompt\_matched.slurm}, group \texttt{meld9altm}).
+
+\paragraph{One generation factor was unmatched in the first control, and matching it changed little.}
+A later audit of our own configuration found one setting the two arms did not share. The meld9 arm was generated with a pair target and a greedy first round, and it stopped after $16$ of $24$ rounds once it had $3{,}150$ usable rows, so it trains on $100\%$ of its pool, from $1{,}575$ sources. The control ran all $24$ rounds to $5{,}204$ rows, from which the shared row cap took a random $60.5\%$ covering $2{,}215$ sources: $41\%$ more distinct sources at an identical budget, and a sampled rather than greedy first round. More source diversity plausibly helps the arm that has it, the control, in which case $4.26$ underestimates the wording's contribution; which way the round-$1$ decoding difference cuts we cannot tell. The $84/16$ split was therefore a decomposition with one unmatched generation factor; the matched rerun above, which removes it, lands within noise of the first control and gives $80/20$.
+
+\paragraph{Seed replication: all four registered MELD readings hold.}
+Both arms were retrained at seeds $43$ and $44$ from the same gated pair files, so the disjointness certificates still describe what these models saw. All four registered readings hold. The meld9 arm reaches $37.16 \pm 1.19$ pairs-only R@1, beating the base by $+26.48$, $+26.11$ and $+28.33$ in the three seeds, and the heldout arm $30.80 \pm 1.12$. The advantage of matching MELD's own domains keeps its sign in every seed ($+7.04$, $+5.37$, $+6.67$; mean $+6.36$), and the attacked model stays above the untrained base on cross-language duplicates in all three seeds, $90.67 \pm 0.53$ against $84.73$. That last result was the one most at risk, since it reverses what we had predicted: the registration in \texttt{scripts/meld\_attack\_seeds.slurm} would have withdrawn P-M2's refutation had the three-seed mean fallen below $84.73$. It did not.
+
+\paragraph{Two asymmetries, and a registration that landed the other way.}Two things weigh on the MELD comparison in opposite directions: the attack arms carry $3.0$ negatives per row against the recipe arm's ${\approx}2.63$, which works for the attack, and at $3{,}150$ rows they train on roughly half the controlled budget, which works against it. And one registered prediction came out backwards. We had predicted that the attacked model would fall below the untrained base on cross-language duplicates, as every MathNet-trained arm does; it rose above the base instead, to $90.84$ and $91.86$ strict R@1, where the SABER-attacked model fell to $34.86$. Whatever MELD's recipe teaches carries over to genuine cross-language duplicates, so on this benchmark gaming the score and keeping real ability are not in opposition. We registered the opposite and report it as it landed.
+
+\paragraph{The medium tier: no inflation against the verified arm, a smaller recipe-specific share against the reference.}
+On the medium tier the recipe arm leads the verified arm by $5.70$ points, less than the $9.74$ points separating the same two arms on cross-language duplicates, so the interaction runs the opposite way from the easy tier's (Section~\ref{sec:ood}): the DiD is $-4.03$, $95\%$ CI $[-10.12, 1.82]$, one-sided $p(\text{DiD} > 0) = 0.91$, negative in seven of eight seeds. This is the genre gradient of Section~\ref{sec:mechanism} at its floor: the medium golds are LLM rewrites like the easy tier's, so the recipe arm leads there, but by no more than it leads on organic reprints, with nothing on top. The medium gap therefore carries no inflation against the verified arm. Against the reference the recipe arm leads by $4.62$ on the tier (Table~\ref{tab:controlled}) and trails by $11.77$ on cross-language duplicates, a recipe-specific shrinkage of about $16$ points by subtraction of the point estimates, against $27.24$ on the easy tier; the inflation claim rests on the easy tier, where the effect is largest and carries an interval.
+
+
+\paragraph{The contrasts at R@5 and R@10: the inflation lives at rank 1.}
+At R@5 the recipe arm leads the verified arm by $7.33$ $[5.90, 8.96]$ on the easy tier and by $7.48$ $[2.60, 12.85]$ on cross-language duplicates, so the difference-in-differences is $-0.15 \pm 3.15$ across the eight seed-paired comparisons (positive in four of eight); at R@10 the two leads are $2.88$ $[1.86, 4.03]$ and $4.01$ $[-0.19, 8.58]$, a difference of $-1.13 \pm 2.11$ (positive in three). Against the reference the easy-tier lead at R@5 is $0.90$ $[-0.16, 1.93]$ and the cross-language lead $-0.26$ by subtraction of the eight-seed means in Table~\ref{tab:ood}. The $35.59$- and $27.24$-point shrinkages of Table~\ref{tab:controlled} are therefore rank-$1$ quantities: recipe-matching decides which document comes first, and by R@5 the two arms and the reference retrieve the gold about equally often on the benchmark and on real duplicates. Intervals are the nested bootstraps behind Table~\ref{tab:controlled} (\texttt{results/final\_stats.json}, \texttt{results/reference\_control\_did.json}); the seed-paired means and standard deviations come from the per-seed evaluation files.
+
+\paragraph{Verified-supervision numbers, and why the $4$B one stays out of the ranking.}
+The $4$B verified arm's $39.51$ easy R@1, from supervision containing no LLM-generated text, is the highest verified-supervision number we measure. We keep it out of Table~\ref{tab:leaderboard-full}'s ranking, as its caption says, because its rename and reformulation positives are paraphrases, and paraphrase is the genre the easy tier tests. Given Sections~\ref{sec:gaming} and~\ref{sec:mechanism}, that number and V2's easy-tier lead over RaDeR-gte are positions on a recipe-sensitive instrument, not capability claims. The inversion holds at this scale: the recipe arm's $77.77$ against $39.51$ on the easy tier comes with cross-language retention of $70.99$ against $83.72$, the reverse order. That $39.51$ comes from verified pairs alone shows the easy tier is learnable, and a verified arm doing well by entering the paraphrase genre is no counter to the charge, which concerns the $15.47$ recipe-specific points that do not reach cross-language duplicates (Section~\ref{sec:gaming}), not the tier's learnability.
+
+\paragraph{A lexical baseline.}BM25~\citep{robertson2009bm25} (\texttt{bm25s}, Lucene scoring, $k_1 = 1.5$, $b = 0.75$, lowercased word tokens with English stopwords removed, no stemming; \texttt{scripts/eval\_bm25.py}) is scored on every set under the dense harness's rules, the query's own corpus entry masked and a gold counted at the number of documents scoring strictly above it. On the benchmark it reaches $3.07$ / $55.53$ / $64.71$ easy R@1/5/10, $1.58$ / $33.39$ / $43.39$ medium and $0.01$ / $1.61$ / $5.35$ hard (Table~\ref{tab:leaderboard-full}), below the untrained base at rank~$1$ on every tier, so the recipe arm's $45$-point lead is not overlap a bag of words could collect. On cross-language duplicates it scores $10.69$ strict R@1 against the base's $84.73$ (Table~\ref{tab:ood}), and on same-language reprints $54.40$ on the primary slice against $62.40$ ($-8.00$ $[-17.07, 0.79]$ under a cluster bootstrap; Table~\ref{tab:samelang}), so the duplicate sets are not solved by term matching either, even where the reprints share a language. The one set where term matching does well is the near-miss probe, $72.27$ full-corpus R@1 and $73.8$ against its near-misses alone against the base's $10.84$ (Table~\ref{tab:casprobe}), because a computer-algebra edit leaves most tokens in place; that probe measures discrimination between two near-copies, and a lexical matcher passes it.
+
+\input{tab_crosseval}
+
+\begin{table}[t]
+\centering
+\caption{The regeneration defence of Appendix~\ref{sec:forgetting} (fact source: \texttt{results/defense\_eval/}). Each row is the same $1{,}525$ easy-tier queries with their gold documents regenerated a different way; the columns give each model's easy-tier R@1 on that version over the full $117{,}088$-document corpus (seed-$42$ checkpoints), and Gap is the recipe arm (D1) minus the verified arm. Down the Gap column: regenerating the golds with the benchmark's own template trims the lead only from $45.64$ to $35.73$, a different-style prompt to $28.33$, and drawing each gold from one of three prompts to $31.48$. Across rows: D2 beats D1 on every version and D3 on all but the exact-template one, so the easy-tier plateau of Section~\ref{sec:mechanism} recurs, and D3's largest lead over D1 is on the golds written with D3's own prompt. The reference column was scored after the registered readings were taken (\texttt{eval\_<version>\_reference.json}): the reference drops only from $46.89$ to $44.00$ across the versions where the recipe arm drops from $61.18$ to $44.13$, so on the different-style golds the two are level, and the recipe arm's lead over the reference on these items shrinks from $14.29$ to $4.72$ under the benchmark's own template and to $0.13$ under the different style.}
+\label{tab:defense}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.4cm}cccccccc@{}}
+\toprule
+Gold documents & Base & Verified arm & D1 (recipe) & D2 & D3 & D4 & Reference & Gap \\
+\midrule
+Original benchmark golds & 7.34 & 15.54 & 61.18 & 64.92 & 67.41 & 30.43 & 46.89 & 45.64 \\
+Regenerated with the benchmark's template & 10.69 & 15.02 & 50.75 & 55.67 & 50.56 & 28.59 & 46.03 & 35.73 \\
+Regenerated with a paraphrase of it (D2's prompt) & 8.39 & 16.72 & 54.36 & 60.07 & 56.92 & 28.79 & 45.97 & 37.64 \\
+Regenerated in a different style (D3's prompt) & 3.28 & 15.80 & 44.13 & 52.92 & 55.41 & 21.70 & 44.00 & 28.33 \\
+Each gold from one of the three, at random & 7.02 & 16.26 & 47.74 & 54.95 & 54.23 & 25.84 & 43.93 & 31.48 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{The regeneration defence rerun with the benchmark's own vendor (fact source: \texttt{results/defense\_eval\_gemini/}). The same $1{,}700$ sampled easy-tier queries, the same three prompts and the same single judge as Table~\ref{tab:defense}, but the golds are rewritten by gemini-3-flash-preview through the vendor's API instead of by Qwen3-32B-AWQ; the $1{,}127$ queries the judge accepted under all three prompts are scored over the full corpus with the same seed-$42$ checkpoints. Easy-tier R@1; Gap is D1 minus the verified arm. The original-gold row differs from Table~\ref{tab:defense}'s because the slice does. The Gap column keeps its shape (paraphrase at or above exact, style lowest, mixed between), but every regenerated row collapses for every model, the base to $0.00$ at rank~$1$, because the vendor's fresh rewrites are a deeper rewrite than the golds the benchmark shipped (text).}
+\label{tab:defense-gemini}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.4cm}ccccccc@{}}
+\toprule
+Gold documents & Base & Verified arm & D1 (recipe) & D2 & D3 & D4 & Gap \\
+\midrule
+Original benchmark golds & 7.10 & 16.33 & 60.43 & 63.27 & 65.04 & 28.48 & 44.10 \\
+Regenerated with the benchmark's template & 0.00 & 0.53 & 20.14 & 17.48 & 10.56 & 0.53 & 19.61 \\
+Regenerated with a paraphrase of it (D2's prompt) & 0.00 & 0.71 & 22.54 & 19.61 & 11.80 & 0.44 & 21.83 \\
+Regenerated in a different style (D3's prompt) & 0.00 & 0.62 & 17.21 & 18.10 & 14.02 & 0.53 & 16.59 \\
+Each gold from one of the three, at random & 0.00 & 0.80 & 18.54 & 18.19 & 11.71 & 0.53 & 17.74 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{The regeneration defence experiment: protocol.}
+We rewrote the gold documents of $1{,}525$ easy-tier queries \emph{in place}, using the benchmark's own pipeline through Qwen3-32B-AWQ under each of the ladder's three recipe-family prompts (D1--D3), and re-scored the existing seed-$42$ checkpoints on five versions of the evaluation: the original golds, one version per prompt, and a \emph{mixed} version drawing each gold from one of the three at random. The $1{,}525$ are the queries, of $1{,}700$ sampled, whose regenerations the single-judge filter accepted under all three prompts. Distractors, pool size and relevance labels are untouched, so only the gold texts differ between versions. P-D1--P-D3 and a falsifier were written into \texttt{scripts/defense\_regen\_eval.py} before it ran. Three caveats travel with the numbers. Regenerating a gold changes its author as well as its text, from Gemini-3-flash to Qwen3-32B-AWQ, so the drop from the original golds to the exact-template ones mixes cross-generator transfer with item freshness (a rerun through the vendor's own model, below, replicates the pattern but not the level, and does not remove the confound). The generation is a single seeded run. And requiring the judge to accept all three regenerations selects toward items that are easy to judge acceptable.
+
+\paragraph{The regeneration defence experiment: registered outcomes.}
+\textbf{P-D1 passes}: rewriting the golds with the benchmark's own recipe through our generator leaves the recipe arm $35.73$ points ahead of the verified arm, of its original $45.64$, so same-recipe regeneration is no defence. \textbf{P-D2 fails}: we predicted the lead would shrink in steps from the exact template to its paraphrase to a different style, but the paraphrase version leaves it unchanged ($37.64$ against $35.73$, the point estimate moving the wrong way on a single run) and only the different-style prompt cuts it ($28.33$), which is what genre-level gaming of the easy tier predicts. \textbf{P-D3 passes}: the mixed version lands at $31.48$, strictly between the endpoints, so drawing eval golds from several prompts is a real but partial mitigation. The falsifier, the different-style lead at or above the exact-template lead, did not trigger. The sharpest cell was not registered: on the different-style version D3, the model trained under that same prompt, overtakes the recipe arm by $11.28$ points ($55.41$ against $44.13$), so which model tops the benchmark is decided by which prompt built the evaluation.
+
+\paragraph{The regeneration defence rerun with the benchmark's own vendor.}
+The first caveat above can be tested directly, by regenerating with the vendor itself. We sent the same $1{,}700$ queries under the same three prompts to gemini-3-flash-preview, the vendor's API model of that name at the time of writing (temperature $0.7$, thinking level \texttt{low}, one sample per query and prompt), and passed the candidates through the same Qwen3-32B-AWQ judge; it accepted $1{,}406$, $1{,}451$ and $1{,}422$ of about $1{,}698$ candidates under the exact, paraphrase and style prompts (against $1{,}614$, $1{,}652$ and $1{,}627$ of about $1{,}690$ for the Qwen rewrites), and $1{,}127$ queries passed under all three, $1{,}032$ of them also in the Qwen slice. Table~\ref{tab:defense-gemini} scores the same six checkpoints on that slice. The shape of the Gap column replicates: paraphrase at or above exact ($21.83$ against $19.61$, so P-D2 fails again), the different style lowest ($16.59$), the mixed version between the endpoints ($17.74$, as P-D3 predicts), and no version taking the lead to zero (P-D1). The level does not: every regenerated row collapses for every model. The untrained base scores $0.00$ at rank~$1$ on all four regenerated versions (against $10.69$ on the Qwen exact-template version) while still finding $22.80$ / $38.95$ of the exact-template golds at R@5 / R@10, and the verified arm and the recipe-free D4 sit between $0.44$ and $0.80$. The texts explain why. On the $1{,}032$ queries the two slices share, a gold from the vendor rerun shares $0.21$ of its word tokens with its query (Jaccard over lowercased letter and digit runs), against $0.44$ for the golds the benchmark shipped and $0.49$ for the Qwen rewrites (\texttt{results/defense\_gemini\_summary.json}). The shipped gold for a query asking for the number of distinct values of $\lfloor x\rfloor + \lfloor 2x\rfloor + \lfloor 5x/3\rfloor + \lfloor 3x\rfloor + \lfloor 4x\rfloor$ on $[0, 100]$ is that sentence with the function renamed and the wording changed; the vendor rerun's is ``Let $S = \{1, 2, \frac{5}{3}, 3, 4\}$. Determine the cardinality of the set $\{\sum_{c \in S} \lfloor cx \rfloor : x \in [0, 100]\}$.'' The same template, sent to the vendor's current model, returns a deeper rewrite than the benchmark's golds are, and whether the benchmark used another snapshot, no thinking or other sampling settings we cannot know, so this run does not hold the gold genre fixed and cannot isolate the vendor fingerprint as intended. What it does show is that the recipe arm's lead is not lexical overlap: on golds sharing a fifth of their tokens with the query, where the base, the verified arm and D4 find almost none at rank~$1$, the three recipe-family arms find between $10.56$ and $22.54$ of a hundred, and the arm trained with the exact template finds the most on the exact-template, paraphrase and mixed versions ($20.14$ against D2's $17.48$ and D3's $10.56$ on the exact one), an ordering by prompt distance that the Qwen run, where D2 led on every version, did not show; on the different-style version D2 edges D1 ($18.10$ against $17.21$) and D3 closes to $14.02$. These are single runs without intervals, like Table~\ref{tab:defense}.

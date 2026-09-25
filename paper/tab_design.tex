@@ -1,0 +1,25 @@
+% tab_design.tex: the terms table (tab:terms), input from sections/appendix_mechanism.tex beside the training-set grid tab:design (2026-09-06; the author replaced
+% the 2026-09-05 fig_design.tex figure with two tables and a summary paragraph in Section 3).
+% Table tab:terms: the five terms in plain words. Table tab:design: hard-tier R@1 / cross-language
+% strict R@1 per factorial cell from tab:factorial, tab:controlled and tab:dose-full
+% (results/factorial_2x2.json, ctrl_seed_stats.json, dose_seed_stats.json), with the named models
+% in italic; do not edit numbers here without re-deriving them.
+\begin{table}[t]
+\centering
+\caption{The five terms the paper relies on, and the reference model that Table~\ref{tab:controlled} compares against.}
+\label{tab:terms}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{@{}>{\itshape}l p{11.6cm}@{}}
+\toprule
+recipe & how a benchmark builds itself: the prompts and filters under which an LLM writes part of it \\
+template & the exact wording of that prompt \\
+genre & the style of LLM-written rewrites, whichever prompt produced them \\
+pair structure & a deep LLM rewrite as the positive against a minimal-edit near-miss as the negative \\
+surface & the part of a benchmark its LLM writes, the part an attacker can imitate: documents, summaries or evaluation pairs \\
+\midrule
+reference & the recipe-free comparison model: LLM restatements written under a prompt unrelated to the recipe (D4), paired with the verified arm's computer-algebra negatives; no benchmark prompt anywhere in its training file \\
+\bottomrule
+\end{tabular}
+\end{table}

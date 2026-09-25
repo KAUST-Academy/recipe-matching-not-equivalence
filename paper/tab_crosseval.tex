@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Who built the test decides who wins. Rows are training files; columns are test sets, grouped by who wrote the documents being retrieved; each cell is R@1. The verified arm wins only on the test that computer algebra built, as its own pairs were ($\dagger$: in-family, disclosed rather than read). The two arms trained on the recipe family's pairs take the first two places on every test an LLM built, and the D3 arm leads the recipe arm by most on the golds its own prompt wrote; the reference barely moves when the golds are rebuilt, so on the different-style golds it is level with the recipe arm ($44.00$ against $44.13$; Table~\ref{tab:defense}). On the near-miss probe the D3 arm outscores the recipe arm. The untrained base wins on duplicates no generator wrote. A better training file would win everywhere. Means over eight seeds for the two arms and the reference, three for the D3 arm, single seed-$42$ checkpoints in the two rebuilt-golds columns ($1{,}525$ queries). Sources: Tables~\ref{tab:controlled}, \ref{tab:dose-full}, \ref{tab:defense} and~\ref{tab:casprobe}.}
+\label{tab:crosseval}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.5cm}*{5}{>{\centering\arraybackslash}p{1.9cm}}@{}}
+\toprule
+& \multicolumn{3}{c}{Documents written by an LLM} & Computer algebra & Human authors \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}
+Trained on & Easy tier (Gemini, the benchmark's prompt) & Golds rebuilt by Qwen, the benchmark's prompt & Golds rebuilt by Qwen, a different-style prompt & Near-miss probe & Cross-language duplicates \\
+\midrule
+Untrained base & 8.32 & 10.69 & 3.28 & 10.84 & \textbf{84.73} \\
+Verified arm: computer-algebra pairs & 17.05 & 15.02 & 15.80 & \textbf{97.42}$^\dagger$ & 56.52 \\
+Recipe arm: benchmark's prompt, Qwen & 62.38 & \textbf{50.75} & 44.13 & 60.49 & 66.26 \\
+D3 arm: different-style prompt, Qwen & \textbf{67.88} & 50.56 & \textbf{55.41} & 68.50 & 65.39 \\
+Reference: unrelated prompt, verified negatives & 46.91 & 46.03 & 44.00 & 53.51 & 78.02 \\
+\bottomrule
+\end{tabular}
+\end{table}
