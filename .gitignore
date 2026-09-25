@@ -1,0 +1,46 @@
+# model checkpoints: only each run's audit record is kept (the job scripts retrain the weights)
+models/**
+!models/*/
+!models/*/run_config.json
+# the 4B verified arm's LoRA adapter fits GitHub's limits; D4 and V2 are on Hugging Face
+!models/ctrl-cas-6145-4b/final/
+!models/ctrl-cas-6145-4b/final/**
+# caches
+.hf_cache/
+.emb_cache/
+results/mirb_cache/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# regenerable data (the commands are in README.md and reproducibility.json)
+data/retrieve/
+data/pairs/*smoke*
+data/pairs/llm_pairs_mock.jsonl
+data/external/mirb/
+data/external/arqmath/
+data/mathnet_corpus.parquet
+data/smoke_pairs/
+data/defense_eval/*/
+data/defense_eval_gemini/*/
+data/saber_attack/pairs_doc_channel.jsonl
+results/ranks/*.ranks.jsonl
+*.npz
+*.joblib
+!results/style_scores_retrieve.npz
+!results/style_probe_model.joblib
+# scheduler logs (reproducibility.json records every job id)
+results/slurm_*.out
+results/slurm_*.err
+# LaTeX build output (main.bbl is kept: arXiv does not run BibTeX)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/main.pdf
+# third-party PDFs (re-fetch them from arXiv)
+papers/
+# credentials (never commit)
+.env
+.env.*
