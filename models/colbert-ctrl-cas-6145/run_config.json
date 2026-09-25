@@ -1,0 +1,44 @@
+{
+  "args": {
+    "train_file": "data/cas_pairs/pairs.jsonl",
+    "max_rows": 6145,
+    "seed": 42,
+    "output_dir": "models/colbert-ctrl-cas-6145",
+    "base": "colbert-ir/colbertv2.0",
+    "epochs": 3.0,
+    "lr": 1e-05,
+    "batch_size": 32,
+    "query_length": 256,
+    "document_length": 512,
+    "max_steps": -1,
+    "dev_frac": 0.05
+  },
+  "data_stats": {
+    "input_rows": 14361,
+    "rows_dropped_eval_anchor_overlap": 0,
+    "rows_dropped_crosslingual_eval_overlap": 614,
+    "rows_dropped_source_id_not_in_corpus": 0,
+    "rows_used": 6145,
+    "n_source_ids": 4621,
+    "n_dev_source_ids": 231,
+    "n_train_rows": 5837,
+    "n_dev_rows": 308,
+    "n_train_triplets": 8837,
+    "n_train_pairs": 1084,
+    "n_dev_triplets": 482,
+    "n_dev_pairs": 51,
+    "negatives_per_row_histogram": {
+      "0": 1135,
+      "1": 2023,
+      "2": 1902,
+      "3": 848,
+      "4": 237
+    }
+  },
+  "n_examples": 9921,
+  "global_step": 933,
+  "train_seconds": 176.4,
+  "base": "colbert-ir/colbertv2.0",
+  "loss": "pylate.Contrastive (MaxSim, in-batch + explicit negatives)",
+  "checkpoint_selection": "none (final model)"
+}
