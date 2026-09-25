@@ -1,0 +1,28 @@
+{
+  "generated": "2026-09-24",
+  "script": "scripts/saber_label_verdict.py",
+  "preregistered_in": "scripts/saber_label_attack.slurm header",
+  "why": "The first SABER attack trained on a seeded random draw of 6,145 rows of data/saber_attack/pairs.jsonl: 4,359 document-template rows and 1,786 summary rows (29.1%; see scripts/make_saber_channels.py). SABER's relevance rule is a Jaccard test over LLM-written core-idea summaries, so the label substrate is the surface that matters, and it had only been presented as a minority admixture. The channel arms isolate each surface.",
+  "reference_points": {
+    "base_noprompt": 0.5747,
+    "published_attack_noprompt": 0.5618,
+    "bar": 0.02,
+    "matched_budget": 4733
+  },
+  "arms": {
+    "label": {
+      "noprompt": 0.6101,
+      "queryprompt": 0.6166,
+      "realdup": 58.78
+    },
+    "doc": {
+      "noprompt": 0.5515,
+      "queryprompt": 0.5716,
+      "realdup": 10.69
+    }
+  },
+  "label_minus_base": 0.0354,
+  "doc_minus_base": -0.0232,
+  "label_minus_doc": 0.0586,
+  "verdict": "L1 THE LABEL SURFACE IS EXPOSED \u2014 the label arm scores 0.6101 against the base's 0.5747, clearing the +0.02 bar. SABER did not resist recipe-matching; it resisted an attack on the wrong surface. The taxonomy's 'organic corpora resist' cell is now EMPTY and the abstract, intro, discussion, conclusion and limitations must be rewritten: the claim narrows to 'a benchmark is exposed on whichever surface its construction procedure defines'."
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "n_unique_expressions": 50365,
+    "n_census_failures_rerun": 6743,
+    "workers": 8,
+    "timeout_s": 2.0,
+    "runtime_s": 25.9
+  },
+  "census_baseline": {
+    "pct_unique_parsed": 86.61,
+    "n_relational": 18447
+  },
+  "recovery": {
+    "recovered_relational": 2373,
+    "recovered_expression": 487,
+    "still_fail": 3883,
+    "pct_of_failures_recovered": 42.41
+  },
+  "after_normalizer": {
+    "pct_unique_parsed": 92.29,
+    "n_relational": 20820,
+    "census_prediction": "86.6% -> ~91.7%"
+  }
+}

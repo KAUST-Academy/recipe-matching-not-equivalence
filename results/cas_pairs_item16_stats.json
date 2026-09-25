@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "generated_by": "scripts/generate_cas_pairs.py",
+    "target": 0,
+    "workers": 8,
+    "per_problem_timeout_s": 120.0,
+    "seed": 0,
+    "soft_budget_s": 60.0,
+    "max_tried_spans": 32,
+    "source_ids_file": "data/pairs/item16_relational_pool.txt",
+    "n_source_ids_listed": 1131,
+    "wall_s": 560.9,
+    "throughput_problems_per_s": 0.43,
+    "out": "data/cas_pairs_item16/pairs.jsonl"
+  },
+  "eligibility": {
+    "n_corpus": 27817,
+    "n_eligible_census_relational_not_excluded": 1131,
+    "n_census_relational_but_anchor_excluded": 4666,
+    "n_attempted": 1131,
+    "per_domain_eligible": {
+      "Geometry": 654,
+      "Algebra": 297,
+      "Number Theory": 85,
+      "Discrete Mathematics": 80,
+      "Calculus": 7,
+      "Precalculus": 5,
+      "Statistics": 3
+    }
+  },
+  "outcomes": {
+    "problems_processed": 178,
+    "problems_timeout": 30,
+    "problems_crashed": 31,
+    "problems_no_relational_span": 892,
+    "problems_with_any_positive": 6,
+    "problems_with_any_negative": 5,
+    "positive_records_written": 9,
+    "unique_negatives_generated": 6,
+    "mean_worker_s": 2.34
+  },
+  "per_transform": {
+    "expand_lhs": {
+      "attempted": 1,
+      "verified": 0,
+      "success_rate": 0.0
+    },
+    "factor_lhs": {
+      "attempted": 7,
+      "verified": 0,
+      "success_rate": 0.0
+    },
+    "factor_rhs": {
+      "attempted": 2,
+      "verified": 0,
+      "success_rate": 0.0
+    },
+    "mirror": {
+      "attempted": 18,
+      "verified": 0,
+      "success_rate": 0.0
+    },
+    "move_all_terms": {
+      "attempted": 86,
+      "verified": 2,
+      "success_rate": 0.023
+    },
+    "move_term": {
+      "attempted": 16,
+      "verified": 2,
+      "success_rate": 0.125
+    },
+    "neg_constant": {
+      "attempted": 67,
+      "verified": 4,
+      "success_rate": 0.06
+    },
+    "neg_exponent": {
+      "attempted": 8,
+      "verified": 1,
+      "success_rate": 0.125
+    },
+    "neg_flip": {
+      "attempted": 18,
+      "verified": 0,
+      "success_rate": 0.0
+    },
+    "neg_opswap": {
+      "attempted": 20,
+      "verified": 1,
+      "success_rate": 0.05
+    },
+    "rename": {
+      "attempted": 178,
+      "verified": 5,
+      "success_rate": 0.028
+    },
+    "scale_div2": {
+      "attempted": 58,
+      "verified": 0,
+      "success_rate": 0.0
+    },
+    "scale_x2": {
+      "attempted": 42,
+      "verified": 0,
+      "success_rate": 0.0
+    }
+  },
+  "per_domain": {
+    "Geometry": {
+      "attempted": 635,
+      "with_positive": 1,
+      "records": 2,
+      "timeout": 2
+    },
+    "Algebra": {
+      "attempted": 272,
+      "with_positive": 3,
+      "records": 4,
+      "timeout": 18
+    },
+    "Discrete Mathematics": {
+      "attempted": 79,
+      "with_positive": 0,
+      "records": 0
+    },
+    "Number Theory": {
+      "attempted": 72,
+      "with_positive": 1,
+      "records": 2,
+      "timeout": 7
+    },
+    "Calculus": {
+      "attempted": 7,
+      "with_positive": 1,
+      "records": 1
+    },
+    "Statistics": {
+      "attempted": 3,
+      "with_positive": 0,
+      "records": 0
+    },
+    "Precalculus": {
+      "timeout": 3,
+      "attempted": 2,
+      "with_positive": 0,
+      "records": 0
+    }
+  },
+  "verification": {
+    "positives": "residual identity r_new == k*r_old at >=20 random complex points with exactly-known k, plus simplify(r_new - k*r_old) == 0 secondary check; renames verified by parse-back structural equality",
+    "negatives": "truth-value counterexample required (real-point disagreement for inequalities; on-solution-set residual violation for equalities); unverified negatives discarded"
+  }
+}

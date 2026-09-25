@@ -1,0 +1,53 @@
+{
+  "benchmark": "xlangai/BRIGHT / theoremqa_theorems (external, arXiv:2407.12883)",
+  "protocol": "official run.py + retrievers.py (github.com/xlang-ai/BRIGHT)",
+  "model": "models/qwen3-0.6b-cas-cmnrl/final",
+  "device": "cuda:0",
+  "n_corpus": 23839,
+  "n_queries": 76,
+  "subsampled": false,
+  "comparable_to_official": false,
+  "missing_gold_docs": 0,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "seed": 42,
+  "metrics": {
+    "MRR": 0.01452,
+    "NDCG@1": 0.0,
+    "MAP@1": 0.0,
+    "Recall@1": 0.0,
+    "P@1": 0.0,
+    "NDCG@5": 0.00509,
+    "MAP@5": 0.00329,
+    "Recall@5": 0.00658,
+    "P@5": 0.00263,
+    "NDCG@10": 0.00742,
+    "MAP@10": 0.00395,
+    "Recall@10": 0.01316,
+    "P@10": 0.00263,
+    "NDCG@25": 0.01663,
+    "MAP@25": 0.00612,
+    "Recall@25": 0.04715,
+    "P@25": 0.00316,
+    "NDCG@50": 0.02129,
+    "MAP@50": 0.00682,
+    "Recall@50": 0.06689,
+    "P@50": 0.00237,
+    "NDCG@100": 0.03326,
+    "MAP@100": 0.00771,
+    "Recall@100": 0.12688,
+    "P@100": 0.0025,
+    "n_queries_scored": 76,
+    "metrics_impl": "pytrec_eval"
+  },
+  "headline": {
+    "NDCG@10": 0.00742
+  },
+  "protocol_notes": [
+    "truncation at --max-seq-length applies to docs and queries (official used per-model doc_max_length up to 8192; ours is a documented deviation, consistent across our models)",
+    "excluded_ids removed from each query's candidates before ranking; top-1000 kept; metrics averaged over all queries"
+  ],
+  "runtime_seconds": 150.3
+}

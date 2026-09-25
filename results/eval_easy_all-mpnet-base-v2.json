@@ -1,0 +1,79 @@
+{
+  "benchmark": "ShadenA/MathNet-Retrieve",
+  "tier": "easy",
+  "model": "sentence-transformers/all-mpnet-base-v2",
+  "device": "cuda:0",
+  "n_corpus": 117088,
+  "n_queries_evaluated": 15000,
+  "corpus_subsampled": false,
+  "comparable_to_paper": true,
+  "query_prompt_name": null,
+  "seed": 42,
+  "overall": {
+    "recall@1": 6.75,
+    "recall@5": 82.47,
+    "recall@10": 91.07
+  },
+  "per_domain": {
+    "Algebra": {
+      "n_queries": 2959,
+      "recall@1": 5.61,
+      "recall@5": 76.11,
+      "recall@10": 86.01
+    },
+    "Number Theory": {
+      "n_queries": 2221,
+      "recall@1": 7.25,
+      "recall@5": 81.81,
+      "recall@10": 91.85
+    },
+    "Discrete Mathematics": {
+      "n_queries": 1900,
+      "recall@1": 6.42,
+      "recall@5": 89.95,
+      "recall@10": 96.47
+    },
+    "Geometry": {
+      "n_queries": 1565,
+      "recall@1": 9.65,
+      "recall@5": 82.94,
+      "recall@10": 90.22
+    },
+    "Calculus": {
+      "n_queries": 48,
+      "recall@1": 10.42,
+      "recall@5": 91.67,
+      "recall@10": 95.83
+    },
+    "Precalculus": {
+      "n_queries": 35,
+      "recall@1": 5.71,
+      "recall@5": 94.29,
+      "recall@10": 100.0
+    },
+    "Statistics": {
+      "n_queries": 22,
+      "recall@1": 9.09,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "Math Word Problems": {
+      "n_queries": 11,
+      "recall@1": 27.27,
+      "recall@5": 81.82,
+      "recall@10": 100.0
+    }
+  },
+  "per_domain_coverage": "8761/15000 queries have a derivable math domain (exact-match anchors only)",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 14993,
+    "mean_positive_sim": 0.8348,
+    "mean_hard_negative_sim": 0.921,
+    "mean_gap_pos_minus_meanneg": -0.0862,
+    "mean_gap_pos_minus_maxneg": -0.1226,
+    "pct_pos_above_all_hard_negs": 8.55,
+    "std_positive_sim": 0.0903,
+    "std_hard_negative_sim": 0.0644
+  },
+  "runtime_seconds": 424.2
+}

@@ -1,0 +1,12 @@
+{
+  "survivor_rows": 4101,
+  "new_rows_available": 3783,
+  "new_rows_used": 2044,
+  "total_rows": 6145,
+  "sources": 4101,
+  "sources_with_two_rows": 2044,
+  "new_rows_identical_to_first_rewrite": 22,
+  "total_negatives": 16014,
+  "negs_per_row": 2.606,
+  "cleanfull_negs_per_row": 2.622
+}

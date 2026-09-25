@@ -1,0 +1,431 @@
+{
+  "description": "recipe-fingerprint n-grams: top logistic-regression features separating Appendix-F LLM rewrites (synthetic) from organic problems; pair-matched training data (anchor_text vs candidate_text)",
+  "holdout_auc_grouped": 0.8802,
+  "n_train_synthetic": 6414,
+  "n_train_organic": 6414,
+  "train_synthetic": "positives",
+  "strip_artifacts": true,
+  "artifact_audit": {
+    "note": "fraction of texts carrying each audited format artifact, BEFORE stripping (review finding H1)",
+    "organic_anchors": {
+      "problem_header_leading": 0.6388,
+      "problem_header_any_line": 0.6388,
+      "attached_image_placeholder": 0.0401,
+      "proposed_by_attribution_NOT_stripped": 0.0072
+    },
+    "llm_rewrites": {
+      "problem_header_leading": 0.0002,
+      "problem_header_any_line": 0.0002,
+      "attached_image_placeholder": 0.0016,
+      "proposed_by_attribution_NOT_stripped": 0.0
+    }
+  },
+  "dose_panel": {
+    "negatives": "held-out organic anchors (n=1282, 20% source split, never in probe training)",
+    "detector": "group-split holdout detector (strip_artifacts=True)",
+    "rungs": {
+      "D1_appendixF": {
+        "auc_heldout_sources_vs_heldout_anchors": 0.8802,
+        "n_pos_heldout_sources": 1282,
+        "auc_all_positives_vs_heldout_anchors": 0.9067,
+        "n_pos_all": 6414,
+        "mean_score_all_positives": 0.8092,
+        "mean_score_heldout_sources": 0.7344
+      },
+      "D2_paraphrase": {
+        "auc_heldout_sources_vs_heldout_anchors": 0.8756,
+        "n_pos_heldout_sources": 1249,
+        "auc_all_positives_vs_heldout_anchors": 0.8816,
+        "n_pos_all": 6744,
+        "mean_score_all_positives": 0.6972,
+        "mean_score_heldout_sources": 0.6993
+      },
+      "D3_style": {
+        "auc_heldout_sources_vs_heldout_anchors": 0.8654,
+        "n_pos_heldout_sources": 1096,
+        "auc_all_positives_vs_heldout_anchors": 0.869,
+        "n_pos_all": 5823,
+        "mean_score_all_positives": 0.6769,
+        "mean_score_heldout_sources": 0.6792
+      },
+      "D4_unrelated": {
+        "auc_heldout_sources_vs_heldout_anchors": 0.6758,
+        "n_pos_heldout_sources": 1265,
+        "auc_all_positives_vs_heldout_anchors": 0.6778,
+        "n_pos_all": 6857,
+        "mean_score_all_positives": -0.1781,
+        "mean_score_heldout_sources": -0.1746
+      }
+    },
+    "recipe_increment_vs_d1": {
+      "D2_paraphrase": 0.0046,
+      "D3_style": 0.0148,
+      "D4_unrelated": 0.2044
+    },
+    "interpretation": "every rung -- including D4, whose prompt never mentions the recipe -- is detected far above chance, so the probe fires on LLM-rewrite GENRE; the D1-minus-rung gaps are the recipe increment on top of that genre floor",
+    "bootstrap": {
+      "method": "2000 replicates, resampling the held-out source ids with replacement (clusters organic negatives with each rung's positives); percentile 95% CIs",
+      "auc_ci95": {
+        "D1_appendixF": [
+          0.8679,
+          0.8917
+        ],
+        "D2_paraphrase": [
+          0.8624,
+          0.8873
+        ],
+        "D3_style": [
+          0.852,
+          0.8788
+        ],
+        "D4_unrelated": [
+          0.6569,
+          0.6948
+        ]
+      },
+      "D1_appendixF_minus_rung_ci95": {
+        "D2_paraphrase": [
+          -0.0062,
+          0.0156
+        ],
+        "D3_style": [
+          0.002,
+          0.0274
+        ],
+        "D4_unrelated": [
+          0.1864,
+          0.2216
+        ]
+      },
+      "D1_appendixF_minus_rung_pct_replicates_positive": {
+        "D2_paraphrase": 79.6,
+        "D3_style": 99.1,
+        "D4_unrelated": 100.0
+      }
+    }
+  },
+  "top_synthetic_ngrams": [
+    {
+      "ngram": "text",
+      "coef": 6.2066
+    },
+    {
+      "ngram": "determine",
+      "coef": 6.0855
+    },
+    {
+      "ngram": "with",
+      "coef": 5.6007
+    },
+    {
+      "ngram": "let",
+      "coef": 4.5537
+    },
+    {
+      "ngram": "define",
+      "coef": 4.4691
+    },
+    {
+      "ngram": "let triangle",
+      "coef": 3.8317
+    },
+    {
+      "ngram": "determine the",
+      "coef": 3.8035
+    },
+    {
+      "ngram": "where",
+      "coef": 3.5407
+    },
+    {
+      "ngram": "suppose",
+      "coef": 2.7431
+    },
+    {
+      "ngram": "as the",
+      "coef": 2.6281
+    },
+    {
+      "ngram": "total",
+      "coef": 2.5657
+    },
+    {
+      "ngram": "b_",
+      "coef": 2.4885
+    },
+    {
+      "ngram": "con",
+      "coef": 2.4215
+    },
+    {
+      "ngram": "show",
+      "coef": 2.4168
+    },
+    {
+      "ngram": "show that",
+      "coef": 2.4021
+    },
+    {
+      "ngram": "sum_",
+      "coef": 2.3896
+    },
+    {
+      "ngram": "abc have",
+      "coef": 2.3177
+    },
+    {
+      "ngram": "avec",
+      "coef": 2.2635
+    },
+    {
+      "ngram": "satisfying",
+      "coef": 2.2622
+    },
+    {
+      "ngram": "lie",
+      "coef": 2.2282
+    },
+    {
+      "ngram": "distinct",
+      "coef": 2.132
+    },
+    {
+      "ngram": "lie on",
+      "coef": 2.0789
+    },
+    {
+      "ngram": "real values",
+      "coef": 2.0761
+    },
+    {
+      "ngram": "démontrer",
+      "coef": 2.0273
+    },
+    {
+      "ngram": "določi",
+      "coef": 1.9797
+    },
+    {
+      "ngram": "intersecting",
+      "coef": 1.9266
+    },
+    {
+      "ngram": "déterminer",
+      "coef": 1.9007
+    },
+    {
+      "ngram": "determine all",
+      "coef": 1.8871
+    },
+    {
+      "ngram": "if the",
+      "coef": 1.8818
+    },
+    {
+      "ngram": "text let",
+      "coef": 1.8666
+    },
+    {
+      "ngram": "the total",
+      "coef": 1.8613
+    },
+    {
+      "ngram": "dado",
+      "coef": 1.8571
+    },
+    {
+      "ngram": "all",
+      "coef": 1.816
+    },
+    {
+      "ngram": "such",
+      "coef": 1.7985
+    },
+    {
+      "ngram": "prod_",
+      "coef": 1.7815
+    },
+    {
+      "ngram": "triangle abc",
+      "coef": 1.7626
+    },
+    {
+      "ngram": "of triangle",
+      "coef": 1.7516
+    },
+    {
+      "ngram": "and define",
+      "coef": 1.7431
+    },
+    {
+      "ngram": "let lie",
+      "coef": 1.699
+    },
+    {
+      "ngram": "grid",
+      "coef": 1.6944
+    }
+  ],
+  "top_organic_ngrams": [
+    {
+      "ngram": "we",
+      "coef": -4.5619
+    },
+    {
+      "ngram": "of the",
+      "coef": -3.2629
+    },
+    {
+      "ngram": "then",
+      "coef": -3.0948
+    },
+    {
+      "ngram": "suppose that",
+      "coef": -3.0773
+    },
+    {
+      "ngram": "are",
+      "coef": -3.0664
+    },
+    {
+      "ngram": "so that",
+      "coef": -2.9769
+    },
+    {
+      "ngram": "be triangle",
+      "coef": -2.8147
+    },
+    {
+      "ngram": "find",
+      "coef": -2.7325
+    },
+    {
+      "ngram": "numbers",
+      "coef": -2.5527
+    },
+    {
+      "ngram": "different",
+      "coef": -2.4249
+    },
+    {
+      "ngram": "so",
+      "coef": -2.3719
+    },
+    {
+      "ngram": "which",
+      "coef": -2.3075
+    },
+    {
+      "ngram": "the point",
+      "coef": -2.224
+    },
+    {
+      "ngram": "the triangle",
+      "coef": -2.1915
+    },
+    {
+      "ngram": "has",
+      "coef": -2.1722
+    },
+    {
+      "ngram": "at the",
+      "coef": -2.1165
+    },
+    {
+      "ngram": "what",
+      "coef": -2.1052
+    },
+    {
+      "ngram": "on the",
+      "coef": -2.0581
+    },
+    {
+      "ngram": "a_",
+      "coef": -1.883
+    },
+    {
+      "ngram": "by",
+      "coef": -1.8799
+    },
+    {
+      "ngram": "of integers",
+      "coef": -1.8763
+    },
+    {
+      "ngram": "prove",
+      "coef": -1.8681
+    },
+    {
+      "ngram": "şi",
+      "coef": -1.8545
+    },
+    {
+      "ngram": "pairs of",
+      "coef": -1.8514
+    },
+    {
+      "ngram": "the side",
+      "coef": -1.8328
+    },
+    {
+      "ngram": "man",
+      "coef": -1.7989
+    },
+    {
+      "ngram": "se",
+      "coef": -1.7921
+    },
+    {
+      "ngram": "here",
+      "coef": -1.752
+    },
+    {
+      "ngram": "denote",
+      "coef": -1.7331
+    },
+    {
+      "ngram": "following",
+      "coef": -1.7185
+    },
+    {
+      "ngram": "let abc",
+      "coef": -1.7034
+    },
+    {
+      "ngram": "and are",
+      "coef": -1.7009
+    },
+    {
+      "ngram": "beweise",
+      "coef": -1.6971
+    },
+    {
+      "ngram": "meets",
+      "coef": -1.6927
+    },
+    {
+      "ngram": "respectively",
+      "coef": -1.6793
+    },
+    {
+      "ngram": "the numbers",
+      "coef": -1.6688
+    },
+    {
+      "ngram": "what is",
+      "coef": -1.6181
+    },
+    {
+      "ngram": "cdots",
+      "coef": -1.5997
+    },
+    {
+      "ngram": "denote by",
+      "coef": -1.5754
+    },
+    {
+      "ngram": "dots",
+      "coef": -1.5659
+    }
+  ]
+}

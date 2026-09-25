@@ -1,0 +1,38 @@
+{
+  "benchmark": "/ibex/user/habiam0b/MathNet_Follow_Up/data/crosslingual_eval",
+  "tier": "crosslingual_eval",
+  "model": "Raderspace/RaDeR_Qwen25-7B_NuminaMath_MATH_allquerytypes",
+  "device": "cuda:0",
+  "n_corpus": 27817,
+  "n_queries_evaluated": 393,
+  "corpus_subsampled": false,
+  "comparable_to_paper": true,
+  "query_prompt_name": null,
+  "query_prompt": "query: Given a Math problem, retrieve relevant examples that help answer the problem\n",
+  "doc_prompt_name": null,
+  "doc_prompt": "document: ",
+  "pooling": "lasttoken",
+  "append_eos": true,
+  "trust_remote_code": false,
+  "model_dtype": "bfloat16",
+  "max_seq_length": 2048,
+  "seed": 42,
+  "overall": {
+    "recall@1": 0.25,
+    "recall@5": 95.93,
+    "recall@10": 96.44
+  },
+  "per_domain": {},
+  "per_domain_coverage": "unavailable",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 0,
+    "mean_positive_sim": null,
+    "mean_hard_negative_sim": null,
+    "mean_gap_pos_minus_meanneg": null,
+    "mean_gap_pos_minus_maxneg": null,
+    "pct_pos_above_all_hard_negs": null,
+    "std_positive_sim": null,
+    "std_hard_negative_sim": null
+  },
+  "runtime_seconds": 354.9
+}

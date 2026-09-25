@@ -1,0 +1,58 @@
+{
+  "date": "2026-07-30",
+  "purpose": "honest power limit for the MELD recipe-matching attack; computed from OFF-THE-SHELF encoders only -- no attacked model is trained, evaluated or referenced here",
+  "benchmark_size": {
+    "n_pairs": 270,
+    "n_pairs_only_queries": 540,
+    "n_distractors": 541,
+    "resampling_unit": "pair (the two queries of a pair are not independent)"
+  },
+  "reference_models": [
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "sentence-transformers/all-mpnet-base-v2"
+  ],
+  "observed_recall@1": {
+    "sentence-transformers/all-MiniLM-L6-v2": 9.81,
+    "sentence-transformers/all-mpnet-base-v2": 12.22
+  },
+  "bootstrap": {
+    "n_resamples": 10000,
+    "seed": 0
+  },
+  "se_recall@1_single_model_cluster_bootstrap": 1.606,
+  "se_recall@1_single_model_iid_naive": 1.28,
+  "se_recall@1_paired_difference": 1.267,
+  "n_discordant_queries": 41,
+  "mde_recall@1_80pct_power_alpha05": 3.55,
+  "mde_recall@1_2se_rule": 2.53,
+  "clustering_inflation_vs_mcnemar": 1.069,
+  "mde_recall@1_by_discordance": {
+    "50": {
+      "se_paired_diff": 1.4,
+      "mde_80pct": 3.92
+    },
+    "100": {
+      "se_paired_diff": 1.98,
+      "mde_80pct": 5.55
+    },
+    "200": {
+      "se_paired_diff": 2.8,
+      "mde_80pct": 7.84
+    },
+    "300": {
+      "se_paired_diff": 3.43,
+      "mde_80pct": 9.61
+    },
+    "400": {
+      "se_paired_diff": 3.96,
+      "mde_80pct": 11.09
+    },
+    "540": {
+      "se_paired_diff": 4.6,
+      "mde_80pct": 12.89
+    }
+  },
+  "discordance_upper_bound_rule": "d <= n_queries * (R@1_treatment + R@1_reference) / 100, because queries both models miss are concordant. At the R@1 levels MELD actually shows (base 10.19, ctrl-llm 18.89, best published 28.9) any realistic pair caps out near d ~ 200-300, i.e. an MDE of 7.8-9.6 points -- which is the row the pre-registered threshold must clear, not the d=540 row (unreachable: it would need the two models to disagree on every single query).",
+  "interpretation": "MELD admits ~540 clustered queries. Differences smaller than the MDE above are NOT detectable on this benchmark at any budget we can spend, so a null outcome below that threshold is 'no evidence', never 'evidence of resistance'. The reference SE here comes from two encoders that disagree on only 41/540 queries; an attacked model disagrees with base on many more, so read mde_recall@1_by_discordance at the discordance the run actually shows (that exact number comes out of --stage compare on the per-query dumps). The pre-registered thresholds in scripts/attack_second_benchmark.slurm are set above the worst-case row of that table on purpose.",
+  "runtime_s": 58.6
+}

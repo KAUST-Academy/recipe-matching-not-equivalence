@@ -1,0 +1,53 @@
+{
+  "benchmark": "xlangai/BRIGHT / theoremqa_theorems (external, arXiv:2407.12883)",
+  "protocol": "official run.py + retrievers.py (github.com/xlang-ai/BRIGHT)",
+  "model": "models/qwen3-0.6b-p2-instr/final",
+  "device": "cuda:0",
+  "n_corpus": 23839,
+  "n_queries": 76,
+  "subsampled": false,
+  "comparable_to_official": false,
+  "missing_gold_docs": 0,
+  "query_prompt_name": null,
+  "query_prompt": "Instruct: Given a math problem, retrieve problems that are mathematically equivalent to it.\nQuery:",
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "seed": 42,
+  "metrics": {
+    "MRR": 0.15326,
+    "NDCG@1": 0.07895,
+    "MAP@1": 0.04386,
+    "Recall@1": 0.04386,
+    "P@1": 0.07895,
+    "NDCG@5": 0.11492,
+    "MAP@5": 0.09298,
+    "Recall@5": 0.14474,
+    "P@5": 0.05526,
+    "NDCG@10": 0.15256,
+    "MAP@10": 0.10794,
+    "Recall@10": 0.24781,
+    "P@10": 0.04474,
+    "NDCG@25": 0.17796,
+    "MAP@25": 0.11617,
+    "Recall@25": 0.33224,
+    "P@25": 0.02421,
+    "NDCG@50": 0.19634,
+    "MAP@50": 0.11955,
+    "Recall@50": 0.41447,
+    "P@50": 0.015,
+    "NDCG@100": 0.2011,
+    "MAP@100": 0.12006,
+    "Recall@100": 0.4339,
+    "P@100": 0.00816,
+    "n_queries_scored": 76,
+    "metrics_impl": "pytrec_eval"
+  },
+  "headline": {
+    "NDCG@10": 0.15256
+  },
+  "protocol_notes": [
+    "truncation at --max-seq-length applies to docs and queries (official used per-model doc_max_length up to 8192; ours is a documented deviation, consistent across our models)",
+    "excluded_ids removed from each query's candidates before ranking; top-1000 kept; metrics averaged over all queries"
+  ],
+  "runtime_seconds": 149.6
+}

@@ -1,0 +1,93 @@
+{
+  "audit": "recipe-sensitivity audit -- per-query hit accounting",
+  "tier": "hard",
+  "model_a": "ctrl-llm-6145",
+  "model_b": "ctrl-cas-6145",
+  "n_queries": 15000,
+  "rank_hist_a": {
+    "top1": 1405,
+    "top5": 8559,
+    "top10": 10520,
+    "beyond10": 4480,
+    "recall@1": 9.37,
+    "recall@5": 57.06,
+    "recall@10": 70.13
+  },
+  "rank_hist_b": {
+    "top1": 19,
+    "top5": 1438,
+    "top10": 3973,
+    "beyond10": 11027,
+    "recall@1": 0.13,
+    "recall@5": 9.59,
+    "recall@10": 26.49
+  },
+  "top1_contingency": {
+    "A_top1_and_B_top1": 4,
+    "A_top1_only": 1401,
+    "B_top1_only": 15,
+    "neither_top1": 13580
+  },
+  "hit_set_definition": "ctrl-llm-6145 gold_rank==0 AND ctrl-cas-6145 gold_rank>0",
+  "n_recipe_hits": 1401,
+  "template_phrase_source": "results/style_probe_features.json",
+  "n_template_phrases": 40,
+  "hit_vs_rest": [
+    {
+      "stat": "token_jaccard",
+      "n_hit": 1401,
+      "n_rest": 13599,
+      "hit_mean": 0.2144,
+      "hit_median": 0.2154,
+      "rest_mean": 0.1743,
+      "rest_median": 0.1754,
+      "auc_hit_vs_rest": 0.6394,
+      "mannwhitney_p": 2.5e-66
+    },
+    {
+      "stat": "latex_jaccard",
+      "n_hit": 1325,
+      "n_rest": 13148,
+      "hit_mean": 0.2257,
+      "hit_median": 0.125,
+      "rest_mean": 0.1633,
+      "rest_median": 0.0833,
+      "auc_hit_vs_rest": 0.5573,
+      "mannwhitney_p": 5.11e-13
+    },
+    {
+      "stat": "len_ratio_gold_over_query",
+      "n_hit": 1401,
+      "n_rest": 13599,
+      "hit_mean": 2.0441,
+      "hit_median": 1.8528,
+      "rest_mean": 2.1512,
+      "rest_median": 1.9213,
+      "auc_hit_vs_rest": 0.4809,
+      "mannwhitney_p": 0.0183
+    },
+    {
+      "stat": "template_hits_per_100w",
+      "n_hit": 1401,
+      "n_rest": 13599,
+      "hit_mean": 8.368,
+      "hit_median": 8.046,
+      "rest_mean": 8.2434,
+      "rest_median": 7.8947,
+      "auc_hit_vs_rest": 0.5093,
+      "mannwhitney_p": 0.252
+    },
+    {
+      "stat": "gold_style_score",
+      "n_hit": 1401,
+      "n_rest": 13599,
+      "hit_mean": 0.4341,
+      "hit_median": 0.4348,
+      "rest_mean": 0.4056,
+      "rest_median": 0.4025,
+      "auc_hit_vs_rest": 0.5112,
+      "mannwhitney_p": 0.167
+    }
+  ],
+  "per_query_out": "results/analyze_hits_perquery_hard.jsonl"
+}

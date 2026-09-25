@@ -1,0 +1,77 @@
+{
+  "generated": "2026-07-31",
+  "script": "scripts/impliret_calibration.py",
+  "benchmark": "ImpliRet (arXiv:2506.14407)",
+  "rule_fixed_before_running": "CALIBRATED iff every comparable category is within 2.0 nDCG@10 of their reported ReasonIR value; otherwise our numbers are internal-only. Written before the comparison, because round-2 finding C2 was exactly this mistake on MELD.",
+  "their_table2_reasonir": {
+    "wknow": 18.88,
+    "arithmetic": 10.78,
+    "temporal": 11.25,
+    "avg": 13.64
+  },
+  "their_best": {
+    "model": "Dragon+",
+    "avg": 14.91
+  },
+  "calibration": {
+    "ours": {
+      "wknow": 26.93,
+      "arithmetic": 14.1,
+      "temporal": 17.3,
+      "avg": 19.44
+    },
+    "theirs": {
+      "wknow": 18.88,
+      "arithmetic": 10.78,
+      "temporal": 11.25,
+      "avg": 13.64
+    },
+    "diff": {
+      "wknow": 8.05,
+      "arithmetic": 3.32,
+      "temporal": 6.05,
+      "avg": 5.8
+    },
+    "tolerance": 2.0,
+    "max_abs_diff": 8.05
+  },
+  "verdict": "UNCALIBRATED \u2014 our ReasonIR rows differ from their Table 2 by up to 8.05 nDCG@10, beyond the 2.0-point tolerance. ImpliRet numbers are comparable ACROSS OUR OWN MODELS ONLY and the paper must say so, exactly as it does for BRIGHT and MELD. Do NOT claim anything against their published table.",
+  "our_models_ndcg10_by_category": {
+    "base": {
+      "wknow": 17.57,
+      "arithmetic": 15.04,
+      "temporal": 15.46,
+      "avg": 16.02
+    },
+    "base_noprompt": {
+      "wknow": 16.99,
+      "arithmetic": 15.03,
+      "temporal": 15.06,
+      "avg": 15.69
+    },
+    "ctrl_llm": {
+      "wknow": 10.15,
+      "arithmetic": 8.09,
+      "temporal": 9.45,
+      "avg": 9.23
+    },
+    "ctrl_cas": {
+      "wknow": 15.01,
+      "arithmetic": 10.19,
+      "temporal": 14.23,
+      "avg": 13.14
+    },
+    "mpnet": {
+      "wknow": 15.42,
+      "arithmetic": 12.25,
+      "temporal": 10.65,
+      "avg": 12.77
+    },
+    "reasonir-8b": {
+      "wknow": 26.93,
+      "arithmetic": 14.1,
+      "temporal": 17.3,
+      "avg": 19.44
+    }
+  }
+}

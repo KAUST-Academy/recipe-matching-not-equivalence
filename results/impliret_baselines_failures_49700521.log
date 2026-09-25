@@ -1,0 +1,5 @@
+FAILED: python scripts/eval_impliret.py --model sentence-transformers/all-mpnet-base-v2 --device cuda --model-dtype bfloat16 --max-seq-length 1024 --batch-size 64 --output results/impliret_mpnet.json --per-query-out results/impliret_pq_mpnet.json
+FAILED: python scripts/eval_impliret.py --model reasonir/ReasonIR-8B --device cuda --model-dtype bfloat16 --max-seq-length 2048 --batch-size 8 --trust-remote-code --query-prompt <|user|>
+Given a question, retrieve relevant passages that answer the question
+<|embed|>
+ --output results/impliret_reasonir-8b.json --per-query-out results/impliret_pq_reasonir-8b.json

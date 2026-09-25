@@ -1,0 +1,85 @@
+{
+  "generated_by": "scripts/item16_census.py",
+  "needed_rows": 2044,
+  "census": {
+    "corpus": 27817,
+    "relational": 13678,
+    "pool": 7585,
+    "pool_relational": 1131,
+    "used": 2044,
+    "used_relational": 289,
+    "generated": 2602,
+    "generated_relational": 345,
+    "used_subset_of_generated": true,
+    "generated_subset_of_pool": true
+  },
+  "full_cas_run": {
+    "eligible_recomputed": 9012,
+    "eligible_in_stats": 9012,
+    "attempted_in_stats": 9012,
+    "sources_with_positive": 7397,
+    "pool_relational_all_eligible": true,
+    "pool_relational_with_cas_row": 0,
+    "used_with_cas_row": 0,
+    "generated_with_cas_row": 0,
+    "pool_relational_per_source_rows_in_verified_pool": 1.941
+  },
+  "rerun": {
+    "meta": {
+      "generated_by": "scripts/generate_cas_pairs.py",
+      "target": 0,
+      "workers": 8,
+      "per_problem_timeout_s": 120.0,
+      "seed": 0,
+      "soft_budget_s": 60.0,
+      "max_tried_spans": 32,
+      "source_ids_file": "data/pairs/item16_relational_pool.txt",
+      "n_source_ids_listed": 1131,
+      "wall_s": 560.9,
+      "throughput_problems_per_s": 0.43,
+      "out": "data/cas_pairs_item16/pairs.jsonl"
+    },
+    "outcomes": {
+      "problems_processed": 178,
+      "problems_timeout": 30,
+      "problems_crashed": 31,
+      "problems_no_relational_span": 892,
+      "problems_with_any_positive": 6,
+      "problems_with_any_negative": 5,
+      "positive_records_written": 9,
+      "unique_negatives_generated": 6,
+      "mean_worker_s": 2.34
+    },
+    "rows_written": 9,
+    "sources_with_positive": 6,
+    "rows_per_yielding_source": 1.5,
+    "transform_families": {
+      "reformulate": 4,
+      "rename": 5
+    },
+    "all_rows_from_listed_pool": true,
+    "yield": {
+      "pool_relational": {
+        "sources": 1131,
+        "sources_with_positive": 6,
+        "rows": 9,
+        "rows_over_needed": 0.0044,
+        "sources_with_positive_pct": 0.53
+      },
+      "used_2044": {
+        "sources": 289,
+        "sources_with_positive": 0,
+        "rows": 0,
+        "rows_over_needed": 0.0,
+        "sources_with_positive_pct": 0.0
+      },
+      "generated_2602": {
+        "sources": 345,
+        "sources_with_positive": 0,
+        "rows": 0,
+        "rows_over_needed": 0.0,
+        "sources_with_positive_pct": 0.0
+      }
+    }
+  }
+}

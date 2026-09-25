@@ -1,0 +1,38 @@
+{
+  "benchmark": "ShadenA/MathNet-Retrieve",
+  "tier": "hard",
+  "model": "Raderspace/RaDeR_gte_Qwen2-7B_MATH_LLMq_CoT_lexical",
+  "device": "cuda:0",
+  "n_corpus": 117088,
+  "n_queries_evaluated": 15000,
+  "corpus_subsampled": false,
+  "comparable_to_paper": true,
+  "query_prompt_name": null,
+  "query_prompt": "query: Given a Math problem, retrieve relevant examples that help answer the problem\n",
+  "doc_prompt_name": null,
+  "doc_prompt": "document: ",
+  "pooling": "lasttoken",
+  "append_eos": true,
+  "trust_remote_code": true,
+  "model_dtype": "bfloat16",
+  "max_seq_length": 2048,
+  "seed": 42,
+  "overall": {
+    "recall@1": 0.01,
+    "recall@5": 8.63,
+    "recall@10": 34.63
+  },
+  "per_domain": {},
+  "per_domain_coverage": "unavailable",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 14993,
+    "mean_positive_sim": 0.7999,
+    "mean_hard_negative_sim": 0.907,
+    "mean_gap_pos_minus_meanneg": -0.1071,
+    "mean_gap_pos_minus_maxneg": -0.123,
+    "pct_pos_above_all_hard_negs": 0.77,
+    "std_positive_sim": 0.0474,
+    "std_hard_negative_sim": 0.0304
+  },
+  "runtime_seconds": 1550.2
+}

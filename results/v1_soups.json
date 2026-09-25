@@ -1,0 +1,236 @@
+{
+  "V1 soup a=0.3": {
+    "tag": "v1soup-a0.3",
+    "tiers": {
+      "easy": [
+        11.18,
+        88.02,
+        94.86
+      ],
+      "medium": [
+        2.06,
+        64.43,
+        79.37
+      ],
+      "hard": [
+        0.0,
+        5.07,
+        23.42
+      ]
+    },
+    "xling_strict": [
+      86.77,
+      96.18,
+      96.95
+    ],
+    "samelang_primary_r1": 63.2
+  },
+  "V1 soup a=0.5": {
+    "tag": "v1soup-a0.5",
+    "tiers": {
+      "easy": [
+        13.7,
+        91.73,
+        96.82
+      ],
+      "medium": [
+        2.19,
+        66.12,
+        80.79
+      ],
+      "hard": [
+        0.01,
+        5.75,
+        26.81
+      ]
+    },
+    "xling_strict": [
+      83.97,
+      95.67,
+      96.69
+    ],
+    "samelang_primary_r1": 63.2
+  },
+  "V1 soup a=0.7": {
+    "tag": "v1soup-a0.7",
+    "tiers": {
+      "easy": [
+        16.63,
+        93.37,
+        97.45
+      ],
+      "medium": [
+        2.49,
+        66.27,
+        81.09
+      ],
+      "hard": [
+        0.01,
+        6.35,
+        29.65
+      ]
+    },
+    "xling_strict": [
+      78.37,
+      91.09,
+      95.17
+    ],
+    "samelang_primary_r1": 63.2
+  },
+  "V1 (a=1)": {
+    "tag": "qwen3-0.6b-p2-mixed",
+    "tiers": {
+      "easy": [
+        20.83,
+        91.96,
+        96.71
+      ],
+      "medium": [
+        3.67,
+        63.57,
+        78.8
+      ],
+      "hard": [
+        0.03,
+        7.67,
+        30.01
+      ]
+    },
+    "xling_strict": [
+      59.8,
+      83.21,
+      90.84
+    ],
+    "samelang_primary_r1": 60.8
+  },
+  "verified-arm soup a=0.3": {
+    "tag": "soup-a0.3",
+    "tiers": {
+      "easy": [
+        13.55,
+        93.57,
+        97.93
+      ],
+      "medium": [
+        1.59,
+        59.93,
+        76.35
+      ],
+      "hard": [
+        0.01,
+        4.8,
+        23.13
+      ]
+    },
+    "xling_strict": [
+      80.15,
+      92.37,
+      94.66
+    ],
+    "samelang_primary_r1": 63.2
+  },
+  "verified-arm soup a=0.5": {
+    "tag": "soup-a0.5",
+    "tiers": {
+      "easy": [
+        15.77,
+        93.42,
+        97.68
+      ],
+      "medium": [
+        1.77,
+        57.3,
+        74.17
+      ],
+      "hard": [
+        0.01,
+        6.28,
+        27.51
+      ]
+    },
+    "xling_strict": [
+      73.54,
+      89.06,
+      93.64
+    ],
+    "samelang_primary_r1": 57.6
+  },
+  "verified-arm soup a=0.7": {
+    "tag": "soup-a0.7",
+    "tiers": {
+      "easy": [
+        16.41,
+        90.44,
+        96.04
+      ],
+      "medium": [
+        2.33,
+        52.23,
+        69.83
+      ],
+      "hard": [
+        0.01,
+        7.54,
+        28.14
+      ]
+    },
+    "xling_strict": [
+      62.34,
+      84.99,
+      88.8
+    ],
+    "samelang_primary_r1": 55.2
+  },
+  "uncapped verified arm (a=1)": {
+    "tag": "qwen3-0.6b-cas-cmnrl",
+    "tiers": {
+      "easy": [
+        15.92,
+        78.18,
+        87.21
+      ],
+      "medium": [
+        3.86,
+        40.8,
+        55.92
+      ],
+      "hard": [
+        0.16,
+        6.59,
+        19.47
+      ]
+    },
+    "xling_strict": [
+      47.58,
+      70.99,
+      79.13
+    ],
+    "samelang_primary_r1": 47.2
+  },
+  "base": {
+    "tag": "qwen3-0.6b-base",
+    "tiers": {
+      "easy": [
+        8.32,
+        78.61,
+        87.78
+      ],
+      "medium": [
+        1.78,
+        60.91,
+        75.49
+      ],
+      "hard": [
+        0.0,
+        4.08,
+        17.6
+      ]
+    },
+    "xling_strict": [
+      84.73,
+      95.17,
+      96.95
+    ],
+    "samelang_primary_r1": 62.4
+  }
+}

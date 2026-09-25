@@ -1,0 +1,52 @@
+{
+  "base": 0.5747,
+  "matched_summary_arm": {
+    "rows": 2368,
+    "steps": 57,
+    "per_seed": [
+      0.5976,
+      0.605,
+      0.5981
+    ],
+    "mean": 0.6002,
+    "sd": 0.0041,
+    "gain_over_base": 0.0255,
+    "gain_sd": 0.0041,
+    "all_seeds_above_base": true,
+    "xling_strict_r1": [
+      58.02,
+      61.07,
+      58.27
+    ]
+  },
+  "original_summary_arm": {
+    "rows": 4733,
+    "steps": 105,
+    "distinct_positives": 4706,
+    "per_seed": [
+      0.6101,
+      0.6099,
+      0.6069
+    ],
+    "mean": 0.609,
+    "sd": 0.0018,
+    "gain_over_base": 0.0343,
+    "gain_sd": 0.0018,
+    "all_seeds_above_base": true
+  },
+  "document_arm": {
+    "rows": 4733,
+    "steps": 57,
+    "distinct_positives": 2368,
+    "per_seed": [
+      0.5515,
+      0.5591,
+      0.5645
+    ],
+    "mean": 0.5584,
+    "sd": 0.0065,
+    "gain_over_base": -0.0163,
+    "gain_sd": 0.0065,
+    "all_seeds_above_base": false
+  }
+}

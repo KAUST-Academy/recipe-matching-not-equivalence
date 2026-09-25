@@ -1,0 +1,16 @@
+{
+  "benchmark": "data/retrieve/easy",
+  "model": "colbert-ir/colbertv2.0",
+  "backend": "pylate PLAID (top-1000 candidates)",
+  "query_length": 256,
+  "document_length": 512,
+  "n_corpus": 117088,
+  "n_queries": 15000,
+  "self_masking": true,
+  "overall": {
+    "recall@1": 3.97,
+    "recall@5": 52.79,
+    "recall@10": 60.86
+  },
+  "runtime_seconds": 1511.5
+}

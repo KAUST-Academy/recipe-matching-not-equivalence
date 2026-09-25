@@ -1,0 +1,87 @@
+{
+  "benchmark": "ImpliRet (zeinabTaghavi/ImpliRet, arXiv:2506.14407)",
+  "protocol": "per-subset retrieval: each query ranks the 1,500 documents of its own (category, discourse-style) subset, one positive per query, as the paper specifies. nDCG@10 with a single relevant document.",
+  "model": "models/ctrl-llm-6145/final",
+  "device": "cuda",
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "per_subset": {
+    "unispeaker:arithmetic": {
+      "ndcg@10": 1.8018,
+      "recall@1": 0.6,
+      "recall@5": 2.2,
+      "recall@10": 3.4667,
+      "mrr": 0.0183,
+      "mean_gold_rank": 574.245,
+      "n_queries": 1500
+    },
+    "unispeaker:wknow": {
+      "ndcg@10": 4.5339,
+      "recall@1": 1.0667,
+      "recall@5": 5.3333,
+      "recall@10": 9.6,
+      "mrr": 0.0418,
+      "mean_gold_rank": 306.173,
+      "n_queries": 1500
+    },
+    "unispeaker:temporal": {
+      "ndcg@10": 5.7506,
+      "recall@1": 2.0,
+      "recall@5": 6.9333,
+      "recall@10": 11.1333,
+      "mrr": 0.052,
+      "mean_gold_rank": 325.302,
+      "n_queries": 1500
+    },
+    "multispeaker:arithmetic": {
+      "ndcg@10": 14.3857,
+      "recall@1": 2.6667,
+      "recall@5": 16.0667,
+      "recall@10": 32.0667,
+      "mrr": 0.1198,
+      "mean_gold_rank": 36.681,
+      "n_queries": 1500
+    },
+    "multispeaker:wknow": {
+      "ndcg@10": 15.7652,
+      "recall@1": 4.4,
+      "recall@5": 19.2,
+      "recall@10": 32.0667,
+      "mrr": 0.1364,
+      "mean_gold_rank": 39.904,
+      "n_queries": 1500
+    },
+    "multispeaker:temporal": {
+      "ndcg@10": 13.1394,
+      "recall@1": 3.8667,
+      "recall@5": 14.9333,
+      "recall@10": 26.8667,
+      "mrr": 0.1136,
+      "mean_gold_rank": 63.763,
+      "n_queries": 1500
+    }
+  },
+  "macro_avg": {
+    "ndcg@10": 9.2294,
+    "recall@1": 2.4333,
+    "recall@5": 10.7778,
+    "recall@10": 19.2,
+    "mrr": 0.0803
+  },
+  "pooled": {
+    "ndcg@10": 9.2294,
+    "recall@1": 2.4333,
+    "recall@5": 10.7778,
+    "recall@10": 19.2,
+    "mrr": 0.0803,
+    "mean_gold_rank": 224.345,
+    "n_queries": 9000
+  },
+  "published_reference": {
+    "best_overall_ndcg@10": 14.91
+  },
+  "comparable_to_paper": "protocol reimplemented from the paper; no official harness was run, so treat cross-paper comparisons with the same caution as our BRIGHT and MELD numbers",
+  "runtime_seconds": 57.0
+}

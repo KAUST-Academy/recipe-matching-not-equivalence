@@ -1,0 +1,88 @@
+{
+  "benchmark": "ShadenA/MathNet-Retrieve",
+  "tier": "hard",
+  "model": "models/dose-unrelated-6145/final",
+  "device": "cpu",
+  "n_corpus": 117088,
+  "n_queries_evaluated": 15000,
+  "corpus_subsampled": false,
+  "comparable_to_paper": true,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt_name": null,
+  "doc_prompt": null,
+  "pooling": "repo-default",
+  "append_eos": false,
+  "trust_remote_code": false,
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "seed": 42,
+  "overall": {
+    "recall@1": 0.04,
+    "recall@5": 23.98,
+    "recall@10": 59.52
+  },
+  "per_domain": {
+    "Algebra": {
+      "n_queries": 2959,
+      "recall@1": 0.0,
+      "recall@5": 18.79,
+      "recall@10": 50.56
+    },
+    "Number Theory": {
+      "n_queries": 2221,
+      "recall@1": 0.05,
+      "recall@5": 22.33,
+      "recall@10": 55.29
+    },
+    "Discrete Mathematics": {
+      "n_queries": 1900,
+      "recall@1": 0.0,
+      "recall@5": 27.37,
+      "recall@10": 68.74
+    },
+    "Geometry": {
+      "n_queries": 1565,
+      "recall@1": 0.13,
+      "recall@5": 29.78,
+      "recall@10": 66.9
+    },
+    "Calculus": {
+      "n_queries": 48,
+      "recall@1": 0.0,
+      "recall@5": 10.42,
+      "recall@10": 54.17
+    },
+    "Precalculus": {
+      "n_queries": 35,
+      "recall@1": 0.0,
+      "recall@5": 14.29,
+      "recall@10": 71.43
+    },
+    "Statistics": {
+      "n_queries": 22,
+      "recall@1": 0.0,
+      "recall@5": 22.73,
+      "recall@10": 68.18
+    },
+    "Math Word Problems": {
+      "n_queries": 11,
+      "recall@1": 0.0,
+      "recall@5": 27.27,
+      "recall@10": 81.82
+    }
+  },
+  "per_domain_coverage": "8761/15000 queries have a derivable math domain (exact-match anchors only)",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 14993,
+    "mean_positive_sim": 0.5758,
+    "mean_hard_negative_sim": 0.8289,
+    "mean_gap_pos_minus_meanneg": -0.2531,
+    "mean_gap_pos_minus_maxneg": -0.3275,
+    "pct_pos_above_all_hard_negs": 1.91,
+    "std_positive_sim": 0.1283,
+    "std_hard_negative_sim": 0.0957
+  },
+  "dump_ranks": "results/ranks/hard_dose-unrelated-s42.ranks.jsonl",
+  "runtime_seconds": 27.3
+}

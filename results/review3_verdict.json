@@ -1,0 +1,1549 @@
+{
+  "cells": {
+    "recipe_arm": {
+      "tag": "ctrl-llm",
+      "easy": {
+        "n": 8,
+        "mean": 62.38,
+        "sd": 0.85,
+        "per_seed": {
+          "42": 61.88,
+          "43": 61.33,
+          "44": 62.37,
+          "45": 63.16,
+          "46": 63.07,
+          "47": 63.15,
+          "48": 63.0,
+          "49": 61.1
+        }
+      },
+      "medium": {
+        "n": 8,
+        "mean": 8.84,
+        "sd": 0.36,
+        "per_seed": {
+          "42": 9.06,
+          "43": 8.57,
+          "44": 8.73,
+          "45": 8.7,
+          "46": 8.71,
+          "47": 8.63,
+          "48": 8.68,
+          "49": 9.65
+        }
+      },
+      "hard": {
+        "n": 8,
+        "mean": 9.42,
+        "sd": 0.61,
+        "per_seed": {
+          "42": 9.37,
+          "43": 10.75,
+          "44": 9.58,
+          "45": 8.99,
+          "46": 9.03,
+          "47": 8.92,
+          "48": 9.06,
+          "49": 9.69
+        }
+      },
+      "xling": {
+        "n": 8,
+        "mean": 66.25,
+        "sd": 2.31,
+        "per_seed": {
+          "42": 64.38,
+          "43": 67.68,
+          "44": 67.18,
+          "45": 64.63,
+          "46": 68.96,
+          "47": 67.94,
+          "48": 62.09,
+          "49": 67.18
+        }
+      },
+      "samelang_primary": {
+        "n": 8,
+        "mean": 46.3,
+        "sd": 1.89,
+        "per_seed": {
+          "42": 43.2,
+          "43": 44.8,
+          "44": 47.2,
+          "45": 45.6,
+          "46": 49.6,
+          "47": 46.4,
+          "48": 46.4,
+          "49": 47.2
+        }
+      },
+      "casprobe": {
+        "n": 8,
+        "mean": 60.49,
+        "sd": 2.5,
+        "per_seed": {
+          "42": 57.36,
+          "43": 65.31,
+          "44": 58.72,
+          "45": 59.71,
+          "46": 59.53,
+          "47": 61.34,
+          "48": 62.51,
+          "49": 59.44
+        }
+      },
+      "casprobepairs": {
+        "n": 8,
+        "mean": 68.38,
+        "sd": 2.4,
+        "per_seed": {
+          "42": 65.22,
+          "43": 73.08,
+          "44": 66.49,
+          "45": 67.75,
+          "46": 67.03,
+          "47": 69.74,
+          "48": 69.11,
+          "49": 68.65
+        }
+      }
+    },
+    "verified_arm": {
+      "tag": "ctrl-cas",
+      "easy": {
+        "n": 8,
+        "mean": 17.05,
+        "sd": 0.79,
+        "per_seed": {
+          "42": 17.31,
+          "43": 16.45,
+          "44": 18.5,
+          "45": 17.81,
+          "46": 17.0,
+          "47": 16.58,
+          "48": 16.69,
+          "49": 16.09
+        }
+      },
+      "medium": {
+        "n": 8,
+        "mean": 3.14,
+        "sd": 0.46,
+        "per_seed": {
+          "42": 2.47,
+          "43": 3.19,
+          "44": 3.23,
+          "45": 2.95,
+          "46": 2.84,
+          "47": 2.89,
+          "48": 3.61,
+          "49": 3.93
+        }
+      },
+      "hard": {
+        "n": 8,
+        "mean": 0.16,
+        "sd": 0.06,
+        "per_seed": {
+          "42": 0.13,
+          "43": 0.16,
+          "44": 0.15,
+          "45": 0.09,
+          "46": 0.15,
+          "47": 0.11,
+          "48": 0.23,
+          "49": 0.27
+        }
+      },
+      "xling": {
+        "n": 8,
+        "mean": 56.52,
+        "sd": 4.05,
+        "per_seed": {
+          "42": 61.32,
+          "43": 52.16,
+          "44": 58.52,
+          "45": 57.25,
+          "46": 61.83,
+          "47": 56.74,
+          "48": 53.18,
+          "49": 51.15
+        }
+      },
+      "samelang_primary": {
+        "n": 8,
+        "mean": 51.3,
+        "sd": 2.44,
+        "per_seed": {
+          "42": 54.4,
+          "43": 50.4,
+          "44": 52.0,
+          "45": 52.0,
+          "46": 54.4,
+          "47": 50.4,
+          "48": 47.2,
+          "49": 49.6
+        }
+      },
+      "casprobe": {
+        "n": 8,
+        "mean": 97.42,
+        "sd": 0.32,
+        "per_seed": {
+          "42": 97.02,
+          "43": 97.29,
+          "44": 97.74,
+          "45": 97.11,
+          "46": 97.2,
+          "47": 97.47,
+          "48": 97.65,
+          "49": 97.92
+        }
+      },
+      "casprobepairs": {
+        "n": 8,
+        "mean": 97.53,
+        "sd": 0.33,
+        "per_seed": {
+          "42": 97.11,
+          "43": 97.56,
+          "44": 97.83,
+          "45": 97.2,
+          "46": 97.2,
+          "47": 97.56,
+          "48": 97.74,
+          "49": 98.01
+        }
+      }
+    },
+    "reference": {
+      "tag": "fact-d4casnegs",
+      "easy": {
+        "n": 8,
+        "mean": 46.91,
+        "sd": 1.25,
+        "per_seed": {
+          "42": 46.51,
+          "43": 46.76,
+          "44": 46.71,
+          "45": 47.59,
+          "46": 45.73,
+          "47": 47.34,
+          "48": 49.37,
+          "49": 45.28
+        }
+      },
+      "medium": {
+        "n": 8,
+        "mean": 4.22,
+        "sd": 0.25,
+        "per_seed": {
+          "42": 4.34,
+          "43": 4.13,
+          "44": 4.56,
+          "45": 3.78,
+          "46": 4.21,
+          "47": 4.08,
+          "48": 4.15,
+          "49": 4.51
+        }
+      },
+      "hard": {
+        "n": 8,
+        "mean": 10.3,
+        "sd": 1.15,
+        "per_seed": {
+          "42": 10.81,
+          "43": 11.85,
+          "44": 10.25,
+          "45": 9.01,
+          "46": 10.13,
+          "47": 10.34,
+          "48": 8.49,
+          "49": 11.55
+        }
+      },
+      "xling": {
+        "n": 8,
+        "mean": 78.02,
+        "sd": 0.91,
+        "per_seed": {
+          "42": 77.61,
+          "43": 77.86,
+          "44": 77.1,
+          "45": 77.86,
+          "46": 78.12,
+          "47": 77.86,
+          "48": 80.15,
+          "49": 77.61
+        }
+      },
+      "samelang_primary": {
+        "n": 8,
+        "mean": 39.2,
+        "sd": 1.28,
+        "per_seed": {
+          "42": 37.6,
+          "43": 39.2,
+          "44": 38.4,
+          "45": 40.0,
+          "46": 40.0,
+          "47": 38.4,
+          "48": 41.6,
+          "49": 38.4
+        }
+      },
+      "casprobe": {
+        "n": 8,
+        "mean": 53.51,
+        "sd": 3.44,
+        "per_seed": {
+          "42": 52.21,
+          "43": 53.75,
+          "44": 50.77,
+          "45": 51.49,
+          "46": 50.59,
+          "47": 56.28,
+          "48": 60.7,
+          "49": 52.3
+        }
+      },
+      "casprobepairs": {
+        "n": 8,
+        "mean": 65.42,
+        "sd": 2.22,
+        "per_seed": {
+          "42": 65.94,
+          "43": 66.58,
+          "44": 63.5,
+          "45": 62.69,
+          "46": 64.68,
+          "47": 65.67,
+          "48": 69.92,
+          "49": 64.41
+        }
+      }
+    },
+    "d4_alone": {
+      "tag": "dose-unrelated",
+      "easy": {
+        "n": 1,
+        "mean": 30.16,
+        "sd": 0.0,
+        "per_seed": {
+          "42": 30.16
+        }
+      },
+      "medium": null,
+      "hard": {
+        "n": 1,
+        "mean": 0.04,
+        "sd": 0.0,
+        "per_seed": {
+          "42": 0.04
+        }
+      },
+      "xling": {
+        "n": 1,
+        "mean": 94.15,
+        "sd": 0.0,
+        "per_seed": {
+          "42": 94.15
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 61.07,
+        "sd": 0.46,
+        "per_seed": {
+          "42": 61.6,
+          "43": 60.8,
+          "44": 60.8
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 42.31,
+        "sd": 2.64,
+        "per_seed": {
+          "42": 40.92,
+          "43": 40.65,
+          "44": 45.35
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 42.4,
+        "sd": 2.72,
+        "per_seed": {
+          "42": 40.92,
+          "43": 40.74,
+          "44": 45.53
+        }
+      }
+    },
+    "d4llmnegsfull": {
+      "tag": "fact-d4llmnegsfull",
+      "easy": {
+        "n": 3,
+        "mean": 37.79,
+        "sd": 1.37,
+        "per_seed": {
+          "42": 38.58,
+          "43": 36.21,
+          "44": 38.57
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 2.56,
+        "sd": 0.13,
+        "per_seed": {
+          "42": 2.67,
+          "43": 2.42,
+          "44": 2.58
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 26.97,
+        "sd": 0.97,
+        "per_seed": {
+          "42": 26.47,
+          "43": 28.09,
+          "44": 26.35
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 78.88,
+        "sd": 2.33,
+        "per_seed": {
+          "42": 78.37,
+          "43": 76.84,
+          "44": 81.42
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 39.47,
+        "sd": 3.23,
+        "per_seed": {
+          "42": 40.0,
+          "43": 36.0,
+          "44": 42.4
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 30.5,
+        "sd": 2.37,
+        "per_seed": {
+          "42": 29.09,
+          "43": 29.18,
+          "44": 33.24
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 40.83,
+        "sd": 1.59,
+        "per_seed": {
+          "42": 39.66,
+          "43": 40.2,
+          "44": 42.64
+        }
+      }
+    },
+    "bt": {
+      "tag": "fact-btcasnegs",
+      "easy": {
+        "n": 3,
+        "mean": 18.81,
+        "sd": 0.8,
+        "per_seed": {
+          "42": 19.37,
+          "43": 19.17,
+          "44": 17.89
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 1.3,
+        "sd": 0.03,
+        "per_seed": {
+          "42": 1.27,
+          "43": 1.29,
+          "44": 1.33
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 1.09,
+        "sd": 0.04,
+        "per_seed": {
+          "42": 1.04,
+          "43": 1.12,
+          "44": 1.11
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 84.57,
+        "sd": 1.2,
+        "per_seed": {
+          "42": 85.5,
+          "43": 84.99,
+          "44": 83.21
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 57.87,
+        "sd": 1.67,
+        "per_seed": {
+          "42": 59.2,
+          "43": 58.4,
+          "44": 56.0
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 74.79,
+        "sd": 1.34,
+        "per_seed": {
+          "42": 76.33,
+          "43": 73.89,
+          "44": 74.16
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 80.34,
+        "sd": 0.77,
+        "per_seed": {
+          "42": 81.12,
+          "43": 80.31,
+          "44": 79.58
+        }
+      }
+    },
+    "d5nonegs": {
+      "tag": "fact-d5nonegs",
+      "easy": {
+        "n": 3,
+        "mean": 18.71,
+        "sd": 1.31,
+        "per_seed": {
+          "42": 17.99,
+          "43": 17.91,
+          "44": 20.22
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 1.41,
+        "sd": 0.18,
+        "per_seed": {
+          "42": 1.53,
+          "43": 1.5,
+          "44": 1.21
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 0.01,
+        "sd": 0.0,
+        "per_seed": {
+          "42": 0.01,
+          "43": 0.01,
+          "44": 0.01
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 93.72,
+        "sd": 0.39,
+        "per_seed": {
+          "42": 94.15,
+          "43": 93.38,
+          "44": 93.64
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 64.53,
+        "sd": 0.92,
+        "per_seed": {
+          "42": 64.0,
+          "43": 65.6,
+          "44": 64.0
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 24.6,
+        "sd": 1.23,
+        "per_seed": {
+          "42": 23.31,
+          "43": 24.75,
+          "44": 25.75
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 24.93,
+        "sd": 1.18,
+        "per_seed": {
+          "42": 23.67,
+          "43": 25.11,
+          "44": 26.02
+        }
+      }
+    },
+    "d5casnegs": {
+      "tag": "fact-d5casnegs",
+      "easy": {
+        "n": 3,
+        "mean": 39.2,
+        "sd": 0.4,
+        "per_seed": {
+          "42": 39.62,
+          "43": 39.17,
+          "44": 38.82
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 7.49,
+        "sd": 0.79,
+        "per_seed": {
+          "42": 7.43,
+          "43": 8.31,
+          "44": 6.73
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 3.97,
+        "sd": 1.05,
+        "per_seed": {
+          "42": 3.5,
+          "43": 5.17,
+          "44": 3.24
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 78.71,
+        "sd": 0.59,
+        "per_seed": {
+          "42": 79.39,
+          "43": 78.37,
+          "44": 78.37
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 41.33,
+        "sd": 1.22,
+        "per_seed": {
+          "42": 42.4,
+          "43": 40.0,
+          "44": 41.6
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 55.07,
+        "sd": 2.53,
+        "per_seed": {
+          "42": 55.65,
+          "43": 52.3,
+          "44": 57.27
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 64.77,
+        "sd": 1.66,
+        "per_seed": {
+          "42": 65.13,
+          "43": 62.96,
+          "44": 66.21
+        }
+      }
+    },
+    "d1split": {
+      "tag": "fact-d1split",
+      "easy": {
+        "n": 3,
+        "mean": 58.47,
+        "sd": 1.18,
+        "per_seed": {
+          "42": 59.44,
+          "43": 58.81,
+          "44": 57.15
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 12.37,
+        "sd": 0.49,
+        "per_seed": {
+          "42": 11.81,
+          "43": 12.71,
+          "44": 12.6
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 9.79,
+        "sd": 0.66,
+        "per_seed": {
+          "42": 9.42,
+          "43": 9.41,
+          "44": 10.55
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 52.08,
+        "sd": 1.49,
+        "per_seed": {
+          "42": 53.18,
+          "43": 52.67,
+          "44": 50.38
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 36.53,
+        "sd": 3.23,
+        "per_seed": {
+          "42": 38.4,
+          "43": 38.4,
+          "44": 32.8
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 39.26,
+        "sd": 3.81,
+        "per_seed": {
+          "42": 41.37,
+          "43": 41.55,
+          "44": 34.87
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 52.42,
+        "sd": 3.75,
+        "per_seed": {
+          "42": 53.93,
+          "43": 55.19,
+          "44": 48.15
+        }
+      }
+    },
+    "d1twojudge": {
+      "tag": "fact-d1twojudge",
+      "easy": {
+        "n": 3,
+        "mean": 64.71,
+        "sd": 0.64,
+        "per_seed": {
+          "42": 64.07,
+          "43": 65.34,
+          "44": 64.72
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 7.31,
+        "sd": 0.22,
+        "per_seed": {
+          "42": 7.55,
+          "43": 7.13,
+          "44": 7.26
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 7.58,
+        "sd": 0.39,
+        "per_seed": {
+          "42": 8.02,
+          "43": 7.28,
+          "44": 7.43
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 74.81,
+        "sd": 2.65,
+        "per_seed": {
+          "42": 71.76,
+          "43": 76.59,
+          "44": 76.08
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 46.13,
+        "sd": 1.22,
+        "per_seed": {
+          "42": 47.2,
+          "43": 44.8,
+          "44": 46.4
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 58.96,
+        "sd": 2.15,
+        "per_seed": {
+          "42": 57.9,
+          "43": 61.43,
+          "44": 57.54
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 66.49,
+        "sd": 2.22,
+        "per_seed": {
+          "42": 64.86,
+          "43": 69.02,
+          "44": 65.58
+        }
+      }
+    },
+    "bt2casnegs": {
+      "tag": "fact-bt2casnegs",
+      "easy": {
+        "n": 3,
+        "mean": 12.85,
+        "sd": 0.56,
+        "per_seed": {
+          "42": 13.16,
+          "43": 12.2,
+          "44": 13.19
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 2.12,
+        "sd": 0.08,
+        "per_seed": {
+          "42": 2.21,
+          "43": 2.09,
+          "44": 2.05
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 4.47,
+        "sd": 0.15,
+        "per_seed": {
+          "42": 4.63,
+          "43": 4.33,
+          "44": 4.46
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 67.01,
+        "sd": 1.73,
+        "per_seed": {
+          "42": 68.96,
+          "43": 65.65,
+          "44": 66.41
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 46.67,
+        "sd": 0.92,
+        "per_seed": {
+          "42": 47.2,
+          "43": 45.6,
+          "44": 47.2
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 52.06,
+        "sd": 1.65,
+        "per_seed": {
+          "42": 51.76,
+          "43": 50.59,
+          "44": 53.84
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 62.51,
+        "sd": 1.57,
+        "per_seed": {
+          "42": 62.15,
+          "43": 61.16,
+          "44": 64.23
+        }
+      }
+    },
+    "base": {
+      "tag": "qwen3-0.6b-base",
+      "easy": {
+        "n": 1,
+        "mean": 8.32,
+        "sd": 0.0,
+        "per_seed": {
+          "0": 8.32
+        }
+      },
+      "medium": null,
+      "hard": {
+        "n": 1,
+        "mean": 0.0,
+        "sd": 0.0,
+        "per_seed": {
+          "0": 0.0
+        }
+      },
+      "xling": {
+        "n": 1,
+        "mean": 84.73,
+        "sd": 0.0,
+        "per_seed": {
+          "0": 84.73
+        }
+      },
+      "samelang_primary": null,
+      "casprobe": {
+        "n": 1,
+        "mean": 10.84,
+        "sd": 0.0,
+        "per_seed": {
+          "0": 10.84
+        }
+      },
+      "casprobepairs": {
+        "n": 1,
+        "mean": 10.93,
+        "sd": 0.0,
+        "per_seed": {
+          "0": 10.93
+        }
+      }
+    },
+    "d4llmnegs_matched": {
+      "tag": "fact-d4llmnegs",
+      "easy": {
+        "n": 3,
+        "mean": 44.59,
+        "sd": 1.33,
+        "per_seed": {
+          "42": 45.85,
+          "43": 43.2,
+          "44": 44.71
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 2.74,
+        "sd": 0.03,
+        "per_seed": {
+          "42": 2.76,
+          "43": 2.71,
+          "44": 2.76
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 20.71,
+        "sd": 0.82,
+        "per_seed": {
+          "42": 20.31,
+          "43": 21.65,
+          "44": 20.17
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 83.89,
+        "sd": 3.82,
+        "per_seed": {
+          "42": 87.79,
+          "43": 80.15,
+          "44": 83.72
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 47.73,
+        "sd": 3.03,
+        "per_seed": {
+          "42": 51.2,
+          "43": 45.6,
+          "44": 46.4
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 38.06,
+        "sd": 1.77,
+        "per_seed": {
+          "42": 40.11,
+          "43": 37.13,
+          "44": 36.95
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 44.9,
+        "sd": 2.04,
+        "per_seed": {
+          "42": 47.06,
+          "43": 44.63,
+          "44": 43.0
+        }
+      }
+    },
+    "unrelnegs_matched": {
+      "tag": "fact-d4unrelnegs",
+      "easy": {
+        "n": 3,
+        "mean": 47.69,
+        "sd": 2.12,
+        "per_seed": {
+          "42": 49.77,
+          "43": 45.53,
+          "44": 47.78
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 3.6,
+        "sd": 0.06,
+        "per_seed": {
+          "42": 3.55,
+          "43": 3.59,
+          "44": 3.67
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 16.96,
+        "sd": 2.08,
+        "per_seed": {
+          "42": 14.67,
+          "43": 18.73,
+          "44": 17.48
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 85.5,
+        "sd": 1.67,
+        "per_seed": {
+          "42": 87.28,
+          "43": 83.97,
+          "44": 85.24
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 50.13,
+        "sd": 2.01,
+        "per_seed": {
+          "42": 50.4,
+          "43": 48.0,
+          "44": 52.0
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 39.54,
+        "sd": 2.63,
+        "per_seed": {
+          "42": 41.19,
+          "43": 36.5,
+          "44": 40.92
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 45.05,
+        "sd": 1.86,
+        "per_seed": {
+          "42": 45.89,
+          "43": 42.91,
+          "44": 46.34
+        }
+      }
+    },
+    "unrelnegs_full": {
+      "tag": "fact-d4unrelnegsfull",
+      "easy": {
+        "n": 3,
+        "mean": 43.93,
+        "sd": 0.51,
+        "per_seed": {
+          "42": 43.91,
+          "43": 44.45,
+          "44": 43.43
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 3.42,
+        "sd": 0.17,
+        "per_seed": {
+          "42": 3.61,
+          "43": 3.29,
+          "44": 3.35
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 20.93,
+        "sd": 0.44,
+        "per_seed": {
+          "42": 20.82,
+          "43": 20.56,
+          "44": 21.42
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 84.91,
+        "sd": 1.49,
+        "per_seed": {
+          "42": 86.01,
+          "43": 85.5,
+          "44": 83.21
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 45.33,
+        "sd": 2.01,
+        "per_seed": {
+          "42": 47.2,
+          "43": 45.6,
+          "44": 43.2
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 39.21,
+        "sd": 0.24,
+        "per_seed": {
+          "42": 39.3,
+          "43": 39.39,
+          "44": 38.93
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 47.88,
+        "sd": 0.24,
+        "per_seed": {
+          "42": 48.06,
+          "43": 47.97,
+          "44": 47.61
+        }
+      }
+    },
+    "cas_llmnegs": {
+      "tag": "fact-casllmnegs",
+      "easy": {
+        "n": 3,
+        "mean": 11.28,
+        "sd": 0.48,
+        "per_seed": {
+          "42": 10.73,
+          "43": 11.61,
+          "44": 11.51
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 2.29,
+        "sd": 0.06,
+        "per_seed": {
+          "42": 2.26,
+          "43": 2.35,
+          "44": 2.25
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 0.11,
+        "sd": 0.03,
+        "per_seed": {
+          "42": 0.11,
+          "43": 0.08,
+          "44": 0.13
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 12.47,
+        "sd": 0.68,
+        "per_seed": {
+          "42": 12.72,
+          "43": 12.98,
+          "44": 11.7
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 34.4,
+        "sd": 1.6,
+        "per_seed": {
+          "42": 34.4,
+          "43": 36.0,
+          "44": 32.8
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 85.91,
+        "sd": 0.86,
+        "per_seed": {
+          "42": 86.81,
+          "43": 85.82,
+          "44": 85.09
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 85.97,
+        "sd": 0.91,
+        "per_seed": {
+          "42": 86.9,
+          "43": 85.91,
+          "44": 85.09
+        }
+      }
+    },
+    "cas_nonegs": {
+      "tag": "fact-casnonegs",
+      "easy": {
+        "n": 3,
+        "mean": 7.42,
+        "sd": 0.24,
+        "per_seed": {
+          "42": 7.68,
+          "43": 7.36,
+          "44": 7.21
+        }
+      },
+      "medium": {
+        "n": 3,
+        "mean": 1.21,
+        "sd": 0.06,
+        "per_seed": {
+          "42": 1.27,
+          "43": 1.15,
+          "44": 1.22
+        }
+      },
+      "hard": {
+        "n": 3,
+        "mean": 0.0,
+        "sd": 0.0,
+        "per_seed": {
+          "42": 0.0,
+          "43": 0.0,
+          "44": 0.0
+        }
+      },
+      "xling": {
+        "n": 3,
+        "mean": 52.08,
+        "sd": 1.06,
+        "per_seed": {
+          "42": 52.93,
+          "43": 52.42,
+          "44": 50.89
+        }
+      },
+      "samelang_primary": {
+        "n": 3,
+        "mean": 58.13,
+        "sd": 0.92,
+        "per_seed": {
+          "42": 57.6,
+          "43": 59.2,
+          "44": 57.6
+        }
+      },
+      "casprobe": {
+        "n": 3,
+        "mean": 45.26,
+        "sd": 1.1,
+        "per_seed": {
+          "42": 45.98,
+          "43": 43.99,
+          "44": 45.8
+        }
+      },
+      "casprobepairs": {
+        "n": 3,
+        "mean": 45.26,
+        "sd": 1.1,
+        "per_seed": {
+          "42": 45.98,
+          "43": 43.99,
+          "44": 45.8
+        }
+      }
+    }
+  },
+  "bands": {
+    "easy": 2.4,
+    "hard": 1.72,
+    "xling": 6.54
+  },
+  "paper_numbers": {
+    "recipe_specific_easy": 15.47,
+    "did_vs_reference": 27.24,
+    "reference": {
+      "easy": 46.91,
+      "hard": 10.3,
+      "xling": 78.02
+    },
+    "recipe_arm": {
+      "easy": 62.38,
+      "hard": 9.42,
+      "xling": 66.26
+    },
+    "d4_alone": {
+      "easy": 30.03,
+      "hard": 0.04,
+      "xling": 93.81
+    },
+    "d4llmnegsfull_hard": 26.97,
+    "bt_char3": 0.783,
+    "d4_char3": 0.421,
+    "published_4b_easy_r1": 14.76
+  },
+  "readouts": {
+    "R10-a": {
+      "recipe_minus_d5casnegs_easy": 23.18,
+      "paper_recipe_specific_share": 15.47,
+      "diff": 7.71,
+      "verdict": "share LARGER with D5: report as a range"
+    },
+    "R10-b": {
+      "d5casnegs_minus_reference_xling": 0.69,
+      "d5nonegs_minus_d4_xling": -0.09,
+      "verdict_reference": "D4 not unusually retention-friendly (reference replicates)",
+      "verdict_alone": "D5 alone retains like D4"
+    },
+    "R10-c": {
+      "d5casnegs_minus_reference_hard": -6.33,
+      "verdict": "D5 reference lower on hard: reported, D4-specific"
+    },
+    "R10-did": {
+      "did_recipe_vs_d5reference": 35.64,
+      "paper_did_vs_reference": 27.24
+    },
+    "R11-a": {
+      "d1split_minus_recipe_hard": 0.37,
+      "verdict": "one-call pairing does not depress the hard tier"
+    },
+    "R11-b": {
+      "d1split_minus_d4llmnegsfull_hard": -17.18,
+      "within_band": false
+    },
+    "R11-c": {
+      "easy": -3.91,
+      "xling": -14.17,
+      "samelang_primary": -9.77
+    },
+    "R12-a": {
+      "mode": "rejudge",
+      "input": "data/pairs/llm_pairs.jsonl",
+      "second_judge_model": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "n_rows": 25656,
+      "n_second_judge_json_failures": 1110,
+      "runtime_s": 1085.0,
+      "positive": {
+        "n": 6414,
+        "judge1_accept": 6145,
+        "judge2_accept": 5522,
+        "both_accept": 5398,
+        "neither": 145,
+        "only_judge1": 747,
+        "only_judge2": 124,
+        "agreement": 0.8642,
+        "cohen_kappa": 0.1981
+      },
+      "hard_negative": {
+        "n": 19242,
+        "judge1_accept": 16820,
+        "judge2_accept": 17723,
+        "both_accept": 16107,
+        "neither": 806,
+        "only_judge1": 713,
+        "only_judge2": 1616,
+        "agreement": 0.879,
+        "cohen_kappa": 0.3455
+      }
+    },
+    "R12-b": {
+      "easy": {
+        "d1twojudge_minus_recipe": 2.33,
+        "verdict": "within band: no dependence on the single self-judge"
+      },
+      "hard": {
+        "d1twojudge_minus_recipe": -1.84,
+        "verdict": "two-judge arm LOWER: reported, disclose single-judge"
+      },
+      "xling": {
+        "d1twojudge_minus_recipe": 8.56,
+        "verdict": "two-judge arm HIGHER: reported"
+      },
+      "two_judge_trainer_rows": 5398
+    },
+    "R13": {
+      "depth_multi_hop": {
+        "char3_jaccard": {
+          "mean": 0.64,
+          "median": 0.644,
+          "q25": 0.569,
+          "q75": 0.714
+        },
+        "token_jaccard": {
+          "mean": 0.573,
+          "median": 0.579,
+          "q25": 0.489,
+          "q75": 0.667
+        },
+        "len_ratio": {
+          "mean": 0.999,
+          "median": 0.995,
+          "q25": 0.961,
+          "q75": 1.031
+        }
+      },
+      "depth_single_hop_char3": 0.783,
+      "depth_d4_char3": 0.421,
+      "bt2casnegs_minus_reference_easy": -34.06,
+      "bt_minus_reference_easy": -28.1,
+      "verdict": "attribution SURVIVES at the deeper depth: report reference minus BT2",
+      "xling": -11.01,
+      "samelang_primary": 7.47
+    },
+    "R14": {
+      "sigma_probe": 0.46,
+      "band": 0.91,
+      "R14-a_recipe_vs_reference_full": {
+        "diff": 6.98,
+        "verdict": "ABOVE the band: a measured equivalence gain; the hard-tier claim narrows"
+      },
+      "R14-b_recipe_vs_base_full": {
+        "diff": 49.65,
+        "verdict": "ABOVE the band: a measured equivalence gain; the hard-tier claim narrows"
+      },
+      "R14-c_verified_vs_base_full": {
+        "diff": 86.58,
+        "note": "in-family, no direction registered"
+      },
+      "R14-d_pairs_only": {
+        "recipe_vs_reference": {
+          "diff": 2.96,
+          "verdict": "ABOVE the band: a measured equivalence gain; the hard-tier claim narrows"
+        },
+        "recipe_vs_base": {
+          "diff": 57.45,
+          "verdict": "ABOVE the band: a measured equivalence gain; the hard-tier claim narrows"
+        },
+        "verified_vs_base": 86.6
+      },
+      "all_cells_full": {
+        "recipe_arm": 60.49,
+        "verified_arm": 97.42,
+        "reference": 53.51,
+        "d4_alone": 42.31,
+        "d4llmnegsfull": 30.5,
+        "bt": 74.79,
+        "d5nonegs": 24.6,
+        "d5casnegs": 55.07,
+        "d1split": 39.26,
+        "d1twojudge": 58.96,
+        "bt2casnegs": 52.06,
+        "base": 10.84,
+        "d4llmnegs_matched": 38.06,
+        "unrelnegs_matched": 39.54,
+        "unrelnegs_full": 39.21,
+        "cas_llmnegs": 85.91,
+        "cas_nonegs": 45.26
+      },
+      "all_cells_pairs": {
+        "recipe_arm": 68.38,
+        "verified_arm": 97.53,
+        "reference": 65.42,
+        "d4_alone": 42.4,
+        "d4llmnegsfull": 40.83,
+        "bt": 80.34,
+        "d5nonegs": 24.93,
+        "d5casnegs": 64.77,
+        "d1split": 52.42,
+        "d1twojudge": 66.49,
+        "bt2casnegs": 62.51,
+        "base": 10.93,
+        "d4llmnegs_matched": 44.9,
+        "unrelnegs_matched": 45.05,
+        "unrelnegs_full": 47.88,
+        "cas_llmnegs": 85.97,
+        "cas_nonegs": 45.26
+      },
+      "probe_build": {
+        "n_eligible_held_out": 4759,
+        "n_attempted": 2000,
+        "n_probe_items": 1107,
+        "negatives_per_item": 1.885,
+        "families": {
+          "rename": 901,
+          "reformulate": 206
+        },
+        "languages": {
+          "English": 633,
+          "unknown": 396,
+          "English; Russian": 16,
+          "Spanish": 16,
+          "Chinese; English": 10,
+          "espa\u00f1ol": 8,
+          "Mongolian": 7,
+          "Espa\u00f1ol": 6,
+          "English, Arabic": 5,
+          "Chinese (Traditional)": 2,
+          "English, Russian": 2,
+          "German": 2,
+          "Russian": 1,
+          "English; Chinese": 1,
+          "Macedonian, English": 1,
+          "Vietnamese": 1
+        }
+      }
+    },
+    "R15": {
+      "closest": {
+        "cell": "bfloat16-8192-math",
+        "recall@1": 13.19,
+        "recall@5": 81.72,
+        "recall@10": 90.67
+      },
+      "published": 14.76,
+      "gap": 1.57,
+      "promote": false,
+      "n_cells": 14
+    }
+  }
+}

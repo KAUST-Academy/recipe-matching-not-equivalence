@@ -1,0 +1,13 @@
+{
+  "benchmark": "data/retrieve/medium",
+  "model": "BM25 (bm25s lucene, k1=1.50, b=0.75, lowercased \\w+ tokens, English stopwords removed, no stemming)",
+  "n_corpus": 117088,
+  "n_queries": 15000,
+  "self_masking": true,
+  "overall": {
+    "recall@1": 1.58,
+    "recall@5": 33.39,
+    "recall@10": 43.39
+  },
+  "runtime_seconds": 6.7
+}

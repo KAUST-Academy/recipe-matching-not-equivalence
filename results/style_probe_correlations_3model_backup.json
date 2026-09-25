@@ -1,0 +1,62 @@
+{
+  "audit": "recipe-sensitivity audit -- does similarity track the recipe-style score?",
+  "n_queries_sampled": 2000,
+  "seed": 42,
+  "per_model": {
+    "base-0.6b": {
+      "doc_emb": ".emb_cache/docs_Qwen__Qwen3-Embedding-0.6B_236c0b3187bc143d.npz",
+      "query_emb": ".emb_cache/queries_Qwen__Qwen3-Embedding-0.6B_2a9caafd7bf6c598.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": -0.061,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0622,
+      "mean_top10_style_score": -0.4471,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 44.83,
+      "mean_top10_synthetic_fraction": 0.99
+    },
+    "ctrl-llm-6145": {
+      "doc_emb": ".emb_cache/docs_models__ctrl-llm-6145__final_ce5f5ebcf33e3146.npz",
+      "query_emb": ".emb_cache/queries_models__ctrl-llm-6145__final_6499722b26fa8eab.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": 0.1705,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.1704,
+      "mean_top10_style_score": 0.1181,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 61.85,
+      "mean_top10_synthetic_fraction": 0.997
+    },
+    "ctrl-cas-6145": {
+      "doc_emb": ".emb_cache/docs_models__ctrl-cas-6145__final_12def10d3efcf69c.npz",
+      "query_emb": ".emb_cache/queries_models__ctrl-cas-6145__final_8dc0c540861be823.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": -0.019,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0188,
+      "mean_top10_style_score": -0.4269,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 45.5,
+      "mean_top10_synthetic_fraction": 0.9904
+    }
+  },
+  "pairwise_perquery_rho_deltas": [
+    {
+      "pair": "base-0.6b - ctrl-llm-6145",
+      "mean_perquery_delta_rho": -0.2315,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 3.0,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "base-0.6b - ctrl-cas-6145",
+      "mean_perquery_delta_rho": -0.042,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 4.8,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "ctrl-llm-6145 - ctrl-cas-6145",
+      "mean_perquery_delta_rho": 0.1895,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 94.2,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    }
+  ],
+  "detector_strip_artifacts": true,
+  "note": "rho_syntheticdocs is the within-synthetic gradient (immune to the synthetic-vs-organic base-rate confound); top10_synthetic_fraction base rate = fraction of synthetic docs in the corpus = 0.9858; mean_top10_style_corpus_percentile base rate = 50.0 (use it instead of a ratio of mean decision-function scores, which is not scale-meaningful)"
+}

@@ -1,0 +1,75 @@
+{
+  "experiment": "E2 source- and negative-matched CAS arm",
+  "construction": "results/e2_negmatched_construction.json",
+  "seeds_found": [
+    42,
+    43,
+    44
+  ],
+  "seeds_looked_for": [
+    42,
+    43,
+    44
+  ],
+  "easy_per_seed": {
+    "42": 17.47,
+    "43": 16.86,
+    "44": 15.39
+  },
+  "hard_per_seed": {
+    "42": 0.41,
+    "43": 0.32,
+    "44": 0.18
+  },
+  "xling_per_seed": {
+    "42": 45.8,
+    "43": 50.64,
+    "44": 53.94
+  },
+  "run_config_checks": {
+    "42": {
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15334,
+      "n_train_pairs": 1717,
+      "n_dev_source_ids": 307
+    },
+    "43": {
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15331,
+      "n_train_pairs": 1713,
+      "n_dev_source_ids": 307
+    },
+    "44": {
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15306,
+      "n_train_pairs": 1725,
+      "n_dev_source_ids": 307
+    }
+  },
+  "reference": {
+    "ctrl_llm_easy_8seed": 62.3825,
+    "ctrl_cas_easy_8seed": 17.05,
+    "phase1_cas_easy": 15.92
+  },
+  "easy_mean_sd": [
+    16.5733,
+    1.0692
+  ],
+  "gap_vs_ctrl_llm_per_seed": {
+    "42": 44.9125,
+    "43": 45.5225,
+    "44": 46.9925
+  },
+  "hard_mean_sd": [
+    0.3033,
+    0.1159
+  ],
+  "xling_mean_sd": [
+    50.1267,
+    4.0942
+  ],
+  "verdict": "E1 CONFIRMS -- 3-seed mean easy R@1 16.57 <= 25.0 and the gap to ctrl-LLM is positive in every seed: the training-signal asymmetry is not a first-order driver of the arm gap."
+}

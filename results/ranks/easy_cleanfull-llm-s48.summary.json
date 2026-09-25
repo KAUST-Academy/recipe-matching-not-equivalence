@@ -1,0 +1,93 @@
+{
+  "benchmark": "ShadenA/MathNet-Retrieve",
+  "tier": "easy",
+  "model": "models/cleanfull-llm-6145-s48/final",
+  "device": "cuda:0",
+  "n_corpus": 117088,
+  "n_queries_evaluated": 15000,
+  "corpus_subsampled": false,
+  "comparable_to_paper": true,
+  "self_masking": true,
+  "n_queries_with_own_doc_in_corpus": 0,
+  "n_queries_self_masked": 0,
+  "n_queries_own_doc_is_relevant": 0,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt_name": null,
+  "doc_prompt": null,
+  "pooling": "repo-default",
+  "append_eos": false,
+  "trust_remote_code": false,
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "seed": 42,
+  "overall": {
+    "recall@1": 62.78,
+    "recall@5": 90.98,
+    "recall@10": 94.2
+  },
+  "per_domain": {
+    "Algebra": {
+      "n_queries": 2959,
+      "recall@1": 69.85,
+      "recall@5": 94.96,
+      "recall@10": 96.99
+    },
+    "Number Theory": {
+      "n_queries": 2221,
+      "recall@1": 57.59,
+      "recall@5": 86.09,
+      "recall@10": 90.86
+    },
+    "Discrete Mathematics": {
+      "n_queries": 1900,
+      "recall@1": 61.63,
+      "recall@5": 90.11,
+      "recall@10": 93.37
+    },
+    "Geometry": {
+      "n_queries": 1565,
+      "recall@1": 59.3,
+      "recall@5": 87.41,
+      "recall@10": 91.31
+    },
+    "Calculus": {
+      "n_queries": 48,
+      "recall@1": 72.92,
+      "recall@5": 97.92,
+      "recall@10": 97.92
+    },
+    "Precalculus": {
+      "n_queries": 35,
+      "recall@1": 62.86,
+      "recall@5": 94.29,
+      "recall@10": 100.0
+    },
+    "Statistics": {
+      "n_queries": 22,
+      "recall@1": 86.36,
+      "recall@5": 90.91,
+      "recall@10": 90.91
+    },
+    "Math Word Problems": {
+      "n_queries": 11,
+      "recall@1": 54.55,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    }
+  },
+  "per_domain_coverage": "8761/15000 queries have a derivable math domain (exact-match anchors only)",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 14993,
+    "n_queries_gold_but_no_near_miss": 7,
+    "mean_positive_sim": 0.7695,
+    "mean_hard_negative_sim": 0.5347,
+    "mean_gap_pos_minus_meanneg": 0.2348,
+    "mean_gap_pos_minus_maxneg": 0.1377,
+    "pct_pos_above_all_hard_negs": 80.32,
+    "std_positive_sim": 0.1292,
+    "std_hard_negative_sim": 0.1393
+  },
+  "dump_ranks": "results/ranks/easy_cleanfull-llm-s48.ranks.jsonl",
+  "runtime_seconds": 373.6
+}

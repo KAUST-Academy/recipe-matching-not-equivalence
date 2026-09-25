@@ -1,0 +1,115 @@
+{
+  "r8": {
+    "inputs": [
+      "data/llm_pairs/pairs.jsonl (D1 negatives and source list)",
+      "data/cas_pairs/pairs.jsonl (CAS positives)"
+    ],
+    "seed": 0,
+    "file": "data/cas_pairs_llmnegs/pairs.jsonl",
+    "rows_written": 6145,
+    "rows_dropped_no_cas_row": 0,
+    "negatives": 16169,
+    "negatives_per_row": 2.631,
+    "hist": {
+      "3": 4393,
+      "2": 1317,
+      "1": 356,
+      "0": 79
+    },
+    "cas_rows_per_source_hist": {
+      "1": 2130,
+      "2": 2161,
+      "3": 1854
+    }
+  },
+  "r9": {
+    "inputs": [
+      "data/llm_pairs_unrelated_casnegs/pairs.jsonl (reference rows: CAS negatives)",
+      "data/bt_pairs/pairs.jsonl (back-translated positives)"
+    ],
+    "file": "data/bt_pairs_casnegs/pairs.jsonl",
+    "rows_written": 6576,
+    "rows_dropped_no_backtranslation": 192,
+    "negatives": 8296,
+    "negatives_per_row": 1.262,
+    "hist": {
+      "1": 2045,
+      "0": 1982,
+      "2": 1580,
+      "3": 785,
+      "4": 184
+    }
+  },
+  "r7": {
+    "inputs": [
+      "data/llm_pairs_unrelated/pairs.jsonl (D4 positives)",
+      "data/llm_pairs_unrelated_negs/pairs.jsonl (unrelated-prompt negatives)",
+      "data/llm_pairs_unrelated_casnegs/pairs.jsonl (per-row counts)"
+    ],
+    "rows_written": 6393,
+    "rows_dropped_no_unrelated_negs_row": 285,
+    "rows_dropped_zero_negatives": 90,
+    "k_truncated_to_cap_3": 185,
+    "count_matched": {
+      "file": "data/llm_pairs_unrelated_unrelnegs/pairs.jsonl",
+      "negatives": 7691,
+      "negatives_per_row": 1.203,
+      "hist": {
+        "1": 2078,
+        "0": 1896,
+        "2": 1644,
+        "3": 775
+      }
+    },
+    "full": {
+      "file": "data/llm_pairs_unrelated_unrelnegs_full/pairs.jsonl",
+      "negatives": 16992,
+      "negatives_per_row": 2.658,
+      "hist": {
+        "2": 1463,
+        "3": 4568,
+        "1": 362
+      }
+    },
+    "reference_d4casnegs_negatives_per_row": 1.277,
+    "e_r6_count_matched_rows_for_comparison": 5978
+  },
+  "r13": {
+    "inputs": [
+      "data/llm_pairs_unrelated_casnegs/pairs.jsonl (reference rows: CAS negatives)",
+      "data/bt2_pairs/pairs.jsonl (multi-hop back-translated positives)"
+    ],
+    "file": "data/bt2_pairs_casnegs/pairs.jsonl",
+    "rows_written": 5723,
+    "rows_dropped_no_positive": 1045,
+    "sources_in_positive_file": 5723,
+    "negatives": 6906,
+    "negatives_per_row": 1.207,
+    "hist": {
+      "1": 1905,
+      "0": 1732,
+      "2": 1378,
+      "3": 587,
+      "4": 121
+    }
+  },
+  "r10": {
+    "inputs": [
+      "data/llm_pairs_unrelated_casnegs/pairs.jsonl (reference rows: CAS negatives)",
+      "data/llm_pairs_survey/pairs.jsonl (D5 positives)"
+    ],
+    "file": "data/llm_pairs_survey_casnegs/pairs.jsonl",
+    "rows_written": 6163,
+    "rows_dropped_no_positive": 605,
+    "sources_in_positive_file": 6293,
+    "negatives": 7893,
+    "negatives_per_row": 1.281,
+    "hist": {
+      "1": 1873,
+      "0": 1849,
+      "2": 1478,
+      "3": 788,
+      "4": 175
+    }
+  }
+}

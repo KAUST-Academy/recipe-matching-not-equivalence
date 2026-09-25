@@ -1,0 +1,50 @@
+{
+  "label4733_vs_base": {
+    "what": "the label channel against the untrained base",
+    "diff": 0.0354,
+    "ci95": [
+      0.0299,
+      0.0408
+    ],
+    "p_two_sided": 0.0002,
+    "ci_excludes_zero": true,
+    "n_queries": 1000
+  },
+  "label4733_vs_doc4733": {
+    "what": "label vs document channel at a MATCHED 4,733-row budget",
+    "diff": 0.0586,
+    "ci95": [
+      0.0501,
+      0.0668
+    ],
+    "p_two_sided": 0.0002,
+    "ci_excludes_zero": true,
+    "n_queries": 1000
+  },
+  "doc4733_vs_base": {
+    "what": "the document channel against the base (the published surface)",
+    "diff": -0.0232,
+    "ci95": [
+      -0.0318,
+      -0.0147
+    ],
+    "p_two_sided": 0.0002,
+    "ci_excludes_zero": true,
+    "n_queries": 1000
+  },
+  "pubattack_vs_base": {
+    "what": "the published 6,145-row attack, for reference",
+    "diff": -0.0129,
+    "ci95": [
+      -0.0212,
+      -0.0042
+    ],
+    "p_two_sided": 0.0026,
+    "ci_excludes_zero": true,
+    "n_queries": 1000
+  },
+  "verdict": "LABEL SURFACE EXPOSED \u2014 the label channel beats the base by +0.0354 [0.0299, 0.0408], excluding zero, while the document channel at the same budget gives -0.0232 [-0.0318, -0.0147]. SABER's published negative tested the surface that could not work; the surface its relevance rule is actually computed over is exposed. The taxonomy's organic-corpus cell can no longer be described as resisting.",
+  "scope_warning": "Evaluation-sampling only: resamples queries, not training seeds, and every arm here is a single training run. The correlation half of the original P1 is NOT met by the label arm (1.14x, essentially the same as the document attack), so this is a score result, not a demonstration that the model aligned to the summary-Jaccard signal specifically.",
+  "n_boot": 10000,
+  "rng_seed": 20260731
+}

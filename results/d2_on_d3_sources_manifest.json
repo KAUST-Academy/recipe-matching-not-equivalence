@@ -1,0 +1,14 @@
+{
+  "generated": "2026-07-31",
+  "purpose": "R2-M5: D2 restricted to the source problems D3 also has, so the D2-vs-D3 comparison is matched on SELECTION as well as on row count.",
+  "d2_rows": 6553,
+  "d2_sources": 6553,
+  "d3_rows": 5591,
+  "d3_sources": 5591,
+  "shared_sources": 5332,
+  "d3_only_sources": 259,
+  "d2_only_sources": 1221,
+  "rows_written": 5332,
+  "output": "data/llm_pairs_paraphrase_d3sources/pairs.jsonl",
+  "note": "Train with --max-rows 0 (no cap): the row count IS the matched quantity here, and capping it would reintroduce an arbitrary truncation. Compare against D3, which trains all 5,591 of its own."
+}

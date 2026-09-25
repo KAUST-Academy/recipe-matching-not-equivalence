@@ -1,0 +1,179 @@
+{
+  "generated": "2026-07-31",
+  "script": "scripts/meld_seed_aggregate.py",
+  "slurm_job": "scripts/meld_attack_seeds.slurm (seeds 43/44; seed 42 from 49639491)",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "reference_points": {
+    "base_meld_R@1": 10.19,
+    "base_realdup_R@1": 84.73,
+    "ctrl_llm_meld_R@1": 18.89,
+    "realdup_single_run_sd": 2.3115
+  },
+  "scope_warning": "These are TRAINING-SEED statistics. The paired cluster-bootstrap CIs in results/meld_compare_*.json resample MELD's 270 pairs and carry no seed variance; the two uncertainties are additive and neither may be quoted as the total.",
+  "data_provenance": "No data was regenerated: seeds 43/44 train on the same gated pair files as seed 42, so results/meld_disjointness_*.json still certifies exactly what these models saw.",
+  "per_seed": {
+    "meld9": {
+      "42": {
+        "meld_R@1": 36.67,
+        "meld_R@5": 70.0,
+        "realdup_R@1": 90.84
+      },
+      "43": {
+        "meld_R@1": 36.3,
+        "meld_R@5": 68.52,
+        "realdup_R@1": 90.08
+      },
+      "44": {
+        "meld_R@1": 38.52,
+        "meld_R@5": 69.07,
+        "realdup_R@1": 91.09
+      }
+    },
+    "heldout": {
+      "42": {
+        "meld_R@1": 29.63,
+        "meld_R@5": 68.52,
+        "realdup_R@1": 91.86
+      },
+      "43": {
+        "meld_R@1": 30.93,
+        "meld_R@5": 67.22,
+        "realdup_R@1": 92.62
+      },
+      "44": {
+        "meld_R@1": 31.85,
+        "meld_R@5": 66.85,
+        "realdup_R@1": 92.37
+      }
+    }
+  },
+  "aggregate": {
+    "meld9": {
+      "meld_R@1": {
+        "n": 3,
+        "mean": 37.1633,
+        "sd": 1.1894,
+        "values": [
+          36.67,
+          36.3,
+          38.52
+        ]
+      },
+      "meld_R@5": {
+        "n": 3,
+        "mean": 69.1967,
+        "sd": 0.7481,
+        "values": [
+          70.0,
+          68.52,
+          69.07
+        ]
+      },
+      "realdup_R@1": {
+        "n": 3,
+        "mean": 90.67,
+        "sd": 0.526,
+        "values": [
+          90.84,
+          90.08,
+          91.09
+        ]
+      },
+      "mathnet_hard_R@1": {
+        "n": 3,
+        "mean": 0.1067,
+        "sd": 0.0153,
+        "values": [
+          0.11,
+          0.12,
+          0.09
+        ]
+      }
+    },
+    "heldout": {
+      "meld_R@1": {
+        "n": 3,
+        "mean": 30.8033,
+        "sd": 1.1154,
+        "values": [
+          29.63,
+          30.93,
+          31.85
+        ]
+      },
+      "meld_R@5": {
+        "n": 3,
+        "mean": 67.53,
+        "sd": 0.8771,
+        "values": [
+          68.52,
+          67.22,
+          66.85
+        ]
+      },
+      "realdup_R@1": {
+        "n": 3,
+        "mean": 92.2833,
+        "sd": 0.3873,
+        "values": [
+          91.86,
+          92.62,
+          92.37
+        ]
+      }
+    }
+  },
+  "preregistered_verdicts": {
+    "R1_P1_replicates": {
+      "rule": "all meld9 seeds clear base 10.19 by >= +10.0",
+      "per_seed_gain_over_base": [
+        26.48,
+        26.11,
+        28.33
+      ],
+      "mean_gain": 26.9733,
+      "verdict": "REPLICATED"
+    },
+    "R2_P2_refutation_holds": {
+      "rule": "three-seed mean real-duplicate R@1 stays ABOVE base 84.73",
+      "mean": 90.67,
+      "sd": 0.526,
+      "values": [
+        90.84,
+        90.08,
+        91.09
+      ],
+      "margin_over_base": 5.94,
+      "margin_in_se_units": 19.56,
+      "all_seeds_above_base": true,
+      "verdict": "P2 REFUTATION HOLDS \u2014 the attacked model keeps real equivalence ability; the incentive inversion is MathNet-specific"
+    },
+    "R3_P4_genre_reading": {
+      "rule": "heldout three-seed mean clears base by >= +10.0",
+      "per_seed_gain_over_base": [
+        19.44,
+        20.74,
+        21.66
+      ],
+      "mean_gain": 20.6133,
+      "verdict": "GENRE-LEVEL HOLDS"
+    },
+    "domain_increment_meld9_minus_heldout": {
+      "note": "R@1 only; at seed 42 it was null at R@5 and on the distractor metric. Not claimed as replicated unless all seeds keep the sign.",
+      "per_seed": [
+        7.04,
+        5.37,
+        6.67
+      ],
+      "mean": 6.36,
+      "sd": 0.8771,
+      "signs_all_agree": true,
+      "verdict": "REPLICATED"
+    }
+  },
+  "missing_inputs": []
+}

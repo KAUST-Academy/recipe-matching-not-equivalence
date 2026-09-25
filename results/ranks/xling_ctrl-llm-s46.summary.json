@@ -1,0 +1,140 @@
+{
+  "benchmark": "InvarEmbed cross-lingual duplicate retrieval (data/crosslingual_eval, mined real duplicates)",
+  "model": "models/ctrl-llm-6145-s46/final",
+  "device": "cuda:0",
+  "n_corpus": 27817,
+  "n_queries": 393,
+  "corpus_subsampled": false,
+  "comparable_full_corpus": true,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt": null,
+  "self_masking": true,
+  "overall_any_gold": {
+    "recall@1": 70.23,
+    "recall@5": 83.97,
+    "recall@10": 88.04
+  },
+  "strict_crosslingual_gold": {
+    "recall@1": 68.96,
+    "recall@5": 83.97,
+    "recall@10": 88.04
+  },
+  "median_gold_rank": 1,
+  "per_language": {
+    "nl": {
+      "n_queries": 71,
+      "recall@1": 66.2,
+      "recall@5": 80.28,
+      "recall@10": 83.1
+    },
+    "zh": {
+      "n_queries": 63,
+      "recall@1": 60.32,
+      "recall@5": 76.19,
+      "recall@10": 79.37
+    },
+    "sl": {
+      "n_queries": 54,
+      "recall@1": 53.7,
+      "recall@5": 70.37,
+      "recall@10": 87.04
+    },
+    "ro": {
+      "n_queries": 52,
+      "recall@1": 86.54,
+      "recall@5": 96.15,
+      "recall@10": 96.15
+    },
+    "de": {
+      "n_queries": 51,
+      "recall@1": 76.47,
+      "recall@5": 86.27,
+      "recall@10": 88.24
+    },
+    "fr": {
+      "n_queries": 49,
+      "recall@1": 69.39,
+      "recall@5": 93.88,
+      "recall@10": 95.92
+    },
+    "es": {
+      "n_queries": 21,
+      "recall@1": 71.43,
+      "recall@5": 80.95,
+      "recall@10": 85.71
+    },
+    "hu": {
+      "n_queries": 16,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "mn": {
+      "n_queries": 6,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "pt": {
+      "n_queries": 3,
+      "recall@1": 66.67,
+      "recall@5": 66.67,
+      "recall@10": 66.67
+    },
+    "mk": {
+      "n_queries": 3,
+      "recall@1": 66.67,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "it": {
+      "n_queries": 2,
+      "recall@1": 50.0,
+      "recall@5": 50.0,
+      "recall@10": 50.0
+    },
+    "af": {
+      "n_queries": 1,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "ru": {
+      "n_queries": 1,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    }
+  },
+  "per_confidence": {
+    "high": {
+      "n_queries": 368,
+      "recall@1": 71.2,
+      "recall@5": 84.51,
+      "recall@10": 88.04
+    },
+    "medium": {
+      "n_queries": 25,
+      "recall@1": 56.0,
+      "recall@5": 76.0,
+      "recall@10": 88.0
+    }
+  },
+  "per_anchor_overlap": {
+    "overlaps_retrieve_anchor": {
+      "n_queries": 220,
+      "recall@1": 70.91,
+      "recall@5": 85.45,
+      "recall@10": 91.36
+    },
+    "no_overlap": {
+      "n_queries": 173,
+      "recall@1": 69.36,
+      "recall@5": 82.08,
+      "recall@10": 83.82
+    }
+  },
+  "dump_ranks": "results/ranks/xling_ctrl-llm-s46.ranks.jsonl",
+  "runtime_seconds": 79.9
+}

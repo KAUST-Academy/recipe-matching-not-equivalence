@@ -1,0 +1,89 @@
+{
+  "published_easy_r1": 14.76,
+  "cells": [
+    {
+      "cell": "bfloat16-8192-math",
+      "recall@1": 13.19,
+      "recall@5": 81.72,
+      "recall@10": 90.67
+    },
+    {
+      "cell": "bfloat16-2048-math",
+      "recall@1": 13.17,
+      "recall@5": 81.62,
+      "recall@10": 90.63
+    },
+    {
+      "cell": "float16-8192-math",
+      "recall@1": 13.17,
+      "recall@5": 81.65,
+      "recall@10": 90.67
+    },
+    {
+      "cell": "float16-2048-math",
+      "recall@1": 13.15,
+      "recall@5": 81.67,
+      "recall@10": 90.68
+    },
+    {
+      "cell": "bfloat16-2048-query",
+      "recall@1": 11.95,
+      "recall@5": 82.03,
+      "recall@10": 90.77
+    },
+    {
+      "cell": "float32-2048-query",
+      "recall@1": 11.95,
+      "recall@5": 82.03,
+      "recall@10": 90.77
+    },
+    {
+      "cell": "float16-8192-query",
+      "recall@1": 11.91,
+      "recall@5": 82.11,
+      "recall@10": 90.89
+    },
+    {
+      "cell": "float16-2048-query",
+      "recall@1": 11.9,
+      "recall@5": 82.11,
+      "recall@10": 90.89
+    },
+    {
+      "cell": "bfloat16-8192-query",
+      "recall@1": 11.89,
+      "recall@5": 81.99,
+      "recall@10": 90.76
+    },
+    {
+      "cell": "bfloat16-8192-none",
+      "recall@1": 11.18,
+      "recall@5": 85.67,
+      "recall@10": 93.34
+    },
+    {
+      "cell": "bfloat16-2048-none",
+      "recall@1": 11.11,
+      "recall@5": 85.66,
+      "recall@10": 93.35
+    },
+    {
+      "cell": "float16-2048-none",
+      "recall@1": 11.1,
+      "recall@5": 85.73,
+      "recall@10": 93.39
+    },
+    {
+      "cell": "float16-8192-none",
+      "recall@1": 11.1,
+      "recall@5": 85.76,
+      "recall@10": 93.39
+    },
+    {
+      "cell": "bfloat16-2048-query-meanpool",
+      "recall@1": 4.97,
+      "recall@5": 56.83,
+      "recall@10": 64.67
+    }
+  ]
+}

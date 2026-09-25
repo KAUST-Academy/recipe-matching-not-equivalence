@@ -1,0 +1,152 @@
+{
+  "date": "2026-07-30",
+  "group": "heldout",
+  "target": "uw-math-ai/MELD-dataset (arXiv:2606.23959)",
+  "why_item_level": "MELD's recipe has no source corpus (its inputs are a domain pair + a prose connection), so 'sources disjoint from eval items' can only be enforced item-by-item against the released eval texts.",
+  "eval_texts_gated_against": {
+    "n_pair_statements": 540,
+    "n_distractors": 541,
+    "n_total": 1081
+  },
+  "gates": [
+    "normalized-text exact match -> drop",
+    "word-5-gram containment >= 0.35 (same statistic as results/saber_disjointness.json) -> drop",
+    "character-8-gram Jaccard >= 0.6 -> drop",
+    "embedding cosine >= 0.9 under sentence-transformers/all-mpnet-base-v2 (independent encoder) -> drop",
+    "pairs rejected by MELD's automated screen -> drop (recipe step, not a disjointness gate; counted separately as screen_rejected)"
+  ],
+  "gate_direction_note": "gates 1-4 remove the training pairs most similar to eval items, i.e. they can only WEAKEN the attack. A P1 success under these gates is therefore a lower bound on the exposure.",
+  "results": {
+    "n_generated": 4150,
+    "n_kept": 1805,
+    "n_dropped": 2345,
+    "dropped_by_reason": {
+      "screen_rejected": 2345
+    },
+    "ngram_containment_vs_eval": {
+      "mean": 0.0054,
+      "p99": 0.0769,
+      "max": 0.2308
+    },
+    "char_jaccard_vs_eval": {
+      "mean": 0.0518,
+      "p99": 0.1379,
+      "max": 0.2929
+    },
+    "semantic_gate": {
+      "enabled": true,
+      "model": "sentence-transformers/all-mpnet-base-v2",
+      "threshold": 0.9,
+      "n_dropped": 0,
+      "max_cosine_vs_eval": {
+        "mean": 0.4422,
+        "p95": 0.5829,
+        "p99": 0.6831,
+        "max": 0.8646
+      }
+    }
+  },
+  "dropped_examples": [
+    {
+      "pair_id": "meldatk-heldout-000031",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000032",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000034",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000039",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000040",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000041",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000051",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000057",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000061",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000071",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000072",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000074",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000075",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000078",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000079",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000080",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000081",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000082",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000083",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000085",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000088",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000090",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000091",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000092",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-heldout-000094",
+      "reason": "screen_rejected"
+    }
+  ],
+  "runtime_s": 44.2
+}

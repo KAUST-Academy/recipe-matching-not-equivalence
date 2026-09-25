@@ -1,0 +1,30 @@
+{
+  "generated": "2026-07-31 (finding text corrected 2026-09-24)",
+  "purpose": "Split data/saber_attack/pairs.jsonl by channel for the label-style re-attack: the first SABER attack trained on a mix of the two channels, so neither surface was tested alone.",
+  "source_file": "data/saber_attack/pairs.jsonl",
+  "rows_total": 16194,
+  "rows_by_channel": {
+    "saber_pair": 11461,
+    "saber_summary": 4733
+  },
+  "what_the_published_attack_trained_on": {
+    "saber_summary": 1786,
+    "saber_pair": 4359
+  },
+  "finding": "The trainer shuffles with random.Random(seed) before applying --max-rows, so the first attack's 6,145 rows are a seeded random draw of both channels (counts in what_the_published_attack_trained_on): mostly document-template rows with a minority of summary rows. The channel arms train on each surface alone at a matched budget.",
+  "channels": {
+    "saber_summary": {
+      "path": "data/saber_attack/pairs_summary_channel.jsonl",
+      "rows": 4733
+    },
+    "saber_pair": {
+      "path": "data/saber_attack/pairs_doc_channel.jsonl",
+      "rows": 11461
+    }
+  },
+  "matched_budget_for_reattack": 4733,
+  "channel_semantics": {
+    "saber_pair": "anchor = problem statement of x; positive = SABER's exact statement-full DOCUMENT template for a partner y with Jaccard(x,y) >= tau. Targets document style.",
+    "saber_summary": "anchor = problem statement of x; positive = x's own core-idea SUMMARY produced with SABER's verbatim extraction prompt. Targets the labeling substrate: the text SABER's relevance rule is actually computed over."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "benchmark": "data/casprobe_pairs_eval",
+  "model": "BM25 (bm25s lucene, k1=1.50, b=0.75, lowercased \\w+ tokens, English stopwords removed, no stemming)",
+  "n_corpus": 3194,
+  "n_queries": 1107,
+  "self_masking": true,
+  "overall": {
+    "recall@1": 73.8,
+    "recall@5": 98.1,
+    "recall@10": 99.19
+  },
+  "runtime_seconds": 0.3
+}

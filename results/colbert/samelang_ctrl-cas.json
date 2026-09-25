@@ -1,0 +1,26 @@
+{
+  "benchmark": "data/samelang_eval",
+  "model": "models/colbert-ctrl-cas-6145/final",
+  "backend": "pylate PLAID (top-1000 candidates)",
+  "query_length": 256,
+  "document_length": 512,
+  "n_corpus": 27817,
+  "n_queries": 498,
+  "self_masking": true,
+  "overall": {
+    "recall@1": 73.9,
+    "recall@5": 79.72,
+    "recall@10": 81.73
+  },
+  "runtime_seconds": 114.2,
+  "strict_crosslingual_gold": {
+    "recall@1": 0.0,
+    "recall@5": 0.0,
+    "recall@10": 0.0
+  },
+  "same_language_gold": {
+    "recall@1": 73.9,
+    "recall@5": 79.72,
+    "recall@10": 81.73
+  }
+}

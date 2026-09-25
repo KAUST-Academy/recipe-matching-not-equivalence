@@ -1,0 +1,63 @@
+{
+  "generated_by": "scripts/bm25_samelang_readout.py",
+  "bootstrap": 10000,
+  "ranks": {
+    "bm25": "results/ranks/samelang_bm25.ranks.jsonl",
+    "base": "results/ranks/samelang_qwen3-0.6b-base.ranks.jsonl"
+  },
+  "primary": {
+    "n": 125,
+    "n_clusters": 61,
+    "r1": 54.4,
+    "base_r1": 62.4,
+    "gap_vs_base": -8.0,
+    "gap_vs_base_ci95": [
+      -17.07,
+      0.79
+    ]
+  },
+  "primary_en": {
+    "n": 115,
+    "n_clusters": 56,
+    "r1": 51.3,
+    "base_r1": 59.13,
+    "gap_vs_base": -7.83,
+    "gap_vs_base_ci95": [
+      -17.7,
+      1.72
+    ]
+  },
+  "leaked": {
+    "n": 82,
+    "n_clusters": 38,
+    "r1": 32.93,
+    "base_r1": 50.0,
+    "gap_vs_base": -17.07,
+    "gap_vs_base_ci95": [
+      -31.71,
+      -3.37
+    ]
+  },
+  "exact": {
+    "n": 291,
+    "n_clusters": 143,
+    "r1": 100.0,
+    "base_r1": 100.0,
+    "gap_vs_base": 0.0,
+    "gap_vs_base_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "all": {
+    "n": 498,
+    "n_clusters": 242,
+    "r1": 77.51,
+    "base_r1": 82.33,
+    "gap_vs_base": -4.82,
+    "gap_vs_base_ci95": [
+      -8.23,
+      -1.61
+    ]
+  }
+}

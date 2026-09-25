@@ -1,0 +1,402 @@
+{
+  "generated": "2026-07-30",
+  "seeds_used": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "n_boot": 5000,
+  "rng_seed": 20260730,
+  "level": "per_query_nested",
+  "margin_spec": "0.25 x benchmark easy R@1 gap (LLM-CAS) point estimate",
+  "margin_points": 11.33,
+  "units": "R@k percentage points; gap = LLM-judged arm minus CAS arm",
+  "benchmark_ctrl_gap_llm_minus_cas": {
+    "easy": {
+      "recall@1": {
+        "estimate": 45.33,
+        "ci95": [
+          44.25,
+          46.41
+        ],
+        "per_seed": [
+          44.57,
+          44.88,
+          43.87,
+          45.35,
+          46.07,
+          46.57,
+          46.31,
+          45.01
+        ],
+        "level": "per_query_nested"
+      },
+      "recall@5": {
+        "estimate": 7.33,
+        "ci95": [
+          5.9,
+          8.96
+        ],
+        "per_seed": [
+          4.84,
+          7.34,
+          5.75,
+          5.71,
+          7.48,
+          7.15,
+          8.78,
+          11.6
+        ],
+        "level": "per_query_nested"
+      },
+      "recall@10": {
+        "estimate": 2.88,
+        "ci95": [
+          1.86,
+          4.03
+        ],
+        "per_seed": [
+          1.36,
+          3.34,
+          1.64,
+          1.64,
+          3.3,
+          2.62,
+          3.34,
+          5.76
+        ],
+        "level": "per_query_nested"
+      }
+    },
+    "medium": {
+      "recall@1": {
+        "estimate": 5.7,
+        "ci95": [
+          5.18,
+          6.24
+        ],
+        "per_seed": [
+          6.59,
+          5.38,
+          5.5,
+          5.75,
+          5.87,
+          5.74,
+          5.07,
+          5.72
+        ],
+        "level": "per_query_nested"
+      },
+      "recall@5": {
+        "estimate": 11.91,
+        "ci95": [
+          10.45,
+          13.39
+        ],
+        "per_seed": [
+          13.27,
+          9.12,
+          9.72,
+          11.9,
+          13.22,
+          12.2,
+          11.25,
+          14.56
+        ],
+        "level": "per_query_nested"
+      },
+      "recall@10": {
+        "estimate": 7.54,
+        "ci95": [
+          5.91,
+          9.17
+        ],
+        "per_seed": [
+          9.05,
+          4.36,
+          4.81,
+          7.14,
+          9.2,
+          7.79,
+          7.13,
+          10.87
+        ],
+        "level": "per_query_nested"
+      }
+    },
+    "hard": {
+      "recall@1": {
+        "estimate": 9.26,
+        "ci95": [
+          8.71,
+          9.85
+        ],
+        "per_seed": [
+          9.24,
+          10.59,
+          9.43,
+          8.9,
+          8.88,
+          8.81,
+          8.83,
+          9.42
+        ],
+        "level": "per_query_nested"
+      },
+      "recall@5": {
+        "estimate": 48.84,
+        "ci95": [
+          47.95,
+          49.74
+        ],
+        "per_seed": [
+          47.47,
+          48.66,
+          48.77,
+          48.88,
+          49.56,
+          48.57,
+          49.76,
+          49.09
+        ],
+        "level": "per_query_nested"
+      },
+      "recall@10": {
+        "estimate": 46.8,
+        "ci95": [
+          45.16,
+          48.43
+        ],
+        "per_seed": [
+          43.64,
+          44.07,
+          46.04,
+          46.89,
+          48.43,
+          46.5,
+          49.28,
+          49.58
+        ],
+        "level": "per_query_nested"
+      }
+    }
+  },
+  "real_duplicate_ctrl_gap_llm_minus_cas_strict": {
+    "recall@1": {
+      "estimate": 9.74,
+      "ci95": [
+        3.96,
+        15.71
+      ],
+      "per_seed": [
+        3.06,
+        15.52,
+        8.66,
+        7.38,
+        7.13,
+        11.2,
+        8.91,
+        16.03
+      ],
+      "level": "per_query_nested"
+    },
+    "recall@5": {
+      "estimate": 7.48,
+      "ci95": [
+        2.6,
+        12.85
+      ],
+      "per_seed": [
+        2.03,
+        12.22,
+        7.13,
+        5.09,
+        3.56,
+        8.91,
+        6.11,
+        14.76
+      ],
+      "level": "per_query_nested"
+    },
+    "recall@10": {
+      "estimate": 4.01,
+      "ci95": [
+        -0.19,
+        8.58
+      ],
+      "per_seed": [
+        -0.25,
+        7.38,
+        3.31,
+        1.27,
+        2.03,
+        4.33,
+        4.58,
+        9.42
+      ],
+      "level": "per_query_nested"
+    }
+  },
+  "tost_equivalence_real_duplicates": {
+    "summary_level": {
+      "level": "seed_summary",
+      "n_seeds": 8,
+      "mean_gap": 9.74,
+      "se": 1.55,
+      "margin_points": 11.33,
+      "ci90": [
+        6.81,
+        12.67
+      ],
+      "p_lower": 0.0,
+      "p_upper": 0.1682,
+      "p_tost": 0.1682,
+      "equivalent_at_0.05": false
+    },
+    "per_query_level": {
+      "level": "per_query_nested",
+      "margin_points": 11.33,
+      "ci90": [
+        4.79,
+        14.84
+      ],
+      "equivalent_at_0.05": false
+    }
+  },
+  "difference_in_differences": {
+    "primary_tier": "easy",
+    "definition": "benchmark R@1 gap (LLM-CAS) minus real-duplicate strict R@1 gap (LLM-CAS)",
+    "easy": {
+      "per_seed": [
+        41.51,
+        29.36,
+        35.21,
+        37.97,
+        38.94,
+        35.37,
+        37.4,
+        28.98
+      ],
+      "estimate": 35.59,
+      "ci95": [
+        29.51,
+        41.47
+      ],
+      "level": "per_query_nested",
+      "p_one_sided_did_gt_0": 0.0
+    },
+    "medium": {
+      "per_seed": [
+        3.53,
+        -10.14,
+        -3.16,
+        -1.63,
+        -1.26,
+        -5.46,
+        -3.84,
+        -10.31
+      ],
+      "estimate": -4.03,
+      "ci95": [
+        -10.12,
+        1.82
+      ],
+      "level": "per_query_nested",
+      "p_one_sided_did_gt_0": 0.9066
+    },
+    "hard": {
+      "per_seed": [
+        6.18,
+        -4.93,
+        0.77,
+        1.52,
+        1.75,
+        -2.39,
+        -0.08,
+        -6.61
+      ],
+      "estimate": -0.47,
+      "ci95": [
+        -6.24,
+        5.23
+      ],
+      "level": "per_query_nested",
+      "p_one_sided_did_gt_0": 0.563
+    }
+  },
+  "v2_vs_rader_gte_easy": {
+    "models": [
+      "qwen3-0.6b-p2-instr (V2, 0.6B)",
+      "rader-gte-qwen2-7b (7B)"
+    ],
+    "diff_recall@1": {
+      "estimate": 2.76,
+      "ci95": [
+        2.06,
+        3.48
+      ],
+      "level": "per_query_paired"
+    },
+    "diff_recall@5": {
+      "estimate": -1.09,
+      "ci95": [
+        -1.48,
+        -0.69
+      ],
+      "level": "per_query_paired"
+    },
+    "diff_recall@10": {
+      "estimate": -1.25,
+      "ci95": [
+        -1.49,
+        -1.0
+      ],
+      "level": "per_query_paired"
+    },
+    "mcnemar_recall@1": {
+      "n_discordant": 2938,
+      "A_only": 1676,
+      "B_only": 1262,
+      "p": 2.3135679852721248e-14
+    }
+  },
+  "xling_single_run_pairs_strict": {
+    "qwen3-0.6b-p2-instr:qwen3-0.6b-base": {
+      "diff_recall@1": {
+        "estimate": -10.43,
+        "ci95": [
+          -14.62,
+          -6.28
+        ],
+        "level": "cluster_bootstrap"
+      },
+      "diff_recall@5": {
+        "estimate": -5.85,
+        "ci95": [
+          -8.88,
+          -3.05
+        ],
+        "level": "cluster_bootstrap"
+      },
+      "diff_recall@10": {
+        "estimate": -3.82,
+        "ci95": [
+          -6.11,
+          -1.77
+        ],
+        "level": "cluster_bootstrap"
+      }
+    }
+  },
+  "caveats": [
+    "seed-summary t-intervals with n=3 seeds are wide by construction; they harden the claim's direction, not its magnitude",
+    "nested bootstrap resamples seeds with replacement; with few seeds the seed-level variance component is captured only coarsely",
+    "cluster bootstrap treats the 661 mined duplicate clusters as the sampling unit (mining precision ~85-90%, see data/crosslingual_eval/README.md)",
+    "hard-tier DiD in raw points is near zero BY CONSTRUCTION (ctrl-CAS hard R@1 ~0.15); the hard-tier circularity exhibit is the ~60x RATIO, the point-scale DiD claim lives on the easy tier"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "benchmark": "InvarEmbed cross-lingual duplicate retrieval (data/crosslingual_eval, mined real duplicates)",
+  "model": "models/ctrl-cas-v2gate-4101-s44/final",
+  "device": "cuda:0",
+  "n_corpus": 27817,
+  "n_queries": 393,
+  "corpus_subsampled": false,
+  "comparable_full_corpus": true,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt": null,
+  "self_masking": true,
+  "overall_any_gold": {
+    "recall@1": 61.58,
+    "recall@5": 80.41,
+    "recall@10": 86.26
+  },
+  "strict_crosslingual_gold": {
+    "recall@1": 60.56,
+    "recall@5": 79.9,
+    "recall@10": 86.01
+  },
+  "median_gold_rank": 1,
+  "per_language": {
+    "nl": {
+      "n_queries": 71,
+      "recall@1": 53.52,
+      "recall@5": 76.06,
+      "recall@10": 87.32
+    },
+    "zh": {
+      "n_queries": 63,
+      "recall@1": 71.43,
+      "recall@5": 85.71,
+      "recall@10": 88.89
+    },
+    "sl": {
+      "n_queries": 54,
+      "recall@1": 42.59,
+      "recall@5": 64.81,
+      "recall@10": 72.22
+    },
+    "ro": {
+      "n_queries": 52,
+      "recall@1": 88.46,
+      "recall@5": 96.15,
+      "recall@10": 96.15
+    },
+    "de": {
+      "n_queries": 51,
+      "recall@1": 52.94,
+      "recall@5": 80.39,
+      "recall@10": 86.27
+    },
+    "fr": {
+      "n_queries": 49,
+      "recall@1": 53.06,
+      "recall@5": 79.59,
+      "recall@10": 89.8
+    },
+    "es": {
+      "n_queries": 21,
+      "recall@1": 66.67,
+      "recall@5": 80.95,
+      "recall@10": 85.71
+    },
+    "hu": {
+      "n_queries": 16,
+      "recall@1": 87.5,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "mn": {
+      "n_queries": 6,
+      "recall@1": 33.33,
+      "recall@5": 50.0,
+      "recall@10": 50.0
+    },
+    "pt": {
+      "n_queries": 3,
+      "recall@1": 66.67,
+      "recall@5": 66.67,
+      "recall@10": 66.67
+    },
+    "mk": {
+      "n_queries": 3,
+      "recall@1": 33.33,
+      "recall@5": 33.33,
+      "recall@10": 33.33
+    },
+    "it": {
+      "n_queries": 2,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "af": {
+      "n_queries": 1,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "ru": {
+      "n_queries": 1,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    }
+  },
+  "per_confidence": {
+    "high": {
+      "n_queries": 368,
+      "recall@1": 61.68,
+      "recall@5": 80.43,
+      "recall@10": 86.41
+    },
+    "medium": {
+      "n_queries": 25,
+      "recall@1": 60.0,
+      "recall@5": 80.0,
+      "recall@10": 84.0
+    }
+  },
+  "per_anchor_overlap": {
+    "overlaps_retrieve_anchor": {
+      "n_queries": 220,
+      "recall@1": 60.45,
+      "recall@5": 81.82,
+      "recall@10": 87.27
+    },
+    "no_overlap": {
+      "n_queries": 173,
+      "recall@1": 63.01,
+      "recall@5": 78.61,
+      "recall@10": 84.97
+    }
+  },
+  "dump_ranks": null,
+  "runtime_seconds": 79.6
+}

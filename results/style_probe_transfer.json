@@ -1,0 +1,54 @@
+{
+  "detector": "logistic regression on word 1-2-grams, trained on our Qwen3-32B Appendix-F rewrites vs their own source problems (pair-matched)",
+  "transfer_target": "MathNet-Retrieve corpus (GPT-5-generated eq/nm docs vs organic orig docs + query texts)",
+  "n_docs": {
+    "eq": 57878,
+    "nm": 57542,
+    "orig": 1668,
+    "queries": 15000
+  },
+  "auc_synthetic_vs_orig_docs": 0.6833,
+  "auc_synthetic_vs_orig_plus_queries": 0.6636,
+  "auc_eq_vs_orig_docs": 0.8042,
+  "auc_nm_vs_orig_docs": 0.5616,
+  "auc_synthetic_docs_vs_queries": 0.6614,
+  "auc_eq_tier_vs_orig_docs": {
+    "easy": 0.7784,
+    "medium": 0.8389,
+    "hard": 0.7956
+  },
+  "mean_score_eq_tier": {
+    "easy": 0.0373,
+    "medium": 0.2998,
+    "hard": 0.0748
+  },
+  "mean_score": {
+    "eq": 0.1372,
+    "nm": -0.6743,
+    "orig": -0.8549,
+    "queries": -0.8001
+  },
+  "detector_holdout_auc": 0.8802372219693779,
+  "detector_strip_artifacts": true,
+  "disjoint_organic_negatives": {
+    "note": "organic negatives whose whitespace/case-normalized, artifact-stripped text is NOT among the probe's training anchors -- i.e. a strictly generator-transfer test with no problem-level overlap with probe training",
+    "n_orig_docs_in_probe_training": 636,
+    "pct_orig_docs_in_probe_training": 38.13,
+    "n_queries_in_probe_training": 2118,
+    "pct_queries_in_probe_training": 14.12,
+    "n_orig_docs_disjoint": 1032,
+    "n_queries_disjoint": 12882,
+    "auc_eq_vs_disjoint_orig_docs": 0.8072,
+    "auc_nm_vs_disjoint_orig_docs": 0.5713,
+    "auc_synthetic_vs_disjoint_orig_docs": 0.6896,
+    "auc_eq_vs_disjoint_orig_plus_queries": 0.782,
+    "auc_synthetic_vs_disjoint_orig_plus_queries": 0.6648,
+    "auc_eq_tier_vs_disjoint_orig_docs": {
+      "easy": 0.782,
+      "medium": 0.8407,
+      "hard": 0.7989
+    },
+    "mean_score_disjoint_orig_docs": -0.8843,
+    "mean_score_overlapping_orig_docs": -0.8073
+  }
+}

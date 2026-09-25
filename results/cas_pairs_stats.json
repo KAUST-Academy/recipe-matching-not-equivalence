@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "generated_by": "scripts/generate_cas_pairs.py",
+    "target": 0,
+    "workers": 8,
+    "per_problem_timeout_s": 30.0,
+    "seed": 0,
+    "wall_s": 510.2,
+    "throughput_problems_per_s": 15.25,
+    "out": "/ibex/user/habiam0b/MathNet_Follow_Up/data/cas_pairs/pairs.jsonl"
+  },
+  "eligibility": {
+    "n_corpus": 27817,
+    "n_eligible_census_relational_not_excluded": 9012,
+    "n_census_relational_but_anchor_excluded": 4666,
+    "n_attempted": 9012,
+    "per_domain_eligible": {
+      "Geometry": 3289,
+      "Algebra": 3210,
+      "Number Theory": 1340,
+      "Discrete Mathematics": 1009,
+      "Calculus": 79,
+      "Precalculus": 73,
+      "Statistics": 11,
+      "Math Word Problems": 1
+    }
+  },
+  "outcomes": {
+    "problems_processed": 7677,
+    "problems_timeout": 61,
+    "problems_crashed": 44,
+    "problems_no_relational_span": 1230,
+    "problems_with_any_positive": 7397,
+    "problems_with_any_negative": 5175,
+    "positive_records_written": 14361,
+    "unique_negatives_generated": 9408,
+    "mean_worker_s": 0.26
+  },
+  "per_transform": {
+    "expand_lhs": {
+      "attempted": 52,
+      "verified": 39,
+      "success_rate": 0.75
+    },
+    "expand_rhs": {
+      "attempted": 19,
+      "verified": 10,
+      "success_rate": 0.526
+    },
+    "factor_lhs": {
+      "attempted": 14,
+      "verified": 0,
+      "success_rate": 0.0
+    },
+    "factor_rhs": {
+      "attempted": 5,
+      "verified": 0,
+      "success_rate": 0.0
+    },
+    "mirror": {
+      "attempted": 2868,
+      "verified": 2797,
+      "success_rate": 0.975
+    },
+    "move_all_terms": {
+      "attempted": 4417,
+      "verified": 4180,
+      "success_rate": 0.946
+    },
+    "move_term": {
+      "attempted": 1887,
+      "verified": 1783,
+      "success_rate": 0.945
+    },
+    "neg_constant": {
+      "attempted": 4423,
+      "verified": 3667,
+      "success_rate": 0.829
+    },
+    "neg_exponent": {
+      "attempted": 1117,
+      "verified": 991,
+      "success_rate": 0.887
+    },
+    "neg_flip": {
+      "attempted": 2868,
+      "verified": 2802,
+      "success_rate": 0.977
+    },
+    "neg_opswap": {
+      "attempted": 2262,
+      "verified": 1948,
+      "success_rate": 0.861
+    },
+    "rename": {
+      "attempted": 7677,
+      "verified": 5248,
+      "success_rate": 0.684
+    },
+    "scale_div2": {
+      "attempted": 305,
+      "verified": 158,
+      "success_rate": 0.518
+    },
+    "scale_x2": {
+      "attempted": 271,
+      "verified": 146,
+      "success_rate": 0.539
+    }
+  },
+  "per_domain": {
+    "Geometry": {
+      "attempted": 3267,
+      "with_positive": 2503,
+      "records": 3836,
+      "timeout": 4
+    },
+    "Algebra": {
+      "attempted": 3158,
+      "with_positive": 2711,
+      "records": 5461,
+      "timeout": 38
+    },
+    "Number Theory": {
+      "attempted": 1317,
+      "with_positive": 1170,
+      "records": 2677,
+      "timeout": 14
+    },
+    "Discrete Mathematics": {
+      "attempted": 1007,
+      "with_positive": 885,
+      "records": 2179
+    },
+    "Calculus": {
+      "attempted": 78,
+      "with_positive": 59,
+      "records": 95,
+      "timeout": 1
+    },
+    "Precalculus": {
+      "attempted": 68,
+      "with_positive": 61,
+      "records": 96,
+      "timeout": 4
+    },
+    "Statistics": {
+      "attempted": 11,
+      "with_positive": 7,
+      "records": 16
+    },
+    "Math Word Problems": {
+      "attempted": 1,
+      "with_positive": 1,
+      "records": 1
+    }
+  },
+  "verification": {
+    "positives": "residual identity r_new == k*r_old at >=20 random complex points with exactly-known k, plus simplify(r_new - k*r_old) == 0 secondary check; renames verified by parse-back structural equality",
+    "negatives": "truth-value counterexample required (real-point disagreement for inequalities; on-solution-set residual violation for equalities); unverified negatives discarded"
+  }
+}

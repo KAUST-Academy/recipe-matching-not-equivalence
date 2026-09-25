@@ -1,0 +1,26 @@
+{
+  "arm": "llm",
+  "generator_model": "Qwen/Qwen3-32B-AWQ",
+  "judge_model": "Qwen/Qwen3-32B-AWQ",
+  "n_source_problems": 7089,
+  "positives_per_problem": 1,
+  "negatives_per_problem": 3,
+  "n_rows_written": 25656,
+  "n_verified": 22965,
+  "n_rejected_by_judge": 2691,
+  "n_generation_json_failures": 675,
+  "n_judge_json_failures": 1371,
+  "by_label": {
+    "positive": {
+      "total": 6414,
+      "verified": 6145
+    },
+    "hard_negative": {
+      "total": 19242,
+      "verified": 16820
+    }
+  },
+  "runtime_s": 8719.5,
+  "seed": 0,
+  "source_ids_file": "/ibex/user/habiam0b/MathNet_Follow_Up/data/phase2/cas_source_ids.txt"
+}

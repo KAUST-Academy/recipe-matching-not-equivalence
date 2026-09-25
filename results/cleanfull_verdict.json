@@ -1,0 +1,84 @@
+{
+  "generated_by": "scripts/cleanfull_verdict.py",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "reference": {
+    "headline_gap_easy": 45.33,
+    "clean4101_gap_easy": "about 43 (Table tab:cleangate)"
+  },
+  "tiers": {
+    "easy": {
+      "llm_mean": 61.67,
+      "cas_mean": 17.21,
+      "gap_mean": 44.45,
+      "gap_per_seed": [
+        44.92,
+        43.27,
+        43.63,
+        44.62,
+        45.52,
+        44.6,
+        45.49,
+        43.59
+      ],
+      "n_seeds": 8
+    },
+    "medium": {
+      "llm_mean": 8.83,
+      "cas_mean": 3.88,
+      "gap_mean": 4.95,
+      "gap_per_seed": [
+        5.36,
+        4.81,
+        4.68,
+        5.95,
+        4.38,
+        4.53,
+        4.58,
+        5.31
+      ],
+      "n_seeds": 8
+    },
+    "hard": {
+      "llm_mean": 9.43,
+      "cas_mean": 0.22,
+      "gap_mean": 9.21,
+      "gap_per_seed": [
+        9.15,
+        8.86,
+        9.56,
+        9.38,
+        8.18,
+        9.23,
+        8.84,
+        10.48
+      ],
+      "n_seeds": 8
+    },
+    "xling": {
+      "llm_mean": 71.6,
+      "cas_mean": 54.2,
+      "gap_mean": 17.4,
+      "gap_per_seed": [
+        21.89,
+        21.37,
+        16.53,
+        10.94,
+        16.53,
+        21.12,
+        14.25,
+        16.54
+      ],
+      "n_seeds": 8
+    }
+  },
+  "verdict": "G1 CONFIRMS: leakage is not a first-order driver; the gap survives a fully-clean matched 6,145 budget."
+}

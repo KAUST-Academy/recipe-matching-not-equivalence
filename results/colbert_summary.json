@@ -1,0 +1,311 @@
+{
+  "tags": {
+    "base": "colbertv2-base",
+    "verified": "ctrl-cas",
+    "recipe": "ctrl-llm"
+  },
+  "tiers": {
+    "easy": {
+      "base": {
+        "recall@1": 3.97,
+        "recall@5": 52.79,
+        "recall@10": 60.86
+      },
+      "verified": {
+        "recall@1": 6.57,
+        "recall@5": 59.83,
+        "recall@10": 69.66
+      },
+      "recipe": {
+        "recall@1": 39.05,
+        "recall@5": 75.69,
+        "recall@10": 81.44
+      }
+    },
+    "medium": {
+      "base": {
+        "recall@1": 1.51,
+        "recall@5": 32.8,
+        "recall@10": 42.37
+      },
+      "verified": {
+        "recall@1": 2.17,
+        "recall@5": 30.19,
+        "recall@10": 41.43
+      },
+      "recipe": {
+        "recall@1": 4.28,
+        "recall@5": 30.02,
+        "recall@10": 40.09
+      }
+    },
+    "hard": {
+      "base": {
+        "recall@1": 0.01,
+        "recall@5": 1.33,
+        "recall@10": 3.43
+      },
+      "verified": {
+        "recall@1": 0.01,
+        "recall@5": 1.24,
+        "recall@10": 3.53
+      },
+      "recipe": {
+        "recall@1": 0.08,
+        "recall@5": 2.35,
+        "recall@10": 5.64
+      }
+    }
+  },
+  "crosslingual": {
+    "base": {
+      "overall": {
+        "recall@1": 3.05,
+        "recall@5": 5.34,
+        "recall@10": 6.36
+      },
+      "strict_crosslingual_gold": {
+        "recall@1": 1.78,
+        "recall@5": 3.82,
+        "recall@10": 4.83
+      },
+      "same_language_gold": {
+        "recall@1": 1.27,
+        "recall@5": 1.53,
+        "recall@10": 1.53
+      },
+      "n_corpus": 27817,
+      "n_queries": 393
+    },
+    "verified": {
+      "overall": {
+        "recall@1": 3.31,
+        "recall@5": 4.83,
+        "recall@10": 6.11
+      },
+      "strict_crosslingual_gold": {
+        "recall@1": 1.78,
+        "recall@5": 3.31,
+        "recall@10": 4.58
+      },
+      "same_language_gold": {
+        "recall@1": 1.53,
+        "recall@5": 1.53,
+        "recall@10": 1.53
+      },
+      "n_corpus": 27817,
+      "n_queries": 393
+    },
+    "recipe": {
+      "overall": {
+        "recall@1": 7.38,
+        "recall@5": 10.94,
+        "recall@10": 13.74
+      },
+      "strict_crosslingual_gold": {
+        "recall@1": 6.36,
+        "recall@5": 9.67,
+        "recall@10": 12.21
+      },
+      "same_language_gold": {
+        "recall@1": 1.02,
+        "recall@5": 1.27,
+        "recall@10": 1.53
+      },
+      "n_corpus": 27817,
+      "n_queries": 393
+    }
+  },
+  "samelang": {
+    "base": {
+      "overall": {
+        "recall@1": 74.3,
+        "recall@5": 78.92,
+        "recall@10": 80.32
+      },
+      "strict_crosslingual_gold": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0
+      },
+      "same_language_gold": {
+        "recall@1": 74.3,
+        "recall@5": 78.92,
+        "recall@10": 80.32
+      },
+      "n_corpus": 27817,
+      "n_queries": 498
+    },
+    "verified": {
+      "overall": {
+        "recall@1": 73.9,
+        "recall@5": 79.72,
+        "recall@10": 81.73
+      },
+      "strict_crosslingual_gold": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0
+      },
+      "same_language_gold": {
+        "recall@1": 73.9,
+        "recall@5": 79.72,
+        "recall@10": 81.73
+      },
+      "n_corpus": 27817,
+      "n_queries": 498
+    },
+    "recipe": {
+      "overall": {
+        "recall@1": 66.06,
+        "recall@5": 74.3,
+        "recall@10": 77.91
+      },
+      "strict_crosslingual_gold": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0
+      },
+      "same_language_gold": {
+        "recall@1": 66.06,
+        "recall@5": 74.3,
+        "recall@10": 77.91
+      },
+      "n_corpus": 27817,
+      "n_queries": 498
+    }
+  },
+  "samelang_slices": {
+    "B": 10000,
+    "slices": {
+      "primary": {
+        "n_queries": 125,
+        "n_clusters": 61,
+        "r1": {
+          "base": 46.4,
+          "verified": 46.4,
+          "recipe": 35.2
+        },
+        "gap": {
+          "verified-base": {
+            "point": 0.0,
+            "ci95": [
+              -5.56,
+              5.56
+            ]
+          },
+          "recipe-base": {
+            "point": -11.2,
+            "ci95": [
+              -21.6,
+              -0.8
+            ]
+          },
+          "recipe-verified": {
+            "point": -11.2,
+            "ci95": [
+              -20.16,
+              -2.42
+            ]
+          }
+        }
+      },
+      "primary_en": {
+        "n_queries": 115,
+        "n_clusters": 56,
+        "r1": {
+          "base": 41.74,
+          "verified": 41.74,
+          "recipe": 30.43
+        },
+        "gap": {
+          "verified-base": {
+            "point": 0.0,
+            "ci95": [
+              -6.09,
+              6.03
+            ]
+          },
+          "recipe-base": {
+            "point": -11.3,
+            "ci95": [
+              -22.61,
+              0.0
+            ]
+          },
+          "recipe-verified": {
+            "point": -11.3,
+            "ci95": [
+              -21.05,
+              -1.77
+            ]
+          }
+        }
+      },
+      "exact": {
+        "n_queries": 291,
+        "n_clusters": 143,
+        "r1": {
+          "base": 99.31,
+          "verified": 99.31,
+          "recipe": 91.75
+        },
+        "gap": {
+          "verified-base": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "recipe-base": {
+            "point": -7.56,
+            "ci95": [
+              -11.89,
+              -3.44
+            ]
+          },
+          "recipe-verified": {
+            "point": -7.56,
+            "ci95": [
+              -12.08,
+              -3.45
+            ]
+          }
+        }
+      },
+      "all": {
+        "n_queries": 498,
+        "n_clusters": 242,
+        "r1": {
+          "base": 74.3,
+          "verified": 73.9,
+          "recipe": 66.06
+        },
+        "gap": {
+          "verified-base": {
+            "point": -0.4,
+            "ci95": [
+              -2.43,
+              1.61
+            ]
+          },
+          "recipe-base": {
+            "point": -8.23,
+            "ci95": [
+              -12.57,
+              -4.05
+            ]
+          },
+          "recipe-verified": {
+            "point": -7.83,
+            "ci95": [
+              -11.65,
+              -4.23
+            ]
+          }
+        }
+      }
+    }
+  }
+}

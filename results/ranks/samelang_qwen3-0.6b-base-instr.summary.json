@@ -1,0 +1,104 @@
+{
+  "benchmark": "InvarEmbed duplicate retrieval (data/samelang_eval)",
+  "eval_dir": "data/samelang_eval",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "device": "cuda:0",
+  "n_corpus": 27817,
+  "n_queries": 498,
+  "corpus_subsampled": false,
+  "comparable_full_corpus": true,
+  "query_prompt_name": null,
+  "query_prompt": "Instruct: Given a math problem, retrieve problems that are mathematically equivalent to it.\nQuery:",
+  "doc_prompt": null,
+  "self_masking": true,
+  "overall_any_gold": {
+    "recall@1": 82.73,
+    "recall@5": 85.94,
+    "recall@10": 87.35
+  },
+  "strict_crosslingual_gold": {
+    "recall@1": 0.0,
+    "recall@5": 0.0,
+    "recall@10": 0.0
+  },
+  "same_language_gold": {
+    "recall@1": 82.73,
+    "recall@5": 85.94,
+    "recall@10": 87.35
+  },
+  "median_gold_rank": 1,
+  "per_language": {
+    "en": {
+      "n_queries": 433,
+      "recall@1": 80.37,
+      "recall@5": 83.83,
+      "recall@10": 85.45
+    },
+    "it": {
+      "n_queries": 32,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "es": {
+      "n_queries": 17,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "pt": {
+      "n_queries": 6,
+      "recall@1": 83.33,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "fr": {
+      "n_queries": 6,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "de": {
+      "n_queries": 2,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "ro": {
+      "n_queries": 2,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    }
+  },
+  "per_confidence": {
+    "high": {
+      "n_queries": 492,
+      "recall@1": 82.93,
+      "recall@5": 86.18,
+      "recall@10": 87.6
+    },
+    "medium": {
+      "n_queries": 6,
+      "recall@1": 66.67,
+      "recall@5": 66.67,
+      "recall@10": 66.67
+    }
+  },
+  "per_anchor_overlap": {
+    "overlaps_retrieve_anchor": {
+      "n_queries": 278,
+      "recall@1": 84.53,
+      "recall@5": 88.49,
+      "recall@10": 90.29
+    },
+    "no_overlap": {
+      "n_queries": 220,
+      "recall@1": 80.45,
+      "recall@5": 82.73,
+      "recall@10": 83.64
+    }
+  },
+  "dump_ranks": "results/ranks/samelang_qwen3-0.6b-base-instr.ranks.jsonl",
+  "runtime_seconds": 93.4
+}

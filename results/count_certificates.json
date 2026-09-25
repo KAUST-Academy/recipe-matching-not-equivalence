@@ -1,0 +1,44 @@
+{
+  "uncapped_verified_arm": {
+    "run_config": "models/qwen3-0.6b-cas-cmnrl/run_config.json",
+    "rows_used": 13747,
+    "source_problems": 7089,
+    "train_triplets": 19956,
+    "train_pairs": 2390,
+    "contrastive_examples": 22346,
+    "definition": "contrastive examples = training triplets + training pairs, after the 5% by-source dev split"
+  },
+  "saber_document_channel": {
+    "file": "data/saber_attack/pairs_doc_channel.jsonl",
+    "rows": 11461,
+    "distinct_source_ids": 4119,
+    "distinct_positives": 3374
+  },
+  "saber_summary_channel": {
+    "file": "data/saber_attack/pairs_summary_channel.jsonl",
+    "rows": 4733,
+    "distinct_source_ids": 4733,
+    "distinct_positives": 4706
+  },
+  "saber_matched_summary_arm_draws": {
+    "file": "data/saber_attack/pairs_summary_channel.jsonl",
+    "max_rows": 2368,
+    "per_seed": {
+      "42": {
+        "rows": 2368,
+        "distinct_source_ids": 2368,
+        "distinct_positives": 2365
+      },
+      "43": {
+        "rows": 2368,
+        "distinct_source_ids": 2368,
+        "distinct_positives": 2360
+      },
+      "44": {
+        "rows": 2368,
+        "distinct_source_ids": 2368,
+        "distinct_positives": 2360
+      }
+    }
+  }
+}

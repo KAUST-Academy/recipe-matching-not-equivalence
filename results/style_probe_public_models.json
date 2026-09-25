@@ -1,0 +1,232 @@
+{
+  "id": "style_probe_stripped",
+  "date": "2026-07-30",
+  "strip_artifacts": true,
+  "train_synthetic": "positives",
+  "seed": 42,
+  "stages_run": [
+    "correlate"
+  ],
+  "correlate": {
+    "audit": "recipe-sensitivity audit -- does similarity track the recipe-style score?",
+    "n_queries_sampled": 2000,
+    "seed": 42,
+    "per_model": {
+      "base-0.6b": {
+        "doc_emb": ".emb_cache/docs_Qwen__Qwen3-Embedding-0.6B_236c0b3187bc143d.npz",
+        "query_emb": ".emb_cache/queries_Qwen__Qwen3-Embedding-0.6B_2a9caafd7bf6c598.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": -0.061,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0622,
+        "mean_top10_style_score": -0.4471,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 44.83,
+        "mean_top10_synthetic_fraction": 0.99
+      },
+      "Qwen3-4B": {
+        "doc_emb": ".emb_cache/docs_Qwen__Qwen3-Embedding-4B_169406da1e116196.npz",
+        "query_emb": ".emb_cache/queries_Qwen__Qwen3-Embedding-4B_fc371c8681e73b05.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": -0.0548,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0561,
+        "mean_top10_style_score": -0.4195,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 45.61,
+        "mean_top10_synthetic_fraction": 0.9905
+      },
+      "Qwen3-8B": {
+        "doc_emb": ".emb_cache/docs_Qwen__Qwen3-Embedding-8B_c7c0787b6faf09e1.npz",
+        "query_emb": ".emb_cache/queries_Qwen__Qwen3-Embedding-8B_9623f6a4ab94c36c.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": -0.0705,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0706,
+        "mean_top10_style_score": -0.4337,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 45.21,
+        "mean_top10_synthetic_fraction": 0.9877
+      },
+      "RaDeR-Qwen25-7B": {
+        "doc_emb": ".emb_cache/docs_Raderspace__RaDeR_Qwen25-7B_NuminaMath_MATH_allquerytypes_40cf0cf6cf6c550c.npz",
+        "query_emb": ".emb_cache/queries_Raderspace__RaDeR_Qwen25-7B_NuminaMath_MATH_allquerytypes_389e4f3a12283efc.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": 0.0043,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.0036,
+        "mean_top10_style_score": -0.3654,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 47.23,
+        "mean_top10_synthetic_fraction": 0.9918
+      },
+      "MathLeap-Octen-8B": {
+        "doc_emb": ".emb_cache/docs_uw-math-ai__MathLeap-Octen-8B_a50ec302ea374b6a.npz",
+        "query_emb": ".emb_cache/queries_uw-math-ai__MathLeap-Octen-8B_39463533213fe5d0.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": -0.0091,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0098,
+        "mean_top10_style_score": -0.3427,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 47.94,
+        "mean_top10_synthetic_fraction": 0.9921
+      },
+      "MathLeap-Qwen-8B": {
+        "doc_emb": ".emb_cache/docs_uw-math-ai__MathLeap-Qwen-8B_09049b367df9b5ca.npz",
+        "query_emb": ".emb_cache/queries_uw-math-ai__MathLeap-Qwen-8B_df7c05cae47441b2.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": -0.0214,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.022,
+        "mean_top10_style_score": -0.3743,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 47.04,
+        "mean_top10_synthetic_fraction": 0.9922
+      }
+    },
+    "pairwise_perquery_rho_deltas": [
+      {
+        "pair": "base-0.6b - Qwen3-4B",
+        "mean_perquery_delta_rho": -0.0062,
+        "wilcoxon_p": 1.54e-44,
+        "pct_queries_higher": 37.55
+      },
+      {
+        "pair": "base-0.6b - Qwen3-8B",
+        "mean_perquery_delta_rho": 0.0095,
+        "wilcoxon_p": 1.47e-101,
+        "pct_queries_higher": 71.95
+      },
+      {
+        "pair": "base-0.6b - RaDeR-Qwen25-7B",
+        "mean_perquery_delta_rho": -0.0654,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 0.2,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "base-0.6b - MathLeap-Octen-8B",
+        "mean_perquery_delta_rho": -0.0519,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 0.9,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "base-0.6b - MathLeap-Qwen-8B",
+        "mean_perquery_delta_rho": -0.0396,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 2.65,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "Qwen3-4B - Qwen3-8B",
+        "mean_perquery_delta_rho": 0.0157,
+        "wilcoxon_p": 3.64e-209,
+        "pct_queries_higher": 82.1
+      },
+      {
+        "pair": "Qwen3-4B - RaDeR-Qwen25-7B",
+        "mean_perquery_delta_rho": -0.0592,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 0.15,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "Qwen3-4B - MathLeap-Octen-8B",
+        "mean_perquery_delta_rho": -0.0457,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 0.45,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "Qwen3-4B - MathLeap-Qwen-8B",
+        "mean_perquery_delta_rho": -0.0334,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 2.85,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "Qwen3-8B - RaDeR-Qwen25-7B",
+        "mean_perquery_delta_rho": -0.0749,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 0.0,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "Qwen3-8B - MathLeap-Octen-8B",
+        "mean_perquery_delta_rho": -0.0614,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 0.0,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "Qwen3-8B - MathLeap-Qwen-8B",
+        "mean_perquery_delta_rho": -0.0491,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 0.1,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "RaDeR-Qwen25-7B - MathLeap-Octen-8B",
+        "mean_perquery_delta_rho": 0.0135,
+        "wilcoxon_p": 2.68e-216,
+        "pct_queries_higher": 82.2
+      },
+      {
+        "pair": "RaDeR-Qwen25-7B - MathLeap-Qwen-8B",
+        "mean_perquery_delta_rho": 0.0258,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 95.9,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "MathLeap-Octen-8B - MathLeap-Qwen-8B",
+        "mean_perquery_delta_rho": 0.0123,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 96.05,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      }
+    ],
+    "detector_strip_artifacts": true,
+    "note": "rho_syntheticdocs is the within-synthetic gradient (immune to the synthetic-vs-organic base-rate confound); top10_synthetic_fraction base rate = fraction of synthetic docs in the corpus = 0.9858; mean_top10_style_corpus_percentile base rate = 50.0 (use it instead of a ratio of mean decision-function scores, which is not scale-meaningful)"
+  },
+  "headline": {
+    "note": "H1 fix: artifact-stripped detector vs the v1 artifact-inflated one. 'v1' columns come from unstripped_reference (--no-strip-artifacts rerun, which reproduces the released numbers exactly) and, for the tracking row, results/style_probe_correlations_v1_artifact.json.",
+    "tracking_mean_perquery_rho": {
+      "base-0.6b": {
+        "stripped": -0.061,
+        "v1": -0.0323
+      },
+      "Qwen3-4B": {
+        "stripped": -0.0548,
+        "v1": null
+      },
+      "Qwen3-8B": {
+        "stripped": -0.0705,
+        "v1": null
+      },
+      "RaDeR-Qwen25-7B": {
+        "stripped": 0.0043,
+        "v1": null
+      },
+      "MathLeap-Octen-8B": {
+        "stripped": -0.0091,
+        "v1": null
+      },
+      "MathLeap-Qwen-8B": {
+        "stripped": -0.0214,
+        "v1": null
+      }
+    },
+    "tracking_llm_minus_cas": {
+      "stripped": {
+        "mean_perquery_delta_rho": null,
+        "pct_queries_higher": null,
+        "wilcoxon_p": null,
+        "wilcoxon_p_reportable": null
+      },
+      "v1": {
+        "mean_perquery_delta_rho": 0.1313,
+        "pct_queries_higher": 93.6,
+        "wilcoxon_p": 4.53e-307
+      }
+    },
+    "top10_style_corpus_percentile_stripped": {
+      "base-0.6b": 44.83,
+      "Qwen3-4B": 45.61,
+      "Qwen3-8B": 45.21,
+      "RaDeR-Qwen25-7B": 47.23,
+      "MathLeap-Octen-8B": 47.94,
+      "MathLeap-Qwen-8B": 47.04
+    }
+  }
+}

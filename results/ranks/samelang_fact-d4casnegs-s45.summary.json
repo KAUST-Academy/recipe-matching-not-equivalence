@@ -1,0 +1,104 @@
+{
+  "benchmark": "InvarEmbed duplicate retrieval (data/samelang_eval)",
+  "eval_dir": "data/samelang_eval",
+  "model": "models/fact-d4casnegs-6145-s45/final",
+  "device": "cuda:0",
+  "n_corpus": 27817,
+  "n_queries": 498,
+  "corpus_subsampled": false,
+  "comparable_full_corpus": true,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt": null,
+  "self_masking": true,
+  "overall_any_gold": {
+    "recall@1": 49.8,
+    "recall@5": 57.03,
+    "recall@10": 60.44
+  },
+  "strict_crosslingual_gold": {
+    "recall@1": 0.0,
+    "recall@5": 0.0,
+    "recall@10": 0.0
+  },
+  "same_language_gold": {
+    "recall@1": 49.8,
+    "recall@5": 57.03,
+    "recall@10": 60.44
+  },
+  "median_gold_rank": 2,
+  "per_language": {
+    "en": {
+      "n_queries": 433,
+      "recall@1": 56.58,
+      "recall@5": 63.28,
+      "recall@10": 65.82
+    },
+    "it": {
+      "n_queries": 32,
+      "recall@1": 0.0,
+      "recall@5": 12.5,
+      "recall@10": 28.12
+    },
+    "es": {
+      "n_queries": 17,
+      "recall@1": 17.65,
+      "recall@5": 23.53,
+      "recall@10": 23.53
+    },
+    "pt": {
+      "n_queries": 6,
+      "recall@1": 0.0,
+      "recall@5": 16.67,
+      "recall@10": 33.33
+    },
+    "fr": {
+      "n_queries": 6,
+      "recall@1": 0.0,
+      "recall@5": 16.67,
+      "recall@10": 16.67
+    },
+    "de": {
+      "n_queries": 2,
+      "recall@1": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0
+    },
+    "ro": {
+      "n_queries": 2,
+      "recall@1": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0
+    }
+  },
+  "per_confidence": {
+    "high": {
+      "n_queries": 492,
+      "recall@1": 49.8,
+      "recall@5": 57.11,
+      "recall@10": 60.57
+    },
+    "medium": {
+      "n_queries": 6,
+      "recall@1": 50.0,
+      "recall@5": 50.0,
+      "recall@10": 50.0
+    }
+  },
+  "per_anchor_overlap": {
+    "overlaps_retrieve_anchor": {
+      "n_queries": 278,
+      "recall@1": 67.63,
+      "recall@5": 73.74,
+      "recall@10": 76.26
+    },
+    "no_overlap": {
+      "n_queries": 220,
+      "recall@1": 27.27,
+      "recall@5": 35.91,
+      "recall@10": 40.45
+    }
+  },
+  "dump_ranks": "results/ranks/samelang_fact-d4casnegs-s45.ranks.jsonl",
+  "runtime_seconds": 80.8
+}

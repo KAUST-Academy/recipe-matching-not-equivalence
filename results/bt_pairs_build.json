@@ -1,0 +1,76 @@
+{
+  "generated_by": "scripts/backtranslate_anchors.py",
+  "model": "facebook/nllb-200-distilled-600M",
+  "device": "cuda",
+  "beams": 4,
+  "style": "BR",
+  "seconds": 424,
+  "n_sources": 6768,
+  "n_written": 6576,
+  "status_counts": {
+    "ok": 6576,
+    "identical_to_source": 186,
+    "placeholder_lost_or_duplicated": 5,
+    "length_ratio_out_of_range": 1
+  },
+  "sentences_total": 20502,
+  "sentences_fallback": 186,
+  "rows_with_any_fallback": 162,
+  "rows_with_any_fallback_kept": 162,
+  "languages": {
+    "eng_Latn": 5209,
+    "fra_Latn": 317,
+    "spa_Latn": 240,
+    "deu_Latn": 197,
+    "ita_Latn": 165,
+    "slv_Latn": 150,
+    "por_Latn": 138,
+    "ron_Latn": 114,
+    "nld_Latn": 77,
+    "zho_Hant": 58,
+    "srp_Cyrl": 34,
+    "rus_Cyrl": 27,
+    "zho_Hans": 13,
+    "khk_Cyrl": 12,
+    "mkd_Cyrl": 8,
+    "hun_Latn": 5,
+    "pol_Latn": 3,
+    "bul_Cyrl": 1
+  },
+  "language_from": {
+    "tag": 1515,
+    "stopwords": 4977,
+    "default": 177,
+    "script": 99
+  },
+  "pivots": {
+    "eng_Latn": 1559,
+    "fra_Latn": 5209
+  },
+  "depth_vs_source_kept_rows": {
+    "char3_jaccard": {
+      "mean": 0.783,
+      "median": 0.797,
+      "q25": 0.725,
+      "q75": 0.86
+    },
+    "token_jaccard": {
+      "mean": 0.705,
+      "median": 0.722,
+      "q25": 0.618,
+      "q75": 0.81
+    },
+    "len_ratio": {
+      "mean": 1.015,
+      "median": 1.01,
+      "q25": 0.99,
+      "q75": 1.033
+    }
+  },
+  "depth_reference_E_R2": {
+    "ctrl-CAS char3": 0.865,
+    "D1 char3": 0.463,
+    "note": "results/paraphrase_depth.json is the authority"
+  },
+  "output": "data/bt_pairs/pairs.jsonl"
+}

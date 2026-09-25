@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-17",
+  "treatment": {
+    "model": "models/meld-attack-meld9altm/final",
+    "prompt": "query",
+    "dump": "results/meld_pq_attack_meld9altm.json"
+  },
+  "reference": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "prompt": "query",
+    "dump": "results/meld_pq_base.json"
+  },
+  "prompt_conditions_match": true,
+  "bootstrap": {
+    "n_resamples": 10000,
+    "seed": 0,
+    "resampling_unit": "MELD pair (270 clusters, 2 queries each)"
+  },
+  "metrics": {
+    "recall@1_pairs_only": {
+      "treatment": 31.48,
+      "reference": 10.19,
+      "diff": 21.3,
+      "ci95": [
+        16.48,
+        26.11
+      ],
+      "se_paired": 2.448,
+      "n_sig": 8.7,
+      "n_discordant_queries": 141
+    },
+    "recall@5_pairs_only": {
+      "treatment": 64.81,
+      "reference": 34.26,
+      "diff": 30.56,
+      "ci95": [
+        24.81,
+        36.48
+      ],
+      "se_paired": 3.015,
+      "n_sig": 10.14,
+      "n_discordant_queries": 223
+    },
+    "pct_above_same_framing_distractors": {
+      "treatment": 63.7,
+      "reference": 54.07,
+      "diff": 9.63,
+      "ci95": [
+        4.63,
+        14.81
+      ],
+      "se_paired": 2.605,
+      "n_sig": 3.7,
+      "n_discordant_queries": 166
+    }
+  },
+  "runtime_s": 0.8
+}

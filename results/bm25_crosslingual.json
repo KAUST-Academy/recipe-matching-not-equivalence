@@ -1,0 +1,23 @@
+{
+  "benchmark": "data/crosslingual_eval",
+  "model": "BM25 (bm25s lucene, k1=1.50, b=0.75, lowercased \\w+ tokens, English stopwords removed, no stemming)",
+  "n_corpus": 27817,
+  "n_queries": 393,
+  "self_masking": true,
+  "overall": {
+    "recall@1": 11.96,
+    "recall@5": 17.3,
+    "recall@10": 20.87
+  },
+  "runtime_seconds": 0.6,
+  "strict_crosslingual_gold": {
+    "recall@1": 10.69,
+    "recall@5": 15.78,
+    "recall@10": 19.59
+  },
+  "same_language_gold": {
+    "recall@1": 1.27,
+    "recall@5": 1.53,
+    "recall@10": 1.53
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "generated_by": "scripts/build_llmnegs_cells.py",
+  "inputs": [
+    "data/llm_pairs_unrelated/pairs.jsonl (D4 positives)",
+    "data/llm_pairs/pairs.jsonl (D1 negatives)",
+    "data/llm_pairs_unrelated_casnegs/pairs.jsonl (per-row counts)"
+  ],
+  "rows_in_d4": 6768,
+  "rows_dropped_no_d1_row": 790,
+  "rows_written": 5978,
+  "rows_truncated_to_d1_cap_of_3": 449,
+  "matched_negatives_short_of_d4casnegs": 543,
+  "count_matched": {
+    "file": "data/llm_pairs_unrelated_llmnegs/pairs.jsonl",
+    "negatives": 7186,
+    "negatives_per_row": 1.202,
+    "histogram": {
+      "0": 1798,
+      "1": 1925,
+      "2": 1504,
+      "3": 751
+    }
+  },
+  "full": {
+    "file": "data/llm_pairs_unrelated_llmnegs_full/pairs.jsonl",
+    "negatives": 15752,
+    "negatives_per_row": 2.635,
+    "histogram": {
+      "0": 75,
+      "1": 345,
+      "2": 1267,
+      "3": 4291
+    }
+  },
+  "reference_d4casnegs_negatives_per_row": 1.277
+}

@@ -1,0 +1,618 @@
+{
+  "generated_by": "scripts/xling_slice_analysis.py",
+  "metric": "strict cross-lingual R@1 (xling_rank==0), percent",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "n_queries": 393,
+  "rare_df_max": 20,
+  "bootstrap": 2000,
+  "cut_points": {
+    "mathdens_median": 0.3535,
+    "rshared_q25": 51.42,
+    "rshared_q75": 123.44
+  },
+  "slices": {
+    "all": {
+      "n_queries": 393,
+      "base": 84.73,
+      "ctrl-cas": {
+        "mean": 56.52,
+        "per_seed_min": 51.15,
+        "per_seed_max": 61.83,
+        "gap_vs_base": -28.21,
+        "gap_vs_base_ci95": [
+          -33.21,
+          -23.15
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 66.25,
+        "per_seed_min": 62.09,
+        "per_seed_max": 68.96,
+        "gap_vs_base": -18.48,
+        "gap_vs_base_ci95": [
+          -23.47,
+          -13.68
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 68.02,
+        "per_seed_min": 65.39,
+        "per_seed_max": 72.01,
+        "gap_vs_base": -16.71,
+        "gap_vs_base_ci95": [
+          -22.31,
+          -11.45
+        ]
+      },
+      "dose-style": {
+        "mean": 65.39,
+        "per_seed_min": 63.36,
+        "per_seed_max": 66.92,
+        "gap_vs_base": -19.34,
+        "gap_vs_base_ci95": [
+          -24.43,
+          -14.59
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 93.81,
+        "per_seed_min": 93.38,
+        "per_seed_max": 94.15,
+        "gap_vs_base": 9.08,
+        "gap_vs_base_ci95": [
+          5.85,
+          12.55
+        ]
+      }
+    },
+    "method=answer_corroborated": {
+      "n_queries": 25,
+      "base": 88.0,
+      "ctrl-cas": {
+        "mean": 60.0,
+        "per_seed_min": 56.0,
+        "per_seed_max": 68.0,
+        "gap_vs_base": -28.0,
+        "gap_vs_base_ci95": [
+          -45.0,
+          -12.5
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 52.5,
+        "per_seed_min": 44.0,
+        "per_seed_max": 60.0,
+        "gap_vs_base": -35.5,
+        "gap_vs_base_ci95": [
+          -55.5,
+          -16.0
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 53.33,
+        "per_seed_min": 48.0,
+        "per_seed_max": 60.0,
+        "gap_vs_base": -34.67,
+        "gap_vs_base_ci95": [
+          -56.0,
+          -13.33
+        ]
+      },
+      "dose-style": {
+        "mean": 60.0,
+        "per_seed_min": 48.0,
+        "per_seed_max": 68.0,
+        "gap_vs_base": -28.0,
+        "gap_vs_base_ci95": [
+          -48.0,
+          -9.33
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 88.0,
+        "per_seed_min": 88.0,
+        "per_seed_max": 88.0,
+        "gap_vs_base": 0.0,
+        "gap_vs_base_ci95": [
+          -12.0,
+          12.0
+        ]
+      }
+    },
+    "method=text_mined": {
+      "n_queries": 15,
+      "base": 86.67,
+      "ctrl-cas": {
+        "mean": 68.33,
+        "per_seed_min": 53.33,
+        "per_seed_max": 80.0,
+        "gap_vs_base": -18.33,
+        "gap_vs_base_ci95": [
+          -37.5,
+          -3.33
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 78.33,
+        "per_seed_min": 73.33,
+        "per_seed_max": 80.0,
+        "gap_vs_base": -8.33,
+        "gap_vs_base_ci95": [
+          -23.33,
+          0.0
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 77.78,
+        "per_seed_min": 73.33,
+        "per_seed_max": 80.0,
+        "gap_vs_base": -8.89,
+        "gap_vs_base_ci95": [
+          -26.67,
+          0.0
+        ]
+      },
+      "dose-style": {
+        "mean": 84.44,
+        "per_seed_min": 80.0,
+        "per_seed_max": 86.67,
+        "gap_vs_base": -2.22,
+        "gap_vs_base_ci95": [
+          -13.33,
+          0.0
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 86.67,
+        "per_seed_min": 86.67,
+        "per_seed_max": 86.67,
+        "gap_vs_base": 0.0,
+        "gap_vs_base_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "method=formula_only": {
+      "n_queries": 353,
+      "base": 84.42,
+      "ctrl-cas": {
+        "mean": 55.77,
+        "per_seed_min": 50.42,
+        "per_seed_max": 61.76,
+        "gap_vs_base": -28.65,
+        "gap_vs_base_ci95": [
+          -33.5,
+          -23.16
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 66.71,
+        "per_seed_min": 62.61,
+        "per_seed_max": 69.41,
+        "gap_vs_base": -17.71,
+        "gap_vs_base_ci95": [
+          -22.59,
+          -12.96
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 68.65,
+        "per_seed_min": 66.29,
+        "per_seed_max": 73.09,
+        "gap_vs_base": -15.77,
+        "gap_vs_base_ci95": [
+          -21.63,
+          -9.92
+        ]
+      },
+      "dose-style": {
+        "mean": 64.97,
+        "per_seed_min": 63.46,
+        "per_seed_max": 66.29,
+        "gap_vs_base": -19.45,
+        "gap_vs_base_ci95": [
+          -24.46,
+          -14.16
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 94.52,
+        "per_seed_min": 94.05,
+        "per_seed_max": 94.9,
+        "gap_vs_base": 10.1,
+        "gap_vs_base_ci95": [
+          6.42,
+          13.69
+        ]
+      }
+    },
+    "rcont<1.0": {
+      "n_queries": 77,
+      "base": 88.31,
+      "ctrl-cas": {
+        "mean": 68.02,
+        "per_seed_min": 63.64,
+        "per_seed_max": 71.43,
+        "gap_vs_base": -20.29,
+        "gap_vs_base_ci95": [
+          -29.22,
+          -11.52
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 69.81,
+        "per_seed_min": 59.74,
+        "per_seed_max": 72.73,
+        "gap_vs_base": -18.51,
+        "gap_vs_base_ci95": [
+          -28.9,
+          -8.6
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 76.19,
+        "per_seed_min": 74.03,
+        "per_seed_max": 79.22,
+        "gap_vs_base": -12.12,
+        "gap_vs_base_ci95": [
+          -21.65,
+          -3.02
+        ]
+      },
+      "dose-style": {
+        "mean": 72.73,
+        "per_seed_min": 67.53,
+        "per_seed_max": 75.32,
+        "gap_vs_base": -15.58,
+        "gap_vs_base_ci95": [
+          -25.97,
+          -5.63
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 93.51,
+        "per_seed_min": 92.21,
+        "per_seed_max": 94.81,
+        "gap_vs_base": 5.19,
+        "gap_vs_base_ci95": [
+          -0.44,
+          11.69
+        ]
+      }
+    },
+    "rcont<0.9": {
+      "n_queries": 38,
+      "base": 89.47,
+      "ctrl-cas": {
+        "mean": 66.78,
+        "per_seed_min": 60.53,
+        "per_seed_max": 73.68,
+        "gap_vs_base": -22.7,
+        "gap_vs_base_ci95": [
+          -35.86,
+          -9.21
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 69.41,
+        "per_seed_min": 63.16,
+        "per_seed_max": 73.68,
+        "gap_vs_base": -20.07,
+        "gap_vs_base_ci95": [
+          -35.21,
+          -5.26
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 72.81,
+        "per_seed_min": 68.42,
+        "per_seed_max": 76.32,
+        "gap_vs_base": -16.67,
+        "gap_vs_base_ci95": [
+          -33.33,
+          -2.63
+        ]
+      },
+      "dose-style": {
+        "mean": 70.18,
+        "per_seed_min": 65.79,
+        "per_seed_max": 73.68,
+        "gap_vs_base": -19.3,
+        "gap_vs_base_ci95": [
+          -33.33,
+          -5.26
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 93.86,
+        "per_seed_min": 92.11,
+        "per_seed_max": 94.74,
+        "gap_vs_base": 4.39,
+        "gap_vs_base_ci95": [
+          -5.26,
+          14.04
+        ]
+      }
+    },
+    "rcont=1.0": {
+      "n_queries": 316,
+      "base": 83.86,
+      "ctrl-cas": {
+        "mean": 53.72,
+        "per_seed_min": 48.1,
+        "per_seed_max": 59.49,
+        "gap_vs_base": -30.14,
+        "gap_vs_base_ci95": [
+          -35.6,
+          -24.72
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 65.39,
+        "per_seed_min": 62.66,
+        "per_seed_max": 68.35,
+        "gap_vs_base": -18.47,
+        "gap_vs_base_ci95": [
+          -23.66,
+          -12.97
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 66.03,
+        "per_seed_min": 63.29,
+        "per_seed_max": 70.25,
+        "gap_vs_base": -17.83,
+        "gap_vs_base_ci95": [
+          -24.16,
+          -11.92
+        ]
+      },
+      "dose-style": {
+        "mean": 63.61,
+        "per_seed_min": 62.34,
+        "per_seed_max": 64.87,
+        "gap_vs_base": -20.25,
+        "gap_vs_base_ci95": [
+          -25.84,
+          -14.98
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 93.88,
+        "per_seed_min": 93.35,
+        "per_seed_max": 94.3,
+        "gap_vs_base": 10.02,
+        "gap_vs_base_ci95": [
+          6.22,
+          14.03
+        ]
+      }
+    },
+    "rshared=bottom_quartile": {
+      "n_queries": 99,
+      "base": 76.77,
+      "ctrl-cas": {
+        "mean": 47.35,
+        "per_seed_min": 44.44,
+        "per_seed_max": 51.52,
+        "gap_vs_base": -29.42,
+        "gap_vs_base_ci95": [
+          -38.89,
+          -20.2
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 56.31,
+        "per_seed_min": 52.53,
+        "per_seed_max": 59.6,
+        "gap_vs_base": -20.45,
+        "gap_vs_base_ci95": [
+          -31.19,
+          -9.47
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 54.21,
+        "per_seed_min": 50.51,
+        "per_seed_max": 59.6,
+        "gap_vs_base": -22.56,
+        "gap_vs_base_ci95": [
+          -33.68,
+          -10.44
+        ]
+      },
+      "dose-style": {
+        "mean": 52.86,
+        "per_seed_min": 49.49,
+        "per_seed_max": 55.56,
+        "gap_vs_base": -23.91,
+        "gap_vs_base_ci95": [
+          -35.35,
+          -12.12
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 91.92,
+        "per_seed_min": 91.92,
+        "per_seed_max": 91.92,
+        "gap_vs_base": 15.15,
+        "gap_vs_base_ci95": [
+          6.06,
+          23.23
+        ]
+      }
+    },
+    "rshared=top_quartile": {
+      "n_queries": 99,
+      "base": 93.94,
+      "ctrl-cas": {
+        "mean": 70.58,
+        "per_seed_min": 64.65,
+        "per_seed_max": 77.78,
+        "gap_vs_base": -23.36,
+        "gap_vs_base_ci95": [
+          -31.69,
+          -15.4
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 81.82,
+        "per_seed_min": 76.77,
+        "per_seed_max": 84.85,
+        "gap_vs_base": -12.12,
+        "gap_vs_base_ci95": [
+          -19.44,
+          -5.18
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 84.51,
+        "per_seed_min": 82.83,
+        "per_seed_max": 86.87,
+        "gap_vs_base": -9.43,
+        "gap_vs_base_ci95": [
+          -16.16,
+          -2.69
+        ]
+      },
+      "dose-style": {
+        "mean": 81.14,
+        "per_seed_min": 77.78,
+        "per_seed_max": 83.84,
+        "gap_vs_base": -12.79,
+        "gap_vs_base_ci95": [
+          -21.21,
+          -5.72
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 96.97,
+        "per_seed_min": 95.96,
+        "per_seed_max": 97.98,
+        "gap_vs_base": 3.03,
+        "gap_vs_base_ci95": [
+          -1.01,
+          7.41
+        ]
+      }
+    },
+    "mathdens=low": {
+      "n_queries": 197,
+      "base": 78.68,
+      "ctrl-cas": {
+        "mean": 50.57,
+        "per_seed_min": 43.15,
+        "per_seed_max": 58.38,
+        "gap_vs_base": -28.11,
+        "gap_vs_base_ci95": [
+          -35.34,
+          -21.45
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 57.93,
+        "per_seed_min": 54.82,
+        "per_seed_max": 60.41,
+        "gap_vs_base": -20.75,
+        "gap_vs_base_ci95": [
+          -27.54,
+          -13.9
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 58.21,
+        "per_seed_min": 55.84,
+        "per_seed_max": 61.93,
+        "gap_vs_base": -20.47,
+        "gap_vs_base_ci95": [
+          -27.58,
+          -13.37
+        ]
+      },
+      "dose-style": {
+        "mean": 54.48,
+        "per_seed_min": 51.27,
+        "per_seed_max": 56.35,
+        "gap_vs_base": -24.2,
+        "gap_vs_base_ci95": [
+          -31.47,
+          -17.09
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 91.2,
+        "per_seed_min": 90.86,
+        "per_seed_max": 91.88,
+        "gap_vs_base": 12.52,
+        "gap_vs_base_ci95": [
+          7.28,
+          17.77
+        ]
+      }
+    },
+    "mathdens=high": {
+      "n_queries": 196,
+      "base": 90.82,
+      "ctrl-cas": {
+        "mean": 62.5,
+        "per_seed_min": 57.14,
+        "per_seed_max": 68.88,
+        "gap_vs_base": -28.32,
+        "gap_vs_base_ci95": [
+          -34.95,
+          -22.07
+        ]
+      },
+      "ctrl-llm": {
+        "mean": 74.62,
+        "per_seed_min": 68.37,
+        "per_seed_max": 78.06,
+        "gap_vs_base": -16.2,
+        "gap_vs_base_ci95": [
+          -22.58,
+          -9.82
+        ]
+      },
+      "dose-paraphrase": {
+        "mean": 77.89,
+        "per_seed_min": 75.0,
+        "per_seed_max": 82.14,
+        "gap_vs_base": -12.93,
+        "gap_vs_base_ci95": [
+          -19.9,
+          -6.12
+        ]
+      },
+      "dose-style": {
+        "mean": 76.36,
+        "per_seed_min": 75.51,
+        "per_seed_max": 77.55,
+        "gap_vs_base": -14.46,
+        "gap_vs_base_ci95": [
+          -21.09,
+          -8.16
+        ]
+      },
+      "dose-unrelated": {
+        "mean": 96.43,
+        "per_seed_min": 95.92,
+        "per_seed_max": 96.94,
+        "gap_vs_base": 5.61,
+        "gap_vs_base_ci95": [
+          1.87,
+          9.35
+        ]
+      }
+    }
+  }
+}

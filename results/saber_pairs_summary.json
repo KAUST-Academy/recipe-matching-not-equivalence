@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-29",
+  "recipe_provenance": {
+    "summary_prompt": "annotate/ideas/prompts.py::extract_core_idea_query, verbatim",
+    "tokenizer": "similarities/compute/jaccard.py ([a-zA-Z0-9^_]+ lowercase, their stop_words.py)",
+    "tau_summ": 0.211,
+    "doc_template": "benchmark.py transform() statement-full, verbatim",
+    "not_replicated": "MathWorld ontology BMA signal + Swiss tournament (see module docstring for the fidelity argument)"
+  },
+  "n_summaries": 4733,
+  "n_pos_pairs_at_tau": 88820,
+  "jaccard_histogram_0.1bins": {
+    "0.0": 355581,
+    "0.1": 3000143,
+    "0.2": 208818,
+    "0.3": 28420,
+    "0.4": 7287,
+    "0.5": 2032,
+    "0.6": 369,
+    "0.7": 73,
+    "0.8": 37,
+    "0.9": 9,
+    "1.0": 29
+  },
+  "rows_by_channel": {
+    "saber_pair": 11461,
+    "saber_summary": 4733
+  },
+  "n_rows_total": 16194,
+  "negatives_per_row_hist": {
+    "2": 16194
+  },
+  "seed": 0,
+  "runtime_s": 7.3
+}

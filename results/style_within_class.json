@@ -1,0 +1,39 @@
+{
+  "generated": "2026-07-31",
+  "script": "scripts/style_within_class.py",
+  "purpose": "R2-M21: replace the vacuous synthetic-only control with a within-document-class one that can actually fail.",
+  "n_queries_sampled": 2000,
+  "seed": 42,
+  "class_sizes": {
+    "gold (::eq::)": 57878,
+    "near-miss (::nm::)": 57542,
+    "organic (::orig)": 1668
+  },
+  "class_mean_style": {
+    "gold (::eq::)": 0.1372,
+    "near-miss (::nm::)": -0.6743,
+    "organic (::orig)": -0.8549
+  },
+  "gold_vs_nearmiss_style_auc": 0.7501,
+  "note": "The synthetic-only control the draft cited is uninformative: 98.58% of the corpus is synthetic, so it removes 1.42% of the documents. The discriminating control holds the document class fixed; ctrl-LLM's margin over ctrl-CAS survives inside both synthetic classes, which is what rules out the gold-vs-near-miss ranking explaining the correlation.",
+  "per_model": {
+    "ctrl-llm-6145": {
+      "gold (::eq::)": 0.0927,
+      "near-miss (::nm::)": 0.0855,
+      "organic (::orig)": 0.066,
+      "all documents": 0.1705
+    },
+    "ctrl-cas-6145": {
+      "gold (::eq::)": -0.0116,
+      "near-miss (::nm::)": -0.009,
+      "organic (::orig)": -0.0251,
+      "all documents": -0.019
+    },
+    "base-0.6b": {
+      "gold (::eq::)": -0.039,
+      "near-miss (::nm::)": -0.0064,
+      "organic (::orig)": -0.0195,
+      "all documents": -0.061
+    }
+  }
+}

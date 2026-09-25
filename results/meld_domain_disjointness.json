@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-30",
+  "purpose": "domain-level disjointness for the MELD recipe-matching attack",
+  "meld9": {
+    "n_domain_pairs": 9,
+    "verified_against": "/ibex/user/habiam0b/MathNet_Follow_Up/data/external/meld/adversarial_theorem_pairs_2.json",
+    "check": "field_1/field_2/domain reproduce the released framing pairs and domain labels exactly (job aborts otherwise)"
+  },
+  "heldout": {
+    "n_domain_pairs": 27,
+    "gate": "no field name may exactly match (normalized) any MELD Table-1 subfield or released distractor framing",
+    "n_exact_collisions": 0,
+    "substring_collisions": [
+      {
+        "heldout_field": "Riemannian geometry",
+        "meld_subfield": "geometry"
+      },
+      {
+        "heldout_field": "universal algebra",
+        "meld_subfield": "algebra"
+      }
+    ],
+    "substring_collision_note": "ALLOWED and reported: a compound name may contain a MELD subfield word (e.g. 'Riemannian geometry' vs MELD's 'geometry'). The dialect and the statements are different; the item-level gates in --stage pairs are what enforce eval disjointness.",
+    "duplicate_field_names_within_heldout": []
+  },
+  "forbidden_subfield_names": [
+    "algebra",
+    "algebraic topology",
+    "category theory",
+    "combinatorics",
+    "commutative algebra",
+    "complex analysis",
+    "discrete math",
+    "fourier analysis",
+    "generating functions",
+    "geometry",
+    "graph theory",
+    "group theory",
+    "linear algebra",
+    "measure theory",
+    "module theory",
+    "probability",
+    "probability theory",
+    "representation theory",
+    "set theory",
+    "symmetric functions",
+    "tableaux",
+    "topology",
+    "vector spaces"
+  ],
+  "output": "/ibex/user/habiam0b/MathNet_Follow_Up/data/meld_attack/domain_pairs.json",
+  "runtime_s": 0.01
+}

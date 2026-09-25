@@ -1,0 +1,154 @@
+{
+  "date": "2026-07-30",
+  "group": "meld9",
+  "target": "uw-math-ai/MELD-dataset (arXiv:2606.23959)",
+  "why_item_level": "MELD's recipe has no source corpus (its inputs are a domain pair + a prose connection), so 'sources disjoint from eval items' can only be enforced item-by-item against the released eval texts.",
+  "eval_texts_gated_against": {
+    "n_pair_statements": 540,
+    "n_distractors": 541,
+    "n_total": 1081
+  },
+  "gates": [
+    "normalized-text exact match -> drop",
+    "word-5-gram containment >= 0.35 (same statistic as results/saber_disjointness.json) -> drop",
+    "character-8-gram Jaccard >= 0.6 -> drop",
+    "embedding cosine >= 0.9 under sentence-transformers/all-mpnet-base-v2 (independent encoder) -> drop",
+    "pairs rejected by MELD's automated screen -> drop (recipe step, not a disjointness gate; counted separately as screen_rejected)"
+  ],
+  "gate_direction_note": "gates 1-4 remove the training pairs most similar to eval items, i.e. they can only WEAKEN the attack. A P1 success under these gates is therefore a lower bound on the exposure.",
+  "results": {
+    "n_generated": 4163,
+    "n_kept": 1575,
+    "n_dropped": 2588,
+    "dropped_by_reason": {
+      "screen_rejected": 2549,
+      "ngram_containment": 20,
+      "semantic_cosine": 19
+    },
+    "ngram_containment_vs_eval": {
+      "mean": 0.0508,
+      "p99": 0.3636,
+      "max": 0.7222
+    },
+    "char_jaccard_vs_eval": {
+      "mean": 0.1129,
+      "p99": 0.3179,
+      "max": 0.6176
+    },
+    "semantic_gate": {
+      "enabled": true,
+      "model": "sentence-transformers/all-mpnet-base-v2",
+      "threshold": 0.9,
+      "n_dropped": 19,
+      "max_cosine_vs_eval": {
+        "mean": 0.6573,
+        "p95": 0.8283,
+        "p99": 0.9077,
+        "max": 0.9858
+      }
+    }
+  },
+  "dropped_examples": [
+    {
+      "pair_id": "meldatk-meld9-000000",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000012",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000014",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000015",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000016",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000017",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000021",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000022",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000023",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000025",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000027",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000028",
+      "reason": "ngram_containment(entry_1,0.37,eval60)"
+    },
+    {
+      "pair_id": "meldatk-meld9-000029",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000030",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000042",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000045",
+      "reason": "ngram_containment(entry_1,0.37,eval100)"
+    },
+    {
+      "pair_id": "meldatk-meld9-000049",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000050",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000051",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000052",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000055",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000069",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000072",
+      "reason": "ngram_containment(entry_1,0.56,eval689)"
+    },
+    {
+      "pair_id": "meldatk-meld9-000074",
+      "reason": "screen_rejected"
+    },
+    {
+      "pair_id": "meldatk-meld9-000083",
+      "reason": "ngram_containment(entry_1,0.50,eval124)"
+    }
+  ],
+  "runtime_s": 43.8
+}

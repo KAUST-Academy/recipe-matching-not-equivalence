@@ -1,0 +1,788 @@
+{
+  "id": "style_probe_stripped",
+  "date": "2026-07-30",
+  "strip_artifacts": true,
+  "train_synthetic": "positives",
+  "seed": 42,
+  "stages_run": [
+    "correlate",
+    "fit",
+    "score"
+  ],
+  "fit": {
+    "holdout_auc_grouped": 0.8802,
+    "n_train_synthetic": 6414,
+    "n_train_organic": 6414,
+    "n_sources": 6414,
+    "n_test_sources": 1282,
+    "n_heldout_organic_anchors": 1282,
+    "n_heldout_synthetic": 1282,
+    "strip_artifacts": true,
+    "artifact_audit": {
+      "note": "fraction of texts carrying each audited format artifact, BEFORE stripping (review finding H1)",
+      "organic_anchors": {
+        "problem_header_leading": 0.6388,
+        "problem_header_any_line": 0.6388,
+        "attached_image_placeholder": 0.0401,
+        "proposed_by_attribution_NOT_stripped": 0.0072
+      },
+      "llm_rewrites": {
+        "problem_header_leading": 0.0002,
+        "problem_header_any_line": 0.0002,
+        "attached_image_placeholder": 0.0016,
+        "proposed_by_attribution_NOT_stripped": 0.0
+      }
+    },
+    "dose_panel": {
+      "negatives": "held-out organic anchors (n=1282, 20% source split, never in probe training)",
+      "detector": "group-split holdout detector (strip_artifacts=True)",
+      "rungs": {
+        "D1_appendixF": {
+          "auc_heldout_sources_vs_heldout_anchors": 0.8802,
+          "n_pos_heldout_sources": 1282,
+          "auc_all_positives_vs_heldout_anchors": 0.9067,
+          "n_pos_all": 6414,
+          "mean_score_all_positives": 0.8092,
+          "mean_score_heldout_sources": 0.7344
+        },
+        "D2_paraphrase": {
+          "auc_heldout_sources_vs_heldout_anchors": 0.8756,
+          "n_pos_heldout_sources": 1249,
+          "auc_all_positives_vs_heldout_anchors": 0.8816,
+          "n_pos_all": 6744,
+          "mean_score_all_positives": 0.6972,
+          "mean_score_heldout_sources": 0.6993
+        },
+        "D3_style": {
+          "auc_heldout_sources_vs_heldout_anchors": 0.8654,
+          "n_pos_heldout_sources": 1096,
+          "auc_all_positives_vs_heldout_anchors": 0.869,
+          "n_pos_all": 5823,
+          "mean_score_all_positives": 0.6769,
+          "mean_score_heldout_sources": 0.6792
+        },
+        "D4_unrelated": {
+          "auc_heldout_sources_vs_heldout_anchors": 0.6758,
+          "n_pos_heldout_sources": 1265,
+          "auc_all_positives_vs_heldout_anchors": 0.6778,
+          "n_pos_all": 6857,
+          "mean_score_all_positives": -0.1781,
+          "mean_score_heldout_sources": -0.1746
+        }
+      },
+      "recipe_increment_vs_d1": {
+        "D2_paraphrase": 0.0046,
+        "D3_style": 0.0148,
+        "D4_unrelated": 0.2044
+      },
+      "interpretation": "every rung -- including D4, whose prompt never mentions the recipe -- is detected far above chance, so the probe fires on LLM-rewrite GENRE; the D1-minus-rung gaps are the recipe increment on top of that genre floor",
+      "bootstrap": {
+        "method": "2000 replicates, resampling the held-out source ids with replacement (clusters organic negatives with each rung's positives); percentile 95% CIs",
+        "auc_ci95": {
+          "D1_appendixF": [
+            0.8679,
+            0.8917
+          ],
+          "D2_paraphrase": [
+            0.8624,
+            0.8873
+          ],
+          "D3_style": [
+            0.852,
+            0.8788
+          ],
+          "D4_unrelated": [
+            0.6569,
+            0.6948
+          ]
+        },
+        "D1_appendixF_minus_rung_ci95": {
+          "D2_paraphrase": [
+            -0.0062,
+            0.0156
+          ],
+          "D3_style": [
+            0.002,
+            0.0274
+          ],
+          "D4_unrelated": [
+            0.1864,
+            0.2216
+          ]
+        },
+        "D1_appendixF_minus_rung_pct_replicates_positive": {
+          "D2_paraphrase": 79.6,
+          "D3_style": 99.1,
+          "D4_unrelated": 100.0
+        }
+      }
+    },
+    "top_organic_ngrams_head": [
+      {
+        "ngram": "we",
+        "coef": -4.5619
+      },
+      {
+        "ngram": "of the",
+        "coef": -3.2629
+      },
+      {
+        "ngram": "then",
+        "coef": -3.0948
+      },
+      {
+        "ngram": "suppose that",
+        "coef": -3.0773
+      },
+      {
+        "ngram": "are",
+        "coef": -3.0664
+      },
+      {
+        "ngram": "so that",
+        "coef": -2.9769
+      },
+      {
+        "ngram": "be triangle",
+        "coef": -2.8147
+      },
+      {
+        "ngram": "find",
+        "coef": -2.7325
+      }
+    ],
+    "top_synthetic_ngrams_head": [
+      {
+        "ngram": "text",
+        "coef": 6.2066
+      },
+      {
+        "ngram": "determine",
+        "coef": 6.0855
+      },
+      {
+        "ngram": "with",
+        "coef": 5.6007
+      },
+      {
+        "ngram": "let",
+        "coef": 4.5537
+      },
+      {
+        "ngram": "define",
+        "coef": 4.4691
+      },
+      {
+        "ngram": "let triangle",
+        "coef": 3.8317
+      },
+      {
+        "ngram": "determine the",
+        "coef": 3.8035
+      },
+      {
+        "ngram": "where",
+        "coef": 3.5407
+      }
+    ]
+  },
+  "transfer": {
+    "detector": "logistic regression on word 1-2-grams, trained on our Qwen3-32B Appendix-F rewrites vs their own source problems (pair-matched)",
+    "transfer_target": "MathNet-Retrieve corpus (GPT-5-generated eq/nm docs vs organic orig docs + query texts)",
+    "n_docs": {
+      "eq": 57878,
+      "nm": 57542,
+      "orig": 1668,
+      "queries": 15000
+    },
+    "auc_synthetic_vs_orig_docs": 0.6833,
+    "auc_synthetic_vs_orig_plus_queries": 0.6636,
+    "auc_eq_vs_orig_docs": 0.8042,
+    "auc_nm_vs_orig_docs": 0.5616,
+    "auc_synthetic_docs_vs_queries": 0.6614,
+    "auc_eq_tier_vs_orig_docs": {
+      "easy": 0.7784,
+      "medium": 0.8389,
+      "hard": 0.7956
+    },
+    "mean_score_eq_tier": {
+      "easy": 0.0373,
+      "medium": 0.2998,
+      "hard": 0.0748
+    },
+    "mean_score": {
+      "eq": 0.1372,
+      "nm": -0.6743,
+      "orig": -0.8549,
+      "queries": -0.8001
+    },
+    "detector_holdout_auc": 0.8802372219693779,
+    "detector_strip_artifacts": true,
+    "disjoint_organic_negatives": {
+      "note": "organic negatives whose whitespace/case-normalized, artifact-stripped text is NOT among the probe's training anchors -- i.e. a strictly generator-transfer test with no problem-level overlap with probe training",
+      "n_orig_docs_in_probe_training": 636,
+      "pct_orig_docs_in_probe_training": 38.13,
+      "n_queries_in_probe_training": 2118,
+      "pct_queries_in_probe_training": 14.12,
+      "n_orig_docs_disjoint": 1032,
+      "n_queries_disjoint": 12882,
+      "auc_eq_vs_disjoint_orig_docs": 0.8072,
+      "auc_nm_vs_disjoint_orig_docs": 0.5713,
+      "auc_synthetic_vs_disjoint_orig_docs": 0.6896,
+      "auc_eq_vs_disjoint_orig_plus_queries": 0.782,
+      "auc_synthetic_vs_disjoint_orig_plus_queries": 0.6648,
+      "auc_eq_tier_vs_disjoint_orig_docs": {
+        "easy": 0.782,
+        "medium": 0.8407,
+        "hard": 0.7989
+      },
+      "mean_score_disjoint_orig_docs": -0.8843,
+      "mean_score_overlapping_orig_docs": -0.8073
+    }
+  },
+  "unstripped_reference": {
+    "id": "style_probe_unstripped_v1",
+    "date": "2026-07-30",
+    "strip_artifacts": false,
+    "train_synthetic": "positives",
+    "seed": 42,
+    "stages_run": [
+      "fit",
+      "score"
+    ],
+    "fit": {
+      "holdout_auc_grouped": 0.969,
+      "n_train_synthetic": 6414,
+      "n_train_organic": 6414,
+      "n_sources": 6414,
+      "n_test_sources": 1282,
+      "n_heldout_organic_anchors": 1282,
+      "n_heldout_synthetic": 1282,
+      "strip_artifacts": false,
+      "artifact_audit": {
+        "note": "fraction of texts carrying each audited format artifact, BEFORE stripping (review finding H1)",
+        "organic_anchors": {
+          "problem_header_leading": 0.6388,
+          "problem_header_any_line": 0.6388,
+          "attached_image_placeholder": 0.0401,
+          "proposed_by_attribution_NOT_stripped": 0.0072
+        },
+        "llm_rewrites": {
+          "problem_header_leading": 0.0002,
+          "problem_header_any_line": 0.0002,
+          "attached_image_placeholder": 0.0016,
+          "proposed_by_attribution_NOT_stripped": 0.0
+        }
+      },
+      "dose_panel": {
+        "negatives": "held-out organic anchors (n=1282, 20% source split, never in probe training)",
+        "detector": "group-split holdout detector (strip_artifacts=False)",
+        "rungs": {
+          "D1_appendixF": {
+            "auc_heldout_sources_vs_heldout_anchors": 0.969,
+            "n_pos_heldout_sources": 1282,
+            "auc_all_positives_vs_heldout_anchors": 0.9753,
+            "n_pos_all": 6414,
+            "mean_score_all_positives": 1.2895,
+            "mean_score_heldout_sources": 1.2341
+          },
+          "D2_paraphrase": {
+            "auc_heldout_sources_vs_heldout_anchors": 0.9662,
+            "n_pos_heldout_sources": 1249,
+            "auc_all_positives_vs_heldout_anchors": 0.9681,
+            "n_pos_all": 6744,
+            "mean_score_all_positives": 1.1953,
+            "mean_score_heldout_sources": 1.1975
+          },
+          "D3_style": {
+            "auc_heldout_sources_vs_heldout_anchors": 0.9639,
+            "n_pos_heldout_sources": 1096,
+            "auc_all_positives_vs_heldout_anchors": 0.965,
+            "n_pos_all": 5823,
+            "mean_score_all_positives": 1.1848,
+            "mean_score_heldout_sources": 1.1913
+          },
+          "D4_unrelated": {
+            "auc_heldout_sources_vs_heldout_anchors": 0.8961,
+            "n_pos_heldout_sources": 1265,
+            "auc_all_positives_vs_heldout_anchors": 0.8966,
+            "n_pos_all": 6857,
+            "mean_score_all_positives": 0.3694,
+            "mean_score_heldout_sources": 0.3748
+          }
+        },
+        "recipe_increment_vs_d1": {
+          "D2_paraphrase": 0.0028,
+          "D3_style": 0.0051,
+          "D4_unrelated": 0.0729
+        },
+        "interpretation": "every rung -- including D4, whose prompt never mentions the recipe -- is detected far above chance, so the probe fires on LLM-rewrite GENRE; the D1-minus-rung gaps are the recipe increment on top of that genre floor",
+        "bootstrap": {
+          "method": "2000 replicates, resampling the held-out source ids with replacement (clusters organic negatives with each rung's positives); percentile 95% CIs",
+          "auc_ci95": {
+            "D1_appendixF": [
+              0.963,
+              0.9742
+            ],
+            "D2_paraphrase": [
+              0.96,
+              0.972
+            ],
+            "D3_style": [
+              0.9573,
+              0.97
+            ],
+            "D4_unrelated": [
+              0.8841,
+              0.9073
+            ]
+          },
+          "D1_appendixF_minus_rung_ci95": {
+            "D2_paraphrase": [
+              -0.0003,
+              0.0063
+            ],
+            "D3_style": [
+              0.0013,
+              0.0092
+            ],
+            "D4_unrelated": [
+              0.0649,
+              0.0817
+            ]
+          },
+          "D1_appendixF_minus_rung_pct_replicates_positive": {
+            "D2_paraphrase": 95.7,
+            "D3_style": 99.55,
+            "D4_unrelated": 100.0
+          }
+        }
+      },
+      "top_organic_ngrams_head": [
+        {
+          "ngram": "problem",
+          "coef": -31.6159
+        },
+        {
+          "ngram": "problem let",
+          "coef": -9.2592
+        },
+        {
+          "ngram": "we",
+          "coef": -4.0932
+        },
+        {
+          "ngram": "of the",
+          "coef": -3.728
+        },
+        {
+          "ngram": "problem soit",
+          "coef": -3.6461
+        },
+        {
+          "ngram": "png",
+          "coef": -3.2646
+        },
+        {
+          "ngram": "attached_image_1",
+          "coef": -3.1815
+        },
+        {
+          "ngram": "attached_image_1 png",
+          "coef": -3.1815
+        }
+      ],
+      "top_synthetic_ngrams_head": [
+        {
+          "ngram": "determine",
+          "coef": 5.415
+        },
+        {
+          "ngram": "let",
+          "coef": 4.7108
+        },
+        {
+          "ngram": "text",
+          "coef": 4.6316
+        },
+        {
+          "ngram": "with",
+          "coef": 4.3058
+        },
+        {
+          "ngram": "determine the",
+          "coef": 3.808
+        },
+        {
+          "ngram": "define",
+          "coef": 3.7423
+        },
+        {
+          "ngram": "let triangle",
+          "coef": 3.1992
+        },
+        {
+          "ngram": "where",
+          "coef": 2.5996
+        }
+      ]
+    },
+    "transfer": {
+      "detector": "logistic regression on word 1-2-grams, trained on our Qwen3-32B Appendix-F rewrites vs their own source problems (pair-matched)",
+      "transfer_target": "MathNet-Retrieve corpus (GPT-5-generated eq/nm docs vs organic orig docs + query texts)",
+      "n_docs": {
+        "eq": 57878,
+        "nm": 57542,
+        "orig": 1668,
+        "queries": 15000
+      },
+      "auc_synthetic_vs_orig_docs": 0.6241,
+      "auc_synthetic_vs_orig_plus_queries": 0.6212,
+      "auc_eq_vs_orig_docs": 0.7139,
+      "auc_nm_vs_orig_docs": 0.5338,
+      "auc_synthetic_docs_vs_queries": 0.6209,
+      "auc_eq_tier_vs_orig_docs": {
+        "easy": 0.6985,
+        "medium": 0.769,
+        "hard": 0.6742
+      },
+      "mean_score_eq_tier": {
+        "easy": 0.5008,
+        "medium": 0.7421,
+        "hard": 0.4054
+      },
+      "mean_score": {
+        "eq": 0.5493,
+        "nm": -0.0194,
+        "orig": -0.1196,
+        "queries": -0.1251
+      },
+      "detector_holdout_auc": 0.9690330046899224,
+      "detector_strip_artifacts": false,
+      "disjoint_organic_negatives": {
+        "note": "organic negatives whose whitespace/case-normalized, artifact-stripped text is NOT among the probe's training anchors -- i.e. a strictly generator-transfer test with no problem-level overlap with probe training",
+        "n_orig_docs_in_probe_training": 636,
+        "pct_orig_docs_in_probe_training": 38.13,
+        "n_queries_in_probe_training": 2118,
+        "pct_queries_in_probe_training": 14.12,
+        "n_orig_docs_disjoint": 1032,
+        "n_queries_disjoint": 12882,
+        "auc_eq_vs_disjoint_orig_docs": 0.7319,
+        "auc_nm_vs_disjoint_orig_docs": 0.5536,
+        "auc_synthetic_vs_disjoint_orig_docs": 0.643,
+        "auc_eq_vs_disjoint_orig_plus_queries": 0.7287,
+        "auc_synthetic_vs_disjoint_orig_plus_queries": 0.642,
+        "auc_eq_tier_vs_disjoint_orig_docs": {
+          "easy": 0.7166,
+          "medium": 0.7852,
+          "hard": 0.6941
+        },
+        "mean_score_disjoint_orig_docs": -0.1791,
+        "mean_score_overlapping_orig_docs": -0.0229
+      }
+    },
+    "headline": {
+      "note": "H1 fix: artifact-stripped detector vs the v1 artifact-inflated one. 'v1' columns come from unstripped_reference (--no-strip-artifacts rerun, which reproduces the released numbers exactly) and, for the tracking row, results/style_probe_correlations_v1_artifact.json."
+    }
+  },
+  "correlate": {
+    "audit": "recipe-sensitivity audit -- does similarity track the recipe-style score?",
+    "n_queries_sampled": 2000,
+    "seed": 42,
+    "per_model": {
+      "base-0.6b": {
+        "doc_emb": ".emb_cache/docs_Qwen__Qwen3-Embedding-0.6B_236c0b3187bc143d.npz",
+        "query_emb": ".emb_cache/queries_Qwen__Qwen3-Embedding-0.6B_2a9caafd7bf6c598.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": -0.061,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0622,
+        "mean_top10_style_score": -0.4471,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 44.83,
+        "mean_top10_synthetic_fraction": 0.99
+      },
+      "ctrl-llm-6145": {
+        "doc_emb": ".emb_cache/docs_models__ctrl-llm-6145__final_ce5f5ebcf33e3146.npz",
+        "query_emb": ".emb_cache/queries_models__ctrl-llm-6145__final_6499722b26fa8eab.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": 0.1705,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.1704,
+        "mean_top10_style_score": 0.1181,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 61.85,
+        "mean_top10_synthetic_fraction": 0.997
+      },
+      "ctrl-cas-6145": {
+        "doc_emb": ".emb_cache/docs_models__ctrl-cas-6145__final_12def10d3efcf69c.npz",
+        "query_emb": ".emb_cache/queries_models__ctrl-cas-6145__final_8dc0c540861be823.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": -0.019,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0188,
+        "mean_top10_style_score": -0.4269,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 45.5,
+        "mean_top10_synthetic_fraction": 0.9904
+      },
+      "D2-paraphrase": {
+        "doc_emb": ".emb_cache/docs_models__dose-paraphrase-6145__final_952fa5ef264827fb.npz",
+        "query_emb": ".emb_cache/queries_models__dose-paraphrase-6145__final_2d0243cb1a26607e.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": 0.1641,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.1641,
+        "mean_top10_style_score": 0.1078,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 61.57,
+        "mean_top10_synthetic_fraction": 0.9969
+      },
+      "D3-style": {
+        "doc_emb": ".emb_cache/docs_models__dose-style-6145__final_2aae7acffa6706a5.npz",
+        "query_emb": ".emb_cache/queries_models__dose-style-6145__final_45f6c04e466c10c3.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": 0.1049,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.105,
+        "mean_top10_style_score": -0.0386,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 57.15,
+        "mean_top10_synthetic_fraction": 0.9962
+      },
+      "D4-unrelated": {
+        "doc_emb": ".emb_cache/docs_models__dose-unrelated-6145__final_88a7c79e733fb973.npz",
+        "query_emb": ".emb_cache/queries_models__dose-unrelated-6145__final_94dc400e6a621b57.npz",
+        "mean_perquery_spearman_sim_vs_style_alldocs": -0.0002,
+        "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.0001,
+        "mean_top10_style_score": -0.3388,
+        "corpus_mean_style_score": -0.2758,
+        "mean_top10_style_corpus_percentile": 48.05,
+        "mean_top10_synthetic_fraction": 0.9921
+      }
+    },
+    "pairwise_perquery_rho_deltas": [
+      {
+        "pair": "base-0.6b - ctrl-llm-6145",
+        "mean_perquery_delta_rho": -0.2315,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 3.0,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "base-0.6b - ctrl-cas-6145",
+        "mean_perquery_delta_rho": -0.042,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 4.8,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "base-0.6b - D2-paraphrase",
+        "mean_perquery_delta_rho": -0.2251,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 2.15,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "base-0.6b - D3-style",
+        "mean_perquery_delta_rho": -0.1659,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 1.35,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "base-0.6b - D4-unrelated",
+        "mean_perquery_delta_rho": -0.0609,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 0.05,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "ctrl-llm-6145 - ctrl-cas-6145",
+        "mean_perquery_delta_rho": 0.1895,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 94.2,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "ctrl-llm-6145 - D2-paraphrase",
+        "mean_perquery_delta_rho": 0.0064,
+        "wilcoxon_p": 1.25e-07,
+        "pct_queries_higher": 54.95
+      },
+      {
+        "pair": "ctrl-llm-6145 - D3-style",
+        "mean_perquery_delta_rho": 0.0656,
+        "wilcoxon_p": 8.76e-234,
+        "pct_queries_higher": 85.85
+      },
+      {
+        "pair": "ctrl-llm-6145 - D4-unrelated",
+        "mean_perquery_delta_rho": 0.1706,
+        "wilcoxon_p": 8.01e-307,
+        "pct_queries_higher": 93.45
+      },
+      {
+        "pair": "ctrl-cas-6145 - D2-paraphrase",
+        "mean_perquery_delta_rho": -0.1831,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 4.65,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "ctrl-cas-6145 - D3-style",
+        "mean_perquery_delta_rho": -0.1239,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 5.75,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "ctrl-cas-6145 - D4-unrelated",
+        "mean_perquery_delta_rho": -0.0188,
+        "wilcoxon_p": 3.56e-166,
+        "pct_queries_higher": 22.8
+      },
+      {
+        "pair": "D2-paraphrase - D3-style",
+        "mean_perquery_delta_rho": 0.0592,
+        "wilcoxon_p": 1.01e-252,
+        "pct_queries_higher": 87.45
+      },
+      {
+        "pair": "D2-paraphrase - D4-unrelated",
+        "mean_perquery_delta_rho": 0.1642,
+        "wilcoxon_p": 0.0,
+        "pct_queries_higher": 94.45,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      {
+        "pair": "D3-style - D4-unrelated",
+        "mean_perquery_delta_rho": 0.1051,
+        "wilcoxon_p": 1.68e-306,
+        "pct_queries_higher": 93.15
+      }
+    ],
+    "detector_strip_artifacts": true,
+    "note": "rho_syntheticdocs is the within-synthetic gradient (immune to the synthetic-vs-organic base-rate confound); top10_synthetic_fraction base rate = fraction of synthetic docs in the corpus = 0.9858; mean_top10_style_corpus_percentile base rate = 50.0 (use it instead of a ratio of mean decision-function scores, which is not scale-meaningful)"
+  },
+  "headline": {
+    "note": "H1 fix: artifact-stripped detector vs the v1 artifact-inflated one. 'v1' columns come from unstripped_reference (--no-strip-artifacts rerun, which reproduces the released numbers exactly) and, for the tracking row, results/style_probe_correlations_v1_artifact.json.",
+    "holdout_auc_grouped": {
+      "stripped": 0.8802,
+      "v1": 0.969
+    },
+    "dose_panel_auc_heldout_sources_vs_heldout_anchors": {
+      "D1_appendixF": {
+        "stripped": 0.8802,
+        "stripped_ci95": [
+          0.8679,
+          0.8917
+        ],
+        "v1": 0.969,
+        "v1_ci95": [
+          0.963,
+          0.9742
+        ]
+      },
+      "D2_paraphrase": {
+        "stripped": 0.8756,
+        "stripped_ci95": [
+          0.8624,
+          0.8873
+        ],
+        "v1": 0.9662,
+        "v1_ci95": [
+          0.96,
+          0.972
+        ]
+      },
+      "D3_style": {
+        "stripped": 0.8654,
+        "stripped_ci95": [
+          0.852,
+          0.8788
+        ],
+        "v1": 0.9639,
+        "v1_ci95": [
+          0.9573,
+          0.97
+        ]
+      },
+      "D4_unrelated": {
+        "stripped": 0.6758,
+        "stripped_ci95": [
+          0.6569,
+          0.6948
+        ],
+        "v1": 0.8961,
+        "v1_ci95": [
+          0.8841,
+          0.9073
+        ]
+      }
+    },
+    "dose_panel_D1_minus_rung_ci95": {
+      "D2_paraphrase": [
+        -0.0062,
+        0.0156
+      ],
+      "D3_style": [
+        0.002,
+        0.0274
+      ],
+      "D4_unrelated": [
+        0.1864,
+        0.2216
+      ]
+    },
+    "transfer_auc_eq_vs_orig_docs": {
+      "stripped": 0.8042,
+      "v1": 0.7139
+    },
+    "transfer_auc_eq_vs_disjoint_orig_docs": {
+      "stripped": 0.8072,
+      "v1": 0.7319
+    },
+    "transfer_auc_nm_vs_orig_docs": {
+      "stripped": 0.5616,
+      "v1": 0.5338
+    },
+    "tracking_mean_perquery_rho": {
+      "base-0.6b": {
+        "stripped": -0.061,
+        "v1": -0.0323
+      },
+      "ctrl-llm-6145": {
+        "stripped": 0.1705,
+        "v1": 0.1145
+      },
+      "ctrl-cas-6145": {
+        "stripped": -0.019,
+        "v1": -0.0168
+      },
+      "D2-paraphrase": {
+        "stripped": 0.1641,
+        "v1": null
+      },
+      "D3-style": {
+        "stripped": 0.1049,
+        "v1": null
+      },
+      "D4-unrelated": {
+        "stripped": -0.0002,
+        "v1": null
+      }
+    },
+    "tracking_llm_minus_cas": {
+      "stripped": {
+        "mean_perquery_delta_rho": 0.1895,
+        "pct_queries_higher": 94.2,
+        "wilcoxon_p": 0.0,
+        "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+      },
+      "v1": {
+        "mean_perquery_delta_rho": 0.1313,
+        "pct_queries_higher": 93.6,
+        "wilcoxon_p": 4.53e-307
+      }
+    },
+    "top10_style_corpus_percentile_stripped": {
+      "base-0.6b": 44.83,
+      "ctrl-llm-6145": 61.85,
+      "ctrl-cas-6145": 45.5,
+      "D2-paraphrase": 61.57,
+      "D3-style": 57.15,
+      "D4-unrelated": 48.05
+    }
+  }
+}

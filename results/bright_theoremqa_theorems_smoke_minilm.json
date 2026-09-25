@@ -1,0 +1,53 @@
+{
+  "benchmark": "xlangai/BRIGHT / theoremqa_theorems (external, arXiv:2407.12883)",
+  "protocol": "official run.py + retrievers.py (github.com/xlang-ai/BRIGHT)",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "device": "cpu",
+  "n_corpus": 23839,
+  "n_queries": 76,
+  "subsampled": false,
+  "comparable_to_official": true,
+  "missing_gold_docs": 0,
+  "query_prompt_name": null,
+  "query_prompt": null,
+  "model_dtype": null,
+  "max_seq_length": 256,
+  "seed": 42,
+  "metrics": {
+    "MRR": 0.04528,
+    "NDCG@1": 0.01316,
+    "MAP@1": 0.00658,
+    "Recall@1": 0.00658,
+    "P@1": 0.01316,
+    "NDCG@5": 0.0337,
+    "MAP@5": 0.02785,
+    "Recall@5": 0.04605,
+    "P@5": 0.01579,
+    "NDCG@10": 0.03948,
+    "MAP@10": 0.02991,
+    "Recall@10": 0.0625,
+    "P@10": 0.01053,
+    "NDCG@25": 0.05736,
+    "MAP@25": 0.03516,
+    "Recall@25": 0.125,
+    "P@25": 0.00789,
+    "NDCG@50": 0.07679,
+    "MAP@50": 0.03797,
+    "Recall@50": 0.21272,
+    "P@50": 0.00711,
+    "NDCG@100": 0.08836,
+    "MAP@100": 0.0389,
+    "Recall@100": 0.27632,
+    "P@100": 0.00461,
+    "n_queries_scored": 76,
+    "metrics_impl": "local_fallback (validated against pytrec_eval)"
+  },
+  "headline": {
+    "NDCG@10": 0.03948
+  },
+  "protocol_notes": [
+    "truncation at --max-seq-length applies to docs and queries (official used per-model doc_max_length up to 8192; ours is a documented deviation, consistent across our models)",
+    "excluded_ids removed from each query's candidates before ranking; top-1000 kept; metrics averaged over all queries"
+  ],
+  "runtime_seconds": 395.0
+}

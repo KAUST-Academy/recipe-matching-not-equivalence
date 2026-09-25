@@ -1,0 +1,26 @@
+{
+  "arm": "llm",
+  "generator_model": "Qwen/Qwen3-32B-AWQ",
+  "judge_model": "Qwen/Qwen3-32B-AWQ",
+  "n_source_problems": 3000,
+  "positives_per_problem": 1,
+  "negatives_per_problem": 3,
+  "n_rows_written": 10744,
+  "n_verified": 9754,
+  "n_rejected_by_judge": 990,
+  "n_generation_json_failures": 314,
+  "n_judge_json_failures": 264,
+  "by_label": {
+    "positive": {
+      "total": 2686,
+      "verified": 2602
+    },
+    "hard_negative": {
+      "total": 8058,
+      "verified": 7152
+    }
+  },
+  "runtime_s": 3619.5,
+  "seed": 0,
+  "source_ids_file": "data/pairs/source_ids_cleanfull.txt"
+}

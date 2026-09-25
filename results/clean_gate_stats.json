@@ -1,0 +1,202 @@
+{
+ "generated": "clean_gate_verdict.py",
+ "preregistered_in": "scripts/clean_gate_retrain.slurm header (committed before submission)",
+ "gate": "anchor_to_corpus_mapping_v2.json (15,244 excluded corpus ids)",
+ "matched_budget_rows": 4101,
+ "seeds": [
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49
+ ],
+ "seeds_looked_for": [
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49
+ ],
+ "per_seed": {
+  "easy": {
+   "42": {
+    "llm": 60.66,
+    "cas": 17.88,
+    "gap": 42.78
+   },
+   "43": {
+    "llm": 60.46,
+    "cas": 17.47,
+    "gap": 42.99
+   },
+   "44": {
+    "llm": 61.18,
+    "cas": 16.75,
+    "gap": 44.43
+   },
+   "45": {
+    "llm": 60.47,
+    "cas": 17.65,
+    "gap": 42.82
+   },
+   "46": {
+    "llm": 60.03,
+    "cas": 15.93,
+    "gap": 44.1
+   },
+   "47": {
+    "llm": 60.62,
+    "cas": 18.18,
+    "gap": 42.44
+   },
+   "48": {
+    "llm": 59.89,
+    "cas": 18.21,
+    "gap": 41.68
+   },
+   "49": {
+    "llm": 60.5,
+    "cas": 16.9,
+    "gap": 43.6
+   }
+  },
+  "hard": {
+   "42": {
+    "llm": 9.1,
+    "cas": 0.12,
+    "gap": 8.98
+   },
+   "43": {
+    "llm": 9.45,
+    "cas": 0.14,
+    "gap": 9.31
+   },
+   "44": {
+    "llm": 9.12,
+    "cas": 0.14,
+    "gap": 8.98
+   },
+   "45": {
+    "llm": 9.91,
+    "cas": 0.16,
+    "gap": 9.75
+   },
+   "46": {
+    "llm": 9.9,
+    "cas": 0.17,
+    "gap": 9.73
+   },
+   "47": {
+    "llm": 9.23,
+    "cas": 0.16,
+    "gap": 9.07
+   },
+   "48": {
+    "llm": 9.61,
+    "cas": 0.23,
+    "gap": 9.38
+   },
+   "49": {
+    "llm": 9.61,
+    "cas": 0.13,
+    "gap": 9.48
+   }
+  },
+  "xling": {
+   "42": {
+    "llm": 72.01,
+    "cas": 60.56,
+    "gap": 11.45
+   },
+   "43": {
+    "llm": 71.5,
+    "cas": 62.85,
+    "gap": 8.65
+   },
+   "44": {
+    "llm": 72.26,
+    "cas": 60.56,
+    "gap": 11.7
+   },
+   "45": {
+    "llm": 70.99,
+    "cas": 60.56,
+    "gap": 10.43
+   },
+   "46": {
+    "llm": 72.52,
+    "cas": 58.52,
+    "gap": 14.0
+   },
+   "47": {
+    "llm": 72.77,
+    "cas": 59.29,
+    "gap": 13.48
+   },
+   "48": {
+    "llm": 70.23,
+    "cas": 64.63,
+    "gap": 5.6
+   },
+   "49": {
+    "llm": 72.77,
+    "cas": 59.8,
+    "gap": 12.97
+   }
+  }
+ },
+ "missing_inputs": [],
+ "published_reference": {
+  "easy_gap": 45.33,
+  "hard_gap": 9.26,
+  "did": 35.59,
+  "xling_gap": 9.74
+ },
+ "scope_warning": "Both arms are gated to 4,101 rows, so these numbers are matched to each other but NOT budget-matched to the published 45.33 (6,145 rows). The design isolates the contamination gate, not the budget. Training-seed spread only; no eval-sampling interval is included.",
+ "easy_gap_per_seed": [
+  42.78,
+  42.99,
+  44.43,
+  42.82,
+  44.1,
+  42.44,
+  41.68,
+  43.6
+ ],
+ "easy_gap_mean": 43.105,
+ "easy_gap_sd": 0.8995,
+ "easy_gap_positive_in_every_seed": true,
+ "hard_gap_per_seed": [
+  8.98,
+  9.31,
+  8.98,
+  9.75,
+  9.73,
+  9.07,
+  9.38,
+  9.48
+ ],
+ "hard_gap_mean": 9.335,
+ "hard_gap_sd": 0.3103,
+ "xling_gap_per_seed": [
+  11.45,
+  8.65,
+  11.7,
+  10.43,
+  14.0,
+  13.48,
+  5.6,
+  12.97
+ ],
+ "xling_gap_mean": 11.035,
+ "did_easy_minus_xling": 32.07,
+ "did_published_reference": 35.59,
+ "verdict_code": "G1_CONFIRMS",
+ "verdict": "G1 CONFIRMS — 8-seed mean easy-tier gap 43.11 +/- 0.90 (per seed [42.78, 42.99, 44.43, 42.82, 44.1, 42.44, 41.68, 43.6]), positive in every seed. A gate that removes every near-verbatim twin from BOTH arms leaves the gap intact, so leakage is not a first-order driver. The 1.24-point attribution stands qualitatively and this is a headline robustness result."
+}

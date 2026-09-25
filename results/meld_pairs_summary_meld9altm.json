@@ -1,0 +1,27 @@
+{
+  "group": "meld9altm",
+  "n_pairs_kept": 1754,
+  "n_trainer_rows": 3508,
+  "both_directions": true,
+  "negatives_per_row_requested": 3,
+  "negatives_per_row_hist": {
+    "3": 3508
+  },
+  "avg_negatives_per_row": 3.0,
+  "rows_by_domain": {
+    "algebraic_geometry": 466,
+    "spectral_graph_theory": 412,
+    "probability": 694,
+    "discrete_math": 128,
+    "foundations": 560,
+    "algebraic_topology": 236,
+    "algebra": 460,
+    "algebraic_combinatorics": 304,
+    "representation_theory": 248
+  },
+  "unique_topics": 1719,
+  "contains_stub_generations": false,
+  "pairs_file": "/ibex/user/habiam0b/MathNet_Follow_Up/data/meld_attack/pairs_meld9altm.jsonl",
+  "disjointness_report": "/ibex/user/habiam0b/MathNet_Follow_Up/results/meld_disjointness_meld9altm.json",
+  "runtime_s": 48.9
+}

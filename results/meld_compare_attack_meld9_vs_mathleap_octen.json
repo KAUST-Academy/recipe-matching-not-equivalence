@@ -1,0 +1,58 @@
+{
+  "date": "2026-07-31",
+  "treatment": {
+    "model": "models/meld-attack-meld9/final",
+    "prompt": "query",
+    "dump": "results/meld_pq_attack_meld9.json"
+  },
+  "reference": {
+    "model": "uw-math-ai/MathLeap-Octen-8B",
+    "prompt": "query",
+    "dump": "results/meld_pq_mathleap_octen_8b.json"
+  },
+  "prompt_conditions_match": true,
+  "bootstrap": {
+    "n_resamples": 10000,
+    "seed": 0,
+    "resampling_unit": "MELD pair (270 clusters, 2 queries each)"
+  },
+  "metrics": {
+    "recall@1_pairs_only": {
+      "treatment": 36.67,
+      "reference": 34.44,
+      "diff": 2.22,
+      "ci95": [
+        -2.96,
+        7.22
+      ],
+      "se_paired": 2.622,
+      "n_sig": 0.85,
+      "n_discordant_queries": 154
+    },
+    "recall@5_pairs_only": {
+      "treatment": 70.0,
+      "reference": 71.48,
+      "diff": -1.48,
+      "ci95": [
+        -6.85,
+        3.89
+      ],
+      "se_paired": 2.712,
+      "n_sig": 0.55,
+      "n_discordant_queries": 152
+    },
+    "pct_above_same_framing_distractors": {
+      "treatment": 68.7,
+      "reference": 81.11,
+      "diff": -12.41,
+      "ci95": [
+        -17.22,
+        -7.41
+      ],
+      "se_paired": 2.471,
+      "n_sig": 5.02,
+      "n_discordant_queries": 143
+    }
+  },
+  "runtime_s": 0.9
+}

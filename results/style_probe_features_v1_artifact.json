@@ -1,0 +1,331 @@
+{
+  "description": "recipe-fingerprint n-grams: top logistic-regression features separating Appendix-F LLM rewrites (synthetic) from organic problems; pair-matched training data (anchor_text vs candidate_text)",
+  "holdout_auc_grouped": 0.969,
+  "n_train_synthetic": 6414,
+  "n_train_organic": 6414,
+  "train_synthetic": "positives",
+  "top_synthetic_ngrams": [
+    {
+      "ngram": "determine",
+      "coef": 5.415
+    },
+    {
+      "ngram": "let",
+      "coef": 4.7108
+    },
+    {
+      "ngram": "text",
+      "coef": 4.6316
+    },
+    {
+      "ngram": "with",
+      "coef": 4.3058
+    },
+    {
+      "ngram": "determine the",
+      "coef": 3.808
+    },
+    {
+      "ngram": "define",
+      "coef": 3.7423
+    },
+    {
+      "ngram": "let triangle",
+      "coef": 3.1992
+    },
+    {
+      "ngram": "where",
+      "coef": 2.5996
+    },
+    {
+      "ngram": "show",
+      "coef": 2.3886
+    },
+    {
+      "ngram": "show that",
+      "coef": 2.3058
+    },
+    {
+      "ngram": "suppose",
+      "coef": 2.1346
+    },
+    {
+      "ngram": "sum_",
+      "coef": 2.0962
+    },
+    {
+      "ngram": "as the",
+      "coef": 2.0401
+    },
+    {
+      "ngram": "lie",
+      "coef": 1.9915
+    },
+    {
+      "ngram": "lie on",
+      "coef": 1.883
+    },
+    {
+      "ngram": "abc have",
+      "coef": 1.8757
+    },
+    {
+      "ngram": "total",
+      "coef": 1.8645
+    },
+    {
+      "ngram": "distinct",
+      "coef": 1.7771
+    },
+    {
+      "ngram": "determine all",
+      "coef": 1.6787
+    },
+    {
+      "ngram": "b_",
+      "coef": 1.6723
+    },
+    {
+      "ngram": "con",
+      "coef": 1.6292
+    },
+    {
+      "ngram": "such",
+      "coef": 1.6236
+    },
+    {
+      "ngram": "satisfying",
+      "coef": 1.6195
+    },
+    {
+      "ngram": "avec",
+      "coef": 1.5765
+    },
+    {
+      "ngram": "text let",
+      "coef": 1.5712
+    },
+    {
+      "ngram": "all",
+      "coef": 1.5315
+    },
+    {
+      "ngram": "démontrer",
+      "coef": 1.5177
+    },
+    {
+      "ngram": "all real",
+      "coef": 1.5162
+    },
+    {
+      "ngram": "of triangle",
+      "coef": 1.4599
+    },
+    {
+      "ngram": "and define",
+      "coef": 1.4541
+    },
+    {
+      "ngram": "intersecting",
+      "coef": 1.4487
+    },
+    {
+      "ngram": "grid",
+      "coef": 1.4034
+    },
+    {
+      "ngram": "the total",
+      "coef": 1.3959
+    },
+    {
+      "ngram": "določi",
+      "coef": 1.3756
+    },
+    {
+      "ngram": "let lie",
+      "coef": 1.3624
+    },
+    {
+      "ngram": "real values",
+      "coef": 1.347
+    },
+    {
+      "ngram": "strictly",
+      "coef": 1.3459
+    },
+    {
+      "ngram": "be",
+      "coef": 1.3187
+    },
+    {
+      "ngram": "déterminer",
+      "coef": 1.3155
+    },
+    {
+      "ngram": "integer with",
+      "coef": 1.2966
+    }
+  ],
+  "top_organic_ngrams": [
+    {
+      "ngram": "problem",
+      "coef": -31.6159
+    },
+    {
+      "ngram": "problem let",
+      "coef": -9.2592
+    },
+    {
+      "ngram": "we",
+      "coef": -4.0932
+    },
+    {
+      "ngram": "of the",
+      "coef": -3.728
+    },
+    {
+      "ngram": "problem soit",
+      "coef": -3.6461
+    },
+    {
+      "ngram": "png",
+      "coef": -3.2646
+    },
+    {
+      "ngram": "attached_image_1",
+      "coef": -3.1815
+    },
+    {
+      "ngram": "attached_image_1 png",
+      "coef": -3.1815
+    },
+    {
+      "ngram": "then",
+      "coef": -3.085
+    },
+    {
+      "ngram": "are",
+      "coef": -2.8645
+    },
+    {
+      "ngram": "so that",
+      "coef": -2.768
+    },
+    {
+      "ngram": "problem find",
+      "coef": -2.7504
+    },
+    {
+      "ngram": "dots",
+      "coef": -2.6343
+    },
+    {
+      "ngram": "prove",
+      "coef": -2.5172
+    },
+    {
+      "ngram": "so",
+      "coef": -2.4037
+    },
+    {
+      "ngram": "numbers",
+      "coef": -2.39
+    },
+    {
+      "ngram": "on the",
+      "coef": -2.3492
+    },
+    {
+      "ngram": "problem fie",
+      "coef": -2.2963
+    },
+    {
+      "ngram": "be triangle",
+      "coef": -2.2676
+    },
+    {
+      "ngram": "suppose that",
+      "coef": -2.2615
+    },
+    {
+      "ngram": "different",
+      "coef": -2.2153
+    },
+    {
+      "ngram": "the triangle",
+      "coef": -2.215
+    },
+    {
+      "ngram": "which",
+      "coef": -2.2085
+    },
+    {
+      "ngram": "problem the",
+      "coef": -2.1159
+    },
+    {
+      "ngram": "ge",
+      "coef": -2.0088
+    },
+    {
+      "ngram": "problem determine",
+      "coef": -1.9541
+    },
+    {
+      "ngram": "prove that",
+      "coef": -1.9415
+    },
+    {
+      "ngram": "following",
+      "coef": -1.8985
+    },
+    {
+      "ngram": "by",
+      "coef": -1.8734
+    },
+    {
+      "ngram": "the point",
+      "coef": -1.8609
+    },
+    {
+      "ngram": "respectively",
+      "coef": -1.8529
+    },
+    {
+      "ngram": "the side",
+      "coef": -1.8424
+    },
+    {
+      "ngram": "problem in",
+      "coef": -1.8335
+    },
+    {
+      "ngram": "at the",
+      "coef": -1.8266
+    },
+    {
+      "ngram": "pairs of",
+      "coef": -1.8083
+    },
+    {
+      "ngram": "denote",
+      "coef": -1.7662
+    },
+    {
+      "ngram": "the following",
+      "coef": -1.7376
+    },
+    {
+      "ngram": "the",
+      "coef": -1.6983
+    },
+    {
+      "ngram": "a_",
+      "coef": -1.6917
+    },
+    {
+      "ngram": "problem suppose",
+      "coef": -1.672
+    }
+  ]
+}

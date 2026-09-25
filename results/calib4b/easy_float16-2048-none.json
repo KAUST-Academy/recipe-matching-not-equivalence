@@ -1,0 +1,93 @@
+{
+  "benchmark": "ShadenA/MathNet-Retrieve",
+  "tier": "easy",
+  "model": "Qwen/Qwen3-Embedding-4B",
+  "device": "cuda:0",
+  "n_corpus": 117088,
+  "n_queries_evaluated": 15000,
+  "corpus_subsampled": false,
+  "comparable_to_paper": true,
+  "self_masking": true,
+  "n_queries_with_own_doc_in_corpus": 0,
+  "n_queries_self_masked": 0,
+  "n_queries_own_doc_is_relevant": 0,
+  "query_prompt_name": null,
+  "query_prompt": null,
+  "doc_prompt_name": null,
+  "doc_prompt": null,
+  "pooling": "repo-default",
+  "append_eos": false,
+  "trust_remote_code": false,
+  "model_dtype": "float16",
+  "max_seq_length": 2048,
+  "seed": 42,
+  "overall": {
+    "recall@1": 11.1,
+    "recall@5": 85.73,
+    "recall@10": 93.39
+  },
+  "per_domain": {
+    "Algebra": {
+      "n_queries": 2959,
+      "recall@1": 6.76,
+      "recall@5": 75.19,
+      "recall@10": 86.11
+    },
+    "Number Theory": {
+      "n_queries": 2221,
+      "recall@1": 9.82,
+      "recall@5": 79.74,
+      "recall@10": 91.63
+    },
+    "Discrete Mathematics": {
+      "n_queries": 1900,
+      "recall@1": 10.21,
+      "recall@5": 95.42,
+      "recall@10": 99.47
+    },
+    "Geometry": {
+      "n_queries": 1565,
+      "recall@1": 15.59,
+      "recall@5": 85.11,
+      "recall@10": 91.76
+    },
+    "Calculus": {
+      "n_queries": 48,
+      "recall@1": 10.42,
+      "recall@5": 91.67,
+      "recall@10": 100.0
+    },
+    "Precalculus": {
+      "n_queries": 35,
+      "recall@1": 8.57,
+      "recall@5": 97.14,
+      "recall@10": 100.0
+    },
+    "Statistics": {
+      "n_queries": 22,
+      "recall@1": 27.27,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "Math Word Problems": {
+      "n_queries": 11,
+      "recall@1": 9.09,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    }
+  },
+  "per_domain_coverage": "8761/15000 queries have a derivable math domain (exact-match anchors only)",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 14993,
+    "n_queries_gold_but_no_near_miss": 7,
+    "mean_positive_sim": 0.8913,
+    "mean_hard_negative_sim": 0.9348,
+    "mean_gap_pos_minus_meanneg": -0.0436,
+    "mean_gap_pos_minus_maxneg": -0.073,
+    "pct_pos_above_all_hard_negs": 11.64,
+    "std_positive_sim": 0.0646,
+    "std_hard_negative_sim": 0.0401
+  },
+  "dump_ranks": null,
+  "runtime_seconds": 1232.3
+}

@@ -1,0 +1,217 @@
+{
+  "audit": "recipe-sensitivity audit -- does similarity track the recipe-style score?",
+  "n_queries_sampled": 2000,
+  "seed": 42,
+  "per_model": {
+    "base-0.6b": {
+      "doc_emb": ".emb_cache/docs_Qwen__Qwen3-Embedding-0.6B_236c0b3187bc143d.npz",
+      "query_emb": ".emb_cache/queries_Qwen__Qwen3-Embedding-0.6B_2a9caafd7bf6c598.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": -0.061,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0622,
+      "mean_top10_style_score": -0.4471,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 44.83,
+      "mean_top10_synthetic_fraction": 0.99
+    },
+    "ctrl-llm-6145": {
+      "doc_emb": ".emb_cache/docs_models__ctrl-llm-6145__final_ce5f5ebcf33e3146.npz",
+      "query_emb": ".emb_cache/queries_models__ctrl-llm-6145__final_6499722b26fa8eab.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": 0.1705,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.1704,
+      "mean_top10_style_score": 0.1181,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 61.85,
+      "mean_top10_synthetic_fraction": 0.997
+    },
+    "ctrl-cas-6145": {
+      "doc_emb": ".emb_cache/docs_models__ctrl-cas-6145__final_12def10d3efcf69c.npz",
+      "query_emb": ".emb_cache/queries_models__ctrl-cas-6145__final_8dc0c540861be823.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": -0.019,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0188,
+      "mean_top10_style_score": -0.4269,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 45.5,
+      "mean_top10_synthetic_fraction": 0.9904
+    },
+    "reference-s42": {
+      "doc_emb": ".emb_cache/docs_models__fact-d4casnegs-6145-s42__final_400fd6b9b85257a9.npz",
+      "query_emb": ".emb_cache/queries_models__fact-d4casnegs-6145-s42__final_c9442f6e96dd1a07.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": 0.025,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.0247,
+      "mean_top10_style_score": -0.2113,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 52.01,
+      "mean_top10_synthetic_fraction": 0.9951
+    },
+    "d4llmnegs-s42": {
+      "doc_emb": ".emb_cache/docs_models__fact-d4llmnegs-6145-s42__final_d41a9e8d0f69001d.npz",
+      "query_emb": ".emb_cache/queries_models__fact-d4llmnegs-6145-s42__final_10d41a67dbe5cd8d.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": 0.0456,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.0456,
+      "mean_top10_style_score": -0.1777,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 53.14,
+      "mean_top10_synthetic_fraction": 0.9965
+    },
+    "d4llmnegsfull-s42": {
+      "doc_emb": ".emb_cache/docs_models__fact-d4llmnegsfull-6145-s42__final_e86802d279375125.npz",
+      "query_emb": ".emb_cache/queries_models__fact-d4llmnegsfull-6145-s42__final_041ed6a502d8944d.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": 0.0501,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.0502,
+      "mean_top10_style_score": -0.1681,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 53.51,
+      "mean_top10_synthetic_fraction": 0.996
+    },
+    "D4-unrelated-s42": {
+      "doc_emb": ".emb_cache/docs_models__dose-unrelated-6145__final_88a7c79e733fb973.npz",
+      "query_emb": ".emb_cache/queries_models__dose-unrelated-6145__final_94dc400e6a621b57.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": -0.0002,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.0001,
+      "mean_top10_style_score": -0.3388,
+      "corpus_mean_style_score": -0.2758,
+      "mean_top10_style_corpus_percentile": 48.05,
+      "mean_top10_synthetic_fraction": 0.9921
+    }
+  },
+  "pairwise_perquery_rho_deltas": [
+    {
+      "pair": "base-0.6b - ctrl-llm-6145",
+      "mean_perquery_delta_rho": -0.2315,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 3.0,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "base-0.6b - ctrl-cas-6145",
+      "mean_perquery_delta_rho": -0.042,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 4.8,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "base-0.6b - reference-s42",
+      "mean_perquery_delta_rho": -0.086,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 0.0,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "base-0.6b - d4llmnegs-s42",
+      "mean_perquery_delta_rho": -0.1066,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 0.0,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "base-0.6b - d4llmnegsfull-s42",
+      "mean_perquery_delta_rho": -0.1112,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 0.3,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "base-0.6b - D4-unrelated-s42",
+      "mean_perquery_delta_rho": -0.0609,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 0.05,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "ctrl-llm-6145 - ctrl-cas-6145",
+      "mean_perquery_delta_rho": 0.1895,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 94.2,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "ctrl-llm-6145 - reference-s42",
+      "mean_perquery_delta_rho": 0.1454,
+      "wilcoxon_p": 1.23e-290,
+      "pct_queries_higher": 91.75
+    },
+    {
+      "pair": "ctrl-llm-6145 - d4llmnegs-s42",
+      "mean_perquery_delta_rho": 0.1249,
+      "wilcoxon_p": 1.25e-283,
+      "pct_queries_higher": 91.2
+    },
+    {
+      "pair": "ctrl-llm-6145 - d4llmnegsfull-s42",
+      "mean_perquery_delta_rho": 0.1203,
+      "wilcoxon_p": 3.93e-280,
+      "pct_queries_higher": 90.8
+    },
+    {
+      "pair": "ctrl-llm-6145 - D4-unrelated-s42",
+      "mean_perquery_delta_rho": 0.1706,
+      "wilcoxon_p": 8.01e-307,
+      "pct_queries_higher": 93.45
+    },
+    {
+      "pair": "ctrl-cas-6145 - reference-s42",
+      "mean_perquery_delta_rho": -0.044,
+      "wilcoxon_p": 7.9e-309,
+      "pct_queries_higher": 6.2
+    },
+    {
+      "pair": "ctrl-cas-6145 - d4llmnegs-s42",
+      "mean_perquery_delta_rho": -0.0645,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 2.7,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "ctrl-cas-6145 - d4llmnegsfull-s42",
+      "mean_perquery_delta_rho": -0.0691,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 4.4,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "ctrl-cas-6145 - D4-unrelated-s42",
+      "mean_perquery_delta_rho": -0.0188,
+      "wilcoxon_p": 3.56e-166,
+      "pct_queries_higher": 22.8
+    },
+    {
+      "pair": "reference-s42 - d4llmnegs-s42",
+      "mean_perquery_delta_rho": -0.0205,
+      "wilcoxon_p": 2.95e-222,
+      "pct_queries_higher": 17.15
+    },
+    {
+      "pair": "reference-s42 - d4llmnegsfull-s42",
+      "mean_perquery_delta_rho": -0.0251,
+      "wilcoxon_p": 1.76e-205,
+      "pct_queries_higher": 16.75
+    },
+    {
+      "pair": "reference-s42 - D4-unrelated-s42",
+      "mean_perquery_delta_rho": 0.0252,
+      "wilcoxon_p": 7.95e-256,
+      "pct_queries_higher": 86.3
+    },
+    {
+      "pair": "d4llmnegs-s42 - d4llmnegsfull-s42",
+      "mean_perquery_delta_rho": -0.0046,
+      "wilcoxon_p": 1.11e-45,
+      "pct_queries_higher": 34.0
+    },
+    {
+      "pair": "d4llmnegs-s42 - D4-unrelated-s42",
+      "mean_perquery_delta_rho": 0.0457,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 95.35,
+      "wilcoxon_p_reportable": "< 1e-308 (float64 underflow)"
+    },
+    {
+      "pair": "d4llmnegsfull-s42 - D4-unrelated-s42",
+      "mean_perquery_delta_rho": 0.0503,
+      "wilcoxon_p": 1.29e-304,
+      "pct_queries_higher": 93.2
+    }
+  ],
+  "detector_strip_artifacts": true,
+  "note": "rho_syntheticdocs is the within-synthetic gradient (immune to the synthetic-vs-organic base-rate confound); top10_synthetic_fraction base rate = fraction of synthetic docs in the corpus = 0.9858; mean_top10_style_corpus_percentile base rate = 50.0 (use it instead of a ratio of mean decision-function scores, which is not scale-meaningful)"
+}

@@ -1,0 +1,120 @@
+{
+  "B": 10000,
+  "seed": 0,
+  "splits": {
+    "theoremqa_theorems": {
+      "n_queries": 76,
+      "mean_ndcg10": {
+        "recipe": 0.10186,
+        "verified": 0.01827,
+        "base": 0.21239
+      },
+      "reproduces_committed": {
+        "recipe": {
+          "committed": 0.10186,
+          "rerun": 0.10186,
+          "match_1e-4": true
+        },
+        "verified": {
+          "committed": 0.01827,
+          "rerun": 0.01827,
+          "match_1e-4": true
+        },
+        "base": {
+          "committed": 0.21239,
+          "rerun": 0.21239,
+          "match_1e-4": true
+        }
+      },
+      "paired": {
+        "recipe-verified": {
+          "point": 0.08359,
+          "ci95": [
+            0.03419,
+            0.13994
+          ],
+          "excludes_zero": true,
+          "n_queries_where_a_beats_b": 15,
+          "n_queries_where_b_beats_a": 2
+        },
+        "recipe-base": {
+          "point": -0.11053,
+          "ci95": [
+            -0.17251,
+            -0.05261
+          ],
+          "excludes_zero": true,
+          "n_queries_where_a_beats_b": 9,
+          "n_queries_where_b_beats_a": 27
+        },
+        "verified-base": {
+          "point": -0.19412,
+          "ci95": [
+            -0.25659,
+            -0.13558
+          ],
+          "excludes_zero": true,
+          "n_queries_where_a_beats_b": 0,
+          "n_queries_where_b_beats_a": 34
+        }
+      }
+    },
+    "aops": {
+      "n_queries": 111,
+      "mean_ndcg10": {
+        "recipe": 0.00751,
+        "verified": 0.0,
+        "base": 0.0744
+      },
+      "reproduces_committed": {
+        "recipe": {
+          "committed": 0.00751,
+          "rerun": 0.00751,
+          "match_1e-4": true
+        },
+        "verified": {
+          "committed": 0.0,
+          "rerun": 0.0,
+          "match_1e-4": true
+        },
+        "base": {
+          "committed": 0.0744,
+          "rerun": 0.0744,
+          "match_1e-4": true
+        }
+      },
+      "paired": {
+        "recipe-verified": {
+          "point": 0.00751,
+          "ci95": [
+            0.00156,
+            0.01519
+          ],
+          "excludes_zero": true,
+          "n_queries_where_a_beats_b": 5,
+          "n_queries_where_b_beats_a": 0
+        },
+        "recipe-base": {
+          "point": -0.06689,
+          "ci95": [
+            -0.09917,
+            -0.0376
+          ],
+          "excludes_zero": true,
+          "n_queries_where_a_beats_b": 1,
+          "n_queries_where_b_beats_a": 27
+        },
+        "verified-base": {
+          "point": -0.0744,
+          "ci95": [
+            -0.10653,
+            -0.04569
+          ],
+          "excludes_zero": true,
+          "n_queries_where_a_beats_b": 0,
+          "n_queries_where_b_beats_a": 29
+        }
+      }
+    }
+  }
+}

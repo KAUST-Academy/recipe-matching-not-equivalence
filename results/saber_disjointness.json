@@ -1,0 +1,140 @@
+{
+  "date": "2026-07-29",
+  "method": {
+    "gates": [
+      "word-5-gram containment >= 0.35 vs the 1,000 SABER query problems (MANDATORY: eval-query disjointness)",
+      "word-5-gram containment >= 0.35 vs all 71,117 SABER candidate-document problems (strict extra gate)",
+      "numeric-fingerprint Jaccard >= 0.6 (>=5 numeric literals) vs query problems (language-independent secondary gate)",
+      "sources without any solution dropped (summary prompt needs Statement + Solution)"
+    ],
+    "caveat": "n-gram matching is language-bound: a non-EN source problem that appears English-translated in SABER's corpus can evade the DOCUMENT gate; the numeric gate partially covers this for the QUERY gate, which is the one the attack's claim depends on."
+  },
+  "inputs": {
+    "source_ids_file": "/ibex/user/habiam0b/MathNet_Follow_Up/data/pairs/source_ids.txt",
+    "n_sources_in": 7089
+  },
+  "results": {
+    "n_kept": 4917,
+    "n_dropped": 2172,
+    "dropped_by_reason": {
+      "no_solution": 620,
+      "query_numeric_fingerprint": 557,
+      "doc_overlap": 978,
+      "query_overlap": 17
+    },
+    "containment_vs_queries": {
+      "mean": 0.0346,
+      "p99": 0.2333,
+      "max": 0.9524
+    },
+    "containment_vs_documents": {
+      "mean": 0.1854,
+      "p99": 0.9815,
+      "max": 1.0
+    }
+  },
+  "dropped_examples": [
+    {
+      "source_id": "0004",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "000d",
+      "reason": "query_numeric_fingerprint(q48)"
+    },
+    {
+      "source_id": "000u",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "0025",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "002r",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "0038",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "003l",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "0048",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "004c",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "004i",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "004p",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "004u",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "004y",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "005d",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "005t",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "005w",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "008b",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "008m",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "0094",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "0096",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "009e",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "00a0",
+      "reason": "doc_overlap(0.49,d48103)"
+    },
+    {
+      "source_id": "00cb",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "00cc",
+      "reason": "no_solution"
+    },
+    {
+      "source_id": "00ey",
+      "reason": "doc_overlap(0.40,d30039)"
+    }
+  ],
+  "output": "/ibex/user/habiam0b/MathNet_Follow_Up/data/saber_attack/source_ids.txt",
+  "runtime_s": 9.0
+}

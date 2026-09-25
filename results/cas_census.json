@@ -1,0 +1,2201 @@
+{
+  "meta": {
+    "corpus": "/ibex/user/habiam0b/MathNet_Follow_Up/data/mathnet_corpus.parquet",
+    "n_problems": 27817,
+    "n_problems_with_math": 26143,
+    "n_spans_total": 193718,
+    "n_unique_expressions": 50365,
+    "per_expression_timeout_s": 2.0,
+    "workers": 8,
+    "runtime_s": 96.3,
+    "sampling": "full corpus (no subsampling)"
+  },
+  "unique_expression_status": {
+    "expression": 25175,
+    "relational": 18447,
+    "fail": 6741,
+    "timeout": 2
+  },
+  "span_status": {
+    "expression": 157749,
+    "relational": 25722,
+    "fail": 10245,
+    "timeout": 2
+  },
+  "expression_level": {
+    "pct_unique_parsed": 86.61,
+    "pct_unique_relational_of_parsed": 42.29,
+    "pct_spans_parsed": 94.71
+  },
+  "problem_level": {
+    "pct_any_parsed_of_all": 92.18,
+    "pct_all_parsed_of_all": 71.97,
+    "pct_any_parsed_of_with_math": 98.09,
+    "pct_all_parsed_of_with_math": 76.58,
+    "pct_any_relational_of_all": 49.17,
+    "counts": {
+      "n": 27817,
+      "has_math": 26143,
+      "any_parsed": 25643,
+      "all_parsed": 20021,
+      "any_relational": 13678
+    }
+  },
+  "per_domain": {
+    "Algebra": {
+      "n_problems": 11266,
+      "pct_any_parsed": 93.89,
+      "pct_all_parsed": 67.93,
+      "pct_any_relational": 61.57,
+      "counts": {
+        "n": 11266,
+        "has_math": 10865,
+        "any_parsed": 10578,
+        "all_parsed": 7653,
+        "any_relational": 6937
+      }
+    },
+    "Geometry": {
+      "n_problems": 8785,
+      "pct_any_parsed": 94.66,
+      "pct_all_parsed": 84.36,
+      "pct_any_relational": 48.59,
+      "counts": {
+        "n": 8785,
+        "has_math": 8410,
+        "any_parsed": 8316,
+        "all_parsed": 7411,
+        "any_relational": 4269
+      }
+    },
+    "Discrete Mathematics": {
+      "n_problems": 7921,
+      "pct_any_parsed": 86.87,
+      "pct_all_parsed": 62.85,
+      "pct_any_relational": 33.73,
+      "counts": {
+        "n": 7921,
+        "has_math": 6970,
+        "any_parsed": 6881,
+        "all_parsed": 4978,
+        "any_relational": 2672
+      }
+    },
+    "Number Theory": {
+      "n_problems": 7053,
+      "pct_any_parsed": 94.12,
+      "pct_all_parsed": 67.05,
+      "pct_any_relational": 47.27,
+      "counts": {
+        "n": 7053,
+        "has_math": 6751,
+        "any_parsed": 6638,
+        "all_parsed": 4729,
+        "any_relational": 3334
+      }
+    },
+    "Statistics": {
+      "n_problems": 246,
+      "pct_any_parsed": 60.16,
+      "pct_all_parsed": 53.25,
+      "pct_any_relational": 5.69,
+      "counts": {
+        "n": 246,
+        "has_math": 165,
+        "any_parsed": 148,
+        "all_parsed": 131,
+        "any_relational": 14
+      }
+    },
+    "Precalculus": {
+      "n_problems": 202,
+      "pct_any_parsed": 97.52,
+      "pct_all_parsed": 67.33,
+      "pct_any_relational": 77.23,
+      "counts": {
+        "n": 202,
+        "has_math": 202,
+        "any_parsed": 197,
+        "all_parsed": 136,
+        "any_relational": 156
+      }
+    },
+    "Calculus": {
+      "n_problems": 176,
+      "pct_any_parsed": 96.59,
+      "pct_all_parsed": 65.34,
+      "pct_any_relational": 73.86,
+      "counts": {
+        "n": 176,
+        "has_math": 176,
+        "any_parsed": 170,
+        "all_parsed": 115,
+        "any_relational": 130
+      }
+    },
+    "Math Word Problems": {
+      "n_problems": 67,
+      "pct_any_parsed": 46.27,
+      "pct_all_parsed": 35.82,
+      "pct_any_relational": 1.49,
+      "counts": {
+        "n": 67,
+        "has_math": 37,
+        "any_parsed": 31,
+        "all_parsed": 24,
+        "any_relational": 1
+      }
+    },
+    "(untagged)": {
+      "n_problems": 1,
+      "pct_any_parsed": 100.0,
+      "pct_all_parsed": 100.0,
+      "pct_any_relational": 0.0,
+      "counts": {
+        "n": 1,
+        "has_math": 1,
+        "any_parsed": 1,
+        "all_parsed": 1
+      }
+    }
+  },
+  "failure_reason_counts": {
+    "LaTeXParsingError": 5130,
+    "TypeError": 1560,
+    "SympifyError": 50,
+    ">2.0s": 2,
+    "RecursionError": 1
+  },
+  "failure_examples_sample": [
+    {
+      "expr": "1 < n < 8",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "0 < k \\leq 1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\leq i \\leq n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(x, y)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(x, y)\n~~^"
+    },
+    {
+      "expr": "1 \\leq x \\leq 5",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\leq y \\leq 5",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\left(P_{1}, P_{2}, P_{3}, P_{4}, P_{5}\\right)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n\\left(P_{1}, P_{2}, P_{3}, P_{4}, P_{5}\\right)\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "1 \\leq i \\leq 5, P_{i}=\\left(x_{i}, i\\right)",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\left|x_{1}-x_{2}\\right|= \\left|x_{2}-x_{3}\\right|=\\left|x_{3}-x_{4}\\right|=\\left|x_{4}-x_{5}\\right|=1",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\rangle'\n\\left|x_{1}-x_{2}\\right|= \\left|x_{2}-x_{3}\\right|=\\left|x_{3}-x_{4}\\right|=\\left|x_{4}-x_{5}\\right|=1\n~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\cdot",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\cdot\n^"
+    },
+    {
+      "expr": "M=N+1 .",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\nM=N+1 .\n~~~~~~~^"
+    },
+    {
+      "expr": "6~\\mathrm{km}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n6~\\mathrm{km}\n~^"
+    },
+    {
+      "expr": "\\left\\{\n\\begin{array}{c}\nx^{2}+5x+y^{2}-y-|x-5y+5|=51 \\\\\na x - y - 5a + 2 = 0\n\\end{array}\n\\right.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: missing '\\}' at '='\n\\left\\{\n\\begin{array}{c}\nx^{2}+5x+y^{2}-y-|x-5y+5|=51 \\\\\na x - y - 5a + 2 = 0\n\\end{array}\n\\right.\n~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "[2,9]=2",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n[2,9]=2\n~~^"
+    },
+    {
+      "expr": "[0,88]=0",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n[0,88]=0\n~~^"
+    },
+    {
+      "expr": "[-1,7]=-2",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n[-1,7]=-2\n~~~^"
+    },
+    {
+      "expr": "3 \\le n \\le 2022",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le j \\le n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{1, 2, \\dots, 2n\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1, 2, \\dots, 2n\\}\n~~~^"
+    },
+    {
+      "expr": "f(x)= \\begin{cases}x ; & x \\geq 2 \\\\ f(4-x) ; & 0 \\leq x<2 \\\\ f(x+2) ; & x<0\\end{cases}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nf(x)= \\begin{cases}x ; & x \\geq 2 \\\\ f(4-x) ; & 0 \\leq x<2 \\\\ f(x+2) ; & x<0\\end{cases}\n~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(0,0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(0,0)\n~~^"
+    },
+    {
+      "expr": "(7,3)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(7,3)\n~~^"
+    },
+    {
+      "expr": "M=\\{1,2, \\ldots, 27\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nM=\\{1,2, \\ldots, 27\\}\n~~~~~^"
+    },
+    {
+      "expr": "A=\\{a_{1}, a_{2}, \\ldots, a_{k}\\} \\subset \\{1,2, \\ldots, 14\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nA=\\{a_{1}, a_{2}, \\ldots, a_{k}\\} \\subset \\{1,2, \\ldots, 14\\}\n~~~~~~~~~^"
+    },
+    {
+      "expr": "\\left[\\frac{\\pi}{2}, \\pi\\right]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n\\left[\\frac{\\pi}{2}, \\pi\\right]\n~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "*",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n*\n^"
+    },
+    {
+      "expr": "+",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n+\n~^"
+    },
+    {
+      "expr": "-",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n-\n~^"
+    },
+    {
+      "expr": "(a, b)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b)\n~~^"
+    },
+    {
+      "expr": "b \\cdot \\frac{PB}{PA} + c \\cdot \\frac{QC}{QA} = a ;",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nb \\cdot \\frac{PB}{PA} + c \\cdot \\frac{QC}{QA} = a ;\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "[0, 1]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n[0, 1]\n~~^"
+    },
+    {
+      "expr": "\\left|p^{2}+2 q^{2}-n\\right| \\leq \\sqrt[4]{9 n}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\left|p^{2}+2 q^{2}-n\\right| \\leq \\sqrt[4]{9 n}\n~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "P=(x, y)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nP=(x, y)\n~~~~^"
+    },
+    {
+      "expr": "f(P)=\\left(x^{2}-y^{2}, 2 x y-y^{2}\\right)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\nf(P)=\\left(x^{2}-y^{2}, 2 x y-y^{2}\\right)\n~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "T = T(f) > 0",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "a_1 + a_2 + \\ldots + a_m = b_1 + b_2 + \\ldots + b_n < mn",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\frac{1}{\\sqrt{2}} \\leq z < \\frac{1}{2} \\min \\{x\\sqrt{2},\\ y\\sqrt{3}\\}, \\\\\n x + z\\sqrt{3} \\geq \\sqrt{6}, \\\\\n y\\sqrt{3} + z\\sqrt{10} \\geq 2\\sqrt{5}.",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "A=(20,15)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\nA=(20,15)\n~~~~~^"
+    },
+    {
+      "expr": "B=(20,16)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\nB=(20,16)\n~~~~~^"
+    },
+    {
+      "expr": "S_{n-1} < a_{n}^{2} < S_{n}",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a, b, c)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b, c)\n~~^"
+    },
+    {
+      "expr": "k \\le n \\le 2k-1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\left\\{x_{1}, x_{2}, \\ldots, x_{p}\\right\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\left\\{x_{1}, x_{2}, \\ldots, x_{p}\\right\\}\n~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "1 \\leq p \\leq 10",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le a < m",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(P, Q)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(P, Q)\n~~^"
+    },
+    {
+      "expr": "|\\cdot|",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n|\\cdot|\n~^"
+    },
+    {
+      "expr": "(0, \\frac{\\pi}{2})",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(0, \\frac{\\pi}{2})\n~~^"
+    },
+    {
+      "expr": "\\frac{\\sin a \\sin(a-b) \\sin(a-c)}{\\sin(b+c)} + \\frac{\\sin b \\sin(b-c) \\sin(b-a)}{\\sin(c+a)} + \\frac{\\sin c \\sin(c-a) \\sin(c-b)}{\\sin(a+b)} \\ge 0.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\frac{\\sin a \\sin(a-b) \\sin(a-c)}{\\sin(b+c)} + \\frac{\\sin b \\sin(b-c) \\sin(b-a)}{\\sin(c+a)} + \\frac{\\sin c \\sin(c-a) \\sin(c-b"
+    },
+    {
+      "expr": "x - 3y + 4 = 0 \\quad \\text{\u0219i} \\quad \\sqrt{x^{2} + 7y^{2} + 8x + 8y + 4} \\in \\mathbb{Q}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nx - 3y + 4 = 0 \\quad \\text{\u0219i} \\quad \\sqrt{x^{2} + 7y^{2} + 8x + 8y + 4} \\in \\mathbb{Q}\n~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(m, n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(m, n)\n~~^"
+    },
+    {
+      "expr": "a_1^3 + a_2^3 + \\dots + a_n^3 \\ge (a_1 + a_2 + \\dots + a_n)^2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\na_1^3 + a_2^3 + \\dots + a_n^3 \\ge (a_1 + a_2 + \\dots + a_n)^2.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "1 \\leq m \\leq n-1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le a_1 < \\cdots < a_k < 100",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le a_1 < \\dots < a_k < 100",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(l, m, n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(l, m, n)\n~~^"
+    },
+    {
+      "expr": "1 < l < m < n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\left(a^2 b + \\frac{2}{3}\\right) \\left(b^2 c + \\frac{2}{3}\\right) + \\left(b^2 c + \\frac{2}{3}\\right) \\left(c^2 a + \\frac{2}{3}\\right) \\\\\n+ \\left(c^2 a + \\frac{2}{3}\\right) \\left(a^2 b + \\frac{2}{3}\\ri",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\left(a^2 b + \\frac{2}{3}\\right) \\left(b^2 c + \\frac{2}{3}\\right) + \\left(b^2 c + \\frac{2}{3}\\right) \\left(c^2 a + \\frac{2}{3}\\right) \\\\"
+    },
+    {
+      "expr": "\\overline{30x070y03}",
+      "status": "fail",
+      "detail": "SympifyError: Sympify of expression 'could not parse '070'' failed, because of exception being raised:\nSyntaxError: leading zeros in decimal integer literals are not permitte"
+    },
+    {
+      "expr": "M = \\{1,2,...,49\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nM = \\{1,2,...,49\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "0<\\alpha<1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "0<x<1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a,b)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a,b)\n~~^"
+    },
+    {
+      "expr": "v_1 = v_2 = 1 \\quad \\text{and} \\quad v_n = 4v_{n-1} - v_{n-2} \\quad \\forall n \\ge 3.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\nv_1 = v_2 = 1 \\quad \\text{and} \\quad v_n = 4v_{n-1} - v_{n-2} \\quad \\forall n \\ge 3.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "16~\\mathrm{cm}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n16~\\mathrm{cm}\n~~^"
+    },
+    {
+      "expr": "16\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n16\\%\n~~^"
+    },
+    {
+      "expr": "(a, b, c, d, n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b, c, d, n)\n~~^"
+    },
+    {
+      "expr": "\\left\\{2^{0}, 2^{1}, 2^{2}, \\ldots\\right\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\left\\{2^{0}, 2^{1}, 2^{2}, \\ldots\\right\\}\n~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\mathcal{S}=\\left\\{f(a+b)-f(a)-f(b) \\mid a, b \\in \\mathbb{Z}_{>0}\\right\\} .",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\mathcal{S}=\\left\\{f(a+b)-f(a)-f(b) \\mid a, b \\in \\mathbb{Z}_{>0}\\right\\} .\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(\\mathbb{K}, +, \\cdot)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(\\mathbb{K}, +, \\cdot)\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(a \\otimes b = b \\otimes a)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a \\otimes b = b \\otimes a)\n~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(a \\otimes (b c) = (a \\otimes b)(a \\otimes c))",
+      "status": "fail",
+      "detail": "LaTeXParsingError: missing ')' at '='\n(a \\otimes (b c) = (a \\otimes b)(a \\otimes c))\n~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(x, y, z)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(x, y, z)\n~~^"
+    },
+    {
+      "expr": "\\begin{aligned}\nx^2 - yz &= |y - z| + 1, \\\\\ny^2 - zx &= |z - x| + 1, \\\\\nz^2 - xy &= |x - y| + 1.\n\\end{aligned}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\nx^2 - yz &= |y - z| + 1, \\\\\ny^2 - zx &= |z - x| + 1, \\\\\nz^2 - xy &= |x - y| + 1.\n\\end{aligned}\n~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "(p,q)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(p,q)\n~~^"
+    },
+    {
+      "expr": "\\sum_{\\substack{2 \\leq n \\leq 50 \\\\ \\operatorname{gcd}(n, 50)=1}} \\phi^{!}(n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: missing EQUAL at '{'\n\\sum_{\\substack{2 \\leq n \\leq 50 \\\\ \\operatorname{gcd}(n, 50)=1}} \\phi^{!}(n)\n~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "a_k = \\frac{2a_{k-1}a_{k+1}}{a_{k-1} + a_{k+1}}?",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\na_k = \\frac{2a_{k-1}a_{k+1}}{a_{k-1} + a_{k+1}}?\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\frac{y}{2x + y} + \\frac{z}{2y + z} + \\frac{x}{2z + x} \\geq 1.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\frac{y}{2x + y} + \\frac{z}{2y + z} + \\frac{x}{2z + x} \\geq 1.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "1 \\le k_1 < k_2 < \\dots < k_n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "x^2(2 - x)^2 = 1 + 2(1 - x)^2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\nx^2(2 - x)^2 = 1 + 2(1 - x)^2.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\left|\\frac{A B}{C D}\\right|",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\rangle'\n\\left|\\frac{A B}{C D}\\right|\n~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "m=a_{1} \\geq a_{2} \\geq \\cdots \\geq a_{n} \\geq 1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\leq i \\leq m",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "b_{i}=\\#\\left\\{j \\in\\{1,2, \\ldots, n\\}: a_{j} \\geq i\\right\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nb_{i}=\\#\\left\\{j \\in\\{1,2, \\ldots, n\\}: a_{j} \\geq i\\right\\}\n~~~~~~^"
+    },
+    {
+      "expr": "1 \\leq j \\leq n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "c_{j}=\\#\\left\\{i \\in\\{1,2, \\ldots, m\\}: b_{i} \\geq j\\right\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nc_{j}=\\#\\left\\{i \\in\\{1,2, \\ldots, m\\}: b_{i} \\geq j\\right\\}\n~~~~~~^"
+    },
+    {
+      "expr": "1 \\leq k \\leq m",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "d_1 \\le d_2 \\le \\dots \\le d_{1000}",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\left|\\sqrt{a_{k}}+\\sqrt{b_{k}}+\\sqrt{c_{k}}-2 \\sqrt{N}\\right|<2023",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\rangle'\n\\left|\\sqrt{a_{k}}+\\sqrt{b_{k}}+\\sqrt{c_{k}}-2 \\sqrt{N}\\right|<2023\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(a_1^2 + a_2^2 + \\cdots + a_n^2 - 1)(b_1^2 + b_2^2 + \\cdots + b_n^2 - 1) \n> (a_1b_1 + a_2b_2 + \\cdots + a_nb_n - 1)^2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n(a_1^2 + a_2^2 + \\cdots + a_n^2 - 1)(b_1^2 + b_2^2 + \\cdots + b_n^2 - 1) \n> (a_1b_1 + a_2b_2 + \\cdots + a_nb_n - 1)^2.\n~~~~~~"
+    },
+    {
+      "expr": "\\gcd(ab, a^2 + pb^2) = \\begin{cases} 1 & \\text{if } p \\nmid a \\\\ p & \\text{if } p \\mid a. \\end{cases}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\gcd(ab, a^2 + pb^2) = \\begin{cases} 1 & \\text{if } p \\nmid a \\\\ p & \\text{if } p \\mid a. \\end{cases}\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "1 \\le l \\le 2025",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "P = ab + bc + ca - 2(a + b + c) \\geq -\\frac{5}{2}",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "P = ab + bc + ca - 2(a + b + c) \\geq -5 / 2",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a; b)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n(a; b)\n~~^"
+    },
+    {
+      "expr": "0 < x < 0.5",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(b, c)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(b, c)\n~~^"
+    },
+    {
+      "expr": "a \\le b \\le c \\le 9",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(x_1, y_1), \\dots, (x_t, y_t)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(x_1, y_1), \\dots, (x_t, y_t)\n~~~~~~^"
+    },
+    {
+      "expr": "0 < a < b < 1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a_n - a_{n-1})(b_n - b_{n-1}) < 0.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n(a_n - a_{n-1})(b_n - b_{n-1}) < 0.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\{x + y \\mid x \\in X, y \\in Y\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\{x + y \\mid x \\in X, y \\in Y\\}\n~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "1 \\le k \\le n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "48~\\mathrm{cm}^2",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n48~\\mathrm{cm}^2\n~~^"
+    },
+    {
+      "expr": "\\begin{aligned}\nx^2 + y^2 - 6x - 8y &= h \\\\\nx^2 + y^2 - 10x + 4y &= k.\n\\end{aligned}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\nx^2 + y^2 - 6x - 8y &= h \\\\\nx^2 + y^2 - 10x + 4y &= k.\n\\end{aligned}\n~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "[B A)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n[B A)\n~~~~^"
+    },
+    {
+      "expr": "[B C)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n[B C)\n~~~~^"
+    },
+    {
+      "expr": "1 \\leq k \\leq 2023",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "0 \\leq n < 2027",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a_1, a_2, \\dots, a_n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a_1, a_2, \\dots, a_n)\n~~~~~~^"
+    },
+    {
+      "expr": "(x_A, x_B, x_C)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(x_A, x_B, x_C)\n~~~~^"
+    },
+    {
+      "expr": "(\\cos^2 \\alpha + \\cos^2 \\beta)(1 + \\tan \\alpha \\tan \\beta) = 2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n(\\cos^2 \\alpha + \\cos^2 \\beta)(1 + \\tan \\alpha \\tan \\beta) = 2.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "S = \\{1, 2, 4\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nS = \\{1, 2, 4\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "(1, 1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(1, 1)\n~~^"
+    },
+    {
+      "expr": "(1, 4)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(1, 4)\n~~^"
+    },
+    {
+      "expr": "(2, 2)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(2, 2)\n~~^"
+    },
+    {
+      "expr": "(4, 1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(4, 1)\n~~^"
+    },
+    {
+      "expr": "(4, 4)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(4, 4)\n~~^"
+    },
+    {
+      "expr": "a > b > c > 0",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "x \\le y \\le z",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{1, 2, ..., 2024\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1, 2, ..., 2024\\}\n~~~^"
+    },
+    {
+      "expr": "\\{a, b\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\{a, b\\}\n~~~^"
+    },
+    {
+      "expr": "a \\leq b \\leq c",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(1,2,2)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(1,2,2)\n~~^"
+    },
+    {
+      "expr": "\\tan^2 \\frac{\\pi}{16} \\cdot \\tan^2 \\frac{3\\pi}{16} + \\tan^2 \\frac{\\pi}{16} \\cdot \\tan^2 \\frac{5\\pi}{16} + \\tan^2 \\frac{3\\pi}{16} \\cdot \\tan^2 \\frac{7\\pi}{16} + \\tan^2 \\frac{5\\pi}{16} \\cdot \\tan^2 \\fra",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\tan^2 \\frac{\\pi}{16} \\cdot \\tan^2 \\frac{3\\pi}{16} + \\tan^2 \\frac{\\pi}{16} \\cdot \\tan^2 \\frac{5\\pi}{16} + \\tan^2 \\frac{3\\pi}{16} \\cdot \\"
+    },
+    {
+      "expr": "S = \\{1, 2, 3, \\dots, 3n\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nS = \\{1, 2, 3, \\dots, 3n\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "1 \\le a \\le 9",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le b \\le n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a', b')",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a', b')\n~~~^"
+    },
+    {
+      "expr": "x \\in (a, b]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nx \\in (a, b]\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "1 \\leqslant k < n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{1,2, \\ldots, n-1\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1,2, \\ldots, n-1\\}\n~~~^"
+    },
+    {
+      "expr": "1 \\leqslant j \\leqslant n-1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\leqslant i \\leqslant n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\begin{aligned}\na + b + c &= p \\\\\na^2 + b^2 + c^2 &= q\n\\end{aligned}\n\\qquad\n\\begin{aligned}\nbc - x - 2ya &= 0 \\\\\nca - x - 2yb &= 0 \\\\\nab - x - 2yc &= 0,\n\\end{aligned}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\na + b + c &= p \\\\\na^2 + b^2 + c^2 &= q\n\\end{aligned}\n\\qquad\n\\begin{aligned}\nbc - x - 2ya &= 0 \\\\\nca - x - 2yb &= 0 \\\\\nab"
+    },
+    {
+      "expr": "10~\\mathrm{cm}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n10~\\mathrm{cm}\n~~^"
+    },
+    {
+      "expr": "300 \\leq S \\leq 350",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "350<S \\leq 450",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "450<S \\leq 550",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "550<S \\leq 650",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "650<S \\leq 750",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "AB > AC > BC",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "0 \\le x_1 \\le \\dots \\le x_n \\le 1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le i < j \\le 2n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le x \\le 200",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le y \\le 100",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a_1, a_2, \\dots, a_{2100})",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a_1, a_2, \\dots, a_{2100})\n~~~~~~^"
+    },
+    {
+      "expr": "(b_1, b_2, \\dots, b_{2100})",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(b_1, b_2, \\dots, b_{2100})\n~~~~~~^"
+    },
+    {
+      "expr": "(m, p)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(m, p)\n~~^"
+    },
+    {
+      "expr": "\\{1,2,3,..., p\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1,2,3,..., p\\}\n~~~^"
+    },
+    {
+      "expr": "\\{a, b, c\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\{a, b, c\\}\n~~~^"
+    },
+    {
+      "expr": "\\{4,7,42\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{4,7,42\\}\n~~~^"
+    },
+    {
+      "expr": "A_n = \\{1, 3, 5, \\dots, 2n - 1\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nA_n = \\{1, 3, 5, \\dots, 2n - 1\\}\n~~~~~~~~~^"
+    },
+    {
+      "expr": "AB = AC = 1 \\leq BC",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "x^{101} - n x^{100} + n x - 1 = 0.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\nx^{101} - n x^{100} + n x - 1 = 0.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "a < \\{x^m\\} < b.",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{1, 2, 3, \\ldots, n(n-1)/2\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1, 2, 3, \\ldots, n(n-1)/2\\}\n~~~^"
+    },
+    {
+      "expr": "A = \\{a_1, a_2, \\dots, a_n\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA = \\{a_1, a_2, \\dots, a_n\\}\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "S(X) = \\sum_{a \\in X} a",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nS(X) = \\sum_{a \\in X} a\n~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\frac{a^p - a}{p} = b^2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\frac{a^p - a}{p} = b^2.\n~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "50\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n50\\%\n~~^"
+    },
+    {
+      "expr": "15\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n15\\%\n~~^"
+    },
+    {
+      "expr": "\\begin{cases} (x+y)(1+xy) + (x-y)^2 = 2, \\\\ x^3 + y^3 = 1. \\end{cases}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{cases} (x+y)(1+xy) + (x-y)^2 = 2, \\\\ x^3 + y^3 = 1. \\end{cases}\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "1 \\le n_1 < n_2 < \\dots < n_k < \\dots",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le k \\le 2022",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\left|x_{2}-x_{1}\\right|=2\\left|x_{3}-x_{2}\\right|=3\\left|x_{4}-x_{3}\\right|=4\\left|x_{5}-x_{4}\\right|=5\\left|x_{1}-x_{5}\\right| .",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\rangle'\n\\left|x_{2}-x_{1}\\right|=2\\left|x_{3}-x_{2}\\right|=3\\left|x_{4}-x_{3}\\right|=4\\left|x_{5}-x_{4}\\right|=5\\left|x_{1}-x_{5}\\rig"
+    },
+    {
+      "expr": "f : [-\\frac{\\pi}{2}; \\frac{\\pi}{2}] \\to \\mathbb{R}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nf : [-\\frac{\\pi}{2}; \\frac{\\pi}{2}] \\to \\mathbb{R}\n~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]\n~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "m < \\frac{1}{y} < n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{1,2, \\ldots, n\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1,2, \\ldots, n\\}\n~~~^"
+    },
+    {
+      "expr": "A=\\{2,4,7\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nA=\\{2,4,7\\}\n~~~~~^"
+    },
+    {
+      "expr": "(a, b, c, p)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b, c, p)\n~~^"
+    },
+    {
+      "expr": "(h, s)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(h, s)\n~~^"
+    },
+    {
+      "expr": "(995,1),(176,10)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(995,1),(176,10)\n~~~~^"
+    },
+    {
+      "expr": "(80,21)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(80,21)\n~~~^"
+    },
+    {
+      "expr": "a_{1} \\geq a_{2} \\geq \\cdots \\geq a_{n}>0",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(\\alpha, \\beta)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(\\alpha, \\beta)\n~~~~~~~^"
+    },
+    {
+      "expr": "(x, y, z, w)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(x, y, z, w)\n~~^"
+    },
+    {
+      "expr": "\\langle x_{n}\\rangle_{n=1}^{\\infty} = \\langle x_{1}, x_{2}, x_{3}, \\cdots \\rangle",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '|' '\\right|'\n\\langle x_{n}\\rangle_{n=1}^{\\infty} = \\langle x_{1}, x_{2}, x_{3}, \\cdots \\rangle\n~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "a \\geqslant b \\geqslant c",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(0, r)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(0, r)\n~~^"
+    },
+    {
+      "expr": "(r, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(r, 0)\n~~^"
+    },
+    {
+      "expr": "(0,-r)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(0,-r)\n~~^"
+    },
+    {
+      "expr": "(-r, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(-r, 0)\n~~~^"
+    },
+    {
+      "expr": "100\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n100\\%\n~~~^"
+    },
+    {
+      "expr": "97\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n97\\%\n~~^"
+    },
+    {
+      "expr": "83\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n83\\%\n~~^"
+    },
+    {
+      "expr": "17\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n17\\%\n~~^"
+    },
+    {
+      "expr": "3\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n3\\%\n~^"
+    },
+    {
+      "expr": "30\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n30\\%\n~~^"
+    },
+    {
+      "expr": "36\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n36\\%\n~~^"
+    },
+    {
+      "expr": "40\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n40\\%\n~~^"
+    },
+    {
+      "expr": "45\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n45\\%\n~~^"
+    },
+    {
+      "expr": "k_{1} \\cap k_{2} = \\{A, D\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nk_{1} \\cap k_{2} = \\{A, D\\}\n~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "k_{1} \\cap k_{3} = \\{B, E\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nk_{1} \\cap k_{3} = \\{B, E\\}\n~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "k_{2} \\cap k_{3} = \\{C, F\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nk_{2} \\cap k_{3} = \\{C, F\\}\n~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(p, q)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(p, q)\n~~^"
+    },
+    {
+      "expr": "\\{1,2,3, \\ldots, 9\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1,2,3, \\ldots, 9\\}\n~~~^"
+    },
+    {
+      "expr": "(k, m, n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(k, m, n)\n~~^"
+    },
+    {
+      "expr": "\\left| \\frac{a}{c} - 1 \\right|^{2021} \\leq \\frac{u}{d c^{1010}}, \\quad \\left| \\left( \\frac{a}{c} \\right)^{2020} - \\frac{b}{d} \\right| \\leq \\frac{u}{d c^{1010}},",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\rangle'\n\\left| \\frac{a}{c} - 1 \\right|^{2021} \\leq \\frac{u}{d c^{1010}}, \\quad \\left| \\left( \\frac{a}{c} \\right)^{2020} - \\frac{b}{d}"
+    },
+    {
+      "expr": "\\left(F_{1}, F_{3030}\\right)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n\\left(F_{1}, F_{3030}\\right)\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "0 \\le k \\le 9",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\frac{3}{2008} = \\frac{1}{m} + \\frac{1}{n} ?",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\frac{3}{2008} = \\frac{1}{m} + \\frac{1}{n} ?\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(xy + yz + zx) \\left( \\frac{1}{(x-y)^2} + \\frac{1}{(y-z)^2} + \\frac{1}{(z-x)^2} \\right) \\ge 4.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n(xy + yz + zx) \\left( \\frac{1}{(x-y)^2} + \\frac{1}{(y-z)^2} + \\frac{1}{(z-x)^2} \\right) \\ge 4.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "c_k = \\max_{i+j=k} a_i b_j \\quad (k = 0, 1, \\dots, m+n).",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nc_k = \\max_{i+j=k} a_i b_j \\quad (k = 0, 1, \\dots, m+n).\n~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\{1,2,3, \\ldots, 12\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1,2,3, \\ldots, 12\\}\n~~~^"
+    },
+    {
+      "expr": "1~\\mathrm{cm}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n1~\\mathrm{cm}\n~^"
+    },
+    {
+      "expr": "\\begin{aligned}\na^{3}-3 a b^{2} & =36 \\\\\nb^{3}-3 b a^{2} & =28 i\n\\end{aligned}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\na^{3}-3 a b^{2} & =36 \\\\\nb^{3}-3 b a^{2} & =28 i\n\\end{aligned}\n~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(K_1, r_1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(K_1, r_1)\n~~~~~~^"
+    },
+    {
+      "expr": "(K_2, r_2)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(K_2, r_2)\n~~~~~~^"
+    },
+    {
+      "expr": "[-a-b-c, +\\infty)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n[-a-b-c, +\\infty)\n~~~~~~~^"
+    },
+    {
+      "expr": "A = \\{a_1, a_2, \\ldots, a_{2010}\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA = \\{a_1, a_2, \\ldots, a_{2010}\\}\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "B = \\{b_1, b_2, \\ldots, b_{2010}\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nB = \\{b_1, b_2, \\ldots, b_{2010}\\}\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\sum_{1 \\le i < j \\le 2010} (a_i + a_j)^n = \\sum_{1 \\le i < j \\le 2010} (b_i + b_j)^n",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\sum_{1 \\le i < j \\le 2010} (a_i + a_j)^n = \\sum_{1 \\le i < j \\le 2010} (b_i + b_j)^n\n~~~~~~~~^"
+    },
+    {
+      "expr": "\\begin{aligned}\nx^{2} + 4y^{2} - x y &= 10 \\\\\n2x - 4y + 3x y &= 11\n\\end{aligned}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\nx^{2} + 4y^{2} - x y &= 10 \\\\\n2x - 4y + 3x y &= 11\n\\end{aligned}\n~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "M = \\{(x, y) \\mid x^2 + 2y^2 = 3\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nM = \\{(x, y) \\mid x^2 + 2y^2 = 3\\}\n~~~~~~~~^"
+    },
+    {
+      "expr": "N = \\{(x, y) \\mid y = mx + b\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nN = \\{(x, y) \\mid y = mx + b\\}\n~~~~~~~~^"
+    },
+    {
+      "expr": "\\left[-\\frac{\\sqrt{6}}{2}, \\frac{\\sqrt{6}}{2}\\right]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n\\left[-\\frac{\\sqrt{6}}{2}, \\frac{\\sqrt{6}}{2}\\right]\n~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\left(-\\frac{\\sqrt{6}}{2}, \\frac{\\sqrt{6}}{2}\\right)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n\\left(-\\frac{\\sqrt{6}}{2}, \\frac{\\sqrt{6}}{2}\\right)\n~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\left(-\\frac{\\sqrt{6}}{2}, \\frac{\\sqrt{6}}{2}\\right]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n\\left(-\\frac{\\sqrt{6}}{2}, \\frac{\\sqrt{6}}{2}\\right]\n~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\left[-\\frac{2\\sqrt{3}}{3}, \\frac{2\\sqrt{3}}{3}\\right]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n\\left[-\\frac{2\\sqrt{3}}{3}, \\frac{2\\sqrt{3}}{3}\\right]\n~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "N=\\{1,2,3, \\ldots\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nN=\\{1,2,3, \\ldots\\}\n~~~~~^"
+    },
+    {
+      "expr": "f(f(n)+1)=\\left\\{\\begin{array}{cc}n-1, & \\text{ si } n \\text{ es par;} \\\\ n+3, & \\text{ si } n \\text{ es impar. }\\end{array}\\right.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nf(f(n)+1)=\\left\\{\\begin{array}{cc}n-1, & \\text{ si } n \\text{ es par;} \\\\ n+3, & \\text{ si } n \\text{ es impar. }\\end{array}\\right.\n~~~~"
+    },
+    {
+      "expr": "(1,0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(1,0)\n~~^"
+    },
+    {
+      "expr": "(1,1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(1,1)\n~~^"
+    },
+    {
+      "expr": "(n, a)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(n, a)\n~~^"
+    },
+    {
+      "expr": "128~\\mathrm{m}^2",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n128~\\mathrm{m}^2\n~~~^"
+    },
+    {
+      "expr": "6~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n6~\\mathrm{m}\n~^"
+    },
+    {
+      "expr": "D \\doteq 8,23~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nD \\doteq 8,23~\\mathrm{m}\n~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "D \\doteq 8,24~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nD \\doteq 8,24~\\mathrm{m}\n~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "D \\doteq 7,22~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nD \\doteq 7,22~\\mathrm{m}\n~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "D \\doteq 8,25~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nD \\doteq 8,25~\\mathrm{m}\n~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "D \\doteq 7,21~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nD \\doteq 7,21~\\mathrm{m}\n~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "c \\ge b \\ge a",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\leq a < b \\leq n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a, b), (a, c)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b), (a, c)\n~~^"
+    },
+    {
+      "expr": "1 \\leq i \\leq 2019",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\left\\{\\begin{array}{l}\nx + y + z = 2008 \\\\\nx^{2} + y^{2} + z^{2} = 6024^{2} \\\\\n\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} = \\frac{1}{2008}\n\\end{array}\\right.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\left\\{\\begin{array}{l}\nx + y + z = 2008 \\\\\nx^{2} + y^{2} + z^{2} = 6024^{2} \\\\\n\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} = \\frac{1}{2008}"
+    },
+    {
+      "expr": "(a, b, c, d)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b, c, d)\n~~^"
+    },
+    {
+      "expr": "k \\cdot \\frac{3(a^2 + b^2 + c^2)}{(a + b + c)^2} + \\sqrt{\\frac{ab + bc + ca}{a^2 + b^2 + c^2}} \\leq k + 1.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\nk \\cdot \\frac{3(a^2 + b^2 + c^2)}{(a + b + c)^2} + \\sqrt{\\frac{ab + bc + ca}{a^2 + b^2 + c^2}} \\leq k + 1.\n~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "\\frac{1}{4} < \\frac{1}{a+1} + \\frac{1}{a+2} + \\frac{1}{a+3} < \\frac{1}{3}.",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\frac{1}{p+1} < \\frac{1}{a_1} + \\frac{1}{a_2} + \\dots + \\frac{1}{a_p} < \\frac{1}{p}.",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\sum_{n \\geq 0} \\frac{10^{n} a_{n}}{n!}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\sum_{n \\geq 0} \\frac{10^{n} a_{n}}{n!}\n~~~~~~~~^"
+    },
+    {
+      "expr": "a + kx \\le 1; \\quad a + ky \\le 1; \\quad b + \\frac{x}{k} \\le 1; \\quad b + \\frac{y}{k} \\le 1.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\na + kx \\le 1; \\quad a + ky \\le 1; \\quad b + \\frac{x}{k} \\le 1; \\quad b + \\frac{y}{k} \\le 1.\n~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(a + x)^2 + (b + y)^2 \\le 2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n(a + x)^2 + (b + y)^2 \\le 2.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "1 \\le r \\le n-1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "x_1 = 1 \\quad \\text{and} \\quad x_n = \\frac{2n}{(n-1)^2} \\sum_{i=1}^{n-1} x_i \\quad \\text{for all } n \\ge 2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\nx_1 = 1 \\quad \\text{and} \\quad x_n = \\frac{2n}{(n-1)^2} \\sum_{i=1}^{n-1} x_i \\quad \\text{for all } n \\ge 2.\n~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "\\left[ -\\frac{1}{3}, \\frac{1}{3} \\right]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n\\left[ -\\frac{1}{3}, \\frac{1}{3} \\right]\n~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\left[ -\\frac{1}{2}, \\frac{1}{2} \\right]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n\\left[ -\\frac{1}{2}, \\frac{1}{2} \\right]\n~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\left[ -\\frac{1}{4}, \\frac{1}{3} \\right]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n\\left[ -\\frac{1}{4}, \\frac{1}{3} \\right]\n~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "[-3, 3]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n[-3, 3]\n~~~^"
+    },
+    {
+      "expr": "20 \\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n20 \\%\n~~~^"
+    },
+    {
+      "expr": "\\text{\u042d\u043d\u0434 } \\binom{n}{k} = C_n^k \\text{ \u0431\u0430 } j = 0 \\text{ \u04af\u0435\u0434 } \\binom{3n+1-j}{j-1} 2^{j-1} = 0 \\text{ \u0433\u044d\u0436 \u04af\u0437\u043d\u044d.}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\text{\u042d\u043d\u0434 } \\binom{n}{k} = C_n^k \\text{ \u0431\u0430 } j = 0 \\text{ \u04af\u0435\u0434 } \\binom{3n+1-j}{j-1} 2^{j-1} = 0 \\text{ \u0433\u044d\u0436 \u04af\u0437\u043d\u044d.}\n~~~~~~^"
+    },
+    {
+      "expr": "CA > BC > AB",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "a \\geq b \\geq c",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\begin{aligned}\na^{2} b c + a b^{2} c + a b c^{2} + 8 &= a + b + c \\\\\na^{2} b + a^{2} c + b^{2} c + b^{2} a + c^{2} a + c^{2} b + 3 a b c &= -4 \\\\\na^{2} b^{2} c + a b^{2} c^{2} + a^{2} b c^{2} &= 2 + ",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\na^{2} b c + a b^{2} c + a b c^{2} + 8 &= a + b + c \\\\\na^{2} b + a^{2} c + b^{2} c + b^{2} a + c^{2} a + c^{2} b + 3 a b "
+    },
+    {
+      "expr": "100~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n100~\\mathrm{m}\n~~~^"
+    },
+    {
+      "expr": "42~\\mathrm{km}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n42~\\mathrm{km}\n~~^"
+    },
+    {
+      "expr": "A = (x_1, y_1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA = (x_1, y_1)\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "B = (x_2, y_2)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nB = (x_2, y_2)\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\left\\{\\begin{array}{l}\nw x y=10 \\\\\nw y z=5 \\\\\nw x z=45 \\\\\nx y z=12\n\\end{array}\\right.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\left\\{\\begin{array}{l}\nw x y=10 \\\\\nw y z=5 \\\\\nw x z=45 \\\\\nx y z=12\n\\end{array}\\right.\n~~~~~~~~~^"
+    },
+    {
+      "expr": "25\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n25\\%\n~~^"
+    },
+    {
+      "expr": "\\begin{cases} \\frac{xyz+1}{x+1} = \\frac{yzw+1}{y+1} = \\frac{zwx+1}{z+1} = \\frac{wxy+1}{w+1} \\\\ x+y+z+w=48 \\end{cases} .",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{cases} \\frac{xyz+1}{x+1} = \\frac{yzw+1}{y+1} = \\frac{zwx+1}{z+1} = \\frac{wxy+1}{w+1} \\\\ x+y+z+w=48 \\end{cases} .\n~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "x^2 + 7 = f_1(x)^2 + f_2(x)^2 + \\dots + f_n(x)^2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\nx^2 + 7 = f_1(x)^2 + f_2(x)^2 + \\dots + f_n(x)^2.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(12,0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(12,0)\n~~~^"
+    },
+    {
+      "expr": "(0,10)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(0,10)\n~~^"
+    },
+    {
+      "expr": "(12,10)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(12,10)\n~~~^"
+    },
+    {
+      "expr": "(2016-2a, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(2016-2a, 0)\n~~~~~~~~^"
+    },
+    {
+      "expr": "\\begin{cases}\n|x + y + z| = 1 \\\\\n|x| + |y| + |z| = 1 \\\\\n|x - y| + |y - z| + |z - x| = 2.\n\\end{cases}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{cases}\n|x + y + z| = 1 \\\\\n|x| + |y| + |z| = 1 \\\\\n|x - y| + |y - z| + |z - x| = 2.\n\\end{cases}\n~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "A = \\{a_1, a_2, \\dots, a_n\\} \\subset \\mathbb{N}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA = \\{a_1, a_2, \\dots, a_n\\} \\subset \\mathbb{N}\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "S=\\{0,1,2, \\ldots, 2020\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nS=\\{0,1,2, \\ldots, 2020\\}\n~~~~~^"
+    },
+    {
+      "expr": "1 \\le m \\le 1000",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\langle a_1, a_2, a_3, \\dots \\rangle",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\langle a_1, a_2, a_3, \\dots \\rangle\n~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(i, j, k)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(i, j, k)\n~~^"
+    },
+    {
+      "expr": "\\frac{1}{O_1A_1^2 - r_1^2} + \\frac{1}{O_2A_2^2 - r_2^2} + \\frac{1}{O_3A_3^2 - r_3^2} + \\frac{1}{O_4A_4^2 - r_4^2} = 0.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\frac{1}{O_1A_1^2 - r_1^2} + \\frac{1}{O_2A_2^2 - r_2^2} + \\frac{1}{O_3A_3^2 - r_3^2} + \\frac{1}{O_4A_4^2 - r_4^2} = 0.\n~~~~~~"
+    },
+    {
+      "expr": "[0,1]",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ']'\n[0,1]\n~~^"
+    },
+    {
+      "expr": "1\\ \\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n1\\ \\mathrm{m}\n~^"
+    },
+    {
+      "expr": "1~\\mathrm{g}, 2~\\mathrm{g}, \\ldots, 200~\\mathrm{g}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n1~\\mathrm{g}, 2~\\mathrm{g}, \\ldots, 200~\\mathrm{g}\n~^"
+    },
+    {
+      "expr": "S = \\{0, 1, 2, 3, \\ldots\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nS = \\{0, 1, 2, 3, \\ldots\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "E = (10, 10, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\nE = (10, 10, 0)\n~~~~~~~^"
+    },
+    {
+      "expr": "A = (10, -10, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\nA = (10, -10, 0)\n~~~~~~~^"
+    },
+    {
+      "expr": "R = (-10, -10, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\nR = (-10, -10, 0)\n~~~~~~~~^"
+    },
+    {
+      "expr": "L = (-10, 10, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\nL = (-10, 10, 0)\n~~~~~~~~^"
+    },
+    {
+      "expr": "Y = (0, 0, 10)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\nY = (0, 0, 10)\n~~~~~~^"
+    },
+    {
+      "expr": "(x, y, z-1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(x, y, z-1)\n~~^"
+    },
+    {
+      "expr": "(x \\pm 1, y, z-1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(x \\pm 1, y, z-1)\n~~~~~~~~^"
+    },
+    {
+      "expr": "(x, y \\pm 1, z-1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(x, y \\pm 1, z-1)\n~~^"
+    },
+    {
+      "expr": "(x \\pm 1, y \\pm 1, z-1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(x \\pm 1, y \\pm 1, z-1)\n~~~~~~~~^"
+    },
+    {
+      "expr": "(8, 9, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(8, 9, 0)\n~~^"
+    },
+    {
+      "expr": "\\sqrt[3]{2x+13} - \\sqrt[3]{2x-13} = 2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\sqrt[3]{2x+13} - \\sqrt[3]{2x-13} = 2.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "0 = a_0 < a_1 < a_2 < \\dots",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\left\\{\\begin{array}{l}\n45 x y^{2}=8 z^{3} \\\\\nx y z<1000\n\\end{array}\\right.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: missing '\\}' at '='\n\\left\\{\\begin{array}{l}\n45 x y^{2}=8 z^{3} \\\\\nx y z<1000\n\\end{array}\\right.\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "1 \\le i < j \\le n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "N = \\{0, 1, 2, 3, \\dots\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nN = \\{0, 1, 2, 3, \\dots\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "S=\\{p-n^{2} \\mid n \\in \\mathbb{N}, n^{2}<p\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nS=\\{p-n^{2} \\mid n \\in \\mathbb{N}, n^{2}<p\\}\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "1<a<b",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "x = (x_1, ..., x_n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nx = (x_1, ..., x_n)\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "x = (x_1, x_2, ..., x_n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nx = (x_1, x_2, ..., x_n)\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "y = (y_1, y_2, ..., y_n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\ny = (y_1, y_2, ..., y_n)\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "z = (z_1, z_2, ..., z_n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nz = (z_1, z_2, ..., z_n)\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\{x_i, y_i, z_i\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\{x_i, y_i, z_i\\}\n~~~~~^"
+    },
+    {
+      "expr": "\\{0, 1, 2\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{0, 1, 2\\}\n~~~^"
+    },
+    {
+      "expr": "A_{i, j}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{i, j}\n~~~~^"
+    },
+    {
+      "expr": "A_{i, 1}, A_{i, 2}, A_{i, 3}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{i, 1}, A_{i, 2}, A_{i, 3}\n~~~~^"
+    },
+    {
+      "expr": "A_{i, 4}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{i, 4}\n~~~~^"
+    },
+    {
+      "expr": "A_{1, j}, A_{2, j}, A_{3, j}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{1, j}, A_{2, j}, A_{3, j}\n~~~~~~^"
+    },
+    {
+      "expr": "A_{4, j}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{4, j}\n~~~~~~^"
+    },
+    {
+      "expr": "A_{1,1} A_{1,2} A_{2,2} A_{2,1}, A_{2,1} A_{2,2} A_{3,2} A_{3,1}, A_{3,1} A_{3,2} A_{4,2} A_{4,1}, A_{1,2} A_{1,3} A_{2,3} A_{2,2}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{1,1} A_{1,2} A_{2,2} A_{2,1}, A_{2,1} A_{2,2} A_{3,2} A_{3,1}, A_{3,1} A_{3,2} A_{4,2} A_{4,1}, A_{1,2} A_{1,3} A_{2,3} A_{2,2"
+    },
+    {
+      "expr": "A_{1,3} A_{1,4} A_{2,4} A_{2,3}, A_{1,1} A_{2,2} A_{2,3} A_{1,4}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{1,3} A_{1,4} A_{2,4} A_{2,3}, A_{1,1} A_{2,2} A_{2,3} A_{1,4}\n~~~~~~^"
+    },
+    {
+      "expr": "A_{1,1} A_{2,2} A_{3,2} A_{4,1}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{1,1} A_{2,2} A_{3,2} A_{4,1}\n~~~~~~^"
+    },
+    {
+      "expr": "A_{4,1} A_{3,2} A_{3,3} A_{4,4}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA_{4,1} A_{3,2} A_{3,3} A_{4,4}\n~~~~~~^"
+    },
+    {
+      "expr": "\\begin{aligned}\n(x^2 + 1)y &= z^2 + 1 \\\\\n(y^2 + 1)z &= x^2 + 1 \\\\\n(z^2 + 1)x &= y^2 + 1.\n\\end{aligned} \n\\qquad (\\text{Ukraine 2017})",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\n(x^2 + 1)y &= z^2 + 1 \\\\\n(y^2 + 1)z &= x^2 + 1 \\\\\n(z^2 + 1)x &= y^2 + 1.\n\\end{aligned} \n\\qquad (\\text{Ukraine 2017})\n~~~"
+    },
+    {
+      "expr": "p\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\np\\%\n~^"
+    },
+    {
+      "expr": "a \\leq n \\leq b",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "c \\leq n \\leq d",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(n \\ge 2)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(n \\ge 2)\n~~~^"
+    },
+    {
+      "expr": "(n, n+3)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(n, n+3)\n~~^"
+    },
+    {
+      "expr": "\\prod_{1 \\le i < j \\le n} (x_i - x_j) \\ge C^{\\frac{n(n-1)}{2}}.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\prod_{1 \\le i < j \\le n} (x_i - x_j) \\ge C^{\\frac{n(n-1)}{2}}.\n~~~~~~~~~^"
+    },
+    {
+      "expr": "0 \\leqslant r \\leqslant 2n-2",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(A, B)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(A, B)\n~~^"
+    },
+    {
+      "expr": "1 < d(A, B) \\le 2",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(0, 0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(0, 0)\n~~^"
+    },
+    {
+      "expr": "(-3, 5)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(-3, 5)\n~~~^"
+    },
+    {
+      "expr": "(12, 5)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(12, 5)\n~~~^"
+    },
+    {
+      "expr": "(3, 11)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(3, 11)\n~~^"
+    },
+    {
+      "expr": "\\left(0,20-\\left\\lfloor\\frac{|E-A|}{2}\\right\\rfloor\\right)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n\\left(0,20-\\left\\lfloor\\frac{|E-A|}{2}\\right\\rfloor\\right)\n~~~~~~~^"
+    },
+    {
+      "expr": "A=\\{-m,-m+1, \\ldots, m-1, m\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nA=\\{-m,-m+1, \\ldots, m-1, m\\}\n~~~~~~^"
+    },
+    {
+      "expr": "A = \\{1, 2, 3, \\dots, 100\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nA = \\{1, 2, 3, \\dots, 100\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "(a, b, x, y)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b, x, y)\n~~^"
+    },
+    {
+      "expr": "\\begin{aligned}\nx y & = 1 \\\\\nx + y & = 3\n\\end{aligned}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\nx y & = 1 \\\\\nx + y & = 3\n\\end{aligned}\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\sum_{i \\neq j} \\frac{a_i}{a_j} \\geq \\frac{(n-1)^2 t}{t-1}.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\sum_{i \\neq j} \\frac{a_i}{a_j} \\geq \\frac{(n-1)^2 t}{t-1}.\n~~~~~~~~^"
+    },
+    {
+      "expr": "A = \\{0, 1, \\ldots, 121\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nA = \\{0, 1, \\ldots, 121\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "\\{1,2, \\ldots, 3 n\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1,2, \\ldots, 3 n\\}\n~~~^"
+    },
+    {
+      "expr": "\\{n-1, n, n+1\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{n-1, n, n+1\\}\n~~~~~^"
+    },
+    {
+      "expr": "\\begin{cases} 1 - \\frac{12}{y+3x} = \\frac{2}{\\sqrt{x}} \\\\ 1 + \\frac{12}{y+3x} = \\frac{6}{\\sqrt{x}} \\end{cases}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{cases} 1 - \\frac{12}{y+3x} = \\frac{2}{\\sqrt{x}} \\\\ 1 + \\frac{12}{y+3x} = \\frac{6}{\\sqrt{x}} \\end{cases}\n~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "\\left(C_{P}, C_{Q}\\right)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n\\left(C_{P}, C_{Q}\\right)\n~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\{1, -1\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1, -1\\}\n~~~^"
+    },
+    {
+      "expr": "\\sum_{0 < d(P,Q) < 2010} \\frac{f(P)f(Q) - g(P)g(Q)}{d(P,Q)} \\geq 0",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\sum_{0 < d(P,Q) < 2010} \\frac{f(P)f(Q) - g(P)g(Q)}{d(P,Q)} \\geq 0\n~~~~~~~~^"
+    },
+    {
+      "expr": "(2, 1)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(2, 1)\n~~^"
+    },
+    {
+      "expr": "(10, 11)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(10, 11)\n~~~^"
+    },
+    {
+      "expr": "0 < a_{1} \\leq a_{2} \\leq \\ldots \\leq a_{n}",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\forall 1 \\le i < j \\le n+1 : \\gcd(p(a_i), p(a_j)) > 1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\forall 1 \\le i < j < k \\le n+1 : \\gcd(p(a_i), p(a_j), p(a_k)) = 1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{A_{1}, A_{2}\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{A_{1}, A_{2}\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "\\{B_{1}, B_{2}, B_{3}\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{B_{1}, B_{2}, B_{3}\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "3000~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n3000~\\mathrm{m}\n~~~~^"
+    },
+    {
+      "expr": "120~\\mathrm{m}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n120~\\mathrm{m}\n~~~^"
+    },
+    {
+      "expr": "A = \\{n \\in \\mathbb{N} \\mid p(5^n) - p(2^n) > 0\\}, \\quad B = \\{n \\in \\mathbb{N} \\mid p(5^n) - p(2^n) < 0\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: missing '\\}' at '>'\nA = \\{n \\in \\mathbb{N} \\mid p(5^n) - p(2^n) > 0\\}, \\quad B = \\{n \\in \\mathbb{N} \\mid p(5^n) - p(2^n) < 0\\}\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "3(a^2 + b^2) - 7(a + b) = -4.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n3(a^2 + b^2) - 7(a + b) = -4.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "BC > AC > AB",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "1 \\le x \\le n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "n = (a, b) \\cdot (b, c) + (b, c) \\cdot (c, a) + (c, a) \\cdot (a, b)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nn = (a, b) \\cdot (b, c) + (b, c) \\cdot (c, a) + (c, a) \\cdot (a, b)\n~~~~~~^"
+    },
+    {
+      "expr": "m! + n! = m^n + 1.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\nm! + n! = m^n + 1.\n~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\{i, j\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\{i, j\\}\n~~~^"
+    },
+    {
+      "expr": "1 < d_1 < d_2 < n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\int_{0}^{\\pi} f(x) \\, dx \\geq \\frac{\\pi^2}{2} - 2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\int_{0}^{\\pi} f(x) \\, dx \\geq \\frac{\\pi^2}{2} - 2.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "1 \\leq n < 9",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{\\sqrt{1}, \\sqrt{2}, \\sqrt{3}, \\ldots, \\sqrt{2015}\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{\\sqrt{1}, \\sqrt{2}, \\sqrt{3}, \\ldots, \\sqrt{2015}\\}\n~~~~~~~~~~^"
+    },
+    {
+      "expr": "70\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n70\\%\n~~^"
+    },
+    {
+      "expr": "1 \\le i < j \\le 10",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "a - b = 5b^2 - 4a^2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\na - b = 5b^2 - 4a^2.\n~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "0 \\le x < 1",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(-1,0)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(-1,0)\n~~~^"
+    },
+    {
+      "expr": "0 \\leqslant m \\leqslant 2n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "(a_{1}, a_{2}, \\ldots, a_{n})",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(a_{1}, a_{2}, \\ldots, a_{n})\n~~~~~~^"
+    },
+    {
+      "expr": "(1,2, \\ldots, n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\n(1,2, \\ldots, n)\n~~^"
+    },
+    {
+      "expr": "\\sqrt{4 - 3\\sqrt{10 - 3x}} = x - 2.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\sqrt{4 - 3\\sqrt{10 - 3x}} = x - 2.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "60\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n60\\%\n~~^"
+    },
+    {
+      "expr": "80\\%",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n80\\%\n~~^"
+    },
+    {
+      "expr": "m \\ge n \\ge 2",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "a < b < c",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "f(a) < \\lim_{n \\to \\infty} g(x_n) < f(c).",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "M = \\{n, n+1, ..., m\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\nM = \\{n, n+1, ..., m\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "1 \\leq n \\leq 1000",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{1, 2, \\dots, n\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1, 2, \\dots, n\\}\n~~~^"
+    },
+    {
+      "expr": "\\{1, \\dots, n\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\n\\{1, \\dots, n\\}\n~~~^"
+    },
+    {
+      "expr": "1 \\le x < y \\le n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\{a_1, a_2, ..., a_m\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\{a_1, a_2, ..., a_m\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "\\{b_1, b_2, ..., b_n\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n\\{b_1, b_2, ..., b_n\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "(2+4+6+...+198+200) - (1+3+5+...+197+199)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(2+4+6+...+198+200) - (1+3+5+...+197+199)\n~~~~~~~^"
+    },
+    {
+      "expr": "3[[x]] = x[x] + 1.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n3[[x]] = x[x] + 1.\n~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "a^{(1)} = (a_1^{(1)}, \\dots, a_k^{(1)})",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: ')'\na^{(1)} = (a_1^{(1)}, \\dots, a_k^{(1)})\n~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\prod_{j=1}^{k} \\#\\{i' \\mid 1 \\le i' \\le n \\text{ \u4f7f\u5f97 } \\pi_j(a^{(i')}) = \\pi_j(a^{(i)})\\},",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\prod_{j=1}^{k} \\#\\{i' \\mid 1 \\le i' \\le n \\text{ \u4f7f\u5f97 } \\pi_j(a^{(i')}) = \\pi_j(a^{(i)})\\},\n~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\#S",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\#S\n^"
+    },
+    {
+      "expr": "\\le n",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\le n\n^"
+    },
+    {
+      "expr": "\\left( \\frac{x_1^t + \\dots + x_n^t}{n} \\right)^{\\frac{1}{t}} \\quad (\\text{\u82e5 } t \\neq 0); \\quad \\sqrt[n]{x_1 \\cdots x_n} \\quad (\\text{\u82e5 } t = 0).\n\n\nFor every positive integer $k$ greater than 1, find t",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\left( \\frac{x_1^t + \\dots + x_n^t}{n} \\right)^{\\frac{1}{t}} \\quad (\\text{\u82e5 } t \\neq 0); \\quad \\sqrt[n]{x_1 \\cdots x_n} \\quad (\\text{\u82e5 }"
+    },
+    {
+      "expr": "where $\\#S$ is the number of elements in set $S$, and $\\pi_j$ is the projection $\\mathbb{R}^k \\to \\mathbb{R}^{k-1}$ omitting the $j$-th coordinate. Then the $t$-th power mean of the scores of all $a^{",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nwhere $\\#S$ is the number of elements in set $S$, and $\\pi_j$ is the projection $\\mathbb{R}^k \\to \\mathbb{R}^{k-1}$ omitting the $j$-th "
+    },
+    {
+      "expr": "12~\\mathrm{cm}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n12~\\mathrm{cm}\n~~^"
+    },
+    {
+      "expr": "S = \\{1, 2, \\ldots, 33\\}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: '\\}'\nS = \\{1, 2, \\ldots, 33\\}\n~~~~~~~^"
+    },
+    {
+      "expr": "\\int_{0}^{(\\sqrt{2}-1) / 2} \\frac{\\mathrm{~d} x}{(2 x+1) \\sqrt{x^{2}+x}}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\int_{0}^{(\\sqrt{2}-1) / 2} \\frac{\\mathrm{~d} x}{(2 x+1) \\sqrt{x^{2}+x}}\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "(a, b, p)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b, p)\n~~^"
+    },
+    {
+      "expr": "\\frac{2^n + 2n - 7}{n} \\le a_n \\le 2^{n-1}",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "x \\in \\left[0 ; \\frac{\\pi}{2}\\right)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\nx \\in \\left[0 ; \\frac{\\pi}{2}\\right)\n~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\frac{33a^2 - a}{33a^2 + 1} + \\frac{33b^2 - b}{33b^2 + 1} + \\frac{33c^2 - c}{33c^2 + 1} \\ge 0.",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected one of these: <INVALID>\n\\frac{33a^2 - a}{33a^2 + 1} + \\frac{33b^2 - b}{33b^2 + 1} + \\frac{33c^2 - c}{33c^2 + 1} \\ge 0.\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    },
+    {
+      "expr": "(a, b, p, n)",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I expected something else here\n(a, b, p, n)\n~~^"
+    },
+    {
+      "expr": "\\",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\\n^"
+    },
+    {
+      "expr": ". At the same restaurant, the cost of 5 hamburgers, 9 milk shakes, and 1 order of fries is",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n. At the same restaurant, the cost of 5 hamburgers, 9 milk shakes, and 1 order of fries is\n^"
+    },
+    {
+      "expr": "1 \\le j < k \\le n",
+      "status": "fail",
+      "detail": "TypeError: Can only compare inequalities with Expr"
+    },
+    {
+      "expr": "\\begin{aligned}\na x + b y &= c - 1 \\\\\n(a + 5) x + (b + 3) y &= c + 1\n\\end{aligned}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\na x + b y &= c - 1 \\\\\n(a + 5) x + (b + 3) y &= c + 1\n\\end{aligned}\n~~~~~~~~~~~~~~~~~~~^"
+    },
+    {
+      "expr": "\\begin{aligned}\na + b + c &= 100 \\\\\nab + bc + ca &= 20, \\text{ and } \\\\\n(a + b)(a + c) &= 24\n\\end{aligned}",
+      "status": "fail",
+      "detail": "LaTeXParsingError: I don't understand this\n\\begin{aligned}\na + b + c &= 100 \\\\\nab + bc + ca &= 20, \\text{ and } \\\\\n(a + b)(a + c) &= 24\n\\end{aligned}\n~~~~~~~~~~~~~~~~~^"
+    }
+  ],
+  "failure_taxonomy_heuristic": {
+    "note": "regex-based categories over all 6,743 failed/timeout unique expressions; categories overlap",
+    "set_logic_notation (\\{,\\in,\\mid,\\cup,\\mathbb)": 1473,
+    "ellipsis (\\dots/...)": 1369,
+    "environments (align/cases/array/matrix)": 447,
+    "big_ops_named_fns (\\sum,\\prod,\\binom,\\gcd,\\operatorname)": 376,
+    "text_in_math (\\text,\\mbox)": 350,
+    "non_ascii_non_english": 136,
+    "geometry_notation (\\angle,\\overline,\\parallel)": 69,
+    "modular (\\pmod,\\equiv)": 27
+  },
+  "qualitative_failure_modes": [
+    "chained inequalities (0 \\le x \\le 100) -> TypeError 'Can only compare inequalities with Expr'; very common and trivially splittable",
+    "tuples/sequences with commas and \\dots: (x_1,y_1),\\dots,(x_{2n},y_{2n})",
+    "set-builder / set notation: S = \\{a+1,\\dots,a+t\\}",
+    "trailing sentence punctuation inside math: '... \\le 2.' fails only because of the final period",
+    "\\quad \\text{for every } k trailing prose inside the span",
+    "\\sum_{d \\mid n} (relation inside subscript of big operator)",
+    "\\left(...\\right) around tuples; \\geqslant/\\leqslant variants",
+    "\\begin{array}/cases systems of equations",
+    "stray line-broken fragments from markdown ('50, \\\\')"
+  ],
+  "normalizer_recovery_experiment": {
+    "sample": "800 random failed unique expressions (<250 chars), seed 1",
+    "normalizer_rules": "strip trailing punctuation; \\geqslant->\\geq; drop trailing \\quad clause; drop \\text{...}; drop \\left/\\right; drop spacing macros",
+    "recovered_by_normalizer_pct": 13.5,
+    "recovered_by_chain_split_pct": 24.9,
+    "still_failing_pct": 61.6,
+    "implication": "a ~40-line normalizer + chained-relation splitter would lift unique-expression parse coverage from 86.6% to ~91.7% and per-span coverage above 96%"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "purpose": "E2: CAS arm matched to ctrl-LLM on rows, sources, and total negative attachments",
+  "build_seed": 20260802,
+  "inputs": {
+    "llm_file": "/ibex/user/habiam0b/MathNet_Follow_Up/data/llm_pairs/pairs.jsonl",
+    "cas_file": "/ibex/user/habiam0b/MathNet_Follow_Up/data/cas_pairs/pairs.jsonl"
+  },
+  "output": "/ibex/user/habiam0b/MathNet_Follow_Up/data/cas_pairs/pairs_negmatched.jsonl",
+  "rows": 6145,
+  "sources_equal_ctrl_llm": true,
+  "total_negative_attachments": 16169,
+  "target_from_ctrl_llm": 16169,
+  "negatives_per_row_mean": 2.6312,
+  "attachment_histogram": {
+    "0": 1797,
+    "3": 1223,
+    "4": 3125
+  },
+  "ctrl_llm_histogram_for_contrast": {
+    "0": 79,
+    "1": 356,
+    "2": 1317,
+    "3": 4393
+  },
+  "distinct_same_source_negatives_available": {
+    "0": 1797,
+    "1": 1941,
+    "2": 1646,
+    "3": 607,
+    "4": 154
+  },
+  "rows_with_zero_negatives": 1797,
+  "rows_at_4_attachments": 3125,
+  "rows_at_3_attachments": 1223,
+  "positive_family_mix": {
+    "reformulate": 2898,
+    "rename": 2398,
+    "mirror": 849
+  },
+  "gate_checks": {
+    "v1_anchor_intersection": 0,
+    "xling_intersection": 0
+  },
+  "semantics_note": "every negative is a counterexampled minimal edit of the row's own source problem; reuse is within-source cycling only, never cross-source"
+}

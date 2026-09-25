@@ -1,0 +1,743 @@
+{
+ "model": "facebook/nllb-200-distilled-600M",
+ "device": "cpu",
+ "beams": 4,
+ "n": 13,
+ "styles": {
+  "MATH": {
+   "status": {
+    "ok": 13
+   },
+   "sentences": 37,
+   "sentences_fallback": 2,
+   "char3_jaccard_mean_ok": 0.755,
+   "rows": [
+    {
+     "source_id": "0by1",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 4
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 12,
+     "n_sentences": 4,
+     "n_fallback": 0,
+     "pivot_text": "Le triangle MATH0 a MATH1 , MATH2 et MATH3 est le pied de l' altitude de MATH4 . Que MATH5 soit tel que MATH6 et que MATH7 soit le pied de la perpendiculaire de MATH8 sur MATH9 .\n\nA) Prouvez que MATH10 .\n\nb) Trouvez la mesure de l' angle MATH11 .",
+     "positive_text": "The triangle $ABC$ to $\\angle A = 90^\\circ$, $\\angle B = 30^\\circ$ and $D$ is the foot of the altitude of $A$. Let $E \\in (AD) $ be as $DE = 3AE$ and $F$ be the foot of the perpendicular of $D$ to $BE$.\n\nA) Prove that $AF \\perp FC$.\n\n(b) Find the measurement of the angle $AFB$.",
+     "char3_jaccard": 0.7269,
+     "token_jaccard": 0.5962,
+     "len_ratio": 0.989
+    },
+    {
+     "source_id": "07wi",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 3
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 11,
+     "n_sentences": 3,
+     "n_fallback": 0,
+     "pivot_text": "Un parallélogramme * ABCD * est tel que MATH1 . Un point MATH2 sur MATH3 est tel que MATH4 où MATH5 est le point d' intersection de MATH6 et MATH7 . Le point MATH8 est le pied de la perpendiculaire de MATH9 à MATH10 . Prove\nMATH0",
+     "positive_text": "A parallelogram * ABCD * is like $BD \\perp AB$. A $P$ point on $BC$ is such as $|PD| = |BE|$ where $E$ is the intersection point of $BD$ and $AP$. The $F$ point is the foot of the perpendicular from $P$ to $BD$. Prove\n$$\n\\frac{|AB|}{|PF|} = \\sqrt{2}.\n$$",
+     "char3_jaccard": 0.8756,
+     "token_jaccard": 0.8462,
+     "len_ratio": 0.981
+    },
+    {
+     "source_id": "0dqw",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 3,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Trouvez toutes les fonctions MATH1 afin que\nMATH0\npour tous les MATH2 .",
+     "positive_text": "Find all the $f: \\mathbb{R} \\to \\mathbb{R}$ functions so that\n$$\n(x+y) (f(x) -f(y) ) = (x-y) f(x+y)\n$$\nFor all $x, y \\in \\mathbb{R}$ 's.",
+     "char3_jaccard": 0.7018,
+     "token_jaccard": 0.5185,
+     "len_ratio": 1.088
+    },
+    {
+     "source_id": "00z3",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 7,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nLes nombres réels MATH0 , MATH1 et MATH2 satisfont les inégalités MATH3 , MATH4 et MATH5 . Montrez que c' est MATH6 .",
+     "positive_text": "Problem:\n\nThe real numbers $a$, $b$ and $c$ satisfy the inequalities $|a| \\geq |b+c|$, $|b| \\geq |c+a|$ and $|c| \\geq |a+b|$. Show me it 's $a+b+c=0$.",
+     "char3_jaccard": 0.8217,
+     "token_jaccard": 0.76,
+     "len_ratio": 1.02
+    },
+    {
+     "source_id": "031u",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 1
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 6,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nEst-il vrai que pour toute permutation MATH0 de MATH1 il y a des entiers positifs MATH2 et MATH3 de la même parité tels que MATH4 et MATH5 ?",
+     "positive_text": "Problem:\n\nIs it true that for every $a_{1}, a_{2}, \\ldots, a_{2002}$ permutation of $1, 2, \\ldots, 2002$ there are positive integers $m$ and $n$ of the same parity as $1 \\leq m<n \\leq 2002$ and $a_{m}+a_{n}=2 a_{\\frac{m+n}{2}}$?",
+     "char3_jaccard": 0.8534,
+     "token_jaccard": 0.8,
+     "len_ratio": 0.983
+    },
+    {
+     "source_id": "0159",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 5,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\nSupposons que les entiers positifs MATH1 et MATH2 satisfont à l'équation\nMATH0\nProuver que MATH3 et MATH4 sont congruents modulo 1008.",
+     "positive_text": "Problem:\nSuppose the positive integers $a$ and $b$ satisfy the equation\n$$\na^{b}-b^{a}=1008.\n$$\nProve that $a$ and $b$ are congruent modulo 1008.",
+     "char3_jaccard": 0.9583,
+     "token_jaccard": 0.85,
+     "len_ratio": 0.96
+    },
+    {
+     "source_id": "0fim",
+     "src_lang": "spa_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "spa_Latn": 3
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 11,
+     "n_sentences": 3,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\nThe MATH0 and MATH1 rectangles , tangent to the MATH2 equation parabola in MATH3 and MATH4 , are cut in MATH5 .\nThe median of the MATH6 triangle corresponding to the MATH7 vertex has a MATH8 length .\nDetermine the area of the MATH9 triangle based on MATH10 .",
+     "positive_text": "Problem:\nLos rectángulos $t$ y $t'$, tangentes a la parábola de la ecuación $y = x^{2}$ en $A$ y $B$, se cortan en $C$.\nLa mediana del triángulo $\\triangle ABC$ correspondiente al vértice $C$ tiene una longitud $m$.\nDetermine el área del triángulo $\\triangle ABC$ basado en $m$.",
+     "char3_jaccard": 0.8238,
+     "token_jaccard": 0.7391,
+     "len_ratio": 0.955
+    },
+    {
+     "source_id": "060e",
+     "src_lang": "fra_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "fra_Latn": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 2,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nDetermining all integers MATH0 such as MATH1 is a perfect square.",
+     "positive_text": "Problem:\n\nDéterminer tous les entiers $n \\geqslant 0$ comme $2023+n! $ est un carré parfait.",
+     "char3_jaccard": 0.8,
+     "token_jaccard": 0.6667,
+     "len_ratio": 0.979
+    },
+    {
+     "source_id": "08c7",
+     "src_lang": "ita_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "ita_Latn": 6
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 10,
+     "n_sentences": 6,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nLet MATH0 be five prime numbers in arithmetic progression of ratio 6 (i.e. MATH1 , MATH2 , MATH3 and MATH4). Which of the following is false?\n\n(A) MATH5 is multiple of 5.\n(B) MATH6 .\n(C) MATH7 is a multiple of 29.\n(D) MATH8 is multiple of 29.\n(E) The only perfect square dividing MATH9 is 1.",
+     "positive_text": "Problem:\n\nLasciate che $a < b < c < d < e$ sia cinque numeri primi in progressione aritmetica del rapporto 6 (cioè $b = a + 6$, $c = b + 6$, $d = c + 6$ e $e = d + 6$) . Quale delle seguenti dichiarazioni è falsa?\n\n(A) $a + b + c + d + e$ è multiplo di 5.\n(B) $abcde > 10^{4}$.\n(C) $a + b + c + d + e$ è un multiple di 29.\n(D) $abcde$ è multiplo di 29.\n(E) L'unico quadrato perfetto che divide $abcde$ è 1.",
+     "char3_jaccard": 0.7484,
+     "token_jaccard": 0.7344,
+     "len_ratio": 1.041
+    },
+    {
+     "source_id": "0dma",
+     "src_lang": "srp_Cyrl",
+     "lang_from": "script",
+     "line_langs": {
+      "srp_Cyrl": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 2,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nDetermine all pairs of natural numbers MATH1 that are solutions of the equation\n\nMATH0",
+     "positive_text": "Problem:\n\nОпределите све пара природних бројева $(x, n) $ који су решења једначине\n\n$$\nx^{3}+2x+1=2^{n}\n$$",
+     "char3_jaccard": 0.7522,
+     "token_jaccard": 0.6111,
+     "len_ratio": 1.01
+    },
+    {
+     "source_id": "0doa",
+     "src_lang": "srp_Cyrl",
+     "lang_from": "script",
+     "line_langs": {
+      "srp_Cyrl": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 5,
+     "n_sentences": 1,
+     "n_fallback": 1,
+     "pivot_text": "Problem:\n\nSequences MATH3  и  MATH4 are defined by recurrent relationships\nMATH0\nи\nMATH1\nДоказати:\nMATH2",
+     "positive_text": "Problem:\n\nСеквенције $\\left(a_{n}\\right) _{n=0}^{\\infty}$ и $\\left(b_{n}\\right) _{n=0}^{\\infty}$ су дефинисане рецидивирајућим односима\n$$\na_{0}=0, \\quad a_{1}=1, \\quad a_{n+1}=\\frac{2018}{n} a_{n}+a_{n-1} \\quad \\text{ за } n \\geqslant 1\n$$\nи\n$$\nb_{0}=0, \\quad b_{1}=1, \\quad b_{n+1}=\\frac{2020}{n} b_{n}+b_{n-1} \\quad \\text{ за } n \\geqslant 1\n$$\nДоказати:\n$$\n\\frac{a_{1010}}{1010}=\\frac{b_{1009}}{1009}\n$$",
+     "char3_jaccard": 0.7126,
+     "token_jaccard": 0.6176,
+     "len_ratio": 1.02
+    },
+    {
+     "source_id": "0ge4",
+     "src_lang": "zho_Hant",
+     "lang_from": "script",
+     "line_langs": {
+      "zho_Hant": 1,
+      "eng_Latn": 4
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 18,
+     "n_sentences": 5,
+     "n_fallback": 0,
+     "pivot_text": "找出所有符合下列三個條件且定義在正整數上的非負整數值函數 MATH0 :\n(1) 存在至少一個 MATH1 ，有 MATH2 ;\n(2) 對於所有正整數 MATH3 和 MATH4 ，有 MATH5 ;\n(3) There are an infinite number of positive integers MATH6 for all MATH7s that have MATH8.\n\nDéterminez toutes les fonctions MATH9 définies sur l'ensemble de tous les entiers positifs et en prenant des valeurs entières non négatives, répondant aux trois conditions suivantes:\n(1) MATH10 pour au moins un MATH11;\n(2) MATH12 pour chaque entier positif MATH13 et MATH14;\n(3) il y a infiniment de nombres entiers positifs MATH15 tels que MATH16 pour tous MATH17 .",
+     "positive_text": "找出所有符合下列三個條件且定義在正整數上的非負整數值函數 $f$:\n(1) 存在至少一個 $n$ ，有 $f(n) \\neq 0$;\n(2) 對於所有正整數 $x$ 和 $y$ ，有 $f(xy) = f(x) + f(y) $;\n(3) 所有有 $f(k) = f(n-k) $ 的 $k < n$ 都有無限數量的正整數 $n$.\n\nDetermine all $f$ functions defined on the set of all positive integers and take non-negative integer values that satisfy the following three conditions:\n(1) $f(n) \\neq 0$ for at least one $n$;\n(2) $f(xy) = f(x) + f(y) $ for each positive integer $x$ and $y$;\n(3) there are infinitely many positive integers $n$ such as $f(k) = f(n-k) $ for all $k < n$.",
+     "char3_jaccard": 0.7571,
+     "token_jaccard": 0.6375,
+     "len_ratio": 1.024
+    },
+    {
+     "source_id": "0gcx",
+     "src_lang": "zho_Hant",
+     "lang_from": "script",
+     "line_langs": {
+      "zho_Hant": 6
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 17,
+     "n_sentences": 6,
+     "n_fallback": 1,
+     "pivot_text": "A and B play chess on a rectangular coordinate plane. First, A selects the first chess from a position MATH0 below. Then, starting with B, A and B move the chess:\n\ni) If the chess underneath the first round of A is in the MATH1 coordinate, then B can only play one of the MATH2, MATH3, MATH4, MATH5 coordinates.\n\n(ii) If the chess on the bottom of the first round of B is in the MATH6 coordinate, then A can play only one of the MATH7, MATH8, MATH9, MATH10 coordinates.\n\nWhat's more, if MATH11  ,  MATH12 And the coordinates MATH13 It's a game of chess, so both of you can't be in the coordinates. MATH14 The first person who can't play chess anywhere loses.\n\n(1) The question is, who has the necessary strategy when it comes to MATH15?\n(2) The question is, who has the necessary strategy when it comes to MATH16?",
+     "positive_text": "A和B在矩形坐標平面上玩象棋. 首先, A從下面的位置 $(x_0, y_0) $ 選取第一個象棋.\n\n(i) 如果 A 的第一輪下面的象棋在 $(x, y) $ 坐標中, B 只能玩 $(x + 2, y + 1) $, $(x + 2, y - 1) $, $(x - 2, y + 1) $, $(x - 2, y - 1) $ 的坐標之一.\n\n(ii) 如果B的第一輪底部的象棋在 $(x, y) $ 坐標中, 那么A只能玩 $(x + 1, y + 2) $, $(x + 1, y - 2) $, $(x - 1, y + 2) $, $(x - 1, y - 2) $ 的坐標之一.\n\n還有什麼, 如果 $a \\equiv c \\pmod{n}$ , $b \\equiv d \\pmod{n}$ 還有坐標, $(a, b) $ 這是一場象棋遊戲, 所以你們兩個不能在坐標上. $(c, d) $ 在任何地方不能玩象棋的第一個人輸了.\n\n(1) 問題是, 在 $n = 2018$ 方面, 誰有必要的策略?\n(2) 問題是, 在 $n = 2019$ 方面, 誰有必要的策略?",
+     "char3_jaccard": 0.2857,
+     "token_jaccard": 0.2976,
+     "len_ratio": 0.986
+    }
+   ]
+  },
+  "X": {
+   "status": {
+    "ok": 13
+   },
+   "sentences": 37,
+   "sentences_fallback": 1,
+   "char3_jaccard_mean_ok": 0.777,
+   "rows": [
+    {
+     "source_id": "0by1",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 4
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 12,
+     "n_sentences": 4,
+     "n_fallback": 0,
+     "pivot_text": "Le triangle X0X a X1X , X2X , et X3X est le pied de l' altitude de X4X . Que X5X soit tel que X6X et que X7X soit le pied de la perpendiculaire de X8X sur X9X .\n\nA) Prouvez que X10X .\n\nb) Trouvez la mesure de l' angle X11X .",
+     "positive_text": "The $ABC$ triangle has $\\angle A = 90^\\circ$, $\\angle B = 30^\\circ$, and $D$ is the foot of the altitude of $A$. Let $E \\in (AD) $ be as $DE = 3AE$ and $F$ be the foot of the $D$ perpendicular to $BE$.\n\nA) Prove that $AF \\perp FC$.\n\n(b) Find the measurement of the angle $AFB$.",
+     "char3_jaccard": 0.7407,
+     "token_jaccard": 0.6471,
+     "len_ratio": 0.986
+    },
+    {
+     "source_id": "07wi",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 3
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 11,
+     "n_sentences": 3,
+     "n_fallback": 0,
+     "pivot_text": "Un parallélogramme * ABCD * est tel que X1X . Un point X2X sur X3X est tel que X4X où X5X est le point d' intersection de X6X et X7X . Le point X8X est le pied de la perpendiculaire de X9X à X10X . Prove\nX0X",
+     "positive_text": "A parallelogram * ABCD * is like $BD \\perp AB$. An $P$ point on $BC$ is such that $|PD| = |BE|$ where $E$ is the intersection point of $BD$ and $AP$. The point $F$ is the foot of the perpendicular from $P$ to $BD$. Prove\n$$\n\\frac{|AB|}{|PF|} = \\sqrt{2}.\n$$",
+     "char3_jaccard": 0.9122,
+     "token_jaccard": 0.8718,
+     "len_ratio": 0.992
+    },
+    {
+     "source_id": "0dqw",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 3,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Trouvez toutes les fonctions X1X afin que\nX0X\nPour tous les X2X .",
+     "positive_text": "Find all the $f: \\mathbb{R} \\to \\mathbb{R}$ functions so that\n$$\n(x+y) (f(x) -f(y) ) = (x-y) f(x+y)\n$$\nFor all the $x, y \\in \\mathbb{R}$s.",
+     "char3_jaccard": 0.6991,
+     "token_jaccard": 0.5185,
+     "len_ratio": 1.104
+    },
+    {
+     "source_id": "00z3",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 7,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nLes nombres réels X0X , X1X et X2X satisfont les inégalités X3X , X4X et X5X . Prouve cette X6X .",
+     "positive_text": "Problem:\n\nThe real numbers $a$, $b$ and $c$ satisfy the inequalities $|a| \\geq |b+c|$, $|b| \\geq |c+a|$ and $|c| \\geq |a+b|$. Try this $a+b+c=0$.",
+     "char3_jaccard": 0.8618,
+     "token_jaccard": 0.8261,
+     "len_ratio": 0.986
+    },
+    {
+     "source_id": "031u",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 1
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 6,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nEst-il vrai que pour toute permutation X0X de X1X il y a des entiers positifs X2X et X3X de la même parité tels que X4X et X5X ?",
+     "positive_text": "Problem:\n\nIs it true that for every $a_{1}, a_{2}, \\ldots, a_{2002}$ permutation of $1, 2, \\ldots, 2002$ there are positive integers $m$ and $n$ of the same parity such as $1 \\leq m<n \\leq 2002$ and $a_{m}+a_{n}=2 a_{\\frac{m+n}{2}}$?",
+     "char3_jaccard": 0.8796,
+     "token_jaccard": 0.8286,
+     "len_ratio": 1.004
+    },
+    {
+     "source_id": "0159",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 5,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\nSupposons que les nombres entiers positifs X1X et X2X satisfont à l'équation\nX0X\nProuver que X3X et X4X sont congruents modulo 1008.",
+     "positive_text": "Problem:\nSuppose the positive integers $a$ and $b$ satisfy the equation\n$$\na^{b}-b^{a}=1008.\n$$\nProve that $a$ and $b$ are congruent modulo 1008.",
+     "char3_jaccard": 0.9583,
+     "token_jaccard": 0.85,
+     "len_ratio": 0.96
+    },
+    {
+     "source_id": "0fim",
+     "src_lang": "spa_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "spa_Latn": 3
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 11,
+     "n_sentences": 3,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\nThe X0X and X1X rectangles , tangent to the equation parabola X2X at the points X3X and X4X , are cut at the point X5X .\nThe median of the X6X triangle corresponding to the X7X vertex has a length of X8X .\nDetermine the area of the X9X triangle based on X10X .",
+     "positive_text": "Problem:\nLos rectángulos $t$ y $t'$, tangentes a la parábola de la ecuación $y = x^{2}$ en los puntos $A$ y $B$, se cortan en el punto $C$.\nLa mediana del triángulo $\\triangle ABC$ correspondiente al vértice $C$ tiene una longitud de $m$.\nDetermine el área del triángulo $\\triangle ABC$ basado en $m$.",
+     "char3_jaccard": 0.8553,
+     "token_jaccard": 0.8043,
+     "len_ratio": 1.034
+    },
+    {
+     "source_id": "060e",
+     "src_lang": "fra_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "fra_Latn": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 2,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nDetermining all X0X integers such as X1X is a perfect square.",
+     "positive_text": "Problem:\n\nDéterminer tous les entiers $n \\geqslant 0$ tels que $2023+n! $ est un carré parfait.",
+     "char3_jaccard": 0.9468,
+     "token_jaccard": 0.8235,
+     "len_ratio": 1.011
+    },
+    {
+     "source_id": "08c7",
+     "src_lang": "ita_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "ita_Latn": 6
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 10,
+     "n_sentences": 6,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nLet X0X be five prime numbers in arithmetic progression of ratio 6 (i.e. X1X , X2X , X3X and X4X). Which of the following is false?\n\n(A) X5X is a multiple of 5.\n(B) X6X .\n(C) X7X is a multiple of 29.\n(D) X8X is multiple of 29.\n(E) The only perfect square dividing X9X is 1.",
+     "positive_text": "Problem:\n\nChe $a < b < c < d < e$ sia cinque numeri primi nella progressione aritmetica del rapporto 6 (cioè $b = a + 6$, $c = b + 6$, $d = c + 6$ e $e = d + 6$) . Quale delle seguenti dichiarazioni è falsa?\n\n(A) $a + b + c + d + e$ è un multiple di 5.\n(B) $abcde > 10^{4}$.\n(C) $a + b + c + d + e$ è un multiple di 29.\n(D) $abcde$ è moltiplo di 29.\n(E) L'unico quadrato perfetto che divide $abcde$ è 1.",
+     "char3_jaccard": 0.7308,
+     "token_jaccard": 0.6818,
+     "len_ratio": 1.033
+    },
+    {
+     "source_id": "0dma",
+     "src_lang": "srp_Cyrl",
+     "lang_from": "script",
+     "line_langs": {
+      "srp_Cyrl": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 2,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nDetermine all pairs of natural numbers X1X that are solutions of the equation\n\nX0X",
+     "positive_text": "Problem:\n\nОпределите све пара природних бројева $(x, n) $ који су решења једначине\n\n$$\nx^{3}+2x+1=2^{n}\n$$",
+     "char3_jaccard": 0.7522,
+     "token_jaccard": 0.6111,
+     "len_ratio": 1.01
+    },
+    {
+     "source_id": "0doa",
+     "src_lang": "srp_Cyrl",
+     "lang_from": "script",
+     "line_langs": {
+      "srp_Cyrl": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 5,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nThe X3X and X4X series are defined by recurrent relationships\nX0X\nи\nX1X\nДоказати:\nX2X",
+     "positive_text": "Problem:\n\n$\\left(a_{n}\\right) _{n=0}^{\\infty}$ и $\\left(b_{n}\\right) _{n=0}^{\\infty}$ серије су дефинисане повратним односима\n$$\na_{0}=0, \\quad a_{1}=1, \\quad a_{n+1}=\\frac{2018}{n} a_{n}+a_{n-1} \\quad \\text{ за } n \\geqslant 1\n$$\nи\n$$\nb_{0}=0, \\quad b_{1}=1, \\quad b_{n+1}=\\frac{2020}{n} b_{n}+b_{n-1} \\quad \\text{ за } n \\geqslant 1\n$$\nДоказати:\n$$\n\\frac{a_{1010}}{1010}=\\frac{b_{1009}}{1009}\n$$",
+     "char3_jaccard": 0.7458,
+     "token_jaccard": 0.6176,
+     "len_ratio": 0.995
+    },
+    {
+     "source_id": "0ge4",
+     "src_lang": "zho_Hant",
+     "lang_from": "script",
+     "line_langs": {
+      "zho_Hant": 1,
+      "eng_Latn": 4
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 18,
+     "n_sentences": 5,
+     "n_fallback": 0,
+     "pivot_text": "找出所有符合下列三個條件且定義在正整數上的非負整數值函數 X0X :\n(1) 存在至少一個 X1X ，有 X2X ;\n(2) 對於所有正整數 X3X 和 X4X ，有 X5X ;\n(3) There are infinitely many positive integers X6X for all X7X that have X8X.\n\nDéterminez toutes les fonctions X9X définies sur l'ensemble de tous les entiers positifs et en prenant des valeurs entières non négatives, répondant aux trois conditions suivantes:\n(1) X10X pour au moins une X11X;\n(2) X12X pour chaque entier positif X13X et X14X;\n(3) il y a infiniment de nombres entiers positifs X15X tels que X16X pour tous X17X .",
+     "positive_text": "找出所有符合下列三個條件且定義在正整數上的非負整數值函數 $f$:\n(1) 存在至少一個 $n$ ，有 $f(n) \\neq 0$;\n(2) 對於所有正整數 $x$ 和 $y$ ，有 $f(xy) = f(x) + f(y) $;\n(3) 所有有$f(k) = f(n-k) $的$k < n$都有無限的正整數$n$.\n\nDetermine all $f$ functions defined on the set of all positive integers and take non-negative integer values that satisfy the following three conditions:\n(1) $f(n) \\neq 0$ for at least one $n$;\n(2) $f(xy) = f(x) + f(y) $ for each positive integer $x$ and $y$;\n(3) there are infinitely many positive integers $n$ such as $f(k) = f(n-k) $ for all $k < n$.",
+     "char3_jaccard": 0.7549,
+     "token_jaccard": 0.6329,
+     "len_ratio": 1.01
+    },
+    {
+     "source_id": "0gcx",
+     "src_lang": "zho_Hant",
+     "lang_from": "script",
+     "line_langs": {
+      "zho_Hant": 6
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 17,
+     "n_sentences": 6,
+     "n_fallback": 1,
+     "pivot_text": "A and B play chess on a rectangular coordinate plane. First, A selects the first chess from a position X0X. Then, starting with B, A and B move the chess:\n\n(i) If the chess piece below the first round of A is in the X1X coordinate, then B can only play one of the chess pieces in the X2X, X3X, X4X, X5X coordinates.\n\n(ii) If the chess underneath the first round of B is in the X6X coordinate, then A can play only one of the X7X, X8X, X9X, X10X coordinates.\n\nWhat's more, if X11X  ,  X12X And the coordinates X13X It's a game of chess, so both of you can't be in the coordinates. X14X The first person who can't play chess anywhere loses.\n\n(1) The question is, who has the necessary strategy when it comes to X15X?\n(2) The question is, who has the necessary strategy when it comes to X16X?",
+     "positive_text": "A和B在矩形坐標平面上玩象棋. 首先, A從位置$(x_0, y_0) $中選擇第一個象棋.\n\n(i) 如果A第一個輪以下的棋子在$(x, y) $坐標中, 那麼B只能在$(x + 2, y + 1) $, $(x + 2, y - 1) $, $(x - 2, y + 1) $, $(x - 2, y - 1) $坐標中播放其中一個棋子.\n\n(ii) 如果B的第一輪下面的象棋是$(x, y) $坐標, 那么A只能玩$(x + 1, y + 2) $, $(x + 1, y - 2) $, $(x - 1, y + 2) $, $(x - 1, y - 2) $坐標之一.\n\n還有什麼, 如果 $a \\equiv c \\pmod{n}$ , $b \\equiv d \\pmod{n}$ 還有坐標, $(a, b) $ 這是一場象棋遊戲, 所以你們兩個不能在坐標上. $(c, d) $ 在任何地方不能玩象棋的第一個人輸了.\n\n(1) 問題是, 在$n = 2018$方面, 誰有必要的策略?\n(2) 問題是, 在$n = 2019$方面, 誰有必要的策略?",
+     "char3_jaccard": 0.263,
+     "token_jaccard": 0.2069,
+     "len_ratio": 0.96
+    }
+   ]
+  },
+  "BR": {
+   "status": {
+    "ok": 13
+   },
+   "sentences": 37,
+   "sentences_fallback": 2,
+   "char3_jaccard_mean_ok": 0.797,
+   "rows": [
+    {
+     "source_id": "0by1",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 4
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 12,
+     "n_sentences": 4,
+     "n_fallback": 0,
+     "pivot_text": "Le triangle [0] a [1] , [2] , et [3] est le pied de l'altitude de [4] . Que [5] soit tel que [6] et que [7] soit le pied de la perpendiculaire de [8] à [9] .\n\na) Prouver cela [10] .\n\nb) Trouvez la mesure de l' angle [11] .",
+     "positive_text": "The triangle $ABC$ a $\\angle A = 90^\\circ$, $\\angle B = 30^\\circ$, and $D$ is the foot of the altitude of $A$. Whether $E \\in (AD) $ is such that $DE = 3AE$ and $F$ is the foot of the perpendicular from $D$ to $BE$.\n\n(a) Proving this $AF \\perp FC$.\n\n(b) Find the measurement of the angle $AFB$.",
+     "char3_jaccard": 0.6957,
+     "token_jaccard": 0.5741,
+     "len_ratio": 1.046
+    },
+    {
+     "source_id": "07wi",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 3
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 11,
+     "n_sentences": 3,
+     "n_fallback": 0,
+     "pivot_text": "Un parallélogramme *ABCD* est tel que [1] . Un point [2] sur [3] est tel que [4] où [5] est le point d'intersection de [6] et [7]. Le point [8] est le pied de la perpendiculaire de [9] à [10] . Prove\n[0]",
+     "positive_text": "A parallelogram *ABCD* is such that $BD \\perp AB$. A point $P$ out of $BC$ is such that $|PD| = |BE|$ where $E$ is the intersection point of $BD$ and $AP$. The point $F$ is the foot of the perpendicular from $P$ to $BD$. Prove\n$$\n\\frac{|AB|}{|PF|} = \\sqrt{2}.\n$$",
+     "char3_jaccard": 0.9745,
+     "token_jaccard": 0.9444,
+     "len_ratio": 1.016
+    },
+    {
+     "source_id": "0dqw",
+     "src_lang": "eng_Latn",
+     "lang_from": "tag",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 3,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Trouver toutes les fonctions [1] de sorte que\n[0]\npour tous [2] .",
+     "positive_text": "Find all the functions $f: \\mathbb{R} \\to \\mathbb{R}$ so that\n$$\n(x+y) (f(x) -f(y) ) = (x-y) f(x+y)\n$$\nfor all $x, y \\in \\mathbb{R}$.",
+     "char3_jaccard": 0.7944,
+     "token_jaccard": 0.64,
+     "len_ratio": 1.064
+    },
+    {
+     "source_id": "00z3",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 7,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nLes nombres réels [0], [1] et [2] satisfont aux inégalités [3] , [4] et [5]. Prouvez cela [6] .",
+     "positive_text": "Problem:\n\nThe real numbers $a$, $b$ and $c$ satisfy the inequalities $|a| \\geq |b+c|$, $|b| \\geq |c+a|$ and $|c| \\geq |a+b|$. Try this $a+b+c=0$.",
+     "char3_jaccard": 0.8618,
+     "token_jaccard": 0.8261,
+     "len_ratio": 0.986
+    },
+    {
+     "source_id": "031u",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 1
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 6,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nEst-il vrai que pour toute permutation [0] de [1] il y a des nombres entiers positifs [2] et [3] de la même parité tels que [4] et [5] ?",
+     "positive_text": "Problem:\n\nIs it true that for any permutation $a_{1}, a_{2}, \\ldots, a_{2002}$ of $1, 2, \\ldots, 2002$ there are positive integers $m$ and $n$ of the same parity such as $1 \\leq m<n \\leq 2002$ and $a_{m}+a_{n}=2 a_{\\frac{m+n}{2}}$?",
+     "char3_jaccard": 0.9505,
+     "token_jaccard": 0.8824,
+     "len_ratio": 0.996
+    },
+    {
+     "source_id": "0159",
+     "src_lang": "eng_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "eng_Latn": 2
+     },
+     "pivot": "fra_Latn",
+     "status": "ok",
+     "n_spans": 5,
+     "n_sentences": 2,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\nSupposons que les nombres entiers positifs [1] et [2] satisfont à l'équation\n[0]\nProuver que [3] et [4] sont congruents modulo 1008.",
+     "positive_text": "Problem:\nSuppose the positive integers $a$ and $b$ satisfy the equation\n$$\na^{b}-b^{a}=1008.\n$$\nProve that $a$ and $b$ are congruent modulo 1008.",
+     "char3_jaccard": 0.9583,
+     "token_jaccard": 0.85,
+     "len_ratio": 0.96
+    },
+    {
+     "source_id": "0fim",
+     "src_lang": "spa_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "spa_Latn": 3
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 11,
+     "n_sentences": 3,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\nThe rectangles [0] and [1], tangent to the equation parable [2] at points [3] and [4], are cut at point [5].\nThe median of the triangle [6] corresponding to the vertex [7] has length [8] .\nDetermine the area of the triangle [9] based on [10] .",
+     "positive_text": "Problem:\nLos rectángulos $t$ y $t'$, tangentes a la parábola de la ecuación $y = x^{2}$ en los puntos $A$ y $B$, se cortan en el punto $C$.\nLa mediana del triángulo $\\triangle ABC$ correspondiente al vértice $C$ tiene longitud $m$.\nDetermine el área del triángulo $\\triangle ABC$ basándose en $m$.",
+     "char3_jaccard": 0.8711,
+     "token_jaccard": 0.8222,
+     "len_ratio": 1.021
+    },
+    {
+     "source_id": "060e",
+     "src_lang": "fra_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "fra_Latn": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 2,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nDetermining all integers [0] such as [1] is a perfect square.",
+     "positive_text": "Problem:\n\nDéterminer tous les entiers $n \\geqslant 0$ tels que $2023+n! $ est un carré parfait.",
+     "char3_jaccard": 0.9468,
+     "token_jaccard": 0.8235,
+     "len_ratio": 1.011
+    },
+    {
+     "source_id": "08c7",
+     "src_lang": "ita_Latn",
+     "lang_from": "stopwords",
+     "line_langs": {
+      "ita_Latn": 6
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 10,
+     "n_sentences": 6,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nThere are [0] five prime numbers in arithmetic progression of rational 6 (i.e. [1] , [2] , [3] and [4]). Which of the following is false?\n\n(A) [5] is a multiple of 5.\n(B) [6] .\n(C) [7] is a multiple of 29.\n(D) [8] is a multiple of 29.\n(E) The only perfect square that divides [9] is 1.",
+     "positive_text": "Problem:\n\nCi sono $a < b < c < d < e$ cinque numeri primi nella progressione aritmetica del 6 razionale (cioè $b = a + 6$, $c = b + 6$, $d = c + 6$ e $e = d + 6$) . Quale delle seguenti dichiarazioni è falsa?\n\n(A) $a + b + c + d + e$ è un multiple di 5.\n(B) $abcde > 10^{4}$.\n(C) $a + b + c + d + e$ è un multiple di 29.\n(D) $abcde$ è un multiple di 29.\n(E) L'unico quadrato perfetto che divide $abcde$ è 1.",
+     "char3_jaccard": 0.741,
+     "token_jaccard": 0.6923,
+     "len_ratio": 1.044
+    },
+    {
+     "source_id": "0dma",
+     "src_lang": "srp_Cyrl",
+     "lang_from": "script",
+     "line_langs": {
+      "srp_Cyrl": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 2,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nDetermine all pairs of natural numbers [1] that are solutions to the equation\n\n[0]",
+     "positive_text": "Problem:\n\nОпределите све пара природних бројева $(x, n) $ који су решења једначине\n\n$$\nx^{3}+2x+1=2^{n}\n$$",
+     "char3_jaccard": 0.7522,
+     "token_jaccard": 0.6111,
+     "len_ratio": 1.01
+    },
+    {
+     "source_id": "0doa",
+     "src_lang": "srp_Cyrl",
+     "lang_from": "script",
+     "line_langs": {
+      "srp_Cyrl": 1
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 5,
+     "n_sentences": 1,
+     "n_fallback": 0,
+     "pivot_text": "Problem:\n\nChains [3] and [4] are defined by recurrent relationships\n[0]\nи\n[1]\nДоказати:\n[2]",
+     "positive_text": "Problem:\n\nВезнице $\\left(a_{n}\\right) _{n=0}^{\\infty}$ и $\\left(b_{n}\\right) _{n=0}^{\\infty}$ су дефинисане рецидивирајућим односима\n$$\na_{0}=0, \\quad a_{1}=1, \\quad a_{n+1}=\\frac{2018}{n} a_{n}+a_{n-1} \\quad \\text{ за } n \\geqslant 1\n$$\nи\n$$\nb_{0}=0, \\quad b_{1}=1, \\quad b_{n+1}=\\frac{2020}{n} b_{n}+b_{n-1} \\quad \\text{ за } n \\geqslant 1\n$$\nДоказати:\n$$\n\\frac{a_{1010}}{1010}=\\frac{b_{1009}}{1009}\n$$",
+     "char3_jaccard": 0.7143,
+     "token_jaccard": 0.6176,
+     "len_ratio": 1.013
+    },
+    {
+     "source_id": "0ge4",
+     "src_lang": "zho_Hant",
+     "lang_from": "script",
+     "line_langs": {
+      "zho_Hant": 1,
+      "eng_Latn": 4
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 18,
+     "n_sentences": 5,
+     "n_fallback": 0,
+     "pivot_text": "找出所有符合下列三個條件且定義在正整數上的非負整數值函數 [0] :\n(1) 存在至少一個 [1] ，有 [2] ;\n(2) 對於所有正整數 [3] 和 [4] ，有 [5] ;\n(3) There are infinitely many positive integers [6] for all [7] there are [8] .\n\nDéterminer toutes les fonctions [9] définies sur l'ensemble de tous les nombres entiers positifs et en prenant des valeurs entières non négatives, répondant aux trois conditions suivantes:\n(1) [10] pour au moins un [11];\n(2) [12] pour tous les entiers positifs [13] et [14];\n(3) il y a infiniment de nombres entiers positifs [15] tels que [16] pour tous [17] .",
+     "positive_text": "找出所有符合下列三個條件且定義在正整數上的非負整數值函數 $f$:\n(1) 存在至少一個 $n$ ，有 $f(n) \\neq 0$;\n(2) 對於所有正整數 $x$ 和 $y$ ，有 $f(xy) = f(x) + f(y) $;\n(3) 有無限多的正整數 $n$ 在所有 $k < n$ 有 $f(k) = f(n-k) $.\n\nDetermine all functions $f$ defined on the set of all positive integers and taking non-negative integer values, meeting the following three conditions:\n(1) $f(n) \\neq 0$ for at least one $n$;\n(2) $f(xy) = f(x) + f(y) $ for all positive integers $x$ and $y$;\n(3) there are infinitely many positive integers $n$ such as $f(k) = f(n-k) $ for all $k < n$.",
+     "char3_jaccard": 0.8024,
+     "token_jaccard": 0.6974,
+     "len_ratio": 1.016
+    },
+    {
+     "source_id": "0gcx",
+     "src_lang": "zho_Hant",
+     "lang_from": "script",
+     "line_langs": {
+      "zho_Hant": 6
+     },
+     "pivot": "eng_Latn",
+     "status": "ok",
+     "n_spans": 17,
+     "n_sentences": 6,
+     "n_fallback": 2,
+     "pivot_text": "A and B play chess on a rectangular coordinate plane. [0] The first chess is as follows. Then starting with B, A and B roll the chess:\n\n(i) If the chess on the first round of A is in a coordinate [1], then B can only play one of the chess on the coordinates [2], [3], [4], and [5].\n\n(ii) If the chess on the first round of B is in a coordinate [6] , then A can only play one of the coordinates [7] , [8] , [9] , [10] .\n\nAdditionally, if [11], [12] and the coordinates [13] already have a chess piece, then neither of them can fall on the coordinates [14].\n\n(1) Who has a strategy to win when trying out [15]?\n(2) Testing and testing [16] So, who has a strategy to win?",
+     "positive_text": "A和B在矩形坐標平面上玩象棋. $(x_0, y_0) $ 然後從B, A和B開始,\n\n(i) 如果A的第一輪的象棋在坐標 $(x, y) $ 中, B只能在坐標 $(x + 2, y + 1) $, $(x + 2, y - 1) $, $(x - 2, y + 1) $, 和 $(x - 2, y - 1) $ 上玩其中一個象棋.\n\n(ii) 如果B第一輪的象棋在坐標 $(x, y) $ 中, A只能玩其中一個坐標 $(x + 1, y + 2) $, $(x + 1, y - 2) $, $(x - 1, y + 2) $, $(x - 1, y - 2) $.\n\n此外, 如果 $a \\equiv c \\pmod{n}$, $b \\equiv d \\pmod{n}$ 和坐標 $(a, b) $ 已經有棋牌, 那麼他們都不能落在坐標 $(c, d) $.\n\n(1) 當試試時, 誰有戰略贏得$n = 2018$?\n(2) 測試和測試 $n = 2019$ 這樣, 誰有贏的策略?",
+     "char3_jaccard": 0.301,
+     "token_jaccard": 0.2857,
+     "len_ratio": 0.89
+    }
+   ]
+  }
+ }
+}

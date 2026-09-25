@@ -1,0 +1,912 @@
+{
+  "generated": "2026-07-30",
+  "script": "scripts/dose_seed_aggregate.py",
+  "slurm_job": "49627530 (scripts/dose_seeds.slurm)",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "decision_rule": "Fixed before any seed-43/44 dose number was read (see module docstring). REPLICATED = all seeds keep the seed-42 sign AND |mean| > 2*se_prior, se_prior = sd_diff_prior/sqrt(n) with sd_diff_prior = 1.20 easy / 0.86 hard from the 8-seed ctrl-LLM arm.",
+  "what_this_does_not_measure": "No resampling of any kind. Eval-query sampling error is a separate artifact (results/dose_bootstrap.json); these two uncertainties are additive and must not be quoted as if either were the total.",
+  "sd_diff_prior": {
+    "easy": 1.2015,
+    "hard": 0.8596,
+    "realdup": 3.269
+  },
+  "sd_diff_prior_provenance": {
+    "source": "results/ctrl_seed_stats.json, ctrl-LLM arm",
+    "n_seeds": 8,
+    "sd_single_run": {
+      "easy": 0.8496,
+      "hard": 0.6079,
+      "realdup": 2.3115
+    },
+    "formula": "sd_diff = sqrt(2) * sd_single_run",
+    "draft_quoted": {
+      "easy": 1.2,
+      "hard": 0.86
+    },
+    "matches_draft_to_2dp": {
+      "easy": true,
+      "hard": true
+    }
+  },
+  "per_rung": {
+    "D1": {
+      "label": "D1 exact template (= ctrl-LLM)",
+      "per_seed": {
+        "42": {
+          "easy": 61.88,
+          "hard": 9.37,
+          "realdup": 64.38
+        },
+        "43": {
+          "easy": 61.33,
+          "hard": 10.75,
+          "realdup": 67.68
+        },
+        "44": {
+          "easy": 62.37,
+          "hard": 9.58,
+          "realdup": 67.18
+        }
+      },
+      "easy": {
+        "n": 3,
+        "mean": 61.86,
+        "sd": 0.5203,
+        "values": [
+          61.88,
+          61.33,
+          62.37
+        ]
+      },
+      "hard": {
+        "n": 3,
+        "mean": 9.9,
+        "sd": 0.7436,
+        "values": [
+          9.37,
+          10.75,
+          9.58
+        ]
+      },
+      "realdup": {
+        "n": 3,
+        "mean": 66.4133,
+        "sd": 1.7786,
+        "values": [
+          64.38,
+          67.68,
+          67.18
+        ]
+      }
+    },
+    "D2": {
+      "label": "D2 paraphrased template",
+      "per_seed": {
+        "42": {
+          "easy": 65.29,
+          "hard": 7.89,
+          "realdup": 66.67
+        },
+        "43": {
+          "easy": 68.49,
+          "hard": 6.41,
+          "realdup": 65.39
+        },
+        "44": {
+          "easy": 68.83,
+          "hard": 5.97,
+          "realdup": 72.01
+        }
+      },
+      "easy": {
+        "n": 3,
+        "mean": 67.5367,
+        "sd": 1.9531,
+        "values": [
+          65.29,
+          68.49,
+          68.83
+        ]
+      },
+      "hard": {
+        "n": 3,
+        "mean": 6.7567,
+        "sd": 1.0058,
+        "values": [
+          7.89,
+          6.41,
+          5.97
+        ]
+      },
+      "realdup": {
+        "n": 3,
+        "mean": 68.0233,
+        "sd": 3.5114,
+        "values": [
+          66.67,
+          65.39,
+          72.01
+        ]
+      }
+    },
+    "D3": {
+      "label": "D3 different-style prompt",
+      "per_seed": {
+        "42": {
+          "easy": 67.47,
+          "hard": 4.92,
+          "realdup": 65.9
+        },
+        "43": {
+          "easy": 68.75,
+          "hard": 4.21,
+          "realdup": 66.92
+        },
+        "44": {
+          "easy": 67.41,
+          "hard": 4.89,
+          "realdup": 63.36
+        }
+      },
+      "easy": {
+        "n": 3,
+        "mean": 67.8767,
+        "sd": 0.7569,
+        "values": [
+          67.47,
+          68.75,
+          67.41
+        ]
+      },
+      "hard": {
+        "n": 3,
+        "mean": 4.6733,
+        "sd": 0.4015,
+        "values": [
+          4.92,
+          4.21,
+          4.89
+        ]
+      },
+      "realdup": {
+        "n": 3,
+        "mean": 65.3933,
+        "sd": 1.8333,
+        "values": [
+          65.9,
+          66.92,
+          63.36
+        ]
+      }
+    },
+    "D4": {
+      "label": "D4 recipe-unrelated restatement",
+      "per_seed": {
+        "42": {
+          "easy": 30.16,
+          "hard": 0.04,
+          "realdup": 94.15
+        },
+        "43": {
+          "easy": 28.52,
+          "hard": 0.02,
+          "realdup": 93.89
+        },
+        "44": {
+          "easy": 31.41,
+          "hard": 0.05,
+          "realdup": 93.38
+        }
+      },
+      "easy": {
+        "n": 3,
+        "mean": 30.03,
+        "sd": 1.4494,
+        "values": [
+          30.16,
+          28.52,
+          31.41
+        ]
+      },
+      "hard": {
+        "n": 3,
+        "mean": 0.0367,
+        "sd": 0.0153,
+        "values": [
+          0.04,
+          0.02,
+          0.05
+        ]
+      },
+      "realdup": {
+        "n": 3,
+        "mean": 93.8067,
+        "sd": 0.3917,
+        "values": [
+          94.15,
+          93.89,
+          93.38
+        ]
+      }
+    }
+  },
+  "adjacent_rung_differences": [
+    {
+      "pair": "D1-D2",
+      "tier": "easy",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        -3.41,
+        -7.16,
+        -6.46
+      ],
+      "mean_diff": -5.6767,
+      "sd_diff_observed": 1.9939,
+      "sd_diff_prior_1run": 1.2015,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.6937,
+      "n_sigma_prior": 8.183,
+      "n_sigma_prior_single_run": 4.725,
+      "se_observed_mean": 1.1512,
+      "n_sigma_observed": 4.931,
+      "t_paired_df2": -4.931,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": true
+    },
+    {
+      "pair": "D1-D2",
+      "tier": "hard",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        1.48,
+        4.34,
+        3.61
+      ],
+      "mean_diff": 3.1433,
+      "sd_diff_observed": 1.486,
+      "sd_diff_prior_1run": 0.8596,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.4963,
+      "n_sigma_prior": 6.334,
+      "n_sigma_prior_single_run": 3.657,
+      "se_observed_mean": 0.8579,
+      "n_sigma_observed": 3.664,
+      "t_paired_df2": 3.664,
+      "flagged_in_draft": true,
+      "original_seed42_sign": "+",
+      "per_seed_keeps_original_sign": [
+        true,
+        true,
+        true
+      ],
+      "verdict": "REPLICATED",
+      "adjacent": true
+    },
+    {
+      "pair": "D1-D2",
+      "tier": "realdup",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        -2.29,
+        2.29,
+        -4.83
+      ],
+      "mean_diff": -1.61,
+      "sd_diff_observed": 3.6084,
+      "sd_diff_prior_1run": 3.269,
+      "signs_all_agree": false,
+      "se_prior_mean": 1.8874,
+      "n_sigma_prior": 0.853,
+      "n_sigma_prior_single_run": 0.493,
+      "se_observed_mean": 2.0833,
+      "n_sigma_observed": 0.773,
+      "t_paired_df2": -0.773,
+      "flagged_in_draft": false,
+      "verdict": "INCONCLUSIVE",
+      "adjacent": true
+    },
+    {
+      "pair": "D1-D3",
+      "tier": "easy",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        -5.59,
+        -7.42,
+        -5.04
+      ],
+      "mean_diff": -6.0167,
+      "sd_diff_observed": 1.246,
+      "sd_diff_prior_1run": 1.2015,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.6937,
+      "n_sigma_prior": 8.673,
+      "n_sigma_prior_single_run": 5.008,
+      "se_observed_mean": 0.7194,
+      "n_sigma_observed": 8.363,
+      "t_paired_df2": -8.363,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": false
+    },
+    {
+      "pair": "D1-D3",
+      "tier": "hard",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        4.45,
+        6.54,
+        4.69
+      ],
+      "mean_diff": 5.2267,
+      "sd_diff_observed": 1.1437,
+      "sd_diff_prior_1run": 0.8596,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.4963,
+      "n_sigma_prior": 10.531,
+      "n_sigma_prior_single_run": 6.08,
+      "se_observed_mean": 0.6603,
+      "n_sigma_observed": 7.915,
+      "t_paired_df2": 7.915,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": false
+    },
+    {
+      "pair": "D1-D3",
+      "tier": "realdup",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        -1.52,
+        0.76,
+        3.82
+      ],
+      "mean_diff": 1.02,
+      "sd_diff_observed": 2.6795,
+      "sd_diff_prior_1run": 3.269,
+      "signs_all_agree": false,
+      "se_prior_mean": 1.8874,
+      "n_sigma_prior": 0.54,
+      "n_sigma_prior_single_run": 0.312,
+      "se_observed_mean": 1.547,
+      "n_sigma_observed": 0.659,
+      "t_paired_df2": 0.659,
+      "flagged_in_draft": false,
+      "verdict": "INCONCLUSIVE",
+      "adjacent": false
+    },
+    {
+      "pair": "D1-D4",
+      "tier": "easy",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        31.72,
+        32.81,
+        30.96
+      ],
+      "mean_diff": 31.83,
+      "sd_diff_observed": 0.9299,
+      "sd_diff_prior_1run": 1.2015,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.6937,
+      "n_sigma_prior": 45.885,
+      "n_sigma_prior_single_run": 26.492,
+      "se_observed_mean": 0.5369,
+      "n_sigma_observed": 59.288,
+      "t_paired_df2": 59.288,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": false
+    },
+    {
+      "pair": "D1-D4",
+      "tier": "hard",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        9.33,
+        10.73,
+        9.53
+      ],
+      "mean_diff": 9.8633,
+      "sd_diff_observed": 0.7572,
+      "sd_diff_prior_1run": 0.8596,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.4963,
+      "n_sigma_prior": 19.874,
+      "n_sigma_prior_single_run": 11.474,
+      "se_observed_mean": 0.4372,
+      "n_sigma_observed": 22.562,
+      "t_paired_df2": 22.562,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": false
+    },
+    {
+      "pair": "D1-D4",
+      "tier": "realdup",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        -29.77,
+        -26.21,
+        -26.2
+      ],
+      "mean_diff": -27.3933,
+      "sd_diff_observed": 2.0583,
+      "sd_diff_prior_1run": 3.269,
+      "signs_all_agree": true,
+      "se_prior_mean": 1.8874,
+      "n_sigma_prior": 14.514,
+      "n_sigma_prior_single_run": 8.38,
+      "se_observed_mean": 1.1883,
+      "n_sigma_observed": 23.052,
+      "t_paired_df2": -23.052,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": false
+    },
+    {
+      "pair": "D2-D3",
+      "tier": "easy",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        -2.18,
+        -0.26,
+        1.42
+      ],
+      "mean_diff": -0.34,
+      "sd_diff_observed": 1.8013,
+      "sd_diff_prior_1run": 1.2015,
+      "signs_all_agree": false,
+      "se_prior_mean": 0.6937,
+      "n_sigma_prior": 0.49,
+      "n_sigma_prior_single_run": 0.283,
+      "se_observed_mean": 1.04,
+      "n_sigma_observed": 0.327,
+      "t_paired_df2": -0.327,
+      "flagged_in_draft": true,
+      "original_seed42_sign": "-",
+      "per_seed_keeps_original_sign": [
+        true,
+        true,
+        false
+      ],
+      "verdict": "INCONCLUSIVE",
+      "adjacent": true
+    },
+    {
+      "pair": "D2-D3",
+      "tier": "hard",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        2.97,
+        2.2,
+        1.08
+      ],
+      "mean_diff": 2.0833,
+      "sd_diff_observed": 0.9504,
+      "sd_diff_prior_1run": 0.8596,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.4963,
+      "n_sigma_prior": 4.198,
+      "n_sigma_prior_single_run": 2.424,
+      "se_observed_mean": 0.5487,
+      "n_sigma_observed": 3.797,
+      "t_paired_df2": 3.797,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": true
+    },
+    {
+      "pair": "D2-D3",
+      "tier": "realdup",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        0.77,
+        -1.53,
+        8.65
+      ],
+      "mean_diff": 2.63,
+      "sd_diff_observed": 5.3388,
+      "sd_diff_prior_1run": 3.269,
+      "signs_all_agree": false,
+      "se_prior_mean": 1.8874,
+      "n_sigma_prior": 1.393,
+      "n_sigma_prior_single_run": 0.805,
+      "se_observed_mean": 3.0824,
+      "n_sigma_observed": 0.853,
+      "t_paired_df2": 0.853,
+      "flagged_in_draft": false,
+      "verdict": "INCONCLUSIVE",
+      "adjacent": true
+    },
+    {
+      "pair": "D2-D4",
+      "tier": "easy",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        35.13,
+        39.97,
+        37.42
+      ],
+      "mean_diff": 37.5067,
+      "sd_diff_observed": 2.4212,
+      "sd_diff_prior_1run": 1.2015,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.6937,
+      "n_sigma_prior": 54.069,
+      "n_sigma_prior_single_run": 31.217,
+      "se_observed_mean": 1.3979,
+      "n_sigma_observed": 26.832,
+      "t_paired_df2": 26.832,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": false
+    },
+    {
+      "pair": "D2-D4",
+      "tier": "hard",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        7.85,
+        6.39,
+        5.92
+      ],
+      "mean_diff": 6.72,
+      "sd_diff_observed": 1.0064,
+      "sd_diff_prior_1run": 0.8596,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.4963,
+      "n_sigma_prior": 13.54,
+      "n_sigma_prior_single_run": 7.818,
+      "se_observed_mean": 0.5811,
+      "n_sigma_observed": 11.565,
+      "t_paired_df2": 11.565,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": false
+    },
+    {
+      "pair": "D2-D4",
+      "tier": "realdup",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        -27.48,
+        -28.5,
+        -21.37
+      ],
+      "mean_diff": -25.7833,
+      "sd_diff_observed": 3.8559,
+      "sd_diff_prior_1run": 3.269,
+      "signs_all_agree": true,
+      "se_prior_mean": 1.8874,
+      "n_sigma_prior": 13.661,
+      "n_sigma_prior_single_run": 7.887,
+      "se_observed_mean": 2.2262,
+      "n_sigma_observed": 11.582,
+      "t_paired_df2": -11.582,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": false
+    },
+    {
+      "pair": "D3-D4",
+      "tier": "easy",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        37.31,
+        40.23,
+        36.0
+      ],
+      "mean_diff": 37.8467,
+      "sd_diff_observed": 2.1655,
+      "sd_diff_prior_1run": 1.2015,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.6937,
+      "n_sigma_prior": 54.559,
+      "n_sigma_prior_single_run": 31.5,
+      "se_observed_mean": 1.2502,
+      "n_sigma_observed": 30.272,
+      "t_paired_df2": 30.272,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": true
+    },
+    {
+      "pair": "D3-D4",
+      "tier": "hard",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        4.88,
+        4.19,
+        4.84
+      ],
+      "mean_diff": 4.6367,
+      "sd_diff_observed": 0.3873,
+      "sd_diff_prior_1run": 0.8596,
+      "signs_all_agree": true,
+      "se_prior_mean": 0.4963,
+      "n_sigma_prior": 9.343,
+      "n_sigma_prior_single_run": 5.394,
+      "se_observed_mean": 0.2236,
+      "n_sigma_observed": 20.734,
+      "t_paired_df2": 20.734,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": true
+    },
+    {
+      "pair": "D3-D4",
+      "tier": "realdup",
+      "n_seeds": 3,
+      "seeds_used": [
+        42,
+        43,
+        44
+      ],
+      "per_seed_diff": [
+        -28.25,
+        -26.97,
+        -30.02
+      ],
+      "mean_diff": -28.4133,
+      "sd_diff_observed": 1.5315,
+      "sd_diff_prior_1run": 3.269,
+      "signs_all_agree": true,
+      "se_prior_mean": 1.8874,
+      "n_sigma_prior": 15.055,
+      "n_sigma_prior_single_run": 8.692,
+      "se_observed_mean": 0.8842,
+      "n_sigma_observed": 32.133,
+      "t_paired_df2": -32.133,
+      "flagged_in_draft": false,
+      "verdict": "REPLICATED",
+      "adjacent": true
+    }
+  ],
+  "comparability_audit": {
+    "verdict": "COMPARABLE",
+    "inert_differences": [
+      "easy D2/s43: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "easy D2/s44: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "easy D3/s43: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "easy D3/s44: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "easy D4/s43: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "easy D4/s44: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "hard D2/s43: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "hard D2/s44: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "hard D3/s43: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "hard D3/s44: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "hard D4/s43: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number",
+      "hard D4/s44: self_masking=True vs None at D1/s42, but n_queries_with_own_doc_in_corpus=0 and n_queries_self_masked=0 \u2014 the mask set is empty, so the flag cannot move a number"
+    ],
+    "blocking_differences": [],
+    "fields_checked": [
+      "benchmark",
+      "n_corpus",
+      "n_queries_evaluated",
+      "corpus_subsampled",
+      "query_prompt_name",
+      "query_prompt",
+      "doc_prompt_name",
+      "pooling",
+      "append_eos",
+      "model_dtype",
+      "max_seq_length",
+      "trust_remote_code",
+      "comparable_to_paper",
+      "self_masking"
+    ],
+    "notes": [
+      "The seed-42 eval JSONs predate the self_masking field (added by the 2026-07-30 M6 fix); absence of the field is not absence of comparability, which is why the emptiness of the mask set is checked directly."
+    ]
+  },
+  "h2_row_count_control": {
+    "description": "D2 (paraphrase prompt) retrained at seed 42 with --max-rows 5591 = D3's actual row count; a nested PREFIX subsample of D2's own shuffled row order, not a fresh draw.",
+    "threshold_note": "|row-count effect| < sd_diff_prior (0.86 hard / 1.20 easy) => inside run-to-run noise => H2 is a reporting fix.",
+    "hard": {
+      "D2_at_6145": 7.89,
+      "D2_at_5591_control": 8.27,
+      "D3_at_5591": 4.92,
+      "row_count_effect_D2at5591_minus_D2at6145": 0.38,
+      "prompt_effect_D3_minus_D2at5591": -3.35,
+      "total_D2_to_D3": -2.97,
+      "row_count_share_of_total_pct": -12.8,
+      "row_effect_in_sd_units": 0.442,
+      "verdict": "ROW COUNT INSIDE SEED NOISE \u2014 the D2->D3 drop is the PROMPT; H2 is a reporting fix only"
+    },
+    "easy": {
+      "D2_at_6145": 65.29,
+      "D2_at_5591_control": 64.09,
+      "D3_at_5591": 67.47,
+      "row_count_effect_D2at5591_minus_D2at6145": -1.2,
+      "prompt_effect_D3_minus_D2at5591": 3.38,
+      "total_D2_to_D3": 2.18,
+      "row_count_share_of_total_pct": -55.0,
+      "row_effect_in_sd_units": 0.999,
+      "verdict": "ROW COUNT INSIDE SEED NOISE \u2014 the D2->D3 drop is the PROMPT; H2 is a reporting fix only"
+    }
+  },
+  "what_actually_trained": {
+    "ctrl-llm-6145": {
+      "input_rows": 6145,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15353,
+      "n_train_pairs": 78
+    },
+    "ctrl-llm-6145-s43": {
+      "input_rows": 6145,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15368,
+      "n_train_pairs": 75
+    },
+    "ctrl-llm-6145-s44": {
+      "input_rows": 6145,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15373,
+      "n_train_pairs": 79
+    },
+    "dose-paraphrase-6145": {
+      "input_rows": 6553,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15472,
+      "n_train_pairs": 74
+    },
+    "dose-paraphrase-6145-s43": {
+      "input_rows": 6553,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15472,
+      "n_train_pairs": 74
+    },
+    "dose-paraphrase-6145-s44": {
+      "input_rows": 6553,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 15455,
+      "n_train_pairs": 73
+    },
+    "dose-style-6145": {
+      "input_rows": 5591,
+      "rows_used": 5591,
+      "n_source_ids": 5591,
+      "n_train_triplets": 13718,
+      "n_train_pairs": 83
+    },
+    "dose-style-6145-s43": {
+      "input_rows": 5591,
+      "rows_used": 5591,
+      "n_source_ids": 5591,
+      "n_train_triplets": 13740,
+      "n_train_pairs": 82
+    },
+    "dose-style-6145-s44": {
+      "input_rows": 5591,
+      "rows_used": 5591,
+      "n_source_ids": 5591,
+      "n_train_triplets": 13702,
+      "n_train_pairs": 86
+    },
+    "dose-unrelated-6145": {
+      "input_rows": 6768,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 0,
+      "n_train_pairs": 5838
+    },
+    "dose-unrelated-6145-s43": {
+      "input_rows": 6768,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 0,
+      "n_train_pairs": 5838
+    },
+    "dose-unrelated-6145-s44": {
+      "input_rows": 6768,
+      "rows_used": 6145,
+      "n_source_ids": 6145,
+      "n_train_triplets": 0,
+      "n_train_pairs": 5838
+    },
+    "dose-paraphrase-5591": {
+      "input_rows": 6553,
+      "rows_used": 5591,
+      "n_source_ids": 5591,
+      "n_train_triplets": 14067,
+      "n_train_pairs": 71
+    }
+  },
+  "missing_inputs": []
+}

@@ -1,0 +1,88 @@
+{
+  "benchmark": "ShadenA/MathNet-Retrieve",
+  "tier": "hard",
+  "model": "models/ctrl-cas-6145-s46/final",
+  "device": "cuda:0",
+  "n_corpus": 117088,
+  "n_queries_evaluated": 15000,
+  "corpus_subsampled": false,
+  "comparable_to_paper": true,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt_name": null,
+  "doc_prompt": null,
+  "pooling": "repo-default",
+  "append_eos": false,
+  "trust_remote_code": false,
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "seed": 42,
+  "overall": {
+    "recall@1": 0.15,
+    "recall@5": 7.85,
+    "recall@10": 22.07
+  },
+  "per_domain": {
+    "Algebra": {
+      "n_queries": 2959,
+      "recall@1": 0.1,
+      "recall@5": 8.85,
+      "recall@10": 21.63
+    },
+    "Number Theory": {
+      "n_queries": 2221,
+      "recall@1": 0.18,
+      "recall@5": 7.38,
+      "recall@10": 20.22
+    },
+    "Discrete Mathematics": {
+      "n_queries": 1900,
+      "recall@1": 0.11,
+      "recall@5": 8.79,
+      "recall@10": 25.32
+    },
+    "Geometry": {
+      "n_queries": 1565,
+      "recall@1": 0.26,
+      "recall@5": 6.26,
+      "recall@10": 19.17
+    },
+    "Calculus": {
+      "n_queries": 48,
+      "recall@1": 0.0,
+      "recall@5": 6.25,
+      "recall@10": 29.17
+    },
+    "Precalculus": {
+      "n_queries": 35,
+      "recall@1": 0.0,
+      "recall@5": 2.86,
+      "recall@10": 31.43
+    },
+    "Statistics": {
+      "n_queries": 22,
+      "recall@1": 0.0,
+      "recall@5": 9.09,
+      "recall@10": 31.82
+    },
+    "Math Word Problems": {
+      "n_queries": 11,
+      "recall@1": 0.0,
+      "recall@5": 18.18,
+      "recall@10": 63.64
+    }
+  },
+  "per_domain_coverage": "8761/15000 queries have a derivable math domain (exact-match anchors only)",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 14993,
+    "mean_positive_sim": 0.3176,
+    "mean_hard_negative_sim": 0.6324,
+    "mean_gap_pos_minus_meanneg": -0.3149,
+    "mean_gap_pos_minus_maxneg": -0.3931,
+    "pct_pos_above_all_hard_negs": 1.46,
+    "std_positive_sim": 0.1155,
+    "std_hard_negative_sim": 0.1299
+  },
+  "dump_ranks": null,
+  "runtime_seconds": 21.8
+}

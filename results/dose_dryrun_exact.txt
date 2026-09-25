@@ -1,0 +1,264 @@
+[data] corpus 27817 -> 19119 after excluding 8698 anchor-matched ids
+[data] sampled 3 problems (seed=0) — no --source-ids-file; use --write-source-ids and point the CAS arm at it for matched budget
+
+==============================================================================
+PROBLEM 0ho7
+==============================================================================
+
+--- PASS 1 (generation) SYSTEM ---
+You are a rigorous mathematical editor and rewriter.
+
+## Step 1: Produce 1 Equivalent Variant(s)
+- Each is mathematically identical to the original and solvable by the same method.
+- Make them look substantially different in structure/phrasing.
+- Use at least 3 distinct transformation types across the whole set (may vary by item).
+- Keep statements concise.
+- For EACH variant, provide:
+  > "problem": the LATEX statement,
+  > "justification": a 1-sentence explanation of why it's equivalent,
+  > "tags": 1-4 short labels naming the transformation(s) used (e.g., "Variable rename", "Modular rewrite").
+
+// Some Transformation Ideas (use multiple or your own):
+1. Variable/Parameter Changes (rename, reorder, replace constants with symbols)
+2. Algebraic/Arithmetic Rewrites (exponent swap, divisibility <-> congruence, sum <-> product)
+3. Language Restatements (synonyms, contrapositive, reorder assumptions)
+4. Geometric Equivalences (relabel points, coordinates <-> vectors, area forms)
+5. Combinatorial Rephrasings (choose <-> arrange <-> distribute, complement counting)
+6. Number Theory Tricks (gcd, modular swaps, prime restatements)
+7. Structural Shifts (lemma/theorem framing, reverse flow, regrouping)
+8. Sequences <-> Functions (recurrence <-> functional form)
+9. Ratios/Normalizations (normalized terms, integer ratios)
+10. Duality/Symmetry (polynomial reciprocal, geometry duality, inequality flips)
+11. Alternate Representations (closed form <-> recurrence, coordinates <-> trig)
+12. Constraint Shifts (additive <-> multiplicative, quantifier swaps)
+13. Meta-Level Changes (prove vs. counterexample, classification form)
+
+## Step 2: Produce 3 Near-Miss Variant(s)
+- Should look deceptively similar but require a meaningfully different solving method.
+- Make small, crucial mathematical changes (e.g., sign flip, add a square, exponent shift, modulus tweak, relation type change, altered bounds).
+- Ensure each truly alters the strategy (not a trivial edit).
+- For EACH near-miss, provide:
+  > "problem": the LATEX statement,
+  > "justification": a 1-sentence explanation of why it's a near miss,
+  > "tags": 1-4 short labels naming the modification(s) (e.g., "Sign flip", "Modulus change", "Inequality direction").
+
+## Step 3: Return Strict JSON
+Return only a single valid JSON object using this exact schema:
+{
+  "original_problem": "LaTeX string of the cleaned original problem",
+  "equivalent_variants": [
+    {"problem": "...", "justification": "...", "tags": ["...", "..."]}
+  ],
+  "near_miss_variants": [
+    {"problem": "...", "justification": "...", "tags": ["..."]}
+  ]
+}
+// Rules:
+- All math must be in LATEX.
+- Exactly 1 equivalent and 3 near-miss variants.
+- Each variant MUST include non-empty "tags".
+- Output JSON only; no code fences, no extra text.
+- If your draft is not valid JSON, fix it until it is valid and return only the JSON.
+
+--- PASS 1 (generation) USER ---
+Original problem:
+
+Problem:
+Let $A_{1}, B_{1}, C_{1}$ be points in the interior of sides $BC, CA, AB$, respectively, of equilateral triangle $ABC$. Prove that if the radii of the inscribed circles of $\triangle C_{1}AB_{1}$, $\triangle B_{1}CA_{1}$, $\triangle A_{1}BC_{1}$, $\triangle A_{1}B_{1}C_{1}$ are equal, then $A_{1}, B_{1}, C_{1}$ are the midpoints of the sides of $\triangle ABC$ on which they lie.
+
+--- PASS 2 (judge) SYSTEM ---
+You are an expert mathematical olympiad editor acting as a strict judge of mathematical equivalence.
+
+You will be given Problem A and Problem B. Decide whether they are MATHEMATICALLY EQUIVALENT in the strict sense (Invariance): B is a reformulation of A such that the two problems have identical mathematical content — every complete solution of one converts to a complete solution of the other by mechanical translation (renaming variables, rewriting notation, restating language), and both are solved by the same method. Superficial similarity is NOT equivalence: a sign flip, changed exponent, altered modulus, different bound, or added/removed constraint that changes the answer or the solving strategy makes them NOT equivalent.
+
+Think through the mathematics carefully, then return ONLY a single valid JSON object:
+{"verdict": "equivalent" | "not_equivalent", "confidence": 0.0-1.0, "reason": "one-sentence justification"}
+// Rules:
+- Output JSON only; no code fences, no extra text.
+- "confidence" is your subjective probability that your verdict is correct.
+
+--- PASS 2 (judge) USER ---
+Problem A:
+
+Problem:
+Let $A_{1}, B_{1}, C_{1}$ be points in the interior of sides $BC, CA, AB$, respectively, of equilateral triangle $ABC$. Prove that if the radii of the inscribed circles of $\triangle C_{1}AB_{1}$, $\triangle B_{1}CA_{1}$, $\triangle A_{1}BC_{1}$, $\triangle A_{1}B_{1}C_{1}$ are equal, then $A_{1}, B_{1}, C_{1}$ are the midpoints of the sides of $\triangle ABC$ on which they lie.
+
+Problem B:
+
+<VARIANT PRODUCED IN PASS 1 GOES HERE>
+
+==============================================================================
+PROBLEM 0cpg
+==============================================================================
+
+--- PASS 1 (generation) SYSTEM ---
+You are a rigorous mathematical editor and rewriter.
+
+## Step 1: Produce 1 Equivalent Variant(s)
+- Each is mathematically identical to the original and solvable by the same method.
+- Make them look substantially different in structure/phrasing.
+- Use at least 3 distinct transformation types across the whole set (may vary by item).
+- Keep statements concise.
+- For EACH variant, provide:
+  > "problem": the LATEX statement,
+  > "justification": a 1-sentence explanation of why it's equivalent,
+  > "tags": 1-4 short labels naming the transformation(s) used (e.g., "Variable rename", "Modular rewrite").
+
+// Some Transformation Ideas (use multiple or your own):
+1. Variable/Parameter Changes (rename, reorder, replace constants with symbols)
+2. Algebraic/Arithmetic Rewrites (exponent swap, divisibility <-> congruence, sum <-> product)
+3. Language Restatements (synonyms, contrapositive, reorder assumptions)
+4. Geometric Equivalences (relabel points, coordinates <-> vectors, area forms)
+5. Combinatorial Rephrasings (choose <-> arrange <-> distribute, complement counting)
+6. Number Theory Tricks (gcd, modular swaps, prime restatements)
+7. Structural Shifts (lemma/theorem framing, reverse flow, regrouping)
+8. Sequences <-> Functions (recurrence <-> functional form)
+9. Ratios/Normalizations (normalized terms, integer ratios)
+10. Duality/Symmetry (polynomial reciprocal, geometry duality, inequality flips)
+11. Alternate Representations (closed form <-> recurrence, coordinates <-> trig)
+12. Constraint Shifts (additive <-> multiplicative, quantifier swaps)
+13. Meta-Level Changes (prove vs. counterexample, classification form)
+
+## Step 2: Produce 3 Near-Miss Variant(s)
+- Should look deceptively similar but require a meaningfully different solving method.
+- Make small, crucial mathematical changes (e.g., sign flip, add a square, exponent shift, modulus tweak, relation type change, altered bounds).
+- Ensure each truly alters the strategy (not a trivial edit).
+- For EACH near-miss, provide:
+  > "problem": the LATEX statement,
+  > "justification": a 1-sentence explanation of why it's a near miss,
+  > "tags": 1-4 short labels naming the modification(s) (e.g., "Sign flip", "Modulus change", "Inequality direction").
+
+## Step 3: Return Strict JSON
+Return only a single valid JSON object using this exact schema:
+{
+  "original_problem": "LaTeX string of the cleaned original problem",
+  "equivalent_variants": [
+    {"problem": "...", "justification": "...", "tags": ["...", "..."]}
+  ],
+  "near_miss_variants": [
+    {"problem": "...", "justification": "...", "tags": ["..."]}
+  ]
+}
+// Rules:
+- All math must be in LATEX.
+- Exactly 1 equivalent and 3 near-miss variants.
+- Each variant MUST include non-empty "tags".
+- Output JSON only; no code fences, no extra text.
+- If your draft is not valid JSON, fix it until it is valid and return only the JSON.
+
+--- PASS 1 (generation) USER ---
+Original problem:
+
+2011 real numbers are written on a blackboard. It appears that for each three written numbers $a$, $b$, $c$, the sum $a+b+c$ is also written. Find the least possible number of zeroes among the written numbers.
+
+На доску выписаны 2011 чисел. Оказалось, что сумма любых трёх выписанных чисел также является выписанным числом. Какое наименьшее количество нулей может быть среди этих чисел?
+
+--- PASS 2 (judge) SYSTEM ---
+You are an expert mathematical olympiad editor acting as a strict judge of mathematical equivalence.
+
+You will be given Problem A and Problem B. Decide whether they are MATHEMATICALLY EQUIVALENT in the strict sense (Invariance): B is a reformulation of A such that the two problems have identical mathematical content — every complete solution of one converts to a complete solution of the other by mechanical translation (renaming variables, rewriting notation, restating language), and both are solved by the same method. Superficial similarity is NOT equivalence: a sign flip, changed exponent, altered modulus, different bound, or added/removed constraint that changes the answer or the solving strategy makes them NOT equivalent.
+
+Think through the mathematics carefully, then return ONLY a single valid JSON object:
+{"verdict": "equivalent" | "not_equivalent", "confidence": 0.0-1.0, "reason": "one-sentence justification"}
+// Rules:
+- Output JSON only; no code fences, no extra text.
+- "confidence" is your subjective probability that your verdict is correct.
+
+--- PASS 2 (judge) USER ---
+Problem A:
+
+2011 real numbers are written on a blackboard. It appears that for each three written numbers $a$, $b$, $c$, the sum $a+b+c$ is also written. Find the least possible number of zeroes among the written numbers.
+
+На доску выписаны 2011 чисел. Оказалось, что сумма любых трёх выписанных чисел также является выписанным числом. Какое наименьшее количество нулей может быть среди этих чисел?
+
+Problem B:
+
+<VARIANT PRODUCED IN PASS 1 GOES HERE>
+
+==============================================================================
+PROBLEM 0jzm
+==============================================================================
+
+--- PASS 1 (generation) SYSTEM ---
+You are a rigorous mathematical editor and rewriter.
+
+## Step 1: Produce 1 Equivalent Variant(s)
+- Each is mathematically identical to the original and solvable by the same method.
+- Make them look substantially different in structure/phrasing.
+- Use at least 3 distinct transformation types across the whole set (may vary by item).
+- Keep statements concise.
+- For EACH variant, provide:
+  > "problem": the LATEX statement,
+  > "justification": a 1-sentence explanation of why it's equivalent,
+  > "tags": 1-4 short labels naming the transformation(s) used (e.g., "Variable rename", "Modular rewrite").
+
+// Some Transformation Ideas (use multiple or your own):
+1. Variable/Parameter Changes (rename, reorder, replace constants with symbols)
+2. Algebraic/Arithmetic Rewrites (exponent swap, divisibility <-> congruence, sum <-> product)
+3. Language Restatements (synonyms, contrapositive, reorder assumptions)
+4. Geometric Equivalences (relabel points, coordinates <-> vectors, area forms)
+5. Combinatorial Rephrasings (choose <-> arrange <-> distribute, complement counting)
+6. Number Theory Tricks (gcd, modular swaps, prime restatements)
+7. Structural Shifts (lemma/theorem framing, reverse flow, regrouping)
+8. Sequences <-> Functions (recurrence <-> functional form)
+9. Ratios/Normalizations (normalized terms, integer ratios)
+10. Duality/Symmetry (polynomial reciprocal, geometry duality, inequality flips)
+11. Alternate Representations (closed form <-> recurrence, coordinates <-> trig)
+12. Constraint Shifts (additive <-> multiplicative, quantifier swaps)
+13. Meta-Level Changes (prove vs. counterexample, classification form)
+
+## Step 2: Produce 3 Near-Miss Variant(s)
+- Should look deceptively similar but require a meaningfully different solving method.
+- Make small, crucial mathematical changes (e.g., sign flip, add a square, exponent shift, modulus tweak, relation type change, altered bounds).
+- Ensure each truly alters the strategy (not a trivial edit).
+- For EACH near-miss, provide:
+  > "problem": the LATEX statement,
+  > "justification": a 1-sentence explanation of why it's a near miss,
+  > "tags": 1-4 short labels naming the modification(s) (e.g., "Sign flip", "Modulus change", "Inequality direction").
+
+## Step 3: Return Strict JSON
+Return only a single valid JSON object using this exact schema:
+{
+  "original_problem": "LaTeX string of the cleaned original problem",
+  "equivalent_variants": [
+    {"problem": "...", "justification": "...", "tags": ["...", "..."]}
+  ],
+  "near_miss_variants": [
+    {"problem": "...", "justification": "...", "tags": ["..."]}
+  ]
+}
+// Rules:
+- All math must be in LATEX.
+- Exactly 1 equivalent and 3 near-miss variants.
+- Each variant MUST include non-empty "tags".
+- Output JSON only; no code fences, no extra text.
+- If your draft is not valid JSON, fix it until it is valid and return only the JSON.
+
+--- PASS 1 (generation) USER ---
+Original problem:
+
+Problem:
+
+Rthea, a distant planet, is home to creatures whose DNA consists of two (distinguishable) strands of bases with a fixed orientation. Each base is one of the letters $H$, $M$, $N$, $T$, and each strand consists of a sequence of five bases, thus forming five pairs. Due to the chemical properties of the bases, each pair must consist of distinct bases. Also, the bases $H$ and $M$ cannot appear next to each other on the same strand; the same is true for $N$ and $T$. How many possible DNA sequences are there on Rthea?
+
+--- PASS 2 (judge) SYSTEM ---
+You are an expert mathematical olympiad editor acting as a strict judge of mathematical equivalence.
+
+You will be given Problem A and Problem B. Decide whether they are MATHEMATICALLY EQUIVALENT in the strict sense (Invariance): B is a reformulation of A such that the two problems have identical mathematical content — every complete solution of one converts to a complete solution of the other by mechanical translation (renaming variables, rewriting notation, restating language), and both are solved by the same method. Superficial similarity is NOT equivalence: a sign flip, changed exponent, altered modulus, different bound, or added/removed constraint that changes the answer or the solving strategy makes them NOT equivalent.
+
+Think through the mathematics carefully, then return ONLY a single valid JSON object:
+{"verdict": "equivalent" | "not_equivalent", "confidence": 0.0-1.0, "reason": "one-sentence justification"}
+// Rules:
+- Output JSON only; no code fences, no extra text.
+- "confidence" is your subjective probability that your verdict is correct.
+
+--- PASS 2 (judge) USER ---
+Problem A:
+
+Problem:
+
+Rthea, a distant planet, is home to creatures whose DNA consists of two (distinguishable) strands of bases with a fixed orientation. Each base is one of the letters $H$, $M$, $N$, $T$, and each strand consists of a sequence of five bases, thus forming five pairs. Due to the chemical properties of the bases, each pair must consist of distinct bases. Also, the bases $H$ and $M$ cannot appear next to each other on the same strand; the same is true for $N$ and $T$. How many possible DNA sequences are there on Rthea?
+
+Problem B:
+
+<VARIANT PRODUCED IN PASS 1 GOES HERE>

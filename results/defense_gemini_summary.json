@@ -1,0 +1,438 @@
+{
+  "qwen": {
+    "eval_dir": "results/defense_eval",
+    "sets": {
+      "orig": {
+        "base": {
+          "recall@1": 7.34,
+          "recall@5": 78.89,
+          "recall@10": 88.13
+        },
+        "ctrl-cas": {
+          "recall@1": 15.54,
+          "recall@5": 83.67,
+          "recall@10": 92.33
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 61.18,
+          "recall@5": 90.36,
+          "recall@10": 93.84
+        },
+        "d2-paraphrase": {
+          "recall@1": 64.92,
+          "recall@5": 91.08,
+          "recall@10": 94.49
+        },
+        "d3-style": {
+          "recall@1": 67.41,
+          "recall@5": 94.69,
+          "recall@10": 96.85
+        },
+        "d4-unrelated": {
+          "recall@1": 30.43,
+          "recall@5": 96.52,
+          "recall@10": 99.28
+        },
+        "gap_d1_minus_verified": 45.64
+      },
+      "exact": {
+        "base": {
+          "recall@1": 10.69,
+          "recall@5": 87.02,
+          "recall@10": 93.7
+        },
+        "ctrl-cas": {
+          "recall@1": 15.02,
+          "recall@5": 82.03,
+          "recall@10": 90.36
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 50.75,
+          "recall@5": 87.21,
+          "recall@10": 92.2
+        },
+        "d2-paraphrase": {
+          "recall@1": 55.67,
+          "recall@5": 88.46,
+          "recall@10": 92.85
+        },
+        "d3-style": {
+          "recall@1": 50.56,
+          "recall@5": 87.34,
+          "recall@10": 92.92
+        },
+        "d4-unrelated": {
+          "recall@1": 28.59,
+          "recall@5": 95.21,
+          "recall@10": 98.62
+        },
+        "gap_d1_minus_verified": 35.73
+      },
+      "paraphrase": {
+        "base": {
+          "recall@1": 8.39,
+          "recall@5": 81.18,
+          "recall@10": 89.77
+        },
+        "ctrl-cas": {
+          "recall@1": 16.72,
+          "recall@5": 83.34,
+          "recall@10": 91.15
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 54.36,
+          "recall@5": 87.48,
+          "recall@10": 92.2
+        },
+        "d2-paraphrase": {
+          "recall@1": 60.07,
+          "recall@5": 89.38,
+          "recall@10": 93.31
+        },
+        "d3-style": {
+          "recall@1": 56.92,
+          "recall@5": 90.03,
+          "recall@10": 93.64
+        },
+        "d4-unrelated": {
+          "recall@1": 28.79,
+          "recall@5": 96.0,
+          "recall@10": 99.41
+        },
+        "gap_d1_minus_verified": 37.64
+      },
+      "style": {
+        "base": {
+          "recall@1": 3.28,
+          "recall@5": 69.18,
+          "recall@10": 82.69
+        },
+        "ctrl-cas": {
+          "recall@1": 15.8,
+          "recall@5": 80.46,
+          "recall@10": 89.18
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 44.13,
+          "recall@5": 81.77,
+          "recall@10": 88.0
+        },
+        "d2-paraphrase": {
+          "recall@1": 52.92,
+          "recall@5": 87.34,
+          "recall@10": 91.8
+        },
+        "d3-style": {
+          "recall@1": 55.41,
+          "recall@5": 91.02,
+          "recall@10": 94.75
+        },
+        "d4-unrelated": {
+          "recall@1": 21.7,
+          "recall@5": 90.56,
+          "recall@10": 97.11
+        },
+        "gap_d1_minus_verified": 28.33
+      },
+      "mixed": {
+        "base": {
+          "recall@1": 7.02,
+          "recall@5": 78.75,
+          "recall@10": 87.74
+        },
+        "ctrl-cas": {
+          "recall@1": 16.26,
+          "recall@5": 81.25,
+          "recall@10": 89.57
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 47.74,
+          "recall@5": 84.2,
+          "recall@10": 90.23
+        },
+        "d2-paraphrase": {
+          "recall@1": 54.95,
+          "recall@5": 88.39,
+          "recall@10": 92.52
+        },
+        "d3-style": {
+          "recall@1": 54.23,
+          "recall@5": 89.9,
+          "recall@10": 93.7
+        },
+        "d4-unrelated": {
+          "recall@1": 25.84,
+          "recall@5": 93.97,
+          "recall@10": 98.3
+        },
+        "gap_d1_minus_verified": 31.48
+      }
+    },
+    "shared_slice": 1525,
+    "generator": {
+      "model": "Qwen/Qwen3-32B-AWQ",
+      "backend": "vllm",
+      "judge_backend": null,
+      "judge_model": null,
+      "n_queries": 1700,
+      "seed": 42
+    },
+    "judge": {
+      "exact": {
+        "candidates": 1686,
+        "verified": 1614
+      },
+      "paraphrase": {
+        "candidates": 1693,
+        "verified": 1652
+      },
+      "style": {
+        "candidates": 1693,
+        "verified": 1627
+      }
+    }
+  },
+  "gemini": {
+    "eval_dir": "results/defense_eval_gemini",
+    "sets": {
+      "orig": {
+        "base": {
+          "recall@1": 7.1,
+          "recall@5": 80.57,
+          "recall@10": 90.15
+        },
+        "ctrl-cas": {
+          "recall@1": 16.33,
+          "recall@5": 83.14,
+          "recall@10": 92.81
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 60.43,
+          "recall@5": 89.97,
+          "recall@10": 93.7
+        },
+        "d2-paraphrase": {
+          "recall@1": 63.27,
+          "recall@5": 91.13,
+          "recall@10": 94.85
+        },
+        "d3-style": {
+          "recall@1": 65.04,
+          "recall@5": 94.68,
+          "recall@10": 97.16
+        },
+        "d4-unrelated": {
+          "recall@1": 28.48,
+          "recall@5": 96.81,
+          "recall@10": 99.2
+        },
+        "gap_d1_minus_verified": 44.1
+      },
+      "exact": {
+        "base": {
+          "recall@1": 0.0,
+          "recall@5": 22.8,
+          "recall@10": 38.95
+        },
+        "ctrl-cas": {
+          "recall@1": 0.53,
+          "recall@5": 19.7,
+          "recall@10": 32.48
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 20.14,
+          "recall@5": 60.43,
+          "recall@10": 72.58
+        },
+        "d2-paraphrase": {
+          "recall@1": 17.48,
+          "recall@5": 54.92,
+          "recall@10": 63.8
+        },
+        "d3-style": {
+          "recall@1": 10.56,
+          "recall@5": 44.1,
+          "recall@10": 56.97
+        },
+        "d4-unrelated": {
+          "recall@1": 0.53,
+          "recall@5": 41.17,
+          "recall@10": 67.08
+        },
+        "gap_d1_minus_verified": 19.61
+      },
+      "paraphrase": {
+        "base": {
+          "recall@1": 0.0,
+          "recall@5": 20.5,
+          "recall@10": 35.85
+        },
+        "ctrl-cas": {
+          "recall@1": 0.71,
+          "recall@5": 20.32,
+          "recall@10": 33.63
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 22.54,
+          "recall@5": 60.07,
+          "recall@10": 68.86
+        },
+        "d2-paraphrase": {
+          "recall@1": 19.61,
+          "recall@5": 55.1,
+          "recall@10": 65.39
+        },
+        "d3-style": {
+          "recall@1": 11.8,
+          "recall@5": 46.23,
+          "recall@10": 58.21
+        },
+        "d4-unrelated": {
+          "recall@1": 0.44,
+          "recall@5": 42.5,
+          "recall@10": 67.08
+        },
+        "gap_d1_minus_verified": 21.83
+      },
+      "style": {
+        "base": {
+          "recall@1": 0.0,
+          "recall@5": 15.26,
+          "recall@10": 27.24
+        },
+        "ctrl-cas": {
+          "recall@1": 0.62,
+          "recall@5": 20.23,
+          "recall@10": 33.9
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 17.21,
+          "recall@5": 53.33,
+          "recall@10": 64.15
+        },
+        "d2-paraphrase": {
+          "recall@1": 18.1,
+          "recall@5": 53.24,
+          "recall@10": 63.98
+        },
+        "d3-style": {
+          "recall@1": 14.02,
+          "recall@5": 51.82,
+          "recall@10": 62.91
+        },
+        "d4-unrelated": {
+          "recall@1": 0.53,
+          "recall@5": 41.17,
+          "recall@10": 64.6
+        },
+        "gap_d1_minus_verified": 16.59
+      },
+      "mixed": {
+        "base": {
+          "recall@1": 0.0,
+          "recall@5": 19.79,
+          "recall@10": 32.83
+        },
+        "ctrl-cas": {
+          "recall@1": 0.8,
+          "recall@5": 19.96,
+          "recall@10": 33.81
+        },
+        "d1-ctrl-llm": {
+          "recall@1": 18.54,
+          "recall@5": 59.45,
+          "recall@10": 68.94
+        },
+        "d2-paraphrase": {
+          "recall@1": 18.19,
+          "recall@5": 54.66,
+          "recall@10": 64.95
+        },
+        "d3-style": {
+          "recall@1": 11.71,
+          "recall@5": 46.76,
+          "recall@10": 60.78
+        },
+        "d4-unrelated": {
+          "recall@1": 0.53,
+          "recall@5": 41.44,
+          "recall@10": 67.08
+        },
+        "gap_d1_minus_verified": 17.74
+      }
+    },
+    "shared_slice": 1127,
+    "generator": {
+      "model": "gemini-3-flash-preview",
+      "backend": "gemini",
+      "judge_backend": "vllm",
+      "judge_model": "Qwen/Qwen3-32B-AWQ",
+      "n_queries": 1700,
+      "seed": 42
+    },
+    "judge": {
+      "exact": {
+        "candidates": 1698,
+        "verified": 1406
+      },
+      "paraphrase": {
+        "candidates": 1698,
+        "verified": 1451
+      },
+      "style": {
+        "candidates": 1699,
+        "verified": 1422
+      }
+    }
+  },
+  "overlap": {
+    "definition": "Jaccard of lowercased letter/digit token sets, query vs its gold; mean over the queries in both accepted slices",
+    "n_queries": 1032,
+    "by_run": {
+      "qwen": {
+        "orig": {
+          "jaccard_mean": 0.444,
+          "jaccard_median": 0.436,
+          "gold_chars_mean": 281.2
+        },
+        "exact": {
+          "jaccard_mean": 0.49,
+          "jaccard_median": 0.481,
+          "gold_chars_mean": 254.2
+        },
+        "paraphrase": {
+          "jaccard_mean": 0.475,
+          "jaccard_median": 0.458,
+          "gold_chars_mean": 261.6
+        },
+        "style": {
+          "jaccard_mean": 0.427,
+          "jaccard_median": 0.407,
+          "gold_chars_mean": 255.9
+        }
+      },
+      "gemini": {
+        "orig": {
+          "jaccard_mean": 0.444,
+          "jaccard_median": 0.436,
+          "gold_chars_mean": 281.2
+        },
+        "exact": {
+          "jaccard_mean": 0.214,
+          "jaccard_median": 0.206,
+          "gold_chars_mean": 273.5
+        },
+        "paraphrase": {
+          "jaccard_mean": 0.208,
+          "jaccard_median": 0.205,
+          "gold_chars_mean": 274.7
+        },
+        "style": {
+          "jaccard_mean": 0.202,
+          "jaccard_median": 0.2,
+          "gold_chars_mean": 267.6
+        }
+      }
+    }
+  }
+}

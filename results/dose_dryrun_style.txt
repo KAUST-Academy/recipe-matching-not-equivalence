@@ -1,0 +1,178 @@
+[data] corpus 27817 -> 19119 after excluding 8698 anchor-matched ids
+[data] sampled 3 problems (seed=0) — no --source-ids-file; use --write-source-ids and point the CAS arm at it for matched budget
+[dry-run] prompt variant: style (dose point D3)
+
+==============================================================================
+PROBLEM 0ho7
+==============================================================================
+
+--- PASS 1 (generation) SYSTEM ---
+Hi! I coach a competition-math training group, and I'm assembling this week's worksheet. I need your help with one exercise at a time.
+
+Here's the game. My students have already seen the problem I'm about to show you. To test whether they recognize a problem by its mathematics rather than by its looks, the worksheet mixes disguises of it in among traps:
+
+1. 1 disguise(s): the same problem dressed up to look new. A disguise must be the original in every mathematical respect -- same content, same answer, same solution path -- but a returning student shouldn't recognize it at first sight. Dress it up however you like: new letters, a different setting or story, reshuffled givens, reworded conditions. Keep it lean; competition problems don't ramble.
+
+2. 3 trap(s): problems that LOOK like today's problem but are NOT it. A good trap differs by one quiet mathematical detail -- perhaps a sign, a power, a modulus, a bound, or the type of relation -- chosen so that the trap sends a solver down a genuinely different path. A trap that ends up solved the same way as the original is a failed trap; don't hand me those.
+
+For every disguise and every trap, jot down:
+  > "problem": the full statement (all mathematics in LATEX),
+  > "justification": one line -- for a disguise, why it's still the same problem; for a trap, why it only looks like it,
+  > "tags": 1-4 short notes on what you changed.
+
+So my worksheet tool can ingest your work, reply with strict JSON only:
+{
+  "original_problem": "LaTeX string of the cleaned original problem",
+  "equivalent_variants": [
+    {"problem": "...", "justification": "...", "tags": ["...", "..."]}
+  ],
+  "near_miss_variants": [
+    {"problem": "...", "justification": "...", "tags": ["..."]}
+  ]
+}
+House rules: disguises go under "equivalent_variants" and traps under "near_miss_variants", exactly 1 and 3 of them; every "tags" list non-empty; all math in LATEX; nothing outside the JSON object -- no code fences, no chat; and if what you wrote isn't valid JSON, fix it before you answer. Thanks!
+
+--- PASS 1 (generation) USER ---
+Today's problem for the worksheet:
+
+Problem:
+Let $A_{1}, B_{1}, C_{1}$ be points in the interior of sides $BC, CA, AB$, respectively, of equilateral triangle $ABC$. Prove that if the radii of the inscribed circles of $\triangle C_{1}AB_{1}$, $\triangle B_{1}CA_{1}$, $\triangle A_{1}BC_{1}$, $\triangle A_{1}B_{1}C_{1}$ are equal, then $A_{1}, B_{1}, C_{1}$ are the midpoints of the sides of $\triangle ABC$ on which they lie.
+
+--- PASS 2 (judge) SYSTEM ---
+You are an expert mathematical olympiad editor acting as a strict judge of mathematical equivalence.
+
+You will be given Problem A and Problem B. Decide whether they are MATHEMATICALLY EQUIVALENT in the strict sense (Invariance): B is a reformulation of A such that the two problems have identical mathematical content — every complete solution of one converts to a complete solution of the other by mechanical translation (renaming variables, rewriting notation, restating language), and both are solved by the same method. Superficial similarity is NOT equivalence: a sign flip, changed exponent, altered modulus, different bound, or added/removed constraint that changes the answer or the solving strategy makes them NOT equivalent.
+
+Think through the mathematics carefully, then return ONLY a single valid JSON object:
+{"verdict": "equivalent" | "not_equivalent", "confidence": 0.0-1.0, "reason": "one-sentence justification"}
+// Rules:
+- Output JSON only; no code fences, no extra text.
+- "confidence" is your subjective probability that your verdict is correct.
+
+--- PASS 2 (judge) USER ---
+Problem A:
+
+Problem:
+Let $A_{1}, B_{1}, C_{1}$ be points in the interior of sides $BC, CA, AB$, respectively, of equilateral triangle $ABC$. Prove that if the radii of the inscribed circles of $\triangle C_{1}AB_{1}$, $\triangle B_{1}CA_{1}$, $\triangle A_{1}BC_{1}$, $\triangle A_{1}B_{1}C_{1}$ are equal, then $A_{1}, B_{1}, C_{1}$ are the midpoints of the sides of $\triangle ABC$ on which they lie.
+
+Problem B:
+
+<VARIANT PRODUCED IN PASS 1 GOES HERE>
+
+==============================================================================
+PROBLEM 0cpg
+==============================================================================
+
+--- PASS 1 (generation) SYSTEM ---
+Hi! I coach a competition-math training group, and I'm assembling this week's worksheet. I need your help with one exercise at a time.
+
+Here's the game. My students have already seen the problem I'm about to show you. To test whether they recognize a problem by its mathematics rather than by its looks, the worksheet mixes disguises of it in among traps:
+
+1. 1 disguise(s): the same problem dressed up to look new. A disguise must be the original in every mathematical respect -- same content, same answer, same solution path -- but a returning student shouldn't recognize it at first sight. Dress it up however you like: new letters, a different setting or story, reshuffled givens, reworded conditions. Keep it lean; competition problems don't ramble.
+
+2. 3 trap(s): problems that LOOK like today's problem but are NOT it. A good trap differs by one quiet mathematical detail -- perhaps a sign, a power, a modulus, a bound, or the type of relation -- chosen so that the trap sends a solver down a genuinely different path. A trap that ends up solved the same way as the original is a failed trap; don't hand me those.
+
+For every disguise and every trap, jot down:
+  > "problem": the full statement (all mathematics in LATEX),
+  > "justification": one line -- for a disguise, why it's still the same problem; for a trap, why it only looks like it,
+  > "tags": 1-4 short notes on what you changed.
+
+So my worksheet tool can ingest your work, reply with strict JSON only:
+{
+  "original_problem": "LaTeX string of the cleaned original problem",
+  "equivalent_variants": [
+    {"problem": "...", "justification": "...", "tags": ["...", "..."]}
+  ],
+  "near_miss_variants": [
+    {"problem": "...", "justification": "...", "tags": ["..."]}
+  ]
+}
+House rules: disguises go under "equivalent_variants" and traps under "near_miss_variants", exactly 1 and 3 of them; every "tags" list non-empty; all math in LATEX; nothing outside the JSON object -- no code fences, no chat; and if what you wrote isn't valid JSON, fix it before you answer. Thanks!
+
+--- PASS 1 (generation) USER ---
+Today's problem for the worksheet:
+
+2011 real numbers are written on a blackboard. It appears that for each three written numbers $a$, $b$, $c$, the sum $a+b+c$ is also written. Find the least possible number of zeroes among the written numbers.
+
+На доску выписаны 2011 чисел. Оказалось, что сумма любых трёх выписанных чисел также является выписанным числом. Какое наименьшее количество нулей может быть среди этих чисел?
+
+--- PASS 2 (judge) SYSTEM ---
+You are an expert mathematical olympiad editor acting as a strict judge of mathematical equivalence.
+
+You will be given Problem A and Problem B. Decide whether they are MATHEMATICALLY EQUIVALENT in the strict sense (Invariance): B is a reformulation of A such that the two problems have identical mathematical content — every complete solution of one converts to a complete solution of the other by mechanical translation (renaming variables, rewriting notation, restating language), and both are solved by the same method. Superficial similarity is NOT equivalence: a sign flip, changed exponent, altered modulus, different bound, or added/removed constraint that changes the answer or the solving strategy makes them NOT equivalent.
+
+Think through the mathematics carefully, then return ONLY a single valid JSON object:
+{"verdict": "equivalent" | "not_equivalent", "confidence": 0.0-1.0, "reason": "one-sentence justification"}
+// Rules:
+- Output JSON only; no code fences, no extra text.
+- "confidence" is your subjective probability that your verdict is correct.
+
+--- PASS 2 (judge) USER ---
+Problem A:
+
+2011 real numbers are written on a blackboard. It appears that for each three written numbers $a$, $b$, $c$, the sum $a+b+c$ is also written. Find the least possible number of zeroes among the written numbers.
+
+На доску выписаны 2011 чисел. Оказалось, что сумма любых трёх выписанных чисел также является выписанным числом. Какое наименьшее количество нулей может быть среди этих чисел?
+
+Problem B:
+
+<VARIANT PRODUCED IN PASS 1 GOES HERE>
+
+==============================================================================
+PROBLEM 0jzm
+==============================================================================
+
+--- PASS 1 (generation) SYSTEM ---
+Hi! I coach a competition-math training group, and I'm assembling this week's worksheet. I need your help with one exercise at a time.
+
+Here's the game. My students have already seen the problem I'm about to show you. To test whether they recognize a problem by its mathematics rather than by its looks, the worksheet mixes disguises of it in among traps:
+
+1. 1 disguise(s): the same problem dressed up to look new. A disguise must be the original in every mathematical respect -- same content, same answer, same solution path -- but a returning student shouldn't recognize it at first sight. Dress it up however you like: new letters, a different setting or story, reshuffled givens, reworded conditions. Keep it lean; competition problems don't ramble.
+
+2. 3 trap(s): problems that LOOK like today's problem but are NOT it. A good trap differs by one quiet mathematical detail -- perhaps a sign, a power, a modulus, a bound, or the type of relation -- chosen so that the trap sends a solver down a genuinely different path. A trap that ends up solved the same way as the original is a failed trap; don't hand me those.
+
+For every disguise and every trap, jot down:
+  > "problem": the full statement (all mathematics in LATEX),
+  > "justification": one line -- for a disguise, why it's still the same problem; for a trap, why it only looks like it,
+  > "tags": 1-4 short notes on what you changed.
+
+So my worksheet tool can ingest your work, reply with strict JSON only:
+{
+  "original_problem": "LaTeX string of the cleaned original problem",
+  "equivalent_variants": [
+    {"problem": "...", "justification": "...", "tags": ["...", "..."]}
+  ],
+  "near_miss_variants": [
+    {"problem": "...", "justification": "...", "tags": ["..."]}
+  ]
+}
+House rules: disguises go under "equivalent_variants" and traps under "near_miss_variants", exactly 1 and 3 of them; every "tags" list non-empty; all math in LATEX; nothing outside the JSON object -- no code fences, no chat; and if what you wrote isn't valid JSON, fix it before you answer. Thanks!
+
+--- PASS 1 (generation) USER ---
+Today's problem for the worksheet:
+
+Problem:
+
+Rthea, a distant planet, is home to creatures whose DNA consists of two (distinguishable) strands of bases with a fixed orientation. Each base is one of the letters $H$, $M$, $N$, $T$, and each strand consists of a sequence of five bases, thus forming five pairs. Due to the chemical properties of the bases, each pair must consist of distinct bases. Also, the bases $H$ and $M$ cannot appear next to each other on the same strand; the same is true for $N$ and $T$. How many possible DNA sequences are there on Rthea?
+
+--- PASS 2 (judge) SYSTEM ---
+You are an expert mathematical olympiad editor acting as a strict judge of mathematical equivalence.
+
+You will be given Problem A and Problem B. Decide whether they are MATHEMATICALLY EQUIVALENT in the strict sense (Invariance): B is a reformulation of A such that the two problems have identical mathematical content — every complete solution of one converts to a complete solution of the other by mechanical translation (renaming variables, rewriting notation, restating language), and both are solved by the same method. Superficial similarity is NOT equivalence: a sign flip, changed exponent, altered modulus, different bound, or added/removed constraint that changes the answer or the solving strategy makes them NOT equivalent.
+
+Think through the mathematics carefully, then return ONLY a single valid JSON object:
+{"verdict": "equivalent" | "not_equivalent", "confidence": 0.0-1.0, "reason": "one-sentence justification"}
+// Rules:
+- Output JSON only; no code fences, no extra text.
+- "confidence" is your subjective probability that your verdict is correct.
+
+--- PASS 2 (judge) USER ---
+Problem A:
+
+Problem:
+
+Rthea, a distant planet, is home to creatures whose DNA consists of two (distinguishable) strands of bases with a fixed orientation. Each base is one of the letters $H$, $M$, $N$, $T$, and each strand consists of a sequence of five bases, thus forming five pairs. Due to the chemical properties of the bases, each pair must consist of distinct bases. Also, the bases $H$ and $M$ cannot appear next to each other on the same strand; the same is true for $N$ and $T$. How many possible DNA sequences are there on Rthea?
+
+Problem B:
+
+<VARIANT PRODUCED IN PASS 1 GOES HERE>

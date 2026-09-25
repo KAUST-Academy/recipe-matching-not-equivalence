@@ -1,0 +1,178 @@
+{
+  "generated_by": "scripts/paraphrase_depth.py",
+  "metrics": [
+    "char3_jaccard",
+    "token_jaccard",
+    "len_ratio"
+  ],
+  "files": {
+    "ctrl-cas": {
+      "n_rows": 14361,
+      "char3_jaccard": {
+        "mean": 0.865,
+        "median": 0.899,
+        "q25": 0.82,
+        "q75": 0.938
+      },
+      "token_jaccard": {
+        "mean": 0.778,
+        "median": 0.821,
+        "q25": 0.697,
+        "q75": 0.886
+      },
+      "len_ratio": {
+        "mean": 1.021,
+        "median": 1.0,
+        "q25": 1.0,
+        "q75": 1.019
+      }
+    },
+    "ctrl-llm(D1)": {
+      "n_rows": 6145,
+      "char3_jaccard": {
+        "mean": 0.463,
+        "median": 0.457,
+        "q25": 0.365,
+        "q75": 0.555
+      },
+      "token_jaccard": {
+        "mean": 0.384,
+        "median": 0.373,
+        "q25": 0.276,
+        "q75": 0.481
+      },
+      "len_ratio": {
+        "mean": 0.927,
+        "median": 0.935,
+        "q25": 0.834,
+        "q75": 1.026
+      }
+    },
+    "dose-paraphrase(D2)": {
+      "n_rows": 6553,
+      "char3_jaccard": {
+        "mean": 0.448,
+        "median": 0.44,
+        "q25": 0.347,
+        "q75": 0.541
+      },
+      "token_jaccard": {
+        "mean": 0.364,
+        "median": 0.351,
+        "q25": 0.257,
+        "q75": 0.46
+      },
+      "len_ratio": {
+        "mean": 0.939,
+        "median": 0.95,
+        "q25": 0.856,
+        "q75": 1.025
+      }
+    },
+    "dose-style(D3)": {
+      "n_rows": 5591,
+      "char3_jaccard": {
+        "mean": 0.397,
+        "median": 0.388,
+        "q25": 0.309,
+        "q75": 0.474
+      },
+      "token_jaccard": {
+        "mean": 0.304,
+        "median": 0.293,
+        "q25": 0.222,
+        "q75": 0.372
+      },
+      "len_ratio": {
+        "mean": 0.935,
+        "median": 0.947,
+        "q25": 0.846,
+        "q75": 1.025
+      }
+    },
+    "dose-unrelated(D4)": {
+      "n_rows": 6768,
+      "char3_jaccard": {
+        "mean": 0.421,
+        "median": 0.423,
+        "q25": 0.332,
+        "q75": 0.511
+      },
+      "token_jaccard": {
+        "mean": 0.349,
+        "median": 0.346,
+        "q25": 0.244,
+        "q75": 0.448
+      },
+      "len_ratio": {
+        "mean": 1.116,
+        "median": 1.075,
+        "q25": 0.957,
+        "q75": 1.237
+      }
+    },
+    "survey(D5)": {
+      "n_rows": 6293,
+      "char3_jaccard": {
+        "mean": 0.472,
+        "median": 0.471,
+        "q25": 0.38,
+        "q75": 0.565
+      },
+      "token_jaccard": {
+        "mean": 0.398,
+        "median": 0.393,
+        "q25": 0.286,
+        "q75": 0.5
+      },
+      "len_ratio": {
+        "mean": 1.004,
+        "median": 0.998,
+        "q25": 0.895,
+        "q75": 1.11
+      }
+    },
+    "exact-split(D1)": {
+      "n_rows": 6516,
+      "char3_jaccard": {
+        "mean": 0.43,
+        "median": 0.426,
+        "q25": 0.339,
+        "q75": 0.519
+      },
+      "token_jaccard": {
+        "mean": 0.353,
+        "median": 0.342,
+        "q25": 0.254,
+        "q75": 0.446
+      },
+      "len_ratio": {
+        "mean": 0.951,
+        "median": 0.955,
+        "q25": 0.855,
+        "q75": 1.051
+      }
+    },
+    "twojudge(D1)": {
+      "n_rows": 5398,
+      "char3_jaccard": {
+        "mean": 0.46,
+        "median": 0.455,
+        "q25": 0.366,
+        "q75": 0.551
+      },
+      "token_jaccard": {
+        "mean": 0.382,
+        "median": 0.37,
+        "q25": 0.277,
+        "q75": 0.475
+      },
+      "len_ratio": {
+        "mean": 0.925,
+        "median": 0.933,
+        "q25": 0.829,
+        "q75": 1.023
+      }
+    }
+  }
+}

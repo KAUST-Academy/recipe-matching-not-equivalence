@@ -1,0 +1,116 @@
+{
+  "benchmark": "uw-math-ai/MELD-dataset (external, arXiv:2606.23959)",
+  "model": "models/meld-attack-meld9-s43/final",
+  "device": "cuda:0",
+  "n_pairs": 270,
+  "n_distractors": 541,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "separation_auc": {
+    "n_positive_scores": 540,
+    "auc_all_distractors": 0.9827,
+    "auc_same_framing_distractors": 0.9519,
+    "pct_pos_above_all_same_framing_distractors": 66.85,
+    "mean_positive_sim": 0.4377,
+    "mean_all_distractor_sim": 0.0353,
+    "mean_same_framing_distractor_sim": 0.1125
+  },
+  "retrieval_pairs_only": {
+    "recall@1": 36.3,
+    "recall@3": 57.78,
+    "recall@5": 68.52,
+    "recall@10": 81.67,
+    "recall@20": 90.56,
+    "mrr": 0.5077,
+    "mean_gold_rank": 10.58,
+    "n_queries": 540
+  },
+  "retrieval_pairs_only_per_domain": {
+    "algebra": {
+      "n_queries": 60,
+      "recall@1": 31.67,
+      "recall@5": 61.67
+    },
+    "algebraic_combinatorics": {
+      "n_queries": 60,
+      "recall@1": 30.0,
+      "recall@5": 55.0
+    },
+    "algebraic_geometry": {
+      "n_queries": 60,
+      "recall@1": 43.33,
+      "recall@5": 80.0
+    },
+    "algebraic_topology": {
+      "n_queries": 60,
+      "recall@1": 23.33,
+      "recall@5": 66.67
+    },
+    "discrete_math": {
+      "n_queries": 60,
+      "recall@1": 26.67,
+      "recall@5": 55.0
+    },
+    "foundations": {
+      "n_queries": 60,
+      "recall@1": 36.67,
+      "recall@5": 83.33
+    },
+    "probability": {
+      "n_queries": 60,
+      "recall@1": 68.33,
+      "recall@5": 88.33
+    },
+    "representation_theory": {
+      "n_queries": 60,
+      "recall@1": 38.33,
+      "recall@5": 66.67
+    },
+    "spectral_graph_theory": {
+      "n_queries": 60,
+      "recall@1": 28.33,
+      "recall@5": 60.0
+    }
+  },
+  "retrieval_with_distractors": {
+    "pool": "270 partner statements + 541 distractors (811 candidates)",
+    "entry1_to_entry2": {
+      "recall@1": 34.81,
+      "recall@3": 57.04,
+      "recall@5": 65.19,
+      "recall@10": 77.04,
+      "recall@20": 86.3,
+      "mrr": 0.4895,
+      "mean_gold_rank": 13.09,
+      "n_queries": 270
+    },
+    "entry2_to_entry1": {
+      "recall@1": 42.59,
+      "recall@3": 62.96,
+      "recall@5": 71.48,
+      "recall@10": 82.22,
+      "recall@20": 90.37,
+      "mrr": 0.5611,
+      "mean_gold_rank": 12.2,
+      "n_queries": 270
+    },
+    "both_directions": {
+      "recall@1": 38.7,
+      "recall@3": 60.0,
+      "recall@5": 68.33,
+      "recall@10": 79.63,
+      "recall@20": 88.33,
+      "mrr": 0.5253,
+      "mean_gold_rank": 12.64,
+      "n_queries": 540
+    }
+  },
+  "protocol_notes": [
+    "pairs_only = MathLeap paper Table 2/5 protocol (540 statements, query the other 539, gold = partner); their Qwen3-Embedding-4B reference row: R@1 13.7 / R@5 45.0 / R@20 70.2, MRR 0.28, mean rank 21.4 (prompt they used is unstated -- exact match not guaranteed).",
+    "with_distractors = dataset-card suggested protocol.",
+    "prompt applied to query role only; doc role always unprompted."
+  ],
+  "runtime_seconds": 10.1
+}

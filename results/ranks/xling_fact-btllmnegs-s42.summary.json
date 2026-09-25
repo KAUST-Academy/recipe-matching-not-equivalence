@@ -1,0 +1,146 @@
+{
+  "benchmark": "InvarEmbed cross-lingual duplicate retrieval (data/crosslingual_eval, mined real duplicates)",
+  "eval_dir": "/ibex/user/habiam0b/MathNet_Follow_Up/data/crosslingual_eval",
+  "model": "models/fact-btllmnegs-6145-s42/final",
+  "device": "cuda:0",
+  "n_corpus": 27817,
+  "n_queries": 393,
+  "corpus_subsampled": false,
+  "comparable_full_corpus": true,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt": null,
+  "self_masking": true,
+  "overall_any_gold": {
+    "recall@1": 38.93,
+    "recall@5": 50.13,
+    "recall@10": 52.67
+  },
+  "strict_crosslingual_gold": {
+    "recall@1": 37.4,
+    "recall@5": 49.36,
+    "recall@10": 51.91
+  },
+  "same_language_gold": {
+    "recall@1": 1.53,
+    "recall@5": 1.53,
+    "recall@10": 1.53
+  },
+  "median_gold_rank": 5,
+  "per_language": {
+    "nl": {
+      "n_queries": 71,
+      "recall@1": 18.31,
+      "recall@5": 26.76,
+      "recall@10": 28.17
+    },
+    "zh": {
+      "n_queries": 63,
+      "recall@1": 68.25,
+      "recall@5": 85.71,
+      "recall@10": 87.3
+    },
+    "sl": {
+      "n_queries": 54,
+      "recall@1": 16.67,
+      "recall@5": 29.63,
+      "recall@10": 35.19
+    },
+    "ro": {
+      "n_queries": 52,
+      "recall@1": 40.38,
+      "recall@5": 46.15,
+      "recall@10": 50.0
+    },
+    "de": {
+      "n_queries": 51,
+      "recall@1": 43.14,
+      "recall@5": 54.9,
+      "recall@10": 54.9
+    },
+    "fr": {
+      "n_queries": 49,
+      "recall@1": 40.82,
+      "recall@5": 46.94,
+      "recall@10": 48.98
+    },
+    "es": {
+      "n_queries": 21,
+      "recall@1": 28.57,
+      "recall@5": 38.1,
+      "recall@10": 42.86
+    },
+    "hu": {
+      "n_queries": 16,
+      "recall@1": 68.75,
+      "recall@5": 81.25,
+      "recall@10": 81.25
+    },
+    "mn": {
+      "n_queries": 6,
+      "recall@1": 50.0,
+      "recall@5": 66.67,
+      "recall@10": 66.67
+    },
+    "pt": {
+      "n_queries": 3,
+      "recall@1": 66.67,
+      "recall@5": 66.67,
+      "recall@10": 66.67
+    },
+    "mk": {
+      "n_queries": 3,
+      "recall@1": 33.33,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "it": {
+      "n_queries": 2,
+      "recall@1": 50.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "af": {
+      "n_queries": 1,
+      "recall@1": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 100.0
+    },
+    "ru": {
+      "n_queries": 1,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    }
+  },
+  "per_confidence": {
+    "high": {
+      "n_queries": 368,
+      "recall@1": 40.76,
+      "recall@5": 51.09,
+      "recall@10": 53.53
+    },
+    "medium": {
+      "n_queries": 25,
+      "recall@1": 12.0,
+      "recall@5": 36.0,
+      "recall@10": 40.0
+    }
+  },
+  "per_anchor_overlap": {
+    "overlaps_retrieve_anchor": {
+      "n_queries": 220,
+      "recall@1": 32.73,
+      "recall@5": 45.0,
+      "recall@10": 47.73
+    },
+    "no_overlap": {
+      "n_queries": 173,
+      "recall@1": 46.82,
+      "recall@5": 56.65,
+      "recall@10": 58.96
+    }
+  },
+  "dump_ranks": "results/ranks/xling_fact-btllmnegs-s42.ranks.jsonl",
+  "runtime_seconds": 80.2
+}

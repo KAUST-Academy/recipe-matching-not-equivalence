@@ -1,0 +1,58 @@
+{
+  "date": "2026-07-30",
+  "treatment": {
+    "model": "models/meld-attack-meld9/final",
+    "prompt": "query",
+    "dump": "results/meld_pq_attack_meld9.json"
+  },
+  "reference": {
+    "model": "models/ctrl-llm-6145/final",
+    "prompt": "query",
+    "dump": "results/meld_pq_ctrl_llm.json"
+  },
+  "prompt_conditions_match": true,
+  "bootstrap": {
+    "n_resamples": 10000,
+    "seed": 0,
+    "resampling_unit": "MELD pair (270 clusters, 2 queries each)"
+  },
+  "metrics": {
+    "recall@1_pairs_only": {
+      "treatment": 36.67,
+      "reference": 18.89,
+      "diff": 17.78,
+      "ci95": [
+        12.96,
+        22.41
+      ],
+      "se_paired": 2.406,
+      "n_sig": 7.39,
+      "n_discordant_queries": 152
+    },
+    "recall@5_pairs_only": {
+      "treatment": 70.0,
+      "reference": 45.37,
+      "diff": 24.63,
+      "ci95": [
+        19.44,
+        29.81
+      ],
+      "se_paired": 2.714,
+      "n_sig": 9.07,
+      "n_discordant_queries": 203
+    },
+    "pct_above_same_framing_distractors": {
+      "treatment": 68.7,
+      "reference": 44.81,
+      "diff": 23.89,
+      "ci95": [
+        19.44,
+        28.33
+      ],
+      "se_paired": 2.285,
+      "n_sig": 10.45,
+      "n_discordant_queries": 185
+    }
+  },
+  "runtime_s": 0.7
+}

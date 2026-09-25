@@ -1,0 +1,61 @@
+{
+  "generated": "2026-07-31",
+  "script": "scripts/round2_closeout_summary.py",
+  "preregistered_in": "scripts/round2_closeout.slurm header",
+  "A_meld_inharness": {
+    "MathLeap-octen-8B_our_harness": 34.44,
+    "MathLeap-qwen-8B_our_harness": 32.22,
+    "best_mathleap_in_our_harness": 34.44,
+    "their_published_best_their_harness": 28.9,
+    "meld9_ours_3seed": 37.16,
+    "our_harness_reads_them_high_by": 5.54,
+    "paired_meld9_minus_octen": {
+      "treatment": 36.67,
+      "reference": 34.44,
+      "diff": 2.22,
+      "ci95": [
+        -2.96,
+        7.22
+      ],
+      "se_paired": 2.622,
+      "n_sig": 0.85,
+      "n_discordant_queries": 154
+    },
+    "verdict": "INDISTINGUISHABLE, AND THAT IS THE CLAIM \u2014 meld9 and MELD's best published model are statistically tied in our harness (+2.22 [-2.96, 7.22], CI contains zero). We may NOT say we beat it. What is supported, and is the stronger statement anyway: a 0.6B model trained on a reconstruction of MELD's procedure MATCHES an 8B model purpose-built for the benchmark. Note also that our harness reads their model +5.54 above their published figure, which is why the cross-table comparison was deleted in the first place."
+  },
+  "B_source_matched_control": {
+    "d2_hard_3seed": 6.76,
+    "d3_hard_3seed": 4.67,
+    "d2_on_d3_sources_hard": 7.81,
+    "easy": 65.79,
+    "realdup": 67.43,
+    "decision_midpoint": 5.715,
+    "distance_from_D2_in_sd": 1.04,
+    "verdict": "SELECTION IS NOT DRIVING IT \u2014 7.81 sits on D2's side of the midpoint (5.71), so restricting D2 to D3's own sources does not move it toward D3. The D2->D3 step is the prompt."
+  },
+  "C_h2_control_seeds": {
+    "per_seed": {
+      "42": 8.27,
+      "43": 7.86,
+      "44": 7.04
+    },
+    "mean": 7.723,
+    "sd": 0.626,
+    "row_effect_vs_D2_6145_3seed": 0.963,
+    "row_effect_seed42_pair": 0.38,
+    "row_effect_95ci_approx": [
+      0.24,
+      1.687
+    ],
+    "verdict": "WRONG SIGN TO EXPLAIN THE STEP \u2014 cutting to D3's row count RAISES hard R@1 by +0.96 [+0.24, +1.69], reliably positive across all three seeds. The D2->D3 drop of -2.09 is therefore entirely the prompt, and at matched rows the prompt effect is -3.05, LARGER than the uncontrolled figure.",
+    "prompt_effect_at_matched_rows": -3.053
+  },
+  "D_saber_matched_context": {
+    "ctrl_llm_cap1024": 0.5069,
+    "ctrl_llm_uncapped_released": 0.507,
+    "ctrl_cas_cap1024": 0.4498,
+    "ctrl_cas_uncapped_released": 0.451,
+    "base_reference": 0.5747,
+    "verdict": "P3's 'both below the base' survives at a matched context length."
+  }
+}

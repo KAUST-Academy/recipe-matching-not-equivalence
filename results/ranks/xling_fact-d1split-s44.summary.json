@@ -1,0 +1,146 @@
+{
+  "benchmark": "InvarEmbed cross-lingual duplicate retrieval (data/crosslingual_eval, mined real duplicates)",
+  "eval_dir": "/ibex/user/habiam0b/MathNet_Follow_Up/data/crosslingual_eval",
+  "model": "models/fact-d1split-6145-s44/final",
+  "device": "cuda:0",
+  "n_corpus": 27817,
+  "n_queries": 393,
+  "corpus_subsampled": false,
+  "comparable_full_corpus": true,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt": null,
+  "self_masking": true,
+  "overall_any_gold": {
+    "recall@1": 51.4,
+    "recall@5": 66.92,
+    "recall@10": 72.26
+  },
+  "strict_crosslingual_gold": {
+    "recall@1": 50.38,
+    "recall@5": 66.41,
+    "recall@10": 72.01
+  },
+  "same_language_gold": {
+    "recall@1": 1.02,
+    "recall@5": 1.53,
+    "recall@10": 1.53
+  },
+  "median_gold_rank": 1,
+  "per_language": {
+    "nl": {
+      "n_queries": 71,
+      "recall@1": 47.89,
+      "recall@5": 63.38,
+      "recall@10": 70.42
+    },
+    "zh": {
+      "n_queries": 63,
+      "recall@1": 36.51,
+      "recall@5": 52.38,
+      "recall@10": 55.56
+    },
+    "sl": {
+      "n_queries": 54,
+      "recall@1": 46.3,
+      "recall@5": 57.41,
+      "recall@10": 66.67
+    },
+    "ro": {
+      "n_queries": 52,
+      "recall@1": 59.62,
+      "recall@5": 75.0,
+      "recall@10": 84.62
+    },
+    "de": {
+      "n_queries": 51,
+      "recall@1": 60.78,
+      "recall@5": 74.51,
+      "recall@10": 78.43
+    },
+    "fr": {
+      "n_queries": 49,
+      "recall@1": 44.9,
+      "recall@5": 69.39,
+      "recall@10": 71.43
+    },
+    "es": {
+      "n_queries": 21,
+      "recall@1": 47.62,
+      "recall@5": 71.43,
+      "recall@10": 76.19
+    },
+    "hu": {
+      "n_queries": 16,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "mn": {
+      "n_queries": 6,
+      "recall@1": 83.33,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "pt": {
+      "n_queries": 3,
+      "recall@1": 33.33,
+      "recall@5": 33.33,
+      "recall@10": 33.33
+    },
+    "mk": {
+      "n_queries": 3,
+      "recall@1": 66.67,
+      "recall@5": 66.67,
+      "recall@10": 66.67
+    },
+    "it": {
+      "n_queries": 2,
+      "recall@1": 50.0,
+      "recall@5": 50.0,
+      "recall@10": 50.0
+    },
+    "af": {
+      "n_queries": 1,
+      "recall@1": 100.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "ru": {
+      "n_queries": 1,
+      "recall@1": 0.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    }
+  },
+  "per_confidence": {
+    "high": {
+      "n_queries": 368,
+      "recall@1": 52.17,
+      "recall@5": 68.48,
+      "recall@10": 73.64
+    },
+    "medium": {
+      "n_queries": 25,
+      "recall@1": 40.0,
+      "recall@5": 44.0,
+      "recall@10": 52.0
+    }
+  },
+  "per_anchor_overlap": {
+    "overlaps_retrieve_anchor": {
+      "n_queries": 220,
+      "recall@1": 51.82,
+      "recall@5": 67.73,
+      "recall@10": 73.64
+    },
+    "no_overlap": {
+      "n_queries": 173,
+      "recall@1": 50.87,
+      "recall@5": 65.9,
+      "recall@10": 70.52
+    }
+  },
+  "dump_ranks": "results/ranks/xling_fact-d1split-s44.ranks.jsonl",
+  "runtime_seconds": 80.7
+}

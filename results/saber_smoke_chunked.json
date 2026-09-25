@@ -1,0 +1,51 @@
+{
+  "benchmark": "SABER-Math (INSAIT-Institute/SaberMath-{queries,documents})",
+  "protocol": "official reranking protocol, positional candidates, np.argsort(-cos); anchors: Qwen3-0.6B 0.575, e5-large 0.488, bge-m3 0.511 (Table 1, statement-full)",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "device": "cpu",
+  "n_queries_evaluated": 5,
+  "n_docs_encoded": 750,
+  "comparable_to_paper": false,
+  "ndcg_k": 10,
+  "dcg_variant": "exponent",
+  "query_prompt_name": null,
+  "query_prompt": null,
+  "doc_prompt_name": null,
+  "doc_prompt": null,
+  "pooling": "repo-default",
+  "append_eos": false,
+  "trust_remote_code": false,
+  "model_dtype": null,
+  "max_seq_length": 256,
+  "chunk_long_docs": true,
+  "seed": 42,
+  "settings": {
+    "statement-full": {
+      "ndcg@10": 0.4596,
+      "per_domain": {
+        "Algebra": {
+          "n_queries": 2,
+          "ndcg@10": 0.3711
+        },
+        "Geometry": {
+          "n_queries": 1,
+          "ndcg@10": 0.5763
+        },
+        "Combinatorics": {
+          "n_queries": 1,
+          "ndcg@10": 0.6231
+        },
+        "Calculus and Analysis": {
+          "n_queries": 1,
+          "ndcg@10": 0.3565
+        }
+      },
+      "score_correlations_spearman_mean": {
+        "with_final_relevance": 0.4877,
+        "with_summary_jaccard_signal": 0.1886,
+        "with_topic_bma_signal": 0.2891
+      }
+    }
+  },
+  "runtime_seconds": 38.2
+}

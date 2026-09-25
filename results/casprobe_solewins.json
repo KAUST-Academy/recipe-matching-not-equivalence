@@ -1,0 +1,288 @@
+{
+  "generated_by": "scripts/casprobe_solewins.py",
+  "sole_wins_definition": "results/analyze_hits_perquery_hard.jsonl group == 'hit' (recipe arm gold_rank 0, verified arm gold_rank != 0; seed 42)",
+  "n_sole_wins_hard": 1401,
+  "n_probe_queries": 1107,
+  "n_probe_queries_in_sole_wins": 89,
+  "n_probe_queries_other": 1018,
+  "metric": "R@1 (percent), gold_rank == 0 in the rank dump",
+  "models": {
+    "recipe_arm": {
+      "tag": "ctrl-llm",
+      "casprobe": {
+        "n_seeds": 8,
+        "sole_wins_mean": 56.18,
+        "other_mean": 60.87,
+        "difference": -4.69,
+        "per_seed": {
+          "42": {
+            "sole_wins": 50.56,
+            "other": 57.96
+          },
+          "43": {
+            "sole_wins": 61.8,
+            "other": 65.62
+          },
+          "44": {
+            "sole_wins": 57.3,
+            "other": 58.84
+          },
+          "45": {
+            "sole_wins": 55.06,
+            "other": 60.12
+          },
+          "46": {
+            "sole_wins": 53.93,
+            "other": 60.02
+          },
+          "47": {
+            "sole_wins": 55.06,
+            "other": 61.89
+          },
+          "48": {
+            "sole_wins": 58.43,
+            "other": 62.87
+          },
+          "49": {
+            "sole_wins": 57.3,
+            "other": 59.63
+          }
+        }
+      },
+      "casprobepairs": {
+        "n_seeds": 8,
+        "sole_wins_mean": 66.01,
+        "other_mean": 68.59,
+        "difference": -2.58,
+        "per_seed": {
+          "42": {
+            "sole_wins": 59.55,
+            "other": 65.72
+          },
+          "43": {
+            "sole_wins": 74.16,
+            "other": 72.99
+          },
+          "44": {
+            "sole_wins": 64.04,
+            "other": 66.7
+          },
+          "45": {
+            "sole_wins": 65.17,
+            "other": 67.98
+          },
+          "46": {
+            "sole_wins": 65.17,
+            "other": 67.19
+          },
+          "47": {
+            "sole_wins": 65.17,
+            "other": 70.14
+          },
+          "48": {
+            "sole_wins": 67.42,
+            "other": 69.25
+          },
+          "49": {
+            "sole_wins": 67.42,
+            "other": 68.76
+          }
+        }
+      }
+    },
+    "verified_arm": {
+      "tag": "ctrl-cas",
+      "casprobe": {
+        "n_seeds": 8,
+        "sole_wins_mean": 98.31,
+        "other_mean": 97.35,
+        "difference": 0.97,
+        "per_seed": {
+          "42": {
+            "sole_wins": 97.75,
+            "other": 96.95
+          },
+          "43": {
+            "sole_wins": 97.75,
+            "other": 97.25
+          },
+          "44": {
+            "sole_wins": 97.75,
+            "other": 97.74
+          },
+          "45": {
+            "sole_wins": 98.88,
+            "other": 96.95
+          },
+          "46": {
+            "sole_wins": 97.75,
+            "other": 97.15
+          },
+          "47": {
+            "sole_wins": 97.75,
+            "other": 97.45
+          },
+          "48": {
+            "sole_wins": 98.88,
+            "other": 97.54
+          },
+          "49": {
+            "sole_wins": 100.0,
+            "other": 97.74
+          }
+        }
+      },
+      "casprobepairs": {
+        "n_seeds": 8,
+        "sole_wins_mean": 98.45,
+        "other_mean": 97.45,
+        "difference": 1.01,
+        "per_seed": {
+          "42": {
+            "sole_wins": 97.75,
+            "other": 97.05
+          },
+          "43": {
+            "sole_wins": 98.88,
+            "other": 97.45
+          },
+          "44": {
+            "sole_wins": 97.75,
+            "other": 97.84
+          },
+          "45": {
+            "sole_wins": 98.88,
+            "other": 97.05
+          },
+          "46": {
+            "sole_wins": 97.75,
+            "other": 97.15
+          },
+          "47": {
+            "sole_wins": 97.75,
+            "other": 97.54
+          },
+          "48": {
+            "sole_wins": 98.88,
+            "other": 97.64
+          },
+          "49": {
+            "sole_wins": 100.0,
+            "other": 97.84
+          }
+        }
+      }
+    },
+    "reference": {
+      "tag": "fact-d4casnegs",
+      "casprobe": {
+        "n_seeds": 8,
+        "sole_wins_mean": 49.3,
+        "other_mean": 53.88,
+        "difference": -4.58,
+        "per_seed": {
+          "42": {
+            "sole_wins": 48.31,
+            "other": 52.55
+          },
+          "43": {
+            "sole_wins": 44.94,
+            "other": 54.52
+          },
+          "44": {
+            "sole_wins": 46.07,
+            "other": 51.18
+          },
+          "45": {
+            "sole_wins": 49.44,
+            "other": 51.67
+          },
+          "46": {
+            "sole_wins": 48.31,
+            "other": 50.79
+          },
+          "47": {
+            "sole_wins": 51.69,
+            "other": 56.68
+          },
+          "48": {
+            "sole_wins": 56.18,
+            "other": 61.1
+          },
+          "49": {
+            "sole_wins": 49.44,
+            "other": 52.55
+          }
+        }
+      },
+      "casprobepairs": {
+        "n_seeds": 8,
+        "sole_wins_mean": 63.2,
+        "other_mean": 65.62,
+        "difference": -2.42,
+        "per_seed": {
+          "42": {
+            "sole_wins": 62.92,
+            "other": 66.21
+          },
+          "43": {
+            "sole_wins": 64.04,
+            "other": 66.8
+          },
+          "44": {
+            "sole_wins": 58.43,
+            "other": 63.95
+          },
+          "45": {
+            "sole_wins": 61.8,
+            "other": 62.77
+          },
+          "46": {
+            "sole_wins": 62.92,
+            "other": 64.83
+          },
+          "47": {
+            "sole_wins": 62.92,
+            "other": 65.91
+          },
+          "48": {
+            "sole_wins": 66.29,
+            "other": 70.24
+          },
+          "49": {
+            "sole_wins": 66.29,
+            "other": 64.24
+          }
+        }
+      }
+    },
+    "base": {
+      "tag": "qwen3-0.6b-base",
+      "casprobe": {
+        "n_seeds": 1,
+        "sole_wins_mean": 11.24,
+        "other_mean": 10.81,
+        "difference": 0.43,
+        "per_seed": {
+          "single": {
+            "sole_wins": 11.24,
+            "other": 10.81
+          }
+        }
+      },
+      "casprobepairs": {
+        "n_seeds": 1,
+        "sole_wins_mean": 12.36,
+        "other_mean": 10.81,
+        "difference": 1.55,
+        "per_seed": {
+          "single": {
+            "sole_wins": 12.36,
+            "other": 10.81
+          }
+        }
+      }
+    }
+  },
+  "reading": "exploratory (no registration): the probe queries that are the recipe arm's hard-tier sole wins are not easier for it on generator-free near-misses, so its sole wins do not predict probe success"
+}

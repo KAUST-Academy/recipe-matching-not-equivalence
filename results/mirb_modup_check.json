@@ -1,0 +1,29 @@
+{
+  "generated_by": "scripts/mirb_modup_check.py",
+  "task": "modup",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "tolerance": 0.0001,
+  "reproduction": {
+    "committed_ndcg10": 0.72671,
+    "new_ndcg10": 0.72671,
+    "max_abs_metric_diff": 0.0,
+    "worst_metric": "MRR",
+    "max_abs_perquery_ndcg10_diff": 0.0,
+    "n_queries": 225,
+    "same_prompt": true,
+    "pass": true
+  },
+  "equivalence": {
+    "old_ndcg10": 0.72671,
+    "new_ndcg10": 0.72671,
+    "all_metrics_identical": true,
+    "queries_with_different_top1000_sets": 0,
+    "queries_with_different_top1000_scores": 0,
+    "n_excluded_ids": 820796,
+    "seconds_old_loop": 12.5,
+    "seconds_new_path": 0.4,
+    "pass": true
+  },
+  "pass": true,
+  "runtime_seconds": 637.2
+}

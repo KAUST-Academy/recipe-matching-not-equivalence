@@ -1,0 +1,138 @@
+{
+  "B": 10000,
+  "tags": {
+    "base": "bge-base",
+    "verified": "ctrl-cas-bge-s42",
+    "recipe": "ctrl-llm-bge-s42"
+  },
+  "slices": {
+    "primary": {
+      "n_queries": 125,
+      "n_clusters": 61,
+      "r1": {
+        "base": 57.6,
+        "verified": 58.4,
+        "recipe": 57.6
+      },
+      "gap": {
+        "verified-base": {
+          "point": 0.8,
+          "ci95": [
+            -6.5,
+            7.94
+          ]
+        },
+        "recipe-base": {
+          "point": 0.0,
+          "ci95": [
+            -9.68,
+            9.84
+          ]
+        },
+        "recipe-verified": {
+          "point": -0.8,
+          "ci95": [
+            -9.45,
+            7.94
+          ]
+        }
+      }
+    },
+    "primary_en": {
+      "n_queries": 115,
+      "n_clusters": 56,
+      "r1": {
+        "base": 53.91,
+        "verified": 54.78,
+        "recipe": 53.91
+      },
+      "gap": {
+        "verified-base": {
+          "point": 0.87,
+          "ci95": [
+            -7.08,
+            7.96
+          ]
+        },
+        "recipe-base": {
+          "point": 0.0,
+          "ci95": [
+            -10.53,
+            11.21
+          ]
+        },
+        "recipe-verified": {
+          "point": -0.87,
+          "ci95": [
+            -10.26,
+            8.05
+          ]
+        }
+      }
+    },
+    "exact": {
+      "n_queries": 291,
+      "n_clusters": 143,
+      "r1": {
+        "base": 100.0,
+        "verified": 100.0,
+        "recipe": 100.0
+      },
+      "gap": {
+        "verified-base": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "recipe-base": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "recipe-verified": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "all": {
+      "n_queries": 498,
+      "n_clusters": 242,
+      "r1": {
+        "base": 78.92,
+        "verified": 79.92,
+        "recipe": 80.12
+      },
+      "gap": {
+        "verified-base": {
+          "point": 1.0,
+          "ci95": [
+            -1.21,
+            3.23
+          ]
+        },
+        "recipe-base": {
+          "point": 1.2,
+          "ci95": [
+            -1.83,
+            4.39
+          ]
+        },
+        "recipe-verified": {
+          "point": 0.2,
+          "ci95": [
+            -2.38,
+            2.8
+          ]
+        }
+      }
+    }
+  }
+}

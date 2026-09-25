@@ -1,0 +1,8 @@
+{
+  "model": "gemini-3-flash-preview",
+  "calls": 1080,
+  "failures": 0,
+  "prompt_tokens": 800768,
+  "output_tokens": 857876,
+  "thought_tokens": 1083778
+}

@@ -1,0 +1,55 @@
+{
+  "audit": "recipe-sensitivity audit -- does similarity track the recipe-style score?",
+  "n_queries_sampled": 2000,
+  "seed": 42,
+  "per_model": {
+    "base-0.6b": {
+      "doc_emb": ".emb_cache/docs_Qwen__Qwen3-Embedding-0.6B_236c0b3187bc143d.npz",
+      "query_emb": ".emb_cache/queries_Qwen__Qwen3-Embedding-0.6B_2a9caafd7bf6c598.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": -0.0323,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0331,
+      "mean_top10_style_score": 0.15,
+      "corpus_mean_style_score": 0.2603,
+      "mean_top10_synthetic_fraction": 0.99
+    },
+    "ctrl-llm-6145": {
+      "doc_emb": ".emb_cache/docs_models__ctrl-llm-6145__final_ce5f5ebcf33e3146.npz",
+      "query_emb": ".emb_cache/queries_models__ctrl-llm-6145__final_6499722b26fa8eab.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": 0.1145,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": 0.1144,
+      "mean_top10_style_score": 0.5485,
+      "corpus_mean_style_score": 0.2603,
+      "mean_top10_synthetic_fraction": 0.997
+    },
+    "ctrl-cas-6145": {
+      "doc_emb": ".emb_cache/docs_models__ctrl-cas-6145__final_12def10d3efcf69c.npz",
+      "query_emb": ".emb_cache/queries_models__ctrl-cas-6145__final_8dc0c540861be823.npz",
+      "mean_perquery_spearman_sim_vs_style_alldocs": -0.0168,
+      "mean_perquery_spearman_sim_vs_style_syntheticdocs": -0.0164,
+      "mean_top10_style_score": 0.1743,
+      "corpus_mean_style_score": 0.2603,
+      "mean_top10_synthetic_fraction": 0.9904
+    }
+  },
+  "pairwise_perquery_rho_deltas": [
+    {
+      "pair": "base-0.6b - ctrl-llm-6145",
+      "mean_perquery_delta_rho": -0.1469,
+      "wilcoxon_p": 0.0,
+      "pct_queries_higher": 4.85
+    },
+    {
+      "pair": "base-0.6b - ctrl-cas-6145",
+      "mean_perquery_delta_rho": -0.0155,
+      "wilcoxon_p": 1.11e-92,
+      "pct_queries_higher": 29.8
+    },
+    {
+      "pair": "ctrl-llm-6145 - ctrl-cas-6145",
+      "mean_perquery_delta_rho": 0.1313,
+      "wilcoxon_p": 4.53e-307,
+      "pct_queries_higher": 93.6
+    }
+  ],
+  "note": "rho_syntheticdocs is the within-synthetic gradient (immune to the synthetic-vs-organic base-rate confound); top10_synthetic_fraction base rate = fraction of synthetic docs in the corpus = 0.9858"
+}

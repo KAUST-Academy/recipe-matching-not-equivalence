@@ -1,0 +1,37 @@
+{
+  "generated": "2026-07-31",
+  "script": "scripts/saber_label_seed_verdict.py",
+  "preregistered_in": "scripts/saber_label_seeds.slurm header",
+  "base_noprompt": 0.5747,
+  "per_seed": {
+    "label": {
+      "42": 0.6101,
+      "43": 0.6099,
+      "44": 0.6069
+    },
+    "doc": {
+      "42": 0.5515,
+      "43": 0.5591,
+      "44": 0.5645
+    }
+  },
+  "missing_inputs": [],
+  "scope_warning": "Training-seed statistics. The paired interval in results/saber_label_bootstrap.json resamples the 1,000 SABER queries and carries no seed variance; the two are additive.",
+  "label_mean": 0.609,
+  "label_sd": 0.0018,
+  "doc_mean": 0.5584,
+  "doc_sd": 0.0065,
+  "label_minus_base_per_seed": [
+    0.0354,
+    0.0352,
+    0.0322
+  ],
+  "label_minus_doc_per_seed": [
+    0.0586,
+    0.0508,
+    0.0424
+  ],
+  "all_label_seeds_above_base": true,
+  "label_beats_doc_in_every_seed": true,
+  "verdict": "S1 REPLICATES \u2014 every label seed clears the base (0.6090 mean vs 0.5747) and beats the document channel in every seed (0.5584 mean). The taxonomy rewrite stands: SABER is exposed on its label surface."
+}

@@ -1,0 +1,28 @@
+{
+  "generated": "2026-07-31",
+  "script": "scripts/meld_prompt_control_verdict.py",
+  "design": "Same nine MELD domain pairs, same schema, generator, judge, gates, row budget and negatives-per-row as the meld9 arm; only the authorial framing of the generation prompt differs (MELD_GEN_SYSTEM_ALT). This is the control the P3a contrast could not provide, since that one varies task, sources, budget and negatives simultaneously.",
+  "preregistered_in": "scripts/meld_prompt_control.slurm header, fixed before the run",
+  "mde_floor": 3.6,
+  "reference_points": {
+    "base": 10.19,
+    "ctrl_llm": 18.89,
+    "meld9_seed42": 36.67,
+    "meld9_3seed": 37.16,
+    "heldout_3seed": 30.8
+  },
+  "meld9alt_R@1": 32.41,
+  "gain_over_base": 22.22,
+  "meld9_minus_alt_seed42": 4.26,
+  "paired_bootstrap_alt_minus_meld9": {
+    "diff": -4.26,
+    "ci95": [
+      -7.78,
+      -0.93
+    ],
+    "ci_contains_zero": false
+  },
+  "verdict": "C3 GRADIENT \u2014 report as a partial effect, as the MathNet ladder's partial outcomes were, without claiming either branch.",
+  "realdup_R@1": 90.84,
+  "mathnet_hard_R@1": 0.04
+}

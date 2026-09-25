@@ -1,0 +1,53 @@
+{
+  "benchmark": "xlangai/BRIGHT / theoremqa_theorems (external, arXiv:2407.12883)",
+  "protocol": "official run.py + retrievers.py (github.com/xlang-ai/BRIGHT)",
+  "model": "Qwen/Qwen3-Embedding-4B",
+  "device": "cuda:0",
+  "n_corpus": 23839,
+  "n_queries": 76,
+  "subsampled": false,
+  "comparable_to_official": false,
+  "missing_gold_docs": 0,
+  "query_prompt_name": null,
+  "query_prompt": "Instruct: Given a Math problem, retrieve relevant theorems that help answer the problem\nQuery: ",
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "seed": 42,
+  "metrics": {
+    "MRR": 0.45101,
+    "NDCG@1": 0.36842,
+    "MAP@1": 0.19925,
+    "Recall@1": 0.19925,
+    "P@1": 0.36842,
+    "NDCG@5": 0.38464,
+    "MAP@5": 0.33346,
+    "Recall@5": 0.43327,
+    "P@5": 0.16579,
+    "NDCG@10": 0.41278,
+    "MAP@10": 0.34776,
+    "Recall@10": 0.51441,
+    "P@10": 0.09605,
+    "NDCG@25": 0.43239,
+    "MAP@25": 0.35361,
+    "Recall@25": 0.58349,
+    "P@25": 0.04316,
+    "NDCG@50": 0.45604,
+    "MAP@50": 0.35784,
+    "Recall@50": 0.68343,
+    "P@50": 0.02632,
+    "NDCG@100": 0.48032,
+    "MAP@100": 0.36083,
+    "Recall@100": 0.8114,
+    "P@100": 0.01539,
+    "n_queries_scored": 76,
+    "metrics_impl": "pytrec_eval"
+  },
+  "headline": {
+    "NDCG@10": 0.41278
+  },
+  "protocol_notes": [
+    "truncation at --max-seq-length applies to docs and queries (official used per-model doc_max_length up to 8192; ours is a documented deviation, consistent across our models)",
+    "excluded_ids removed from each query's candidates before ranking; top-1000 kept; metrics averaged over all queries"
+  ],
+  "runtime_seconds": 513.4
+}

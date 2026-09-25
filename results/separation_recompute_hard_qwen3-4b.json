@@ -1,0 +1,49 @@
+{
+  "tier": "hard",
+  "docs_npz": "docs_Qwen__Qwen3-Embedding-4B_169406da1e116196.npz",
+  "queries_npz": "queries_Qwen__Qwen3-Embedding-4B_5f58052584c6753a.npz",
+  "n_queries_gold_but_no_near_miss": 7,
+  "qids_gold_but_no_near_miss": [
+    "imo_2024_95e706",
+    "btw_1992_e990ee",
+    "esp_2014_bb2981",
+    "hrv_2019_ec3990",
+    "bra_1990_02cae1",
+    "bgr_2006_9e262c",
+    "mng_2010_ed4427"
+  ],
+  "n_queries_gold_missing_from_corpus": 0,
+  "buggy_misaligned": {
+    "n_queries_with_pos_and_neg": 14993,
+    "mean_positive_sim": 0.646,
+    "mean_hard_negative_sim": 0.9003,
+    "mean_gap_pos_minus_meanneg": -0.2543,
+    "mean_gap_pos_minus_maxneg": -0.2824,
+    "pct_pos_above_all_hard_negs": 0.09,
+    "n_pos_above_all_hard_negs": 13,
+    "std_positive_sim": 0.0938,
+    "std_hard_negative_sim": 0.04
+  },
+  "fixed_aligned": {
+    "n_queries_with_pos_and_neg": 14993,
+    "mean_positive_sim": 0.6459,
+    "mean_hard_negative_sim": 0.9003,
+    "mean_gap_pos_minus_meanneg": -0.2544,
+    "mean_gap_pos_minus_maxneg": -0.2824,
+    "pct_pos_above_all_hard_negs": 0.07,
+    "n_pos_above_all_hard_negs": 11,
+    "std_positive_sim": 0.0938,
+    "std_hard_negative_sim": 0.04
+  },
+  "released_json": {
+    "n_queries_with_pos_and_neg": 14993,
+    "mean_positive_sim": 0.646,
+    "mean_hard_negative_sim": 0.9003,
+    "mean_gap_pos_minus_meanneg": -0.2543,
+    "mean_gap_pos_minus_maxneg": -0.2823,
+    "pct_pos_above_all_hard_negs": 0.09,
+    "std_positive_sim": 0.0938,
+    "std_hard_negative_sim": 0.0401
+  },
+  "released_vs_buggy_max_abs_diff": 9.999999999999593e-05
+}

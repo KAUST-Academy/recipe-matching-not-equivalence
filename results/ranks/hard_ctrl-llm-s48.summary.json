@@ -1,0 +1,88 @@
+{
+  "benchmark": "ShadenA/MathNet-Retrieve",
+  "tier": "hard",
+  "model": "models/ctrl-llm-6145-s48/final",
+  "device": "cuda:0",
+  "n_corpus": 117088,
+  "n_queries_evaluated": 15000,
+  "corpus_subsampled": false,
+  "comparable_to_paper": true,
+  "query_prompt_name": "query",
+  "query_prompt": null,
+  "doc_prompt_name": null,
+  "doc_prompt": null,
+  "pooling": "repo-default",
+  "append_eos": false,
+  "trust_remote_code": false,
+  "model_dtype": "bfloat16",
+  "max_seq_length": 1024,
+  "seed": 42,
+  "overall": {
+    "recall@1": 9.06,
+    "recall@5": 56.99,
+    "recall@10": 69.91
+  },
+  "per_domain": {
+    "Algebra": {
+      "n_queries": 2959,
+      "recall@1": 6.62,
+      "recall@5": 55.32,
+      "recall@10": 69.58
+    },
+    "Number Theory": {
+      "n_queries": 2221,
+      "recall@1": 10.22,
+      "recall@5": 54.71,
+      "recall@10": 67.13
+    },
+    "Discrete Mathematics": {
+      "n_queries": 1900,
+      "recall@1": 12.84,
+      "recall@5": 64.11,
+      "recall@10": 74.05
+    },
+    "Geometry": {
+      "n_queries": 1565,
+      "recall@1": 10.48,
+      "recall@5": 62.75,
+      "recall@10": 72.97
+    },
+    "Calculus": {
+      "n_queries": 48,
+      "recall@1": 4.17,
+      "recall@5": 58.33,
+      "recall@10": 83.33
+    },
+    "Precalculus": {
+      "n_queries": 35,
+      "recall@1": 14.29,
+      "recall@5": 60.0,
+      "recall@10": 77.14
+    },
+    "Statistics": {
+      "n_queries": 22,
+      "recall@1": 9.09,
+      "recall@5": 68.18,
+      "recall@10": 72.73
+    },
+    "Math Word Problems": {
+      "n_queries": 11,
+      "recall@1": 18.18,
+      "recall@5": 81.82,
+      "recall@10": 81.82
+    }
+  },
+  "per_domain_coverage": "8761/15000 queries have a derivable math domain (exact-match anchors only)",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 14993,
+    "mean_positive_sim": 0.5735,
+    "mean_hard_negative_sim": 0.5005,
+    "mean_gap_pos_minus_meanneg": 0.073,
+    "mean_gap_pos_minus_maxneg": -0.0256,
+    "pct_pos_above_all_hard_negs": 45.87,
+    "std_positive_sim": 0.1482,
+    "std_hard_negative_sim": 0.1433
+  },
+  "dump_ranks": "results/ranks/hard_ctrl-llm-s48.ranks.jsonl",
+  "runtime_seconds": 21.8
+}

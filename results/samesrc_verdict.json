@@ -1,0 +1,207 @@
+{
+  "generated_by": "scripts/samesrc_verdict.py",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "tiers": {
+    "easy": {
+      "llm_mean": 61.59,
+      "cas_mean": 17.21,
+      "gap_mean": 44.38,
+      "gap_sd": 1.46,
+      "gap_per_seed": [
+        44.42,
+        41.45,
+        45.06,
+        44.21,
+        43.23,
+        45.4,
+        45.25,
+        46.03
+      ],
+      "llm_per_seed": [
+        60.97,
+        59.71,
+        62.09,
+        61.44,
+        60.74,
+        62.79,
+        62.54,
+        62.47
+      ],
+      "cas_per_seed": [
+        16.55,
+        18.26,
+        17.03,
+        17.23,
+        17.51,
+        17.39,
+        17.29,
+        16.44
+      ],
+      "n_seeds": 8
+    },
+    "medium": {
+      "llm_mean": 7.6,
+      "cas_mean": 3.88,
+      "gap_mean": 3.72,
+      "gap_sd": 0.39,
+      "gap_per_seed": [
+        4.2,
+        3.67,
+        3.25,
+        4.3,
+        3.58,
+        3.24,
+        3.85,
+        3.66
+      ],
+      "llm_per_seed": [
+        7.83,
+        7.99,
+        7.56,
+        7.57,
+        7.59,
+        7.41,
+        7.42,
+        7.42
+      ],
+      "cas_per_seed": [
+        3.63,
+        4.32,
+        4.31,
+        3.27,
+        4.01,
+        4.17,
+        3.57,
+        3.76
+      ],
+      "n_seeds": 8
+    },
+    "hard": {
+      "llm_mean": 9.27,
+      "cas_mean": 0.22,
+      "gap_mean": 9.05,
+      "gap_sd": 0.77,
+      "gap_per_seed": [
+        9.59,
+        10.36,
+        8.82,
+        9.17,
+        9.46,
+        7.95,
+        8.32,
+        8.7
+      ],
+      "llm_per_seed": [
+        9.84,
+        10.65,
+        9.01,
+        9.3,
+        9.73,
+        8.18,
+        8.55,
+        8.87
+      ],
+      "cas_per_seed": [
+        0.25,
+        0.29,
+        0.19,
+        0.13,
+        0.27,
+        0.23,
+        0.23,
+        0.17
+      ],
+      "n_seeds": 8
+    },
+    "xling": {
+      "llm_mean": 72.93,
+      "cas_mean": 54.2,
+      "gap_mean": 18.73,
+      "gap_sd": 4.76,
+      "gap_per_seed": [
+        20.61,
+        18.83,
+        22.9,
+        7.88,
+        18.82,
+        23.16,
+        19.08,
+        18.57
+      ],
+      "llm_per_seed": [
+        74.55,
+        70.23,
+        74.05,
+        69.97,
+        72.26,
+        73.54,
+        75.06,
+        73.79
+      ],
+      "cas_per_seed": [
+        53.94,
+        51.4,
+        51.15,
+        62.09,
+        53.44,
+        50.38,
+        55.98,
+        55.22
+      ],
+      "n_seeds": 8
+    }
+  },
+  "reference": {
+    "regenerated": {
+      "easy": 44.45,
+      "medium": 4.95,
+      "hard": 9.21,
+      "xling": 17.4,
+      "did": 27.05
+    },
+    "filtered": {
+      "easy": 43.11,
+      "hard": 9.33,
+      "xling": 11.04,
+      "did": 32.07
+    },
+    "headline_tab_cleangate": {
+      "easy": 45.33,
+      "hard": 9.26,
+      "xling": 9.74,
+      "did": 35.59
+    }
+  },
+  "difference_in_differences": {
+    "mean": 25.65,
+    "sd": 4.71,
+    "per_seed": [
+      23.81,
+      22.62,
+      22.16,
+      36.33,
+      24.41,
+      22.24,
+      26.17,
+      27.46
+    ]
+  },
+  "verdict": "G1 CONFIRMS: the easy-tier gap survives a same-source, fully-clean matched 6,145 budget.",
+  "real_duplicate_control": {
+    "samesrc_gap": 18.73,
+    "filtered_ref": 11.04,
+    "regenerated_ref": 17.4,
+    "distance_to_filtered": 7.69,
+    "distance_to_regenerated": 1.33,
+    "nearer": "regenerated (the movement was the budget, not the sources)"
+  }
+}

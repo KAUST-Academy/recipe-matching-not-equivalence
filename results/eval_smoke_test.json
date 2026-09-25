@@ -1,0 +1,67 @@
+{
+  "benchmark": "ShadenA/MathNet-Retrieve",
+  "tier": "easy",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "device": "cpu",
+  "n_corpus": 20000,
+  "n_queries_evaluated": 500,
+  "corpus_subsampled": true,
+  "comparable_to_paper": false,
+  "query_prompt_name": null,
+  "seed": 42,
+  "overall": {
+    "recall@1": 5.6,
+    "recall@5": 87.2,
+    "recall@10": 94.8
+  },
+  "per_domain": {
+    "Algebra": {
+      "n_queries": 90,
+      "recall@1": 1.11,
+      "recall@5": 78.89,
+      "recall@10": 90.0
+    },
+    "Discrete Mathematics": {
+      "n_queries": 70,
+      "recall@1": 10.0,
+      "recall@5": 97.14,
+      "recall@10": 100.0
+    },
+    "Number Theory": {
+      "n_queries": 66,
+      "recall@1": 7.58,
+      "recall@5": 78.79,
+      "recall@10": 93.94
+    },
+    "Geometry": {
+      "n_queries": 50,
+      "recall@1": 2.0,
+      "recall@5": 84.0,
+      "recall@10": 92.0
+    },
+    "Precalculus": {
+      "n_queries": 1,
+      "recall@1": 0.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    },
+    "Statistics": {
+      "n_queries": 1,
+      "recall@1": 0.0,
+      "recall@5": 100.0,
+      "recall@10": 100.0
+    }
+  },
+  "per_domain_coverage": "278/500 queries have a derivable math domain (exact-match anchors only)",
+  "figure6_separation": {
+    "n_queries_with_pos_and_neg": 500,
+    "mean_positive_sim": 0.8026,
+    "mean_hard_negative_sim": 0.9176,
+    "mean_gap_pos_minus_meanneg": -0.115,
+    "mean_gap_pos_minus_maxneg": -0.1522,
+    "pct_pos_above_all_hard_negs": 5.8,
+    "std_positive_sim": 0.1032,
+    "std_hard_negative_sim": 0.0615
+  },
+  "runtime_seconds": 227.5
+}

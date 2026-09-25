@@ -1,0 +1,30 @@
+{
+  "mode": "rejudge",
+  "input": "data/pairs/llm_pairs.jsonl",
+  "second_judge_model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "n_rows": 25656,
+  "n_second_judge_json_failures": 1110,
+  "runtime_s": 1085.0,
+  "positive": {
+    "n": 6414,
+    "judge1_accept": 6145,
+    "judge2_accept": 5522,
+    "both_accept": 5398,
+    "neither": 145,
+    "only_judge1": 747,
+    "only_judge2": 124,
+    "agreement": 0.8642,
+    "cohen_kappa": 0.1981
+  },
+  "hard_negative": {
+    "n": 19242,
+    "judge1_accept": 16820,
+    "judge2_accept": 17723,
+    "both_accept": 16107,
+    "neither": 806,
+    "only_judge1": 713,
+    "only_judge2": 1616,
+    "agreement": 0.879,
+    "cohen_kappa": 0.3455
+  }
+}
