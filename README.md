@@ -449,9 +449,13 @@ Duplicate-mining precision is about 85–90% on a hand-read sample, and the mine
 ## Citation
 
 ```bibtex
-@misc{habibullah2026recipematching,
-  title  = {Recipe-Matching, Not Equivalence},
-  author = {Habibullah, Ali and Alshiekh, Mohammad and Alshoibi, Yazan and Khan, Salman and Khan, Naeemullah},
-  year   = {2026}
+@misc{habibullah2026recipematchingequivalence,
+      title={Recipe-Matching, Not Equivalence}, 
+      author={Ali Habibullah and Mohammad Alshiekh and Yazan Alshoibi and Salman Khan and Naeemullah Khan},
+      year={2026},
+      eprint={2609.31927},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2609.31927}, 
 }
 ```
